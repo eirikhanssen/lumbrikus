@@ -1,0 +1,8 @@
+html {background: red !important;}
+
+.xdebug-error,
+.xe-warning {
+	position: relative; left: 10em;
+}
+
+p.hook {float: right;}

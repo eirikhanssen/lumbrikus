@@ -1,0 +1,14 @@
+/*
+	@package lumbrikustheme
+*/
+/* debug */
+.xdebug-error,
+.xe-warning {
+	position: relative; left: 10em;
+}
+
+p.hook {float: right;}
+
+html {background: cyan;}
+
+#customCss { position: relative; width: 500px; height: 400px; }
