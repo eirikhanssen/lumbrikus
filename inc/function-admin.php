@@ -27,8 +27,36 @@ add_action( 'admin_menu', 'lumbrikus_add_admin_page' );
 add_action( 'admin_init', 'lumbrikus_custom_settings' );
 
 function lumbrikus_custom_settings() {
+	//  Add customizations here....
+
+	// Theme Support Options
+
+
+	// Custom CSS Options
+
+	register_setting( 'lumbrikus-custom-css-options', 'lumbrikus_css', 'lumbrikus_sanitize_custom_css' );
 	
+	add_settings_section( 'lumbrikus-custom-css-section', 'Custom CSS', 'lumbrikus_custom_css_section_callback', 'nafo_lumbrikus_css' );
+	
+	add_settings_field( 'custom-css', 'Insert your Custom CSS', 'lumbrikus_custom_css_callback', 'nafo_lumbrikus_css', 'lumbrikus-custom-css-section' );
+
+
+
+
+
+} // lumbrikus custom settings
+
+// Callbacks
+function lumbrikus_custom_css_section_callback() {
+	echo 'Customize Sunset Theme with your own CSS';
 }
+
+function lumbrikus_custom_css_callback() {
+	$css = get_option( 'lumbrikus_css' );
+	$css = ( empty($css) ? '/* Lumbrikus Theme Custom CSS */' : $css );
+	echo '<div id="customCss">'.$css.'</div><textarea id="lumbrikus_css" name="lumbrikus_css" style="display:none;visibility:hidden;">'.$css.'</textarea>';
+}
+
 
 
 //Template submenu functions
