@@ -48,15 +48,16 @@ add_action( 'admin_enqueue_scripts', 'lumbrikus_load_admin_scripts' );
 	========================
 */
 
-function lumbrikus_load_scripts(){
+function lumbrikus_load_scripts() {
 	/* register styles */
 	// wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.6', 'all' );
+	wp_enqueue_style( 'normalize', get_template_directory_uri() . '/css/normalize.css', array(), '7.0.0', 'all' );
+	wp_enqueue_style( 'googlefonts', 'https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Roboto', array(), '0.0.5', 'all' );
 	wp_enqueue_style( 'lumbrikus', get_template_directory_uri() . '/css/lumbrikus.css', array(), '1.0.0', 'all' );
-	//wp_enqueue_style( 'raleway', 'https://fonts.googleapis.com/css?family=Raleway:200,300,500' );
 	
 	/* register scripts */
 	lumbrikus_include_custom_jquery();
-	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap-3.3.7.min.js', array('jquery'), '1.12.4', true );
+	//wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap-3.3.7.min.js', array('jquery'), '1.12.4', true );
 	wp_enqueue_script( 'lumbrikus', get_template_directory_uri() . '/js/lumbrikus.js', array('jquery'), '1.0.0', true );
 	
 }
