@@ -9,6 +9,7 @@
             height: 100%;
             width: 100%;
             position: fixed;
+            z-index: 1;
         }
     </style>
     <meta name="description" content="Naturfag på norsk, arabisk, somali og tigrinja. En læringsressurs med faglige og skjønnlitterære tekster og lydmateriale for småskoletrinn og nyankomne."/>
