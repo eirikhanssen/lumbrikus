@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   viewBox="-250 -250 500 500"
+   version="2.0"
+   id="svg_blomst_enkel_modell">
+  <metadata
+     id="metadata174">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Blomst innmat</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <title
+     id="title49">Blomst innmat</title>
+  <desc
+     id="desc51"
+     xml:lang="no">
+      Opphavsrett: Jorun Guldbrandsen og Eirik Hanssen
+   </desc>
+  <style
+     id="style29"
+     type="text/css">
+     /* <![CDATA[ */
+         
+         #def_bg {
+        fill: #d8ffc9;
+        }
+                      
+              
+        .ord {
+        font-family:sans-serif;
+        font-size:16px;
+        text-align:left;
+        fill:#000000;
+        fill-opacity:1;
+        text-anchor:middle;
+        font-style:normal;
+        font-variant:normal;
+        font-weight:normal;
+        paint-order: stroke fill;
+        }
+        
+        .ord:hover,
+        .ord:focus {
+        
+        }
+        
+        #senterfirkant, /* debug/troubleshooting */
+         #senterkryss {
+            display:none;
+            fill: none;
+            stroke-width: 1;
+            stroke: magenta;
+         }
+        
+        
+        #omriss_fruktemne {
+         fill: none;
+         stroke: black;
+         stroke-width: 2;
+         stroke-dasharray: 3 7;
+         stroke-linecap: round;
+         stroke-linejoin: round;
+         stroke-dashoffset: -1;
+        }
+        
+        [id^="strek_"] {
+         fill:none;
+         stroke: black;
+         stroke-width: 1;
+         stroke-linecap: round;
+        }
+       
+        /* ]]> */
+    </style>
+  <defs
+     id="defs4621">
+    <linearGradient
+       id="linearGradient4719">
+      <stop
+         style="stop-color:#001fff;stop-opacity:1;"
+         offset="0"
+         id="stop4715" />
+      <stop
+         style="stop-color:#001077;stop-opacity:1"
+         offset="1"
+         id="stop4717" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4711">
+      <stop
+         style="stop-color:#ff7f2a;stop-opacity:1;"
+         offset="0"
+         id="stop4707" />
+      <stop
+         style="stop-color:#663b1f;stop-opacity:1"
+         offset="1"
+         id="stop4709" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4674">
+      <stop
+         style="stop-color:#008000;stop-opacity:1;"
+         offset="0"
+         id="stop4670" />
+      <stop
+         style="stop-color:#004900;stop-opacity:0.97468"
+         offset="1"
+         id="stop4672" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4664">
+      <stop
+         style="stop-color:#43c743;stop-opacity:1"
+         offset="0"
+         id="stop4660" />
+      <stop
+         style="stop-color:#129912;stop-opacity:1"
+         offset="1"
+         id="stop4662" />
+    </linearGradient>
+   <rect
+       height="10000"
+       width="10000"
+       y="-5000"
+       x="-5000"
+       id="def_bg" />
+    <marker
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="markerStoreForklaringspiler"
+       style="overflow:visible">
+      <path
+         id="path1760"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.4)" />
+    </marker>
+    <linearGradient
+       id="linearGradientPollenknappIndreDef">
+      <stop
+         id="stop968"
+         offset="0"
+         style="stop-color:#b3470e;stop-opacity:1" />
+      <stop
+         id="stop970"
+         offset="1"
+         style="stop-color:#ee8b1d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient145">
+      <stop
+         id="stop141"
+         offset="0"
+         style="stop-color:#f2d91a;stop-opacity:1" />
+      <stop
+         id="stop143"
+         offset="1"
+         style="stop-color:#d75b13;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       gradientTransform="translate(-123.21,-100.65)"
+       gradientUnits="userSpaceOnUse"
+       y2="115.43"
+       x2="134.22"
+       y1="93.066"
+       x1="115.1"
+       id="linearGradientPollenknappIndre"
+       xlink:href="#linearGradientPollenknappIndreDef" />
+    <radialGradient
+       xlink:href="#linearGradient145"
+       id="radialGradientPollenkorn"
+       gradientUnits="userSpaceOnUse"
+       cx="0"
+       cy="0"
+       fx="0"
+       fy="0"
+       r="6" />
+    <circle
+       r="5.7768"
+       cy="0"
+       cx="0"
+       id="def_pollenkorn" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#def_pollenkorn"
+       id="def_pollenkorn_lite"
+       transform="scale(0.2)"
+       width="100%"
+       height="100%" />
+    <g
+       transform="rotate(240)"
+       id="def_klamme">
+      <path
+         id="path4088"
+         d="m 14.936,-56.263 -14.74973,6 V 0 49.06 l 14.74973,6"
+         class="bare_strek" />
+      <path
+         id="path4090"
+         d="M 0.18627,0 H -6.8737"
+         class="bare_strek" />
+    </g>
+    <linearGradient
+       xlink:href="#linearGradient4664"
+       id="linearGradient4668"
+       x1="6.36"
+       y1="-195.58"
+       x2="6.36"
+       y2="-75.084"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#linearGradient4674"
+       id="linearGradient4676"
+       x1="73.093"
+       y1="-21.716"
+       x2="73.093"
+       y2="7.4153"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       gradientTransform="translate(-29.93,23.802)"
+       xlink:href="#linearGradient4674"
+       id="linearGradient4676-6"
+       x1="73.093"
+       y1="-21.716"
+       x2="73.093"
+       y2="7.4153"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#linearGradient4674"
+       id="linearGradient4705"
+       gradientUnits="userSpaceOnUse"
+       x1="7.4153"
+       y1="32.839"
+       x2="7.4153"
+       y2="121.82"
+       gradientTransform="matrix(1.296,0,0,1.296,-10.052,58.562)" />
+    <linearGradient
+       xlink:href="#linearGradient4711"
+       id="linearGradient4713"
+       x1="82.097"
+       y1="-192.27"
+       x2="82.097"
+       y2="-54.025"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       xlink:href="#linearGradient4719"
+       id="radialGradient4721"
+       cx="113.09"
+       cy="-118.03"
+       fx="113.09"
+       fy="-118.03"
+       r="36.155"
+       gradientTransform="matrix(1.0729,0.23597,-0.56178,2.5528,-73.762,154.92)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#linearGradient4674"
+       id="linearGradient6719"
+       gradientUnits="userSpaceOnUse"
+       x1="73.093"
+       y1="-21.716"
+       x2="73.093"
+       y2="7.4153" />
+    <radialGradient
+       xlink:href="#linearGradient4719"
+       id="radialGradient6721"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0729,0.23597,-0.56178,2.5528,-73.762,154.92)"
+       cx="113.09"
+       cy="-118.03"
+       fx="113.09"
+       fy="-118.03"
+       r="36.155" />
+    <linearGradient
+       xlink:href="#linearGradient4711"
+       id="linearGradient6723"
+       gradientUnits="userSpaceOnUse"
+       x1="82.097"
+       y1="-192.27"
+       x2="82.097"
+       y2="-54.025" />
+  </defs>
+  <g
+     id="bakgrunn">
+    <use
+       id="use73"
+       y="0"
+       x="0"
+       xlink:href="#def_bg" />
+  </g>
+  <g
+     id="g_blomsermodell">
+    <path
+       id="stengel"
+       d="m -16.234,216.45 c 0,0 -0.161,-46.06 -2.521,-58.22 -1.179,-6.08 -3.512,-19.04 -7.329,-28.47 -3.816,-9.44 -10.744,-19.37 -10.744,-19.37 0,0 6.094,-12.356 35.0123,-12.356 28.9177,0 35.0117,12.356 35.0117,12.356 0,0 -6.853,9.93 -10.601,19.37 -3.748,9.43 -5.988,22.39 -7.128,28.47 -2.281,12.16 -2.178,58.22 -2.178,58.22 z"
+       style="opacity:1;vector-effect:none;fill:url(#linearGradient4705);fill-opacity:1;stroke:none;stroke-width:1.29602px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <g
+       transform="matrix(1.296,0,0,1.296,-10.052,58.563)"
+       id="g_fruktemne">
+      <path
+         style="opacity:1;fill:url(#linearGradient4668);fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 15.76,-75.34 H 7.085 -1.59 c 0,0 -10.04,-2.101 -17.5,-10.779 -7.46,-8.678 -9.5,-10.669 -9.5,-22.371 0,-11.71 6.827,-20.82 13.559,-28.16 6.7323,-7.34 13.441,-12.98 13.441,-12.98 v -36.28 c -7.8561,-3.52 -19.038,-8.04 -20.92,-13.51 -0.304,-0.88 -0.734,-4.43 14.435,-3.14 13.0207,1.11 14.435,6.98 14.435,6.98 0,0 -0.1078,-5.42 14.165,-6.98 15.573,-1.7 14.649,2.43 14.165,3.14 -6.275,9.27 -18.93,13.51 -18.93,13.51 v 36.28 c 0,0 6.708,5.64 13.44,12.98 6.732,7.34 13.56,16.45 13.56,28.16 0,11.702 -2.04,13.693 -9.5,22.371 -7.46,8.678 -17.5,10.779 -17.5,10.779 z"
+         id="fruktemne_bakgrunn" />
+      <g
+         id="g_fruktknute">
+        <ellipse
+           ry="20.26"
+           rx="9.4015"
+           cy="-109.51"
+           cx="6.75"
+           id="fruktknute_sted_for_eggeceller"
+           style="opacity:1;vector-effect:none;fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3, 3;stroke-dashoffset:0;stroke-opacity:1" />
+        <path
+           id="fruktknute_fro"
+           transform="translate(-250,-250)"
+           d="m 256.75,120.23 a 9.4015,20.26 0 0 0 -1.26,0.21 v 6.99 a 1.2579,2.1849 0 0 0 -1.2,-1.53 1.2579,2.1849 0 0 0 -1.26,2.18 1.2579,2.1849 0 0 0 1.26,2.18 1.2579,2.1849 0 0 0 1.2,-1.54 v 11.07 a 1.2579,2.1849 0 0 0 -1.2,-1.54 1.2579,2.1849 0 0 0 -1.26,2.18 1.2579,2.1849 0 0 0 1.26,2.18 1.2579,2.1849 0 0 0 1.2,-1.54 v 10.59 a 1.2579,2.1849 0 0 0 -1.2,-1.53 1.2579,2.1849 0 0 0 -1.26,2.18 1.2579,2.1849 0 0 0 1.26,2.19 1.2579,2.1849 0 0 0 1.2,-1.54 v 7.58 a 9.4015,20.26 0 0 0 1.26,0.21 9.4015,20.26 0 0 0 1.35,-0.23 v -7.56 a 1.2579,2.1849 0 0 0 1.2,1.54 1.2579,2.1849 0 0 0 1.26,-2.19 1.2579,2.1849 0 0 0 -1.26,-2.18 1.2579,2.1849 0 0 0 -1.2,1.54 v -10.59 a 1.2579,2.1849 0 0 0 1.2,1.53 1.2579,2.1849 0 0 0 1.26,-2.18 1.2579,2.1849 0 0 0 -1.26,-2.18 1.2579,2.1849 0 0 0 -1.2,1.54 v -11.07 a 1.2579,2.1849 0 0 0 1.2,1.54 1.2579,2.1849 0 0 0 1.26,-2.18 1.2579,2.1849 0 0 0 -1.26,-2.18 1.2579,2.1849 0 0 0 -1.2,1.54 v -6.97 a 9.4015,20.26 0 0 0 -1.35,-0.24 z"
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3, 3;stroke-dashoffset:0;stroke-opacity:1" />
+      </g>
+    </g>
+    <g
+       transform="matrix(1.296,0,0,1.296,-10.052,58.563)"
+       id="g_stovbarere">
+      <path
+         style="opacity:1;fill:url(#linearGradient6723);fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 57.343,-54.326 c 0.836,0.529 2.364,2.03 3.697,0.296 23.976,-31.197 32.311,-81.49 23.168,-132.56 -0.819,-4.57 -1.841,-8.75 -3.688,-13.22 0,0 1.545,-0.13 2.55,-1.95 1.221,-2.22 1.745,-6.28 -0.598,-9.15 -3.074,-3.76 -5.042,1.93 -5.042,1.93 0.03,-0.13 -4.663,-4.26 -5.742,0.4 -0.777,3.35 1.175,6.78 3.267,8.22 1.331,0.91 3.224,1.13 3.225,1.11 9.615,43.04 11.446,109.877 -20.837,144.924 z"
+         id="stovbarer" />
+      <use
+         x="0"
+         y="0"
+         xlink:href="#stovbarer"
+         id="use4727"
+         transform="translate(-21.716)"
+         width="100%"
+         height="100%" />
+      <use
+         x="0"
+         y="0"
+         xlink:href="#stovbarer"
+         id="use4729"
+         transform="matrix(-1,0,0,1,14.61,0)"
+         width="100%"
+         height="100%" />
+      <use
+         x="0"
+         y="0"
+         xlink:href="#stovbarer"
+         id="use4731"
+         transform="matrix(-1,0,0,1,34.833,0)"
+         width="100%"
+         height="100%" />
+    </g>
+    <g
+       transform="matrix(1.296,0,0,1.296,-10.052,58.563)"
+       id="g_kronblad">
+      <path
+         style="opacity:1;fill:url(#radialGradient6721);fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 66.94,-39.7 c 25.183,-40.775 47.15,-111.5 43.54,-144.38 -1.35,-12.28 1.04,-12.37 7.91,-7.24 6.76,5.06 29.31,33.47 17.49,74.77 -11.82,41.289 -65.537,75.755 -68.94,76.85 z"
+         id="kronblad" />
+      <use
+         x="0"
+         y="0"
+         xlink:href="#kronblad"
+         id="use4733"
+         transform="matrix(-1,0,0,1,15.512,0)"
+         width="100%"
+         height="100%" />
+    </g>
+    <g
+       transform="matrix(1.296,0,0,1.296,-10.052,58.563)"
+       id="g_begerblad">
+      <path
+         style="opacity:1;fill:url(#linearGradient6719);fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 29.93,-14.3 c 41.876,-22.699 79.45,0.956 101.16,12.18 0,0.9268 -38.141,11.728 -63.296,8.48 C 42.638,3.112 34.96,-6.0876 29.93,-14.3 Z"
+         id="begerblad" />
+      <use
+         x="0"
+         y="0"
+         xlink:href="#begerblad"
+         id="use4747"
+         transform="matrix(-1,0,0,1,7.4183,0)"
+         width="100%"
+         height="100%" />
+    </g>
+  </g>
+  <text
+     transform="translate(0,235)"
+     xml:space="preserve"
+     class="ord"
+     x="0"
+     y="0"
+     id="text4813"><tspan
+       id="tspan4811"
+       x="0"
+       y="0">stengel</tspan></text>
+  <text
+     transform="translate(179,79)"
+     xml:space="preserve"
+     class="ord"
+     x="0"
+     y="0"
+     id="text4817"><tspan
+       id="tspan4815"
+       x="0"
+       y="0">begerblad</tspan></text>
+  <text
+     transform="translate(200,-170)"
+     xml:space="preserve"
+     class="ord"
+     x="0"
+     y="0"
+     id="text4821"><tspan
+       id="tspan4819"
+       x="0"
+       y="0">kronblad</tspan></text>
+  <text
+     transform="translate(188,-26)"
+     xml:space="preserve"
+     class="ord"
+     x="0"
+     y="0"
+     id="text4831"><tspan
+       y="0"
+       x="0"
+       id="tspan5062">støvbærer/</tspan><tspan
+       y="14"
+       x="0"
+       id="tspan5064">pollenbærer</tspan></text>
+  <text
+     xml:space="preserve"
+     transform="translate(-208,-80)"
+     class="ord"
+     x="0"
+     y="0"
+     id="text4837"><tspan
+       id="tspan4835"
+       x="0"
+       y="0">eggceller</tspan></text>
+  <text
+     transform="translate(0,13)"
+     xml:space="preserve"
+     class="ord"
+     x="0"
+     y="0"
+     id="text4841"><tspan
+       id="tspan4839"
+       x="0"
+       y="0">fruktemne</tspan></text>
+  <text
+     transform="translate(191,-220)"
+     xml:space="preserve"
+     class="ord"
+     x="0"
+     y="0"
+     id="text4849"><tspan
+       id="tspan4847"
+       x="0"
+       y="0">støvknapp/</tspan><tspan
+       x="0"
+       y="14"
+       id="tspan4851">pollenknapp</tspan></text>
+  <text
+     transform="translate(-230,-208)"
+     xml:space="preserve"
+     class="ord"
+     x="0"
+     y="0"
+     id="text4855"><tspan
+       id="tspan4853"
+       x="0"
+       y="0">arr</tspan></text>
+  <text
+     xml:space="preserve"
+     transform="translate(-220,-160)"
+     class="ord"
+     x="0"
+     y="0"
+     id="text4859"><tspan
+       id="tspan4857"
+       x="0"
+       y="0">griffel</tspan></text>
+  <text
+     transform="translate(-202,-40)"
+     xml:space="preserve"
+     class="ord"
+     x="0"
+     y="0"
+     id="text4863"><tspan
+       id="tspan4861"
+       x="0"
+       y="0">fruktknute</tspan></text>
+  <rect
+     id="senterfirkant"
+     x="-250"
+     y="-250"
+     width="500"
+     height="500" />
+  <path
+     id="senterkryss"
+     d="M -2,0 h4 M 0,-2 v4" />
+  <path
+     d="m 27.605,-211.03 c -1.506,-0.1 -3.159,0 -4.992,0 -2.107,0.1 -4.446,0.24 -7.088,0.52 h -0.02 c -8.4914,0.93 -13.9788,2.89 -17.7932,5.48 -3.8713,-2.63 -9.4948,-4.79 -17.7778,-5.5 -10.315,-0.87 -15.795,-0.55 -20.352,1.63 -2.279,1.09 -4.467,3.14 -5.35,5.65 -0.881,2.49 -0.413,4.7 0,5.87 2.389,6.94 8.06,10.23 13.738,13.42 4.274,2.4 8.741,4.4 12.883,6.24 v 39.27 c -2.727,2.37 -8.475,7.48 -15.537,15.18 -9.037,9.86 -19.305,23.2 -19.305,40.986 0,7.95 0.735,13.677 3.182,18.842 2.446,5.165 5.958,8.95 10.74,14.511 9.89,11.655 24.926,17.446 38.992,17.146 15.989,-0.166 30.949,-8.155 38.992,-17.146 4.782,-5.561 8.294,-9.346 10.74,-14.511 2.447,-5.165 3.182,-10.892 3.182,-18.842 0,-17.786 -10.271,-31.126 -19.307,-40.986 -7.061,-7.7 -12.808,-12.81 -15.535,-15.18 v -39.11 c 5.963,-2.56 16.361,-8.04 23.239,-18.19 1.166,-1.72 1.606,-3.23 1.433,-5.5 -0.173,-2.28 -1.546,-4.88 -3.457,-6.44 -2.867,-2.34 -6.076,-3.19 -10.596,-3.37 z M0,0 v -25"
+     id="omriss_fruktemne" />
+  <path
+     id="strek_arr"
+     d="m -209.93,-212.17 185.394,8.24"
+      />
+  <path
+     id="strek_griffel"
+     d="m -192.32,-166.1 189.88,1.12"
+     />
+  <path
+     id="strek_eggceller"
+     d="M -166.86,-84.08 -2.94,-84.27"
+      />
+  <path
+     id="strek_fruktknute"
+     d="m -153.75,-44.38 125.1,-29.59"
+      />
+  <path
+     id="strek_pollenknapp"
+     d="m 135.01,-216.66 -43.82,8.99"
+      />
+  <path
+     id="strek_kronblad"
+     d="m 194.94,-166.85 -49.81,61.05"
+     />
+  <path
+     id="strek_pollenbarer"
+     d="M 136.51,-23.78 95.69,-75.84"
+      />
+  <path
+     id="strek_begerblad"
+     d="M 136.89,73.97 99.06,48.5"
+      />
+  <path
+     id="strek_strengel"
+     d="M -2.06,222.66 V 185.21"
+      />
+</svg>

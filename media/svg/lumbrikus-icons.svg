@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="lumbrikus-icons.css" ?>
+<svg
+    id="SVG_let_og_finn"
+    width="100%"
+    height="100%"
+    viewBox="-32 -32 1024 1200"
+    preserveAspectRatio="xMidYMid meet"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+     version="1.1">
+     <style>
+         #lumbrikus-icon circle {
+    fill: rgb(129, 30, 76);
+}
+#lumbrikus-icon-bw circle {
+    fill: black;
+}
+
+#lumbrikus-icon text,
+#lumbrikus-icon-bw text {
+    font-family: sans-serif;
+    fill: black;
+    stroke: #9cff6e;
+    stroke-width: 3px;
+    paint-order: stroke;
+    stroke-linejoin: round;
+    text-anchor: middle;
+    font-size: 14px;
+}
+#lumbrikus-icon text+text,
+#lumbrikus-icon-bw text+text{
+    stroke-width: 1px;
+    stroke:black;
+}
+#lumbrikus-icon-bw {
+    fill: black;
+}
+
+#lumbrikus-icon-bw text
+ {
+    stroke: white;
+}
+
+.kap circle {
+    fill: black;
+}
+.kap text, .kviss text {
+    font-family: Arial, "DejaVu Sans", sans-serif;
+    text-anchor:middle;
+    font-size: 24px;
+    fill: white;
+    font-weight: bold;
+}
+.kviss text {
+    fill:black;
+    stroke: black;
+    stroke-width: 0.5px;
+}
+.icon-bg {
+    fill: white;
+    opacity: 0.5;
+}
+
+.thick {
+    stroke: black;
+    fill: transparent;
+    stroke-width: 2px;
+    stroke-linecap: butt;
+}
+#magnifier path {
+    stroke: black;
+    stroke-linecap: round;
+    stroke-width: 4px;
+}
+
+.bookline {
+    stroke: black;
+    stroke-linecap: round;
+    stroke-width: 1px;
+    fill: transparent; 
+    stroke-linejoin: round;
+}
+
+.bookline-bottom {
+    stroke: #777;
+    stroke-linecap: round;
+    stroke-width: 2px;
+}
+
+#ord-bw-icon .bookfill {
+    fill:black;
+}
+#ord-bw-icon .bookpaper {
+   fill: rgba(255,255,255,0.75);
+}
+
+.bookfill {
+    fill: rgb(255, 84, 84);
+}
+.bookpaper {
+    fill: rgb(245, 220, 198);
+}
+
+.hode {
+    stroke: black;
+    stroke-width: 1px;
+    fill: rgb(255, 234, 45); 
+}
+
+#gjore-lage-bw-icon .hode {
+    fill: transparent;
+}
+
+.smile {
+    stroke: black;
+    stroke-width: 1px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: rgb(255, 255, 255);
+}
+.helmet, .hodelykt {
+    stroke: black;
+    stroke-width: 1.5px;
+    stroke-linejoin: miter;
+    fill:white;
+}
+
+.visor, .eyes {
+    stroke: black;
+    stroke-width: 1px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: rgba(255, 255, 255, 0.7);
+}
+#filmer-icon .icon-bg {
+    fill: rgb(209, 15, 34);
+    opacity: 1;
+}
+
+#filmer-icon-bw .icon-bg {
+    fill: transparent;
+}
+#filmer-icon .play {
+    fill: white;
+}
+#filmer-icon-bw .play {
+    fill: black;
+}
+
+.kviss text {
+    stroke-width: 0.5px;
+    stroke: black;
+    stroke-linejoin: round;
+}
+
+.frame {
+    stroke: black;
+    stroke-width: 2px;
+    fill: transparent;
+    stroke-linecap: square;
+    stroke-linejoin: miter;
+}
+     </style>
+    <title>Let og finn ord i bildet</title>
+    <view id="lumbrikus" viewBox="0 0 32 32"/>
+    <view id="lumbrikus-bw" viewBox="0 100 32 32"/>
+    <view id="kap0" viewBox="100 000 32 32"/>
+    <view id="kap1" viewBox="100 100 32 32"/>
+    <view id="kap2" viewBox="100 200 32 32"/>
+    <view id="kap3" viewBox="100 300 32 32"/>
+    <view id="kap4" viewBox="100 400 32 32"/>
+    <view id="kap5" viewBox="100 500 32 32"/>
+    <view id="kap6" viewBox="100 600 32 32"/>
+    <view id="kap7" viewBox="100 700 32 32"/>
+    <view id="kap8" viewBox="100 800 32 32"/>
+    <view id="kap9" viewBox="100 900 32 32"/>
+    <view id="kap10" viewBox="100 1000 32 32"/>
+    <view id="kap11" viewBox="100 1100 32 32"/>
+    <view id="kort-fortelling-bw" viewBox="200 100 32 32"/>
+    <view id="lang-fortelling-bw" viewBox="300 100 32 32"/>
+    <view id="let-og-finn-bw" viewBox="400 100 32 32"/>
+    <view id="ord" viewBox="500 000 32 32"/>
+    <view id="ord-bw" viewBox="500 100 32 32"/>
+    <view id="gjore-og-lage" viewBox="600 000 32 32"/>
+    <view id="gjore-og-lage-bw" viewBox="600 100 32 32"/>
+    <view id="filmer" viewBox="700 000 32 32"/>
+    <view id="filmer-bw" viewBox="700 100 32 32"/>
+    <view id="snutter" viewBox="800 000 32 32"/>
+    <view id="snutter-bw" viewBox="800 100 32 32"/>
+    <view id="kviss" viewBox="900 000 32 32"/>
+    <view id="kviss-bw" viewBox="900 100 32 32"/>
+
+    <a xlink:href="#lumbrikus">
+    <g id="lumbrikus-icon" transform="translate(16,16)">
+        <circle cx="0" cy="-6" r="10"/>
+        <circle cx="0" cy="11" r="5"/>
+        <circle cx="-11" cy="8" r="5"/>
+        <circle cx="11" cy="8" r="5"/>
+        <text x="1" y="-2">L</text>
+        <text x="1" y="-2">L</text>
+    </g>
+    </a>
+
+    <a xlink:href="#lumbrikus-bw"><g id="lumbrikus-icon-bw" transform="translate(16,116)">
+        <circle class="licon" cx="0" cy="-6" r="10"/>
+        <circle class="licon" cx="0" cy="11" r="5"/>
+        <circle class="licon" cx="-11" cy="8" r="5"/>
+        <circle class="licon" cx="11" cy="8" r="5"/>
+        <text x="1" y="-2">L</text>
+        <text x="1" y="-2">L</text>
+    </g>
+    </a>
+
+<a xlink:href="#kap0"><g id="kap0-icon" class="kap" transform="translate(116,016)">
+    <circle x="0" y="0" r="16"/>
+    <text x="0" y="0" dy="8">0</text>
+</g></a>
+
+<a xlink:href="#kap1"><g id="kap1-icon" class="kap" transform="translate(116,116)">
+    <circle x="0" y="0" r="16"/>
+    <text x="0" y="0" dy="8">1</text>
+</g>
+</a>
+
+<a xlink:href="#kap2"><g id="kap2-icon" class="kap" transform="translate(116,216)">
+    <circle x="0" y="0" r="16"/>
+    <text x="0" y="0" dy="8">2</text>
+</g>
+</a>
+
+<a xlink:href="#kap3"><g id="kap3-icon" class="kap" transform="translate(116,316)">
+    <circle x="0" y="0" r="16"/>
+    <text x="0" y="0" dy="8">3</text>
+</g>
+</a>
+
+<a xlink:href="#kap4"><g id="kap4-icon" class="kap" transform="translate(116,416)">
+    <circle x="0" y="0" r="16"/>
+    <text x="-1" y="0" dy="8">4</text>
+</g>
+</a>
+
+<a xlink:href="#kap5"><g id="kap5-icon" class="kap" transform="translate(116,516)">
+    <circle x="0" y="0" r="16"/>
+    <text x="0" y="0" dy="8">5</text>
+</g>
+</a>
+
+<a xlink:href="#kap6"><g id="kap6-icon" class="kap" transform="translate(116,616)">
+    <circle x="0" y="0" r="16"/>
+    <text x="0" y="0" dy="8">6</text>
+</g>
+</a>
+
+<a xlink:href="#kap7"><g id="kap7-icon" class="kap" transform="translate(116,716)">
+    <circle x="0" y="0" r="16"/>
+    <text x="0" y="0" dy="8">7</text>
+</g>
+</a>
+
+<a xlink:href="#kap8"><g id="kap8-icon" class="kap" transform="translate(116,816)">
+    <circle x="0" y="0" r="16"/>
+    <text x="0" y="0" dy="8">8</text>
+</g>
+</a>
+
+<a xlink:href="#kap9"><g id="kap9-icon" class="kap" transform="translate(116,916)">
+    <circle x="0" y="0" r="16"/>
+    <text x="0" y="0" dy="8">9</text>
+</g>
+</a>
+
+<a xlink:href="#kap10"><g id="kap10-icon" class="kap" transform="translate(116,1016)">
+    <circle x="0" y="0" r="16"/>
+    <text x="0" y="0" dy="8">10</text>
+</g>
+</a>
+
+<a xlink:href="#kap11"><g id="kap11-icon" class="kap" transform="translate(116,1116)">
+    <circle x="0" y="0" r="16"/>
+    <text x="0" y="0" dy="8">11</text>
+</g>
+</a>
+
+<a xlink:href="#kort-fortelling-bw"><g id="kort-fortelling-bw-icon" transform="translate(216,116)">
+    <rect class="icon-bg" x="-15.5" y="-15.5" width="31" height="31" rx="2" />
+    <path class="thick" d="M-10,0 h20 M-10,5 h20 M-10,10 h20 M-10,-5 h20 M-10,-10 h20"/>
+</g>
+</a>
+
+<a xlink:href="#lang-fortelling-bw"><g id="lang-fortelling-bw-icon" transform="translate(316,116)">
+    <rect class="icon-bg" x="-15.5" y="-15.5" width="31" height="31" rx="2" />
+    <path class="thick" d="M-12,0 h11 M-12,5 h11 M-12,10 h11 M-12,-5 h11 M-12,-10 h11"/>
+    <path class="thick" d="M1,0 h11 M1,5 h11 M1,10 h11 M1,-5 h11 M1,-10 h11"/>
+</g>
+</a>
+
+<a xlink:href="#let-og-finn-bw"><g id="let-og-finn-bw-icon" transform="translate(416,116)">
+    <rect class="icon-bg" x="-15.5" y="-15.5" width="31" height="31" rx="2" />
+    <g id="magnifier" transform="rotate(-50)">
+    <circle class="thick" cx="0" cy="-4" r="9"/>
+    <path d="M0,6 v 6"></path>
+    </g>
+
+</g>
+</a>
+
+<a xlink:href="#ord"><g id="ord-icon" transform="translate(516,016)">
+    <rect class="icon-bg" x="-15.5" y="-15.5" width="31" height="31" rx="2" />
+    <path class="bookfill" d="M10,5 h -21.25 l2.25,-13 c 0.25,-1 1,-2 2,-2 h 17z"></path>
+    <path class="bookpaper" d="M10.25,10 h-20.5 c -2,0 -2,-5 0,-5 h20.75 c -0.5,1.5 -0.5,3.5 0,5"></path>
+    <path class="bookline" d="M10,10 h -20 c -2,0 -2,-5 0,-5 h20 v-15 h-17 c -2,0 -2,2 -2.25,3 l -2.25,14"></path>
+    <path class="bookline-bottom" d="M9,7.5 h -18"></path>
+    
+</g>
+</a>
+
+<a xlink:href="#ord-bw"><g id="ord-bw-icon" transform="translate(516,116)">
+    <rect class="icon-bg" x="-15.5" y="-15.5" width="31" height="31" rx="2" />
+    <path class="bookfill" d="M10,5 h -21.25 l2.25,-13 c 0.25,-1 1,-2 2,-2 h 17z"></path>
+    <path class="bookpaper" d="M10.25,10 h-20.5 c -2,0 -2,-5 0,-5 h20.75 c -0.5,1.5 -0.5,3.5 0,5"></path>
+    <path class="bookline" d="M10,10 h -20 c -2,0 -2,-5 0,-5 h20 v-15 h-17 c -2,0 -2,2 -2.25,3 l -2.25,14"></path>
+    <path class="bookline-bottom" d="M9,7.5 h -18"></path>
+</g>
+</a>
+
+<a xlink:href="#gjore-og-lage"><g id="gjore-lage-icon" transform="translate(616,016)">
+    <rect class="icon-bg" x="-15.5" y="-15.5" width="31" height="31" rx="2" />
+    <circle class="hode" cx="0" cy="1" r="13" />
+    <path class="smile" d="M8,7 c -1,7 -15,7 -16,0z"></path>
+    
+    <g id="helmet_group" transform="translate(0,0)">
+    <path class="helmet" d="M14,-4 c -5,-13 -23,-13 -28,0 z"></path>
+     <circle class="hodelykt" cx="0" cy="-9" r="3"/>
+     <circle class="hodelykt-senter" cx="0" cy="-9" r="0.75"/>
+    </g>
+
+     <path  class="eyes" d="M8 0 h -2 M -8 0 h 2"></path>
+     
+     <path class="visor" d="M14 -1 
+     c -4,-2 -24,-2 -28,0 
+     c -1,5 4,6 8 6 
+     c 7,0 4,-2 6,-2 
+     c 2,0 -1,2 6,2
+     c 4,0 9,-1 8,-6"></path>
+</g>
+</a>
+
+<a xlink:href="#gjore-og-lage-bw"><g id="gjore-lage-bw-icon" transform="translate(616,116)">
+    <rect class="icon-bg" x="-15.5" y="-15.5" width="31" height="31" rx="2" />
+    <circle class="hode" cx="0" cy="1" r="13" />
+    <path class="smile" d="M8,7 c -1,7 -15,7 -16,0z"></path>
+    
+    <g id="helmet_group" transform="translate(0,0)">
+    <path class="helmet" d="M14,-4 c -5,-13 -23,-13 -28,0 z"></path>
+     <circle class="hodelykt" cx="0" cy="-9" r="3"/>
+     <circle class="hodelykt-senter" cx="0" cy="-9" r="0.75"/>
+    </g>
+
+     <path  class="eyes" d="M8 0 h -2 M -8 0 h 2"></path>
+     
+     <path class="visor" d="M14 -1 
+     c -4,-2 -24,-2 -28,0 
+     c -1,5 4,6 8 6 
+     c 7,0 4,-2 6,-2 
+     c 2,0 -1,2 6,2
+     c 4,0 9,-1 8,-6"></path>
+</g>
+</a>
+
+<a xlink:href="#filmer"><g id="filmer-icon" transform="translate(716,016)">
+    <rect class="icon-bg" x="-15.5" y="-15.5" width="31" height="31" rx="2" />
+    <path class="play" d="M11 0 l -20 10 v-20 z"></path>
+</g>
+</a>
+
+<a xlink:href="#filmer-bw"><g id="filmer-icon-bw" transform="translate(716,116)">
+    <rect class="icon-bg" x="-15.5" y="-15.5" width="31" height="31" rx="2" />
+    <path class="play" d="M11 0 l -20 10 v-20 z"></path>
+</g>
+</a>
+
+<a xlink:href="#snutter-bw"><g id="snutter-bw-icon" transform="translate(816,116)">
+    <rect class="icon-bg" x="-15.5" y="-15.5" width="31" height="31" rx="2" />
+    <path class="frame" d="M-10,-11.5 h20 v 10 h-20 z"></path>
+    <path class="frame" d="M-10,3.5 h20 M-10,7.5 h20 M-10,11.5 h20 "/>
+</g>
+</a>
+
+<a xlink:href="#kviss-bw"><g id="kviss-bw-icon" class="kviss" transform="translate(916,116)">
+    <rect class="icon-bg" x="-15.5" y="-15.5" width="31" height="31" rx="2" />
+    <text x="0" y="0" dy="8">?</text>
+</g></a>
+
+</svg>

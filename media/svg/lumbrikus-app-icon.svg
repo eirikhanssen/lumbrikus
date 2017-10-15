@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-256 -256 512 512" preserveAspectRatio="xMidYMid meet">
+    <title>lumbrikus app icon</title>
+    <desc></desc>
+    <style type="text/css">
+        /*<![CDATA[*/
+        .textbg, .textfg {
+        fill:black;
+        text-anchor:middle;
+        font-family:sans-serif;
+        font-size:228px;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+        
+        }
+        .textbg {
+        stroke: #9cff6e;
+        stroke-width:36;
+        
+        }
+        .textfg {
+        stroke:black;
+        stroke-width: 6;
+        }
+        
+        circle {
+        fill: #7a2f4f;
+        }
+         /*]]>*/
+    </style>
+    <circle r="156" cx="0" cy="-90"></circle>
+    <circle r="72" cx="0" cy="172"></circle>
+    <circle r="72" cx="-174" cy="112"></circle>
+    <circle r="72" cx="174" cy="112"></circle>
+    <text class="textbg" x="0" y="-90" dy="72">L</text>
+    <text class="textfg" x="0" y="-90" dy="72">L</text>
+</svg>

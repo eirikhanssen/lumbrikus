@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="https://lumbrikus.no/css/interactive-svg.css" ?>   
+<svg
+    id="SVG_let_og_finn"
+    width="100%"
+    height="100%"
+    viewBox="-900 -600 1800 1200"
+    preserveAspectRatio="xMidYMid meet"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+     version="2.0"
+    
+    >
+    <title>Let og finn ord i bildet</title>
+    <defs>
+        <style type="text/css">
+            <![CDATA[*/
+            /*]]>*/
+        </style>
+    </defs>
+
+    
+
+    <image id="let_og_finn_bg" xlink:href="img/08-let-og-finn-bg.jpg" x="-900" y="-600" width="1800" height="1200"></image>
+    
+    <g id="g_active_zones" class="active_zones">
+        <path id="z_epletre" d="m -366,-569 c -47,39 -134,150 -69,180 68,32 117,71 188,101 63,26 141,99 208,64 72,-37 119,-107 117,-203 -1,-50 82,-119 -11,-141 -93,-21 -186,-31 -280,-37 -49,-3 -110,-0 -153,35 z"></path>
+        <path id="z_trost" d="m 625,-581 c -44,-36 -123,-3 -183,-10 -53,-7 -146,7 -95,73 39,50 71,192 115,155 62,-52 10,-175 116,-189 17,-2 59,-16 45,-28 z"></path>
+        <path id="z_rognebaer" d="m 395,477 c -43,-7 -120,9 -147,53 -49,80 105,130 169,76 C 479,554 450,486 395,477 Z m 348,-988 c -65,15 -131,86 -48,133 62,35 198,0 160,-83 -18,-39 -64,-61 -112,-50 z m -224,79 c 66,38 25,118 -52,86 -60,-24 -77,-100 3,-91 13,1 38,-0 48,4 z M 394,-379 c 76,14 90,109 1,151 -90,42 -174,11 -192,-74 -18,-82 107,-91 163,-83 13,1 15,4 27,7 z"></path>
+        <path id="z_rakle" d="m -666,-587 c -23,0 -38,24 -40,46 -1,17 -1,37 9,52 -27,15 -35,50 -29,79 5,27 17,56 42,72 16,10 38,1 46,-15 15,-31 13,-68 6,-101 1,-13 -20,-26 -9,-36 12,-19 17,-45 11,-68 -4,-15 -19,-29 -36,-29 z m 81,32 c -18,-0 -27,20 -28,36 -1,21 -3,45 10,64 11,12 31,6 39,-6 21,-24 18,-64 -4,-86 -4,-3 -10,-6 -16,-6 z m 176,42 c -24,-1 -45,20 -47,44 -3,31 5,65 25,90 8,13 30,17 40,3 14,-19 10,-45 14,-68 1,-20 4,-45 -11,-61 -5,-5 -13,-8 -21,-9 z"></path>
+        <path id="z_bjoerkefroe" d="m -435,-236 c 63,21 45,110 -17,125 -79,19 -152,-64 -100,-128 35,-17 -53,-21 -30,-80 27,-71 132,-76 152,-4 55,-100 209,41 103,95 -39,20 -72,-13 -107,-7 z"></path>
+        <path id="z_geitrams" d="m -686,578 c 19,-89 34,-177 58,-262 1,-87 24,-174 -0,-260 -7,-107 -17,-215 -6,-322 6,-60 -53,-137 -89,-56 -34,78 -72,156 -104,240 -29,78 -70,113 -64,197 5,86 -3,165 4,253 7,72 20,162 89,205 30,19 103,46 111,6 z"></path>
+        <path id="z_fuglevikke" d="m -491,206 c -71,-3 -125,57 -146,131 -22,81 6,149 57,212 57,71 137,66 161,-29 20,-83 44,-161 -14,-232 -20,-24 -24,-81 -57,-82 z"></path>
+        <path id="z_eple" d="m -126,403 c 75,-26 160,41 142,121 -21,92 -152,101 -215,63 -65,-40 -46,-142 25,-174 14,-6 31,-4 47,-10 z"></path>
+        <path id="z_hagesnegl" d="m -204,448 c -78,-67 -92,72 -173,62 -103,-13 -41,142 40,101 60,-29 200,9 165,-105 -6,-22 -15,-43 -32,-57 z"></path>
+        <path id="z_roedkloever" d="m 571,410 c -37,-58 -132,-49 -90,-137 39,-83 136,-2 178,42 54,59 -52,150 -87,94 z M 195,357 C 120,329 25,404 37,486 27,566 172,644 207,561 c 22,-71 73,-118 138,-147 57,-79 -76,-145 -121,-66 -6,6 -18,19 -29,10 z"></path>
+        <path id="z_kast_fra_meitemark" d="m 135,224 c -103,61 16,164 66,52 14,-32 -28,-74 -66,-52 z M -18,330 c -109,-50 -105,155 2,113 56,-22 38,-94 -2,-113 z"></path>
+        <path id="z_humle" d="m 280,350 c 13,-82 125,-42 146,32 18,65 10,113 -69,110 -47,-2 -51,8 -76,-43 -33,-69 -9,-46 -0,-99 z"></path>
+        <path id="z_mus" d="m 389,484 c -10,83 99,85 158,110 73,30 184,1 197,-86 C 758,407 649,333 562,356 505,370 396,431 389,484 Z"></path>
+        <path id="z_blaabaer" d="m 811,11 c -12,-0 -25,2 -38,9 -67,34 -105,125 -83,191 32,96 -135,63 -76,152 32,49 74,93 102,146 -61,-18 -95,59 -26,76 26,10 42,-7 47,-27 2,7 4,15 6,23 4,20 35,22 57,13 88,-34 152,-129 121,-211 -30,-81 -23,-141 -5,-220 14,-64 -36,-152 -103,-153 z"></path>
+    </g>
+    
+    <g id="g_ord">
+        <text class="ord" id="t_rakle" x="-630" y="-470" dy="20">rakle</text>
+        <text class="ord" id="t_bjoerkefroe" x="-460" y="-260" dy="20">bjørkefrø</text>
+        <text class="ord" id="t_epletre" x="-219" y="-553" dy="20">epletre</text>
+        <text class="ord" id="t_trost" x="542" y="-546" dy="20">trost</text>
+        <text class="ord" id="t_rognebaer" x="550" y="-320" dy="20">rognebær</text>
+        <use xlink:href="#t_rognebaer" x="-200" y="840"></use>
+        <text class="ord" id="t_kast_fra_meitemark" x="60" y="315" dy="20">kast fra meitemark</text>
+        <text class="ord" id="t_humle" x="345" y="280" dy="20">humle</text>
+        <text class="ord" id="t_mus" x="551" y="442" dy="20">mus</text>
+        <text class="ord" id="t_blaabaer" x="800" y="300" dy="20">blåbær</text>
+        <text class="ord" id="t_roedkloever" x="120" y="500" dy="20">rødkløver</text>
+        <use xlink:href="#t_roedkloever" x="420" y="-270"></use>
+        <text class="ord" id="t_hagesnegl" x="-300" y="400" dy="20">hagesnegl</text>
+        <text class="ord" id="t_eple" x="-117" y="494" dy="20">eple</text>
+        <text class="ord" id="t_fuglevikke" x="-572" y="226" dy="20">fuglevikke</text>
+        <text class="ord" id="t_geitrams" x="-758" y="22" dy="20">geitrams</text>
+    </g>
+    
+    <g id="g_ord_clones">
+           
+    </g>
+    
+    <script type="text/javascript" xlink:href="https://lumbrikus.no/js/libs/snap.svg-min.js"></script>
+    <script type="text/javascript" xlink:href="https://lumbrikus.no/js/let-og-finn.js"></script>
+    <!--<script type="text/javascript" xlink:href="https://lumbrikus.no/js/add-svg-words.js"></script>-->
+</svg>

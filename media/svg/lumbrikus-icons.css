@@ -1,0 +1,151 @@
+#lumbrikus-icon circle {
+    fill: rgb(129, 30, 76);
+}
+#lumbrikus-icon-bw circle {
+    fill: black;
+}
+
+#lumbrikus-icon text,
+#lumbrikus-icon-bw text {
+    font-family: sans-serif;
+    fill: black;
+    stroke: #9cff6e;
+    stroke-width: 3px;
+    paint-order: stroke;
+    stroke-linejoin: round;
+    text-anchor: middle;
+    font-size: 14px;
+}
+#lumbrikus-icon text+text,
+#lumbrikus-icon-bw text+text{
+    stroke-width: 1px;
+    stroke:black;
+}
+#lumbrikus-icon-bw {
+    fill: black;
+}
+
+#lumbrikus-icon-bw text
+ {
+    stroke: white;
+}
+
+.kap circle {
+    fill: black;
+}
+.kap text, .kviss text {
+    font-family: Arial, "DejaVu Sans", sans-serif;
+    text-anchor:middle;
+    font-size: 24px;
+    fill: white;
+    font-weight: bold;
+}
+.kviss text {
+    fill:black;
+    stroke: black;
+    stroke-width: 0.5px;
+}
+.icon-bg {
+    fill: white;
+    opacity: 0.5;
+}
+
+.thick {
+    stroke: black;
+    fill: transparent;
+    stroke-width: 2px;
+    stroke-linecap: butt;
+}
+#magnifier path {
+    stroke: black;
+    stroke-linecap: round;
+    stroke-width: 4px;
+}
+
+.bookline {
+    stroke: black;
+    stroke-linecap: round;
+    stroke-width: 1px;
+    fill: transparent; 
+    stroke-linejoin: round;
+}
+
+.bookline-bottom {
+    stroke: #777;
+    stroke-linecap: round;
+    stroke-width: 2px;
+}
+
+#ord-bw-icon .bookfill {
+    fill:black;
+}
+#ord-bw-icon .bookpaper {
+   fill: rgba(255,255,255,0.75);
+}
+
+.bookfill {
+    fill: rgb(255, 84, 84);
+}
+.bookpaper {
+    fill: rgb(245, 220, 198);
+}
+
+.hode {
+    stroke: black;
+    stroke-width: 1px;
+    fill: rgb(255, 234, 45); 
+}
+
+#gjore-lage-bw-icon .hode {
+    fill: transparent;
+}
+
+.smile {
+    stroke: black;
+    stroke-width: 1px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: rgb(255, 255, 255);
+}
+.helmet, .hodelykt {
+    stroke: black;
+    stroke-width: 1.5px;
+    stroke-linejoin: miter;
+    fill:white;
+}
+
+.visor, .eyes {
+    stroke: black;
+    stroke-width: 1px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: rgba(255, 255, 255, 0.7);
+}
+#filmer-icon .icon-bg {
+    fill: rgb(209, 15, 34);
+    opacity: 1;
+}
+
+#filmer-icon-bw .icon-bg {
+    fill: transparent;
+}
+#filmer-icon .play {
+    fill: white;
+}
+#filmer-icon-bw .play {
+    fill: black;
+}
+
+.kviss text {
+    stroke-width: 0.5px;
+    stroke: black;
+    stroke-linejoin: round;
+}
+
+.frame {
+    stroke: black;
+    stroke-width: 2px;
+    fill: transparent;
+    stroke-linecap: square;
+    stroke-linejoin: miter;
+}
