@@ -58,6 +58,7 @@ function lumbrikus_load_scripts() {
 	/* register scripts */
 	lumbrikus_include_custom_jquery();
 	//wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap-3.3.7.min.js', array('jquery'), '1.12.4', true );
+	wp_enqueue_script( 'svgxuse', get_template_directory_uri() . '/js/svgxuse.min.js', array('jquery'), '1.2.6', true );
 	wp_enqueue_script( 'lumbrikus', get_template_directory_uri() . '/js/lumbrikus.js', array('jquery'), '1.0.0', true );
 	
 }
