@@ -1,0 +1,57 @@
+text {
+fill:inherit;
+stroke: inherit;
+font-size: 48px;
+font-family: sans-serif;
+text-anchor: middle;
+}
+
+text tspan {
+text-anchor: start;
+}
+
+
+.active_zones path {
+stroke: transparent;;
+fill: transparent;
+stroke-width: 8;
+stroke-dasharray: 1 10;
+stroke-linecap: round;
+stroke-linejoin: round;
+
+}
+
+.active_zones path:hover,
+.active_zone path:focus {
+stroke: yellow;
+
+}
+
+#g_ord text {
+stroke-width: 20;
+stroke-linejoin: round;
+paint-order: stroke;
+}
+
+#g_ord {
+fill: black;
+stroke: white;
+}
+
+use.ord.bg {
+opacity: 0.7;
+stroke: white;
+}
+
+use.ord.fg {
+stroke: transparent;
+fill: black;
+}
+
+/* for debug */
+
+.debug {
+fill: magenta;
+}
+
+#pe {fill: transparent;}
