@@ -114,15 +114,21 @@ button.sjekk {
 .kviss label span.alternativ {
     background: #ddd;
     border-radius: 0.25em;
-    padding: .75em;
+    
     text-align: center;
     width: 80%;
     box-sizing: border-box;
     min-width: 10em;
+    min-height: 3rem;
+    line-height: 3rem;
     display: inline-block;
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
 
+}
+
+.kviss label span.alternativ:hover {
+    background-color: #eee;
 }
 .kviss label span:after {
     display: block;
@@ -143,8 +149,14 @@ button.sjekk {
 }
 
 .kviss input:checked+span {
-    background: rgb(36, 131, 255);
-    color:white;
+    background: rgb(153, 255, 51);
+    color:black;
+}
+
+.kviss input:checked+span:hover {
+
+    background: rgb(135, 230, 40);
+    /*background: rgb(201, 255, 51);*/
 }
 
 /* input styling */
@@ -156,28 +168,6 @@ button.sjekk {
     margin:0.4rem;
     position: relative;
 }
-/*
-.quiz-part label input.correct[type="checkbox"]::after,
-.quiz-part label input.correct[type="radio"]::after,
-.quiz-part label input.correct[type="checkbox"]::before,
-.quiz-part label input.correct[type="radio"]::before
- {
-    content:"";
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    height: 4rem;
-    width: 4rem;
-    border: 9px double black;
-    box-sizing: border-box;
-    margin-left: -1px;
-}
-
-.quiz-part label input.correct[type="checkbox"]::before,
-.quiz-part label input.correct[type="radio"]::before {
-    border: 9px solid lime;
-}*/
 
 .quiz-part.answered label input {
     visibility: hidden;
@@ -185,10 +175,12 @@ button.sjekk {
 
 .quiz-part.answered label input.incorrect:checked + span.alternativ{
     background: rgb(189, 8, 28);
+    color: white;
 }
 
 .quiz-part.answered label input.correct:checked + span.alternativ{
-    background: rgb(0, 163, 27);
+    background: rgb(0, 121, 18);
+    color: white;
 }
 
 .quiz-part.answered label input.incorrect::after,
@@ -222,14 +214,69 @@ button.sjekk {
     background-repeat: no-repeat;
 }
 
+.quiz-part nav.quiz-nav {
+    display: flex;
+    justify-content: center;
 
-button.sjekk {
+}
+
+.quiz-nav .forrige,
+.quiz-nav .neste {
+    width: 40%;
+    max-width: 9.5rem;
+    height: 3rem;
+    line-height: 3rem;
+    margin: 0 .5rem .75rem;
+    background: rgb(0, 115, 255);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: .25rem;
+    position: relative;
+    text-decoration: none;
+    box-sizing: content-box;
+    border: 1px solid transparent;
+}
+.quiz-nav .forrige:hover,
+.quiz-nav .neste:hover {
+    background: rgb(0, 89, 255);
+    border-color: rgb(3, 63, 101);
+    text-shadow: 0 0 5px rgb(3, 63, 101);
+}
+
+a[disabled] {opacity: 0.1; pointer-events: none; cursor: default;}
+
+.quiz-nav .forrige span::before,
+.quiz-nav .neste span::after {
+    content:"";
+    position: absolute;
+    display: block;
+    height: 3rem;
+    width: 3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top:0;
+}
+.quiz-nav .forrige span::before {
+    right: 100%;
+    margin-right: .5rem;
+    background:url(https://lumbrikuz.no/media/svg/lumbrikus-icons.svg#forrige);
+}
+.quiz-nav .neste span::after {
+    left: 100%;
+    margin-left: .5rem;
+    background:url(https://lumbrikuz.no/media/svg/lumbrikus-icons.svg#neste);
+}
+
+.quiz-part button.sjekk {
     display: block;
     width: 100%;
     max-width: 20rem;
     height: 3rem;
     margin: 0 auto;
     font-weight: bold;
+    margin-bottom: 2rem;
+    flex-shrink: 0;
 }
 
 .quiz-part .forklaring {

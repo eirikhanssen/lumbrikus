@@ -15,7 +15,7 @@
 
     <h2>Kapittel 1 kviss</h2>
 
-    <fieldset class="quiz-part" data-spm="0">
+    <fieldset id="kviss-spm-0" class="quiz-part" data-spm="0">
             <legend>1 av 18</legend>
             <h3>Hvem er dette?</h3>
             <figure>
@@ -30,11 +30,14 @@
             <label><input name="choices0" type="radio" value="Sobia"><span class="alternativ">Sobia</span></label>
             <p class="forklaring">Jenny er jenta med blondt hår. Har du sett de andre i fortellingen?</p>
             <button disabled class="sjekk">Sjekk svar</button>
-            <button class="forrige">Forrige</button>
-            <button class="neste">Forrige</button>
+            <nav class="quiz-nav">
+                    <a disabled href="#" class="forrige"><span>Forrige</span></a>
+                    <a href="#kviss-spm-1" title="Til spørsmål 1" class="neste"><span>Neste</span></a>
+            </nav>
+            
     </fieldset>
 
-    <fieldset class="quiz-part" data-spm="1" hidden>
+    <fieldset id="kviss-spm-1" class="quiz-part" data-spm="1" hidden>
             <legend>2 av 18</legend>
             <h3>Hvem er dette ikke?</h3>
             <figure>
@@ -52,8 +55,8 @@
 
     </fieldset>
 
-    <fieldset class="quiz-part answered" data-spm="0">
-            <legend>1 av 18</legend>
+    <fieldset id="kviss-spm-2" class="quiz-part answered" data-spm="2">
+            <legend>3 av 18</legend>
             <h3>Hvem er dette?</h3>
             <figure>
                 <div class="img_container">
@@ -69,8 +72,8 @@
             <button disabled class="sjekk">Sjekk svar</button>
     </fieldset>
 
-    <fieldset class="quiz-part" data-spm="1">
-            <legend>2 av 18</legend>
+    <fieldset id="kviss-spm-3" class="quiz-part" data-spm="3">
+            <legend>4 av 18</legend>
             <h3>Hvem er dette ikke?</h3>
             <figure>
                 <div class="img_container">
@@ -86,8 +89,8 @@
             <button disabled class="sjekk">Sjekk svar</button>
     </fieldset>
 
-    <fieldset class="quiz-part answered" data-spm="1">
-            <legend>2 av 18</legend>
+    <fieldset id="kviss-spm-4" class="quiz-part answered" data-spm="4">
+            <legend>5 av 18</legend>
             <h3>Hvem er dette ikke?</h3>
             <figure>
                 <div class="img_container">
