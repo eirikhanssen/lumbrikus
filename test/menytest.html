@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="t01.css">
+    <title>Document</title>
+    <style>
+        html {
+            font: 1em/1.5 Helvetica, sans-serif;
+        }
+        body {
+            background: rgb(163, 124, 167);
+        }
+        #chapmenu a {
+            font-size: 2.5em;
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: contain;
+           
+            display: inline-block;
+        }
+
+        @media screen and (orientation:portrait){
+            #chapmenu a{background-position: center top;}
+        }
+
+        @media screen and (orientation:landscape){
+            #chapmenu a{background-position: center top;}
+        }
+
+        .lum {background: url(https://lumbrikus.no/media/svg/lumbrikus-icons.svg#lumbrikus);}
+        .kap1 {background: url(https://lumbrikus.no/media/svg/lumbrikus-icons.svg#kap1);}
+        .kort {background: url(https://lumbrikus.no/media/svg/lumbrikus-icons.svg#kort-fortelling-bw);}
+        .lang {background: url(https://lumbrikus.no/media/svg/lumbrikus-icons.svg#lang-fortelling-bw);}
+        .finn {background: url(https://lumbrikus.no/media/svg/lumbrikus-icons.svg#let-og-finn-bw);}
+        .ord {background: url(https://lumbrikus.no/media/svg/lumbrikus-icons.svg#ord);}
+        .gjore {background: url(https://lumbrikus.no/media/svg/lumbrikus-icons.svg#gjore-og-lage);}
+        .filmer {background: url(https://lumbrikus.no/media/svg/lumbrikus-icons.svg#filmer);}
+        .snutter {background: url(https://lumbrikus.no/media/svg/lumbrikus-icons.svg#snutter-bw);}
+        .kviss {background: url(https://lumbrikus.no/media/svg/lumbrikus-icons.svg#kviss-bw);}
+
+
+
+        
+        nav ul {list-style-type: none; padding: 0;}
+        nav ul a {padding: 2em; text-align: center; position: relative; margin: 0.25em;}
+        
+        nav li {float:left; margin-bottom: 2.5em;}
+        nav a span {font-size: 0.9em; position: absolute; top: 100%; left: 0; right: 0; padding-top: 0em; line-height:  1.15em;}
+        nav a:hover {color: white;}
+        nav::after {
+            display: block;
+            content: "";
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav id="chapmenu">
+        <ul>
+            <li><a title="Startsiden" class="lum" href="#t1"><span>Lumbrikus</span></a></li>
+            <li><a title="Start på kapittel 1" class="kap1" href="#t1"><span>Kapittel 1</span></a></li>
+            <li><a title="kort fortelling" class="kort" href="#t1"><span>kort fortelling</span></a></li>
+            <li><a title="lang fortelling" class="lang" href="#t1"><span>lang fortelling</span></a></li>
+            <li><a title="let etter ord i bildet" class="finn" href="#t1"><span>let og finn</span></a></li>
+            <li><a title="ordliste til kapittel 1" class="ord" href="#t1"><span>ord</span></a></li>
+            <li><a title="oppgaver du kan gjøre eller lage" class="gjore" href="#t1"><span>gjøre og lage</span></a></li>
+            <li><a title="se på filmer" class="filmer" href="#t1"><span>filmer</span></a></li>
+            <li><a title="les små faktasnutter med bilder og tekst" class="snutter" href="#t1"><span>snutter</span></a></li>
+            <li><a title="test kunnskapene dine" class="kviss" href="#t1"><span>kviss</span></a></li>
+        </ul>
+    </nav>
+</header>
+    <h1>hei på deg</h1>
+    <p>Dette er så fint</p>
+    <p>Vakkert Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nam reiciendis et repellendus illum id praesentium provident expedita officiis. Nulla excepturi eveniet exercitationem accusantium iste doloremque amet dolorum laborum nemo.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum explicabo labore ullam. Corporis aliquam saepe impedit nihil odio ex, corrupti perspiciatis enim aliquid totam repellendus unde inventore optio quaerat. Asperiores!</p>
+    <div class="lum"></div>
+</body>
+</html>
