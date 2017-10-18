@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kviss Demo</title>
+    <script src="https://lumbrikuz.no/js/lib/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Roboto">
+    <link rel="stylesheet" href="https://lumbrikuz.no/css/kviss.css">
+</head>
+<body class="debug_">
+    <header><h1>Lumbrikuz</h1></header>
+   <main class="kviss" id="kviss-demo" data-quiz-number="">
+
+    <h2>Kapittel 1 kviss</h2>
+
+    <fieldset class="quiz-part" data-spm="0">
+            <legend>1 av 18</legend>
+            <h3>Hvem er dette?</h3>
+            <figure>
+                <div class="img_container">
+                    <img src="/media/img/kviss_jenny_hode.jpg"/>
+                </div>
+                <figcaption>Ei jente med blondt hår. Hun har en hodelykt på seg.</figcaption>
+
+            </figure>
+            <label><input class="correct" name="choices0" type="radio" value="Herr Høne"><span class="alternativ">Herr Høne</span></label>
+            <label><input class="incorrect" name="choices0" type="radio" value="Jenny"><span class="alternativ">Jenny</span></label>
+            <label><input name="choices0" type="radio" value="Sobia"><span class="alternativ">Sobia</span></label>
+            <p class="forklaring">Jenny er jenta med blondt hår. Har du sett de andre i fortellingen?</p>
+            <button disabled class="sjekk">Sjekk svar</button>
+            <button class="forrige">Forrige</button>
+            <button class="neste">Forrige</button>
+    </fieldset>
+
+    <fieldset class="quiz-part" data-spm="1" hidden>
+            <legend>2 av 18</legend>
+            <h3>Hvem er dette ikke?</h3>
+            <figure>
+                <div class="img_container">
+                    <img src="/media/img/kviss_jenny_hode.jpg"/>
+                </div>
+                <figcaption>Ei jente med blondt hår. Hun har en hodelykt på seg.</figcaption>
+
+            </figure>
+            <label><input name="choice2-1" type="checkbox" value="Herr Høne"><span class="alternativ">Herr Høne</span></label>
+            <label><input name="choice2-2" type="checkbox" value="Jenny"><span class="alternativ">Jenny</span></label>
+            <label><input name="choice2-3" type="checkbox" value="Sobia"><span class="alternativ">Sobia</span></label>
+            <p class="forklaring">Jenny er jenta med blondt hår. Har du sett de andre i fortellingen?</p>
+            <button disabled class="sjekk">Sjekk svar</button>
+
+    </fieldset>
+
+    <fieldset class="quiz-part answered" data-spm="0">
+            <legend>1 av 18</legend>
+            <h3>Hvem er dette?</h3>
+            <figure>
+                <div class="img_container">
+                    <img src="/media/img/kviss_jenny_hode.jpg"/>
+                </div>
+                <figcaption>Ei jente med blondt hår. Hun har en hodelykt på seg.</figcaption>
+
+            </figure>
+            <label><input class="correct" name="choices0" type="radio" value="Herr Høne"><span class="alternativ">Herr Høne</span></label>
+            <label><input class="incorrect" name="choices0" type="radio" value="Jenny"><span class="alternativ">Jenny</span></label>
+            <label><input name="choices0" type="radio" value="Sobia"><span class="alternativ">Sobia</span></label>
+            <p class="forklaring">Jenny er jenta med blondt hår. Har du sett de andre i fortellingen?</p>
+            <button disabled class="sjekk">Sjekk svar</button>
+    </fieldset>
+
+    <fieldset class="quiz-part" data-spm="1">
+            <legend>2 av 18</legend>
+            <h3>Hvem er dette ikke?</h3>
+            <figure>
+                <div class="img_container">
+                    <img src="/media/img/kviss_jenny_hode.jpg"/>
+                </div>
+                <figcaption>Ei jente med blondt hår. Hun har en hodelykt på seg.</figcaption>
+
+            </figure>
+            <label><input name="choice2-1" type="checkbox" value="Herr Høne"><span class="alternativ">Herr Høne</span></label>
+            <label><input name="choice2-2" type="checkbox" value="Jenny"><span class="alternativ">Jenny</span></label>
+            <label><input name="choice2-3" type="checkbox" value="Sobia"><span class="alternativ">Sobia</span></label>
+            <p class="forklaring">Jenny er jenta med blondt hår. Har du sett de andre i fortellingen?</p>
+            <button disabled class="sjekk">Sjekk svar</button>
+    </fieldset>
+
+    <fieldset class="quiz-part answered" data-spm="1">
+            <legend>2 av 18</legend>
+            <h3>Hvem er dette ikke?</h3>
+            <figure>
+                <div class="img_container">
+                    <img src="/media/img/kviss_jenny_hode.jpg"/>
+                </div>
+                <figcaption>Ei jente med blondt hår. Hun har en hodelykt på seg.</figcaption>
+
+            </figure>
+            <label><input class="correct" name="choice2-1" type="checkbox" value="Herr Høne"><span class="alternativ">Herr Høne</span></label>
+            <label><input class="incorrect"  name="choice2-2" type="checkbox" value="Jenny"><span class="alternativ">Jenny</span></label>
+            <label><input class="correct"  name="choice2-3" type="checkbox" value="Sobia"><span class="alternativ">Sobia</span></label>
+            <p class="forklaring">Jenny er jenta med blondt hår. Har du sett de andre i fortellingen?</p>
+            <button disabled class="sjekk">Sjekk svar</button>
+    </fieldset>
+
+    </main>
+    <footer>
+        <p>Lorem | Ipsum | Dolor | Sit | Amet</p>
+    </footer>
+    <script src="https://lumbrikuz.no/js/kviss.js"></script>
+</body>
+</html>
