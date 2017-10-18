@@ -161,6 +161,51 @@
     stroke-linecap: square;
     stroke-linejoin: miter;
 }
+
+.galt {
+    fill: none;
+    stroke: rgb(189, 8, 28);
+    stroke-width: 6px;
+    stroke-linecap: butt;
+}
+.riktig .hode {
+    fill: rgb(255, 234, 45);;
+    stroke: black;
+    stroke-width: 2px;
+}
+.riktig .hode-oye {
+    fill:black;
+    stroke: none;
+}
+.riktig .hode-smil {
+    fill: white;
+    stroke: black;
+    stroke-width: 2px;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+}
+
+.mulig .hode {
+    fill: rgb(156, 218, 236);;
+    stroke: rgb(0, 78, 122);
+    stroke-width: 2px;
+}
+.mulig .hode-oye {
+    fill:rgb(0, 78, 122);
+    stroke: none;
+}
+.mulig .hode-smil {
+    fill: none;
+    stroke: rgb(0, 78, 122);
+    stroke-width: 2px;
+    stroke-linecap:round;
+}
+
+.hint-riktig {
+    fill: transparent;
+    stroke: rgb(0, 163, 27);
+    stroke-width: 6px;
+}
      </style>
     <title>Let og finn ord i bildet</title>
     <view id="lumbrikus" viewBox="0 0 32 32"/>
@@ -190,6 +235,10 @@
     <view id="snutter-bw" viewBox="800 100 32 32"/>
     <view id="kviss" viewBox="900 000 32 32"/>
     <view id="kviss-bw" viewBox="900 100 32 32"/>
+    <view id="riktig-hode" viewBox="1000 000 32 32"/>
+    <view id="galt" viewBox="1000 100 32 32"/>
+    <view id="hint-riktig" viewBox="1000 200 32 32"/>
+    <view id="mulig-hode" viewBox="1000 300 32 32"/>
 
     <a xlink:href="#lumbrikus">
     <g id="lumbrikus-icon" transform="translate(16,16)">
@@ -391,6 +440,28 @@
 <a xlink:href="#kviss-bw"><g id="kviss-bw-icon" class="kviss" transform="translate(916,116)">
     <rect class="icon-bg" x="-15.5" y="-15.5" width="31" height="31" rx="2" />
     <text x="0" y="0" dy="8">?</text>
+</g></a>
+
+<a xlink:href="#riktig-hode"><g id="riktig-hode-icon" class="riktig" transform="translate(1016,16)">
+    <circle class="hode" cx="0" cy="0" r="15"></circle>
+    <circle class="hode-oye" cx="7" cy="-5" r="2"></circle>
+    <circle class="hode-oye" cx="-7" cy="-5" r="2"></circle>
+    <path class="hode-smil" d="M-10,3 C -5,13 5,13 10,3 z"/>
+</g></a>
+
+<a xlink:href="#galt"><g id="galt-icon" transform="translate(1016,116)">
+    <path class="galt" d="M-13 -13 L 13 13 M-13 13 L 13 -13"></path>
+</g></a>
+
+<a xlink:href="#hint-riktig"><g id="hint-icon" transform="translate(1016,216)">
+    <path class="hint-riktig" d="M12 0 L2 9 L 2 6 L -13 6 L -13 -6 L 2 -6 L2 -9 z"></path>
+</g></a>
+
+<a xlink:href="#mulig-hode"><g id="mulig-hode-icon" class="mulig" transform="translate(1016,316)">
+    <circle class="hode" cx="0" cy="0" r="15"></circle>
+    <circle class="hode-oye" cx="7" cy="-5" r="2"></circle>
+    <circle class="hode-oye" cx="-7" cy="-5" r="2"></circle>
+    <path class="hode-smil" d="M-10,3 C -5,13 5,13 10,3"/>
 </g></a>
 
 </svg>
