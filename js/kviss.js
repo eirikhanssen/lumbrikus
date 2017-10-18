@@ -2,51 +2,6 @@
 $( document ).ready(function() {
     console.log( "ready!" );
 
-    function htmlEncode(value) {
-        return $(document.createElement('div')).text(value).html();
-    }
-
-    function addChoices(choices) {
-        if (typeof choices !== "undefined" && $.type(choices) == "array") {
-            $('#choice-block').empty();
-            for (var i = 0; i < choices.length; i++) {
-                $(document.createElement('li')).addClass('choice choice-box').attr('data-index', i).text(choices[i]).appendTo('#choice-block');
-            }
-        }
-    }
-
-    function setupButtons() {
-        $('.choice').on('mouseover', function () {
-            $(this).css({
-                'background-color': '#e1e1e1'
-            });
-        });
-        $('.choice').on('mouseout', function () {
-            $(this).css({
-                'background-color': '#fff'
-            });
-        })
-        $('.choice').on('click', function () {
-            picked = $(this).attr('data-index');
-            $('.choice').removeAttr('style').off('mouseout mouseover');
-            $(this).css({
-                'border-color': '#222',
-                'font-weight': 700,
-                'background-color': '#c1c1c1'
-            });
-            if (submt) {
-                submt = false;
-                $('#submitbutton').css({
-                    'color': '#000'
-                }).on('click', function () {
-                    $('.choice').off('click');
-                    $(this).off('click');
-                    processQuestion(picked);
-                });
-            }
-        })
-    }
-
     function quizInit() {
 
         var quizzies = [];
