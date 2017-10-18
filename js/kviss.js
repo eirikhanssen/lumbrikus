@@ -226,5 +226,7 @@ $( document ).ready(function() {
         var quiztitle = quizzies[quiznum].title;
         var quiz = quizzies[quiznum].q_and_a;
         var quiz_len = quiz.length;
+    }
 
-       
+
+});
