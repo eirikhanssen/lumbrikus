@@ -1,4 +1,250 @@
+/* debug */
+.debug .kviss figure {
+    background: magenta;
+}
+.debug .quiz-part figcaption {
+    background: yellow;
+}
+.debug .kviss label {
+    background: cyan;
+}
+/* typography */
+
 html {
     font: 1em/1.25 "Open Sans", sans-serif;
 }
 
+header {
+    font-size: 0.5em;
+}
+
+.kviss fieldset,
+.kviss fieldset legend {
+    border: 2px solid rgb(106, 140, 180);
+}
+.kviss fieldset {
+    position: relative;
+    border-radius: 0.25em;
+    padding:0.25em;
+}
+.kviss fieldset legend {
+    padding: 0.5em;
+    border-radius: 1em;
+    line-height: 0.5em;
+    position: absolute;
+    left: 50%;
+    top:0;
+    transform: translate(-50%,-50%);
+    background: white;
+    min-width: 10em;
+    text-align: center;
+
+}
+
+.quiz-part figcaption {
+    font-family: "Open Sans Condensed", sans-serif;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.quiz-part h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.img_container {
+    position: relative;
+    left: -.5rem;
+    top: -.5rem;
+    width: 400px;
+    height: 300px;
+    max-width: 70vw;
+    max-height: 60vw;
+    overflow: hidden;
+    background: white;
+    border: .5rem solid rgb(46, 46, 46);
+    margin-bottom: 0em;
+    box-sizing: border-box;
+   padding: .5rem;
+    
+ 
+}
+.img_container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.kviss figure, 
+.kviss label,
+.kviss .img_container,
+button.sjekk {
+    max-width: 20rem;
+    box-sizing: border-box;
+}
+
+.kviss figure {
+    padding: 0.5em;
+    margin: auto;
+}
+
+.kviss fieldset figure img {
+    
+    width: 100%;
+    height: auto;
+    display: block;
+    margin:auto;
+    box-sizing: border-box;
+    margin-bottom: 0.5rem;
+}
+
+.kviss label {
+    margin: 1em auto;
+    display: flex;
+    justify-content: space-between;
+    min-height: 3rem;
+    position: relative;
+}
+.kviss label > * {
+    display: block;
+    flex-shrink: 0;
+}
+
+/* make it look like a button */
+.kviss label span.alternativ {
+    background: #ddd;
+    border-radius: 0.25em;
+    padding: .75em;
+    text-align: center;
+    width: 80%;
+    box-sizing: border-box;
+    min-width: 10em;
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+
+}
+.kviss label span:after {
+    display: block;
+    height:1px;
+    content:"";
+    clear:both;
+}
+
+.selfClear {
+    display: block;
+}
+.selfClear:after {
+    content: ".";
+    display: block;
+    height: 0px;
+    clear: both;
+    visibility: hidden;
+}
+
+.kviss input:checked+span {
+    background: rgb(36, 131, 255);
+    color:white;
+}
+
+/* input styling */
+
+.quiz-part label input[type="checkbox"],
+.quiz-part label input[type="radio"] {
+    width:2.4rem;
+    height:2.4rem;
+    margin:0.4rem;
+    position: relative;
+}
+/*
+.quiz-part label input.correct[type="checkbox"]::after,
+.quiz-part label input.correct[type="radio"]::after,
+.quiz-part label input.correct[type="checkbox"]::before,
+.quiz-part label input.correct[type="radio"]::before
+ {
+    content:"";
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height: 4rem;
+    width: 4rem;
+    border: 9px double black;
+    box-sizing: border-box;
+    margin-left: -1px;
+}
+
+.quiz-part label input.correct[type="checkbox"]::before,
+.quiz-part label input.correct[type="radio"]::before {
+    border: 9px solid lime;
+}*/
+
+.quiz-part.answered label input {
+    visibility: hidden;
+}
+
+.quiz-part.answered label input.incorrect:checked + span.alternativ{
+    background: rgb(189, 8, 28);
+}
+
+.quiz-part.answered label input.correct:checked + span.alternativ{
+    background: rgb(0, 163, 27);
+}
+
+.quiz-part.answered label input.incorrect::after,
+.quiz-part.answered label input.correct::after {
+    content:"";
+    display: block;
+    visibility: visible;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    /*border: 1px solid magenta;*/
+    
+}
+.quiz-part.answered label input.incorrect:checked::after {
+    background:url(https://lumbrikuz.no/media/svg/lumbrikus-icons.svg#galt);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.quiz-part.answered label input.correct:checked::after {
+    background:url(https://lumbrikuz.no/media/svg/lumbrikus-icons.svg#riktig-hode);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.quiz-part.answered label input.correct::after {
+    background:url(https://lumbrikuz.no/media/svg/lumbrikus-icons.svg#hint-riktig);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+button.sjekk {
+    display: block;
+    width: 100%;
+    max-width: 20rem;
+    height: 3rem;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.quiz-part .forklaring {
+    visibility: hidden;
+    text-align: center;
+    border: 1px dashed black;
+    background: rgb(255, 255, 156);
+    padding: .5em;
+    max-width: 40em;
+    display: block;
+    margin: auto;
+    border-radius: 1em;
+    margin-bottom: 1rem;
+}
+
+.quiz-part.answered .forklaring {
+    visibility: visible;
+}
