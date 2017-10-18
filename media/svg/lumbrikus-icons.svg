@@ -210,7 +210,7 @@
 
 .forrige, .neste {
     fill: transparent;
-    stroke: #555;
+    stroke: #999;
     stroke-width: 6px;
 }
 
