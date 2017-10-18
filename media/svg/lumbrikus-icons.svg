@@ -4,7 +4,7 @@
     id="SVG_let_og_finn"
     width="100%"
     height="100%"
-    viewBox="-32 -32 1024 1200"
+    viewBox="-32 -32 1200 1200"
     preserveAspectRatio="xMidYMid meet"
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -152,6 +152,7 @@
     stroke-width: 0.5px;
     stroke: black;
     stroke-linejoin: round;
+    font-size: 2.5em;
 }
 
 .frame {
@@ -206,6 +207,13 @@
     stroke: rgb(0, 163, 27);
     stroke-width: 6px;
 }
+
+.forrige, .neste {
+    fill: transparent;
+    stroke: #555;
+    stroke-width: 6px;
+}
+
      </style>
     <title>Let og finn ord i bildet</title>
     <view id="lumbrikus" viewBox="0 0 32 32"/>
@@ -239,6 +247,8 @@
     <view id="galt" viewBox="1000 100 32 32"/>
     <view id="hint-riktig" viewBox="1000 200 32 32"/>
     <view id="mulig-hode" viewBox="1000 300 32 32"/>
+    <view id="neste" viewBox="1100 000 32 32"/>
+    <view id="forrige" viewBox="1100 100 32 32"/>
 
     <a xlink:href="#lumbrikus">
     <g id="lumbrikus-icon" transform="translate(16,16)">
@@ -439,7 +449,7 @@
 
 <a xlink:href="#kviss-bw"><g id="kviss-bw-icon" class="kviss" transform="translate(916,116)">
     <rect class="icon-bg" x="-15.5" y="-15.5" width="31" height="31" rx="2" />
-    <text x="0" y="0" dy="8">?</text>
+    <text x="0" y="0" dy="13">?</text>
 </g></a>
 
 <a xlink:href="#riktig-hode"><g id="riktig-hode-icon" class="riktig" transform="translate(1016,16)">
@@ -454,7 +464,7 @@
 </g></a>
 
 <a xlink:href="#hint-riktig"><g id="hint-icon" transform="translate(1016,216)">
-    <path class="hint-riktig" d="M12 0 L2 9 L 2 6 L -13 6 L -13 -6 L 2 -6 L2 -9 z"></path>
+    <path class="hint-riktig" d="M11.5 0 L2 9 L 2 6 L -13 6 L -13 -6 L 2 -6 L2 -9 z"></path>
 </g></a>
 
 <a xlink:href="#mulig-hode"><g id="mulig-hode-icon" class="mulig" transform="translate(1016,316)">
@@ -463,5 +473,14 @@
     <circle class="hode-oye" cx="-7" cy="-5" r="2"></circle>
     <path class="hode-smil" d="M-10,3 C -5,13 5,13 10,3"/>
 </g></a>
+
+<a xlink:href="#neste"><g id="neste-icon" transform="translate(1116,16)">
+    <path class="neste" d="M11.5 0 L2 9 L 2 6 L -13 6 L -13 -6 L 2 -6 L2 -9 z"></path>
+</g></a>
+
+<a xlink:href="#forrige"><g id="forrige-icon" transform="translate(1116,116)">
+    <path class="forrige" d="M11.5 0 L2 9 L 2 6 L -13 6 L -13 -6 L 2 -6 L2 -9 z" transform="scale(-1,1)"></path>
+</g></a>
+
 
 </svg>
