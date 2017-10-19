@@ -1,9 +1,9 @@
 // A $( document ).ready() block.
 $( document ).ready(function() {
-    console.log( "ready!" );
+    console.log( "document ready()" );
 
-    function quizInit() {
-
+    function quiz() {
+        console.log("quiz()");
         var quizzies = [];
         
         var quiz01 = {
@@ -117,7 +117,6 @@ $( document ).ready(function() {
                     riktige_svar: ["Blomsterstøv (pollen)"],
                     forklaring: "Støvet kommer fra blomsten og setter seg på humla."
                 },
-                ,
                 {
                     spm: "Hva er dette?",
                     bilde: "/media/img/kviss_humle.jpg",
@@ -217,16 +216,91 @@ $( document ).ready(function() {
             ]
         };
 
-
-
+        /* Add the different quizzies in one array */
         quizzies[1] = quiz01;
 
-        var app = $("#kviss");
-        var quiznum = parseInt(app.attr('data-quiz-number'));
-        var quiztitle = quizzies[quiznum].title;
-        var quiz = quizzies[quiznum].q_and_a;
-        var quiz_len = quiz.length;
+        /* shared variables to the quiz script */
+        var app,
+        quiz_num,
+        quiz_title,
+        quiz_bank,
+        quiz_len = 10;
+
+        /**
+        * Shuffles a copy of an, returns the copy. 
+        * @param {Array} src items An array containing the items.
+        */
+        function shuffle(src) {
+            var a = src.slice();
+            var j, x, i;
+            for (i = a.length - 1; i > 0; i--) {
+                j = Math.floor(Math.random() * (i + 1));
+                x = a[i];
+                a[i] = a[j];
+                a[j] = x;
+            }
+            return a;
+        }
+
+        /**
+         * Clears out old quiz
+         */
+        function clear_quiz(node) {
+            node.empty();
+        }
+
+        /**
+         * return a quiz-array with 10 questions drawn randomly from source quiz-array
+         * @param {array} source An array with question-objects
+         * @param {int} len Integer, how many questions to draw
+         */
+        function make_quiz_selection(source, len) {
+            var copy = source.slice();
+            shuffle(copy);
+            var quiz_sample = copy.slice(0,len);
+            return quiz_sample;
+        }
+
+        function start_new_quiz(domcontainer,title, quiz_source, quiz_len) {
+            clear_quiz(domcontainer); // clear out old quiz if present
+            var quiz_sample = make_quiz_selection(quiz_source, quiz_len);
+            console.log(quiz_source);
+            console.log(quiz_sample);
+            
+        }
+
+        function quiz_init(domcontainer_selector) {
+            console.log("quiz_init()");
+            app = $(domcontainer_selector); // the quiz dom-container
+            // needs to be more robust
+            var quiz_num = parseInt(app.attr('data-quiz-number'));
+            quiz_title = quizzies[quiz_num].title;
+            quiz_bank = quizzies[quiz_num].q_and_a;
+            
+            start_new_quiz(app, quiz_title, quiz_bank, quiz_len);
+        }
+
+        quiz_init("#kviss");
+        
     }
 
+    quiz();
 
 });
+
+/**
+ * [sjekk svar] er disabled
+ * - når minst ett alternativ er krysset av, fjernes 'disabled' fra [sjekk svar]
+ * Trykk på [sjekk svar]
+ * - [sjekk svar] blir disabled
+ * - fieldset får klassen "answered"
+ * - alle input i samme fieldset blir disabled
+ * - for hver input, sjekk om attr(value) finnes i riktige svar
+ *     - sett klassen "correct" eller "incorrect"
+ *  - [Neste] blir ikke disabled lengre
+ *  - oppdater_poengsum()
+ * [Forrige] fra første spørsmål er alltid disabled
+ * 
+ * [Neste] er disabled
+ * - blir enabled når svar er sjekket.
+ */
