@@ -255,17 +255,86 @@ $( document ).ready(function() {
          * @param {int} len Integer, how many questions to draw
          */
         function make_quiz_selection(source, len) {
-            var copy = source.slice();
-            shuffle(copy);
+            var copy = shuffle(source.slice());
             var quiz_sample = copy.slice(0,len);
             return quiz_sample;
         }
 
         function start_new_quiz(domcontainer,title, quiz_source, quiz_len) {
+            
+            function determine_input_type(num) {
+                if(num > 1) {
+                    return "checkbox";
+                } else {
+                    return "radio";
+                }
+            }
+
+            function generate_figure_markup(obj) {
+                if(obj.bilde !== undefined && obj.bilde !== "") {
+                    return '<figure>\
+                    <div class="img_container">\
+                        <img src="' + obj.bilde + '" alt=""/>\
+                    </div>\
+                    <figcaption>' + obj.bildetekst + '</figcaption>\
+                </figure>';
+                } else {
+                    return '<div class="mangler_bilde"></div><p class="mangler_bilde">Mangler bildereferanse.</p>';
+                }
+            }
+
+            function generate_input_name(index, input_type, spm_nr) {
+                switch (input_type) {
+                    case "checkbox":
+                        return 'choice-' + spm_nr + '-' + index;
+                    break;
+                    default:/* default is radio */
+                        return 'choice-' + spm_nr;
+                    break;
+                }
+            }
+
+            function generate_svaralternativ_markup(index, value, input_type, spm_nr) {
+                var input_name = generate_input_name(index, input_type, spm_nr);
+
+                return $('<label>\
+                <input name="' + input_name + '" type="' + input_type + '" value="' + value + '">\
+                <span class="alternativ">' + value + '</span>\
+                </label>');
+            }
+
             clear_quiz(domcontainer); // clear out old quiz if present
             var quiz_sample = make_quiz_selection(quiz_source, quiz_len);
-            console.log(quiz_source);
-            console.log(quiz_sample);
+
+            //console.log(quiz_source);
+            //console.log(quiz_sample);
+            //console.log(title);
+            //console.log(quiz_len);
+            domcontainer.append("<h2>" + title + "</h2>");
+            $.each(quiz_sample, function( index, obj) {
+                var spm_nr = index + 1;
+                var figure_markup = generate_figure_markup(obj);
+                var fieldset = $('<fieldset id="kviss-spm-' + spm_nr + '" class="quiz-part" data-spm="' + spm_nr + '">\
+                <legend>' + spm_nr + ' av ' + quiz_len + '</legend>\
+                <h3>' + obj.spm + '</h3>\
+                ' + figure_markup + '\
+                </fieldset>');
+                //console.log(spm_nr);
+               // console.log(obj.spm);
+               // console.log(obj.bilde);
+                //console.log(obj.bildetekst);
+                var ant_riktige_svar = obj.riktige_svar.length;
+                var input_type = determine_input_type(ant_riktige_svar);
+
+
+                $.each(obj.svaralternativer, function( index, value) {
+                    console.log(value);
+                    var alternativ = generate_svaralternativ_markup(index, value, input_type, spm_nr);
+                    fieldset.append(alternativ);
+                });
+
+                domcontainer.append(fieldset);
+            });
             
         }
 
