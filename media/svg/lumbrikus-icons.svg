@@ -215,7 +215,7 @@
 }
 
      </style>
-    <title>Let og finn ord i bildet</title>
+    <title>Lumbrikus ikoner</title>
     <view id="lumbrikus" viewBox="0 0 32 32"/>
     <view id="lumbrikus-bw" viewBox="0 100 32 32"/>
     <view id="kap0" viewBox="100 000 32 32"/>
