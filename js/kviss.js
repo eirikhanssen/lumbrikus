@@ -30,7 +30,7 @@ $( document ).ready(function() {
                         "Jenny",
                         "Sobia"
                     ],
-                    riktige_svar: ["Herr Høne", "Jenny"],
+                    riktige_svar: ["Herr Høne", "Sobia"],
                     forklaring: "Jenny er jenta med blondt hår. Har du sett de andre i fortellingen?"
                 },
                 {
@@ -224,7 +224,8 @@ $( document ).ready(function() {
         quiz_num,
         quiz_title,
         quiz_bank,
-        quiz_len = 10;
+        quiz_len = 10,
+        quiz_sample;
 
         /**
         * Shuffles a copy of an, returns the copy. 
@@ -295,12 +296,10 @@ $( document ).ready(function() {
             }
 
             function activate_check_button(src_el) {
-                console.log("clicked input");
                 var targetbutton = $(src_el.closest('fieldset')).find('.sjekk');
                 targetbutton.removeAttr('disabled');
                 var inputs =  $(src_el.closest('fieldset')).find('input');
                 inputs.unbind("click");
-                //targetbutton.removeAttr(disabled);
             }
 
             function generate_svaralternativ_markup(index, value, input_type, spm_nr) {
@@ -347,11 +346,32 @@ $( document ).ready(function() {
 
             function sjekk_svar(knapp) {
                 console.log("sjekk_svar()");
-                var fieldset = knapp.closest('fieldset');
+                var fieldset = $(knapp.closest('fieldset'));
+                $(knapp).attr('disabled',true);
+                fieldset.addClass('answered');
+                var spm_nr = parseInt(fieldset.attr('data-spm'));
+                var svar_index = spm_nr - 1;
+                var riktige_svar = quiz_sample[svar_index].riktige_svar;
+                
+                var inputs = fieldset.find('input');
+                $.each(inputs, function(index, obj){
+                    for(var i=0, len = riktige_svar.length; i < len; i++) {
+                        if(obj.getAttribute('value') === riktige_svar[i]) {
+                            $(obj).addClass('correct');
+                        }
+                    }
+                    if(!$(obj).hasClass('correct')) {
+                        $(obj).addClass('incorrect');
+                    }
+                    $(obj).attr('disabled',true);
+                });
+
+                // activate next button
+                $(fieldset).find('.quiz-nav a:last-child').removeAttr('disabled');
             }
 
             clear_quiz(domcontainer); // clear out old quiz if present
-            var quiz_sample = make_quiz_selection(quiz_source, quiz_len);
+            quiz_sample = make_quiz_selection(quiz_source, quiz_len);
 
             domcontainer.append("<h2>" + title + "</h2>");
             $.each(quiz_sample, function( index, obj) {
