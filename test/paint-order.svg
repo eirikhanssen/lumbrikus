@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="800" height="800" viewBox="-400 -400 800 800" preserveAspectRatio="xMidYMid meet">
+
+  <style>
+    text {
+      font: 80px bold sans-serif; stroke-linejoin: round;
+      text-anchor: middle; fill: peachpuff; stroke: crimson;
+    }
+  </style>
+
+  <text x="0" y="0" style="stroke-width: 12px;">default</text>
+  <text x="0" y="150" style="stroke-width: 12px; paint-order: stroke;">stroke</text>
+  <text x="0" y="-150" style="stroke-width: 12px; paint-order: fill;">fill</text>
+  <text x="0" y="300" style="stroke-width: 12px; paint-order: markers;">markers</text>
+
+</svg>
