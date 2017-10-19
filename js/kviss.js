@@ -306,10 +306,6 @@ $( document ).ready(function() {
             clear_quiz(domcontainer); // clear out old quiz if present
             var quiz_sample = make_quiz_selection(quiz_source, quiz_len);
 
-            //console.log(quiz_source);
-            //console.log(quiz_sample);
-            //console.log(title);
-            //console.log(quiz_len);
             domcontainer.append("<h2>" + title + "</h2>");
             $.each(quiz_sample, function( index, obj) {
                 var spm_nr = index + 1;
@@ -319,19 +315,16 @@ $( document ).ready(function() {
                 <h3>' + obj.spm + '</h3>\
                 ' + figure_markup + '\
                 </fieldset>');
-                //console.log(spm_nr);
-               // console.log(obj.spm);
-               // console.log(obj.bilde);
-                //console.log(obj.bildetekst);
+
                 var ant_riktige_svar = obj.riktige_svar.length;
                 var input_type = determine_input_type(ant_riktige_svar);
-
 
                 $.each(obj.svaralternativer, function( index, value) {
                     console.log(value);
                     var alternativ = generate_svaralternativ_markup(index, value, input_type, spm_nr);
                     fieldset.append(alternativ);
                 });
+                fieldset.append($('<p class="forklaring">' + obj.forklaring + '</p>'));
 
                 domcontainer.append(fieldset);
             });
