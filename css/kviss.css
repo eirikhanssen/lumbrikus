@@ -248,7 +248,7 @@ button.sjekk {
     text-shadow: 0 0 5px rgb(3, 63, 101);
 }
 
-a[disabled] {visibility: hidden; pointer-events: none; cursor: default;}
+a[disabled] {opacity: 0.2; pointer-events: none; cursor: default;}
 
 .quiz-nav .forrige span::before,
 .quiz-nav .neste span::after {

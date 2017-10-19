@@ -294,13 +294,60 @@ $( document ).ready(function() {
                 }
             }
 
+            function activate_check_button(src_el) {
+                console.log("clicked input");
+                var targetbutton = $(src_el.closest('fieldset')).find('.sjekk');
+                targetbutton.removeAttr('disabled');
+                var inputs =  $(src_el.closest('fieldset')).find('input');
+                inputs.unbind("click");
+                //targetbutton.removeAttr(disabled);
+            }
+
             function generate_svaralternativ_markup(index, value, input_type, spm_nr) {
                 var input_name = generate_input_name(index, input_type, spm_nr);
+                var label = $('<label></label>');
+                var span = $('<span class="alternativ">' + value + '</span>');
+                var input = $('<input name="' + input_name + '" type="' + input_type + '" value="' + value + '"/>');
+                input.click(function(e) {
+                    var target = e.target;
+                    activate_check_button(target);
+                });
+                label.append(input).append(span);
+                return label;
+                
+            }
 
-                return $('<label>\
-                <input name="' + input_name + '" type="' + input_type + '" value="' + value + '">\
-                <span class="alternativ">' + value + '</span>\
-                </label>');
+            function generate_quiz_nav_markup(spm_nr, quiz_len) {
+                var prev_num = (spm_nr - 1).toString();
+                var next_num = (spm_nr + 1).toString();
+                var prev_id = '#kviss-spm-' + prev_num;
+                var next_id = '#kviss-spm-' + next_num;
+                var disabled = "";
+                var prev_alt = 'Til spørsmål ' + prev_num + '.';
+                var next_alt = 'Til spørsmål ' + next_num + '.';
+                var result_alt = 'Se resultater';
+                var neste_tekst = "Neste";
+                var forrige_tekst = 'Forrige';
+                if(spm_nr == 1) {
+                    prev_id = '#kviss-result' + (spm_nr - 1).toString();
+                    disabled = ' disabled';/* disable prev link for first question */
+                    prev_alt = result_alt;
+                    forrige_tekst = 'Resulater';
+                } if (spm_nr == quiz_len) {
+                    next_id = '#kviss-result';
+                    next_alt = result_alt;
+                    neste_tekst = 'Resultater';
+                }
+                var markup = '<nav class="quiz-nav">\n\
+    <a' + disabled + ' href="' + prev_id + '" class="forrige" title="' + prev_alt + '"><span>' + forrige_tekst + '</span></a>\n\
+    <a disabled href="' + next_id + '" title="' + next_alt + '" class="neste"><span>' + neste_tekst + '</span></a>\n\
+</nav>';
+                return markup;
+            }
+
+            function sjekk_svar(knapp) {
+                console.log("sjekk_svar()");
+                var fieldset = knapp.closest('fieldset');
             }
 
             clear_quiz(domcontainer); // clear out old quiz if present
@@ -324,7 +371,15 @@ $( document ).ready(function() {
                     var alternativ = generate_svaralternativ_markup(index, value, input_type, spm_nr);
                     fieldset.append(alternativ);
                 });
+
                 fieldset.append($('<p class="forklaring">' + obj.forklaring + '</p>'));
+
+                fieldset.append($('<button disabled class="sjekk">Sjekk svar</button>').click(function(e){
+                    var target = e.target;
+                    sjekk_svar(target);
+                }));
+
+                fieldset.append($(generate_quiz_nav_markup(spm_nr, quiz_len)));
 
                 domcontainer.append(fieldset);
             });
