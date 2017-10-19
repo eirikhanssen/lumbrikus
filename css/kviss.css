@@ -150,6 +150,9 @@ button.sjekk {
 
 .kviss input:checked+span {
     background: rgb(153, 255, 51);
+    background: magenta;
+    background: orange;
+    background: rgb(64, 195, 255);
     color:black;
 }
 
@@ -157,6 +160,7 @@ button.sjekk {
 
     background: rgb(135, 230, 40);
     /*background: rgb(201, 255, 51);*/
+    background: rgb(64, 210, 255);
 }
 
 /* input styling */
@@ -244,7 +248,7 @@ button.sjekk {
     text-shadow: 0 0 5px rgb(3, 63, 101);
 }
 
-a[disabled] {opacity: 0.1; pointer-events: none; cursor: default;}
+a[disabled] {visibility: hidden; pointer-events: none; cursor: default;}
 
 .quiz-nav .forrige span::before,
 .quiz-nav .neste span::after {
