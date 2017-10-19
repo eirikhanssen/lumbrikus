@@ -26,6 +26,7 @@ header {
     position: relative;
     border-radius: 0.25em;
     padding:0.25em;
+    margin-bottom: 2em;
 }
 .kviss fieldset legend {
     padding: 0.5em;
@@ -299,3 +300,65 @@ a[disabled] {opacity: 0.2; pointer-events: none; cursor: default;}
 .quiz-part.answered .forklaring {
     visibility: visible;
 }
+
+#til_resultater {
+    background: magenta;
+}
+
+.smiley-correct, .smiley-incorrect {
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    background: url(/media/svg/lumbrikus-icons.svg#riktig-hode);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 2em;
+}
+.smiley-incorrect {
+    width: 2em;
+    height: 2em;
+    background: url(/media/svg/lumbrikus-icons.svg#mulig-hode);
+}
+
+.score-smileys {
+    text-align: center;
+    max-width: 70%;
+    display: block;
+    margin: auto;
+}
+
+.kviss_start {
+    height: 6rem;
+    width: 20rem;
+    font-size: 3rem;
+    color: white;
+    background:magenta;
+    border: none;
+    border-radius:.25em;
+    display: block;
+    margin: 1em auto;
+    text-shadow: 0 0 .25em black;
+}
+
+#kviss-totalt-riktige, 
+#kviss-totalt-mulige {
+    font-size: 8rem;
+    font-weight: bold;
+    position: relative;
+    bottom: -1.5rem;
+}
+
+#kviss-scoreboard {
+    text-align: center;
+}
+
+#kviss-scoreboard h2 {
+    font-size: 4rem;
+}
+
+#kviss-poengsum-prosent {
+    margin: 0;
+    font-size: 20rem;
+    font-weight: bold;
+}
+.kviss-ferdig {font-size: 4rem; line-height: 8rem; margin: 0;}

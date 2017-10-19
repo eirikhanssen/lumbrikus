@@ -243,11 +243,18 @@ $( document ).ready(function() {
             return a;
         }
 
+        function kviss_start_knapp() {
+            var button = $('<button class="kviss_start">Start kviss!</button>').click(function(e){
+                quiz_init("#kviss");
+            });
+            return button;
+        }
+
         /**
          * Clears out old quiz
          */
-        function clear_quiz(node) {
-            node.empty();
+        function clear_quiz(sel) {
+            $(sel).empty();
         }
 
         /**
@@ -327,6 +334,7 @@ $( document ).ready(function() {
                 var result_alt = 'Se resultater';
                 var neste_tekst = "Neste";
                 var forrige_tekst = 'Forrige';
+                var id = "";
                 if(spm_nr == 1) {
                     prev_id = '#kviss-result' + (spm_nr - 1).toString();
                     disabled = ' disabled';/* disable prev link for first question */
@@ -336,10 +344,11 @@ $( document ).ready(function() {
                     next_id = '#kviss-result';
                     next_alt = result_alt;
                     neste_tekst = 'Resultater';
+                    id='id="til_resultater" ';
                 }
                 var markup = '<nav class="quiz-nav">\n\
     <a' + disabled + ' href="' + prev_id + '" class="forrige" title="' + prev_alt + '"><span>' + forrige_tekst + '</span></a>\n\
-    <a disabled href="' + next_id + '" title="' + next_alt + '" class="neste"><span>' + neste_tekst + '</span></a>\n\
+    <a ' + id + 'disabled href="' + next_id + '" title="' + next_alt + '" class="neste"><span>' + neste_tekst + '</span></a>\n\
 </nav>';
                 return markup;
             }
@@ -352,6 +361,9 @@ $( document ).ready(function() {
                 var spm_nr = parseInt(fieldset.attr('data-spm'));
                 var svar_index = spm_nr - 1;
                 var riktige_svar = quiz_sample[svar_index].riktige_svar;
+                var antall_mulige = riktige_svar.length;
+                console.log(antall_mulige);
+                var antall_rette = 0;
                 
                 var inputs = fieldset.find('input');
                 $.each(inputs, function(index, obj){
@@ -366,11 +378,32 @@ $( document ).ready(function() {
                     $(obj).attr('disabled',true);
                 });
 
+                // delsum
+                $.each(inputs, function(index, obj){
+                    // får poeng for riktige svar
+                    if($(obj).is(':checked') && $(obj).hasClass('correct')) {
+                        antall_rette = antall_rette + 1;
+                    }
+                    // trekkes i poeng for gale svar for hvert delspørsmål hvis det er mer enn en mulig riktig
+                    if($(obj).is(':checked') && $(obj).hasClass('incorrect') && antall_mulige > 1) {
+                        antall_rette = antall_rette -1;
+                    }
+                });
+                // dersom delsummen blir negativ, settes den til 0.
+                if (antall_rette < 0) {
+                    antall_rette = 0;
+                }
+
+                // lagrer mellomsum i DOM i fieldset
+                fieldset.attr('data-delsum', antall_rette);
+                fieldset.attr('data-mulige', antall_mulige);
+
                 // activate next button
                 $(fieldset).find('.quiz-nav a:last-child').removeAttr('disabled');
             }
 
-            clear_quiz(domcontainer); // clear out old quiz if present
+            clear_quiz("#kviss"); // clear out old quiz if present
+
             quiz_sample = make_quiz_selection(quiz_source, quiz_len);
 
             domcontainer.append("<h2>" + title + "</h2>");
@@ -399,12 +432,75 @@ $( document ).ready(function() {
                     sjekk_svar(target);
                 }));
 
+
                 fieldset.append($(generate_quiz_nav_markup(spm_nr, quiz_len)));
 
                 domcontainer.append(fieldset);
             });
+
             
-        }
+            function generate_scoreboard(){
+                var scoreboard = $('<article id="kviss-scoreboard">\n\
+    <h2>Gratulerer!</h2>\n\
+    <p class="kviss-ferdig">Du fikk\n\
+        <span class="kviss-score">\n\
+            <span id="kviss-totalt-riktige"></span> av \n\
+            <span id="kviss-totalt-mulige"></span>\n\
+        </span>\n\
+        poeng!\n\
+    </p>\n\
+    <div id="kviss-poengsum-smil"></div>\n\
+    <p id="kviss-poengsum-prosent"></p>\n\
+    <p class="kviss-ferdig">Prøv igjen!</p>\n\
+</article>');
+                scoreboard.append(kviss_start_knapp());
+                return scoreboard;
+            }
+
+            function calculate_total_score() {
+                var grand_total = 0;
+                var grand_possible = 0;
+                var fieldsets = $('#kviss fieldset');
+                var smileys = $('<div class="score-smileys"></div>');
+                var grand_percent;
+                $.each(fieldsets, function( key, el){
+                    var current_possible = parseInt($(el).attr('data-mulige'));
+                    var current_sum = parseInt($(el).attr('data-delsum'));
+                    if (isNaN(current_possible)) {
+                        current_possible = 0;
+                    }
+                    if (isNaN(current_sum)) {
+                        current_sum = 0;
+                    }
+
+                    grand_total = grand_total + current_sum;
+                    grand_possible = grand_possible + current_possible;
+                    grand_percent = Math.round((grand_total / grand_possible) * 100);
+                    // for each input, add a smiley
+                    $.each($(el).find('input'), function( key, el){
+                        var smileyclass = "smiley-correct";
+                        if($(el).hasClass("incorrect")) {
+                            smileyclass = "smiley-incorrect";
+                        }
+                        if($(el).is(':checked')) {
+                            $(smileys).append($('<span style="transform:translate(0,' + (4*(-0.5 + Math.random())).toString() + 'em) scale(' + (0.5 + Math.random()) + ')" class="' + smileyclass + '"></span>'));
+                        }
+                    });
+                });
+
+                $('#kviss-totalt-riktige').html(grand_total.toString());
+                $('#kviss-totalt-mulige').html(grand_possible.toString());
+                $('#kviss-poengsum-prosent').html(grand_percent.toString() + '%');
+                $('#kviss-poengsum-smil').append(smileys);
+            }
+
+            $('#til_resultater').click(function(){
+                calculate_total_score();
+            });
+            
+            $(app).append(generate_scoreboard());
+
+        } // start_new_quiz()
 
         function quiz_init(domcontainer_selector) {
             console.log("quiz_init()");
@@ -417,27 +513,9 @@ $( document ).ready(function() {
             start_new_quiz(app, quiz_title, quiz_bank, quiz_len);
         }
 
-        quiz_init("#kviss");
-        
+        $('#kviss').append(kviss_start_knapp());
     }
 
     quiz();
 
 });
-
-/**
- * [sjekk svar] er disabled
- * - når minst ett alternativ er krysset av, fjernes 'disabled' fra [sjekk svar]
- * Trykk på [sjekk svar]
- * - [sjekk svar] blir disabled
- * - fieldset får klassen "answered"
- * - alle input i samme fieldset blir disabled
- * - for hver input, sjekk om attr(value) finnes i riktige svar
- *     - sett klassen "correct" eller "incorrect"
- *  - [Neste] blir ikke disabled lengre
- *  - oppdater_poengsum()
- * [Forrige] fra første spørsmål er alltid disabled
- * 
- * [Neste] er disabled
- * - blir enabled når svar er sjekket.
- */
