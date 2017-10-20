@@ -73,7 +73,6 @@ header {
     @media screen and (max-width: 400px) {
         .quiz-part .question {
             font-size: 5vw;
-            color: red;
         }
     }
 
@@ -175,9 +174,9 @@ button.sjekk {
 }
 
 .kviss input:checked ~ .alternativ {
-    background: rgb(153, 255, 51);
+    /*background: rgb(153, 255, 51);
     background: magenta;
-    background: orange;
+    background: orange;*/
     background: rgb(64, 195, 255);
     color:black;
 }
@@ -390,7 +389,7 @@ a[disabled] {opacity: 0.2; pointer-events: none; cursor: default;}
 }
 @media screen and (orientation: portrait) {
     #kviss-poengsum-prosent {
-        font-size: 30vw;
+        font-size: 25vw;
     }
 }
 .kviss-ferdig {font-size: 4rem; line-height: 8rem; margin: 0;}
