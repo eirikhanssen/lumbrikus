@@ -526,6 +526,10 @@ $( document ).ready(function() {
             
             $(app).append(generate_scoreboard());
 
+            $('html, body').animate({
+                scrollTop: $('#kviss').offset().top
+            }, 250);
+
         } // start_new_quiz()
 
         function quiz_init(domcontainer_selector) {
