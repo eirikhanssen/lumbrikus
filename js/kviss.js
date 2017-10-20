@@ -302,7 +302,7 @@ $( document ).ready(function() {
 
             function activate_check_button(src_el) {
                 var targetbutton = $(src_el.closest('fieldset')).find('.sjekk');
-                $(targetbutton).removeProp('disabled');
+                targetbutton.prop('disabled',false);
                 var inputs =  $(src_el.closest('fieldset')).find('input');
                 inputs.unbind("click");
             }
