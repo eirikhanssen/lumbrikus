@@ -93,8 +93,8 @@ $( document ).ready(function() {
                 },
                 {
                     spm: "Hvor mange språk kan Hen og Katt forstå?",
-                    bilde: "",
-                    bildetekst: "",
+                    bilde: "/media/svg/lumbrikus-icons.svg#undring",
+                    bildetekst: "Det gule smilehodet lurer på noe.",
                     svaralternativer: [
                         "Engelsk og norsk",
                         "Arabisk og norsk",
@@ -141,7 +141,7 @@ $( document ).ready(function() {
                 },
                 {
                     spm: "Selja har noe som humla liker. Hva er det?",
-                    bilde: "/media/img/kviss_selje.jpg",
+                    bilde: "/media/img/kviss_selje_hannblomst.jpg",
                     bildetekst: "En blomst som vokser på et seljetre.",
                     svaralternativer: [
                         "Pent hår",
@@ -153,7 +153,7 @@ $( document ).ready(function() {
                 },
                 {
                     spm: "Hva er nektar",
-                    bilde: "/media/img/kviss_undring.svg",
+                    bilde: "/media/svg/lumbrikus-icons.svg#undring",
                     bildetekst: "Et smileansikt som lurer på hva dette kan være.",
                     svaralternativer: [
                         "Søt saft som humla spiser",
@@ -165,7 +165,7 @@ $( document ).ready(function() {
                 },
                 {
                     spm: "Hva er dette?",
-                    bilde: "/media/img/kviss_seljerakle.jpg(Eirik9104)",
+                    bilde: "/media/img/kviss_selje_hannblomst.jpg",
                     bildetekst: "Grønt inni, med lange hvite stilker som stikker ut. Så er det noen dråper inni også.",
                     svaralternativer: [
                         "Godteri for Jenny og Samir",
@@ -177,7 +177,7 @@ $( document ).ready(function() {
                 },
                 {
                     spm: "Hva er dette?",
-                    bilde: "/media/img/kviss_pollenbarere.jpg(Eirik9099)",
+                    bilde: "/media/img/kviss_pollenbarere.jpg",
                     bildetekst: "Lange hvite stilker stikker ut. På tuppene har de gule knopper.",
                     svaralternativer: [
                         "Pollen-bærere",
@@ -189,7 +189,7 @@ $( document ).ready(function() {
                 },
                 {
                     spm: "Hva er dette?",
-                    bilde: "/media/img/kviss_selje_hunnblomst.jpg(8976)",
+                    bilde: "/media/img/kviss_selje_hunnblomst.jpg",
                     bildetekst: "En blomst som er delt i to på langs. Grønt og hårete. Det ser ut som mange små grønne bananer vokser her.",
                     svaralternativer: [
                         "Små grønne bananer",
@@ -201,7 +201,7 @@ $( document ).ready(function() {
                 },
                 {
                     spm: "Hvilken årstid er det hos Jenny og Samir",
-                    bilde: "/media/img/kviss_aarstid.jpg",
+                    bilde: "/media/img/kviss_vaar.jpg",
                     bildetekst: "Det er ikke blader på greinene til trærne enda. Det begynner å bli grønt ute.",
                     svaralternativer: [
                         "Vinter",

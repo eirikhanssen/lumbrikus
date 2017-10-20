@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   width="1080"
+   height="1527"
+   version="2.0"
+   viewBox="-100 -300 200 600"
+   preserveAspectRatio="xMidYMid meet"
+   id="svg849">
+  
+  <desc
+     id="desc838" />
+  <defs
+     id="defs842">
+    <linearGradient
+       id="linearGradientBakgrunn">
+      <stop
+         style="stop-color:#7d3051;stop-opacity:1"
+         offset="0"
+         id="stop1398" />
+      <stop
+         style="stop-color:#000000;stop-opacity:1"
+         offset="1"
+         id="stop1400" />
+    </linearGradient>
+    <style
+       type="text/css"
+       id="style840">
+            /*<![CDATA[*/
+
+         .satellite text {
+               text-anchor: middle; 
+               font-family: sans-serif; 
+               font-size: 26px;
+               fill: white; 
+               stroke: rgba(0,0,0,0.3); 
+               stroke-linejoin: round; 
+               stroke-width: 4px; 
+               paint-order: stroke; 
+               font-weight: bold;
+               
+            }
+            
+            .textbg, .textbg2, .senter_bg {
+               fill: #7a2f4f;
+               stroke: none;
+            }
+            .textbg2 {
+               fill:#9e3c68;
+            }
+            
+            a:hover .textbg,
+            a:focus .textbg,
+            a:focus .senter_bg,
+            a:hover .senter_bg {
+               fill: #9c254b;
+            }
+            
+            #titteltekst, #tittel_fix {
+               text-anchor: left; 
+               font-family: sans-serif;
+               fill: black; 
+               stroke: white; 
+               stroke-linejoin: round; 
+               stroke-width: 10; 
+               paint-order: stroke;
+               font-size: 68px;
+               font-weight: bold;
+               letter-spacing: 10px;
+            }
+            #tittel_fix {
+               stroke-width: 1;
+               stroke: black;
+            }
+            
+            #textpath {fill:none; stroke: none;}
+            
+            a:hover text, a:focus text {
+               
+            }
+            
+            a:hover #titteltekst,
+            a:focus #titteltekst,
+            a:hover #tittel_fix,
+            a:focus #tittel_fix
+             {
+             
+             
+               animation-name: tittel_text_increase;
+               animation-duration: 10s;
+               animation-timing-function: ease-in-out;
+               animation-iteration-count: infinite;
+               animation-fill-mode: forward;
+               animation-direction: alternate;
+            }
+            
+            @keyframes tittel_text_increase {
+               0% {stroke-width: 10;}
+               
+               25% {
+                  stroke-width: 22;
+               }
+               
+               50% {
+                  stroke-width: 5;
+               }
+               
+               75% {
+                  stroke-width: 22;
+               }
+               
+               100% {
+                  stroke-width: 10;
+               }
+               
+               
+            }
+            
+            .L {
+               stroke: #9cff6e;
+            }
+            .U {
+            stroke: #ffee60;
+            }
+            .m {
+            stroke: #f760ff;
+            }
+            .b {
+            stroke: #b1ffff;
+            }
+            .r {
+            stroke: #4affa9;
+            }
+            .i {
+            stroke: #ff9272;
+            }
+            .k {
+            stroke: #72d2ff;
+            }
+            .u {
+            stroke: #ffffb1;
+            }
+            .s {
+            stroke: #c472ff;            
+            }
+            
+            #senter_omriss {
+               fill: transparent;
+               stroke: yellow;
+               stroke-width: 5;
+               stroke-dasharray: 0.001 16;
+            }
+            
+            #senter_omriss,
+            .textbg {
+               stroke-linecap: round;
+            }
+            
+            .textbg {
+               stroke: transparent;
+               stroke-width: 5;
+               stroke-dasharray: 0.1 11;
+            
+            }
+            
+            a:hover #senter_omriss,
+            a:focus #senter_omriss {
+               stroke-width: 10;
+               stroke-dasharray: 0.001 16;
+            }
+            
+            a:focus #senter_omriss, 
+            a:hover #senter_omriss,
+            a:focus .textbg,
+            a:hover .textbg {
+               stroke: yellow;
+               
+               
+               
+            }
+            
+            a:focus #senter_omriss, 
+            a:hover #senter_omriss {
+               animation-name: stroke_omriss;
+               animation-duration: 5s;
+               animation-timing-function: linear;
+               animation-iteration-count: infinite;
+               animation-fill-mode: both;
+               animation-direction: both;
+            }
+            
+            @keyframes stroke_omriss {
+               from {
+               stroke-dashoffset:16;
+               }
+               to {
+               stroke-dashoffset:0;
+               }
+            }
+            
+            /* msie workaround - in case paint-order is not supported */
+            use text, use tspan {
+               fill: red;
+               stroke: none;
+               stroke-width: 0;
+            }
+            .satellite .t_fix {stroke-width: 0;}
+            
+            @media aural {
+               .t_fix {display:none;}
+            }
+            
+            #nafologo {
+               fill: white;
+               opacity: 0.5;
+            }
+            /*]]>*/
+        </style>
+    <radialGradient
+       href="#linearGradientBakgrunn"
+       id="radialGradientBakgrunn"
+       cx="0"
+       cy="0"
+       fx="0"
+       fy="0"
+       r="1000"
+       gradientUnits="userSpaceOnUse" />
+          <clipPath id="clip_alle_i_kula">
+        <circle r="150" cx="0" cy="0" />
+     </clipPath>
+  </defs>
+  <g
+     alignment-baseline="baseline"
+     id="g844" />
+ 
+  
+   
+  
+   <g class="satellite" transform="translate(0,-130)">
+      <a href="/til_laereren/" target="_top" title="til lærerne">
+         <circle class="textbg2" r="105" cx="0" cy="0" />
+         <circle class="textbg" r="90" cx="0" cy="0" />
+         <text id="t_foreldrene" x="-235" y="0">
+            <tspan x="0" y="0" dy="-20">til</tspan>
+            <tspan x="0" y="0" dy="30">lærerne</tspan>
+         </text>
+      </a>
+   
+   </g>
+   
+     
+   
+   <g class="satellite" transform="translate(0,130)">
+      <a href="/til-foreldrene/" target="_top" title="til foreldrene">
+         <circle class="textbg2" r="105" cx="0" cy="0" />
+         <circle class="textbg" r="90" cx="0" cy="0" />
+         <text id="t_larerne" x="0" y="0">
+            <tspan x="0" y="0" dy="-20">til</tspan>
+            <tspan x="0" y="0" dy="30">foreldrene</tspan>
+         </text>
+      </a>
+   </g>
+   
+   
+   
+  
+   
+   
+</svg>
