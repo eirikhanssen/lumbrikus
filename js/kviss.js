@@ -300,10 +300,32 @@ $( document ).ready(function() {
                 }
             }
 
+            function getAncestor(el, selector) {
+                var p = $(el).parent();
+                var iteration = 0;
+                do {
+                    iteration = iteration +1;
+                    if( p.is(selector) === true ) {
+                        return p;
+                    }
+                    if( p.is('html') ) {
+                        console.log( "'" + selector + "'" + ' not found, reached \'html\' at iteration: ' + iteration + '. Terminating loop.');
+                        return false;
+                    }
+                    if(iteration > 100) {
+                        console.log('Max iterations reached ( ' + iteration + ' ), exit loop');
+                        return false;
+                    }
+                    p = p.parent();
+                } while (true);
+            }
+
             function activate_check_button(src_el) {
-                var targetbutton = $(src_el.closest('fieldset')).find('.sjekk');
-                targetbutton.prop('disabled',false);
-                var inputs =  $(src_el.closest('fieldset')).find('input');
+                var targetbutton = getAncestor(src_el, 'fieldset').find('.sjekk')[0];
+                console.log(targetbutton);
+                $(targetbutton).prop('disabled',false);
+                //var inputs =  $(src_el.closest('fieldset')).find('input');
+                var inputs = getAncestor(src_el, 'fieldset').find('input');
                 inputs.unbind("click");
             }
 
