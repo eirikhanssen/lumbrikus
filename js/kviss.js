@@ -301,6 +301,7 @@ $( document ).ready(function() {
             }
 
             function getAncestor(el, selector) {
+                var max_iteration = 100;
                 var p = $(el).parent();
                 var iteration = 0;
                 do {
@@ -310,11 +311,11 @@ $( document ).ready(function() {
                     }
                     if( p.is('html') ) {
                         console.log( "'" + selector + "'" + ' not found, reached \'html\' at iteration: ' + iteration + '. Terminating loop.');
-                        return false;
+                        return null;
                     }
-                    if(iteration > 100) {
+                    if(iteration => max_iteration) {
                         console.log('Max iterations reached ( ' + iteration + ' ), exit loop');
-                        return false;
+                        return null;
                     }
                     p = p.parent();
                 } while (true);
@@ -324,7 +325,6 @@ $( document ).ready(function() {
                 var targetbutton = getAncestor(src_el, 'fieldset').find('.sjekk')[0];
                 console.log(targetbutton);
                 $(targetbutton).prop('disabled',false);
-                //var inputs =  $(src_el.closest('fieldset')).find('input');
                 var inputs = getAncestor(src_el, 'fieldset').find('input');
                 inputs.unbind("click");
             }
@@ -375,7 +375,7 @@ $( document ).ready(function() {
 
             function sjekk_svar(knapp) {
                 console.log("sjekk_svar()");
-                var fieldset = $(knapp.closest('fieldset'));
+                var fieldset = getAncestor(knapp, 'fieldset');
                 $(knapp).attr('disabled',true);
                 fieldset.addClass('answered');
                 var spm_nr = parseInt(fieldset.attr('data-spm'));
@@ -389,22 +389,22 @@ $( document ).ready(function() {
                 $.each(inputs, function(index, obj){
                     for(var i=0, len = riktige_svar.length; i < len; i++) {
                         if(obj.getAttribute('value') === riktige_svar[i]) {
-                            $(obj).closest('label').addClass('correct');
+                            getAncestor(obj, 'label').addClass('correct');
                             $(obj).addClass('correct');
                         }
                     }
                     if(!$(obj).hasClass('correct')) {
-                        $(obj).closest('label').addClass('incorrect');
+                        getAncestor(obj, 'label').addClass('incorrect');
                         $(obj).addClass('incorrect');
                     }
-                    $(obj).attr('disabled',true);
+                    $(obj).prop('disabled',true);
                 });
 
                 // delsum
                 $.each(inputs, function(index, obj){
                     // får poeng for riktige svar
                     if($(obj).is(':checked')) {
-                        $(obj).closest('label').addClass('checked');
+                        getAncestor(obj, 'label').addClass('checked');
                     }
                     if($(obj).is(':checked') && $(obj).hasClass('correct')) {
                         antall_rette = antall_rette + 1;
