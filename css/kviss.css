@@ -211,30 +211,19 @@ button.sjekk {
     color: white;
 }
 
-.quiz-part.answered label.incorrect::after,
-.quiz-part.answered label.correct::after {
-    content:"";
-    display: block;
-    visibility: visible;
-    position: absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-}
-.quiz-part.answered label.incorrect.checked::after {
+.quiz-part.answered label.incorrect.checked {
     background:url(/media/svg/lumbrikus-icons.svg#galt);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.quiz-part.answered label.correct.checked::after {
+.quiz-part.answered label.correct.checked {
     background:url(/media/svg/lumbrikus-icons.svg#riktig-hode);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.quiz-part.answered label.correct::after {
+.quiz-part.answered label.correct {
     background:url(/media/svg/lumbrikus-icons.svg#hint-riktig);
     background-size: contain;
     background-repeat: no-repeat;
