@@ -361,7 +361,7 @@ $( document ).ready(function() {
                     prev_alt = result_alt;
                     forrige_tekst = 'Resulater';
                 } if (spm_nr == quiz_len) {
-                    next_id = '#kviss-result';
+                    next_id = '#kviss-scoreboard';
                     next_alt = result_alt;
                     neste_tekst = 'Resultater';
                     id='id="til_resultater" ';
