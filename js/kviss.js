@@ -301,7 +301,7 @@ $( document ).ready(function() {
             }
 
             function getAncestor(el, selector) {
-                var max_iteration = 100;
+                var max = 100;
                 var p = $(el).parent();
                 var iteration = 0;
                 do {
@@ -313,7 +313,7 @@ $( document ).ready(function() {
                         console.log( "'" + selector + "'" + ' not found, reached \'html\' at iteration: ' + iteration + '. Terminating loop.');
                         return null;
                     }
-                    if(iteration => max_iteration) {
+                    if(iteration > max) {
                         console.log('Max iterations reached ( ' + iteration + ' ), exit loop');
                         return null;
                     }
