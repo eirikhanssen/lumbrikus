@@ -1,7 +1,5 @@
 // A $( document ).ready() block.
 $( document ).ready(function() {
-    console.log( "document ready()" );
-
     function quiz() {
         console.log("quiz()");
         var quizzies = [];
@@ -412,7 +410,7 @@ $( document ).ready(function() {
                 var figure_markup = generate_figure_markup(obj);
                 var fieldset = $('<fieldset id="kviss-spm-' + spm_nr + '" class="quiz-part" data-spm="' + spm_nr + '">\
                 <legend>' + spm_nr + ' av ' + quiz_len + '</legend>\
-                <h3>' + obj.spm + '</h3>\
+                <h3 class="question">' + obj.spm + '</h3>\
                 ' + figure_markup + '\
                 </fieldset>');
 

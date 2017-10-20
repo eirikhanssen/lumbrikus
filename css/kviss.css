@@ -18,7 +18,7 @@ header {
     font-size: 0.5em;
 }
 
-.kviss fieldset,
+.kviss fieldset::after,
 .kviss fieldset legend {
     border: 2px solid rgb(106, 140, 180);
 }
@@ -26,7 +26,21 @@ header {
     position: relative;
     border-radius: 0.25em;
     padding:0.25em;
+    padding-top: 1em;
     margin-bottom: 2em;
+    top: 2em;
+    border: none;
+}
+.kviss fieldset::after {
+    display:block;
+    content:"";
+    top: 1em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    border-radius: .5em;
+    z-index: -1;
 }
 .kviss fieldset legend {
     padding: 0.5em;
@@ -34,11 +48,12 @@ header {
     line-height: 0.5em;
     position: absolute;
     left: 50%;
-    top:0;
+    top:1em;
     transform: translate(-50%,-50%);
     background: white;
     min-width: 10em;
     text-align: center;
+    font-weight: bold;
 
 }
 
@@ -48,11 +63,19 @@ header {
     margin-bottom: 0;
 }
 
-.quiz-part h3 {
+.quiz-part .question {
     font-size: 1.75rem;
     margin-bottom: 0.5rem;
     text-align: center;
 }
+
+    @media screen and (max-width: 400px) {
+        .quiz-part .question {
+            font-size: 5vw;
+            color: red;
+        }
+    }
+
 .img_container {
     position: relative;
     left: -.5rem;
