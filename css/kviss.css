@@ -386,11 +386,15 @@ a[disabled] {opacity: 0.2; pointer-events: none; cursor: default;}
 }
 @media screen and (orientation: portrait) {
     #kviss-poengsum-prosent {
-        font-size: 40vw;
+        font-size: 30vw;
     }
 }
 .kviss-ferdig {font-size: 4rem; line-height: 8rem; margin: 0;}
 
 #kviss fieldset+article {
     margin-top: 8em;
+}
+
+.textbg {
+    background: #9e3c68;
 }
