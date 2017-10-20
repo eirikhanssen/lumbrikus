@@ -211,6 +211,10 @@ button.sjekk {
     color: white;
 }
 
+.quiz-nav.quiz-part.answered label.checked {
+    background-position: left center;
+}
+
 .quiz-part.answered label.incorrect.checked {
     background:url(/media/svg/lumbrikus-icons.svg#galt);
     background-size: contain;
