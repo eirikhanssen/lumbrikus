@@ -208,7 +208,7 @@ button.sjekk {
     color: white;
 }
 
-.quiz-part.answered label.correct .alternativ{
+.quiz-part.answered label.correct.checked .alternativ{
     background: rgb(0, 121, 18);
     color: white;
 }
