@@ -202,19 +202,19 @@ button.sjekk {
     
 }
 .quiz-part.answered label input.incorrect:checked::after {
-    background:url(https://lumbrikuz.no/media/svg/lumbrikus-icons.svg#galt);
+    background:url(/media/svg/lumbrikus-icons.svg#galt);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .quiz-part.answered label input.correct:checked::after {
-    background:url(https://lumbrikuz.no/media/svg/lumbrikus-icons.svg#riktig-hode);
+    background:url(/media/svg/lumbrikus-icons.svg#riktig-hode);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .quiz-part.answered label input.correct::after {
-    background:url(https://lumbrikuz.no/media/svg/lumbrikus-icons.svg#hint-riktig);
+    background:url(/media/svg/lumbrikus-icons.svg#hint-riktig);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -265,12 +265,12 @@ a[disabled] {opacity: 0.2; pointer-events: none; cursor: default;}
 .quiz-nav .forrige span::before {
     right: 100%;
     margin-right: .5rem;
-    background:url(https://lumbrikuz.no/media/svg/lumbrikus-icons.svg#forrige);
+    background:url(/media/svg/lumbrikus-icons.svg#forrige);
 }
 .quiz-nav .neste span::after {
     left: 100%;
     margin-left: .5rem;
-    background:url(https://lumbrikuz.no/media/svg/lumbrikus-icons.svg#neste);
+    background:url(/media/svg/lumbrikus-icons.svg#neste);
 }
 
 .quiz-part button.sjekk {
