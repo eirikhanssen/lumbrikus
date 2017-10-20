@@ -367,10 +367,12 @@ $( document ).ready(function() {
                 $.each(inputs, function(index, obj){
                     for(var i=0, len = riktige_svar.length; i < len; i++) {
                         if(obj.getAttribute('value') === riktige_svar[i]) {
+                            $(obj).closest('label').addClass('correct');
                             $(obj).addClass('correct');
                         }
                     }
                     if(!$(obj).hasClass('correct')) {
+                        $(obj).closest('label').addClass('incorrect');
                         $(obj).addClass('incorrect');
                     }
                     $(obj).attr('disabled',true);
@@ -379,6 +381,9 @@ $( document ).ready(function() {
                 // delsum
                 $.each(inputs, function(index, obj){
                     // får poeng for riktige svar
+                    if($(obj).is(':checked')) {
+                        $(obj).closest('label').addClass('checked');
+                    }
                     if($(obj).is(':checked') && $(obj).hasClass('correct')) {
                         antall_rette = antall_rette + 1;
                     }
@@ -440,12 +445,11 @@ $( document ).ready(function() {
             function generate_scoreboard(){
                 var scoreboard = $('<article id="kviss-scoreboard">\n\
     <h2>Gratulerer!</h2>\n\
-    <p class="kviss-ferdig">Du fikk\n\
-        <span class="kviss-score">\n\
+    <p class="kviss-ferdig">\n\
+        <span class="kviss-score">Poengsum:</br>\n\
             <span id="kviss-totalt-riktige"></span> av \n\
             <span id="kviss-totalt-mulige"></span>\n\
         </span>\n\
-        poeng!\n\
     </p>\n\
     <div id="kviss-poengsum-smil"></div>\n\
     <p id="kviss-poengsum-prosent"></p>\n\

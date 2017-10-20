@@ -27,7 +27,7 @@ header {
     border-radius: 0.25em;
     padding:0.25em;
     padding-top: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
     top: 2em;
     border: none;
 }
@@ -194,11 +194,11 @@ button.sjekk {
     width:2.4rem;
     height:2.4rem;
     margin:0.4rem;
-    position: relative;
 }
 
 .quiz-part.answered label input {
     visibility: hidden;
+    pointer-events: none;
 }
 
 .quiz-part.answered label input.incorrect:checked + span.alternativ{
@@ -211,8 +211,8 @@ button.sjekk {
     color: white;
 }
 
-.quiz-part.answered label input.incorrect::after,
-.quiz-part.answered label input.correct::after {
+.quiz-part.answered label.incorrect::after,
+.quiz-part.answered label.correct::after {
     content:"";
     display: block;
     visibility: visible;
@@ -221,22 +221,20 @@ button.sjekk {
     left:0;
     right:0;
     bottom:0;
-    /*border: 1px solid magenta;*/
-    
 }
-.quiz-part.answered label input.incorrect:checked::after {
+.quiz-part.answered label.incorrect.checked::after {
     background:url(/media/svg/lumbrikus-icons.svg#galt);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.quiz-part.answered label input.correct:checked::after {
+.quiz-part.answered label.correct.checked::after {
     background:url(/media/svg/lumbrikus-icons.svg#riktig-hode);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.quiz-part.answered label input.correct::after {
+.quiz-part.answered label.correct::after {
     background:url(/media/svg/lumbrikus-icons.svg#hint-riktig);
     background-size: contain;
     background-repeat: no-repeat;
@@ -373,6 +371,8 @@ a[disabled] {opacity: 0.2; pointer-events: none; cursor: default;}
 
 #kviss-scoreboard {
     text-align: center;
+    border: 10px dotted magenta;
+    border-radius: 1em;
 }
 
 #kviss-scoreboard h2 {
@@ -381,7 +381,16 @@ a[disabled] {opacity: 0.2; pointer-events: none; cursor: default;}
 
 #kviss-poengsum-prosent {
     margin: 0;
-    font-size: 20rem;
+    font-size: 10rem;
     font-weight: bold;
 }
+@media screen and (orientation: portrait) {
+    #kviss-poengsum-prosent {
+        font-size: 40vw;
+    }
+}
 .kviss-ferdig {font-size: 4rem; line-height: 8rem; margin: 0;}
+
+#kviss fieldset+article {
+    margin-top: 8em;
+}
