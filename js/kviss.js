@@ -332,13 +332,15 @@ $( document ).ready(function() {
             function generate_svaralternativ_markup(index, value, input_type, spm_nr) {
                 var input_name = generate_input_name(index, input_type, spm_nr);
                 var label = $('<label></label>');
+                var feedback = $('<span class="feedback"></span>');
                 var span = $('<span class="alternativ">' + value + '</span>');
                 var input = $('<input name="' + input_name + '" type="' + input_type + '" value="' + value + '"/>');
                 input.click(function(e) {
                     var target = e.target;
                     activate_check_button(target);
                 });
-                label.append(input).append(span);
+
+                label.append(input).append(feedback).append(span);
                 return label;
                 
             }

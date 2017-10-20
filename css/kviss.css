@@ -7,6 +7,7 @@
 }
 .debug .kviss label {
     background: cyan;
+
 }
 /* typography */
 
@@ -120,6 +121,7 @@ button.sjekk {
     margin:auto;
     box-sizing: border-box;
     margin-bottom: 0.5rem;
+    position: relative;
 }
 
 .kviss label {
@@ -172,7 +174,7 @@ button.sjekk {
     visibility: hidden;
 }
 
-.kviss input:checked+span {
+.kviss input:checked ~ .alternativ {
     background: rgb(153, 255, 51);
     background: magenta;
     background: orange;
@@ -180,7 +182,7 @@ button.sjekk {
     color:black;
 }
 
-.kviss input:checked+span:hover {
+.kviss input:checked ~ .alternativ:hover {
 
     background: rgb(135, 230, 40);
     /*background: rgb(201, 255, 51);*/
@@ -197,37 +199,46 @@ button.sjekk {
 }
 
 .quiz-part.answered label input {
-    visibility: hidden;
+    display: none;
     pointer-events: none;
 }
 
-.quiz-part.answered label input.incorrect:checked + span.alternativ{
+.quiz-part.answered label.incorrect.checked .alternativ{
     background: rgb(189, 8, 28);
     color: white;
 }
 
-.quiz-part.answered label input.correct:checked + span.alternativ{
+.quiz-part.answered label.correct .alternativ{
     background: rgb(0, 121, 18);
     color: white;
 }
 
-.quiz-nav.quiz-part.answered label.checked {
-    background-position: left center;
+.quiz-part span.feedback {
+    position: relative;
+    display:none;
+    top:1;
+    left:0;
+    height: 3rem;
+    width: 3rem;
 }
 
-.quiz-part.answered label.incorrect.checked {
+.quiz-part.answered .feedback {
+    display: block;
+}
+
+.quiz-part.answered label.incorrect.checked .feedback {
     background:url(/media/svg/lumbrikus-icons.svg#galt);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.quiz-part.answered label.correct.checked {
+.quiz-part.answered label.correct.checked .feedback {
     background:url(/media/svg/lumbrikus-icons.svg#riktig-hode);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.quiz-part.answered label.correct {
+.quiz-part.answered label.correct .feedback {
     background:url(/media/svg/lumbrikus-icons.svg#hint-riktig);
     background-size: contain;
     background-repeat: no-repeat;
@@ -392,8 +403,9 @@ a[disabled] {opacity: 0.2; pointer-events: none; cursor: default;}
     background: #9e3c68;
 }
 
+
 /* bugfix for MSIE */
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+/*@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {*/
     /* IE10+ CSS styles go here */
 
-}
+/*}*/
