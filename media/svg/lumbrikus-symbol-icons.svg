@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="lumbrikus-icons.css" ?>
+<?xml-stylesheet type="text/css"xlink:href="lumbrikus-icons.css" ?>
 <svg id="SVG_let_og_finn" viewBox="-16 -16 32 32" preserveAspectRatio="xMidYMid meet"
     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
     style="display: none;">
@@ -280,7 +280,7 @@
 
         <symbol id="icon-1" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 1</title>
-            <use href="#kap-bg"/>
+            <use xlink:href="#kap-bg"></use>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -295,7 +295,7 @@
 
         <symbol id="icon-1-bw" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 1</title>
-            <use href="#kap-bg-bw"/>
+            <use xlink:href="#kap-bg-bw"/>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -312,7 +312,7 @@
 
         <symbol id="icon-2" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 2</title>
-            <use href="#kap-bg"/>
+            <use xlink:href="#kap-bg"></use>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -327,7 +327,7 @@
 
         <symbol id="icon-2-bw" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 2</title>
-            <use href="#kap-bg-bw"/>
+            <use xlink:href="#kap-bg-bw"/>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -344,7 +344,7 @@
 
         <symbol id="icon-3" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 3</title>
-            <use href="#kap-bg"/>
+            <use xlink:href="#kap-bg"></use>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -359,7 +359,7 @@
 
         <symbol id="icon-3-bw" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 3</title>
-            <use href="#kap-bg-bw"/>
+            <use xlink:href="#kap-bg-bw"/>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -376,7 +376,7 @@
 
         <symbol id="icon-4" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 4</title>
-            <use href="#kap-bg"/>
+            <use xlink:href="#kap-bg"></use>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -391,7 +391,7 @@
 
         <symbol id="icon-4-bw" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 4</title>
-            <use href="#kap-bg-bw"/>
+            <use xlink:href="#kap-bg-bw"/>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -408,7 +408,7 @@
         
         <symbol id="icon-5" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 5</title>
-            <use href="#kap-bg"/>
+            <use xlink:href="#kap-bg"></use>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -423,7 +423,7 @@
 
         <symbol id="icon-5-bw" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 5</title>
-            <use href="#kap-bg-bw"/>
+            <use xlink:href="#kap-bg-bw"/>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -440,7 +440,7 @@
 
         <symbol id="icon-6" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 6</title>
-            <use href="#kap-bg"/>
+            <use xlink:href="#kap-bg"></use>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -455,7 +455,7 @@
 
         <symbol id="icon-6-bw" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 6</title>
-            <use href="#kap-bg-bw"/>
+            <use xlink:href="#kap-bg-bw"/>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -472,7 +472,7 @@
 
         <symbol id="icon-7" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 7</title>
-            <use href="#kap-bg"/>
+            <use xlink:href="#kap-bg"></use>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -487,7 +487,7 @@
 
         <symbol id="icon-7-bw" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 7</title>
-            <use href="#kap-bg-bw"/>
+            <use xlink:href="#kap-bg-bw"/>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -504,7 +504,7 @@
 
         <symbol id="icon-8" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 8</title>
-            <use href="#kap-bg"/>
+            <use xlink:href="#kap-bg"></use>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -519,7 +519,7 @@
 
         <symbol id="icon-8-bw" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 8</title>
-            <use href="#kap-bg-bw"/>
+            <use xlink:href="#kap-bg-bw"/>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -536,7 +536,7 @@
 
         <symbol id="icon-9" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 9</title>
-            <use href="#kap-bg"/>
+            <use xlink:href="#kap-bg"></use>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -551,7 +551,7 @@
 
         <symbol id="icon-9-bw" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 9</title>
-            <use href="#kap-bg-bw"/>
+            <use xlink:href="#kap-bg-bw"/>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -568,7 +568,7 @@
 
         <symbol id="icon-10" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 10</title>
-            <use href="#kap-bg"/>
+            <use xlink:href="#kap-bg"></use>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -583,7 +583,7 @@
 
         <symbol id="icon-10-bw" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 10</title>
-            <use href="#kap-bg-bw"/>
+            <use xlink:href="#kap-bg-bw"/>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -600,7 +600,7 @@
 
         <symbol id="icon-11" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 11</title>
-            <use href="#kap-bg"/>
+            <use xlink:href="#kap-bg"></use>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -615,7 +615,7 @@
 
         <symbol id="icon-11-bw" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 11</title>
-            <use href="#kap-bg-bw"/>
+            <use xlink:href="#kap-bg-bw"/>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -639,14 +639,14 @@
 
         <symbol id="icon-kort-fortelling" viewBox="-16 -16 32 32">
             <title>kort fortelling</title>
-            <use href="#icon-bg"></use>
+            <use xlink:href="#icon-bg"></use>
             <path stroke="black" fill="transparent" stroke-width="2px" stroke-linecap="butt"
              d="M-10,0 h20 M-10,5 h20 M-10,10 h20 M-10,-5 h20 M-10,-10 h20"/>
         </symbol>
 
         <symbol id="icon-kort-fortelling-bw" viewBox="-16 -16 32 32">
             <title>kort fortelling</title>
-            <use href="#icon-bg"></use>
+            <use xlink:href="#icon-bg"></use>
             <path 
             stroke="black" fill="transparent" stroke-width="2px" stroke-linecap="butt" 
             style="stroke: var(--color-dark, black)" 
@@ -655,7 +655,7 @@
 
         <symbol id="icon-lang-fortelling" viewBox="-16 -16 32 32">
             <title>lang fortelling</title>
-            <use href="#icon-bg"></use>
+            <use xlink:href="#icon-bg"></use>
             <g stroke="black" fill="transparent" stroke-width="2px" stroke-linecap="butt">
                 <path d="M-12,0 h11 M-12,5 h11 M-12,10 h11 M-12,-5 h11 M-12,-10 h11"/>
                 <path d="M1,0 h11 M1,5 h11 M1,10 h11 M1,-5 h11 M1,-10 h11"/>
@@ -664,7 +664,7 @@
 
         <symbol id="icon-lang-fortelling-bw" viewBox="-16 -16 32 32">
             <title>lang fortelling</title>
-            <use href="#icon-bg"></use>
+            <use xlink:href="#icon-bg"></use>
             <g stroke="black" fill="transparent" stroke-width="2px" stroke-linecap="butt"
             style="stroke: var(--color-dark, black))">
                 <path d="M-12,0 h11 M-12,5 h11 M-12,10 h11 M-12,-5 h11 M-12,-10 h11"/>
@@ -674,7 +674,7 @@
 
         <symbol id="icon-let-og-finn" viewBox="-16 -16 32 32">
             <title>let og finn</title>
-            <use href="#icon-bg"></use>
+            <use xlink:href="#icon-bg"></use>
             <g id="magnifier" transform="rotate(-50)">
                 <circle stroke="black" fill="transparent" stroke-width="2px" stroke-linecap="butt" cx="0" cy="-4" r="9"/>
                 <path stroke="black" stroke-linecap="round" stroke-width="4px" d="M0,6 v 6"/>
@@ -683,8 +683,8 @@
 
         <symbol id="icon-let-og-finn-bw" viewBox="-16 -16 32 32">
             <title>let og finn</title>
-            <use href="#icon-bg"></use>
-            <g id="magnifier" transform="rotate(-50)">
+            <use xlink:href="#icon-bg"></use>
+            <g id="magnifier2" transform="rotate(-50)">
                 <circle stroke="black" fill="transparent" stroke-width="2px" stroke-linecap="butt" cx="0" cy="-4" r="9"/>
                 <path stroke="black" stroke-linecap="round" stroke-width="4px" d="M0,6 v 6"/>
             </g>
@@ -692,7 +692,7 @@
 
         <symbol id="icon-ord" viewBox="-16 -16 32 32">
             <title>ord</title>
-            <use href="#icon-bg"></use>
+            <use xlink:href="#icon-bg"></use>
             <path class="bookfill" d="M10,5 h -21.25 l2.25,-13 c 0.25,-1 1,-2 2,-2 h 17z"/>
             <path class="bookpaper"
                 d="M10.25,10 h-20.5 c -2,0 -2,-5 0,-5 h20.75 c -0.5,1.5 -0.5,3.5 0,5"/>
@@ -703,7 +703,7 @@
 
         <symbol id="icon-ord-bw" viewBox="-16 -16 32 32">
             <title>ord</title>
-            <use href="#icon-bg"></use>
+            <use xlink:href="#icon-bg"></use>
             <path class="bookfill" d="M10,5 h -21.25 l2.25,-13 c 0.25,-1 1,-2 2,-2 h 17z"/>
             <path class="bookpaper"
                 d="M10.25,10 h-20.5 c -2,0 -2,-5 0,-5 h20.75 c -0.5,1.5 -0.5,3.5 0,5"/>
@@ -714,7 +714,7 @@
 
         <symbol id="icon-gjore-lage" viewBox="-16 -16 32 32">
             <title>gjøre og lage</title>
-            <use href="#icon-bg"></use>
+            <use xlink:href="#icon-bg"></use>
             <circle class="hode" cx="0" cy="1" r="13"/>
             <path class="smile" d="M8,7 c -1,7 -15,7 -16,0z"/>
             <g id="helmet_group" transform="translate(0,0)">
@@ -735,7 +735,7 @@
 
         <symbol id="icon-gjore-lage-bw" viewBox="-16 -16 32 32">
             <title>gjøre og lage</title>
-            <use href="#icon-bg"></use>
+            <use xlink:href="#icon-bg"></use>
             <circle class="hode" cx="0" cy="1" r="13"/>
             <path class="smile" d="M8,7 c -1,7 -15,7 -16,0z"/>
             <use xlink:href="#helmet_group"/>
@@ -752,40 +752,40 @@
 
         <symbol id="icon-filmer" viewBox="-16 -16 32 32">
             <title>filmer</title>
-            <use href="#icon-bg"></use>
+            <use xlink:href="#icon-bg"></use>
             <path class="play" d="M11 0 l -20 10 v-20 z"/>
         </symbol>
 
         <symbol id="filmer-icon-bw" viewBox="-16 -16 32 32">
             <title>filmer</title>
-            <use href="#icon-bg"></use>
+            <use xlink:href="#icon-bg"></use>
             <path class="play" d="M11 0 l -20 10 v-20 z"/>
         </symbol>
 
 
         <symbol id="icon-snutter" viewBox="-16 -16 32 32">
             <title>snutter</title>
-            <use href="#icon-bg"></use>
+            <use xlink:href="#icon-bg"></use>
             <path class="frame" d="M-10,-11.5 h20 v 10 h-20 z"/>
             <path class="frame" d="M-10,3.5 h20 M-10,7.5 h20 M-10,11.5 h20 "/>
         </symbol>
 
         <symbol id="icon-snutter-bw" viewBox="-16 -16 32 32">
             <title>snutter</title>
-            <use href="#icon-bg"></use>
+            <use xlink:href="#icon-bg"></use>
             <path class="frame" d="M-10,-11.5 h20 v 10 h-20 z"/>
             <path class="frame" d="M-10,3.5 h20 M-10,7.5 h20 M-10,11.5 h20 "/>
         </symbol>
 
         <symbol id="icon-kviss" class="kviss" viewBox="-16 -16 32 32">
             <title>kviss</title>
-            <use href="#icon-bg"></use>
+            <use xlink:href="#icon-bg"></use>
             <text x="0" y="0" dy="13">?</text>
         </symbol>
 
         <symbol id="icon-kviss-bw" class="kviss" viewBox="-16 -16 32 32">
             <title>kviss</title>
-            <use href="#icon-bg"></use>
+            <use xlink:href="#icon-bg"></use>
             <text x="0" y="0" dy="13">?</text>
         </symbol>
 
