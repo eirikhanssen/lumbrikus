@@ -1,57 +1,105 @@
+#g_ord {font-size: 2em;}
 text {
-fill:inherit;
-stroke: inherit;
-font-size: 48px;
-font-family: sans-serif;
-text-anchor: middle;
+    fill:inherit;
+    stroke: inherit;
+    font-family: sans-serif;
+    text-anchor: middle;
 }
 
 text tspan {
-text-anchor: start;
+    text-anchor: start;
 }
 
+
+.show.active_zones path {
+    stroke: rgba(255,0,128,0.5);
+}
+
+.active_zones path.clicked {
+    stroke:transparent;
+}
 
 .active_zones path {
-stroke: transparent;;
-fill: transparent;
-stroke-width: 8;
-stroke-dasharray: 1 10;
-stroke-linecap: round;
-stroke-linejoin: round;
+    stroke: transparent;
+    fill: transparent;
+    stroke-width: 8;
+    stroke-dasharray: 1 10;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 
 }
 
-.active_zones path:hover,
-.active_zone path:focus {
-stroke: yellow;
+#g_active_zones path:hover,
+#g_active_zone path:focus {
+    stroke: rgba(255,255,0,1);
 
-}
-
-#g_ord text {
-stroke-width: 20;
-stroke-linejoin: round;
-paint-order: stroke;
 }
 
 #g_ord {
-fill: black;
-stroke: white;
+    
+    stroke-width: 20;
+    stroke-linejoin: round;
+    paint-order: stroke;
+}
+
+#g_ord text {display:none;}
+#g_ord text.show {
+    display: block;
+}
+
+#g_ord {
+    fill: black;
+    stroke: white;
 }
 
 use.ord.bg {
-opacity: 0.7;
-stroke: white;
+    opacity: 0.7;
+    stroke: white;
 }
 
 use.ord.fg {
-stroke: transparent;
-fill: black;
+    stroke: transparent;
+    fill: black;
 }
 
 /* for debug */
 
 .debug {
-fill: magenta;
+    fill: magenta;
 }
 
-#pe {fill: transparent;}
+#pe {
+    fill: transparent;
+}
+
+@keyframes interaction_in {
+    0% {
+        font-size: 0.75em;}
+    50% {
+        font-size: 1.5em;
+    }
+    100% {
+        font-size: 1.3em;
+    }
+}
+@keyframes interaction_out {
+    0% {
+        font-size: 1.3em;}
+    50% {
+        font-size: 0.85em;
+    }
+    100% {
+        font-size: 1em;
+    }
+}
+
+.action {
+    
+    animation: interaction_in 0.2s, interaction_out 0.4s;
+    animation-delay: 0s, 0.3s;
+    animation-timing-function: ease-in-out, ease-in-out;
+    /*animation: interaction_in 0.2s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;*/
+    animation-fill-mode: forwards;
+}
