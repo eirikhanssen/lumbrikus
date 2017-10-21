@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="https://lumbrikus.no/css/interactive-svg.css" ?>   
+<?xml-stylesheet type="text/css" href="/css/interactive-svg.css" ?>   
 <svg
     id="SVG_let_og_finn"
     width="100%"
@@ -21,7 +21,7 @@
 
     
 
-    <image id="let_og_finn_bg" xlink:href="img/07-let-og-finn-bg.jpg" x="-900" y="-600" width="1800" height="1200"></image>
+    <image id="let_og_finn_bg" xlink:href="/media/img/07-let-og-finn-bg.jpg" x="-900" y="-600" width="1800" height="1200"></image>
     
     <g id="g_active_zones" class="active_zones">
         <path id="z_stjernehimmel" d="m -884,347 1765,40 v -976 H -884 Z"></path>
@@ -56,7 +56,7 @@
            
     </g>
     
-    <script type="text/javascript" xlink:href="https://lumbrikus.no/js/libs/snap.svg-min.js"></script>
-    <script type="text/javascript" xlink:href="https://lumbrikus.no/js/let-og-finn.js"></script>
-<!--    <script type="text/javascript" xlink:href="https://lumbrikus.no/js/add-svg-words.js"></script>-->
+    <script type="text/javascript" xlink:href="/js/lib/snap.svg-min.js"></script>
+    <script type="text/javascript" xlink:href="/js/let-og-finn.js"></script>
+<!--    <script type="text/javascript" xlink:href="/js/add-svg-words.js"></script>-->
 </svg>

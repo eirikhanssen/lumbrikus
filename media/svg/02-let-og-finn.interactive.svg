@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="https://lumbrikus.no/css/interactive-svg.css" ?>   
+<?xml-stylesheet type="text/css" href="/css/interactive-svg.css" ?>   
 <svg
     id="SVG_let_og_finn"
     width="100%"
@@ -21,7 +21,7 @@
 
     
 
-    <image id="let_og_finn_bg" xlink:href="img/02-let-og-finn-bg.jpg" x="-900" y="-600" width="1800" height="1200"></image>
+    <image id="let_og_finn_bg" xlink:href="/media/img/02-let-og-finn-bg.jpg" x="-900" y="-600" width="1800" height="1200"></image>
     
     <g class="active_zones" id="g_active_zones">
         <path id="z_epletre" d="m -351,11 c 6,48 13,100 62,129 41,24 113,5 88,-48 -23,-52 -67,-105 -53,-166 15,-67 86,-105 150,-118 63,-12 132,-26 179,-77 34,-37 87,0 93,48 7,57 107,41 132,3 29,-46 7,-118 -38,-148 -40,-25 -13,-83 6,-118 37,-66 -55,-53 -87,-23 -40,37 -59,90 -93,132 -25,32 -90,61 -118,29 -35,-40 61,-64 91,-92 46,-42 95,-96 88,-160 -5,-47 -70,-37 -107,-38 -53,-0 -89,34 -139,33 -54,-0 -96,22 -138,50 -41,28 -91,49 -143,38 -57,-12 -76,57 -128,63 -47,5 -70,-52 -125,-44 -40,6 -84,45 -59,85 28,46 91,64 113,118 20,53 -51,71 -56,116 -8,69 98,113 143,57 21,-26 9,-118 57,-86 18,12 35,34 44,42 52,39 31,113 38,173 z"></path>
@@ -86,7 +86,7 @@
            
     </g>
     
-    <script type="text/javascript" xlink:href="https://lumbrikus.no/js/libs/snap.svg-min.js"></script>
-    <script type="text/javascript" xlink:href="https://lumbrikus.no/js/let-og-finn.js"></script>
-<!--    <script type="text/javascript" xlink:href="https://lumbrikus.no/js/add-svg-words.js"></script>-->
+    <script type="text/javascript" xlink:href="/js/lib/snap.svg-min.js"></script>
+    <script type="text/javascript" xlink:href="/js/let-og-finn.js"></script>
+<!--    <script type="text/javascript" xlink:href="/js/add-svg-words.js"></script>-->
 </svg>

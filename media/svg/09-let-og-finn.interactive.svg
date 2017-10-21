@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="https://lumbrikus.no/css/interactive-svg.css" ?>   
+<?xml-stylesheet type="text/css" href="/css/interactive-svg.css" ?>   
 <svg
     id="SVG_let_og_finn"
     width="100%"
@@ -21,7 +21,7 @@
 
     
 
-    <image id="let_og_finn_bg" xlink:href="img/09-let-og-finn-bg.jpg" x="-900" y="-600" width="1800" height="1200"></image>
+    <image id="let_og_finn_bg" xlink:href="/media/img/09-let-og-finn-bg.jpg" x="-900" y="-600" width="1800" height="1200"></image>
     
     <g id="g_active_zones" class="active_zones">
         <path id="z_her_kom_det_erter_boenner_og_gulroetter" d="m -299,-372 c -11,-18 0,-66 -19,-63 -13,2 -15,31 -16,46 -3,34 3,68 -20,96 -14,16 -25,39 -29,63 -4,22 8,39 32,33 19,-4 37,-9 57,1 23,13 47,-5 74,-3 29,1 60,4 88,-3 31,-10 61,6 89,-2 13,-4 21,1 32,-5 14,-8 11,-35 23,-52 8,-12 23,-10 18,-33 -4,-20 1,-47 -24,-50 -28,-3 -62,-24 -87,-6 -23,17 -44,36 -72,29 -19,-4 -37,-9 -58,-2 -18,6 -40,1 -58,6 -14,4 -21,-19 -24,-31 -2,-8 1,-15 -2,-22 z"></path>
@@ -70,7 +70,7 @@
            
     </g>
     
-    <script type="text/javascript" xlink:href="https://lumbrikus.no/js/libs/snap.svg-min.js"></script>
-    <script type="text/javascript" xlink:href="https://lumbrikus.no/js/let-og-finn.js"></script>
-<!--    <script type="text/javascript" xlink:href="https://lumbrikus.no/js/add-svg-words.js"></script>-->
+    <script type="text/javascript" xlink:href="/js/lib/snap.svg-min.js"></script>
+    <script type="text/javascript" xlink:href="/js/let-og-finn.js"></script>
+<!--    <script type="text/javascript" xlink:href="/js/add-svg-words.js"></script>-->
 </svg>
