@@ -1,0 +1,415 @@
+/* debug */
+.debug .kviss figure {
+    background: magenta;
+}
+.debug .quiz-part figcaption {
+    background: yellow;
+}
+.debug .kviss label {
+    background: cyan;
+
+}
+/* typography */
+
+html {
+    font: 1em/1.25 "Open Sans", sans-serif;
+}
+
+header {
+    font-size: 0.5em;
+}
+
+.kviss fieldset::after,
+.kviss fieldset legend {
+    border: 2px solid rgb(106, 140, 180);
+}
+.kviss fieldset {
+    position: relative;
+    border-radius: 0.25em;
+    padding:0.25em;
+    padding-top: 1em;
+    margin-bottom: 4em;
+    top: 2em;
+    border: none;
+}
+.kviss fieldset::after {
+    display:block;
+    content:"";
+    top: 1em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    border-radius: .5em;
+    z-index: -1;
+}
+.kviss fieldset legend {
+    padding: 0.5em;
+    border-radius: 1em;
+    line-height: 0.5em;
+    position: absolute;
+    left: 50%;
+    top:1em;
+    transform: translate(-50%,-50%);
+    background: white;
+    min-width: 10em;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.quiz-part figcaption {
+    font-family: "Open Sans Condensed", sans-serif;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.quiz-part .question {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+    @media screen and (max-width: 400px) {
+        .quiz-part .question {
+            font-size: 5vw;
+        }
+    }
+
+.img_container {
+    position: relative;
+    left: -.5rem;
+    top: -.5rem;
+    width: 400px;
+    height: 300px;
+    max-width: 70vw;
+    max-height: 60vw;
+    overflow: hidden;
+    background: white;
+    border: .5rem solid rgb(46, 46, 46);
+    margin-bottom: 0em;
+    box-sizing: border-box;
+   padding: .5rem;
+    
+ 
+}
+.img_container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.kviss figure, 
+.kviss label,
+.kviss .img_container,
+button.sjekk {
+    max-width: 20rem;
+    box-sizing: border-box;
+}
+
+.kviss figure {
+    padding: 0.5em;
+    margin: auto;
+}
+
+.kviss fieldset figure img {
+    
+    width: 100%;
+    height: auto;
+    display: block;
+    margin:auto;
+    box-sizing: border-box;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.kviss label {
+    margin: 1em auto;
+    display: flex;
+    justify-content: space-between;
+    min-height: 3rem;
+    position: relative;
+}
+.kviss label > * {
+    display: block;
+    flex-shrink: 0;
+}
+
+/* make it look like a button */
+.kviss label span.alternativ {
+    background: #ddd;
+    border-radius: 0.25em;
+    
+    text-align: center;
+    width: 80%;
+    box-sizing: border-box;
+    min-width: 10em;
+    min-height: 3rem;
+    line-height: 3rem;
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+
+}
+
+.kviss label span.alternativ:hover {
+    background-color: #eee;
+}
+.kviss label span:after {
+    display: block;
+    height:1px;
+    content:"";
+    clear:both;
+}
+
+.selfClear {
+    display: block;
+}
+.selfClear:after {
+    content: ".";
+    display: block;
+    height: 0px;
+    clear: both;
+    visibility: hidden;
+}
+
+.kviss input:checked ~ .alternativ {
+    /*background: rgb(153, 255, 51);
+    background: magenta;
+    background: orange;*/
+    background: rgb(64, 195, 255);
+    color:black;
+}
+
+.kviss input:checked ~ .alternativ:hover {
+
+    background: rgb(135, 230, 40);
+    /*background: rgb(201, 255, 51);*/
+    background: rgb(64, 210, 255);
+}
+
+/* input styling */
+
+.quiz-part label input[type="checkbox"],
+.quiz-part label input[type="radio"] {
+    width:2.4rem;
+    height:2.4rem;
+    margin:0.4rem;
+}
+
+.quiz-part.answered label input {
+    display: none;
+    pointer-events: none;
+}
+
+.quiz-part.answered label.incorrect.checked .alternativ{
+    background: rgb(189, 8, 28);
+    color: white;
+}
+
+.quiz-part.answered label.correct.checked .alternativ{
+    background: rgb(0, 121, 18);
+    color: white;
+}
+
+.quiz-part span.feedback {
+    position: relative;
+    display:none;
+    top:1;
+    left:0;
+    height: 3rem;
+    width: 3rem;
+}
+
+.quiz-part.answered .feedback {
+    display: block;
+}
+
+.quiz-part.answered label.incorrect.checked .feedback {
+    background:url(/media/svg/lumbrikus-icons.svg#galt);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.quiz-part.answered label.correct.checked .feedback {
+    background:url(/media/svg/lumbrikus-icons.svg#riktig-hode);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.quiz-part.answered label.correct .feedback {
+    background:url(/media/svg/lumbrikus-icons.svg#hint-riktig);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.quiz-part nav.quiz-nav {
+    display: flex;
+    justify-content: center;
+
+}
+
+.quiz-nav .forrige,
+.quiz-nav .neste {
+    width: 40%;
+    max-width: 9.5rem;
+    height: 3rem;
+    line-height: 3rem;
+    margin: 0 .5rem .75rem;
+    background: rgb(0, 115, 255);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: .25rem;
+    position: relative;
+    text-decoration: none;
+    box-sizing: content-box;
+    border: 1px solid transparent;
+}
+.quiz-nav .forrige:hover,
+.quiz-nav .neste:hover {
+    background: rgb(0, 89, 255);
+    border-color: rgb(3, 63, 101);
+    text-shadow: 0 0 5px rgb(3, 63, 101);
+}
+
+a[disabled] {opacity: 0.2; pointer-events: none; cursor: default;}
+
+.quiz-nav .forrige span::before,
+.quiz-nav .neste span::after {
+    content:"";
+    position: absolute;
+    display: block;
+    height: 3rem;
+    width: 3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top:0;
+}
+.quiz-nav .forrige span::before {
+    right: 100%;
+    margin-right: .5rem;
+    background:url(/media/svg/lumbrikus-icons.svg#forrige);
+}
+.quiz-nav .neste span::after {
+    left: 100%;
+    margin-left: .5rem;
+    background:url(/media/svg/lumbrikus-icons.svg#neste);
+}
+
+.quiz-part button.sjekk {
+    display: block;
+    width: 100%;
+    max-width: 20rem;
+    height: 3rem;
+    margin: 0 auto;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    flex-shrink: 0;
+}
+
+.quiz-part .forklaring {
+    visibility: hidden;
+    text-align: center;
+    border: 1px dashed black;
+    background: rgb(255, 255, 156);
+    padding: .5em;
+    max-width: 40em;
+    display: block;
+    margin: auto;
+    border-radius: 1em;
+    margin-bottom: 1rem;
+}
+
+.quiz-part.answered .forklaring {
+    visibility: visible;
+}
+
+#til_resultater {
+    background: magenta;
+}
+
+.smiley-correct, .smiley-incorrect {
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    background: url(/media/svg/lumbrikus-icons.svg#riktig-hode);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 2em;
+}
+.smiley-incorrect {
+    width: 2em;
+    height: 2em;
+    background: url(/media/svg/lumbrikus-icons.svg#mulig-hode);
+}
+
+.score-smileys {
+    text-align: center;
+    max-width: 70%;
+    display: block;
+    margin: auto;
+}
+
+.kviss_start {
+    height: 6rem;
+    width: 20rem;
+    font-size: 3rem;
+    color: white;
+    background:magenta;
+    border: none;
+    border-radius:.25em;
+    display: block;
+    margin: 1em auto;
+    text-shadow: 0 0 .25em black;
+}
+
+#kviss-totalt-riktige, 
+#kviss-totalt-mulige {
+    font-size: 8rem;
+    font-weight: bold;
+    position: relative;
+    bottom: -1.5rem;
+}
+
+#kviss-scoreboard {
+    text-align: center;
+    border: 10px dotted magenta;
+    border-radius: 1em;
+}
+
+#kviss-scoreboard h2 {
+    font-size: 4rem;
+}
+
+#kviss-poengsum-prosent {
+    margin: 0;
+    font-size: 10rem;
+    font-weight: bold;
+}
+@media screen and (orientation: portrait) {
+    #kviss-poengsum-prosent {
+        font-size: 25vw;
+    }
+}
+.kviss-ferdig {font-size: 4rem; line-height: 8rem; margin: 0;}
+
+#kviss fieldset+article {
+    margin-top: 8em;
+}
+
+.textbg {
+    background: #9e3c68;
+}
+
+.icon {
+    width: 4em;
+    height: 4em;
+    border: 1px solid black;
+    box-sizing: content-box;
+}
+/* bugfix for MSIE */
+/*@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {*/
+    /* IE10+ CSS styles go here */
+
+/*}*/
