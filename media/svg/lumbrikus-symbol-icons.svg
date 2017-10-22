@@ -3,205 +3,7 @@
 <svg id="SVG_let_og_finn" viewBox="-16 -16 32 32" preserveAspectRatio="xMidYMid meet"
     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
     style="display: none;">
-    <style type="text/css">
-#icon-lumbrikus circle {
-    fill: rgb(129, 30, 76);
-}
-#icon-lumbrikus-bw circle {
-    fill: black;
-}
-
-#icon-lumbrikus text,
-#icon-lumbrikus-bw text {
-    font-family: sans-serif; fill: black; stroke: #9cff6e; stroke-width: 3px; paint-order: stroke; stroke-linejoin: round; text-anchor: middle; font-size: 14px;
-}
-#icon-lumbrikus text+text,
-#icon-lumbrikus-bw text+text{
-    stroke-width: 1px;
-    stroke:black;
-}
-#icon-lumbrikus-bw {
-    fill: black;
-}
-
-#icon-lumbrikus-bw text
- {
-    stroke: white;
-}
-
-.kap circle {
-    fill: black;
-}
-.kap text, .kviss text {
-    font-family: Arial, "DejaVu Sans", sans-serif;
-    text-anchor:middle;
-    font-size: 24px;
-    fill: white;
-    font-weight: bold;
-}
-.kviss text {
-    fill:black;
-    stroke: black;
-    stroke-width: 0.5px;
-}
-.icon-bg {
-    fill: white;
-    opacity: 0.5;
-}
-
-.thick {
-    stroke: black;
-    fill: transparent;
-    stroke-width: 2px;
-    stroke-linecap: butt;
-}
-#magnifier path {
-    stroke: black;
-    stroke-linecap: round;
-    stroke-width: 4px;
-}
-
-.bookline {
-    stroke: black;
-    stroke-linecap: round;
-    stroke-width: 1px;
-    fill: transparent; 
-    stroke-linejoin: round;
-}
-
-.bookline-bottom {
-    stroke: #777;
-    stroke-linecap: round;
-    stroke-width: 2px;
-}
-
-#icon-ord-bw .bookfill {
-    fill:black;
-}
-#icon-rd-bw .bookpaper {
-   fill: rgba(255,255,255,0.75);
-}
-
-.bookfill {
-    fill: rgb(255, 84, 84);
-}
-.bookpaper {
-    fill: rgb(245, 220, 198);
-}
-
-.hode {
-    stroke: black;
-    stroke-width: 1px;
-    fill: rgb(255, 234, 45); 
-}
-
-#icon-gjore-lage-bw .hode {
-    fill: transparent;
-}
-
-.smile {
-    stroke: black;
-    stroke-width: 1px;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    fill: rgb(255, 255, 255);
-}
-.helmet, .hodelykt {
-    stroke: black;
-    stroke-width: 1.5px;
-    stroke-linejoin: miter;
-    fill:white;
-}
-
-.visor, .eyes {
-    stroke: black;
-    stroke-width: 1px;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    fill: rgba(255, 255, 255, 0.7);
-}
-#icon-filmer .icon-bg {
-    fill: rgb(209, 15, 34);
-    opacity: 1;
-}
-
-#icon-filmer-bw .icon-bg {
-    fill: transparent;
-}
-#icon-filmer .play {
-    fill: white;
-}
-#icon-filmer-bw .play {
-    fill: black;
-}
-
-.kviss text {
-    stroke-width: 0.5px;
-    stroke: black;
-    stroke-linejoin: round;
-    font-size: 2.5em;
-}
-
-.frame {
-    stroke: black;
-    stroke-width: 2px;
-    fill: transparent;
-    stroke-linecap: square;
-    stroke-linejoin: miter;
-}
-
-.galt {
-    fill: none;
-    stroke: rgb(189, 8, 28);
-    stroke-width: 6px;
-    stroke-linecap: butt;
-}
-.riktig .hode {
-    fill: rgb(255, 234, 45);;
-    stroke: black;
-    stroke-width: 2px;
-}
-.riktig .hode-oye {
-    fill:black;
-    stroke: none;
-}
-.riktig .hode-smil {
-    fill: white;
-    stroke: black;
-    stroke-width: 2px;
-    stroke-linecap:round;
-    stroke-linejoin:round;
-}
-
-.mulig .hode {
-    fill: rgb(156, 218, 236);;
-    stroke: rgb(0, 78, 122);
-    stroke-width: 2px;
-}
-.mulig .hode-oye {
-    fill:rgb(0, 78, 122);
-    stroke: none;
-}
-.mulig .hode-smil {
-    fill: none;
-    stroke: rgb(0, 78, 122);
-    stroke-width: 2px;
-    stroke-linecap:round;
-}
-
-.hint-riktig {
-    fill: transparent;
-    stroke: rgb(0, 163, 27);
-    stroke-width: 6px;
-}
-
-.forrige, .neste {
-    fill: transparent;
-    stroke: #999;
-    stroke-width: 6px;
-}
-
-     </style>
+    <style type="text/css"></style>
     <title>Lumbrikus ikoner (symbol)</title>
     <defs font-family="sans-serif">
         <symbol id="icon-lumbrikus" viewBox="-16 -16 32 32">
@@ -224,7 +26,7 @@
             </g>
         </symbol>
 
-        <symbol id="icon-lumbrikus-bw" viewBox="-16 -16 32 32">
+        <symbol id="icon-lumbrikus-mc" viewBox="-16 -16 32 32">
             <title>lumbrikus</title>
             <g fill="#555" style="fill: var(--color-medium, #555);">
             <circle cx="0" cy="-6" r="10"/>
@@ -261,9 +63,9 @@
             </g>
         </symbol>
 
-        <symbol id="icon-0-bw" class="kap" viewBox="-16 -16 32 32">
+        <symbol id="icon-0-mc" class="kap" viewBox="-16 -16 32 32">
             <title>start</title>
-            <circle id="kap-bg-bw" fill="#555" style="fill: var(--color-medium, #555);" cx="0" cy="0" r="16"/>
+            <circle id="kap-bg-mc" fill="#555" style="fill: var(--color-medium, #555);" cx="0" cy="0" r="16"/>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -293,9 +95,9 @@
             </g>
         </symbol>
 
-        <symbol id="icon-1-bw" class="kap" viewBox="-16 -16 32 32">
+        <symbol id="icon-1-mc" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 1</title>
-            <use xlink:href="#kap-bg-bw"/>
+            <use xlink:href="#kap-bg-mc"/>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -325,9 +127,9 @@
             </g>
         </symbol>
 
-        <symbol id="icon-2-bw" class="kap" viewBox="-16 -16 32 32">
+        <symbol id="icon-2-mc" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 2</title>
-            <use xlink:href="#kap-bg-bw"/>
+            <use xlink:href="#kap-bg-mc"/>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -357,9 +159,9 @@
             </g>
         </symbol>
 
-        <symbol id="icon-3-bw" class="kap" viewBox="-16 -16 32 32">
+        <symbol id="icon-3-mc" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 3</title>
-            <use xlink:href="#kap-bg-bw"/>
+            <use xlink:href="#kap-bg-mc"/>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -389,9 +191,9 @@
             </g>
         </symbol>
 
-        <symbol id="icon-4-bw" class="kap" viewBox="-16 -16 32 32">
+        <symbol id="icon-4-mc" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 4</title>
-            <use xlink:href="#kap-bg-bw"/>
+            <use xlink:href="#kap-bg-mc"/>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -421,9 +223,9 @@
             </g>
         </symbol>
 
-        <symbol id="icon-5-bw" class="kap" viewBox="-16 -16 32 32">
+        <symbol id="icon-5-mc" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 5</title>
-            <use xlink:href="#kap-bg-bw"/>
+            <use xlink:href="#kap-bg-mc"/>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -453,9 +255,9 @@
             </g>
         </symbol>
 
-        <symbol id="icon-6-bw" class="kap" viewBox="-16 -16 32 32">
+        <symbol id="icon-6-mc" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 6</title>
-            <use xlink:href="#kap-bg-bw"/>
+            <use xlink:href="#kap-bg-mc"/>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -485,9 +287,9 @@
             </g>
         </symbol>
 
-        <symbol id="icon-7-bw" class="kap" viewBox="-16 -16 32 32">
+        <symbol id="icon-7-mc" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 7</title>
-            <use xlink:href="#kap-bg-bw"/>
+            <use xlink:href="#kap-bg-mc"/>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -517,9 +319,9 @@
             </g>
         </symbol>
 
-        <symbol id="icon-8-bw" class="kap" viewBox="-16 -16 32 32">
+        <symbol id="icon-8-mc" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 8</title>
-            <use xlink:href="#kap-bg-bw"/>
+            <use xlink:href="#kap-bg-mc"/>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -549,9 +351,9 @@
             </g>
         </symbol>
 
-        <symbol id="icon-9-bw" class="kap" viewBox="-16 -16 32 32">
+        <symbol id="icon-9-mc" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 9</title>
-            <use xlink:href="#kap-bg-bw"/>
+            <use xlink:href="#kap-bg-mc"/>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -581,9 +383,9 @@
             </g>
         </symbol>
 
-        <symbol id="icon-10-bw" class="kap" viewBox="-16 -16 32 32">
+        <symbol id="icon-10-mc" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 10</title>
-            <use xlink:href="#kap-bg-bw"/>
+            <use xlink:href="#kap-bg-mc"/>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -613,9 +415,9 @@
             </g>
         </symbol>
 
-        <symbol id="icon-11-bw" class="kap" viewBox="-16 -16 32 32">
+        <symbol id="icon-11-mc" class="kap" viewBox="-16 -16 32 32">
             <title>kapittel 11</title>
-            <use xlink:href="#kap-bg-bw"/>
+            <use xlink:href="#kap-bg-mc"/>
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
@@ -634,7 +436,7 @@
             <rect id="icon-bg"
             x="-15.5" y="-15.5" width="31" height="31" rx="2"
             fill="rgba(255,255,255,0.5)"
-            style="fill: var(--color-icon-bg, rgba(255,255,255,0.5)"/>
+            style="fill: var(--color-icon-bg, rgba(255,255,255,0.5);"/>
         </symbol>
 
         <symbol id="icon-kort-fortelling" viewBox="-16 -16 32 32">
@@ -644,7 +446,7 @@
              d="M-10,0 h20 M-10,5 h20 M-10,10 h20 M-10,-5 h20 M-10,-10 h20"/>
         </symbol>
 
-        <symbol id="icon-kort-fortelling-bw" viewBox="-16 -16 32 32">
+        <symbol id="icon-kort-fortelling-mc" viewBox="-16 -16 32 32">
             <title>kort fortelling</title>
             <use xlink:href="#icon-bg"></use>
             <path 
@@ -662,7 +464,7 @@
             </g>
         </symbol>
 
-        <symbol id="icon-lang-fortelling-bw" viewBox="-16 -16 32 32">
+        <symbol id="icon-lang-fortelling-mc" viewBox="-16 -16 32 32">
             <title>lang fortelling</title>
             <use xlink:href="#icon-bg"></use>
             <g stroke="black" fill="transparent" stroke-width="2px" stroke-linecap="butt"
@@ -681,47 +483,70 @@
             </g>
         </symbol>
 
-        <symbol id="icon-let-og-finn-bw" viewBox="-16 -16 32 32">
+        <symbol id="icon-let-og-finn-mc-dark" viewBox="-16 -16 32 32">
             <title>let og finn</title>
             <use xlink:href="#icon-bg"></use>
-            <g id="magnifier2" transform="rotate(-50)">
-                <circle stroke="black" fill="transparent" stroke-width="2px" stroke-linecap="butt" cx="0" cy="-4" r="9"/>
-                <path stroke="black" stroke-linecap="round" stroke-width="4px" d="M0,6 v 6"/>
+            <g transform="rotate(-50)" stroke="black"
+            style="stroke: var(--color-dark, black)">
+                <circle fill="transparent" stroke-width="2px" stroke-linecap="butt" cx="0" cy="-4" r="9"/>
+                <path stroke-linecap="round" stroke-width="4px" d="M0,6 v 6"/>
+            </g>
+        </symbol>
+
+        <symbol id="icon-let-og-finn-mc-bright" viewBox="-16 -16 32 32">
+            <title>let og finn</title>
+            <use xlink:href="#icon-bg"></use>
+            <g transform="rotate(-50)" stroke="#ccc"
+            style="stroke: var(--color-bright, #ccc)">
+                <circle fill="transparent" stroke-width="2px" stroke-linecap="butt" cx="0" cy="-4" r="9"/>
+                <path stroke-linecap="round" stroke-width="4px" d="M0,6 v 6"/>
             </g>
         </symbol>
 
         <symbol id="icon-ord" viewBox="-16 -16 32 32">
             <title>ord</title>
             <use xlink:href="#icon-bg"></use>
-            <path class="bookfill" d="M10,5 h -21.25 l2.25,-13 c 0.25,-1 1,-2 2,-2 h 17z"/>
-            <path class="bookpaper"
+            <path fill="rgb(255, 84, 84)" class="bookfill" d="M10,5 h -21.25 l2.25,-13 c 0.25,-1 1,-2 2,-2 h 17z"/>
+            <path fill="rgb(245, 220, 198)" class="bookpaper"
                 d="M10.25,10 h-20.5 c -2,0 -2,-5 0,-5 h20.75 c -0.5,1.5 -0.5,3.5 0,5"/>
-            <path class="bookline"
+            <path stroke="black" stroke-linecap="round" stroke-width="1px" fill="transparent" stroke-linejoin="round" class="bookline"
                 d="M10,10 h -20 c -2,0 -2,-5 0,-5 h20 v-15 h-17 c -2,0 -2,2 -2.25,3 l -2.25,14"/>
-            <path class="bookline-bottom" d="M9,7.5 h -18"/>
+            <path class="bookline-bottom" 
+            stroke="#777" stroke-linecap="round" stroke-width="1px"
+            d="M9,7.5 h -18"/>
         </symbol>
 
-        <symbol id="icon-ord-bw" viewBox="-16 -16 32 32">
+        <symbol id="icon-ord-mc" viewBox="-16 -16 32 32">
             <title>ord</title>
             <use xlink:href="#icon-bg"></use>
-            <path class="bookfill" d="M10,5 h -21.25 l2.25,-13 c 0.25,-1 1,-2 2,-2 h 17z"/>
-            <path class="bookpaper"
+            <path fill="#777" class="bookfill" d="M10,5 h -21.25 l2.25,-13 c 0.25,-1 1,-2 2,-2 h 17z"
+            style="fill: var(--color-medium, #777)"/>
+            <path fill="#ddd"
+            style="fill: var(--color-bright, #ddd)" class="bookpaper"
                 d="M10.25,10 h-20.5 c -2,0 -2,-5 0,-5 h20.75 c -0.5,1.5 -0.5,3.5 0,5"/>
-            <path class="bookline"
+            <path stroke="black"
+            style="stroke: var(--color-dark, black)" stroke-linecap="round" stroke-width="1px" fill="transparent" stroke-linejoin="round" class="bookline"
                 d="M10,10 h -20 c -2,0 -2,-5 0,-5 h20 v-15 h-17 c -2,0 -2,2 -2.25,3 l -2.25,14"/>
-            <path class="bookline-bottom" d="M9,7.5 h -18"/>
+            <path class="bookline-bottom" 
+            stroke="#777"
+            style="stroke: var(--color-medium, #777)" stroke-linecap="round" stroke-width="1px"
+            d="M9,7.5 h -18"/>
         </symbol>
 
         <symbol id="icon-gjore-lage" viewBox="-16 -16 32 32">
             <title>gjøre og lage</title>
             <use xlink:href="#icon-bg"></use>
-            <circle class="hode" cx="0" cy="1" r="13"/>
-            <path class="smile" d="M8,7 c -1,7 -15,7 -16,0z"/>
-            <g id="helmet_group" transform="translate(0,0)">
+            <circle id="gult-hode-bg" cx="0" cy="1" r="13"
+            fill="rgb(255, 234, 45)" stroke="black" stroke-width="1px"/>
+            <path stroke="black" fill="white" stroke-width="1px" stroke-linecap="round" stroke-linejoin="round" class="smile" d="M8,7 c -1,7 -15,7 -16,0z"/>
+            <g fill="white" stroke="black"
+            stroke-linejoin="round" stroke-width="1.5px" id="helmet_group" transform="translate(0,0)">
                 <path class="helmet" d="M14,-4 c -5,-13 -23,-13 -28,0 z"/>
-                <circle class="hodelykt" cx="0" cy="-9" r="3"/>
-                <circle class="hodelykt-senter" cx="0" cy="-9" r="0.75"/>
+                <circle stroke="darkorange" class="hodelykt" cx="0" cy="-9" r="3"/>
+                <circle stroke-width="0.5px" stroke="orange" fill="yellow" class="hodelykt-senter" cx="0" cy="-9" r="0.75"/>
             </g>
+            <g stroke-width="1px" stroke="black" stroke-linecap="round"
+            stroke-linejoin="round" fill="rgba(255,255,255,0.5)">
             <path class="eyes" d="M8 0 h -2 M -8 0 h 2"/>
             <path class="visor"
                 d="M14 -1 
@@ -731,16 +556,32 @@
      c 2,0 -1,2 6,2
      c 4,0 9,-1 8,-6"
             />
+            </g>
         </symbol>
 
-        <symbol id="icon-gjore-lage-bw" viewBox="-16 -16 32 32">
+        <symbol id="icon-gjore-lage-mc" viewBox="-16 -16 32 32">
             <title>gjøre og lage</title>
             <use xlink:href="#icon-bg"></use>
-            <circle class="hode" cx="0" cy="1" r="13"/>
-            <path class="smile" d="M8,7 c -1,7 -15,7 -16,0z"/>
-            <use xlink:href="#helmet_group"/>
+            <circle id="hode-bg-mc" cx="0" cy="1" r="13"
+            fill="rgb(255, 234, 45)" stroke="black" stroke-width="1px"
+            style="fill: var(--color-medium, #777); stroke: var(--color-dark, black)"/>
+            <path stroke="black" fill="white" stroke-width="1px" stroke-linecap="round" stroke-linejoin="round" class="smile" d="M8,7 c -1,7 -15,7 -16,0z"
+            style="fill: var(--color-bright, white); stroke: var(--color-dark, black);"
+            />
+            <g fill="white" stroke="black"
+            style="fill: var(--color-bright, #ddd); stroke: var(--color-dark, black)"
+            stroke-linejoin="round" stroke-width="1.5px" id="helmet_group" transform="translate(0,0)">
+                <path class="helmet" d="M14,-4 c -5,-13 -23,-13 -28,0 z"/>
+                <circle stroke="darkorange" class="hodelykt" cx="0" cy="-9" r="3"
+                style="stroke: var(--color-medium, #777)"/>
+                <circle stroke-width="0.5px" stroke="orange" fill="yellow" class="hodelykt-senter" cx="0" cy="-9" r="0.75"
+                style="fill: var(--color-medium, #ddd); stroke: var(--color-dark, black)"/>
+            </g>
+            <g stroke-width="1px" stroke="black" stroke-linecap="round"
+            stroke-linejoin="round" fill="rgba(255,255,255,0.5)">
             <path class="eyes" d="M8 0 h -2 M -8 0 h 2"/>
             <path class="visor"
+            style="stroke: var(--color-dark, black)"
                 d="M14 -1 
      c -4,-2 -24,-2 -28,0 
      c -1,5 4,6 8 6 
@@ -748,119 +589,167 @@
      c 2,0 -1,2 6,2
      c 4,0 9,-1 8,-6"
             />
+            </g>
         </symbol>
 
         <symbol id="icon-filmer" viewBox="-16 -16 32 32">
             <title>filmer</title>
-            <use xlink:href="#icon-bg"></use>
-            <path class="play" d="M11 0 l -20 10 v-20 z"/>
+            <use fill="rgb(209, 15, 34)" xlink:href="#icon-bg"></use>
+            <path fill="rgb(209, 15, 34)" class="play" d="M11 0 l -20 10 v-20 z"/>
         </symbol>
 
-        <symbol id="filmer-icon-bw" viewBox="-16 -16 32 32">
+        <symbol id="icon-filmer-mc" viewBox="-16 -16 32 32">
             <title>filmer</title>
-            <use xlink:href="#icon-bg"></use>
-            <path class="play" d="M11 0 l -20 10 v-20 z"/>
+            <rect x="-15.5" y="-15.5" width="31" height="31" rx="2" fill="#777"
+            style="fill: var(--color-bright, #777)"/>
+            <path fill="black" style="fill: var(--color-dark, black);" d="M11 0 l -20 10 v-20 z"/>
         </symbol>
 
+        <symbol id="icon-filmer-inv" viewBox="-16 -16 32 32">
+            <title>filmer inverted</title>
+            <rect x="-15.5" y="-15.5" width="31" height="31" rx="2" fill="rgb(209, 15, 34)"/>
+            <path fill="white" class="play" d="M11 0 l -20 10 v-20 z"/>
+        </symbol>
+
+        <symbol id="icon-filmer-inv-mc" viewBox="-16 -16 32 32">
+            <title>filmer</title>
+            <rect x="-15.5" y="-15.5" width="31" height="31" rx="2" fill="black"
+            style="fill: var(--color-dark, black)"/>
+            <path fill="#777" style="fill: var(--color-bright, black);" d="M11 0 l -20 10 v-20 z"/>
+        </symbol>
 
         <symbol id="icon-snutter" viewBox="-16 -16 32 32">
             <title>snutter</title>
             <use xlink:href="#icon-bg"></use>
+            <g stroke="black" stroke-width="2px" fill="transparent" stroke-linecap="square" >
             <path class="frame" d="M-10,-11.5 h20 v 10 h-20 z"/>
             <path class="frame" d="M-10,3.5 h20 M-10,7.5 h20 M-10,11.5 h20 "/>
+            </g>
         </symbol>
 
-        <symbol id="icon-snutter-bw" viewBox="-16 -16 32 32">
+        <symbol id="icon-snutter-mc" viewBox="-16 -16 32 32">
             <title>snutter</title>
             <use xlink:href="#icon-bg"></use>
+            <g stroke="black" stroke-width="2px" fill="transparent" stroke-linecap="square" 
+            style="stroke: var(--color-dark, black)">
             <path class="frame" d="M-10,-11.5 h20 v 10 h-20 z"/>
             <path class="frame" d="M-10,3.5 h20 M-10,7.5 h20 M-10,11.5 h20 "/>
+            </g>
         </symbol>
 
         <symbol id="icon-kviss" class="kviss" viewBox="-16 -16 32 32">
             <title>kviss</title>
             <use xlink:href="#icon-bg"></use>
-            <text x="0" y="0" dy="13">?</text>
+            <g fill="black" font-family="sans-serif" 
+            stroke-width="1px" stroke="black" stroke-linejoin="round" 
+            font-size="32px" text-anchor="middle" >
+            <text fill="white" stroke="white" stroke-width="4px" x="0" y="0" dy="11">?</text>
+            <text x="0" y="0" dy="11">?</text>
+            </g>
         </symbol>
 
-        <symbol id="icon-kviss-bw" class="kviss" viewBox="-16 -16 32 32">
+        <symbol id="icon-kviss-mc" class="kviss" viewBox="-16 -16 32 32">
             <title>kviss</title>
             <use xlink:href="#icon-bg"></use>
-            <text x="0" y="0" dy="13">?</text>
+            <g fill="black" font-family="sans-serif" 
+            
+            stroke-width="1px" stroke="black" stroke-linejoin="round" 
+            font-size="32px" text-anchor="middle"
+            style="fill: var(--color-dark, black); stroke: var(--color-dark, black)" >
+            <text fill="white" stroke="white" stroke-width="4px" x="0" y="0" dy="11"
+            style="fill: var(--color-bright, white); stroke: var(--color-bright, white)">?</text>
+            <text x="0" y="0" dy="11">?</text>
+            </g>
         </symbol>
 
         <symbol id="icon-riktig-hode" class="riktig" viewBox="-16 -16 32 32">
             <title>riktig svar</title>
-            <circle class="hode" cx="0" cy="0" r="15"/>
+            <use xlink:href="#gult-hode-bg"></use>
+            <g stroke="none">
             <circle class="hode-oye" cx="7" cy="-5" r="2"/>
             <circle class="hode-oye" cx="-7" cy="-5" r="2"/>
-            <path class="hode-smil" d="M-10,3 C -5,13 5,13 10,3 z"/>
+            </g>
+            <path fill="rgba(255,255,255,0.9)" stroke="black" stroke-linejoin="round" class="hode-smil" d="M-10,3 C -5,13 5,13 10,3 z"/>
         </symbol>
 
-        <symbol id="icon-riktig-hode-bw" class="riktig" viewBox="-16 -16 32 32">
+        <symbol id="icon-riktig-hode-mc" class="riktig" viewBox="-16 -16 32 32">
             <title>riktig svar</title>
-            <circle class="hode" cx="0" cy="0" r="15"/>
+            <use xlink:href="#hode-bg-mc"></use>
+            <g fill="black" style="fill: var(--color-dark, black)">
             <circle class="hode-oye" cx="7" cy="-5" r="2"/>
             <circle class="hode-oye" cx="-7" cy="-5" r="2"/>
-            <path class="hode-smil" d="M-10,3 C -5,13 5,13 10,3 z"/>
+            </g>
+            <path fill="white" stroke-linejoin="round" stroke="black" style="fill: var(--color-bright, white); stroke: var(--color-dark, black)" class="hode-smil" d="M-10,3 C -5,13 5,13 10,3 z"/>
         </symbol>
 
         <symbol id="icon-galt" viewBox="-16 -16 32 32">
             <title>galt svar</title>
-            <path class="galt" d="M-13 -13 L 13 13 M-13 13 L 13 -13"/>
+            <path stroke-width="6px" stroke-linecap="butt" stroke="rgb(189, 8, 28)" class="galt" d="M-13 -13 L 13 13 M-13 13 L 13 -13"/>
         </symbol>
 
-        <symbol id="icon-galt-bw" viewBox="-16 -16 32 32">
+        <symbol id="icon-galt-mc" viewBox="-16 -16 32 32">
             <title>galt svar</title>
-            <path class="galt" d="M-13 -13 L 13 13 M-13 13 L 13 -13"/>
+            <path stroke-width="6px" stroke-linecap="butt" stroke="#444"
+            style="stroke: var(--color-dark, #444)" class="galt" d="M-13 -13 L 13 13 M-13 13 L 13 -13"/>
         </symbol>
 
         <symbol id="icon-hint" viewBox="-16 -16 32 32">
             <title>hint</title>
-            <path class="hint-riktig" d="M11.5 0 L2 9 L 2 6 L -13 6 L -13 -6 L 2 -6 L2 -9 z"/>
+            <g stroke="rgb(0, 163, 27)">
+                <path id="rightarrow_stroke" stroke-width="6px" fill="transparent" class="hint-riktig" d="M11.5 0 L2 9 L 2 6 L -13 6 L -13 -6 L 2 -6 L2 -9 z"/>
+            </g>
         </symbol>
 
-        <symbol id="icon-hint-bw" viewBox="-16 -16 32 32">
+        <symbol id="icon-hint-mc" viewBox="-16 -16 32 32">
             <title>hint</title>
-            <path class="hint-riktig" d="M11.5 0 L2 9 L 2 6 L -13 6 L -13 -6 L 2 -6 L2 -9 z"/>
+            <use stroke="#444" style="stroke: var(--color-dark, #444)" xlink:href="#rightarrow_stroke"></use>
         </symbol>
 
         <symbol id="icon-mulig-hode" class="mulig" viewBox="-16 -16 32 32">
             <title>mulig</title>
-            <circle class="hode" cx="0" cy="0" r="15"/>
+            <g stroke-width="2px" stroke-linecap="round">
+            <circle fill="rgb(156, 218, 236)" stroke="rgb(0, 78, 122)" class="hode" cx="0" cy="0" r="15"/>
+            <g fill="rgb(0, 78, 122)" stroke="transparent">
             <circle class="hode-oye" cx="7" cy="-5" r="2"/>
             <circle class="hode-oye" cx="-7" cy="-5" r="2"/>
-            <path class="hode-smil" d="M-10,3 C -5,13 5,13 10,3"/>
+            </g>
+            <path fill="transparent" stroke="rgb(0, 78, 122)" class="hode-smil" d="M-10,3 C -5,13 5,13 10,3"/>
+            </g>
         </symbol>
 
-        <symbol id="icon-mulig-hode-bw" class="mulig" viewBox="-16 -16 32 32">
+        <symbol id="icon-mulig-hode-mc" class="mulig" viewBox="-16 -16 32 32">
             <title>mulig</title>
-            <circle class="hode" cx="0" cy="0" r="15"/>
+            <g stroke-width="2px" stroke-linecap="round" fill="#aaa" stroke="black"
+            style="fill: var(--color-bright, #aaa); stroke: var(--color-dark, black)">
+            <circle  class="hode" cx="0" cy="0" r="15"/>
+            <g fill="black" stroke="transparent"
+            style="fill: var(--color-dark, black)">
             <circle class="hode-oye" cx="7" cy="-5" r="2"/>
             <circle class="hode-oye" cx="-7" cy="-5" r="2"/>
-            <path class="hode-smil" d="M-10,3 C -5,13 5,13 10,3"/>
+            </g>
+            <path fill="transparent" stroke="black" class="hode-smil" d="M-10,3 C -5,13 5,13 10,3"
+            style="stroke: var(--color-dark, black)"/>
+            </g>
         </symbol>
 
         <symbol id="icon-neste" viewBox="-16 -16 32 32">
             <title>neste</title>
-            <path class="neste" d="M11.5 0 L2 9 L 2 6 L -13 6 L -13 -6 L 2 -6 L2 -9 z"/>
+            <use stroke="#777" xlink:href="#rightarrow_stroke"></use>
         </symbol>
 
-        <symbol id="icon-neste-bw" viewBox="-16 -16 32 32">
+        <symbol id="icon-neste-mc" viewBox="-16 -16 32 32">
             <title>neste</title>
-            <path class="neste" d="M11.5 0 L2 9 L 2 6 L -13 6 L -13 -6 L 2 -6 L2 -9 z"/>
+            <use stroke="#444" style="stroke: var(--color-medium, #444)" xlink:href="#rightarrow_stroke"></use>
         </symbol>
 
         <symbol id="icon-forrige" viewBox="-16 -16 32 32">
             <title>forrige</title>
-            <path class="forrige" d="M11.5 0 L2 9 L 2 6 L -13 6 L -13 -6 L 2 -6 L2 -9 z"
-                transform="scale(-1,1)"/>
+            <use stroke="#777" xlink:href="#rightarrow_stroke" transform="scale(-1,1)"></use>
         </symbol>
 
-        <symbol id="icon-forrige-bw" viewBox="-16 -16 32 32">
+        <symbol id="icon-forrige-mc" viewBox="-16 -16 32 32">
             <title>forrige</title>
-            <path class="forrige" d="M11.5 0 L2 9 L 2 6 L -13 6 L -13 -6 L 2 -6 L2 -9 z"
-                transform="scale(-1,1)"/>
+            <use stroke="#444" style="stroke: var(--color-medium, #444)" xlink:href="#rightarrow_stroke" transform="scale(-1,1)"></use>
         </symbol>
 
         <symbol id="icon-undring" viewBox="-16 -16 32 32">
@@ -869,33 +758,30 @@
             <circle class="hode-oye" cx="6" cy="-7" r="2"/>
             <circle class="hode-oye" cx="-6" cy="-7" r="2"/>
             <ellipse fill="black" stroke="black" cx="0" cy="3" rx="4" ry="2"/>
-            <text font-family="sans-serif" font-weight="bold" font-size="18px" fill="#444"
-                stroke="white" stroke-width=".2" x="0" y="0"
+            <g opacity="0.7" font-family="sans-serif" font-weight="bold" font-size="18px" fill="#444"
+                stroke="white" stroke-width="2px" stroke-linecap="round" stroke-linejoin="round" x="0" y="0"
                 transform="translate(-4,-2) rotate(-11)">
-                <tspan dy="0">?</tspan>
-            </text>
+            <text>?</text>
+            <text stroke="black" stroke-width="0.5px">?</text>
+            </g>
         </symbol>
 
-        <symbol id="icon-undring-bw" viewBox="-16 -16 32 32">
+        <symbol id="icon-undring-mc" viewBox="-16 -16 32 32">
             <title>undring</title>
-            <circle fill="rgb(255, 234, 45)" stroke="black" class="hode" cx="0" cy="1" r="14.5"/>
+            <circle fill="#777" stroke="black" class="hode" cx="0" cy="1" r="14.5"
+            style="fill: var(--color-medium, #777); stroke: var(--color-dark, black)"/>
+            <g fill="black" style="fill: var(--color-dark, black)">
             <circle class="hode-oye" cx="6" cy="-7" r="2"/>
             <circle class="hode-oye" cx="-6" cy="-7" r="2"/>
-            <ellipse fill="black" stroke="black" cx="0" cy="3" rx="4" ry="2"/>
-            <text font-family="sans-serif" font-weight="bold" font-size="18px" fill="#444"
-                stroke="white" stroke-width=".2" x="0" y="0"
+            <ellipse cx="0" cy="3" rx="4" ry="2"/>
+            </g>
+            <g opacity="0.7" font-family="sans-serif" font-weight="bold" font-size="18px" fill="#444"
+                stroke="white" stroke-width="2px" stroke-linecap="round" stroke-linejoin="round" x="0" y="0"
                 transform="translate(-4,-2) rotate(-11)">
-                <tspan dy="0">?</tspan>
-            </text>
+            <text>?</text>
+            <text stroke="black" stroke-width="0.5px">?</text>
+            </g>
         </symbol>
 
-        <symbol id="test1" viewBox="0 0 32 32">
-            <rect fill="orange"
-                style="fill: var(--primary-color, yellow); stroke: var(--tertiary-color, brown);"
-                x="0" y="0" width="16" height="16"/>
-            <circle fill="magenta"
-                style="fill: var(--secondary-color, lime); stroke: var(--tertiary-color, brown);"
-                cx="16" cy="16" r="8"/>
-        </symbol>
     </defs>
 </svg>
