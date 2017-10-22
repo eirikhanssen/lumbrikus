@@ -15,31 +15,60 @@
         }
         html {font-family: sans-serif;}
         .icon {
-            height: 5em;
-            width: 5em;
+            height: 3.5em;
+            width: 3.5em;
             border: 1px solid rgba(0,0,0,0.1);
             box-sizing: border-box;
         }
+        .icon {margin:0;}
         .icons li {
             font-family: "Open Sans Condensed", sans-serif;
-            width: 8em;
             display: inline-block;
-            margin: .25em;
+            margin: 5px;
+            font-size: 2em;
+        }
+        .icons {
+            margin: auto;
+           padding: 0;
+            text-align: center;
         }
         .icons .icon, 
         .icons .icon-id {
             display: block;
             margin: auto;
             text-align: center;
+            
         }
+
+        .icons li {
+            position: relative;
+        }
+        .icons li:hover span,
+        .icons li:focus span {
+            background: rgb(255, 243, 138);
+        }
+
+        .icons li:hover::after,
+        .icons li:focus::after {
+            position: absolute;
+            content: "";
+            z-index: -1;
+            top: -6px;
+            bottom: -6px;
+            left: -6px;
+            right: -6px;
+            border: 4px solid darkorange;
+            border-radius: 4px;
+        }
+        .icon-id {font-size: .5em;}
         code { 
             border: 1px solid #aaa;
             background: #fafafa;
             padding: 1em;
-            min-height: 3rem;
-            line-height: 3rem;
+            min-height: 2rem;
+            line-height: 2rem;
             font-weight: bold; 
-            font-size: 1.5rem; 
+            font-size: 1.25rem; 
             color: darkred; 
             display:block; 
             margin: auto;
@@ -53,24 +82,55 @@
 <body>
 <h1>lumbrikus-symbol-icons.svg</h1>
 
+<h2>Markup for å bruke ikoner:</h2>
+<p><code id="use-markup">Trykk på teksten under ikonet for å få koden til å bruke ikonet.</code></p>
+
 <ol class="icons"><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-lumbrikus"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-lumbrikus" title="icon-lumbrikus"><span class="icon-id">#icon-lumbrikus</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-lumbrikus-bw"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-lumbrikus-bw" title="icon-lumbrikus-bw"><span class="icon-id">#icon-lumbrikus-bw</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-0"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-0" title="icon-0"><span class="icon-id">#icon-0</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-0-bw"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-0-bw" title="icon-0-bw"><span class="icon-id">#icon-0-bw</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-1"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-1" title="icon-1"><span class="icon-id">#icon-1</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-1-bw"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-1-bw" title="icon-1-bw"><span class="icon-id">#icon-1-bw</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-2"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-2" title="icon-2"><span class="icon-id">#icon-2</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-2-bw"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-2-bw" title="icon-2-bw"><span class="icon-id">#icon-2-bw</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-3"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-3" title="icon-3"><span class="icon-id">#icon-3</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-3-bw"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-3-bw" title="icon-3-bw"><span class="icon-id">#icon-3-bw</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-4"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-4" title="icon-4"><span class="icon-id">#icon-4</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-4-bw"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-4-bw" title="icon-4-bw"><span class="icon-id">#icon-4-bw</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-5"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-5" title="icon-5"><span class="icon-id">#icon-5</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-5-bw"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-5-bw" title="icon-5-bw"><span class="icon-id">#icon-5-bw</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-6"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-6" title="icon-6"><span class="icon-id">#icon-6</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-6-bw"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-6-bw" title="icon-6-bw"><span class="icon-id">#icon-6-bw</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-7"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-7" title="icon-7"><span class="icon-id">#icon-7</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-7-bw"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-7-bw" title="icon-7-bw"><span class="icon-id">#icon-7-bw</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-8"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-8" title="icon-8"><span class="icon-id">#icon-8</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-8-bw"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-8-bw" title="icon-8-bw"><span class="icon-id">#icon-8-bw</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-9"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-9" title="icon-9"><span class="icon-id">#icon-9</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-9-bw"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-9-bw" title="icon-9-bw"><span class="icon-id">#icon-9-bw</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-10"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-10" title="icon-10"><span class="icon-id">#icon-10</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-10-bw"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-10-bw" title="icon-10-bw"><span class="icon-id">#icon-10-bw</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-11"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-11" title="icon-11"><span class="icon-id">#icon-11</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-11-bw"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-11-bw" title="icon-11-bw"><span class="icon-id">#icon-11-bw</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#symbol-icon-bg"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#symbol-icon-bg" title="symbol-icon-bg"><span class="icon-id">#symbol-icon-bg</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-kort-fortelling"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-kort-fortelling" title="icon-kort-fortelling"><span class="icon-id">#icon-kort-fortelling</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-kort-fortelling-bw"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-kort-fortelling-bw" title="icon-kort-fortelling-bw"><span class="icon-id">#icon-kort-fortelling-bw</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-lang-fortelling"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-lang-fortelling" title="icon-lang-fortelling"><span class="icon-id">#icon-lang-fortelling</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-lang-fortelling-bw"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-lang-fortelling-bw" title="icon-lang-fortelling-bw"><span class="icon-id">#icon-lang-fortelling-bw</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-let-og-finn"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-let-og-finn" title="icon-let-og-finn"><span class="icon-id">#icon-let-og-finn</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-let-og-finn-bw"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-let-og-finn-bw" title="icon-let-og-finn-bw"><span class="icon-id">#icon-let-og-finn-bw</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-ord"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-ord" title="icon-ord"><span class="icon-id">#icon-ord</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-ord-bw"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-ord-bw" title="icon-ord-bw"><span class="icon-id">#icon-ord-bw</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-gjore-lage"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-gjore-lage" title="icon-gjore-lage"><span class="icon-id">#icon-gjore-lage</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-gjore-lage-bw"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-gjore-lage-bw" title="icon-gjore-lage-bw"><span class="icon-id">#icon-gjore-lage-bw</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-filmer"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-filmer" title="icon-filmer"><span class="icon-id">#icon-filmer</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#filmer-icon-bw"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#filmer-icon-bw" title="filmer-icon-bw"><span class="icon-id">#filmer-icon-bw</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-snutter"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-snutter" title="icon-snutter"><span class="icon-id">#icon-snutter</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-snutter-bw"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-snutter-bw" title="icon-snutter-bw"><span class="icon-id">#icon-snutter-bw</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-kviss"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-kviss" title="icon-kviss"><span class="icon-id">#icon-kviss</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-kviss-bw"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-kviss-bw" title="icon-kviss-bw"><span class="icon-id">#icon-kviss-bw</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-riktig-hode"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-riktig-hode" title="icon-riktig-hode"><span class="icon-id">#icon-riktig-hode</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-riktig-hode-bw"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-riktig-hode-bw" title="icon-riktig-hode-bw"><span class="icon-id">#icon-riktig-hode-bw</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-galt"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-galt" title="icon-galt"><span class="icon-id">#icon-galt</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-galt-bw"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-galt-bw" title="icon-galt-bw"><span class="icon-id">#icon-galt-bw</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-hint"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-hint" title="icon-hint"><span class="icon-id">#icon-hint</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-hint-bw"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-hint-bw" title="icon-hint-bw"><span class="icon-id">#icon-hint-bw</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-mulig-hode"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-mulig-hode" title="icon-mulig-hode"><span class="icon-id">#icon-mulig-hode</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-mulig-hode-bw"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-mulig-hode-bw" title="icon-mulig-hode-bw"><span class="icon-id">#icon-mulig-hode-bw</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-neste"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-neste" title="icon-neste"><span class="icon-id">#icon-neste</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-neste-bw"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-neste-bw" title="icon-neste-bw"><span class="icon-id">#icon-neste-bw</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-forrige"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-forrige" title="icon-forrige"><span class="icon-id">#icon-forrige</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-forrige-bw"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-forrige-bw" title="icon-forrige-bw"><span class="icon-id">#icon-forrige-bw</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-undring"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-undring" title="icon-undring"><span class="icon-id">#icon-undring</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-undring-bw"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#icon-undring-bw" title="icon-undring-bw"><span class="icon-id">#icon-undring-bw</span></a></li><li><svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#test1"/></svg><a data-href="/media/svg/lumbrikus-symbol-icons.svg#test1" title="test1"><span class="icon-id">#test1</span></a></li></ol>
 
-<h2>Bruk dette ikonet: </h2>
-<code id="use-markup"></code>
 <script>
 window.addEventListener("load", init, false);
 
+function closestNodeOfType(originNode, targetNodeName) {
+    var p,
+    iteration,
+    max = 100;
+    
+    if (originNode.nodeName.toLowerCase() === targetNodeName.toLowerCase()) {
+        return originNode;
+    }
+    var p = originNode.parentNode;
+    do {
+        iteration = iteration + 1;
+        if (p.nodeName.toLowerCase() === targetNodeName.toLowerCase()) {
+            return p;
+        }
+        if(p.nodeName.toLowerCase() === 'html') {
+            return null;
+            console.log(targetNodeName + " not found. Reached 'html'.");
+        }
+        if(iteration >= max) {
+            return null;
+            console.log("Aborting loop before " + targetNodeName + " was found. Max iteration count was reached: " + max);
+        }
+        
+        p = p.parentNode;
+
+    } while (true);
+}
+
 function showMarkup(e) {
     var target = e.target;
-    var svg = target.parentNode.parentNode.querySelector('svg');
-    console.log(svg.outerHTML);
+    var svg = closestNodeOfType(target, 'li').querySelector('svg');
     document.querySelector("#use-markup").textContent = svg.outerHTML;
 }
 
 function init() {
-    var iconlinks = document.querySelectorAll('.icons a');
-    for(var i = 0, len = iconlinks.length; i< len; i++) {
-        iconlinks[i].addEventListener("click", showMarkup, false);
+    var icons = document.querySelectorAll('.icons li');
+    for(var i = 0, len = icons.length; i< len; i++) {
+        icons[i].setAttribute('tabindex',"0");
+        icons[i].addEventListener("click", showMarkup, false);
+        icons[i].addEventListener("focus", showMarkup, false);
+        
     }
 }
 
