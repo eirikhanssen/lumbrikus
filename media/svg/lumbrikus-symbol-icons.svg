@@ -274,7 +274,7 @@
              style="fill: var(--color-dark, #000);">
                 <text stroke="#fff" stroke-width="3px" x="0" y="0" dy="7"
                 style="stroke: var(--color-bright, #fff);">0</text>
-                <text x="0" y="0" dy="7">0</text>
+                <text stroke="black" style="stroke: var(--color-dark, black)" x="0" y="0" dy="7">0</text>
             </g>
         </symbol>
 
@@ -306,7 +306,7 @@
              style="fill: var(--color-dark, #000);">
                 <text stroke="#fff" stroke-width="3px" x="0" y="0" dy="7"
                 style="stroke: var(--color-bright, #fff);">1</text>
-                <text x="0" y="0" dy="7">1</text>
+                <text stroke="black" style="stroke: var(--color-dark, black)" x="0" y="0" dy="7">1</text>
             </g>
         </symbol>
 
@@ -338,7 +338,7 @@
              style="fill: var(--color-dark, #000);">
                 <text stroke="#fff" stroke-width="3px" x="0" y="0" dy="7"
                 style="stroke: var(--color-bright, #fff);">2</text>
-                <text x="0" y="0" dy="7">2</text>
+                <text stroke="black" style="stroke: var(--color-dark, black)" x="0" y="0" dy="7">2</text>
             </g>
         </symbol>
 
@@ -370,7 +370,7 @@
              style="fill: var(--color-dark, #000);">
                 <text stroke="#fff" stroke-width="3px" x="0" y="0" dy="7"
                 style="stroke: var(--color-bright, #fff);">3</text>
-                <text x="0" y="0" dy="7">3</text>
+                <text stroke="black" style="stroke: var(--color-dark, black)" x="0" y="0" dy="7">3</text>
             </g>
         </symbol>
 
@@ -402,7 +402,7 @@
              style="fill: var(--color-dark, #000);">
                 <text stroke="#fff" stroke-width="3px" x="0" y="0" dy="7"
                 style="stroke: var(--color-bright, #fff);">4</text>
-                <text x="0" y="0" dy="7">4</text>
+                <text stroke="black" style="stroke: var(--color-dark, black)" x="0" y="0" dy="7">4</text>
             </g>
         </symbol>
         
@@ -434,7 +434,7 @@
              style="fill: var(--color-dark, #000);">
                 <text stroke="#fff" stroke-width="3px" x="0" y="0" dy="7"
                 style="stroke: var(--color-bright, #fff);">5</text>
-                <text x="0" y="0" dy="7">5</text>
+                <text stroke="black" style="stroke: var(--color-dark, black)" x="0" y="0" dy="7">5</text>
             </g>
         </symbol>
 
@@ -466,7 +466,7 @@
              style="fill: var(--color-dark, #000);">
                 <text stroke="#fff" stroke-width="3px" x="0" y="0" dy="7"
                 style="stroke: var(--color-bright, #fff);">6</text>
-                <text x="0" y="0" dy="7">6</text>
+                <text stroke="black" style="stroke: var(--color-dark, black)" x="0" y="0" dy="7">6</text>
             </g>
         </symbol>
 
@@ -498,7 +498,7 @@
              style="fill: var(--color-dark, #000);">
                 <text stroke="#fff" stroke-width="3px" x="0" y="0" dy="7"
                 style="stroke: var(--color-bright, #fff);">7</text>
-                <text x="0" y="0" dy="7">7</text>
+                <text stroke="black" style="stroke: var(--color-dark, black)" x="0" y="0" dy="7">7</text>
             </g>
         </symbol>
 
@@ -530,7 +530,7 @@
              style="fill: var(--color-dark, #000);">
                 <text stroke="#fff" stroke-width="3px" x="0" y="0" dy="7"
                 style="stroke: var(--color-bright, #fff);">8</text>
-                <text x="0" y="0" dy="7">8</text>
+                <text stroke="black" style="stroke: var(--color-dark, black)" x="0" y="0" dy="7">8</text>
             </g>
         </symbol>
 
@@ -562,7 +562,7 @@
              style="fill: var(--color-dark, #000);">
                 <text stroke="#fff" stroke-width="3px" x="0" y="0" dy="7"
                 style="stroke: var(--color-bright, #fff);">9</text>
-                <text x="0" y="0" dy="7">9</text>
+                <text stroke="black" style="stroke: var(--color-dark, black)" x="0" y="0" dy="7">9</text>
             </g>
         </symbol>
 
@@ -594,7 +594,7 @@
              style="fill: var(--color-dark, #000);">
                 <text stroke="#fff" stroke-width="3px" x="0" y="0" dy="7"
                 style="stroke: var(--color-bright, #fff);">10</text>
-                <text x="0" y="0" dy="7">10</text>
+                <text stroke="black" style="stroke: var(--color-dark, black)" x="0" y="0" dy="7">10</text>
             </g>
         </symbol>
 
@@ -626,7 +626,7 @@
              style="fill: var(--color-dark, #000);">
                 <text stroke="#fff" stroke-width="3px" x="0" y="0" dy="7"
                 style="stroke: var(--color-bright, #fff);">11</text>
-                <text x="0" y="0" dy="7">11</text>
+                <text stroke="black" style="stroke: var(--color-dark, black)" x="0" y="0" dy="7">11</text>
             </g>
         </symbol>
 
