@@ -375,6 +375,22 @@ $( document ).ready(function() {
                 return markup;
             }
 
+            function get_SVG_status_icon(el) {
+                var icon = null;
+                if($(el).is(':checked') && $(el).hasClass('correct')) {
+                    icon = $('<svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-riktig-hode"></use></svg>');
+                }
+                if($(el).is(':checked') && $(el).hasClass('incorrect')) {
+                    icon = $('<svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-galt"></use></svg>');
+                }
+                if(!$(el).is(':checked') && $(el).hasClass('correct')) {
+                    icon = $('<svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-hint"></use></svg>');
+                }
+                console.log(icon);
+                return icon;
+
+            }
+
             function sjekk_svar(knapp) {
                 console.log("sjekk_svar()");
                 var fieldset = getAncestor(knapp, 'fieldset');
@@ -404,17 +420,23 @@ $( document ).ready(function() {
 
                 // delsum
                 $.each(inputs, function(index, obj){
+                    var statusicon = get_SVG_status_icon(obj);
+                    if(statusicon !== null) {
+                        $(obj).parent().prepend(statusicon);
+                    }
                     // får poeng for riktige svar
                     if($(obj).is(':checked')) {
                         getAncestor(obj, 'label').addClass('checked');
                     }
                     if($(obj).is(':checked') && $(obj).hasClass('correct')) {
                         antall_rette = antall_rette + 1;
+                        // add svg icon!
                     }
                     // trekkes i poeng for gale svar for hvert delspørsmål hvis det er mer enn en mulig riktig
                     if($(obj).is(':checked') && $(obj).hasClass('incorrect') && antall_mulige > 1) {
                         antall_rette = antall_rette -1;
                     }
+
                 });
                 // dersom delsummen blir negativ, settes den til 0.
                 if (antall_rette < 0) {
