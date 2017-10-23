@@ -2,244 +2,196 @@ var kviss06 = {
     title: "Kapittel 6 Kviss",
     q_and_a: [
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
+            spm: "Hva er meitemark?",
+            bilde: "https://lumbrikus.no/media/img/kviss_meitemark_ruller_seg.jpg",
+            bildetekst: "Tegning av en rosa meitemark som krøller seg sammen",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Et insekt",
+                "Et dyr",
+                "En fisk"
             ],
-            riktige_svar: ["___"],
-            forklaring: "___"
+            riktige_svar: ["Et dyr"],
+            forklaring: "Meitemarken er et ledd-dyr. Leddene gjør at den kan strekke seg ut og krype sammen. På den måten kan den bevege seg i jorda."
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
+            spm: "Hvordan puster meitemark?",
+            bilde: "https://lumbrikus.no/media/img/kviss_meitemark_meitemarik_innmat.jpg",
+            bildetekst: "Tegning av hvordan enden på en maitemark ser ut inni",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Med lunger som mennesker",
+                "Med huden",
+                "Med munnen"
             ],
-            riktige_svar: ["___"],
-            forklaring: "___"
+            riktige_svar: ["Med huden"],
+            forklaring: "Meitemarken puster med huden, og tar oksygen fra vann. Meitemarken kan derfor ikke leve uten vann."
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
+            spm: "Hva spiser grå-meitemarken?",
+            bilde: "https://lumbrikus.no/media/img/kviss_meitemark_graameitemark.jpg",
+            bildetekst: "Tegning av en rosa meitemark",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Mest jord",
+                "Bananer",
+                "Fluer"
             ],
-            riktige_svar: ["___"],
-            forklaring: "___"
+            riktige_svar: ["Mest jord"],
+            forklaring: "Grå-meitemarken spiser jord. De lager mange ganger i jorda."
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
+            spm: "Hvem vil spise meitemark?",
+            bilde: "https://lumbrikus.no/media/img/kviss_trost.jpg",
+            bildetekst: "Tegning av et dyr med grå og brune fjær",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Piggsvin og frosk",
+                "Skolopenderne",
+                "Fugler"
             ],
-            riktige_svar: ["___"],
-            forklaring: "___"
+            riktige_svar: ["Piggsvin og frosk", "Skolopenderne", "Fugler"],
+            forklaring: "Meitemark er god mat for piggsvin, frosk, skolopendere og fugler. Padder, store biller og rever liker også å spise meitemark "
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
+            spm: "Hvor lang er skolopenderen?",
+            bilde: "https://lumbrikus.no/media/img/kviss_skolopender_oppdager.jpg",
+            bildetekst: "Tegning av en oransje skolopender med mange bein",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Som en ny blyant",
+                "En meter",
+                "Som en lillefinger"
             ],
-            riktige_svar: ["___"],
-            forklaring: "___"
+            riktige_svar: ["Som en lillefinger"],
+            forklaring: "En skolopender er lang og tynn, og vanligvis omtrent like stor som en lillefinger. Selv om den bare er like stor som en lillefinger, har den 15 ledd og 30 bein."
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
+            spm: "Hvem er Lumbricus terrestris?",
+            bilde: "https://lumbrikus.no/media/img/kviss_meitemark_graameitemark.jpg",
+            bildetekst: "Den er rosa og ganske lang.",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Ei høne som legger egg",
+                "En hund som heter terrier",
+                "Stor-meitemarken"
             ],
-            riktige_svar: ["___"],
-            forklaring: "___"
+            riktige_svar: ["Stor-meitemarken"],
+            forklaring: "Lumbricus terrestris er det latinske navnet til stor-meitemarken. Det er den største marken i Norge."
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
+            spm: "Hvor lang kan stor-meitemarken bli?",
+            bilde: "https://lumbrikus.no/media/img/kviss_samir_holder_ut_hendene_sine.jpg",
+            bildetekst: "Tegning av Samir som strekker ut armene sine",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Som halve armen min",
+                "Som nesa mi",
+                "Som hele meg"
             ],
-            riktige_svar: ["___"],
-            forklaring: "___"
+            riktige_svar: ["Som halve armen min"],
+            forklaring: "Stor-meitemarken kan bli 30 cm lang. Det er like langt som halve armen din. Stor-meitemarken kan lage ganger som går to til tre meter nedover."
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
+            spm: "Hva spiser stor-meitemarken?",
+            bilde: "https://lumbrikus.no/media/img/kviss_ekorn.jpg",
+            bildetekst: "Tegning av et brunt dyr med bustete hale",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Ekorn",
+                "Gammelt løv",
+                "Epler i trærne"
             ],
-            riktige_svar: ["___"],
-            forklaring: "___"
+            riktige_svar: ["Gammelt løv"],
+            forklaring: "Det er bilde av et ekorn. Men det spiser ikke meitemarken! Stor-meitemarken kan spise jord, men den liker best å finne mat på bakken. Der ligger det bløtt løv som er begynt å råtne litt."
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
+            spm: "Bæsjen til meitemarken er:",
+            bilde: "https://lumbrikus.no/media/img/kviss_meitemark_kast.jpg",
+            bildetekst: "Tegning av mange svarte klumper so ligger tett sammen",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Giftig",
+                "Fin for planter som vokser",
+                "God i suppa"
             ],
-            riktige_svar: ["___"],
-            forklaring: "___"
+            riktige_svar: ["Fin for planter som vokser"],
+            forklaring: "Meitemark kan spise 25 tusen kilo med jord på ett år. Så bæsjer den ut jorda igjen. Da er jorda enda finere. Meitemark kan forandre jorda fordi de er så mange.  "
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
+            spm: "Et annet ord for meitemarkens bæsj, er:",
+            bilde: "https://lumbrikus.no/media/img/kviss_meitemark_spiser_og_driter.jpg",
+            bildetekst: "Tegning av en meitemark som spiser et blad. Bak meitemarken er det bæsj.",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Kast",
+                "Rosa rugosa",
+                "Brun-bjørn"
             ],
-            riktige_svar: ["___"],
-            forklaring: "___"
+            riktige_svar: ["Kast"],
+            forklaring: "Kast er det riktige svaret."
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
+            spm: "Hva gjør store meitemarker om vinteren?",
+            bilde: "https://lumbrikus.no/media/img/kviss_meitemark_ruller_seg.jpg",
+            bildetekst: "Tegning av en rosa meitemark som krøller seg sammen",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "De dør",
+                "De ligger i dvale nede i jorda",
+                "De kryper til varme land om høsten"
             ],
-            riktige_svar: ["___"],
-            forklaring: "___"
+            riktige_svar: ["De ligger i dvale nede i jorda"],
+            forklaring: "Når det blir kaldt, tetter meitemarken åpningen sin med løv, småstein og barnåler. Så krøller den seg sammen i hvilerommet sitt og sover til våren kommer."
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
+            spm: "Hvor lang tid tar det å lage 10 centimeter med jord?",
+            bilde: "https://lumbrikus.no/media/img/kviss_linjal_10cm.jpg",
+            bildetekst: "Bilde av en gul linjal",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "10 år",
+                "100 år",
+                "1000 år"
             ],
-            riktige_svar: ["___"],
-            forklaring: "___"
+            riktige_svar: ["1000 år"],
+            forklaring: "Meitemarkene bruker 100 år på å lage 1cm med jordlag."
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
+            spm: "Er meitemarken jente eller gutt?",
+            bilde: "https://lumbrikus.no/media/img/kviss_to_meitemarker_parer_seg.jpg",
+            bildetekst: "Tegning av to meitemark",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Den er jente",
+                "Den er gutt",
+                "Den er begge deler"
             ],
-            riktige_svar: ["___"],
-            forklaring: "___"
+            riktige_svar: ["Den er begge deler"],
+            forklaring: "En meitemark er både jente og gutt. Både hunn og hann. Alle har egg-celler. Alle har sæd-celler."
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
+            spm: "Hva kan meitemarken lage med det rosa beltet?",
+            bilde: "https://lumbrikus.no/media/img/kviss_meitemark_graameitemark.jpg",
+            bildetekst: "Tegning av en rosa meitemark",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "En pose for babyer som heter kokong",
+                "Pynt til meitemarkenes konge",
+                "Lue til gjøken som synger ko-ko"
             ],
-            riktige_svar: ["___"],
-            forklaring: "___"
+            riktige_svar: ["En pose for babyer som heter kokong"],
+            forklaring: "Inni posen smelter sædceller sammen med eggveller. Det betyr befruktning. Da kan det bli små mark i eggene. Marken lever i kokongen til de kommer ut."
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
+            spm: "Tåler meitemark lys fra sola?",
+            bilde: "https://lumbrikus.no/media/img/kviss_sun.jpg",
+            bildetekst: "Sola er varm",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Nei",
+                "Ja, litt sol",
+                "Ja, veldig mye sol"
             ],
-            riktige_svar: ["___"],
-            forklaring: "___"
+            riktige_svar: ["Nei"],
+            forklaring: "Den liker at det er fuktig."
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
+            spm: "Hvor lenge har meitemarken laget jord på jordkloden?",
+            bilde: "https://lumbrikus.no/media/img/kviss_earth.jpg",
+            bildetekst: "Fra verdensrommet ser vi den blå jordkloden vår.",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "I tusen år",
+                "En million år",
+                "150 millioner år"
             ],
-            riktige_svar: ["___"],
-            forklaring: "___"
-        },
-        {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
-            svaralternativer: [
-                "___",
-                "___",
-                "___"
-            ],
-            riktige_svar: ["___"],
-            forklaring: "___"
-        },
-        {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
-            svaralternativer: [
-                "___",
-                "___",
-                "___"
-            ],
-            riktige_svar: ["___"],
-            forklaring: "___"
-        },
-        {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
-            svaralternativer: [
-                "___",
-                "___",
-                "___"
-            ],
-            riktige_svar: ["___"],
-            forklaring: "___"
-        },
-        {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
-            svaralternativer: [
-                "___",
-                "___",
-                "___"
-            ],
-            riktige_svar: ["___"],
-            forklaring: "___"
+            riktige_svar: ["150 millioner år"],
+            forklaring: "Meitemarken har laget jord på jordkloden i 150 millioner år. Den har spist jorda på jordkloden flere ganger. Helt siden dinosaurene gikk omkring."
         }
     ]
 };
