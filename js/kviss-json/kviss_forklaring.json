@@ -1,0 +1,46 @@
+var kviss_demo = {
+    title: "Demo-kviss",
+    q_and_a: [
+        {
+            spm: "Spørsmålet?",
+            bilde: "https://lumbrikus.no/media/img/kviss_bildenavn.jpg(Eirik9599) - <<Finn på navn her. Jeg lager bilde. Inkluder referanse så jeg vet hvilket bilde eks: (Eirik9855)>>",
+            bildetekst: "Kort beskrivelse av bildet. Hva ser du i bildet? Gi rom for å tolke litt, slik at det blir mulig å løse oppgaven selv om man ikke ser bildet.",
+            svaralternativer: [
+                "Sola",
+                "Månen",
+                "Jorda"
+            ],
+            riktige_svar: ["Jorda"],
+            forklaring: "Den kula som vi bor på."
+        },
+        {
+            spm: "Hva spiser kua? (En sjelden gang er flere alternativer rette)",
+            bilde: "https://lumbrikus.no/media/img/___",
+            bildetekst: "___",
+            svaralternativer: [
+                "Gress",
+                "Blomster",
+                "Biller"
+            ],
+            riktige_svar: ["Gress", "Blomster"],
+            forklaring: "Kua liker det som vokser på enga, men er ikke glad i insekter."
+        },
+        {
+            spm: "___",
+            bilde: "https://lumbrikus.no/media/img/___",
+            bildetekst: "___",
+            svaralternativer: [
+                "___",
+                "___",
+                "Biller"
+            ],
+            riktige_svar: ["___"],
+            forklaring: "___"
+        }
+    ]
+};
+
+Kopier og lim inn rktig svaralternativ. Ett tegn forskjellig og to strenger er ikke like lengre.
+
+Når det en sjelden gang er to svaralternativer, må du lage ny streng i riktige svar.
+først komma, så mellomrom, så doble anførselstegn med svaret inni som over.

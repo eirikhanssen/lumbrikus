@@ -1,0 +1,245 @@
+var kviss05 = {
+    title: "Kapittel 5 Kviss",
+    q_and_a: [
+        {
+            spm: "___",
+            bilde: "https://lumbrikus.no/media/img/___",
+            bildetekst: "___",
+            svaralternativer: [
+                "___",
+                "___",
+                "___"
+            ],
+            riktige_svar: ["___"],
+            forklaring: "___"
+        },
+        {
+            spm: "___",
+            bilde: "https://lumbrikus.no/media/img/___",
+            bildetekst: "___",
+            svaralternativer: [
+                "___",
+                "___",
+                "___"
+            ],
+            riktige_svar: ["___"],
+            forklaring: "___"
+        },
+        {
+            spm: "___",
+            bilde: "https://lumbrikus.no/media/img/___",
+            bildetekst: "___",
+            svaralternativer: [
+                "___",
+                "___",
+                "___"
+            ],
+            riktige_svar: ["___"],
+            forklaring: "___"
+        },
+        {
+            spm: "___",
+            bilde: "https://lumbrikus.no/media/img/___",
+            bildetekst: "___",
+            svaralternativer: [
+                "___",
+                "___",
+                "___"
+            ],
+            riktige_svar: ["___"],
+            forklaring: "___"
+        },
+        {
+            spm: "___",
+            bilde: "https://lumbrikus.no/media/img/___",
+            bildetekst: "___",
+            svaralternativer: [
+                "___",
+                "___",
+                "___"
+            ],
+            riktige_svar: ["___"],
+            forklaring: "___"
+        },
+        {
+            spm: "___",
+            bilde: "https://lumbrikus.no/media/img/___",
+            bildetekst: "___",
+            svaralternativer: [
+                "___",
+                "___",
+                "___"
+            ],
+            riktige_svar: ["___"],
+            forklaring: "___"
+        },
+        {
+            spm: "___",
+            bilde: "https://lumbrikus.no/media/img/___",
+            bildetekst: "___",
+            svaralternativer: [
+                "___",
+                "___",
+                "___"
+            ],
+            riktige_svar: ["___"],
+            forklaring: "___"
+        },
+        {
+            spm: "___",
+            bilde: "https://lumbrikus.no/media/img/___",
+            bildetekst: "___",
+            svaralternativer: [
+                "___",
+                "___",
+                "___"
+            ],
+            riktige_svar: ["___"],
+            forklaring: "___"
+        },
+        {
+            spm: "___",
+            bilde: "https://lumbrikus.no/media/img/___",
+            bildetekst: "___",
+            svaralternativer: [
+                "___",
+                "___",
+                "___"
+            ],
+            riktige_svar: ["___"],
+            forklaring: "___"
+        },
+        {
+            spm: "___",
+            bilde: "https://lumbrikus.no/media/img/___",
+            bildetekst: "___",
+            svaralternativer: [
+                "___",
+                "___",
+                "___"
+            ],
+            riktige_svar: ["___"],
+            forklaring: "___"
+        },
+        {
+            spm: "___",
+            bilde: "https://lumbrikus.no/media/img/___",
+            bildetekst: "___",
+            svaralternativer: [
+                "___",
+                "___",
+                "___"
+            ],
+            riktige_svar: ["___"],
+            forklaring: "___"
+        },
+        {
+            spm: "___",
+            bilde: "https://lumbrikus.no/media/img/___",
+            bildetekst: "___",
+            svaralternativer: [
+                "___",
+                "___",
+                "___"
+            ],
+            riktige_svar: ["___"],
+            forklaring: "___"
+        },
+        {
+            spm: "___",
+            bilde: "https://lumbrikus.no/media/img/___",
+            bildetekst: "___",
+            svaralternativer: [
+                "___",
+                "___",
+                "___"
+            ],
+            riktige_svar: ["___"],
+            forklaring: "___"
+        },
+        {
+            spm: "___",
+            bilde: "https://lumbrikus.no/media/img/___",
+            bildetekst: "___",
+            svaralternativer: [
+                "___",
+                "___",
+                "___"
+            ],
+            riktige_svar: ["___"],
+            forklaring: "___"
+        },
+        {
+            spm: "___",
+            bilde: "https://lumbrikus.no/media/img/___",
+            bildetekst: "___",
+            svaralternativer: [
+                "___",
+                "___",
+                "___"
+            ],
+            riktige_svar: ["___"],
+            forklaring: "___"
+        },
+        {
+            spm: "___",
+            bilde: "https://lumbrikus.no/media/img/___",
+            bildetekst: "___",
+            svaralternativer: [
+                "___",
+                "___",
+                "___"
+            ],
+            riktige_svar: ["___"],
+            forklaring: "___"
+        },
+        {
+            spm: "___",
+            bilde: "https://lumbrikus.no/media/img/___",
+            bildetekst: "___",
+            svaralternativer: [
+                "___",
+                "___",
+                "___"
+            ],
+            riktige_svar: ["___"],
+            forklaring: "___"
+        },
+        {
+            spm: "___",
+            bilde: "https://lumbrikus.no/media/img/___",
+            bildetekst: "___",
+            svaralternativer: [
+                "___",
+                "___",
+                "___"
+            ],
+            riktige_svar: ["___"],
+            forklaring: "___"
+        },
+        {
+            spm: "___",
+            bilde: "https://lumbrikus.no/media/img/___",
+            bildetekst: "___",
+            svaralternativer: [
+                "___",
+                "___",
+                "___"
+            ],
+            riktige_svar: ["___"],
+            forklaring: "___"
+        },
+        {
+            spm: "___",
+            bilde: "https://lumbrikus.no/media/img/___",
+            bildetekst: "___",
+            svaralternativer: [
+                "___",
+                "___",
+                "___"
+            ],
+            riktige_svar: ["___"],
+            forklaring: "___"
+        }
+    ]
+};
