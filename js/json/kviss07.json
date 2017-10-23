@@ -1,0 +1,257 @@
+var kviss07 = {
+    title: "Kapittel 7 Kviss",
+    q_and_a: [
+        {
+            spm: "Kan meitemarken se?",
+            bilde: "https://lumbrikus.no/media/img/kviss_meitemark_inni (Svetlana)",
+            bildetekst: "Tegning av hvordan enden på meitemarken ser ut inni",
+            svaralternativer: [
+                "Ja, den kan se mye",
+                "Ja, men bare rødt",
+                "Nei, den kan ikke se"
+            ],
+            riktige_svar: ["Nei, den kan ikke se"],
+            forklaring: "Meitemarken har ikke øyne. Den kan derfor ikke se. Den kan merke om det er lyst eller mørkt. Det er hyden til meitemarken som merker det."
+        },
+        {
+            spm: "Hva bruker meitemarken børstene på kroppen til?",
+            bilde: "https://lumbrikus.no/media/img/kviss_meitemark_børster (eksternt bilde)",
+            bildetekst: "Svart/hvitt nærbilde av børstene på en meitemark",
+            svaralternativer: [
+                "Til å børste seg med",
+                "Til å holde seg fast med",
+                "Til å stikke andre med"
+            ],
+            riktige_svar: ["Til å holde seg fast med"],
+            forklaring: "Meitemarken har åtte børster på hvert ledd."
+        },
+        {
+            spm: "Har meitemarken lunger?",
+            bilde: "https://lumbrikus.no/media/img/kviss_meitemark (Svetlana)",
+            bildetekst: "Tegning av en meitemark og hvordan den ser ut inni",
+            svaralternativer: [
+                "Ja, to lunger",
+                "Ja. tre lunger",
+                "Nei, ingen"
+            ],
+            riktige_svar: ["Nei, ingen"],
+            forklaring: "Meitemarken har ikke lunger. Meitemarken har små hull i huden."
+        },
+        {
+            spm: "Hvor får den oksygen fra?",
+            bilde: "https://lumbrikus.no/media/img/kviss_blad (eksternt bilde)",
+            bildetekst: "Bilde av et blad med dråper på",
+            svaralternativer: [
+                "Fra vann",
+                "Fra lufta",
+                "Fra løvet"
+            ],
+            riktige_svar: ["Fra vann"],
+            forklaring: "Huden til meitemarken tar oksygen fra vann. Det er slik meitemarken puster."
+        },
+        {
+            spm: "Hvor mange hjerter har en meitemark?",
+            bilde: "https://lumbrikus.no/media/img/kviss_meitemark (Svetlana)",
+            bildetekst: "Tegning av en meitemark og hvordan den ser ut inni",
+            svaralternativer: [
+                "Ingen",
+                "Fem",
+                "Ett"
+            ],
+            riktige_svar: ["Fem"],
+            forklaring: "Meitemarken har fem hjerter og lange blodårer. Det er blodårene som sender oksygenet rundt i kroppen."
+        },
+        {
+            spm: "Har meitemark tenner?",
+            bilde: "https://lumbrikus.no/media/img/kviss_meitemark (eksternt bilde)",
+            bildetekst: "Nærbilde av en meitemark",
+            svaralternativer: [
+                "Ja, 12",
+                "Ja, 17",
+                "Nei"
+            ],
+            riktige_svar: ["Nei"],
+            forklaring: "Meitemarken tar maten med munnen og svelger det. Maten går til en mage som heter kro. Der får maten spytt. Maten går så videre til en tygge-mage. Der blir maten klemt og knust."
+        },
+        {
+            spm: "Hva heter tygge-magen?",
+            bilde: "https://lumbrikus.no/media/img/kviss_meitemark (finnes ikke bilde)",
+            bildetekst: "___",
+            svaralternativer: [
+                "Krås",
+                "Tyggis",
+                "Kråke"
+            ],
+            riktige_svar: ["Krås"],
+            forklaring: "Tyggemagen har sterke muskler som kan klemme og knuse maten."
+        },
+        {
+            spm: "Hvis en meitemark blir delt i to: kan begge leve?",
+            bilde: "https://lumbrikus.no/media/img/kviss_meitemark (Svetlana NAT_7488)",
+            bildetekst: "___",
+            svaralternativer: [
+                "Nei, bare den første delen",
+                "Ja, begge kan leve",
+                "Nei, bare den bakerste."
+            ],
+            riktige_svar: ["Nei, bare den første delen"],
+            forklaring: "___"
+        },
+        {
+            spm: "Hvor mange pigger har et piggsvin?",
+            bilde: "https://lumbrikus.no/media/img/kviss_piggsvin (NAT_7459)",
+            bildetekst: "___",
+            svaralternativer: [
+                "200",
+                "2000",
+                "6000"
+            ],
+            riktige_svar: ["6000"],
+            forklaring: "Piggene beskytter piggsvinet. Hvis piggsvinet blir redd, krøller det seg sammen. Da ser det ut som en piggete ball."
+        },
+        {
+            spm: "Hva liker piggsvin å spise?",
+            bilde: "https://lumbrikus.no/media/img/kviss_piggsvin (NAT_0732_v2)",
+            bildetekst: "___",
+            svaralternativer: [
+                "Meitemark",
+                "Snegler og frosker",
+                "Sopp og bær"
+            ],
+            riktige_svar: ["Meitemark", "Snegler og frosker","Sopp og bær" ],
+            forklaring: "Piggsvinet liker også å spise museunger, larver, store insekter og frukt."
+        },
+        {
+            spm: "Skal vi gi piggsvin melk?",
+            bilde: "https://lumbrikus.no/media/img/kviss_piggsvin (NAT_7487)",
+            bildetekst: "___",
+            svaralternativer: [
+                "Nei, vann er best",
+                "Ja, melk",
+                "Nei, iskrem"
+            ],
+            riktige_svar: ["Nei, vann er best"],
+            forklaring: "Ikke gi piggsvin en skål med melk. De blir syke av melk. Piggsvin kan få vann og kattemat eller hundemat."
+        },
+        {
+            spm: "Er det sant at dinosaurer og piggsvin levde samtidig?",
+            bilde: "https://lumbrikus.no/media/img/kviss_dinosaur (eksternt bilde)",
+            bildetekst: "Tegning av en dinosaur",
+            svaralternativer: [
+                "Ja",
+                "Nei",
+                "Nei, det går ikke"
+            ],
+            riktige_svar: ["Ja"],
+            forklaring: "Piggsvinet er det eldste pattedyret som lever på jorda nå. De piggsvinene vi ser nå, levde ikke dammen med dinosaurer, men slektningene deres gjorde det."
+        },
+        {
+            spm: "Hva er en krås?",
+            bilde: "https://lumbrikus.no/media/img/kviss_ finnes ikke bilde",
+            bildetekst: "___",
+            svaralternativer: [
+                "Ei gås",
+                "En tyggemage",
+                "En lås"
+            ],
+            riktige_svar: ["En tyggemage"],
+            forklaring: "___"
+        },
+        {
+            spm: "Meitemark har kro og krås. Hvilke andre dyr har det?",
+            bilde: "https://lumbrikus.no/media/img/kviss_maur (Eirik NAT_9018_v2(maur))",
+            bildetekst: "Nærbilde av et brunt og svart insekt",
+            svaralternativer: [
+                "Høner",
+                "Alle fugler",
+                "Maur og humler"
+            ],
+            riktige_svar: ["Høner", "Alle fugler", "Maur og humler"],
+            forklaring: "___"
+        },
+        {
+            spm: "Hvor mange meitemark kan det være under en fotballbane?",
+            bilde: "https://lumbrikus.no/media/img/kviss_fotballbane (eksternt bilde)",
+            bildetekst: "Bilde av en fotballbane",
+            svaralternativer: [
+                "Hundre tusen",
+                "Fem hundre tusen",
+                "En million"
+            ],
+            riktige_svar: ["En million"],
+            forklaring: "___"
+        },
+        {
+            spm: "Hva er dette?",
+            bilde: "https://lumbrikus.no/media/img/kviss_kokonger (Svetlana NAT_7497)",
+            bildetekst: "Tegning av fem like sirkelformede ting med en tut foran og bak. ",
+            svaralternativer: [
+                "Fem kokonger",
+                "Fem sukkertøy",
+                "Fem sitroner"
+            ],
+            riktige_svar: ["Fem kokonger"],
+            forklaring: "___"
+        },
+        {
+            spm: "Hva er det i kokonger?",
+            bilde: "https://lumbrikus.no/media/img/kviss_kokonger (finnes ikke bilde)",
+            bildetekst: "___",
+            svaralternativer: [
+                "Egg-celler og sæd-celler",
+                "Befrukta egg",
+                "Små meitemark"
+            ],
+            riktige_svar: ["Egg-celler og sæd-celler", "Befrukta egg", "Små meitemark"],
+            forklaring: "Marken lever i kokongen til den kommer ut."
+        },
+        {
+            spm: "Hva er anus?",
+            bilde: "https://lumbrikus.no/media/img/kviss_ (NAT_7496)",
+            bildetekst: "Tegning av en meitemark. Meitemarken spiser et blad. Bak meitemarken er det bæsj.",
+            svaralternativer: [
+                "Lakris",
+                "Ananas",
+                "Hullet der bæsjen kommer ut"
+            ],
+            riktige_svar: ["Hullet der bæsjen kommer ut"],
+            forklaring: "___"
+        },
+        {
+            spm: "Hva er stripene på meitemarken?",
+            bilde: "https://lumbrikus.no/media/img/kviss_meitemark (eksternt bilde)",
+            bildetekst: "Tegning av en meitemark",
+            svaralternativer: [
+                "En pynt",
+                "Ledd som gjør at den kan bøye seg",
+                "Ingen kan vite det"
+            ],
+            riktige_svar: ["Ledd som gjør at den kan bøye seg"],
+            forklaring: "Du kan se at en meitemark strekker seg og kryper sammen. Det kan den gjøre fordi den har ledd. Da kan den bevege seg i jorda."
+        },
+        {
+            spm: "Hvordan er meitemarken tilpassa et liv i jorda?",
+            bilde: "https://lumbrikus.no/media/img/kviss_meitemark (NAT_8866)",
+            bildetekst: "Bilde av en meitemark som ligger på jord",
+            svaralternativer: [
+                "Den har ikke øyne",
+                "Den er lang og tynn",
+                "Den spiser jord"
+            ],
+            riktige_svar: ["Den har ikke øyne", "Den er lang og tynn","Den spiser jord"],
+            forklaring: "___"
+        },
+        {
+            spm: "Hva lager meitemarken?",
+            bilde: "https://lumbrikus.no/media/img/kviss_meitemark (eksternt bilde)",
+            bildetekst: "Bilde av en meitemark som ligger på jord",
+            svaralternativer: [
+                "Bare rot",
+                "Stygge hull i bakken",
+                "Jorda på jordkloden"
+            ],
+            riktige_svar: ["Jorda på jordkloden"],
+            forklaring: "Alle meitemarkene til sammen har laget jorda på planeten vår!"
+        }
+    ]
+};
