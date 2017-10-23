@@ -1,0 +1,31 @@
+#chapmenu {counter-reset: menuitem;}
+#chapmenu ul {list-style-type: none; margin: 0; padding: 0;}
+#chapmenu li {border: 1px solid gray; width: 2em; height: 2em; line-height: 2em; text-align: left; padding-left: .5em; border-radius: .25em; margin: .25em;	}
+/*	#chapmenu li::before {counter-increment: menuitem; content: counter(menuitem);}*/
+
+#chapmenu li {
+	transition: .25s;
+	overflow: hidden;
+	font-family: sans-serif;
+}
+
+#chapmenu li {
+	background-image: url(menuicons_plain_v.svg);
+	background-repeat: no-repeat;
+	min-height: 75px; min-width: 75px;}
+#chapmenu .short {background-position: 0 0;}
+#chapmenu .long {background-position: 0 -75px;}
+#chapmenu .dict {background-position: 0 -150px;}
+#chapmenu .film {background-position: 0 -225px;}
+#chapmenu .facts {background-position: 0 -300px;}
+#chapmenu .quiz {background-position: 0 -375px;}
+#chapmenu .explore {background-position: 0 -450px;}
+
+#chapmenu li span{opacity: 0; font-weight: bold; transition: .5s; padding-left: 75px; line-height: 75px; display: inline-block;}
+
+#chapmenu li.two span.up {position: relative; top: -15%;}
+#chapmenu li.two span.down {position: relative; top: -85%;}
+
+#chapmenu li:focus, #chapmenu li:hover {padding-right: 6em; background-color: #ffff75;}
+
+#chapmenu li:focus span, #chapmenu li:hover span {opacity: 1;}

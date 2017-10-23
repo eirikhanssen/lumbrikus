@@ -1,0 +1,119 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="1.1"
+    height="100" width="200">
+   <defs>
+      <style type="text/css">
+         .active {fill:#f9e7a6;}
+         .inactive {fill:#f2f2f2;}
+         .paper {fill:#ffffff;stroke-width:1; stroke:#555;}
+         line.paper {fill:none; stroke-width:1; stroke:#888;}
+         .film {fill:#000;stroke:none;}
+         .skewstripes {fill:#e6e6e6;}
+         .playpause {fill:#fff; stroke:none;}
+         .quiz {
+            fill:#000;
+            stroke:none;
+            font-family:sans-serif;
+            font-weight: bold;
+            font-size: 40px;
+            text-anchor: middle;}
+            .mag {stroke-width: 3; stroke:#000; fill:#fff;}
+            .mag2 {stroke-width: 2; stroke:#000; fill:#fff;}
+      </style>
+      <line id="line_1" class="paper" x1="9" x2="29" y1="0.5" y2="0.5"></line>
+      <line id="line_2" class="paper" x1="9" x2="22" y1="0.5" y2="0.5"></line>
+      
+      <g id="para3line">
+         <use xlink:href="#line_1" transform="translate(0,7)"/>
+         <use xlink:href="#line_1" transform="translate(0,9)"/>
+         <use xlink:href="#line_2" transform="translate(0,11)"/>
+      </g>
+      
+      <g id="threeparas">
+         <use xlink:href="#para3line" transform="translate(0,0)"></use>
+         <use xlink:href="#para3line" transform="translate(0,8)"></use>
+         <use xlink:href="#para3line" transform="translate(0,16)"></use>
+      </g>
+      
+      <g id="iconset_bg">
+         <rect class="inactive"
+            height="40" width="40" rx="5" ry="5" y="0" x="0"/>
+         <rect class="active"
+            height="40" width="40" rx="5" ry="5" y="40" x="0"/>
+      </g>
+      <g id="textpage" transform="translate(-13,-15)">
+         <rect class="paper" width="26" height="30" x="6.5" y="4.5"></rect>
+         <use xlink:href="#threeparas" transform="translate(0,1)"></use>
+      </g>
+      <g id="threepages" transform="translate(0,0)">
+         <use xlink:href="#textpage" transform="rotate(10)translate(4,0)"/>
+         <use xlink:href="#textpage" transform="rotate(-10)translate(-3,0)"/>
+         <use xlink:href="#textpage" transform="translate(0,-1)"/>
+      </g>
+      <rect id="skewsquare" class="skewstripes" x="0" y="0" width="5" height="5" transform="skewX(30)"/>
+      
+      <g id="mirroredskew">
+         <use xlink:href="#skewsquare"/>
+         <use xlink:href="#skewsquare" transform="translate(0,10)scale(1,-1)"/>
+      </g>
+
+      <g id="film" transform="translate(-15,-15)">
+         <rect class="film" x="0" y="0" width="30" height="30"/>
+         <use xlink:href="#mirroredskew" transform="translate(22,0)"/>
+         <use xlink:href="#mirroredskew" transform="translate(14,0)"/>
+         <use xlink:href="#mirroredskew" transform="translate(6,0)"/>
+         <path class="playpause" d="m4,13 v14 l10,-7 z m13,0 v14h4v-14z m6,0 v14h4v-14z"/>
+      </g>
+      
+      <g id="mag">
+         <g transform="rotate(-55)">
+            <circle class="mag" r="10" cx="0" cy="0"/>
+            <line class="mag" x1="0" y1="10" x2="0" y2="27"/>
+         </g>
+         <line class="mag2" x1="-7" y1="-4" x2="9" y2="-4"/>
+         <line class="mag2" x1="-7" y1="0" x2="3" y2="0"/>
+         <line class="mag2" x1="5" y1="0" x2="10" y2="0"/>
+         <line class="mag2" x1="-7" y1="4" x2="0" y2="4"/>
+         <line class="mag2" x1="2" y1="4" x2="8" y2="4"/>
+      </g>
+      
+   </defs>
+
+   <g id="spritesheet">
+      <g id="ic_short" transform="translate(0,0)">
+         <use xlink:href="#iconset_bg"/>
+         <use xlink:href="#textpage" transform="translate(13,15)"/>
+         <use xlink:href="#textpage" transform="translate(13,55)"/>
+      </g>
+      
+      <g id="ic_long" transform="translate(40,0)">
+         <use xlink:href="#iconset_bg"/>
+         <use xlink:href="#threepages" transform="translate(13,15)"/>
+         <use xlink:href="#threepages" transform="translate(13,55)"/>
+      </g>
+
+      <g id="ic_dict" transform="translate(80,0)">
+         <use xlink:href="#iconset_bg"/>
+         <use xlink:href="#textpage" transform="translate(13,15)"/>
+         <use xlink:href="#textpage" transform="translate(13,55)"/>
+         <use xlink:href="#mag" transform="translate(14,14)"/>
+         <use xlink:href="#mag" transform="translate(14,54)"/>
+      </g>
+
+      <g id="ic_film" transform="translate(120,0)">
+         <use xlink:href="#iconset_bg"/>
+         <use xlink:href="#film" transform="translate(20,20)"/>
+         <use xlink:href="#film" transform="translate(20,60)"/>
+      </g>
+
+      <g id="ic_quiz" transform="translate(160,0)">
+         <use xlink:href="#iconset_bg"/>
+         <text class="quiz" x="0" y="0" transform="translate(20,34)">?</text>
+         <text class="quiz" x="0" y="0" transform="translate(20,74)">?</text>
+      </g>
+      
+   </g>
+
+</svg>

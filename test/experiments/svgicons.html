@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Testing SVG-icon techniques</title>
+	<style>
+		html {font-family: sans-serif;}
+		ul.icons {padding: 0;}
+		ul.icons li {max-width: 10em; box-sizing: border-box; list-style-type: none; padding-left: 3em; height: 3em; line-height: 3em; margin: .1em; border-radius: .25em; border: 1px solid gray; position: relative;}
+		li.icon img {width: 3em; height: 3em;}
+		svg {border: 1px solid red;}
+		.icons object.icon {position: absolute; width: 3em; height: 3em; left:0; top: 0; bottom: 0; box-sizing: border-box;}
+		/*
+		html {font-family: sans-serif;}
+		li.icon {border: 1px solid gray; position: relative;}
+		li.icon svg {position: static; left:0; top:0; height: 3em; width: 3em;}
+		.before li.plus::before {
+			content:url('svgicons-group-target.svg#minus')}
+		.before li.minus::before {
+			content:url('svgicons-group-target.svg#smile')}
+		.before li.smile::before {
+			content:url('svgicons-group-target.svg#plus')}
+		.bg li.plus {background-image: url('svgicons-group-target.svg#plus'); background-repeat: no-repeat;}
+		.bg li.minus {background-image: url('svgicons-group-target.svg#minus'); background-repeat: no-repeat;}
+		.bg li.smile {background-image: url('svgicons-group-target.svg#smile'); background-repeat: no-repeat;}
+		*/
+		.iconbg {list-style-type: none; padding: 0;}
+		.iconbg li {position: relative; border: 1px solid gray;  max-width: 10em; height: 3em; line-height: 3em; padding-left: 3.5em; box-sizing: border-box;}
+		.iconbg li:before {
+			content: "";
+			position: absolute;
+			left:0;top:0;bottom:0;
+			display: inline-block;
+			background: url('smiles.svg');
+			background-repeat: no-repeat;
+			-webkit-background-size: 3em 3em;
+			background-size: 3em 3em;
+			width: 3em;
+			height: 3em;
+		}
+		.iconbg .y:before {background-position: -100px 0;}
+		.iconbg .l:before {background-position: -8em 0;}
+		.iconbg .m:before {background-position: -14em 0;}
+		.iconbg .b:before {background-position: -6em 0;}
+	</style>
+</head>
+
+<body>
+<main>
+<h1>Testing SVG-icon techiques</h1>
+<!--<section>
+	<h2>SVG-icons using ::before pseudo class with content:</h2>
+	<ul class="icons before">
+		<li class="icon plus">plus</li>
+		<li class="icon minus">minus</li>
+		<li class="icon smile">smile</li>
+	</ul>
+
+</section>
+
+<section>
+	<h2>SVG-icon with css-backgrounds and :target</h2>
+	<ul class="icons bg">
+		<li class="icon plus">plus</li>
+		<li class="icon minus">minus</li>
+		<li class="icon smile">smile</li>
+	</ul>
+</section>
+
+<section>
+	<h2>SVG-icon with inline SVG use and group#fragment identifiers</h2>
+	<ul class="icons">
+		<li class="icon"><svg viewBox="0 0 100 100"><use xlink:href="svgicons-group-target#plus"/></svg>plus</li>
+		<li class="icon"><svg viewBox="0 0 100 100"><use xlink:href="svgicons-group-target#minus"/></svg>minus</li>
+		<li class="icon"><svg viewBox="0 0 100 100"><use xlink:href="svgicons-group-target#smile"/></svg>smile</li>
+	</ul>
+</section>
+
+<section>
+	<h2>SVG-icon with inline SVG use and symbol#fragment identifiers</h2>
+	<ul class="icons">
+		<li class="icon"><svg xmlns="http://www.w3.org/2000/svg"><use xlink:href="svgicons-symbol#plus"/></svg>plus</li>
+		<li class="icon"><svg><use xlink:href="svgicons-symbol#minus"/></svg>minus</li>
+		<li class="icon"><svg><use xlink:href="svgicons-symbol#smile"/></svg>smile</li>
+	</ul>
+</section>
+
+<section>
+	<h2>SVG-icon loaded with object SVG and grpup#fragment identifiers</h2>
+	<ul class="icons">
+		<li class="icon"><object type="image/svg+xml" data="svgicons-group-target.svg#plus"></object> plus</li>
+		<li class="icon"><object type="image/svg+xml" data="svgicons-group-target.svg#minus"></object>minus</li>
+		<li class="icon"><object type="image/svg+xml" data="svgicons-group-target.svg#smile"></object>smile</li>
+	</ul>
+</section>
+
+<section>
+	<h2>SVG-icon loaded with img SVG and group#fragment identifiers</h2>
+	<ul class="icons">
+		<li class="icon"><img src="svgicons-group-target.svg#plus"/> plus</li>
+		<li class="icon"><img src="svgicons-group-target.svg#minus"/>minus</li>
+		<li class="icon"><img src="svgicons-group-target.svg#smile"/>smile</li>
+	</ul>
+</section>-->
+
+<section>
+	<h2>Loading smiley with object</h2>
+	<ul class="icons">
+		<li><object class="icon" type="image/svg+xml" data="smile.svg#smileo"></object>smileo</li>
+		<li><object class="icon" type="image/svg+xml" data="smile.svg#smiley"></object>smiley</li>
+	</ul>
+</section>
+
+<section>
+	<h2>SVG background image sprite</h2>
+	<ul class="iconbg">
+		<li class="y">yellow</li>
+		<li class="l">lime</li>
+		<li class="m">magenta</li>
+		<li class="b">blue</li>
+	</ul>
+</section>
+
+</main>
+</body>
+
+</html>

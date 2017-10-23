@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>smileys</title>
+    <desc>what a magnificent smiley that has a yellow background color like the sun and black eyes</desc>
+<defs><style type="text/css">
+#f1 {fill:yellow;}
+#f2 {fill:lime;}
+#f3 {fill:magenta;}
+#f4 {fill:#3af;}
+</style>
+	<g id="smiley" class="icon">
+		<circle class="face" cx="50" cy="50" r="40"/>
+		<circle cx="35" cy="35" r="6" style="fill:black;"/>
+		<circle cx="65" cy="35" r="6" style="fill:black;"/>
+		<path d="M25,60 C35,85 65,85 75,60" style="stroke:#000000; stroke-width: 4px; stroke-linecap: round; fill:none;"/>
+	</g>
+</defs>
+	<use id="f1" xlink:href="#smiley" x="0" y="0" />
+	<use id="f2" xlink:href="#smiley" x="100" y="0" />
+	<use id="f3" xlink:href="#smiley" x="200" y="0" />
+	<use id="f4" xlink:href="#smiley" x="300" y="0" />
+</svg>
