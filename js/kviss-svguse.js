@@ -586,9 +586,18 @@ $( document ).ready(function() {
                 if(!$(el).is(':checked') && $(el).hasClass('correct')) {
                     icon = $('<svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-hint"></use></svg>');
                 }
-                console.log(icon);
                 return icon;
+            }
 
+            function get_SVG_score_icon(el) {
+                var icon = null;
+                if($(el).is(':checked') && $(el).hasClass('correct')) {
+                    icon = $('<svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-riktig-hode"></use></svg>');
+                }
+                if($(el).is(':checked') && $(el).hasClass('incorrect')) {
+                    icon = $('<svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-mulig-hode"></use></svg>');
+                }
+                return icon;
             }
 
             function sjekk_svar(knapp) {
@@ -726,12 +735,9 @@ $( document ).ready(function() {
                     grand_percent = Math.round((grand_total / grand_possible) * 100);
                     // for each input, add a smiley
                     $.each($(el).find('input'), function( key, el){
-                        var smileyclass = "smiley-correct";
-                        if($(el).hasClass("incorrect")) {
-                            smileyclass = "smiley-incorrect";
-                        }
+                        // add svg score icons
                         if($(el).is(':checked')) {
-                            $(smileys).append($('<span style="transform:translate(0,' + (4*(-0.5 + Math.random())).toString() + 'em) scale(' + (0.5 + Math.random()) + ')" class="' + smileyclass + '"></span>'));
+                            $(smileys).append(get_SVG_score_icon(el));
                         }
                     });
                 });

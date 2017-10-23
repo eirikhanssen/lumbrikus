@@ -664,7 +664,7 @@
 
         <symbol id="icon-riktig-hode" class="riktig" viewBox="-16 -16 32 32">
             <title>riktig svar</title>
-            <use xlink:href="#gult-hode-bg"></use>
+            <circle fill="rgb(255, 234, 45)" stroke="black" stroke-width="1px" class="hode" cx="0" cy="0" r="15"/>
             <g stroke="none">
             <circle class="hode-oye" cx="7" cy="-5" r="2"/>
             <circle class="hode-oye" cx="-7" cy="-5" r="2"/>
@@ -674,7 +674,8 @@
 
         <symbol id="icon-riktig-hode-mc" class="riktig" viewBox="-16 -16 32 32">
             <title>riktig svar</title>
-            <use xlink:href="#hode-bg-mc"></use>
+            <circle fill="#777" stroke="black" stroke-width="1px"
+            style="fill: var(--color-medium, #777); stroke: var(--color-dark, black)" class="hode" cx="0" cy="0" r="15"/>
             <g fill="black" style="fill: var(--color-dark, black)">
             <circle class="hode-oye" cx="7" cy="-5" r="2"/>
             <circle class="hode-oye" cx="-7" cy="-5" r="2"/>
