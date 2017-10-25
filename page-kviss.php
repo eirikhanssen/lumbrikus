@@ -9,10 +9,12 @@
  * @since 1.0
  * @version 1.0
  */
-get_header(); ?>
+get_header(); 
+$quiz_number = 6;
+?>
 
 <!-- BEGIN PAGE -->	
-<main id="kviss" class="site-main page-kviss" role="main">
+<main id="kviss" class="site-main page-kviss kviss" role="main" data-quiz-number="<?php echo $quiz_number; ?>">
 
 		<?php 
 			
