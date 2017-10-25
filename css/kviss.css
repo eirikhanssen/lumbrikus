@@ -225,23 +225,7 @@ button.sjekk {
     display: block;
 }
 
-.quiz-part.answered label.incorrect.checked .feedback {
-    background:url(/media/svg/lumbrikus-icons.svg#galt);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
 
-.quiz-part.answered label.correct.checked .feedback {
-    background:url(/media/svg/lumbrikus-icons.svg#riktig-hode);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.quiz-part.answered label.correct .feedback {
-    background:url(/media/svg/lumbrikus-icons.svg#hint-riktig);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
 
 .quiz-part nav.quiz-nav {
     display: flex;
@@ -275,27 +259,8 @@ button.sjekk {
 
 a[disabled] {opacity: 0.2; pointer-events: none; cursor: default;}
 
-.quiz-nav .forrige span::before,
-.quiz-nav .neste span::after {
-    content:"";
-    position: absolute;
-    display: block;
-    height: 3rem;
-    width: 3rem;
-    background-size: contain;
-    background-repeat: no-repeat;
-    top:0;
-}
-.quiz-nav .forrige span::before {
-    right: 100%;
-    margin-right: .5rem;
-    background:url(/media/svg/lumbrikus-icons.svg#forrige);
-}
-.quiz-nav .neste span::after {
-    left: 100%;
-    margin-left: .5rem;
-    background:url(/media/svg/lumbrikus-icons.svg#neste);
-}
+
+
 
 .quiz-part button.sjekk {
     display: block;
@@ -402,7 +367,18 @@ a[disabled] {opacity: 0.2; pointer-events: none; cursor: default;}
     background: #9e3c68;
 }
 
+label .icon {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+}
 
+.score-smileys .icon {
+    position: static;
+    width: 3em;
+    height: 3em;
+    margin: 5px;
+}
 /* bugfix for MSIE */
 /*@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {*/
     /* IE10+ CSS styles go here */

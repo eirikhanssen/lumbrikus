@@ -48,7 +48,8 @@ add_action( 'admin_enqueue_scripts', 'lumbrikus_load_admin_scripts' );
 	========================
 */
 
-function lumbrikus_load_scripts() {
+function lumbrikus_load_scripts($hook) {
+	
 	/* register styles */
 	// wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.6', 'all' );
 	wp_enqueue_style( 'normalize', get_template_directory_uri() . '/css/normalize.css', array(), '7.0.0', 'all' );
@@ -60,6 +61,11 @@ function lumbrikus_load_scripts() {
 	//wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap-3.3.7.min.js', array('jquery'), '1.12.4', true );
 	wp_enqueue_script( 'svgxuse', get_template_directory_uri() . '/js/svgxuse.min.js', array('jquery'), '1.2.6', true );
 	wp_enqueue_script( 'lumbrikus', get_template_directory_uri() . '/js/lumbrikus.js', array('jquery'), '1.0.0', true );
-	
+
+	if( is_page( 'kviss' ) ) {
+		wp_enqueue_style( 'kviss', get_template_directory_uri() . '/css/kviss.css', array(), '0.0.1', 'all' );
+		wp_enqueue_script( 'kviss-js', get_template_directory_uri() . '/js/kviss.js', array('jquery'), '1.0.0', true );
+	}
+
 }
 add_action( 'wp_enqueue_scripts', 'lumbrikus_load_scripts' );
