@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mediasync</title>
+</head>
+<body>
+	
+<section id="lang_select">
+	<h2 class="invisible">Språkvalg</h2>
+	<form id="lang_select_form">
+	<fieldset id="primary_language">
+		<legend>Velg språk</legend>
+		<label class="single" for="primary_lang_no"><span lang="no">Norsk</span>
+			<input id="primary_lang_no" type="radio" name="primary_language" checked="checked">
+		</label>
+		<label for="primary_lang_ar"><span lang="ar" class="rtl">العربية</span><span lang="no">Arabisk</span>
+			<input id="primary_lang_ar" type="radio" name="primary_language">
+		</label>
+		<label for="primary_lang_so"><span lang="so">SOOMAALI</span><span lang="no">Somali</span>
+			<input id="primary_lang_so" type="radio" name="primary_language">
+		</label>
+		<label for="primary_lang_ti"><span lang="ti">ትግርኛ</span><span lang="no">Tigrinja</span>
+			<input id="primary_lang_ti" type="radio" name="primary_language">
+		</label>
+	</fieldset>
+	<fieldset id="secondary_language">
+		<legend>Velg støttespråk</legend>
+		<label class="single" for="secondary_lang_no">Norsk
+			<input id="secondary_lang_no" type="radio" name="secondary_language" checked="checked">
+		</label>
+		<label for="secondary_lang_ar"><span lang="ar" class="rtl">العربية</span><span lang="no">Arabisk</span>
+			<input id="secondary_lang_ar" type="radio" name="secondary_language">
+		</label>
+		<label for="secondary_lang_so"><span lang="so">SOOMAALI</span><span lang="no">Somali</span>
+			<input id="secondary_lang_so" type="radio" name="secondary_language">
+		</label>
+		<label for="secondary_lang_ti"><span lang="ti">ትግርኛ</span><span lang="no">Tigrinja</span>
+			<input id="secondary_lang_ti" type="radio" name="secondary_language">
+		</label>
+		<label for="secondary_lang_none"><span>Ikke</span><span>valgt</span>
+			<input id="secondary_lang_none" type="radio" name="secondary_language">
+		</label>
+	</fieldset>
+	</form>
+</section>
+
+<article lang="no" class="audio_and_text no" data-lang="no">
+
+<audio id="audio-no" class="mejs__player">
+    <source src="/media/audio/mp3_64k/NO_06K.mp3" type="audio/mp3"/>
+    <source src="/media/audio/ogg_64k/NO_06K.ogg" type="audio/ogg"/>
+    <source src="/media/audio/aac_m4a_64k/NO_06K.m4a" type="audio/mp4"/>
+    <track kind="captions" src="/media/vtt/NO_06K.vtt" srclang="no" label="Norsk (captions)" default="default"/>
+    <track kind="subtitles" src="/media/vtt/AR_06K.vtt" srclang="ar" label="Arabisk (synk)"/>
+    <track kind="subtitles" src="/media/vtt/NO_06K.vtt" srclang="no" label="Norsk (synk)"/>
+    <track kind="subtitles" src="/media/vtt/SO_06K.vtt" srclang="so" label="Somali (synk)"/>
+    <track kind="subtitles" src="/media/vtt/TI_06K.vtt" srclang="ti" label="Tigrinja (synk)"/>
+</audio>
+
+<div class="cues">
+
+  <div class="key" data-key="1">
+    <p><span data-begin="00:00.000" data-end="00:02.992">I meitemarkens verden</span></p>
+  </div>
+
+  <div class="key" data-key="2">
+    <p><span data-begin="00:02.992" data-end="00:09.272">Jenny, Samir, Hen og Katt er nede i jorda.</span></p>
+  </div>
+
+  <div class="key" data-key="3">
+    <p><span data-begin="00:09.272" data-end="00:11.372">De er små.</span></p>
+  </div>
+
+  <div class="key" data-key="4">
+    <p><span data-begin="00:11.372" data-end="00:15.052">De går i gangene til meitemarken.</span></p>
+  </div>
+
+  <div class="key" data-key="5">
+    <p><span data-begin="00:15.052" data-end="00:20.402">Stille. De hører noen som spiser.</span></p>
+  </div>
+
+  <div class="key" data-key="6">
+    <p><span data-begin="00:20.402" data-end="00:22.822">Noe brunt rører på seg.</span></p>
+  </div>
+
+  <div class="key" data-key="7">
+    <p><span data-begin="00:22.822" data-end="00:28.242">– Er det meitemarken, hvisker Jenny</span></p>
+  </div>
+
+  <div class="key" data-key="8">
+    <p><span data-begin="00:28.242" data-end="00:32.429">– Hei, hva gjør den! sier Samir.</span></p>
+  </div>
+
+  <div class="key" data-key="9">
+    <p><span data-begin="00:32.429" data-end="00:34.719">– Den bæsja i hodet på meg!</span></p>
+  </div>
+
+  <div class="key" data-key="10">
+    <p><span data-begin="00:34.719" data-end="00:39.399">- Flott! sier Hen. – Nå blir det fin jord!</span></p>
+  </div>
+
+  <div class="key" data-key="11">
+    <p><span data-begin="00:39.399" data-end="00:43.148">- Jeg vil ikke bli jord! sier Samir,</span></p>
+  </div>
+
+  <div class="key" data-key="12">
+    <p><span data-begin="00:43.148" data-end="00:45.628">og børster krøllene sine.</span></p>
+  </div>
+
+  <div class="key" data-key="13">
+    <p><span data-begin="00:45.628" data-end="00:48.588">De går stille videre.</span></p>
+  </div>
+
+  <div class="key" data-key="14">
+    <p><span data-begin="00:48.588" data-end="00:50.508">De hører en lyd.</span></p>
+  </div>
+
+  <div class="key" data-key="15">
+    <p><span data-begin="00:50.508" data-end="00:53.468">- Slafs! Slafs!</span></p>
+  </div>
+
+  <div class="key" data-key="16">
+    <p><span data-begin="00:53.468" data-end="00:56.818">Jenny stopper og sier STOPP!</span></p>
+  </div>
+
+  <div class="key" data-key="17">
+    <p><span data-begin="00:56.818" data-end="00:59.128">NOEN SPISER!</span></p>
+  </div>
+
+  <div class="key" data-key="18">
+    <p><span data-begin="00:59.128" data-end="01:03.778">De ser et dyr. Oransje farge.</span></p>
+  </div>
+
+  <div class="key" data-key="19">
+    <p><span data-begin="01:03.778" data-end="01:06.988">Langt. Mange bein.</span></p>
+  </div>
+
+  <div class="key" data-key="20">
+    <p><span data-begin="01:06.988" data-end="01:09.838">To store klør!</span></p>
+  </div>
+
+  <div class="key" data-key="21">
+    <p><span data-begin="01:09.838" data-end="01:14.038">Klørne holder fast en meitemark.</span></p>
+  </div>
+
+  <div class="key" data-key="22">
+    <p><span data-begin="01:14.038" data-end="01:16.788">Dyret spiser marken.</span></p>
+  </div>
+
+  <div class="key" data-key="23">
+    <p><span data-begin="01:16.788" data-end="01:21.598">- Slafs! Slafs! Spiser den.</span></p>
+  </div>
+
+  <div class="key" data-key="24">
+    <p><span data-begin="01:21.598" data-end="01:25.178">- Skolopender! sier Hen.</span></p>
+  </div>
+
+  <div class="key" data-key="25">
+    <p><span data-begin="01:25.178" data-end="01:28.528">- Skolopender elsker meitemark!</span></p>
+  </div>
+
+  <div class="key" data-key="26">
+    <p><span data-begin="01:28.528" data-end="01:32.238">Jenny tenker: - Vi er små!</span></p>
+  </div>
+
+  <div class="key" data-key="27">
+    <p><span data-begin="01:32.238" data-end="01:33.768">De løper.</span></p>
+  </div>
+
+  <div class="key" data-key="28">
+    <p><span data-begin="01:33.768" data-end="01:36.448">Skolopenderen kommer etter dem.</span></p>
+  </div>
+
+  <div class="key" data-key="29">
+    <p><span data-begin="01:36.448" data-end="01:38.808">Jenny løper og løper og roper:</span></p>
+  </div>
+
+  <div class="key" data-key="30">
+    <p><span data-begin="01:38.808" data-end="01:40.858">- Jeg er ikke maten din!</span></p>
+  </div>
+
+  <div class="key" data-key="31">
+    <p><span data-begin="01:40.858" data-end="01:42.598">-Jeg er ikke maten din!</span></p>
+  </div>
+
+  <div class="key" data-key="32">
+    <p><span data-begin="01:42.598" data-end="01:45.148">Samir løper og roper:</span></p>
+  </div>
+
+  <div class="key" data-key="33">
+    <p><span data-begin="01:45.148" data-end="01:47.098">- Jeg er ikke meitemark!</span></p>
+  </div>
+
+  <div class="key" data-key="34">
+    <p><span data-begin="01:47.098" data-end="01:48.978">- Jeg er ikke meitemark!</span></p>
+  </div>
+
+  <div class="key" data-key="35">
+    <p><span data-begin="01:48.978" data-end="01:51.553">Katt og Hen løper.</span></p>
+  </div>
+
+  <div class="key" data-key="36">
+    <p><span data-begin="01:51.553" data-end="01:53.113">Skolopenderen etter.</span></p>
+  </div>
+
+  <div class="key" data-key="37">
+    <p><span data-begin="01:53.113" data-end="01:55.383">Med klørne rett bak dem.</span></p>
+  </div>
+
+  <div class="key" data-key="38">
+    <p><span data-begin="01:55.383" data-end="01:59.283">Jenny ser lyset. Det er åpningen.</span></p>
+  </div>
+
+  <div class="key" data-key="39">
+    <p><span data-begin="01:59.283" data-end="02:02.113">De smetter ut. Alle fem.</span></p>
+  </div>
+
+  <div class="key" data-key="40">
+    <p><span data-begin="02:02.113" data-end="02:05.003">Oppe i gresset roper Hen:</span></p>
+  </div>
+
+  <div class="key" data-key="41">
+    <p><span data-begin="02:05.003" data-end="02:06.473">- Bli stor!</span></p>
+  </div>
+
+  <div class="key" data-key="42">
+    <p><span data-begin="02:06.473" data-end="02:08.923">Jenny ble stor.</span></p>
+  </div>
+
+  <div class="key" data-key="43">
+    <p><span data-begin="02:08.923" data-end="02:11.093">Samir ble stor.</span></p>
+  </div>
+
+  <div class="key" data-key="44">
+    <p><span data-begin="02:11.093" data-end="02:14.233">Hen og Katt ble store.</span></p>
+  </div>
+
+  <div class="key" data-key="45">
+    <p><span data-begin="02:14.233" data-end="02:17.393">Jenny ser på skolopenderen.</span></p>
+  </div>
+
+  <div class="key" data-key="46">
+    <p><span data-begin="02:17.393" data-end="02:19.393">Den er liten.</span></p>
+  </div>
+
+  <div class="key" data-key="47">
+    <p><span data-begin="02:19.393" data-end="02:22.063">Liten som en lillefinger.</span></p>
+  </div>
+
+  <div class="key" data-key="48">
+    <p><span data-begin="02:22.063" data-end="02:26.063">Jenny ler: – Hvorfor var jeg redd?</span></p>
+  </div><!-- last cue -->
+
+</div><!-- .cues -->
+</article><!-- .audio_and_text -->
+
+<article lang="ar" class="audio_and_text ar" data-lang="ar">
+
+<audio id="audio-ar" class="mejs__player">
+    <source src="/media/audio/mp3_64k/AR_06K.mp3" type="audio/mp3"/>
+    <source src="/media/audio/ogg_64k/AR_06K.ogg" type="audio/ogg"/>
+    <source src="/media/audio/aac_m4a_64k/AR_06K.m4a" type="audio/mp4"/>
+    <track kind="captions" src="/media/vtt/AR_06K.vtt" srclang="ar" label="Arabisk (captions)" default="default"/>
+    <track kind="subtitles" src="/media/vtt/AR_06K.vtt" srclang="ar" label="Arabisk (synk)"/>
+    <track kind="subtitles" src="/media/vtt/NO_06K.vtt" srclang="no" label="Norsk (synk)"/>
+    <track kind="subtitles" src="/media/vtt/SO_06K.vtt" srclang="so" label="Somali (synk)"/>
+    <track kind="subtitles" src="/media/vtt/TI_06K.vtt" srclang="ti" label="Tigrinja (synk)"/>
+</audio>
+
+<div class="cues">
+
+  <div class="key" data-key="1">
+    <p><span data-begin="00:00.000" data-end="00:02.512">في عالم دودة الأرض</span></p>
+  </div>
+
+  <div class="key" data-key="2">
+    <p><span data-begin="00:02.512" data-end="00:08.712">جيني، سمير، هين وكات يوجدون تحت الأرض.</span></p>
+  </div>
+
+  <div class="key" data-key="3">
+    <p><span data-begin="00:08.712" data-end="00:11.292">هم صغار.</span></p>
+  </div>
+
+  <div class="key" data-key="4">
+    <p><span data-begin="00:11.292" data-end="00:15.282">يمشون في ممرات دودة الأرض.</span></p>
+  </div>
+
+  <div class="key" data-key="5">
+    <p><span data-begin="00:15.282" data-end="00:18.852">يسمعون احداً يأكل.</span></p>
+  </div>
+
+  <div class="key" data-key="6">
+    <p><span data-begin="00:18.852" data-end="00:22.422">شيء بني يتحرك.</span></p>
+  </div>
+
+  <div class="key" data-key="7">
+    <p><span data-begin="00:22.422" data-end="00:26.272">هل هي دودة الأرض؟ همست جيني</span></p>
+  </div>
+
+  <div class="key" data-key="8">
+    <p><span data-begin="00:26.272" data-end="00:31.602">مرحبا، ماذا تفعل هاته؟ قال سمير.</span></p>
+  </div>
+
+  <div class="key" data-key="9">
+    <p><span data-begin="00:31.602" data-end="00:34.952">تغوطت على رأسي!</span></p>
+  </div>
+
+  <div class="key" data-key="10">
+    <p><span data-begin="00:34.952" data-end="00:41.172">رائع! قال هين.ـ الآن ستصبح تربة جيدة!</span></p>
+  </div>
+
+  <div class="key" data-key="11">
+    <p><span data-begin="00:41.172" data-end="00:45.502">لا أريد التحوّل الى تراب! قال سمير.</span></p>
+  </div>
+
+  <div class="key" data-key="12">
+    <p><span data-begin="00:45.502" data-end="00:49.072">إنه يصقل مخالبه.</span></p>
+  </div>
+
+  <div class="key" data-key="13">
+    <p><span data-begin="00:49.072" data-end="00:53.472">يواصلون طريقهم بهدوء.</span></p>
+  </div>
+
+  <div class="key" data-key="14">
+    <p><span data-begin="00:53.472" data-end="00:57.102">يسمعون صوتا.</span></p>
+  </div>
+
+  <div class="key" data-key="15">
+    <p><span data-begin="00:57.102" data-end="01:01.592">سلافس!سلافس!</span></p>
+  </div>
+
+  <div class="key" data-key="16">
+    <p><span data-begin="01:01.592" data-end="01:07.912">جيني تتوقف وتقول قفوا!</span></p>
+  </div>
+
+  <div class="key" data-key="17">
+    <p><span data-begin="01:07.912" data-end="01:11.972">صوت أحد يأكل!</span></p>
+  </div>
+
+  <div class="key" data-key="18">
+    <p><span data-begin="01:11.972" data-end="01:16.092">يشاهدون حيواناً. لونه برتقالي.</span></p>
+  </div>
+
+  <div class="key" data-key="19">
+    <p><span data-begin="01:16.092" data-end="01:20.192">طويل. له عدة أرجل.</span></p>
+  </div>
+
+  <div class="key" data-key="20">
+    <p><span data-begin="01:20.192" data-end="01:23.802">مخلبين كبيرين!</span></p>
+  </div>
+
+  <div class="key" data-key="21">
+    <p><span data-begin="01:23.802" data-end="01:29.272">المخالب تمسك بثبات دودة الأرض.</span></p>
+  </div>
+
+  <div class="key" data-key="22">
+    <p><span data-begin="01:29.272" data-end="01:33.382">الحيوان يأكل الدودة.</span></p>
+  </div>
+
+  <div class="key" data-key="23">
+    <p><span data-begin="01:33.382" data-end="01:37.172">سلافس!سلافس!</span></p>
+  </div>
+
+  <div class="key" data-key="24">
+    <p><span data-begin="01:37.172" data-end="01:41.052">ام الأربعة والأربعين! قال هين.</span></p>
+  </div>
+
+  <div class="key" data-key="25">
+    <p><span data-begin="01:41.052" data-end="01:47.662">ام الأربعة والأربعين تحب أكل دودة الأرض!</span></p>
+  </div>
+
+  <div class="key" data-key="26">
+    <p><span data-begin="01:47.662" data-end="01:51.252">جيني تفكر:ـ نحن صغار!</span></p>
+  </div>
+
+  <div class="key" data-key="27">
+    <p><span data-begin="01:51.252" data-end="01:55.122">هم يركضون.</span></p>
+  </div>
+
+  <div class="key" data-key="28">
+    <p><span data-begin="01:55.122" data-end="02:00.132">ام الأربعة والأربعين تركض خلفهم.</span></p>
+  </div>
+
+  <div class="key" data-key="29">
+    <p><span data-begin="02:00.132" data-end="02:04.032">جيني تركض وتصيح:</span></p>
+  </div>
+
+  <div class="key" data-key="30">
+    <p><span data-begin="02:04.032" data-end="02:07.352">أنا لست طعامك المفضل!</span></p>
+  </div>
+
+  <div class="key" data-key="31">
+    <p><span data-begin="02:07.352" data-end="02:11.242">أنا لست طعامك المفضل!</span></p>
+  </div>
+
+  <div class="key" data-key="32">
+    <p><span data-begin="02:11.242" data-end="02:14.722">سمير يركض ويصيح:</span></p>
+  </div>
+
+  <div class="key" data-key="33">
+    <p><span data-begin="02:14.722" data-end="02:18.262">أنا لست دودة الأرض!</span></p>
+  </div>
+
+  <div class="key" data-key="34">
+    <p><span data-begin="02:18.262" data-end="02:21.972">أنا لست دودة الأرض!</span></p>
+  </div>
+
+  <div class="key" data-key="35">
+    <p><span data-begin="02:21.972" data-end="02:25.692">كات وهين تركضان.</span></p>
+  </div>
+
+  <div class="key" data-key="36">
+    <p><span data-begin="02:25.692" data-end="02:30.372">أم الأربعة والأربعين تركض خلفهم.</span></p>
+  </div>
+
+  <div class="key" data-key="37">
+    <p><span data-begin="02:30.372" data-end="02:35.342">و مخالبها خلفهم تماما.</span></p>
+  </div>
+
+  <div class="key" data-key="38">
+    <p><span data-begin="02:35.342" data-end="02:39.702">جيني ترى ضوءاً. إنها فتحة.</span></p>
+  </div>
+
+  <div class="key" data-key="39">
+    <p><span data-begin="02:39.702" data-end="02:44.042">اندفعوا إلى الخارج. الخمسة كلهم.</span></p>
+  </div>
+
+  <div class="key" data-key="40">
+    <p><span data-begin="02:44.042" data-end="02:47.322">فوق العشب صاح هين:</span></p>
+  </div>
+
+  <div class="key" data-key="41">
+    <p><span data-begin="02:47.322" data-end="02:49.672">تحولوا كبارا!</span></p>
+  </div>
+
+  <div class="key" data-key="42">
+    <p><span data-begin="02:49.672" data-end="02:52.532">جيني أصبحت كبيرة.</span></p>
+  </div>
+
+  <div class="key" data-key="43">
+    <p><span data-begin="02:52.532" data-end="02:56.052">سمير أصبح كبيرا.</span></p>
+  </div>
+
+  <div class="key" data-key="44">
+    <p><span data-begin="02:56.052" data-end="03:00.122">هين وكات أصبحا كبيرين.</span></p>
+  </div>
+
+  <div class="key" data-key="45">
+    <p><span data-begin="03:00.122" data-end="03:05.452">جيني تنظر إلى أم الأربعة والأربعين.</span></p>
+  </div>
+
+  <div class="key" data-key="46">
+    <p><span data-begin="03:05.452" data-end="03:07.912">هذه صغيرة.</span></p>
+  </div>
+
+  <div class="key" data-key="47">
+    <p><span data-begin="03:07.912" data-end="03:12.312">صغيرة مثل الأصبع الصغير.</span></p>
+  </div>
+
+  <div class="key" data-key="48">
+    <p><span data-begin="03:12.312" data-end="03:16.833">جيني تضحك:ـ لماذا كنت خائفة؟</span></p>
+  </div><!-- last cue -->
+
+</div><!-- .cues -->
+</article><!-- .audio_and_text -->
+
+<article lang="so" class="audio_and_text" data-lang="so">
+
+<audio id="audio-so" class="mejs__player">
+    <source src="/media/audio/mp3_64k/SO_06K.mp3" type="audio/mp3"/>
+    <source src="/media/audio/ogg_64k/SO_06K.ogg" type="audio/ogg"/>
+    <source src="/media/audio/aac_m4a_64k/SO_06K.m4a" type="audio/mp4"/>
+    <track kind="captions" src="/media/vtt/SO_06K.vtt" srclang="so" label="SOOMAALI (captions)" default="default"/>
+    <track kind="subtitles" src="/media/vtt/AR_06K.vtt" srclang="ar" label="Arabisk (synk)"/>
+    <track kind="subtitles" src="/media/vtt/NO_06K.vtt" srclang="no" label="Norsk (synk)"/>
+    <track kind="subtitles" src="/media/vtt/SO_06K.vtt" srclang="so" label="Somali (synk)"/>
+    <track kind="subtitles" src="/media/vtt/TI_06K.vtt" srclang="ti" label="Tigrinja (synk)"/>
+</audio>
+
+<div class="cues">
+
+  <div class="key" data-key="1">
+    <p><span data-begin="00:00.000" data-end="00:02.152">Aduunka goryaan dhuleedka</span></p>
+  </div>
+
+  <div class="key" data-key="2">
+    <p><span data-begin="00:02.152" data-end="00:05.472">Jenny,Samir,Hen iyo Katt dhulka hoose ayey ku jiraan.</span></p>
+  </div>
+
+  <div class="key" data-key="3">
+    <p><span data-begin="00:05.472" data-end="00:07.012">Way yaryarihiin.</span></p>
+  </div>
+
+  <div class="key" data-key="4">
+    <p><span data-begin="00:07.012" data-end="00:09.872">Waxay socdaan luuqluuqyadi gooryaan dhuleedka.</span></p>
+  </div>
+
+  <div class="key" data-key="5">
+    <p><span data-begin="00:09.872" data-end="00:12.104">Waxay maqlayaan cid wax cunaysa.</span></p>
+  </div>
+
+  <div class="key" data-key="6">
+    <p><span data-begin="00:12.104" data-end="00:14.484">Wax bunni ah ayaa dhaqdhaqaaqay.</span></p>
+  </div>
+
+  <div class="key" data-key="7">
+    <p><span data-begin="00:14.484" data-end="00:17.304">-Ma gooryaan dhuleed baa,Jenny ayaa hoos u tiri.</span></p>
+  </div>
+
+  <div class="key" data-key="8">
+    <p><span data-begin="00:17.304" data-end="00:20.314">-Warya, muxuu samaynayaa! Samir baa yiri.</span></p>
+  </div>
+
+  <div class="key" data-key="9">
+    <p><span data-begin="00:20.314" data-end="00:22.104">-Madaxayga ayuu igaga  xaaray!</span></p>
+  </div>
+
+  <div class="key" data-key="10">
+    <p><span data-begin="00:22.104" data-end="00:27.904">-Si fiican! Hen baa yiri.</span></p>
+    <p><span data-begin="00:22.104" data-end="00:27.904">-Ciid fiican baay noqonqysaa!</span></p>
+  </div>
+
+  <div class="key" data-key="11">
+    <p><span data-begin="00:27.904" data-end="00:31.184">-Anigu ciid noqon maayo! Samir baa yiri.</span></p>
+  </div>
+
+  <div class="key" data-key="12">
+    <p><span data-begin="00:31.184" data-end="00:36.784">Wuxuu feedhay timahisa marmaroorsan.</span></p>
+  </div>
+
+  <div class="key" data-key="13">
+    <p><span data-begin="00:36.784" data-end="00:39.594">Si sanqadh la`aana ah, ayay hore ugu socdeen.</span></p>
+  </div>
+
+  <div class="key" data-key="14">
+    <p><span data-begin="00:39.594" data-end="00:41.184">Waxa ay maqleen cod.</span></p>
+  </div>
+
+  <div class="key" data-key="15">
+    <p><span data-begin="00:41.184" data-end="00:42.884">-Qam! Qam!</span></p>
+  </div>
+
+  <div class="key" data-key="16">
+    <p><span data-begin="00:42.884" data-end="00:46.814">Jenny way istaagtay oo waxay tiri  STAAJI!</span></p>
+  </div>
+
+  <div class="key" data-key="17">
+    <p><span data-begin="00:46.814" data-end="00:49.164">CID BA WAX CUNAYSA!</span></p>
+  </div>
+
+  <div class="key" data-key="18">
+    <p><span data-begin="00:49.164" data-end="00:53.574">Waxay arkeen xayawaan. Midab liinood.</span></p>
+  </div>
+
+  <div class="key" data-key="19">
+    <p><span data-begin="00:53.574" data-end="00:56.764">Wuu dheer yahay.Cago badana  wu leeyahay.</span></p>
+  </div>
+
+  <div class="key" data-key="20">
+    <p><span data-begin="00:56.764" data-end="00:58.594">Laba cidiyood oo waaweyn.</span></p>
+  </div>
+
+  <div class="key" data-key="21">
+    <p><span data-begin="00:58.594" data-end="01:01.244">Cidiyiha ayuu ku hayaa gooryaanka.</span></p>
+  </div>
+
+  <div class="key" data-key="22">
+    <p><span data-begin="01:01.244" data-end="01:03.266">Xayawaankii wuxuu cunay gooryaankii.</span></p>
+  </div>
+
+  <div class="key" data-key="23">
+    <p><span data-begin="01:03.266" data-end="01:06.069">-Qam…Qam!</span></p>
+  </div>
+
+  <div class="key" data-key="24">
+    <p><span data-begin="01:06.069" data-end="01:08.559">-Waa Geesoole!Hen baa yidhi.</span></p>
+  </div>
+
+  <div class="key" data-key="25">
+    <p><span data-begin="01:08.559" data-end="01:11.469">-Geesooluhu wuu jecelyahay gooryaan dhuleedka!</span></p>
+  </div>
+
+  <div class="key" data-key="26">
+    <p><span data-begin="01:11.469" data-end="01:14.869">Jenny way fikiraysaa:-Waynu yaryar nahay!</span></p>
+  </div>
+
+  <div class="key" data-key="27">
+    <p><span data-begin="01:14.869" data-end="01:16.127">Way ordeen.</span></p>
+  </div>
+
+  <div class="key" data-key="28">
+    <p><span data-begin="01:16.127" data-end="01:19.827">Geesoolihii wuu soo daba orday.</span></p>
+  </div>
+
+  <div class="key" data-key="29">
+    <p><span data-begin="01:19.827" data-end="01:22.357">Jenny way oroday wayna qaylisay.</span></p>
+  </div>
+
+  <div class="key" data-key="30">
+    <p><span data-begin="01:22.357" data-end="01:24.287">-Anigu cuntadaadii ma ihi!</span></p>
+  </div>
+
+  <div class="key" data-key="31">
+    <p><span data-begin="01:24.287" data-end="01:25.897">-Anigu cuntadaadii ma ihi!</span></p>
+  </div>
+
+  <div class="key" data-key="32">
+    <p><span data-begin="01:25.897" data-end="01:28.947">Samir wuu orday waanu qayliyey.</span></p>
+  </div>
+
+  <div class="key" data-key="33">
+    <p><span data-begin="01:28.947" data-end="01:30.477">-Anigu ma ihi gooryaan.</span></p>
+  </div>
+
+  <div class="key" data-key="34">
+    <p><span data-begin="01:30.477" data-end="01:31.887">-Anigu ma ihi gooryaan.</span></p>
+  </div>
+
+  <div class="key" data-key="35">
+    <p><span data-begin="01:31.887" data-end="01:33.637">Katt iyo Hen way ordeen.</span></p>
+  </div>
+
+  <div class="key" data-key="36">
+    <p><span data-begin="01:33.637" data-end="01:35.847">Geesooliina wuu daba ordaya.</span></p>
+  </div>
+
+  <div class="key" data-key="37">
+    <p><span data-begin="01:35.847" data-end="01:38.737">Cidiyihiisina in yar bay u soo jiraan.</span></p>
+  </div>
+
+  <div class="key" data-key="38">
+    <p><span data-begin="01:38.737" data-end="01:43.367">Jenny waxay aragtay iftiinki.</span></p>
+    <p><span data-begin="01:38.737" data-end="01:43.367">-Waa daloolkii.</span></p>
+  </div>
+
+  <div class="key" data-key="39">
+    <p><span data-begin="01:43.367" data-end="01:46.167">Dibadda ayey usoo boodeen. Shantuba.</span></p>
+  </div>
+
+  <div class="key" data-key="40">
+    <p><span data-begin="01:46.167" data-end="01:48.377">Dooga dhushiisa , ayuu yiri Hen.</span></p>
+  </div>
+
+  <div class="key" data-key="41">
+    <p><span data-begin="01:48.377" data-end="01:49.417">-Waynaada!</span></p>
+  </div>
+
+  <div class="key" data-key="42">
+    <p><span data-begin="01:49.417" data-end="01:51.797">Jenny way weynaatay.</span></p>
+  </div>
+
+  <div class="key" data-key="43">
+    <p><span data-begin="01:51.797" data-end="01:53.287">Samir wuu waynaaday.</span></p>
+  </div>
+
+  <div class="key" data-key="44">
+    <p><span data-begin="01:53.287" data-end="01:54.967">Hen iyo Katt way weynaadeen.</span></p>
+  </div>
+
+  <div class="key" data-key="45">
+    <p><span data-begin="01:54.967" data-end="01:57.187">Jenny waxay eegtay geesoolihii.</span></p>
+  </div>
+
+  <div class="key" data-key="46">
+    <p><span data-begin="01:57.187" data-end="01:58.267">Waa waxyar.</span></p>
+  </div>
+
+  <div class="key" data-key="47">
+    <p><span data-begin="01:58.267" data-end="02:00.347">Wuxuu leeg yahay far yarada.</span></p>
+  </div>
+
+  <div class="key" data-key="48">
+    <p><span data-begin="02:00.347" data-end="02:03.828">Jenny way qososhay: Maxan la cabsanayey?</span></p>
+  </div><!-- last cue -->
+
+</div><!-- .cues -->
+</article><!-- .audio_and_text -->
+
+
+<article lang="ti" class="audio_and_text" data-lang="ti">
+
+<audio id="audio-ti" class="mejs__player">
+    <source src="/media/audio/mp3_64k/TI_06K.mp3" type="audio/mp3"/>
+    <source src="/media/audio/ogg_64k/TI_06K.ogg" type="audio/ogg"/>
+    <source src="/media/audio/aac_m4a_64k/TI_06K.m4a" type="audio/mp4"/>
+    <track kind="captions" src="/media/vtt/TI_06K.vtt" srclang="ti" label="Tigrinja (captions)" default="default"/>
+    <track kind="subtitles" src="/media/vtt/AR_06K.vtt" srclang="ar" label="Arabisk (synk)"/>
+    <track kind="subtitles" src="/media/vtt/NO_06K.vtt" srclang="no" label="Norsk (synk)"/>
+    <track kind="subtitles" src="/media/vtt/SO_06K.vtt" srclang="so" label="Somali (synk)"/>
+    <track kind="subtitles" src="/media/vtt/TI_06K.vtt" srclang="ti" label="Tigrinja (synk)"/>
+</audio>
+
+<div class="cues">
+
+  <div class="key" data-key="1">
+    <p><span data-begin="00:00.000" data-end="00:03.392">ኣብ ዓዲ ሓሰኻ መሬት</span></p>
+  </div>
+
+  <div class="key" data-key="2">
+    <p><span data-begin="00:03.392" data-end="00:10.702">የኒ፣ ሰሚር፣ ሄንን  ድሙን ኣብ ውሽጢ መሬት እዮም ዘለዉ።</span></p>
+  </div>
+
+  <div class="key" data-key="3">
+    <p><span data-begin="00:10.702" data-end="00:13.082">ንኣሽቱ እዮም።</span></p>
+  </div>
+
+  <div class="key" data-key="4">
+    <p><span data-begin="00:13.082" data-end="00:16.420">ኣብቲ ሓሰኻታት መሬት ዘዳለውዎ መንገዲ ይኸዱ ኣለዉ።</span></p>
+  </div>
+
+  <div class="key" data-key="5">
+    <p><span data-begin="00:16.420" data-end="00:20.250">ሓደ ዝበልዕ ዘሎ ነገር ይሰምዑ ኣለዉ።</span></p>
+  </div>
+
+  <div class="key" data-key="6">
+    <p><span data-begin="00:20.250" data-end="00:24.170">ቡናዊ ሕብሪ ዘለዎም ነገራት ይንቃሳቐሱ ኣለዉ።</span></p>
+  </div>
+
+  <div class="key" data-key="7">
+    <p><span data-begin="00:24.170" data-end="00:29.050">-እዚ እቲ ሓሰኻ መሬት ድዩ? የኒ ሕሹኽ ትብል።</span></p>
+  </div>
+
+  <div class="key" data-key="8">
+    <p><span data-begin="00:29.050" data-end="00:33.380">-እንታይ እዩ ዝገብር ዘሎ! ሰሚር ይሓትት።</span></p>
+  </div>
+
+  <div class="key" data-key="9">
+    <p><span data-begin="00:33.380" data-end="00:37.910">-ኣብ ርእሰይ ሓሪኡለይ! ይብል ሰሚር</span></p>
+  </div>
+
+  <div class="key" data-key="10">
+    <p><span data-begin="00:37.910" data-end="00:44.070">-ጽቡቕ እምበር! ይብል ሄን። ሕጂ እቲ ሓመድ ጽቡቕ ክኸውን እዩ!</span></p>
+  </div>
+
+  <div class="key" data-key="11">
+    <p><span data-begin="00:44.070" data-end="00:48.820">-ኣነ ሓመድ ክኸውን ኣይደልን! ይብል ሰሚር።</span></p>
+  </div>
+
+  <div class="key" data-key="12">
+    <p><span data-begin="00:48.820" data-end="00:51.200">ነቲ ለሚሽ ጸጉሩ ይነግፍ።</span></p>
+  </div>
+
+  <div class="key" data-key="13">
+    <p><span data-begin="00:51.200" data-end="00:53.820">ቀስ ኢሎም መገዶም ይቕጽሉ።</span></p>
+  </div>
+
+  <div class="key" data-key="14">
+    <p><span data-begin="00:53.820" data-end="00:56.220">ገለ ድምጺ ይሰምዑ።</span></p>
+  </div>
+
+  <div class="key" data-key="15">
+    <p><span data-begin="00:56.220" data-end="00:59.796">-ውሕጥ! ውሕጥ!</span></p>
+  </div>
+
+  <div class="key" data-key="16">
+    <p><span data-begin="00:59.796" data-end="01:03.676">የኒ ጠጠው ትብል እሞ ጠጠው በሉ! ትብል።</span></p>
+  </div>
+
+  <div class="key" data-key="17">
+    <p><span data-begin="01:03.676" data-end="01:06.996">ገለ ነገር ይበልዕ ኣሎ።</span></p>
+  </div>
+
+  <div class="key" data-key="18">
+    <p><span data-begin="01:06.996" data-end="01:11.596">ሓደ እንሰሳ ይርእዩ። ኣራንሾኒ ሕብሪ ዘለዎ።</span></p>
+  </div>
+
+  <div class="key" data-key="19">
+    <p><span data-begin="01:11.596" data-end="01:16.026">ነዊሕ። ብዙሕ እግሪ ዘለዎ።</span></p>
+  </div>
+
+  <div class="key" data-key="20">
+    <p><span data-begin="01:16.026" data-end="01:18.736">ክልተ ዓበይቲ ኣጻፍር</span></p>
+  </div>
+
+  <div class="key" data-key="21">
+    <p><span data-begin="01:18.736" data-end="01:23.566">ኣብቲ ኣጽፋር ሓደ ሓሰኻ መሬት ተታሒዙ ኣሎ።</span></p>
+  </div>
+
+  <div class="key" data-key="22">
+    <p><span data-begin="01:23.566" data-end="01:26.706">እቲ እንሰሳ ነቲ ሓሰካ ይበልዖ።</span></p>
+  </div>
+
+  <div class="key" data-key="23">
+    <p><span data-begin="01:26.706" data-end="01:30.256">-ውሕጥ! ውሕጥ!</span></p>
+  </div>
+
+  <div class="key" data-key="24">
+    <p><span data-begin="01:30.256" data-end="01:32.696">-እግረ-ሚእቲ ይብል ሄን</span></p>
+  </div>
+
+  <div class="key" data-key="25">
+    <p><span data-begin="01:32.696" data-end="01:36.926">-እግረ-ሚእቲ ሓሰኻ መሬት ይፈቱ እዩ።</span></p>
+  </div>
+
+  <div class="key" data-key="26">
+    <p><span data-begin="01:36.926" data-end="01:40.876">ንኣሽቱ ኢና! ኢላ የኒ ትሓስብ።</span></p>
+  </div>
+
+  <div class="key" data-key="27">
+    <p><span data-begin="01:40.876" data-end="01:42.806">ይጎዩ</span></p>
+  </div>
+
+  <div class="key" data-key="28">
+    <p><span data-begin="01:42.806" data-end="01:46.686">እቲ እግረ-ሚእቲ ደድሕሪኦም መጺኡዎም።</span></p>
+  </div>
+
+  <div class="key" data-key="29">
+    <p><span data-begin="01:46.686" data-end="01:49.166">የኒ ትጎይን ትጭድርን።</span></p>
+  </div>
+
+  <div class="key" data-key="30">
+    <p><span data-begin="01:49.166" data-end="01:51.786">ኣነ መግብኻ ኣይኮንኩን</span></p>
+  </div>
+
+  <div class="key" data-key="31">
+    <p><span data-begin="01:51.786" data-end="01:54.616">ኣነ መግብኻ ኣይኮንኩን!</span></p>
+  </div>
+
+  <div class="key" data-key="32">
+    <p><span data-begin="01:54.616" data-end="01:58.716">ሰሚር ይጎይን ይጭድርን</span></p>
+  </div>
+
+  <div class="key" data-key="33">
+    <p><span data-begin="01:58.716" data-end="02:01.066">ኣነ ሓሰኻ መሬት ኣይኾንኩን!</span></p>
+  </div>
+
+  <div class="key" data-key="34">
+    <p><span data-begin="02:01.066" data-end="02:03.896">ኣነ ሓሰኻ መሬት ኣይኾንኩን!</span></p>
+  </div>
+
+  <div class="key" data-key="35">
+    <p><span data-begin="02:03.896" data-end="02:07.156">እቲ ድሙን ሄንን ይጎዩ።</span></p>
+  </div>
+
+  <div class="key" data-key="36">
+    <p><span data-begin="02:07.156" data-end="02:10.066">እቲ እግሪሚእቲ ደድሕሪኦም።</span></p>
+  </div>
+
+  <div class="key" data-key="37">
+    <p><span data-begin="02:10.066" data-end="02:12.696">ኣጽፋሩ ናባታቶም አናቕረበ።</span></p>
+  </div>
+
+  <div class="key" data-key="38">
+    <p><span data-begin="02:12.696" data-end="02:18.426">የኒ ብርሃን ትርኢ። እቲ መውጽኢ ኣብኡ እዩ።</span></p>
+  </div>
+
+  <div class="key" data-key="39">
+    <p><span data-begin="02:18.426" data-end="02:22.296">ጢር ኢሎም ወጽዮም። ሓሙሽቲኦም።</span></p>
+  </div>
+
+  <div class="key" data-key="40">
+    <p><span data-begin="02:22.296" data-end="02:27.536">ኣብ ላዕሊ ኣብቲ ሳዕሪ ምስበጽሑ ሄን ይጭድር:</span></p>
+  </div>
+
+  <div class="key" data-key="41">
+    <p><span data-begin="02:27.536" data-end="02:29.516">-ዓበይቲ ኩኑ</span></p>
+  </div>
+
+  <div class="key" data-key="42">
+    <p><span data-begin="02:29.516" data-end="02:31.586">የኒ ትዓቢ</span></p>
+  </div>
+
+  <div class="key" data-key="43">
+    <p><span data-begin="02:31.586" data-end="02:33.256">ሰሚር ይዓቢ</span></p>
+  </div>
+
+  <div class="key" data-key="44">
+    <p><span data-begin="02:33.256" data-end="02:35.246">ሄንን እቲ ድሙን ይዓብዩ</span></p>
+  </div>
+
+  <div class="key" data-key="45">
+    <p><span data-begin="02:35.246" data-end="02:38.626">የኒ ነቲ እግረ-ሚእቲ ትጥምቶ።</span></p>
+  </div>
+
+  <div class="key" data-key="46">
+    <p><span data-begin="02:38.626" data-end="02:40.616">ንእሽተይ እዩ።</span></p>
+  </div>
+
+  <div class="key" data-key="47">
+    <p><span data-begin="02:40.616" data-end="02:43.416">ልክዕ ከም ሕንጥል ሕንጥሊቶ ንእሽተይ።</span></p>
+  </div>
+
+  <div class="key" data-key="48">
+    <p><span data-begin="02:43.416" data-end="02:47.565">የኒ ትስሕቕ:-  ንምንታይ እየ ዝፈራሕኩ?</span></p>
+  </div><!-- last cue -->
+
+</div><!-- .cues -->
+</article><!-- .audio_and_text -->
+
+
+<div class="translation-container">
+	
+	<div class="secondaryLangControls2">
+	
+	<h2>Støttespråk</h2>
+		<button class="langMirrorBtn" data-input="secondary_lang_no"><span>&nbsp;</span><span>Norsk</span></button>
+		<button class="langMirrorBtn" data-input="secondary_lang_ar"><span lang="ar" class="rtl">العربية</span><span lang="no">Arabisk</span></button>
+		<button class="langMirrorBtn" data-input="secondary_lang_so"><span lang="so">SOOMAALI</span><span lang="no">Somali</span></button>
+		<button class="langMirrorBtn" data-input="secondary_lang_ti"><span lang="ti">ትግርኛ</span><span lang="no">Tigrinja</span></button>
+		<button class="langMirrorBtn" data-input="secondary_lang_none"><span>&nbsp;</span><span>Lukk</span> </button>
+	</div><!-- .secondaryLangControls2 -->	
+
+	<div id="translation"></div>
+
+</div><!-- .translation-container -->
+
+
+</body>
+</html>
