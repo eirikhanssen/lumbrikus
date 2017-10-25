@@ -95,14 +95,9 @@ function lumbrikus_custom_css_callback() {
 }
 
 
-
 //Template submenu functions
 function lumbrikus_theme_admin_page() {
 	require_once( get_template_directory() . '/inc/templates/lumbrikus-admin.php' );
-}
-
-function lumbrikus_theme_support_page() {
-	require_once( get_template_directory() . '/inc/templates/lumbrikus-theme-support.php' );
 }
 
 function lumbrikus_theme_custom_css_page() {
