@@ -277,7 +277,7 @@
    
   <g id="satellittlenker" transform="translate(0,-20)">
    <g class="satellite" transform="translate(-50,0)">
-      <a href="/til_laereren/" target="_top" title="til læreren">
+      <a href="/til-laereren/" target="_top" title="til læreren">
          <circle class="textbg2" r="105" cx="-235" cy="187" />
          <circle class="textbg" r="90" cx="-235" cy="187" />
          <text id="t_foreldrene" x="-235" y="-187">
