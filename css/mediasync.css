@@ -69,6 +69,19 @@ article {
     box-shadow: 0 0 1rem #666;
 }
 
+.translation-container::after {
+    position: absolute;
+    top: 100%;
+    left:50%;
+    transform: translate(-50%,0);
+    display: block;
+    margin-top: 0rem;
+    color: red;
+    width: auto;
+    font-size: .3em;
+    content: "hastighetskontrol | språkvalg?";
+}
+
 .translation-container button span {display: block;}
 .secondaryLangControls2 {text-align: center;}
 .translation-container button {margin: 0; box-sizing: border-box; padding: .25rem .4rem; min-width: 17%; display: inline-block;}
