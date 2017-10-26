@@ -63,8 +63,10 @@ article {
     transform: translate(.5rem, 0);
     border-radius: .25em;
     width: auto;
-    padding: 1em;
+    padding: 1rem;
+    padding-top: 2rem;
     box-sizing: border-box;
+    box-shadow: 0 0 1rem #666;
 }
 
 .translation-container button span {display: block;}
@@ -326,3 +328,23 @@ body.primary_lang_ti .audio_and_text.ti {
 }
 
 .invisible {display: none;}
+
+.secondary-controls2-title {
+    font-size: 1em;
+    background: white;
+    display: inline-block;
+    position: absolute;
+    top:-.75rem;
+    left:0;
+    right:0;
+    width: 10rem;
+    margin: auto;
+
+}
+
+.translation-container,
+.secondary-controls2-title {
+        border-radius: 1rem;
+    border: 1px solid black;
+}
+
