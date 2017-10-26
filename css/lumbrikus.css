@@ -135,7 +135,6 @@ body[class*="kapittel-hovedside"]::after {
     display: flex;
     width: auto;
     margin: auto;
-    background: rgba(255,255,255,0.8);
     flex-direction: row;
     justify-content: center;
 }
@@ -144,6 +143,7 @@ body[class*="kapittel-hovedside"]::after {
     display: inline;
     margin: auto;
     flex-grow: 1;
+    background: rgba(255,255,255,0.8);
 }
 .child-page-links.text li a {
     display: inline;
