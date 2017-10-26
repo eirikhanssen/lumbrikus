@@ -108,3 +108,72 @@ header h1, header p {
 .attachment-page-image .resolutions {
     font-family: "Open Sans Condensed", sans-serif;
 }
+
+.page-id-10 {
+    background: url(/media/img/01-let-og-finn-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+}
+
+/* unfinished */
+.page-footer {display: none;}
+
+.child-page-links.textimage ul {
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+}
+
+.child-page-links.textimage a {
+    padding: 0;
+    margin:0;
+    display: inline-block;
+}
+
+.child-page-links.textimage li {
+    padding: 0;
+    margin:1rem;
+    background:yellow;
+    display: inline-block;
+    float: left;
+}
+
+.child-page-links.textimage figure {
+    margin:0;
+    padding: 1rem;
+    width: 12rem;
+    height: 12rem;
+    border: 1px solid gray;
+    background: #eee;
+}
+
+.child-page-links.textimage .imagewrapper {
+    background-color: white;
+    padding: .5rem;
+    border: 1px solid black;
+    margin: 0 auto;
+    display: block;
+    width: auto;
+    height: 8rem;
+    position: relative;
+    overflow: hidden;
+}
+.child-page-links.textimage .imagewrapper img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+}
+
+.child-page-links.textimage figcaption {    
+    margin:0;
+    text-align: center;
+    min-height: 3rem;
+}

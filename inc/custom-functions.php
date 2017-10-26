@@ -44,7 +44,7 @@ function lumbrikus_make_text_links_to_children($post_id) {
 	$output = "\n<!-- BEGIN NAV TO CHILD PAGES -->\n";
 
 	if(lumbrikus_has_children($post_id)) {
-		$output .="<nav class=\"child-pages-text-links\">\n<ul>\n";
+		$output .="<nav class=\"child-page-links text\">\n<ul>\n";
 		$all_children = get_pages( array( 'child_of' => $post_id ) );
 		$wanted_children = [];
 		
@@ -107,7 +107,7 @@ function lumbrikus_make_textimage_links_to_children($post_id) {
 	$output = "\n<!-- BEGIN NAV TO CHILD PAGES -->\n";
 
 	if(lumbrikus_has_children($post_id)) {
-		$output .="<nav class=\"child-pages-text-links\">\n<ul>\n";
+		$output .="<nav class=\"child-page-links textimage\">\n<ul>\n";
 		$all_children = get_pages( array( 'child_of' => $post_id ) );
 		$wanted_children = [];
 		
@@ -136,7 +136,7 @@ function lumbrikus_make_textimage_links_to_children($post_id) {
 			$li .= "<a href=\"" . $link_href . "\">";
 			$li .= "<figure class=\"link-display\">";
 			if ( has_post_thumbnail($childpage) ) {
-    				$li .= get_the_post_thumbnail($childpage);
+    				$li .= "<div class=\"imagewrapper\">" . get_the_post_thumbnail($childpage) . "</div>";
 				} else {
 					$li .= "<p>[Mangler bilde]</p>";
 				}

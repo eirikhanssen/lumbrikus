@@ -9,7 +9,7 @@ article.audio_and_text .cues {
     padding: 0;
     margin: 1em;
     padding-right: 0.5rem;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .key {
@@ -57,21 +57,20 @@ article {
 .translation-container {
     position: fixed;
     top: 1em;
-    top: 8rem;
-    bottom: 4em;
-    bottom: 5rem;
+    bottom: 2.7rem;
     background-color: rgb(237, 237, 237);
-    left: 40%;
+    left: 50%;
+    right: 1rem;
+    transform: translate(.5rem, 0);
     border-radius: .25em;
-    width: 44%;
-    /*transform: translate(0%, -50%);*/
+    width: auto;
     padding: 1em;
     box-sizing: border-box;
 }
 
 .translation-container button span {display: block;}
 .secondaryLangControls2 {text-align: center;}
-.translation-container button {margin: 0; box-sizing: border-box; padding: .5rem 1rem; min-width: 17%; display: inline-block;}
+.translation-container button {margin: 0; box-sizing: border-box; padding: .25rem .4rem; min-width: 17%; display: inline-block;}
 .translation-container button+button {margin-left: .5rem;}
 #translation {
     font-size: 2em;
@@ -94,21 +93,58 @@ body.primary_lang_ti .audio_and_text.ti {
     display: block;
 }
 
+.audio_and_text {
+    width: 50%;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+
+
+
 /* language selection */
 
-#lang_select:after {
+#lang_select::after {
     content: "";
     display: table;
     clear: both;
 }
 
+#lang_select {
+    position: relative;
+    background: yellow;
+    display: block;
+    height: 7rem;
+}
+
 #lang_select fieldset {
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    right: 50%;
+    transform: translate(-.5rem, 0);
+    width: auto;
     font-family: Arial, sans-serif;
-    font-size: .95em;
-    display: inline-block;
-    border-radius: .5em;
-    max-width: 45%;
+    font-size: .75em;
+    border-radius: .25em;
     text-align: center;
+    }
+#lang_select fieldset legend {
+    position: static;
+    top: -.75rem;
+    left:0;
+    right:0;
+    background-color: white;
+    border: 1px solid black;
+    width: 10rem;
+    margin: auto;
+    border-radius: 0.75rem;
+}
+
+#lang_select fieldset+fieldset {
+    left: 50%;
+    right: 1rem;
+    transform: translate(.5rem, 0);
 }
 
 @media screen and (max-width: 40em) {
@@ -128,16 +164,18 @@ body.primary_lang_ti .audio_and_text.ti {
 
 #lang_select label {
     position: relative;
-    float: left;
     padding: .5em;
     padding-left: 2em;
-    padding-right: .65em;
+    padding-right: .5em;
     height: 3.5em;
     background: white;
     border: 1px solid #909090;
     border-radius: .5em;
-    margin: .25em;
+    margin: 0 .1rem;
+    width: 5em;
     display: inline-block;
+    
+   
 }
 
 #lang_select label:hover {
@@ -186,7 +224,8 @@ body.primary_lang_ti .audio_and_text.ti {
     background-size: 100% auto;
 }
 
-.active-cue {background-color: yellow;}
+/* this is bugging somehow */
+/*.active-cue {background-color: yellow;}*/
 
 
 .langselectContainer {
@@ -204,7 +243,7 @@ body.primary_lang_ti .audio_and_text.ti {
 
 .langselectContainer fieldset {
     position: relative;
-    display: inline-block;
+    
 }
 
 .langselectContainer legend {
@@ -265,3 +304,27 @@ body.primary_lang_ti .audio_and_text.ti {
     width: 12px;
     height: 12px;
 }
+
+
+.cues::after {
+    content: "";
+    position: fixed;
+    right: 50%;
+    left: 0;
+    bottom: 0;
+    height: 2.7rem;
+    background: white;
+    z-index: 1;
+}
+
+.mejs__audio {
+    position: fixed !important;
+    right: 50%;
+    left: 1rem;
+    bottom: .5rem;
+    width: auto !important;
+    transform: translate(-.5rem,0);
+    z-index: 2;
+}
+
+.invisible {display: none;}
