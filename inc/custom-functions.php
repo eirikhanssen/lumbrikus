@@ -161,7 +161,21 @@ function lumbrikus_make_textimage_links_to_children($post_id) {
 }
 
 
-
-
-
 function lumbrikus_make_image_links_to_children($post_id) {}
+
+function lumbrikus_make_chaptermenu(){
+$out = '<nav class="chaptermenu-demo">';
+$out .= '<ul>';
+$out .= '<li><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-6"></use></svg><span class="desc">til oversikten</span></li>';
+$out .= '<li><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-kort-fortelling"></use></svg><span class="desc">kort fortelling</span></li>';
+$out .= '<li><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-lang-fortelling"></use></svg><span class="desc">lang fortelling</span></li>';
+$out .= '<li><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-let-og-finn"></use></svg><span class="desc">let og finn</span></li>';
+$out .= '<li><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-ord"></use></svg><span class="desc">ord</span></li>';
+$out .= '<li><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-gjore-lage"></use></svg><span class="desc">gjøre og lage</span></li>';
+$out .= '<li><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-filmer-inv"></use></svg><span class="desc">filmer</span></li>';
+$out .= '<li><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-snutter"></use></svg><span class="desc">snutter</span></li>';
+$out .= '<li><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-kviss"></use></svg><span class="desc">kviss</span></li>';
+$out .= '</ul>';
+$out .= '</nav>';
+return $out;
+}

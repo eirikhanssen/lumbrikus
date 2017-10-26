@@ -10,7 +10,7 @@
  * @version 1.0
  */
 get_header(); ?>
-
+<?php echo lumbrikus_make_chaptermenu(); ?>
 <!-- BEGIN PAGE -->	
 <main class="site-main page-let-og-finn" role="main">
 

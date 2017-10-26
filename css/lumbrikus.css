@@ -258,3 +258,42 @@ figure.ord figcaption {
 
 
 }
+
+/* DEMO OF CHAPTER MENU */
+
+.chaptermenu-demo {
+    font-size: 1em;
+}
+
+.chaptermenu-demo svg.icon {
+    width: 2em;
+    height: 2em;
+    display: inline-block;
+    margin: auto;
+}
+
+.chaptermenu-demo ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    display: flex;
+}
+
+.chaptermenu-demo li {
+    height: 2rem;
+    width: 10rem;
+    text-align: center;
+}
+.chaptermenu-demo span.desc {
+    display: block;
+    position: relative;
+    padding-left: .25rem;
+    top: -.65rem;
+    line-height: 1rem;
+    font-size: .75rem;
+    visibility: hidden;
+}
+.chaptermenu-demo li:hover span.desc {
+    visibility: visible;
+}
+.siteheader {margin-bottom: .5rem;}

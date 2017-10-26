@@ -10,7 +10,6 @@
  * @version 1.0
  */
 get_header(); ?>
-
 <!-- BEGIN PAGE -->	
 <main class="site-main page-kapitler" role="main">
 
