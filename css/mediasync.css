@@ -56,7 +56,7 @@ article {
 .translation-container {
     position: fixed;
     top: 1em;
-    bottom: 2.7rem;
+    bottom: 0.5rem;
     background-color: rgb(237, 237, 237);
     left: 50%;
     right: 1rem;
