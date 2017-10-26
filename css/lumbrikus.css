@@ -235,3 +235,26 @@ main.underside {
     padding: .5rem;
     border: 1px solid black;
 }
+
+figure.ord {
+    border: 1px solid gray;
+    padding: 1rem;
+    max-width: 30em;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+figure.ord img {
+    background: white;
+    padding: .5em;
+    border: 1px solid black;
+    display: block;
+    margin: auto;
+
+}
+
+figure.ord figcaption {
+    text-align: center;
+
+
+}
