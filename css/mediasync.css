@@ -31,8 +31,7 @@ article.audio_and_text .cues {
 
 article {
     overflow-x: hidden;
-    padding-bottom: 40px;
-    position: relative;
+    padding-bottom: 2rem;
 }
 
 .key p {margin-top:0; margin-bottom:0;}
