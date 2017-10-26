@@ -13,7 +13,7 @@
 get_header(); ?>
 
 <!-- BEGIN NAMED PAGE SNUTTER UNDERSIDE -->	
-<main class="site-main page-kapittel-hovedside" role="main">
+<main class="site-main page-snutter-underside underside" role="main">
 
 		<?php 
 			

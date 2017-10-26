@@ -9,7 +9,6 @@
  * @since 1.0
  * @version 1.0
  */
-
 ?>
 <!-- BEGIN CONTENT-PAGE-FILMER-UNDERSIDE -->
 <article id="page-<?php the_ID(); ?>" <?php post_class(); ?>>

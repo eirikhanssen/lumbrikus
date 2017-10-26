@@ -1,15 +1,4 @@
 <?php 
-/*
-Template Name: Filmer (underside)
-Template Post Type: page
-*/
-// Page code here..
-//get_header( 'audiotext' );
-
-get_header();
-echo "<h1>named template: Filmer (underside)</h1>";
-
-<?php 
 /**
  * Template Name: Filmer (underside)
  * Template Post Type: page
@@ -24,7 +13,7 @@ echo "<h1>named template: Filmer (underside)</h1>";
 get_header(); ?>
 
 <!-- BEGIN NAMED PAGE FILMER UNDERSIDE -->	
-<main class="site-main page-kapittel-hovedside" role="main">
+<main class="site-main page-filmer-underside underside" role="main">
 
 		<?php 
 			

@@ -13,7 +13,7 @@
 get_header(); ?>
 
 <!-- BEGIN NAMED PAGE KAPITTEL HOVEDSIDE -->	
-<main class="site-main page-kapittel-hovedside" role="main">
+<main class="site-main page-kapittel-hovedside hovedside" role="main">
 
 		<?php 
 			

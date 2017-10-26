@@ -13,7 +13,7 @@
 get_header(); ?>
 
 <!-- BEGIN NAMED PAGE GJØRE OG LAGE UNDERSIDE -->	
-<main class="site-main page-kapittel-hovedside" role="main">
+<main class="site-main page-gjore-og-lage-underside underside" role="main">
 
 		<?php 
 			
