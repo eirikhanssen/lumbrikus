@@ -143,7 +143,6 @@ body[class*="kapittel-hovedside"]::after {
     display: inline;
     margin: auto;
     flex-grow: 1;
-    background: rgba(255,255,255,0.8);
 }
 .child-page-links.text li a {
     display: inline;
@@ -153,6 +152,7 @@ body[class*="kapittel-hovedside"]::after {
     padding: .5rem;
     box-sizing: border-box;
     border-radius: .25em;
+    background: rgba(255,255,255,0.8);
 }
 
 .child-page-links.textimage ul {
