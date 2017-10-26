@@ -109,16 +109,51 @@ header h1, header p {
     font-family: "Open Sans Condensed", sans-serif;
 }
 
+body[class*="kapittel-hovedside"]::after {
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+}
+
 .page-id-10 {
     background: url(/media/img/01-let-og-finn-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
+}
 
+.page-id-21 {
+    background: url(/media/img/06-let-og-finn-bg.jpg);
 }
 
 /* unfinished */
 .page-footer {display: none;}
+
+.child-page-links.text ul {
+    display: flex;
+    width: auto;
+    margin: auto;
+    background: rgba(255,255,255,0.8);
+    flex-direction: row;
+    justify-content: center;
+}
+
+.child-page-links.text li {
+    display: inline;
+    margin: auto;
+    flex-grow: 1;
+}
+.child-page-links.text li a {
+    display: inline;
+    margin: 0;
+    border: 1px solid gray;
+    display: inline-block;
+    padding: .5rem;
+    box-sizing: border-box;
+    border-radius: .25em;
+}
 
 .child-page-links.textimage ul {
     list-style-type: none;
@@ -135,7 +170,6 @@ header h1, header p {
 .child-page-links.textimage li {
     padding: 0;
     margin:1rem;
-    background:yellow;
     display: inline-block;
     float: left;
 }

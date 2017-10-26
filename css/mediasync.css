@@ -112,7 +112,6 @@ body.primary_lang_ti .audio_and_text.ti {
 
 #lang_select {
     position: relative;
-    background: yellow;
     display: block;
     height: 7rem;
 }
