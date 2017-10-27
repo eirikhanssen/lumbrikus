@@ -163,19 +163,99 @@ function lumbrikus_make_textimage_links_to_children($post_id) {
 
 function lumbrikus_make_image_links_to_children($post_id) {}
 
-function lumbrikus_make_chaptermenu(){
-$out = '<nav class="chaptermenu-demo">';
-$out .= '<ul>';
-$out .= '<li><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-6"></use></svg><span class="desc">til oversikten</span></li>';
-$out .= '<li><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-kort-fortelling"></use></svg><span class="desc">kort fortelling</span></li>';
-$out .= '<li><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-lang-fortelling"></use></svg><span class="desc">lang fortelling</span></li>';
-$out .= '<li><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-let-og-finn"></use></svg><span class="desc">let og finn</span></li>';
-$out .= '<li><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-ord"></use></svg><span class="desc">ord</span></li>';
-$out .= '<li><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-gjore-lage"></use></svg><span class="desc">gjøre og lage</span></li>';
-$out .= '<li><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-filmer-inv"></use></svg><span class="desc">filmer</span></li>';
-$out .= '<li><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-snutter"></use></svg><span class="desc">snutter</span></li>';
-$out .= '<li><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-kviss"></use></svg><span class="desc">kviss</span></li>';
-$out .= '</ul>';
-$out .= '</nav>';
-return $out;
+function lumbrikus_path_rel_up($lvl) {
+	$up ="";
+	if($lvl < 1) {
+		$up = "./";
+		
+	} else {
+		for($i=1; $i <= $lvl; $i++) {
+			$up .= "../";
+		}
+	}
+	return $up;
+}
+
+function lumbrikus_generate_link_LI($chapter, $lvl, $link){
+	$href = lumbrikus_path_rel_up($lvl) . $link[0];
+	$linktext = $link[1];
+	$xlinkns = 'xmlns:xlink="http://www.w3.org/1999/xlink" ';
+	$icon_fragment = "#icon-";
+	$icon_markup = '<svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg';
+
+	switch ($link[0]) {
+		case '':
+			$icon_fragment .= $chapter; 
+		break;
+		case 'kort':
+			$icon_fragment .= 'kort-fortelling'; 
+		break;
+		case 'lang':
+			$icon_fragment .= 'lang-fortelling'; 
+		break;
+		case 'let-og-finn':
+			$icon_fragment .= 'let-og-finn'; 
+		break;
+		case 'ord':
+			$icon_fragment .= 'ord'; 
+		break;
+		case 'gjore-og-lage':
+			$icon_fragment .= 'gjore-lage'; 
+		break;
+		case 'filmer':
+			$icon_fragment .= 'filmer'; 
+		break;
+		case 'snutter':
+			$icon_fragment .= 'snutter'; 
+		break;
+		case 'kviss':
+			$icon_fragment .= 'kviss'; 
+		break;
+		default:
+			$icon_fragment .= 'lumbrikus';
+		break;
+
+	}
+
+	$icon_markup .= $icon_fragment . '"></use></svg>';
+
+	$output_LI = "    <li><a href=\"" . $href . "\" title=\"Til " . $linktext . "\">" . $icon_markup . "<span class=\"linktext\">" . $linktext . "</span></a></li>\n";
+	return $output_LI;
+}
+
+function lumbrikus_nav_internal_chapter_links($chapter, $lvl){
+	$LIs = "";
+	$links_raw = [
+	['','oversikt'],
+	['kort', 'kort fortelling'],
+	['lang', 'lang fortelling'],
+	['let-og-finn', 'let og finn'],
+	['ord', 'ord'],
+	['gjore-og-lage', 'gjøre og lage'],
+	['filmer', 'filmer'],
+	['snutter', 'snutter'],
+	['kviss', 'kviss']];
+
+	foreach($links_raw as $link) {
+		$LIs .= lumbrikus_generate_link_LI($chapter, $lvl, $link);
+	}	
+
+	$nav_internal_chapter_links = "\n<nav class=\"internal_chapter_links\">\n  <ul>\n" . $LIs . "  </ul>\n</nav><!-- .internal_chapter_links -->\n";
+
+	return $nav_internal_chapter_links;
+}
+
+function lumbrikus_get_chapter_num() {
+	$current_url=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+	$string = $current_url;
+	$pattern = '/^.+?\/kap-([0-9][0-9]).+$/i';
+	$replacement = '$1';
+	$chapter_num = intval(preg_replace($pattern, $replacement, $string));
+	return $chapter_num;
+}
+
+function lumbrikus_internal_chapter_menu($lvl) {
+	$chapter_num = lumbrikus_get_chapter_num();
+
+	return lumbrikus_nav_internal_chapter_links($chapter_num, $lvl);
 }

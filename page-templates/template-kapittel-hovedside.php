@@ -11,7 +11,8 @@
  * @version 1.0
  */
 get_header(); ?>
-<?php echo lumbrikus_make_chaptermenu(); ?>
+<?php echo lumbrikus_internal_chapter_menu(0); ?>
+
 <!-- BEGIN NAMED PAGE KAPITTEL HOVEDSIDE -->	
 <main class="site-main page-kapittel-hovedside hovedside" role="main">
 
