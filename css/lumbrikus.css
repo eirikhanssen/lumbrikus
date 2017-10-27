@@ -261,30 +261,30 @@ figure.ord figcaption {
 
 /* DEMO OF CHAPTER MENU */
 
-.chaptermenu-demo {
+.internal-chapter-links {
     font-size: 1em;
 }
 
-.chaptermenu-demo svg.icon {
+.internal-chapter-links svg.icon {
     width: 2em;
     height: 2em;
     display: inline-block;
     margin: auto;
 }
 
-.chaptermenu-demo ul {
+.internal-chapter-links ul {
     list-style-type: none;
     margin:0;
     padding:0;
     display: flex;
 }
 
-.chaptermenu-demo li {
+.internal-chapter-links li {
     height: 2rem;
     width: 10rem;
     text-align: center;
 }
-.chaptermenu-demo span.desc {
+.internal-chapter-links span.desc {
     display: block;
     position: relative;
     padding-left: .25rem;
@@ -293,7 +293,7 @@ figure.ord figcaption {
     font-size: .75rem;
     visibility: hidden;
 }
-.chaptermenu-demo li:hover span.desc {
+.internal-chapter-links li:hover span.desc {
     visibility: visible;
 }
 .siteheader {margin-bottom: .5rem;}

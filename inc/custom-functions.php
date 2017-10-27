@@ -240,7 +240,7 @@ function lumbrikus_nav_internal_chapter_links($chapter, $lvl){
 		$LIs .= lumbrikus_generate_link_LI($chapter, $lvl, $link);
 	}	
 
-	$nav_internal_chapter_links = "\n<nav class=\"internal_chapter_links\">\n  <ul>\n" . $LIs . "  </ul>\n</nav><!-- .internal_chapter_links -->\n";
+	$nav_internal_chapter_links = "\n<nav class=\"internal-chapter-links\">\n  <ul>\n" . $LIs . "  </ul>\n</nav><!-- .internal_chapter_links -->\n";
 
 	return $nav_internal_chapter_links;
 }
