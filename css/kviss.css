@@ -1,23 +1,4 @@
-/* debug */
-.debug .kviss figure {
-    background: magenta;
-}
-.debug .quiz-part figcaption {
-    background: yellow;
-}
-.debug .kviss label {
-    background: cyan;
-
-}
 /* typography */
-
-html {
-    font: 1em/1.25 "Open Sans", sans-serif;
-}
-
-header {
-    font-size: 0.5em;
-}
 
 .kviss fieldset::after,
 .kviss fieldset legend {

@@ -120,12 +120,55 @@ body[class*="kapittel-hovedside"]::after {
     background-size: cover;
 }
 
-.page-id-10 {
-    background: url(/media/img/01-let-og-finn-bg.jpg);
+body[class*="page-kap-"]::after {
+    content: "";
+    top:3rem;
+    left:0;
+    right:0;
+    bottom: 0;
+    position: fixed;
+    z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #333;
 }
 
-.page-id-21 {
+.page-kap-00::after {
+    background: url(/media/img/00-den-rode-planeten-bg.jpg);
+}
+.page-kap-01::after {
+    background: url(/media/img/01-let-og-finn-bg.jpg);
+}
+.page-kap-02::after {
+    background: url(/media/img/02-let-og-finn-bg.jpg);
+}
+.page-kap-03::after {
+    background: url(/media/img/03-let-og-finn-bg.jpg);
+}
+.page-kap-04::after {
+    background: url(/media/img/04-let-og-finn-bg.jpg);
+}
+.page-kap-05::after {
+    background: url(/media/img/05-let-og-finn-bg.jpg);
+}
+.page-kap-06::after {
     background: url(/media/img/06-let-og-finn-bg.jpg);
+}
+.page-kap-07::after {
+    background: url(/media/img/07-let-og-finn-bg.jpg);
+}
+.page-kap-08::after {
+    background: url(/media/img/08-let-og-finn-bg.jpg);
+}
+.page-kap-09::after {
+    background: url(/media/img/09-let-og-finn-bg.jpg);
+}
+.page-kap-10::after {
+    background: url(/media/img/10-let-og-finn-bg.jpg);
+}
+.page-kap-11::after {
+    background: url(/media/img/11-farvel-bg.jpg);
 }
 
 /* unfinished */
@@ -283,17 +326,67 @@ figure.ord figcaption {
     height: 2rem;
     width: 10rem;
     text-align: center;
-}
-.internal-chapter-links span.desc {
-    display: block;
     position: relative;
+}
+
+.internal-chapter-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.internal-chapter-links a:focus .linktext,
+.internal-chapter-links a:hover .linktext{
+    font-weight: bold;
+}
+
+.internal-chapter-links span.linktext {
+    display: block;
+    
     padding-left: .25rem;
     top: -.65rem;
     line-height: 1rem;
     font-size: .75rem;
     visibility: hidden;
+    text-align: center;
+    background-color: rgba(255,255,255,0.6);
 }
-.internal-chapter-links li:hover span.desc {
+.internal-chapter-links :hover .linktext,
+.internal-chapter-links :focus .linktext {
     visibility: visible;
 }
+
+.internal-chapter-links a:hover .linktext::after,
+.internal-chapter-links a:focus .linktext::after {
+    position: absolute;
+    top: -.4rem;
+    left: 50%;
+    transform: translate(-50%,0);
+    content: "";
+    border: 4px solid orange;
+    height: 2.8rem;
+    width: 2.8rem;
+    border: 4px solid orange;
+    box-sizing: border-box;
+    border-radius: .4rem;
+}
+
 .siteheader {margin-bottom: .5rem;}
+
+.child-page-links a,
+.child-page-links figure {
+    text-decoration: none;
+    border-radius: .5rem;
+    font-weight: bold;
+}
+
+
+.child-page-links a:hover {
+    box-shadow: 0 0 1rem #aaa;
+
+}
+
+.child-page-links a:hover figure,
+.child-page-links a:focus figure {
+    border-color: black;
+    
+}
