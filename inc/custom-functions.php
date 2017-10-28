@@ -33,6 +33,7 @@ function lumbrikus_has_children($post_id) {
  */
 function lumbrikus_make_text_links_to_children($post_id) {
 /*
+	Interesting/useful properties of a page:
 	$children[n]->post_title
 	$children[n]->post_name
 	$children[n]->ID
@@ -41,6 +42,9 @@ function lumbrikus_make_text_links_to_children($post_id) {
 	$children[n]->menu_order
 	$img = get_the_post_thumbnail($children[n])
 */
+// call like this:
+// echo lumbrikus_make_text_links_to_children(get_the_ID()); 
+
 	$output = "\n<!-- BEGIN NAV TO CHILD PAGES -->\n";
 
 	if(lumbrikus_has_children($post_id)) {
