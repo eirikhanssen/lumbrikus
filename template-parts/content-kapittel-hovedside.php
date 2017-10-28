@@ -28,6 +28,5 @@
 
 	</div><!-- .entry-content -->
 </article><!-- #page-## -->
-<?php echo lumbrikus_make_text_links_to_children(get_the_ID()); ?>
 
 <!-- END CONTENT-PAGE-KAPITTEL-HOVEDSIDE -->
