@@ -33,6 +33,7 @@ function lumbrikus_has_children($post_id) {
  */
 function lumbrikus_make_text_links_to_children($post_id) {
 /*
+	Interesting/useful properties of a page:
 	$children[n]->post_title
 	$children[n]->post_name
 	$children[n]->ID
@@ -41,10 +42,13 @@ function lumbrikus_make_text_links_to_children($post_id) {
 	$children[n]->menu_order
 	$img = get_the_post_thumbnail($children[n])
 */
+// call like this:
+// echo lumbrikus_make_text_links_to_children(get_the_ID()); 
+
 	$output = "\n<!-- BEGIN NAV TO CHILD PAGES -->\n";
 
 	if(lumbrikus_has_children($post_id)) {
-		$output .="<nav class=\"child-pages-text-links\">\n<ul>\n";
+		$output .="<nav class=\"child-page-links text\">\n<ul>\n";
 		$all_children = get_pages( array( 'child_of' => $post_id ) );
 		$wanted_children = [];
 		
@@ -107,7 +111,7 @@ function lumbrikus_make_textimage_links_to_children($post_id) {
 	$output = "\n<!-- BEGIN NAV TO CHILD PAGES -->\n";
 
 	if(lumbrikus_has_children($post_id)) {
-		$output .="<nav class=\"child-pages-text-links\">\n<ul>\n";
+		$output .="<nav class=\"child-page-links textimage\">\n<ul>\n";
 		$all_children = get_pages( array( 'child_of' => $post_id ) );
 		$wanted_children = [];
 		
@@ -136,7 +140,7 @@ function lumbrikus_make_textimage_links_to_children($post_id) {
 			$li .= "<a href=\"" . $link_href . "\">";
 			$li .= "<figure class=\"link-display\">";
 			if ( has_post_thumbnail($childpage) ) {
-    				$li .= get_the_post_thumbnail($childpage);
+    				$li .= "<div class=\"imagewrapper\">" . get_the_post_thumbnail($childpage) . "</div>";
 				} else {
 					$li .= "<p>[Mangler bilde]</p>";
 				}
@@ -161,7 +165,101 @@ function lumbrikus_make_textimage_links_to_children($post_id) {
 }
 
 
-
-
-
 function lumbrikus_make_image_links_to_children($post_id) {}
+
+function lumbrikus_path_rel_up($lvl) {
+	$up ="";
+	if($lvl < 1) {
+		$up = "./";
+		
+	} else {
+		for($i=1; $i <= $lvl; $i++) {
+			$up .= "../";
+		}
+	}
+	return $up;
+}
+
+function lumbrikus_generate_link_LI($chapter, $lvl, $link){
+	$href = lumbrikus_path_rel_up($lvl) . $link[0];
+	$linktext = $link[1];
+	$xlinkns = 'xmlns:xlink="http://www.w3.org/1999/xlink" ';
+	$icon_fragment = "#icon-";
+	$icon_markup = '<svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg';
+
+	switch ($link[0]) {
+		case '':
+			$icon_fragment .= $chapter; 
+		break;
+		case 'kort':
+			$icon_fragment .= 'kort-fortelling'; 
+		break;
+		case 'lang':
+			$icon_fragment .= 'lang-fortelling'; 
+		break;
+		case 'let-og-finn':
+			$icon_fragment .= 'let-og-finn'; 
+		break;
+		case 'ord':
+			$icon_fragment .= 'ord'; 
+		break;
+		case 'gjore-og-lage':
+			$icon_fragment .= 'gjore-lage'; 
+		break;
+		case 'filmer':
+			$icon_fragment .= 'filmer'; 
+		break;
+		case 'snutter':
+			$icon_fragment .= 'snutter'; 
+		break;
+		case 'kviss':
+			$icon_fragment .= 'kviss'; 
+		break;
+		default:
+			$icon_fragment .= 'lumbrikus';
+		break;
+
+	}
+
+	$icon_markup .= $icon_fragment . '"></use></svg>';
+
+	$output_LI = "    <li><a href=\"" . $href . "\" title=\"Til " . $linktext . "\">" . $icon_markup . "<span class=\"linktext\">" . $linktext . "</span></a></li>\n";
+	return $output_LI;
+}
+
+function lumbrikus_nav_internal_chapter_links($chapter, $lvl){
+	$LIs = "";
+	$links_raw = [
+	['','oversikt'],
+	['kort', 'kort fortelling'],
+	['lang', 'lang fortelling'],
+	['let-og-finn', 'let og finn'],
+	['ord', 'ord'],
+	['gjore-og-lage', 'gjøre og lage'],
+	['filmer', 'filmer'],
+	['snutter', 'snutter'],
+	['kviss', 'kviss']];
+
+	foreach($links_raw as $link) {
+		$LIs .= lumbrikus_generate_link_LI($chapter, $lvl, $link);
+	}	
+
+	$nav_internal_chapter_links = "\n<nav class=\"internal-chapter-links\">\n  <ul>\n" . $LIs . "  </ul>\n</nav><!-- .internal_chapter_links -->\n";
+
+	return $nav_internal_chapter_links;
+}
+
+function lumbrikus_get_chapter_num() {
+	$current_url=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+	$string = $current_url;
+	$pattern = '/^.+?\/kap-([0-9][0-9]).+$/i';
+	$replacement = '$1';
+	$chapter_num = intval(preg_replace($pattern, $replacement, $string));
+	return $chapter_num;
+}
+
+function lumbrikus_internal_chapter_menu($lvl) {
+	$chapter_num = lumbrikus_get_chapter_num();
+
+	return lumbrikus_nav_internal_chapter_links($chapter_num, $lvl);
+}
