@@ -1,23 +1,4 @@
-/* debug */
-.debug .kviss figure {
-    background: magenta;
-}
-.debug .quiz-part figcaption {
-    background: yellow;
-}
-.debug .kviss label {
-    background: cyan;
-
-}
 /* typography */
-
-html {
-    font: 1em/1.25 "Open Sans", sans-serif;
-}
-
-header {
-    font-size: 0.5em;
-}
 
 .kviss fieldset::after,
 .kviss fieldset legend {
@@ -27,8 +8,8 @@ header {
     position: relative;
     border-radius: 0.25em;
     padding:0.25em;
-    padding-top: 1em;
-    margin-bottom: 4em;
+    padding-top: 3em;
+    margin-bottom: 20em;
     top: 2em;
     border: none;
 }
@@ -341,6 +322,7 @@ a[disabled] {opacity: 0.2; pointer-events: none; cursor: default;}
     text-align: center;
     border: 10px dotted magenta;
     border-radius: 1em;
+    margin-bottom: 10em;
 }
 
 #kviss-scoreboard h2 {

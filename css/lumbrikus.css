@@ -108,3 +108,285 @@ header h1, header p {
 .attachment-page-image .resolutions {
     font-family: "Open Sans Condensed", sans-serif;
 }
+
+body[class*="kapittel-hovedside"]::after {
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+body[class*="page-kap-"]::after {
+    content: "";
+    top:3rem;
+    left:0;
+    right:0;
+    bottom: 0;
+    position: fixed;
+    z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #333;
+}
+
+.page-kap-00::after {
+    background: url(/media/img/00-den-rode-planeten-bg.jpg);
+}
+.page-kap-01::after {
+    background: url(/media/img/01-let-og-finn-bg.jpg);
+}
+.page-kap-02::after {
+    background: url(/media/img/02-let-og-finn-bg.jpg);
+}
+.page-kap-03::after {
+    background: url(/media/img/03-let-og-finn-bg.jpg);
+}
+.page-kap-04::after {
+    background: url(/media/img/04-let-og-finn-bg.jpg);
+}
+.page-kap-05::after {
+    background: url(/media/img/05-let-og-finn-bg.jpg);
+}
+.page-kap-06::after {
+    background: url(/media/img/06-let-og-finn-bg.jpg);
+}
+.page-kap-07::after {
+    background: url(/media/img/07-let-og-finn-bg.jpg);
+}
+.page-kap-08::after {
+    background: url(/media/img/08-let-og-finn-bg.jpg);
+}
+.page-kap-09::after {
+    background: url(/media/img/09-let-og-finn-bg.jpg);
+}
+.page-kap-10::after {
+    background: url(/media/img/10-let-og-finn-bg.jpg);
+}
+.page-kap-11::after {
+    background: url(/media/img/11-farvel-bg.jpg);
+}
+
+/* unfinished */
+.page-footer {display: none;}
+
+.child-page-links.text ul {
+    display: flex;
+    width: auto;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.child-page-links.text li {
+    display: inline;
+    margin: auto;
+    flex-grow: 1;
+}
+.child-page-links.text li a {
+    display: inline;
+    margin: 0;
+    border: 1px solid gray;
+    display: inline-block;
+    padding: .5rem;
+    box-sizing: border-box;
+    border-radius: .25em;
+    background: rgba(255,255,255,0.8);
+}
+
+.child-page-links.textimage ul {
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+}
+
+.child-page-links.textimage a {
+    padding: 0;
+    margin:0;
+    display: inline-block;
+}
+
+.child-page-links.textimage li {
+    padding: 0;
+    margin:1rem;
+    display: inline-block;
+    float: left;
+}
+
+.child-page-links.textimage figure {
+    margin:0;
+    padding: 1rem;
+    width: 12rem;
+    height: 12rem;
+    border: 1px solid gray;
+    background: #eee;
+}
+
+.child-page-links.textimage .imagewrapper {
+    background-color: white;
+    padding: .5rem;
+    border: 1px solid black;
+    margin: 0 auto;
+    display: block;
+    width: auto;
+    height: 8rem;
+    position: relative;
+    overflow: hidden;
+}
+.child-page-links.textimage .imagewrapper img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+}
+
+.child-page-links.textimage figcaption {    
+    margin:0;
+    text-align: center;
+    min-height: 3rem;
+}
+
+.entry-title {
+    position: absolute;
+    top: 0;
+    left: 10rem;
+    right:0;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    padding-left: 0.5rem;
+    display: block;
+    background-color: rgba(255,255,255,0.1);
+    border-left: 1rem solid rgba(255,255,255,0.2);
+
+}
+
+main.underside {
+    padding: 1em;
+}
+
+.underside img {
+    background: white;
+    padding: .5rem;
+    border: 1px solid black;
+}
+
+figure.ord {
+    border: 1px solid gray;
+    padding: 1rem;
+    max-width: 30em;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+figure.ord img {
+    background: white;
+    padding: .5em;
+    border: 1px solid black;
+    display: block;
+    margin: auto;
+
+}
+
+figure.ord figcaption {
+    text-align: center;
+
+
+}
+
+/* DEMO OF CHAPTER MENU */
+
+.internal-chapter-links {
+    font-size: 1em;
+}
+
+.internal-chapter-links svg.icon {
+    width: 2em;
+    height: 2em;
+    display: inline-block;
+    margin: auto;
+}
+
+.internal-chapter-links ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    display: flex;
+}
+
+.internal-chapter-links li {
+    height: 2rem;
+    width: 10rem;
+    text-align: center;
+    position: relative;
+}
+
+.internal-chapter-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.internal-chapter-links a:focus .linktext,
+.internal-chapter-links a:hover .linktext{
+    font-weight: bold;
+}
+
+.internal-chapter-links span.linktext {
+    display: block;
+    
+    padding-left: .25rem;
+    top: -.65rem;
+    line-height: 1rem;
+    font-size: .75rem;
+    visibility: hidden;
+    text-align: center;
+    background-color: rgba(255,255,255,0.6);
+}
+.internal-chapter-links :hover .linktext,
+.internal-chapter-links :focus .linktext {
+    visibility: visible;
+}
+
+.internal-chapter-links a:hover .linktext::after,
+.internal-chapter-links a:focus .linktext::after {
+    position: absolute;
+    top: -.4rem;
+    left: 50%;
+    transform: translate(-50%,0);
+    content: "";
+    border: 4px solid orange;
+    height: 2.8rem;
+    width: 2.8rem;
+    border: 4px solid orange;
+    box-sizing: border-box;
+    border-radius: .4rem;
+}
+
+.siteheader {margin-bottom: .5rem;}
+
+.child-page-links a,
+.child-page-links figure {
+    text-decoration: none;
+    border-radius: .5rem;
+    font-weight: bold;
+}
+
+
+.child-page-links a:hover {
+    box-shadow: 0 0 1rem #aaa;
+
+}
+
+.child-page-links a:hover figure,
+.child-page-links a:focus figure {
+    border-color: black;
+    
+}
