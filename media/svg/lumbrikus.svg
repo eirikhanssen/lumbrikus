@@ -80,43 +80,6 @@
                
             }
             
-            a:hover #titteltekst,
-            a:focus #titteltekst,
-            a:hover #tittel_fix,
-            a:focus #tittel_fix
-             {
-             
-             
-               animation-name: tittel_text_increase;
-               animation-duration: 10s;
-               animation-timing-function: ease-in-out;
-               animation-iteration-count: infinite;
-               animation-fill-mode: forward;
-               animation-direction: alternate;
-            }
-            
-            @keyframes tittel_text_increase {
-               0% {stroke-width: 10;}
-               
-               25% {
-                  stroke-width: 22;
-               }
-               
-               50% {
-                  stroke-width: 5;
-               }
-               
-               75% {
-                  stroke-width: 22;
-               }
-               
-               100% {
-                  stroke-width: 10;
-               }
-               
-               
-            }
-            
             .L {
                stroke: #9cff6e;
             }
