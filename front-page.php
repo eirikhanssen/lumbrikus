@@ -15,7 +15,7 @@
     <meta name="description" content="Naturfag på norsk, arabisk, somali og tigrinja. En læringsressurs med faglige og skjønnlitterære tekster og lydmateriale for småskoletrinn og nyankomne."/>
 </head>
 <body>
-    <object class="forside" type="image/svg+xml" data="<?php echo get_stylesheet_directory_uri();  ?>/media/svg/lumbrikus.svg">
+    <object class="forside" type="image/svg+xml" data="/media/svg/lumbrikus.svg">
         <h1>Lumbrikus.no</h1>
         <nav>
             <ul>
