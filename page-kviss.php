@@ -12,7 +12,7 @@
 get_header(); 
 $quiz_number = 6;
 ?>
-
+<?php echo lumbrikus_internal_chapter_menu(1); ?>
 <!-- BEGIN PAGE -->	
 <main id="kviss" class="site-main page-kviss kviss" role="main" data-quiz-number="<?php echo $quiz_number; ?>">
 

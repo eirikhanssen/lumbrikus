@@ -11,9 +11,9 @@
  * @version 1.0
  */
 get_header(); ?>
-
+<?php echo lumbrikus_internal_chapter_menu(2); ?>
 <!-- BEGIN NAMED PAGE SNUTTER UNDERSIDE -->	
-<main class="site-main page-kapittel-hovedside" role="main">
+<main class="site-main page-snutter-underside underside" role="main">
 
 		<?php 
 			

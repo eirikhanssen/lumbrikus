@@ -10,7 +10,7 @@
  * @version 1.0
  */
 get_header(); ?>
-
+<?php echo lumbrikus_internal_chapter_menu(1); ?>
 <!-- BEGIN PAGE -->	
 <main class="site-main page-kort" role="main">
 
