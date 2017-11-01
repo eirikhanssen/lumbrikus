@@ -27,6 +27,17 @@ pre,table,fieldset,hr{
     margin-bottom:1rem;
 }
 
+a:link {
+    color: rgb(0, 124, 255);
+}
+a:visited {}
+a:hover {}
+a:active {}
+
+main {
+    margin-bottom: 4rem;
+}
+
 /* condensed font for nav links */
 nav {
     font-family: 'Open Sans Condensed', sans-serif;
@@ -231,30 +242,64 @@ body[class*="page-kap-"]::after {
 }
 
 /* unfinished */
-.page-footer {display: none;}
+.page-footer {
+    display: static;
+    position: relative;
+    clear: both;
+    margin-top: 25vh;
+    font-size: 0.5rem;
+    color: white;
+}
+.footer-nav > ul {
+    padding:0;
+    
+}
+.footer-nav > ul > li {
+    margin:0;
+    padding-left: 1em;
+    display: inline;
+    float: left;
+    width: 33.33%;
+    box-sizing: border-box;
+    background: rgba(33,33,33,0.7);
+}
+
+.footer-nav li ul {
+    margin: auto;
+}
+
+body[class*="kapittel-hovedside"] .page-footer {
+    position:fixed; 
+    bottom:0;
+    left:0;
+    right:0;
+}
+.page-footer::before {
+    position:absolute;
+    content: "page-footer:";
+    color: rgba(255,0,255,0.3);
+    top: -0.5rem;
+    line-height: 0.6rem;
+    font-size: .5rem;
+    border-bottom: 1px solid rgba(255,0,255,0.3);
+    left: 0;
+    right: 0;
+}
 
 .child-page-links.text ul {
-    display: flex;
-    width: auto;
-    margin: auto;
-    flex-direction: row;
-    justify-content: center;
+
 }
 
 .child-page-links.text li {
-    display: inline;
-    margin: auto;
-    flex-grow: 1;
 }
-.child-page-links.text li a {
-    display: inline;
-    margin: 0;
-    border: 1px solid gray;
-    display: inline-block;
-    padding: .5rem;
-    box-sizing: border-box;
-    border-radius: .25em;
-    background: rgba(255,255,255,0.8);
+
+.child-page-links.text a {
+    text-decoration: none;
+}
+
+.child-page-links.text a:hover,
+.child-page-links.text a:focus {
+    text-decoration: underline;
 }
 
 .child-page-links.textimage ul {
@@ -417,21 +462,21 @@ figure.ord figcaption {
     border-radius: .4rem;
 }
 
-.child-page-links a,
-.child-page-links figure {
+.child-page-links.textimage a,
+.child-page-links.textimage figure {
     text-decoration: none;
     border-radius: .5rem;
     font-weight: bold;
 }
 
 
-.child-page-links a:hover {
+.child-page-links.textimage a:hover {
     box-shadow: 0 0 1rem #aaa;
 
 }
 
-.child-page-links a:hover figure,
-.child-page-links a:focus figure {
+.child-page-links.textimage a:hover figure,
+.child-page-links.textimage a:focus figure {
     border-color: black;
     
 }
