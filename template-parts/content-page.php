@@ -11,6 +11,7 @@
  */
 
 ?>
+<?php echo lumbrikus_make_text_links_to_children(get_the_ID()); ?>
 <!-- BEGIN CONTENT-PAGE -->
 <article id="page-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
