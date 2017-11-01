@@ -16,16 +16,10 @@ echo "<!-- BEGIN FOOTER -->\n";
 <footer class="page-footer" role="contentinfo">
 	<nav class="footer-nav">
 		<ul>
-			<li>
-				<span>Til læreren</span>
-				<ul><li>kapittel x</li></ul>
-			</li>
-			<li>
-				<span>Til foreldrene</span>
-				<ul><li>kapittel x</li></ul>
-			</li>
-			<li><span>Om Lumbrikus</span></li>
-			<li><span>Kontakt</span></li>
+			<li><a href="#">Til læreren</a></li>
+			<li><a href="#">Til foreldrene</a></li>
+			<li><a href="#">Om Lumbrikus</a></li>
+			<li><a href="#">Kontakt</a></li>
 		</ul>
 	</nav>
 </footer><!-- .page-footer -->

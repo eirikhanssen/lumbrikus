@@ -192,10 +192,10 @@ body[class*="kapittel-hovedside"]::after {
 
 body[class*="page-kap-"]::after {
     content: "";
-    top:3rem;
+    top:2rem;
     left:0;
     right:0;
-    bottom: 0;
+    bottom: 1rem;
     position: fixed;
     z-index: -1;
     background-position: center;
@@ -241,17 +241,39 @@ body[class*="page-kap-"]::after {
     background: url(/media/img/11-farvel-bg.jpg);
 }
 
+
+
 /* unfinished */
 .page-footer {
     display: static;
     position: relative;
     clear: both;
-    margin-top: 25vh;
     font-size: 0.5rem;
     color: white;
+    margin-bottom: 0;
+    min-height: 1rem;
+    background: #23282d;
+    border-top: 1px solid black;
+    padding:0;
 }
+.page-footer a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+
+.page-footer a:focus,
+.page-footer a:hover
+ {
+    color: yellow;
+    text-decoration: underline;
+}
+
 .footer-nav > ul {
     padding:0;
+    margin:0;
+    height: 100%;
     
 }
 .footer-nav > ul > li {
@@ -259,9 +281,9 @@ body[class*="page-kap-"]::after {
     padding-left: 1em;
     display: inline;
     float: left;
-    width: 33.33%;
+    width: 25%;
+    text-align: center;
     box-sizing: border-box;
-    background: rgba(33,33,33,0.7);
 }
 
 .footer-nav li ul {
@@ -274,16 +296,11 @@ body[class*="kapittel-hovedside"] .page-footer {
     left:0;
     right:0;
 }
-.page-footer::before {
-    position:absolute;
-    content: "page-footer:";
-    color: rgba(255,0,255,0.3);
-    top: -0.5rem;
-    line-height: 0.6rem;
-    font-size: .5rem;
-    border-bottom: 1px solid rgba(255,0,255,0.3);
-    left: 0;
-    right: 0;
+
+body[class*="kort"] .page-footer,
+body[class*="lang"] .page-footer,
+body[class*="kviss"] .page-footer {
+    display: none;
 }
 
 .child-page-links.text ul {
