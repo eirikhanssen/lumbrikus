@@ -34,6 +34,7 @@
 <body <?php body_class(); ?>>
 <header class="siteheader">
 	<a href="/" title="lumbrikus startside">
+		<svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-lumbrikus"></use></svg>
 		<h1 class="site-title lumbrikus-icon"><?php bloginfo( 'name' ); ?></h1>
 		<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 	</a>

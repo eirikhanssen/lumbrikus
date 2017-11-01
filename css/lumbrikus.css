@@ -34,32 +34,91 @@ nav {
 
 img {max-width: 96%; height: auto;}
 
-/* site header */
+/* site header BEGIN */
+
+.icon {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  fill: currentColor;
+}
 
 .siteheader {
-    background: rgb(185, 163, 178);
+    height: 2rem;
     font-size: 0.5em;
-    line-height: 2em;
+    line-height: 2rem;
+    margin-bottom: .5rem;
+    background: rgb(185, 163, 178);
     border-bottom: 1px solid rgb(112, 35, 73);
     
 }
 .siteheader a {
     display: block;
-    background: url(../media/svg/lumbrikus-icons.svg#lumbrikus);
-    background-repeat: no-repeat;
     text-decoration: none; color: rgb(112, 35, 73);
-    background-position: .5rem center;
-    background-size: auto 80%;
-    padding: .5rem;
+    padding: .2rem 0;
+    font-size: 1em;
+    box-sizing: border-box;
 }
-header h1 {
+
+.siteheader .icon {
+    position: relative;
+    float:left;
+    height: 1.6rem;
+    width: 1.6rem;
+    box-sizing: border-box;
+    margin: 0 1em;
+    overflow: visible;
+}
+
+
+.site-title {
+        color: black;
+        font-weight: normal;
+    }
+
+.site-title, 
+.site-description,
+.entry-title {
+    font-family: "Open Sans Condensed", sans-serif;
+
+}
+.site-title,
+.site-description {
+    display: none;
+    
+}
+
+.entry-title {
     color: black;
-}
-header h1, header p {
-    padding-left: 3rem;
+    position: absolute;
+    top: .4rem;
+    left: 2.5rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
     margin: 0;
-    font-weight: bold;
+    display: block;
+ 
 }
+
+@media screen and (min-width: 30em)
+{
+    
+    .site-title,
+    .site-description {
+        display: block;
+        font-size: 0.8rem;
+        line-height: .8rem;
+        margin: 0;
+    }   
+    .entry-title {
+        color: black;
+        left: 6rem;
+
+    }
+}
+
+/* site header END */
+
 
 /* attachment page */
 
@@ -255,19 +314,7 @@ body[class*="page-kap-"]::after {
     min-height: 3rem;
 }
 
-.entry-title {
-    position: absolute;
-    top: 0;
-    left: 10rem;
-    right:0;
-    font-size: 1.5rem;
-    line-height: 3rem;
-    padding-left: 0.5rem;
-    display: block;
-    background-color: rgba(255,255,255,0.1);
-    border-left: 1rem solid rgba(255,255,255,0.2);
 
-}
 
 main.underside {
     padding: 1em;
@@ -369,8 +416,6 @@ figure.ord figcaption {
     box-sizing: border-box;
     border-radius: .4rem;
 }
-
-.siteheader {margin-bottom: .5rem;}
 
 .child-page-links a,
 .child-page-links figure {
