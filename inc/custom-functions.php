@@ -140,9 +140,9 @@ function lumbrikus_make_textimage_links_to_children($post_id) {
 			$li .= "<a href=\"" . $link_href . "\">";
 			$li .= "<figure class=\"link-display\">";
 			if ( has_post_thumbnail($childpage) ) {
-    				$li .= "<div class=\"imagewrapper\">" . get_the_post_thumbnail($childpage) . "</div>";
+    				$li .= "<div class=\"imagewrapper\">" . get_the_post_thumbnail($childpage, 'link-thumb') . "</div>";
 				} else {
-					$li .= "<p>[Mangler bilde]</p>";
+					$li .= "<p>[Siden denne lenken leder til mangler 'fremhevet bilde']</p>";
 				}
 			$li .= "<figcaption>" . $link_text . "</figcaption>";
 			$li .= "</figure>";
