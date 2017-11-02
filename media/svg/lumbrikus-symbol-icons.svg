@@ -20,12 +20,12 @@
             <g fill="rgb(129, 30, 76)">
                 <g id="kapittelbokser">
                     <g id="kapittelbokser_kolonne">
-                    <rect width="8" height="6" x="-16" y="-13"/>
-                    <rect width="8" height="6" x="-16" y="-3"/>
-                    <rect width="8" height="6" x="-16" y="7"/>
+                    <rect width="8" height="6" x="-14" y="-13"/>
+                    <rect width="8" height="6" x="-14" y="-3"/>
+                    <rect width="8" height="6" x="-14" y="7"/>
                     </g>
-                    <use xlink:href="#kapittelbokser_kolonne" transform="translate(12,0)"></use>
-                    <use xlink:href="#kapittelbokser_kolonne" transform="translate(24,0)"></use>
+                    <use xlink:href="#kapittelbokser_kolonne" transform="translate(10,0)"></use>
+                    <use xlink:href="#kapittelbokser_kolonne" transform="translate(20,0)"></use>
                 </g>
             </g>
         </symbol>
