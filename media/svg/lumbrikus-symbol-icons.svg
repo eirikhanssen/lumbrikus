@@ -9,9 +9,9 @@
 
         <symbol id="symbol-icon-bg" viewBox="-16 -16 32 32">
             <rect id="icon-bg"
-            x="-15.5" y="-15.5" width="31" height="31" rx="2"
-            fill="rgba(255,255,255,0.5)"
-            style="fill: var(--color-icon-bg, rgba(255,255,255,0.5);"/>
+            x="-15.5" y="-15.5" width="31" height="31" rx="3"
+            fill="rgba(255,255,255,1)"
+            style="fill: var(--color-icon-bg, rgba(255,255,255,1);"/>
         </symbol>
 
         <symbol id="icon-kapitler" viewBox="-16 -16 32 32">
@@ -20,12 +20,12 @@
             <g fill="rgb(129, 30, 76)">
                 <g id="kapittelbokser">
                     <g id="kapittelbokser_kolonne">
-                    <rect width="8" height="6" x="-14" y="-13"/>
-                    <rect width="8" height="6" x="-14" y="-3"/>
-                    <rect width="8" height="6" x="-14" y="7"/>
+                    <rect width="6" height="6" x="-12" y="-12"/>
+                    <rect width="6" height="6" x="-12" y="-3"/>
+                    <rect width="6" height="6" x="-12" y="6"/>
                     </g>
-                    <use xlink:href="#kapittelbokser_kolonne" transform="translate(10,0)"></use>
-                    <use xlink:href="#kapittelbokser_kolonne" transform="translate(20,0)"></use>
+                    <use xlink:href="#kapittelbokser_kolonne" transform="translate(9,0)"></use>
+                    <use xlink:href="#kapittelbokser_kolonne" transform="translate(18,0)"></use>
                 </g>
             </g>
         </symbol>
@@ -460,41 +460,40 @@
         <symbol id="icon-kort-fortelling" viewBox="-16 -16 32 32">
             <title>kort fortelling</title>
 
-           
-            <g fill="black" transform="translate(-3,-2)">
+           <use xlink:href="#icon-bg"></use>
+            <g fill="black">
                 <g id="fortelling-ark">
-                        <rect width="23" height="27" x="-8.5" y="-11.5" style="fill:white;"></rect>
-                        <path fill-rule="nonzero" d="M-9,-12 h24 v28 h-24z m1,1 v26 h22 v-26 z"/>
-                        <path id="kort-og-lang-linje-ark" d="M-6,-9 v2 h18 v-2 z M-6,-5 v2 h16 v-2 z"/>
+                        <rect width="22" height="24" x="-11" y="-11" style="fill:white;"></rect>
+                        <path fill-rule="nonzero" d="M-12,-12 h23 v25 h-23z m1,1 v23 h21 v-23 z"/>
+                        <path id="kort-og-lang-linje-ark" d="M-9,-9 v2 h17 v-2 z M-9,-5 v2 h15 v-2 z"/>
                         <use xlink:href="#kort-og-lang-linje-ark" transform="translate(0,8)"></use>
-                        <use xlink:href="#kort-og-lang-linje-ark" transform="translate(0,16)"></use>
+                        <path d="M-9,7 v2 h17 v-2 z"/>
                 </g>
             </g>
         </symbol>
 
         <symbol id="icon-kort-fortelling-mc" viewBox="-16 -16 32 32">
             <title>kort fortelling</title>
-
-            <g fill="black" transform="translate(-3,-2)" style="fill: var(--color-dark, black);">
+            <use xlink:href="#icon-bg"></use>
+            <g fill="black" style="fill: var(--color-dark, black);">
                 <use xlink:href="#fortelling-ark"></use>
             </g>
         </symbol>
 
         <symbol id="icon-lang-fortelling" viewBox="-16 -16 32 32">
             <title>lang fortelling</title>
-
+            <use xlink:href="#icon-bg"></use>
             <g fill="black">
                 <g id="icon-lang-fortelling-markup">
-                    <use xlink:href="#fortelling-ark" opacity="0.7"></use>
-                    
-                    <use xlink:href="#fortelling-ark" transform="translate(-6,-4)"></use>
+                    <use xlink:href="#fortelling-ark" opacity="0.7" transform="translate(2,1)"></use>
+                    <use xlink:href="#fortelling-ark" transform="translate(-2,-1)"></use>
                 </g>
             </g>
         </symbol>
 
         <symbol id="icon-lang-fortelling-mc" viewBox="-16 -16 32 32">
             <title>lang fortelling</title>
-
+            <use xlink:href="#icon-bg"></use>
             <g fill="black" style="fill: var(--color-dark, black);">
                 <use xlink:href="#icon-lang-fortelling-markup"></use>
             </g>

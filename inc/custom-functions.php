@@ -215,6 +215,9 @@ function lumbrikus_generate_link_LI($chapter, $lvl, $link){
 		case 'kviss':
 			$icon_fragment .= 'kviss'; 
 		break;
+		case '../':
+		$icon_fragment .= 'kapitler'; 
+	break;
 		default:
 			$icon_fragment .= 'lumbrikus';
 		break;
@@ -230,7 +233,8 @@ function lumbrikus_generate_link_LI($chapter, $lvl, $link){
 function lumbrikus_nav_internal_chapter_links($chapter, $lvl){
 	$LIs = "";
 	$links_raw = [
-	['','oversikt'],
+	['../','kapitler'],
+	['','bilde'],
 	['kort', 'kort fortelling'],
 	['lang', 'lang fortelling'],
 	['let-og-finn', 'let og finn'],
