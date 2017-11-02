@@ -6,6 +6,38 @@
     <style type="text/css"></style>
     <title>Lumbrikus ikoner (symbol)</title>
     <defs font-family="sans-serif">
+
+        <symbol id="symbol-icon-bg" viewBox="-16 -16 32 32">
+            <rect id="icon-bg"
+            x="-15.5" y="-15.5" width="31" height="31" rx="2"
+            fill="rgba(255,255,255,0.5)"
+            style="fill: var(--color-icon-bg, rgba(255,255,255,0.5);"/>
+        </symbol>
+
+        <symbol id="icon-kapitler" viewBox="-16 -16 32 32">
+            <title>kapitler</title>
+            <use xlink:href="#icon-bg"></use>
+            <g fill="rgb(129, 30, 76)">
+                <g id="kapittelbokser">
+                    <g id="kapittelbokser_kolonne">
+                    <rect width="8" height="6" x="-16" y="-13"/>
+                    <rect width="8" height="6" x="-16" y="-3"/>
+                    <rect width="8" height="6" x="-16" y="7"/>
+                    </g>
+                    <use xlink:href="#kapittelbokser_kolonne" transform="translate(12,0)"></use>
+                    <use xlink:href="#kapittelbokser_kolonne" transform="translate(24,0)"></use>
+                </g>
+            </g>
+        </symbol>
+
+        <symbol id="icon-kapitler-mc" viewBox="-16 -16 32 32">
+            <title>kapitler</title>
+            <use xlink:href="#icon-bg"></use>
+            <g fill="black" style="fill: var(--color-dark, black;">
+                <use xlink:href="#kapittelbokser"></use>
+            </g>
+        </symbol>
+        
         <symbol id="icon-lumbrikus" viewBox="-16 -16 32 32">
             <title>lumbrikus</title>
             <g fill="rgb(129, 30, 76)">
@@ -17,7 +49,6 @@
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
-             paint-order="stroke" 
              stroke-linejoin="round"
              text-anchor="middle"
              font-size="14px">
@@ -37,7 +68,6 @@
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
-             paint-order="stroke" 
              stroke-linejoin="round"
              text-anchor="middle"
              font-size="14px"
@@ -54,7 +84,7 @@
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
-             paint-order="stroke" 
+             
              stroke-linejoin="round"
              text-anchor="middle"
              font-size="22px">
@@ -69,7 +99,6 @@
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
-             paint-order="stroke" 
              stroke-linejoin="round"
              text-anchor="middle"
              font-size="22px"
@@ -86,7 +115,6 @@
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
-             paint-order="stroke" 
              stroke-linejoin="round"
              text-anchor="middle"
              font-size="22px">
@@ -101,7 +129,6 @@
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
-             paint-order="stroke" 
              stroke-linejoin="round"
              text-anchor="middle"
              font-size="22px"
@@ -118,7 +145,6 @@
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
-             paint-order="stroke" 
              stroke-linejoin="round"
              text-anchor="middle"
              font-size="22px">
@@ -133,7 +159,6 @@
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
-             paint-order="stroke" 
              stroke-linejoin="round"
              text-anchor="middle"
              font-size="22px"
@@ -150,7 +175,6 @@
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
-             paint-order="stroke" 
              stroke-linejoin="round"
              text-anchor="middle"
              font-size="22px">
@@ -165,7 +189,6 @@
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
-             paint-order="stroke" 
              stroke-linejoin="round"
              text-anchor="middle"
              font-size="22px"
@@ -182,7 +205,6 @@
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
-             paint-order="stroke" 
              stroke-linejoin="round"
              text-anchor="middle"
              font-size="22px">
@@ -197,7 +219,6 @@
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
-             paint-order="stroke" 
              stroke-linejoin="round"
              text-anchor="middle"
              font-size="22px"
@@ -214,7 +235,6 @@
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
-             paint-order="stroke" 
              stroke-linejoin="round"
              text-anchor="middle"
              font-size="22px">
@@ -229,7 +249,6 @@
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
-             paint-order="stroke" 
              stroke-linejoin="round"
              text-anchor="middle"
              font-size="22px"
@@ -246,7 +265,6 @@
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
-             paint-order="stroke" 
              stroke-linejoin="round"
              text-anchor="middle"
              font-size="22px">
@@ -261,7 +279,6 @@
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
-             paint-order="stroke" 
              stroke-linejoin="round"
              text-anchor="middle"
              font-size="22px"
@@ -278,7 +295,6 @@
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
-             paint-order="stroke" 
              stroke-linejoin="round"
              text-anchor="middle"
              font-size="22px">
@@ -293,7 +309,6 @@
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
-             paint-order="stroke" 
              stroke-linejoin="round"
              text-anchor="middle"
              font-size="22px"
@@ -310,7 +325,6 @@
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
-             paint-order="stroke" 
              stroke-linejoin="round"
              text-anchor="middle"
              font-size="22px">
@@ -325,7 +339,6 @@
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
-             paint-order="stroke" 
              stroke-linejoin="round"
              text-anchor="middle"
              font-size="22px"
@@ -342,7 +355,6 @@
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
-             paint-order="stroke" 
              stroke-linejoin="round"
              text-anchor="middle"
              font-size="22px">
@@ -357,7 +369,6 @@
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
-             paint-order="stroke" 
              stroke-linejoin="round"
              text-anchor="middle"
              font-size="22px"
@@ -374,7 +385,6 @@
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
-             paint-order="stroke" 
              stroke-linejoin="round"
              text-anchor="middle"
              font-size="22px">
@@ -389,7 +399,6 @@
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
-             paint-order="stroke" 
              stroke-linejoin="round"
              text-anchor="middle"
              font-size="22px"
@@ -406,7 +415,6 @@
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
-             paint-order="stroke" 
              stroke-linejoin="round"
              text-anchor="middle"
              font-size="22px">
@@ -421,7 +429,6 @@
             <g font-family="sans-serif"
              fill="black" 
              stroke="black"
-             paint-order="stroke" 
              stroke-linejoin="round"
              text-anchor="middle"
              font-size="22px"
@@ -432,21 +439,75 @@
             </g>
         </symbol>
 
-        <symbol id="symbol-icon-bg" viewBox="-16 -16 32 32">
-            <rect id="icon-bg"
-            x="-15.5" y="-15.5" width="31" height="31" rx="2"
-            fill="rgba(255,255,255,0.5)"
-            style="fill: var(--color-icon-bg, rgba(255,255,255,0.5);"/>
+        <symbol id="icon-kort-fortelling-stor" viewBox="-16 -16 32 32">
+            <title>kort fortelling</title>
+            <use xlink:href="#icon-bg"></use>
+           
+            <g>
+                <g id="icon-kort-fortelling-markup">
+                 <rect x="-12" y="-15" width="24" height="30" fill="white" style="fill:white;"></rect>
+                    <g id="kort-fortelling-strek">
+                        <path fill-rule="nonzero" d="M-13,-16 h26 v32 h-26z M-12,-15 v30 h24 v-30 z "/>
+                        <path id="kort-og-lang-linje" d="M-10,-13 v2 h20 v-2 z M-10,-9 v2 h18 v-2 z"/>
+                        <use xlink:href="#kort-og-lang-linje" transform="translate(0,8)"></use>
+                        <use xlink:href="#kort-og-lang-linje" transform="translate(0,16)"></use>
+                        <path d="M-10,11 v2 h20 v-2 z"/>
+                    </g>
+                </g>
+            </g>
         </symbol>
 
         <symbol id="icon-kort-fortelling" viewBox="-16 -16 32 32">
+            <title>kort fortelling</title>
+
+           
+            <g fill="black" transform="translate(-3,-2)">
+                <g id="fortelling-ark">
+                        <rect width="23" height="27" x="-8.5" y="-11.5" style="fill:white;"></rect>
+                        <path fill-rule="nonzero" d="M-9,-12 h24 v28 h-24z m1,1 v26 h22 v-26 z"/>
+                        <path id="kort-og-lang-linje-ark" d="M-6,-9 v2 h18 v-2 z M-6,-5 v2 h16 v-2 z"/>
+                        <use xlink:href="#kort-og-lang-linje-ark" transform="translate(0,8)"></use>
+                        <use xlink:href="#kort-og-lang-linje-ark" transform="translate(0,16)"></use>
+                </g>
+            </g>
+        </symbol>
+
+        <symbol id="icon-kort-fortelling-mc" viewBox="-16 -16 32 32">
+            <title>kort fortelling</title>
+
+            <g fill="black" transform="translate(-3,-2)" style="fill: var(--color-dark, black);">
+                <use xlink:href="#fortelling-ark"></use>
+            </g>
+        </symbol>
+
+        <symbol id="icon-lang-fortelling" viewBox="-16 -16 32 32">
+            <title>lang fortelling</title>
+
+            <g fill="black">
+                <g id="icon-lang-fortelling-markup">
+                    <use xlink:href="#fortelling-ark" opacity="0.7"></use>
+                    
+                    <use xlink:href="#fortelling-ark" transform="translate(-6,-4)"></use>
+                </g>
+            </g>
+        </symbol>
+
+        <symbol id="icon-lang-fortelling-mc" viewBox="-16 -16 32 32">
+            <title>lang fortelling</title>
+
+            <g fill="black" style="fill: var(--color-dark, black);">
+                <use xlink:href="#icon-lang-fortelling-markup"></use>
+            </g>
+        </symbol>
+
+        <symbol id="icon-kort-fortelling-gml" viewBox="-16 -16 32 32">
             <title>kort fortelling</title>
             <use xlink:href="#icon-bg"></use>
             <path stroke="black" fill="transparent" stroke-width="2px" stroke-linecap="butt"
              d="M-10,0 h20 M-10,5 h20 M-10,10 h20 M-10,-5 h20 M-10,-10 h20"/>
         </symbol>
 
-        <symbol id="icon-kort-fortelling-mc" viewBox="-16 -16 32 32">
+        <symbol id="icon-kort-fortelling-gml-mc" viewBox="-16 -16 32 32">
             <title>kort fortelling</title>
             <use xlink:href="#icon-bg"></use>
             <path 
@@ -455,7 +516,7 @@
             d="M-10,0 h20 M-10,5 h20 M-10,10 h20 M-10,-5 h20 M-10,-10 h20"/>
         </symbol>
 
-        <symbol id="icon-lang-fortelling" viewBox="-16 -16 32 32">
+        <symbol id="icon-lang-fortelling-gml" viewBox="-16 -16 32 32">
             <title>lang fortelling</title>
             <use xlink:href="#icon-bg"></use>
             <g stroke="black" fill="transparent" stroke-width="2px" stroke-linecap="butt">
@@ -464,7 +525,7 @@
             </g>
         </symbol>
 
-        <symbol id="icon-lang-fortelling-mc" viewBox="-16 -16 32 32">
+        <symbol id="icon-lang-fortelling-gml-mc" viewBox="-16 -16 32 32">
             <title>lang fortelling</title>
             <use xlink:href="#icon-bg"></use>
             <g stroke="black" fill="transparent" stroke-width="2px" stroke-linecap="butt"
@@ -570,7 +631,7 @@
             />
             <g fill="white" stroke="black"
             style="fill: var(--color-bright, #ddd); stroke: var(--color-dark, black)"
-            stroke-linejoin="round" stroke-width="1.5px" id="helmet_group" transform="translate(0,0)">
+            stroke-linejoin="round" stroke-width="1.5px" id="helmet_group2" transform="translate(0,0)">
                 <path class="helmet" d="M14,-4 c -5,-13 -23,-13 -28,0 z"/>
                 <circle stroke="darkorange" class="hodelykt" cx="0" cy="-9" r="3"
                 style="stroke: var(--color-medium, #777)"/>
@@ -760,7 +821,7 @@
             <circle class="hode-oye" cx="-6" cy="-7" r="2"/>
             <ellipse fill="black" stroke="black" cx="0" cy="3" rx="4" ry="2"/>
             <g opacity="0.7" font-family="sans-serif" font-weight="bold" font-size="18px" fill="#444"
-                stroke="white" stroke-width="2px" stroke-linecap="round" stroke-linejoin="round" x="0" y="0"
+                stroke="white" stroke-width="2px" stroke-linecap="round" stroke-linejoin="round" 
                 transform="translate(-4,-1) rotate(-11)">
             <text>?</text>
             <text stroke="black" stroke-width="0.5px">?</text>
@@ -777,7 +838,7 @@
             <ellipse cx="0" cy="3" rx="4" ry="2"/>
             </g>
             <g opacity="0.7" font-family="sans-serif" font-weight="bold" font-size="18px" fill="#444"
-                stroke="white" stroke-width="2px" stroke-linecap="round" stroke-linejoin="round" x="0" y="0"
+                stroke="white" stroke-width="2px" stroke-linecap="round" stroke-linejoin="round"
                 transform="translate(-4,-1) rotate(-11)">
             <text>?</text>
             <text stroke="black" stroke-width="0.5px">?</text>
