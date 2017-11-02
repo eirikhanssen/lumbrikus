@@ -463,8 +463,8 @@
            <use xlink:href="#icon-bg"></use>
             <g fill="black">
                 <g id="fortelling-ark">
-                        <rect width="22" height="24" x="-11" y="-11" style="fill:white;"></rect>
-                        <path fill-rule="nonzero" d="M-12,-12 h23 v25 h-23z m1,1 v23 h21 v-23 z"/>
+                        <rect width="22" height="23" x="-11" y="-11" style="fill:white;"></rect>
+                        <path fill-rule="nonzero" d="M-12,-12 h23 v24 h-23z m1,1 v22 h21 v-22 z"/>
                         <path id="kort-og-lang-linje-ark" d="M-9,-9 v2 h17 v-2 z M-9,-5 v2 h15 v-2 z"/>
                         <use xlink:href="#kort-og-lang-linje-ark" transform="translate(0,8)"></use>
                         <path d="M-9,7 v2 h17 v-2 z"/>
