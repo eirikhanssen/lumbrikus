@@ -341,9 +341,9 @@ body[class*="kviss"] .page-footer {
 .child-page-links.textimage figure {
     margin:0;
     padding: .5rem;
-    width: 8rem;
-    height: 8rem;
-    border: 1px solid gray;
+    width: 9rem;
+    height: 9rem;
+    border: 1px solid #ccc;
     background: #eee;
 }
 
@@ -353,8 +353,8 @@ body[class*="kviss"] .page-footer {
     border: 1px solid black;
     margin: 0 auto;
     display: block;
-    width: auto;
-    height: 5rem;
+    width: 8rem;
+    height: 6rem;
     position: relative;
     overflow: hidden;
     margin-bottom: .1rem;
@@ -368,7 +368,7 @@ body[class*="kviss"] .page-footer {
     min-width: 100%;
     min-height: 100%;
     height: auto;
-    width: auto;
+    width: 100%;
 }
 
 .child-page-links.textimage figcaption {
@@ -491,12 +491,12 @@ figure.ord figcaption {
 
 
 .child-page-links.textimage a:hover {
-    box-shadow: 0 0 1rem #aaa;
+    box-shadow: 0 0 0.25rem #aaa;
 
 }
 
 .child-page-links.textimage a:hover figure,
 .child-page-links.textimage a:focus figure {
-    border-color: black;
-    
+    border-color: #999;
+    background: #ffe;
 }
