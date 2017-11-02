@@ -452,23 +452,40 @@ figure.ord figcaption {
 }
 
 .internal-chapter-links span.linktext {
-    display: block;
-    
-    padding-left: .25rem;
-    top: -.65rem;
+    display: inline-block;
+    padding: .1rem .25rem;
+    top: calc(100% + 0.75rem);
+    left: 50%;
+    transform:translate(-50%,0);
     line-height: 1rem;
     font-size: .75rem;
     visibility: hidden;
     text-align: center;
-    background-color: rgba(255,255,255,0.6);
-}
-.internal-chapter-links :hover .linktext,
-.internal-chapter-links :focus .linktext {
-    visibility: visible;
+    background-color: #ffff9f;
+    position: absolute;
+    box-sizing: content-box;
+    white-space: pre;
+    border-radius: .5rem;
+    min-width: 3rem;
+    
 }
 
-.internal-chapter-links a:hover .linktext::after,
-.internal-chapter-links a:focus .linktext::after {
+@keyframes linktext {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+.internal-chapter-links a:hover .linktext,
+.internal-chapter-links a:focus .linktext {
+    visibility: visible;
+    animation-name: linktext;
+    animation-duration: .6s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.internal-chapter-links a:hover::after,
+.internal-chapter-links a:focus::after {
     position: absolute;
     top: -.4rem;
     left: 50%;
@@ -479,7 +496,7 @@ figure.ord figcaption {
     width: 2.8rem;
     border: 4px solid orange;
     box-sizing: border-box;
-    border-radius: .4rem;
+    border-radius: 2rem;
 }
 
 .child-page-links.textimage a,
