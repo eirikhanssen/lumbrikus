@@ -8,9 +8,9 @@
     preserveAspectRatio="xMidYMid meet"
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
-     version="2.0"
+    version="2.0"
+    data-chapter="5">
     
-    >
     <title>Let og finn ord i bildet</title>
     <defs>
         <style type="text/css">
@@ -53,11 +53,13 @@
         <text class="ord" id="t_bein_med_gult_pollen" x="-373" y="213" dy="20">bein med gult pollen</text>
     </g>
     
-    <g id="g_ord_clones">
-           
-    </g>
+    <!-- keep this for MSIE compatibility -->
+    <g id="g_ord_clones"></g>
+    
+    <g id="active_point_zones"></g>
     
     <script type="text/javascript" xlink:href="/js/lib/snap.svg-min.js"></script>
     <script type="text/javascript" xlink:href="/js/let-og-finn.js"></script>
-    <!--<script type="text/javascript" xlink:href="/js/add-svg-words.js"></script>-->
+    <!-- <script type="text/javascript" xlink:href="/js/add-svg-words.js"></script> -->
+    <!-- <script type="text/javascript" xlink:href="/js/add-active-point-zones.js"></script> -->
 </svg>
