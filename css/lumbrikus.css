@@ -430,7 +430,7 @@ figure.ord figcaption {
     box-sizing: content-box;
     padding: .4rem;
     overflow: visible;
-    border: 5px solid #eee;
+    border: 5px solid #ddd;
 }
 
 @keyframes svgiconhover {
