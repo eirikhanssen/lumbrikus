@@ -217,7 +217,7 @@ function lumbrikus_generate_link_LI($chapter, $lvl, $link){
 		break;
 		case '../':
 		$icon_fragment .= 'kapitler'; 
-	break;
+		break;
 		default:
 			$icon_fragment .= 'lumbrikus';
 		break;

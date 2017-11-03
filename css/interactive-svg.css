@@ -12,7 +12,7 @@ text tspan {
 
 
 .show.active_zones path {
-    stroke: rgba(255,0,128,0.5);
+    stroke:transparent;
 }
 
 .active_zones path.clicked {
@@ -32,7 +32,6 @@ text tspan {
 #g_active_zones path:hover,
 #g_active_zone path:focus {
     stroke: rgba(255,255,0,1);
-
 }
 
 #g_ord {
