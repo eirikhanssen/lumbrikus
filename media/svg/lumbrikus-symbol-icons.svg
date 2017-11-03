@@ -10,8 +10,8 @@
         <symbol id="symbol-icon-bg" viewBox="-16 -16 32 32">
             <rect id="icon-bg"
             x="-15.5" y="-15.5" width="31" height="31" rx="3"
-            fill="rgba(255,255,255,1)"
-            style="fill: var(--color-icon-bg, rgba(255,255,255,1);"/>
+            fill="whitesmoke"
+            style="fill: var(--color-icon-bg, whitesmoke);"/>
         </symbol>
 
         <symbol id="icon-kapitler" viewBox="-16 -16 32 32">
