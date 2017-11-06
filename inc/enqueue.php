@@ -70,7 +70,7 @@ function lumbrikus_load_scripts() {
 
 	if( is_page( 'kort' ) || is_page( 'lang' ) ) {
 		// enqueue js and css for text and audio playback
-		wp_enqueue_style( 'mediasynccss', '/css/mediasync.css', array(), '0.0.2', 'all' );
+		wp_enqueue_style( 'mediasynccss', '/css/mediasync.css', array(), '0.0.3', 'all' );
 		wp_enqueue_style( 'mejscss', '/lib/mediaelement/build/mediaelementplayer.css', array(), '4.2.6', 'all' );
 		wp_enqueue_script( 'mejs', '/lib/mediaelement/build/mediaelement-and-player.js', false, '4.2.6', true);
 		wp_enqueue_script( 'mediasyncjs', '/js/mediasync.js', false, '0.9.0', true);
