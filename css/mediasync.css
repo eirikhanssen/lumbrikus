@@ -7,31 +7,56 @@ body {
 article.audio_and_text .cues {
     position: relative;
     padding: 0;
-    margin: 1em;
-    padding-right: 0.5rem;
     font-size: 1rem;
 }
 
 .key {
     display: block;
-    padding: .5rem;
     box-sizing: border-box;
-    border: 1px dashed transparent;
-    border-radius: .25em;
 }
 
 .playing {
-    border-color: gray;
-    background-color: #ffffd1;
+    position: relative;
+    
+    
 }
-
-.active-key {
-    border-color: gray;
+.playing::after {
+    content:"";
+    position: absolute;
+    top:0;
+    left:-.25rem;
+    right:-.25rem;
+    bottom:0;
+    background-color: #ffffd1;
+    border: 1px dashed gray;
+    z-index: -1;
 }
 
 article {
     overflow-x: hidden;
     padding-bottom: 2rem;
+}
+
+/* low level sync to sentence or sub-sentence level */
+.active-text-segment {
+    position: relative;
+
+    z-index: 1;
+}
+
+.active-text-segment::after {
+    content:"";
+    position: absolute;
+    top:-.2rem;
+    left:-.2rem;
+    right:-.2rem;
+    bottom:-.2rem;
+    background-color: #9dff57;
+    border: 1px solid #999;
+
+   
+    z-index: -1;
+    border-radius: .25rem;
 }
 
 .key p {margin-top:0; margin-bottom:0;}
@@ -57,16 +82,17 @@ article {
     position: fixed;
     top: 1em;
     bottom: 0.5rem;
-    background-color: rgb(237, 237, 237);
+    /* background-color: rgb(237, 237, 237); */
     left: 50%;
     right: 1rem;
     transform: translate(.5rem, 0);
     border-radius: .25em;
     width: auto;
-    padding: 1rem;
-    padding-top: 2rem;
+    /* padding: 1rem; */
+    /* padding-top: 2rem; */
     box-sizing: border-box;
     box-shadow: 0 0 1rem #666;
+    z.index: 2;
 }
 
 .translation-container::after {
@@ -83,21 +109,40 @@ article {
 }
 
 .translation-container button span {display: block;}
-.secondaryLangControls2 {text-align: center;}
-.translation-container button {margin: 0; box-sizing: border-box; padding: .25rem .4rem; min-width: 17%; display: inline-block;}
+.secondaryLangControls2 {text-align: center;padding-top: .5rem;}
+.translation-container button {/* margin: 0; */box-sizing: border-box;padding: .25rem .4rem;min-width: 17%;display: inline-block;font-size: .5rem;}
 .translation-container button+button {margin-left: .5rem;}
-#translation {
-    font-size: 2em;
-    font-size: 2rem;
-    padding: 1rem;
-    margin-top: 2em;
-    margin-top: 2rem;
-    background: #ffffd1;
+#translation .key {
+    position: absolute;
+    top: 3rem;
+    /* transform: translate(0,-50%); */
+    background: rgba(255,255,255,0.9);
     box-sizing: border-box;
-    border: 1px dashed gray;
-    border-radius: 0.25em;
+    /* border: 1px dashed gray; */
+    padding: .5rem;
+}
+#translation .key:after,
+ #translation .key:before{
+    content:"";
+    position:absolute;
+    
+    width: 1rem;
+    height: 1rem;
+    border: 4px solid #70a77c;
 }
 
+#translation .key:before {
+    top: .5rem;
+    left: .1rem;
+    border-right:none;
+    border-bottom: none;
+}
+#translation .key:after {
+    bottom: .3rem;
+    right: .1rem;
+    border-top: none;
+    border-left: none;
+}
 
 .audio_and_text {display: none;}
 body.primary_lang_no .audio_and_text.no,
@@ -111,6 +156,7 @@ body.primary_lang_ti .audio_and_text.ti {
     width: 50%;
     margin: 0;
     padding: 0.5rem;
+    box-sizing:  border-box;
 }
 
 
@@ -230,7 +276,7 @@ body.primary_lang_ti .audio_and_text.ti {
 }
 
 .translation-container {
-    background-color: dodgerblue;
+    background: white;
     background-image: url('/media/img/06-let-og-finn-bg.jpg');
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -343,21 +389,21 @@ body.primary_lang_ti .audio_and_text.ti {
 .invisible {display: none;}
 
 .secondary-controls2-title {
-    font-size: 1em;
+    /* font-size: 1em; */
     background: white;
     display: inline-block;
     position: absolute;
-    top:-.75rem;
+    top: 0rem;
+    transform: translate(0,-50%);
     left:0;
     right:0;
     width: 10rem;
     margin: auto;
-
+    font-size: 0.7rem;
 }
 
 .translation-container,
 .secondary-controls2-title {
         border-radius: 1rem;
-    border: 1px solid black;
+        border: 1px solid #4e4e4e;
 }
-
