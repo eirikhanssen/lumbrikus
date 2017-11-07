@@ -327,3 +327,14 @@ function lumbrikus_audiosync_markup_end() {
 HTML;
 	return $output;
 }
+
+function get_slug($post_id) {
+	$post = get_post( $post_id );
+	return $post->post_name;
+}
+
+function get_parent_slug($post_id) {
+	// get_the_ID() will get the post id from the loop
+	$parent_id = wp_get_post_parent_id( $post_id );
+	return get_slug($parent_id);
+}
