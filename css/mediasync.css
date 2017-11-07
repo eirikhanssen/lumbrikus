@@ -125,7 +125,7 @@ article {
         border: 1px solid #4e4e4e;
 }
 
-.secondaryLangControls2 {text-align: center;padding-top: .5rem;/* margin-bottom: 1rem; */}
+.secondaryLangControls2 {text-align: center;padding-top: .8rem;/* margin-bottom: 1rem; */}
 .translation-container button {/* margin: 0; */box-sizing: border-box;padding: .25rem .4rem;min-width: 17%;display: inline-block;font-size: .5rem;}
 .translation-container button+button {margin-left: .5rem;}
 .translation-container button span {text-align: center;}
