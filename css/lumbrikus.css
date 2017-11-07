@@ -187,6 +187,83 @@ img {width: auto; height: auto;}
     font-family: "Open Sans Condensed", sans-serif;
 }
 
+/* video links begin */
+
+main.page-filmer .entry-content > a {text-decoration: none; display:block; max-width: 30rem; margin:0 auto; padding: 0;}
+
+main.page-filmer .entry-content {
+    padding-top: 1rem;
+}
+
+figure.videolink {
+    border: 1px solid black;
+    line-height: 1.5rem
+}
+
+.videolink {
+    border-radius:.5rem;
+    padding: .5rem;
+    
+    margin: 2rem auto;
+}
+
+.videolink h2 {
+    font-size: 1rem;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-1.4rem);
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: .05rem .5rem;
+    background: white;
+    margin: auto;
+    text-align: center;
+    display:inline-block;
+}
+
+.videolink .tooltip {
+    color: black;
+    font-size: .75rem;
+    line-height: 1em;
+    margin: 0;
+    display: block;
+    text-align: center;
+    position: relative;
+    top: -1rem;
+}
+
+.videolink .videoposter {
+    background: white;
+    padding: .5rem;
+    border: 1px solid #999;
+    display: block;
+    margin: auto;
+}
+
+.videolink figcaption {
+    font-family: "Open Sans Condensed", sans-serif;
+}
+
+a:hover .videoposter,
+a:focus .videoposter
+{
+    background: #ffce48;
+}
+
+a:hover .videolink figcaption,
+a:focus .videolink figcaption {
+    text-decoration: underline;
+}
+
+
+a:hover .videolink,
+a:focus .videolink {
+    background: whitesmoke;
+    box-shadow: 0 0 .25rem gray;
+}
+
+/* video links end */
+
 body[class*="kapittel-hovedside"]::after {
     position: fixed;
     top:0;
