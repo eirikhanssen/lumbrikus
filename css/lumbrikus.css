@@ -38,6 +38,14 @@ main {
     margin-bottom: 4rem;
 }
 
+.til-laereren-child main,
+.til-laereren main,
+.om-lumbrikus main, 
+.til-foreldrene main,
+.til-foreldrene-child main {
+    padding: 0 1rem;
+}
+
 /* condensed font for nav links */
 nav {
     font-family: 'Open Sans Condensed', sans-serif;
@@ -190,7 +198,7 @@ body[class*="kapittel-hovedside"]::after {
     background-size: cover;
 }
 
-body[class*="page-kap-"]::after {
+body[class*="kapittel-hovedside"]::after {
     content: "";
     top:2rem;
     left:0;
@@ -204,40 +212,40 @@ body[class*="page-kap-"]::after {
     background-color: #333;
 }
 
-.page-kap-00::after {
+.kap-00::after {
     background: url(/media/img/00-den-rode-planeten-bg.jpg);
 }
-.page-kap-01::after {
+.kap-01::after {
     background: url(/media/img/01-let-og-finn-bg.jpg);
 }
-.page-kap-02::after {
+.kap-02::after {
     background: url(/media/img/02-let-og-finn-bg.jpg);
 }
-.page-kap-03::after {
+.kap-03::after {
     background: url(/media/img/03-let-og-finn-bg.jpg);
 }
-.page-kap-04::after {
+.kap-04::after {
     background: url(/media/img/04-let-og-finn-bg.jpg);
 }
-.page-kap-05::after {
+.kap-05::after {
     background: url(/media/img/05-let-og-finn-bg.jpg);
 }
-.page-kap-06::after {
+.kap-06::after {
     background: url(/media/img/06-let-og-finn-bg.jpg);
 }
-.page-kap-07::after {
+.kap-07::after {
     background: url(/media/img/07-let-og-finn-bg.jpg);
 }
-.page-kap-08::after {
+.kap-08::after {
     background: url(/media/img/08-let-og-finn-bg.jpg);
 }
-.page-kap-09::after {
+.kap-09::after {
     background: url(/media/img/09-let-og-finn-bg.jpg);
 }
-.page-kap-10::after {
+.kap-10::after {
     background: url(/media/img/10-let-og-finn-bg.jpg);
 }
-.page-kap-11::after {
+.kap-11::after {
     background: url(/media/img/11-farvel-bg.jpg);
 }
 
