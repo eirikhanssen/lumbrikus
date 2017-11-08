@@ -202,7 +202,7 @@ figure.videolink {
 
 .videolink {
     border-radius:.5rem;
-    padding: .5rem;
+    padding:.5rem 1rem;
     
     margin: 2rem auto;
 }
@@ -238,10 +238,15 @@ figure.videolink {
     border: 1px solid #999;
     display: block;
     margin: auto;
+    margin-bottom: .5rem;
+    max-width: 90%;
+    height: auto;
+    max-width: calc(100% - 1rem);
 }
 
 .videolink figcaption {
     font-family: "Open Sans Condensed", sans-serif;
+    padding: 0 1rem;
 }
 
 a:hover .videoposter,
