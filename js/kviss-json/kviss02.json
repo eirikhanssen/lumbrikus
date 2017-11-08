@@ -2,243 +2,245 @@ var kviss02 = {
     title: "Kapittel 2 kviss",
     q_and_a: [
         {
-            spm: "___",
+            spm: "Hvor mange blomster ser du? ",
+            bilde: "https://no.wikipedia.org/wiki/Vanlig_l%C3%B8vetann#/media/File:05.2010_l%C3%B6wenzahn_3.jpg",
+            bildetekst: "Foto:  Uwe H. Friese",
+            svaralternativer: [
+                "Ti ",
+                "En ",
+                "Veldig mange"
+            ],
+            riktige_svar: ["Veldig mange"],
+            forklaring: "___"
+        },
+        {
+            spm: "Hvorfor har løvetann fått navnet sitt? ",
+            bilde: "https://lumbrikus.no/media/img/NAT_7474",
+            bildetekst: "___",
+            svaralternativer: [
+                "Fordi løvene spiser den",
+                "Fordi bladene ser ut som tennene til løvene",
+                "Fordi blomstene er farlige"
+            ],
+            riktige_svar: ["Fordi bladene ser ut som tennene til løvene"],
+            forklaring: "___"
+        },
+        {
+            spm: "Hvor mange blomster er det her? ",
+            bilde: "https://lumbrikus.no/media/img/NAT_7473.jpg",
+            bildetekst: "___",
+            svaralternativer: [
+                "En",
+                "Veldig mange",
+                "Åtte"
+            ],
+            riktige_svar: ["Veldig mange"],
+            forklaring: "___"
+        },
+        {
+            spm: "Hva er pollen? ",
+            bilde: "(NAT_9014)",
+            bildetekst: "___",
+            svaralternativer: [
+                "En by i Polen",
+                "Små korn i hann-blomsten",
+                "En bolle med rosiner"
+            ],
+            riktige_svar: ["En bolle med rosiner"],
+            forklaring: "___"
+        },
+        {
+            spm: "Hva er å pollinere?",
             bilde: "https://lumbrikus.no/media/img/___",
             bildetekst: "___",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Å ta pollen fra hann-blomsten over på hunnblomsten",
+                "Å reise til Nordpolen",
+                "Å danse polka"
             ],
-            riktige_svar: ["___"],
+            riktige_svar: ["Å ta pollen fra hann-blomsten over på hunnblomsten"],
+            forklaring: "___"
+        },
+        {
+            spm: "Hvem pollinerer rødkløver? ",
+            bilde: "https://lumbrikus.no/media/img/___",
+            bildetekst: "___",
+            svaralternativer: [
+                "Revene",
+                "Humlene",
+                "Fuglene"
+            ],
+            riktige_svar: ["Humlene"],
+            forklaring: "___"
+        },
+        {
+            spm: "Hva er dette? ",
+            bilde: "Svetlana 7473_v2 (den andre delen av bildet er klipt vekk)",
+            bildetekst: "___",
+            svaralternativer: [
+                "En grønn banan",
+                "Bæsjen til en elg",
+                "En belg med erter"
+            ],
+            riktige_svar: ["En belg med erter"],
+            forklaring: "___"
+        },
+        {
+            spm: "Hva er hummus laget av?",
+            bilde: "https://en.wikipedia.org/wiki/Hummus#/media/File:Houmous.jpg",
+            bildetekst: "Foto: Popo le Chien",
+            svaralternativer: [
+                "Mus med humør",
+                "Humler",
+                "Kikerter"
+            ],
+            riktige_svar: ["Kikerter"],
+            forklaring: "___"
+        },
+        {
+            spm: "Hva er nektar?",
+            bilde: "https://lumbrikus.no/media/img/___",
+            bildetekst: "??????",
+            svaralternativer: [
+                "Et barn som nekter mye",
+                "Søt saft i blomsten",
+                "En nakke"
+            ],
+            riktige_svar: ["Søt saft i blomsten"],
+            forklaring: "___"
+        },
+        {
+            spm: "Hva er gulrot?",
+            bilde: "Svetlana 0748_v3",
+            bildetekst: "___",
+            svaralternativer: [
+                "En gul blyant",
+                "Ei pølse av gull",
+                "Ei rot vi kan spise"
+            ],
+            riktige_svar: ["Ei rot vi kan spise"],
+            forklaring: "___"
+        },
+        {
+            spm: "Hva kan vi lage av soyabønner?",
+            bilde: "https://lumbrikus.no/media/img/___",
+            bildetekst: "___",
+            svaralternativer: [
+                "Middag",
+                "Sofa",
+                "Kokosboller"
+            ],
+            riktige_svar: ["Middag"],
+            forklaring: "___"
+        },
+        {
+            spm: "Soya har mye av noe. Hva er det?",
+            bilde:"https://commons.wikimedia.org/wiki/Category:Marit_Bj%C3%B8rgen#/media/File:Marit_Bj%C3%B8rgen_2017_02.jpg",
+            bildetekst: "Foto: Marit Bjørgen. Sterk.",
+            svaralternativer: [
+                "Pepper",
+                "Sukker",
+                "Proteiner som lager muskler"
+            ],
+            riktige_svar: ["Proteiner som lager muskler"],
             forklaring: "___"
         },
         {
             spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
+            bilde: "(NAT_0747_v3)",
             bildetekst: "___",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Nede i jorda.",
+                "På bakken",
+                "På trær"
             ],
-            riktige_svar: ["___"],
+            riktige_svar: ["På trær"],
             forklaring: "___"
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
+            spm: "Hvor mye kan et bjørketre drikke på en varm sommerdag?",
+            bilde: "https://commons.wikimedia.org/wiki/Betula#/media/File:Betula_Forest.jpg",
             bildetekst: "___",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "1 liter som en melkekartong",
+                "50 liter",
+                "400 liter"
             ],
-            riktige_svar: ["___"],
+            riktige_svar: ["400 liter"],
             forklaring: "___"
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
+            spm: "Når er våren?",
+            bilde: "(NAT_8619)",
             bildetekst: "___",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Mellom sommer og høst",
+                "Mellom høst og vinter",
+                "Mellom vinter og sommer"
             ],
-            riktige_svar: ["___"],
+            riktige_svar: ["Mellom vinter og sommer"],
             forklaring: "___"
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
+            spm: "Hva er tegn på vår?",
+            bilde: "http://maxpixel.freegreatpicture.com/Frozen-Snow-Winter-Water-Ice-Cold-Icicle-Ice-Age-1123948",
+            bildetekst: "Foto: max pixel",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Hestehov",
+                "Snøen smelter",
+                "Det blir varmere ute"
             ],
-            riktige_svar: ["___"],
+            riktige_svar: ["Hestehov"],
+            riktige_svar: ["Snøen smelter"],
+            riktige_svar: ["Det blir varmere ute"],
+            forklaring: "Alle er riktig!"
+        },
+        {
+            spm: "Hva er dette?",
+            bilde: "https://commons.wikimedia.org/wiki/Vaccinium_myrtillus#/media/File:Vaccinium_myrtillus2_ies.jpg",
+            bildetekst: "Foto:  Frank Vincentz",
+            svaralternativer: [
+                "En ballong på tivoli",
+                "Blomsten til blåbær",
+                "Ei fin lue til baby"
+            ],
+            riktige_svar: ["Blomsten til blåbær"],
             forklaring: "___"
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
+            spm: "Hva er dette?",
+            bilde: "Svetlana _0733_v2",
             bildetekst: "___",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Ørn",
+                "Linerle",
+                "Høne"
             ],
-            riktige_svar: ["___"],
+            riktige_svar: ["Linerle"],
             forklaring: "___"
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
+            spm: "Hva er det inni kjølen?",
+            bilde: "https://commons.wikimedia.org/wiki/Category:Pisum_sativum_(flowers)#/media/File:Oregon_sugar_pod_II_bloom-2012.jpg",
+            bildetekst: "Foto: Rob Duval   CC BY-SA 3.0",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "En liten båt",
+                "Nektar og støvbærere",
+                "En liten hvit fugl"
             ],
-            riktige_svar: ["___"],
+            riktige_svar: ["Nektar og støvbærere"],
             forklaring: "___"
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
+            spm: "Hva er dette?",
+            bilde: "NAT_7472",
             bildetekst: "___",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Blåveis",
+                "Hvitveis",
+                "Hestehov"
             ],
-            riktige_svar: ["___"],
-            forklaring: "___"
-        },
-        {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
-            svaralternativer: [
-                "___",
-                "___",
-                "___"
-            ],
-            riktige_svar: ["___"],
-            forklaring: "___"
-        },
-        {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
-            svaralternativer: [
-                "___",
-                "___",
-                "___"
-            ],
-            riktige_svar: ["___"],
-            forklaring: "___"
-        },
-        {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
-            svaralternativer: [
-                "___",
-                "___",
-                "___"
-            ],
-            riktige_svar: ["___"],
-            forklaring: "___"
-        },
-        {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
-            svaralternativer: [
-                "___",
-                "___",
-                "___"
-            ],
-            riktige_svar: ["___"],
-            forklaring: "___"
-        },
-        {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
-            svaralternativer: [
-                "___",
-                "___",
-                "___"
-            ],
-            riktige_svar: ["___"],
-            forklaring: "___"
-        },
-        {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
-            svaralternativer: [
-                "___",
-                "___",
-                "___"
-            ],
-            riktige_svar: ["___"],
-            forklaring: "___"
-        },
-        {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
-            svaralternativer: [
-                "___",
-                "___",
-                "___"
-            ],
-            riktige_svar: ["___"],
-            forklaring: "___"
-        },
-        {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
-            svaralternativer: [
-                "___",
-                "___",
-                "___"
-            ],
-            riktige_svar: ["___"],
-            forklaring: "___"
-        },
-        {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
-            svaralternativer: [
-                "___",
-                "___",
-                "___"
-            ],
-            riktige_svar: ["___"],
-            forklaring: "___"
-        },
-        {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
-            svaralternativer: [
-                "___",
-                "___",
-                "___"
-            ],
-            riktige_svar: ["___"],
-            forklaring: "___"
-        },
-        {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
-            svaralternativer: [
-                "___",
-                "___",
-                "___"
-            ],
-            riktige_svar: ["___"],
-            forklaring: "___"
-        },
-        {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
-            svaralternativer: [
-                "___",
-                "___",
-                "___"
-            ],
-            riktige_svar: ["___"],
+            riktige_svar: ["Hvitveis"],
             forklaring: "___"
         }
     ]
