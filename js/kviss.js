@@ -214,6 +214,254 @@ $( document ).ready(function() {
             ]
         };
 
+        var quiz02 = {
+            title: "Kapittel 2 kviss",
+            q_and_a: [
+                {
+                    spm: "Hvor mange blomster ser du? ",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/05.2010_löwenzahn_3.jpg",
+                    bildetekst: "En gul blomst som er badet i solen. Foto:  Uwe H. Friese",
+                    svaralternativer: [
+                        "Ti ",
+                        "En ",
+                        "Veldig mange"
+                    ],
+                    riktige_svar: ["Veldig mange"],
+                    forklaring: "Den botaniske definisjonen på en blomst er forskjellig fra vanlig oppfatning."
+                },
+                {
+                    spm: "Hvorfor har løvetann fått navnet sitt? ",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_7474.jpg",
+                    bildetekst: "Grønne blader og gule blomster",
+                    svaralternativer: [
+                        "Fordi løvene spiser den",
+                        "Fordi bladene ser ut som tennene til løvene",
+                        "Fordi blomstene er farlige"
+                    ],
+                    riktige_svar: ["Fordi bladene ser ut som tennene til løvene"],
+                    forklaring: "Den har fått navnet sitt på grunn av hvordan den ser ut."
+                },
+                {
+                    spm: "Hvor mange blomster er det her? ",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_7473.jpg",
+                    bildetekst: "Grønn stilk og sett med tre grønne blader, med rosarøde blomster",
+                    svaralternativer: [
+                        "En",
+                        "Veldig mange",
+                        "Åtte"
+                    ],
+                    riktige_svar: ["Veldig mange"],
+                    forklaring: "Den botaniske definisjonen på en blomst er forskjellig fra vanlig oppfatning."
+                },
+                {
+                    spm: "Hva er pollen? ",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_9014.jpg",
+                    bildetekst: "Nærbilde av en hvit blomst med grønne tapper i midten og gule knopper som vokser fra tynne stilker",
+                    svaralternativer: [
+                        "En by i Polen",
+                        "Små korn i hann-blomsten",
+                        "En bolle med rosiner"
+                    ],
+                    riktige_svar: ["En bolle med rosiner"],
+                    forklaring: "Pollen er noe som vi kan finne i blomster, som gjør at planter kan få barn (frø). Noen personer er allergisk mot forskjellig pollen, og får rennende nese av det."
+                },
+                {
+                    spm: "Hva er å pollinere?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/krokus_verdal_kap1.jpg",
+                    bildetekst: "En humle dekket med gult støv som sitter på et lilla begerblad inne i en blomst",
+                    svaralternativer: [
+                        "Å ta pollen fra hann-blomsten over på hunnblomsten",
+                        "Å reise til Nordpolen",
+                        "Å danse polka"
+                    ],
+                    riktige_svar: ["Å ta pollen fra hann-blomsten over på hunnblomsten"],
+                    forklaring: "Plantene trenger hjelp fra insekter for å bli pollinert (befruktet). Det gjør at plantene kan lage frukt og frø."
+                },
+                {
+                    spm: "Hvem pollinerer rødkløver? ",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_7473.jpg",
+                    bildetekst: "Grønn stilk og sett med tre grønne blader, med rosarøde blomster",
+                    svaralternativer: [
+                        "Revene",
+                        "Humlene",
+                        "Fuglene"
+                    ],
+                    riktige_svar: ["Humlene"],
+                    forklaring: "For å pollinere må de inn i blomsten og de må besøke mange blomster. Da må de være små, og helst ganske hårete."
+                },
+                {
+                    spm: "Hva er dette? ",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_7473_v2.jpg",
+                    bildetekst: "En grønn belg som har grønne kuler inni",
+                    svaralternativer: [
+                        "En grønn banan",
+                        "Bæsjen til en elg",
+                        "En belg med erter"
+                    ],
+                    riktige_svar: ["En belg med erter"],
+                    forklaring: "Kan vi spise det?"
+                },
+                {
+                    spm: "Hva er hummus laget av?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/Hummus.jpg",
+                    bildetekst: "En hvit tallerken med lefser, og en liten skål med kremaktig lysebeige innhold. Oppå er det drysset kanel, og den er pyntet med litt persille. Foto: Popo le Chien",
+                    svaralternativer: [
+                        "Mus med humør",
+                        "Humler",
+                        "Kikerter"
+                    ],
+                    riktige_svar: ["Kikerter"],
+                    forklaring: "Humus er en matrett"
+                },
+                {
+                    spm: "Hva er nektar?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/nakke.png",
+                    bildetekst: "Hode og nakken til en voksen mann, sett bakfra",
+                    svaralternativer: [
+                        "Et barn som nekter mye",
+                        "Søt saft i blomsten",
+                        "En nakke"
+                    ],
+                    riktige_svar: ["Søt saft i blomsten"],
+                    forklaring: "På bildet er det en nakke vi ser, men det er ikke svaret på spørsmålet."
+                },
+                {
+                    spm: "Hva er gulrot?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_0748_v3.jpg",
+                    bildetekst: "En gulorange rot med grønne blader",
+                    svaralternativer: [
+                        "En gul blyant",
+                        "Ei pølse av gull",
+                        "Ei rot vi kan spise"
+                    ],
+                    riktige_svar: ["Ei rot vi kan spise"],
+                    forklaring: "En gulrot er en rot som er gul (eller litt orange)"
+                },
+                {
+                    spm: "Hva kan vi lage av soyabønner?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/soyabønner_belg.jpg",
+                    bildetekst: "Gulgrønne kuler inne i hårete belger",
+                    svaralternativer: [
+                        "Middag",
+                        "Sofa",
+                        "Kokosboller"
+                    ],
+                    riktige_svar: ["Middag"],
+                    forklaring: "Soyabønner kan brukes til forskjellig mat."
+                },
+                {
+                    spm: "Soya har mye av noe. Hva er det?",
+                    bilde:"https://lumbrikus.no/wp-content/uploads/Marit_bjørgen.jpg",
+                    bildetekst: "Ei som går på ski i full fart. Foto: Marit Bjørgen. Sterk.",
+                    svaralternativer: [
+                        "Pepper",
+                        "Sukker",
+                        "Proteiner som lager muskler"
+                    ],
+                    riktige_svar: ["Proteiner som lager muskler"],
+                    forklaring: "Idrettsutøvere trenger masse proteinter for å bygge muskler."
+                },
+                {
+                    spm: "Hvor vokser epler?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_0747_v4.jpg",
+                    bildetekst: "En grønn, nesten rund frukt, med en brungrønn stilk",
+                    svaralternativer: [
+                        "Nede i jorda.",
+                        "På bakken",
+                        "På trær"
+                    ],
+                    riktige_svar: ["På trær"],
+                    forklaring: "Epler vokser på epletrær."
+                },
+                {
+                    spm: "Hvor mye kan et bjørketre drikke på en varm sommerdag?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/bjørkeskog.jpg",
+                    bildetekst: "En skog med mange trær som har hvite og sorte stammer, og mange små grønne blader",
+                    svaralternativer: [
+                        "1 liter som en melkekartong",
+                        "50 liter",
+                        "400 liter"
+                    ],
+                    riktige_svar: ["400 liter"],
+                    forklaring: "Trærne drikker ganske mye vann."
+                },
+                {
+                    spm: "Når er våren?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/eh_NAT_8619.jpg",
+                    bildetekst: "En gul blomst som er dekket av iskrystaller",
+                    svaralternativer: [
+                        "Mellom sommer og høst",
+                        "Mellom høst og vinter",
+                        "Mellom vinter og sommer"
+                    ],
+                    riktige_svar: ["Mellom vinter og sommer"],
+                    forklaring: "I Norge har vi vår ca i april - juni. Den kommer til forskjellig tid forskjellige steder i landet."
+                },
+                {
+                    spm: "Hva er tegn på vår?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/istapper.jpg",
+                    bildetekst: "Store istapper som henger ned. Foto: max pixel",
+                    svaralternativer: [
+                        "Hestehov",
+                        "Snøen smelter",
+                        "Det blir varmere ute"
+                    ],
+                    riktige_svar: ["Hestehov"],
+                    riktige_svar: ["Snøen smelter"],
+                    riktige_svar: ["Det blir varmere ute"],
+                    forklaring: "Alle er riktig!"
+                },
+                {
+                    spm: "Hva er dette?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/Vaccinium_myrtillus2_ies.jpg",
+                    bildetekst: "En Rosa, grønn og orange kule med en åpning og noe inni. Foto:  Frank Vincentz",
+                    svaralternativer: [
+                        "En ballong på tivoli",
+                        "Blomsten til blåbær",
+                        "Ei fin lue til baby"
+                    ],
+                    riktige_svar: ["Blomsten til blåbær"],
+                    forklaring: "Bildet er et nærbilde av blåbærblomsten."
+                },
+                {
+                    spm: "Hva er dette?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_0733_v2.jpg",
+                    bildetekst: "En liten fugl med tynn stjert som er hvit, sort og grå og har sort nebb og sorte ben.",
+                    svaralternativer: [
+                        "Ørn",
+                        "Linerle",
+                        "Høne"
+                    ],
+                    riktige_svar: ["Linerle"],
+                    forklaring: "Linerla kan vi ofte se hoppende rundt og den flyr som en bølge."
+                },
+                {
+                    spm: "Hva er det inni kjølen?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/2017/10/Oregon_sugar_pod_II_bloom-2012.jpg",
+                    bildetekst: "Grønne blader og en hvit blomst. Foto: Rob Duval   CC BY-SA 3.0",
+                    svaralternativer: [
+                        "En liten båt",
+                        "Nektar og støvbærere",
+                        "En liten hvit fugl"
+                    ],
+                    riktige_svar: ["Nektar og støvbærere"],
+                    forklaring: "Kjølen er det som er inni blomsten"
+                },
+                {
+                    spm: "Hva er dette?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_7472.jpg",
+                    bildetekst: "En hvit blomst med tynne, sprikende blader",
+                    svaralternativer: [
+                        "Blåveis",
+                        "Hvitveis",
+                        "Hestehov"
+                    ],
+                    riktige_svar: ["Hvitveis"],
+                    forklaring: "Hvitveisen ser vi ofte om våren på bakken under trærne."
+                }
+            ]
+        };        
+
         var quiz06 = {
             title: "Kapittel 6 kviss",
             q_and_a: [
@@ -415,6 +663,7 @@ $( document ).ready(function() {
 
         /* Add the different quizzies in one array */
         quizzies[1] = quiz01;
+        quizzies[2] = quiz02;
         quizzies[6] = quiz06;
 
         /* shared variables to the quiz script */

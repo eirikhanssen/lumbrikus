@@ -10,7 +10,7 @@
  * @version 1.0
  */
 get_header(); 
-$quiz_number = 6;
+$quiz_number = lumbrikus_get_chapter_num();
 ?>
 <?php echo lumbrikus_internal_chapter_menu(1); ?>
 <!-- BEGIN PAGE -->	
