@@ -3,7 +3,7 @@ var kviss02 = {
     q_and_a: [
         {
             spm: "Hvor mange blomster ser du? ",
-            bilde: "https://no.wikipedia.org/wiki/Vanlig_l%C3%B8vetann#/media/File:05.2010_l%C3%B6wenzahn_3.jpg",
+            bilde: "https://lumbrikus.no/wp-content/uploads/05.2010_löwenzahn_3.jpg",
             bildetekst: "Foto:  Uwe H. Friese",
             svaralternativer: [
                 "Ti ",
@@ -15,7 +15,7 @@ var kviss02 = {
         },
         {
             spm: "Hvorfor har løvetann fått navnet sitt? ",
-            bilde: "https://lumbrikus.no/media/img/NAT_7474",
+            bilde: "https://lumbrikus.no/wp-content/uploads/NAT_7474.jpg",
             bildetekst: "___",
             svaralternativer: [
                 "Fordi løvene spiser den",
@@ -27,7 +27,7 @@ var kviss02 = {
         },
         {
             spm: "Hvor mange blomster er det her? ",
-            bilde: "https://lumbrikus.no/media/img/NAT_7473.jpg",
+            bilde: "https://lumbrikus.no/wp-content/uploads/NAT_7473.jpg",
             bildetekst: "___",
             svaralternativer: [
                 "En",
@@ -39,7 +39,7 @@ var kviss02 = {
         },
         {
             spm: "Hva er pollen? ",
-            bilde: "(NAT_9014)",
+            bilde: "https://lumbrikus.no/wp-content/uploads/NAT_9014.jpg",
             bildetekst: "___",
             svaralternativer: [
                 "En by i Polen",
@@ -51,7 +51,7 @@ var kviss02 = {
         },
         {
             spm: "Hva er å pollinere?",
-            bilde: "https://lumbrikus.no/media/img/___",
+            bilde: "https://lumbrikus.no/wp-content/uploads/krokus_verdal_kap1.jpg",
             bildetekst: "___",
             svaralternativer: [
                 "Å ta pollen fra hann-blomsten over på hunnblomsten",
@@ -63,7 +63,7 @@ var kviss02 = {
         },
         {
             spm: "Hvem pollinerer rødkløver? ",
-            bilde: "https://lumbrikus.no/media/img/___",
+            bilde: "https://lumbrikus.no/wp-content/uploads/NAT_7473.jpg",
             bildetekst: "___",
             svaralternativer: [
                 "Revene",
@@ -75,7 +75,7 @@ var kviss02 = {
         },
         {
             spm: "Hva er dette? ",
-            bilde: "Svetlana 7473_v2 (den andre delen av bildet er klipt vekk)",
+            bilde: "https://lumbrikus.no/wp-content/uploads/NAT_7473_v2.jpg",
             bildetekst: "___",
             svaralternativer: [
                 "En grønn banan",
@@ -87,7 +87,7 @@ var kviss02 = {
         },
         {
             spm: "Hva er hummus laget av?",
-            bilde: "https://en.wikipedia.org/wiki/Hummus#/media/File:Houmous.jpg",
+            bilde: "https://lumbrikus.no/wp-content/uploads/Hummus.jpg",
             bildetekst: "Foto: Popo le Chien",
             svaralternativer: [
                 "Mus med humør",
@@ -99,7 +99,7 @@ var kviss02 = {
         },
         {
             spm: "Hva er nektar?",
-            bilde: "https://lumbrikus.no/media/img/___",
+            bilde: "https://lumbrikus.no/wp-content/uploads/nakke.png",
             bildetekst: "??????",
             svaralternativer: [
                 "Et barn som nekter mye",
@@ -111,7 +111,7 @@ var kviss02 = {
         },
         {
             spm: "Hva er gulrot?",
-            bilde: "Svetlana 0748_v3",
+            bilde: "https://lumbrikus.no/wp-content/uploads/NAT_0748_v3.jpg",
             bildetekst: "___",
             svaralternativer: [
                 "En gul blyant",
@@ -123,7 +123,7 @@ var kviss02 = {
         },
         {
             spm: "Hva kan vi lage av soyabønner?",
-            bilde: "https://lumbrikus.no/media/img/___",
+            bilde: "https://lumbrikus.no/wp-content/uploads/soyabønner_belg.jpg",
             bildetekst: "___",
             svaralternativer: [
                 "Middag",
@@ -135,7 +135,7 @@ var kviss02 = {
         },
         {
             spm: "Soya har mye av noe. Hva er det?",
-            bilde:"https://commons.wikimedia.org/wiki/Category:Marit_Bj%C3%B8rgen#/media/File:Marit_Bj%C3%B8rgen_2017_02.jpg",
+            bilde:"https://lumbrikus.no/wp-content/uploads/Marit_bjørgen.jpg",
             bildetekst: "Foto: Marit Bjørgen. Sterk.",
             svaralternativer: [
                 "Pepper",
@@ -146,8 +146,8 @@ var kviss02 = {
             forklaring: "___"
         },
         {
-            spm: "___",
-            bilde: "(NAT_0747_v3)",
+            spm: "Hvor vokser epler?",
+            bilde: "https://lumbrikus.no/wp-content/uploads/NAT_0747_v4.jpg",
             bildetekst: "___",
             svaralternativer: [
                 "Nede i jorda.",
@@ -159,7 +159,7 @@ var kviss02 = {
         },
         {
             spm: "Hvor mye kan et bjørketre drikke på en varm sommerdag?",
-            bilde: "https://commons.wikimedia.org/wiki/Betula#/media/File:Betula_Forest.jpg",
+            bilde: "https://lumbrikus.no/wp-content/uploads/bjørkeskog.jpg",
             bildetekst: "___",
             svaralternativer: [
                 "1 liter som en melkekartong",
@@ -171,7 +171,7 @@ var kviss02 = {
         },
         {
             spm: "Når er våren?",
-            bilde: "(NAT_8619)",
+            bilde: "https://lumbrikus.no/wp-content/uploads/eh_NAT_8619.jpg",
             bildetekst: "___",
             svaralternativer: [
                 "Mellom sommer og høst",
@@ -183,7 +183,7 @@ var kviss02 = {
         },
         {
             spm: "Hva er tegn på vår?",
-            bilde: "http://maxpixel.freegreatpicture.com/Frozen-Snow-Winter-Water-Ice-Cold-Icicle-Ice-Age-1123948",
+            bilde: "https://lumbrikus.no/wp-content/uploads/istapper.jpg",
             bildetekst: "Foto: max pixel",
             svaralternativer: [
                 "Hestehov",
@@ -197,7 +197,7 @@ var kviss02 = {
         },
         {
             spm: "Hva er dette?",
-            bilde: "https://commons.wikimedia.org/wiki/Vaccinium_myrtillus#/media/File:Vaccinium_myrtillus2_ies.jpg",
+            bilde: "https://lumbrikus.no/wp-content/uploads/Vaccinium_myrtillus2_ies.jpg",
             bildetekst: "Foto:  Frank Vincentz",
             svaralternativer: [
                 "En ballong på tivoli",
@@ -209,7 +209,7 @@ var kviss02 = {
         },
         {
             spm: "Hva er dette?",
-            bilde: "Svetlana _0733_v2",
+            bilde: "https://lumbrikus.no/wp-content/uploads/NAT_0733_v2.jpg",
             bildetekst: "___",
             svaralternativer: [
                 "Ørn",
@@ -221,7 +221,7 @@ var kviss02 = {
         },
         {
             spm: "Hva er det inni kjølen?",
-            bilde: "https://commons.wikimedia.org/wiki/Category:Pisum_sativum_(flowers)#/media/File:Oregon_sugar_pod_II_bloom-2012.jpg",
+            bilde: "https://lumbrikus.no/wp-content/uploads/2017/10/Oregon_sugar_pod_II_bloom-2012.jpg",
             bildetekst: "Foto: Rob Duval   CC BY-SA 3.0",
             svaralternativer: [
                 "En liten båt",
@@ -233,7 +233,7 @@ var kviss02 = {
         },
         {
             spm: "Hva er dette?",
-            bilde: "NAT_7472",
+            bilde: "https://lumbrikus.no/wp-content/uploads/NAT_7472.jpg",
             bildetekst: "___",
             svaralternativer: [
                 "Blåveis",
