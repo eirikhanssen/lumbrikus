@@ -54,7 +54,7 @@ function lumbrikus_load_scripts() {
 	// wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.6', 'all' );
 	wp_enqueue_style( 'normalize', get_template_directory_uri() . '/css/normalize.css', array(), '7.0.0', 'all' );
 	wp_enqueue_style( 'googlefonts', 'https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Roboto', array(), '0.0.5', 'all' );
-	wp_enqueue_style( 'lumbrikus', get_template_directory_uri() . '/css/lumbrikus.css', array(), '1.1.0', 'all' );
+	wp_enqueue_style( 'lumbrikus', get_template_directory_uri() . '/css/lumbrikus.css', array(), '1.1.1', 'all' );
 	
 	/* register scripts */
 	lumbrikus_include_custom_jquery();
@@ -70,7 +70,7 @@ function lumbrikus_load_scripts() {
 
 	if( is_page( 'kort' ) || is_page( 'lang' ) ) {
 		// enqueue js and css for text and audio playback
-		wp_enqueue_style( 'mediasyncCSS', '/css/mediasync.css', array(), '0.0.7', 'all' );
+		wp_enqueue_style( 'mediasyncCSS', '/css/mediasync.css', array(), '0.0.8', 'all' );
 		wp_enqueue_style( 'mejsCSS', '/lib/mediaelement/build/mediaelementplayer.css', array(), '4.2.6', 'all' );
 		wp_enqueue_script( 'mejs', '/lib/mediaelement/build/mediaelement-and-player.js', false, '4.2.6', true);
 		wp_enqueue_script( 'mediasyncJS', '/js/mediasync.js', false, '0.9.0', true);
