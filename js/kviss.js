@@ -406,9 +406,7 @@ $( document ).ready(function() {
                         "Snøen smelter",
                         "Det blir varmere ute"
                     ],
-                    riktige_svar: ["Hestehov"],
-                    riktige_svar: ["Snøen smelter"],
-                    riktige_svar: ["Det blir varmere ute"],
+                    riktige_svar: ["Hestehov", "Snøen smelter", "Det blir varmere ute"],
                     forklaring: "Alle er riktig!"
                 },
                 {
