@@ -1,5 +1,10 @@
 /* typography */
 
+main#kviss {
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
 .kviss fieldset::after,
 .kviss fieldset legend {
     border: 2px solid rgb(106, 140, 180);
@@ -70,7 +75,7 @@
     border: .5rem solid rgb(46, 46, 46);
     margin-bottom: 0em;
     box-sizing: border-box;
-   padding: .5rem;
+    padding: .5rem;
     
  
 }
@@ -163,9 +168,7 @@ button.sjekk {
 }
 
 .kviss input:checked ~ .alternativ:hover {
-
-    background: rgb(135, 230, 40);
-    /*background: rgb(201, 255, 51);*/
+  /*  background: rgb(135, 230, 40);*/
     background: rgb(64, 210, 255);
 }
 
@@ -206,8 +209,6 @@ button.sjekk {
     display: block;
 }
 
-
-
 .quiz-part nav.quiz-nav {
     display: flex;
     justify-content: center;
@@ -239,9 +240,6 @@ button.sjekk {
 }
 
 a[disabled] {opacity: 0.2; pointer-events: none; cursor: default;}
-
-
-
 
 .quiz-part button.sjekk {
     display: block;
@@ -298,21 +296,19 @@ a[disabled] {opacity: 0.2; pointer-events: none; cursor: default;}
 }
 
 .kviss_start {
-    height: 6rem;
-    width: 20rem;
+    padding: .5rem 1rem;
     font-size: 3rem;
     color: white;
-    background:magenta;
+    background: orangered;
     border: none;
     border-radius:.25em;
     display: block;
     margin: 1em auto;
-    text-shadow: 0 0 .25em black;
 }
 
 #kviss-totalt-riktige, 
 #kviss-totalt-mulige {
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: bold;
     position: relative;
     bottom: -1.5rem;
@@ -320,26 +316,29 @@ a[disabled] {opacity: 0.2; pointer-events: none; cursor: default;}
 
 #kviss-scoreboard {
     text-align: center;
-    border: 10px dotted magenta;
     border-radius: 1em;
     margin-bottom: 10em;
+    padding-top:  1rem;
 }
 
 #kviss-scoreboard h2 {
-    font-size: 4rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 #kviss-poengsum-prosent {
     margin: 0;
-    font-size: 10rem;
+    font-size: 9rem;
     font-weight: bold;
+    line-height: 9rem;
+    margin-bottom: 1rem;
 }
 @media screen and (orientation: portrait) {
     #kviss-poengsum-prosent {
         font-size: 25vw;
     }
 }
-.kviss-ferdig {font-size: 4rem; line-height: 8rem; margin: 0;}
+.kviss-ferdig {font-size: 3rem;line-height: 4rem;margin: 0;margin-bottom: 2rem;}
 
 #kviss fieldset+article {
     margin-top: 8em;

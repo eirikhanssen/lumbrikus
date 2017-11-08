@@ -691,7 +691,7 @@ $( document ).ready(function() {
         }
 
         function kviss_start_knapp() {
-            var button = $('<button class="kviss_start">Start kviss!</button>').click(function(e){
+            var button = $('<button class="kviss_start">Start ny kviss!</button>').click(function(e){
                 quiz_init("#kviss");
             });
             return button;
@@ -950,7 +950,7 @@ $( document ).ready(function() {
                 var scoreboard = $('<article id="kviss-scoreboard">\n\
     <h2>Gratulerer!</h2>\n\
     <p class="kviss-ferdig">\n\
-        <span class="kviss-score">Poengsum:</br>\n\
+        <span class="kviss-score">\n\
             <span id="kviss-totalt-riktige"></span> av \n\
             <span id="kviss-totalt-mulige"></span>\n\
         </span>\n\

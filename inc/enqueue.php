@@ -64,13 +64,13 @@ function lumbrikus_load_scripts() {
 	//wp_enqueue_script( 'lumbrikus', get_template_directory_uri() . '/js/lumbrikus.js', array('jquery'), '1.0.0', true );
 
 	if( is_page( 'kviss' ) ) {
-		wp_enqueue_style( 'kviss', '/css/kviss.css', array(), '0.0.2', 'all' );
-		wp_enqueue_script( 'kviss-js', '/js/kviss.js', array('jquery'), '0.1.0', true );
+		wp_enqueue_style( 'kviss', '/css/kviss.css', array(), '0.0.5', 'all' );
+		wp_enqueue_script( 'kviss-js', '/js/kviss.js', array('jquery'), '0.1.2', true );
 	}
 
 	if( is_page( 'kort' ) || is_page( 'lang' ) ) {
 		// enqueue js and css for text and audio playback
-		wp_enqueue_style( 'mediasyncCSS', '/css/mediasync.css', array(), '0.0.8', 'all' );
+		wp_enqueue_style( 'mediasyncCSS', '/css/mediasync.css', array(), '0.0.9', 'all' );
 		wp_enqueue_style( 'mejsCSS', '/lib/mediaelement/build/mediaelementplayer.css', array(), '4.2.6', 'all' );
 		wp_enqueue_script( 'mejs', '/lib/mediaelement/build/mediaelement-and-player.js', false, '4.2.6', true);
 		wp_enqueue_script( 'mediasyncJS', '/js/mediasync.js', false, '0.9.0', true);

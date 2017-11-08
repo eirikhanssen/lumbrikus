@@ -191,7 +191,8 @@ body.primary_lang_ti .audio_and_text.ti {
 #lang_select {
     position: relative;
     display: block;
-    height: 7rem;
+    height: 4em;
+    margin-top: 2em;
 }
 
 #lang_select fieldset {
@@ -202,7 +203,7 @@ body.primary_lang_ti .audio_and_text.ti {
     transform: translate(-.5rem, 0);
     width: auto;
     font-family: Arial, sans-serif;
-    font-size: .75em;
+    font-size: .5em;
     border-radius: .25em;
     text-align: center;
     }
