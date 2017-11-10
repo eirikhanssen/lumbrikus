@@ -53,9 +53,7 @@ article {
     border-radius: .25rem;
 }
 
-.key p {margin-top:0; margin-bottom:0;}
-
-.key p+p {margin-top: .3em;}
+.key p {margin-top:0; margin-bottom:.75em;}
 
 /*hide and show players*/
 
