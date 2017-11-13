@@ -7,7 +7,7 @@ $( document ).ready(function() {
 		$('body').attr('data-primary-lang', primary_language.replace(/.+?_([^_]+)$/g,'$1'));
 		$('body').addClass(primary_language);
 		$('body').addClass(secondary_language);
-		$('#lang_select_form').change(function(e){
+		$('fieldset').change(function(e){
 			var target = e.target;
 			var name = $(target).attr('name');
 			var input_id = $(target).attr('id');
@@ -33,6 +33,10 @@ $( document ).ready(function() {
 		$('.langMirrorBtn').on("click", function(){
 			$('#' + $(this).attr('data-input')).click();
 			//console.log($(this));
+		});
+
+		$('#btn-maximize, #btn-minimize').on("click", function(){
+			$('body').toggleClass('fullscreen');
 		});
 	}
 });

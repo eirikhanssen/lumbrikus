@@ -271,41 +271,81 @@ function lumbrikus_internal_chapter_menu($lvl) {
 function lumbrikus_audiosync_markup_begin() {
 	$output =<<<HTML
 <section id="lang_select">
-	<form id="lang_select_form">
-	<fieldset id="primary_language">
-		<legend>Velg språk</legend>
-		<label class="single" for="primary_lang_no"><span lang="no">Norsk</span><span lang="en">Norwegian</span>
-			<input id="primary_lang_no" type="radio" name="primary_language" checked="checked">
+	<fieldset class="langselect" id="primary_language">
+		<legend>språk</legend>
+		<label class="single" for="primary_lang_no">
+			<input id="primary_lang_no" type="radio" name="primary_language" checked="checked"/>
+			<div class="fakebutton" tabindex="0">
+				<span lang="no">Norsk</span>
+				<span lang="en">Norwegian</span>
+			</div>
 		</label>
-		<label for="primary_lang_ar"><span lang="ar" class="rtl">العربية</span><span lang="no">Arabisk</span>
-			<input id="primary_lang_ar" type="radio" name="primary_language">
+		<label for="primary_lang_ar">
+			<input id="primary_lang_ar" type="radio" name="primary_language"/>
+			<div class="fakebutton" tabindex="0">
+				<span lang="ar" class="rtl">العربية</span>
+				<span lang="no">Arabisk</span>
+			</div>
 		</label>
-		<label for="primary_lang_so"><span lang="so">SOOMAALI</span><span lang="no">Somali</span>
-			<input id="primary_lang_so" type="radio" name="primary_language">
+		<label for="primary_lang_so">
+			<input id="primary_lang_so" type="radio" name="primary_language"/>	
+			<div class="fakebutton" tabindex="0">
+				<span lang="so">SOOMAALI</span>
+				<span lang="no">Somali</span>
+			</div>
 		</label>
-		<label for="primary_lang_ti"><span lang="ti">ትግርኛ</span><span lang="no">Tigrinja</span>
-			<input id="primary_lang_ti" type="radio" name="primary_language">
+		<label for="primary_lang_ti">
+			<input id="primary_lang_ti" type="radio" name="primary_language"/>
+			<div class="fakebutton" tabindex="0">
+				<span lang="ti">ትግርኛ</span>
+				<span lang="no">Tigrinja</span>
+			</div>
+		</label>
+		<button class="maxmin" id="btn-maximize">
+			<svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-maximize"></use></svg>
+		</button>
+		<button class="maxmin" id="btn-minimize">
+			<svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-minimize"></use></svg>
+		</button>
+	</fieldset>
+	<fieldset class="langselect" id="secondary_language">
+		<legend>støttespråk</legend>
+		<label class="single" for="secondary_lang_no">
+			<input id="secondary_lang_no" type="radio" name="secondary_language" checked="checked"/>
+			<div class="fakebutton" tabindex="0">
+				<span lang="no">Norsk</span>
+				<span lang="en">Norwegian</span>
+			</div>
+		</label>
+		<label for="secondary_lang_ar">
+			<input id="secondary_lang_ar" type="radio" name="secondary_language"/>
+			<div class="fakebutton" tabindex="0">
+				<span lang="ar" class="rtl">العربية</span>
+				<span lang="no">Arabisk</span>
+			</div>
+		</label>
+		<label for="secondary_lang_so">
+			<input id="secondary_lang_so" type="radio" name="secondary_language"/>
+			<div class="fakebutton" tabindex="0">
+				<span lang="so">SOOMAALI</span>
+				<span lang="no">Somali</span>
+			</div>
+		</label>
+		<label for="secondary_lang_ti">
+			<input id="secondary_lang_ti" type="radio" name="secondary_language"/>
+			<div class="fakebutton" tabindex="0">
+				<span lang="ti">ትግርኛ</span>
+				<span lang="no">Tigrinja</span>
+			</div>
+		</label>
+		<label for="secondary_lang_img">
+			<input id="secondary_lang_img" type="radio" name="secondary_language"/>
+			<div class="fakebutton" tabindex="0">
+				<svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-image"></use></svg>
+			</div>
 		</label>
 	</fieldset>
-	<fieldset id="secondary_language">
-		<legend>Velg støttespråk</legend>
-		<label class="single" for="secondary_lang_no"><span lang="no">Norsk</span><span lang="en">Norwegian</span>
-			<input id="secondary_lang_no" type="radio" name="secondary_language" checked="checked">
-		</label>
-		<label for="secondary_lang_ar"><span lang="ar" class="rtl">العربية</span><span lang="no">Arabisk</span>
-			<input id="secondary_lang_ar" type="radio" name="secondary_language">
-		</label>
-		<label for="secondary_lang_so"><span lang="so">SOOMAALI</span><span lang="no">Somali</span>
-			<input id="secondary_lang_so" type="radio" name="secondary_language">
-		</label>
-		<label for="secondary_lang_ti"><span lang="ti">ትግርኛ</span><span lang="no">Tigrinja</span>
-			<input id="secondary_lang_ti" type="radio" name="secondary_language">
-		</label>
-		<label for="secondary_lang_none"><span>Ikke</span><span>valgt</span>
-			<input id="secondary_lang_none" type="radio" name="secondary_language">
-		</label>
-	</fieldset>
-	</form>
+	
 </section>
 HTML;
 	return $output;
@@ -314,14 +354,6 @@ HTML;
 function lumbrikus_audiosync_markup_end() {
 	$output=<<<HTML
 <div class="translation-container">
-	<div class="secondaryLangControls2">
-	<h2 class="secondary-controls2-title">Støttespråk</h2>
-		<button class="langMirrorBtn" data-input="secondary_lang_no"><span>&nbsp;</span><span>Norsk</span></button>
-		<button class="langMirrorBtn" data-input="secondary_lang_ar"><span lang="ar" class="rtl">العربية</span><span lang="no">Arabisk</span></button>
-		<button class="langMirrorBtn" data-input="secondary_lang_so"><span lang="so">SOOMAALI</span><span lang="no">Somali</span></button>
-		<button class="langMirrorBtn" data-input="secondary_lang_ti"><span lang="ti">ትግርኛ</span><span lang="no">Tigrinja</span></button>
-		<button class="langMirrorBtn" data-input="secondary_lang_none"><span>&nbsp;</span><span>Lukk</span> </button>
-	</div><!-- .secondaryLangControls2 -->	
 	<div id="translation"></div>
 </div><!-- .translation-container -->
 HTML;
