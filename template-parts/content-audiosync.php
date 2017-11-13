@@ -22,9 +22,7 @@
 <?php echo lumbrikus_audiosync_markup_begin(); ?>
 <!-- BEGIN THE CONTENT -->		
 
-		<?php
-			the_content();
-		?>
+		<?php the_content(); ?>
 
 <!-- END THE CONTENT -->		
 <?php echo lumbrikus_audiosync_markup_end(); ?>
