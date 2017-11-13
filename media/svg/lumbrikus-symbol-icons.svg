@@ -37,7 +37,7 @@
         <symbol id="icon-kapitler-mc" viewBox="-16 -16 32 32">
             <title>kapitler</title>
             <use xlink:href="#icon-bg"></use>
-            <g fill="black" style="fill: var(--color-dark, black;">
+            <g fill="black" style="fill: var(--color-dark, black);">
                 <use xlink:href="#kapittelbokser"></use>
             </g>
         </symbol>
@@ -850,6 +850,16 @@
 
         <symbol id="icon-maximize" viewBox="-16 -16 32 32" >
             <title>maiksimer</title>
+            <g fill="black">
+                <use xlink:href="#nw-arrow" transform="translate(-6.5,-6.5)"></use>
+                <use xlink:href="#nw-arrow" transform="translate(6.5,-6.5) rotate(90)"></use>
+                <use xlink:href="#nw-arrow" transform="translate(-6.5,6.5) rotate(-90)"></use>
+                <use xlink:href="#nw-arrow" transform="translate(6.5,6.5) rotate(180)"></use>
+            </g>
+        </symbol>
+
+        <symbol id="icon-maximize-mc" viewBox="-16 -16 32 32" >
+            <title>maiksimer</title>
             <g fill="black" style="fill: var(--color-dark, #000);">
                 <use xlink:href="#nw-arrow" transform="translate(-6.5,-6.5)"></use>
                 <use xlink:href="#nw-arrow" transform="translate(6.5,-6.5) rotate(90)"></use>
@@ -860,11 +870,39 @@
 
         <symbol id="icon-minimize" viewBox="-16 -16 32 32" >
             <title>minimer</title>
+            <g fill="black">
+                <use xlink:href="#nw-arrow" transform="translate(-12,-12) rotate(180)"></use>
+                <use xlink:href="#nw-arrow" transform="translate(12,-12) rotate(-90)"></use>
+                <use xlink:href="#nw-arrow" transform="translate(-12,12) rotate(90)"></use>
+                <use xlink:href="#nw-arrow" transform="translate(12,12) rotate(0)"></use>
+            </g>
+        </symbol>
+
+        <symbol id="icon-minimize-mc" viewBox="-16 -16 32 32" >
+            <title>minimer</title>
             <g fill="black" style="fill: var(--color-dark, #000);">
                 <use xlink:href="#nw-arrow" transform="translate(-12,-12) rotate(180)"></use>
                 <use xlink:href="#nw-arrow" transform="translate(12,-12) rotate(-90)"></use>
                 <use xlink:href="#nw-arrow" transform="translate(-12,12) rotate(90)"></use>
                 <use xlink:href="#nw-arrow" transform="translate(12,12) rotate(0)"></use>
+            </g>
+        </symbol>
+
+        <symbol viewBox="-16 -16 32 32" id="icon-image">
+            <title>image</title>
+            <g fill="black">
+                <path d="M-16,-14 v28 h32 v-28z M-14,-12 h28 v24 h-28z"></path>
+                <path d="M-13,8 v3 h26 v-7 l-8,-8 -8,10 -5,-4z"></path>
+                <circle r="2.5" cx="-7" cy="-5"></circle>
+            </g>
+        </symbol>
+
+        <symbol viewBox="-16 -16 32 32" id="icon-image-mc">
+            <title>image</title>
+            <g fill="black" style="fill: var(--color-dark, #000);">
+                <path d="M-16,-14 v28 h32 v-28z M-14,-12 h28 v24 h-28z"></path>
+                <path d="M-13,8 v3 h26 v-7 l-8,-8 -8,10 -5,-4z"></path>
+                <circle r="2.5" cx="-7" cy="-5"></circle>
             </g>
         </symbol>
 
