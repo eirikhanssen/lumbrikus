@@ -1,0 +1,70 @@
+:root {
+    --color-dark: rgb(22, 0, 95);
+    --color-medium: rgb(0, 174, 255);
+    --color-bright: rgb(199, 255, 236);
+    --color-icon-bg: #ffffff;
+    --color-icon-bg-stroke: red;
+}
+
+html {font-family: sans-serif; background: rgb(255, 255, 255);}
+.icon {
+    height: 3.5em;
+    width: 3.5em;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+.icon {margin:0;}
+.icons li {
+    font-family: "Open Sans Condensed", sans-serif;
+    display: inline-block;
+    margin: 5px;
+    font-size: 2em;
+}
+.icons {
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+.icons .icon, 
+.icons .icon-id {
+    display: block;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.icons li {
+    position: relative;
+}
+.icons li:hover span,
+.icons li:focus span {
+    background: rgb(255, 243, 138);
+}
+
+.icons li:hover::after,
+.icons li:focus::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: -6px;
+    bottom: -6px;
+    left: -6px;
+    right: -6px;
+    border: 4px solid darkorange;
+    border-radius: 4px;
+}
+.icon-id {font-size: .5em;}
+
+code { 
+    border: 1px solid #aaa;
+    background: #fafafa;
+    padding: 1em;
+    min-height: 2rem;
+    line-height: 2rem;
+    font-weight: bold; 
+    font-size: 1.25rem; 
+    color: darkred; 
+    display:block; 
+    margin: auto;
+    text-align: center;
+}

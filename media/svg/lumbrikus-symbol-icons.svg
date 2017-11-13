@@ -7,6 +7,10 @@
     <title>Lumbrikus ikoner (symbol)</title>
     <defs font-family="sans-serif">
 
+        <g id="nw-arrow">
+            <path d="M-16,-16 v13 l 5,-5 5.5,5.5 3,-3 -5.5,-5.5 5,-5z" transform="translate(6.5, 6.5)"></path>
+        </g>
+
         <symbol id="symbol-icon-bg" viewBox="-16 -16 32 32">
             <rect id="icon-bg"
             x="-15.5" y="-15.5" width="31" height="31" rx="3"
@@ -841,6 +845,26 @@
                 transform="translate(-4,-1) rotate(-11)">
             <text>?</text>
             <text stroke="black" stroke-width="0.5px">?</text>
+            </g>
+        </symbol>
+
+        <symbol id="icon-maximize" viewBox="-16 -16 32 32" >
+            <title>maiksimer</title>
+            <g fill="black" style="fill: var(--color-dark, #000);">
+                <use xlink:href="#nw-arrow" transform="translate(-6.5,-6.5)"></use>
+                <use xlink:href="#nw-arrow" transform="translate(6.5,-6.5) rotate(90)"></use>
+                <use xlink:href="#nw-arrow" transform="translate(-6.5,6.5) rotate(-90)"></use>
+                <use xlink:href="#nw-arrow" transform="translate(6.5,6.5) rotate(180)"></use>
+            </g>
+        </symbol>
+
+        <symbol id="icon-minimize" viewBox="-16 -16 32 32" >
+            <title>minimer</title>
+            <g fill="black" style="fill: var(--color-dark, #000);">
+                <use xlink:href="#nw-arrow" transform="translate(-12,-12) rotate(180)"></use>
+                <use xlink:href="#nw-arrow" transform="translate(12,-12) rotate(-90)"></use>
+                <use xlink:href="#nw-arrow" transform="translate(-12,12) rotate(90)"></use>
+                <use xlink:href="#nw-arrow" transform="translate(12,12) rotate(0)"></use>
             </g>
         </symbol>
 

@@ -1,0 +1,1 @@
+../media/svg/symbol-to-use.xsl

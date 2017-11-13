@@ -1,0 +1,1 @@
+../tools/refresh-test-symbols.py
