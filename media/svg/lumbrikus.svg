@@ -248,9 +248,9 @@
          </textPath>
       </text>
    </g>
-    <g opacity="0.9" letter-spacing=".3em">
-      <text x="-3" y="122" id="forside_start_bg"><tspan>s</tspan><tspan dy="-3">t</tspan><tspan dy="-3">a</tspan><tspan dy="3">r</tspan><tspan dy="3">t</tspan></text>
-      <text x="-3" y="122" id="forside_start"><tspan>s</tspan><tspan dy="-3">t</tspan><tspan dy="-3">a</tspan><tspan dy="3">r</tspan><tspan dy="3">t</tspan></text>
+    <g opacity="0.9" letter-spacing="3px">
+      <text x="-3" y="122" id="forside_start_bg">start</text>
+      <text x="-3" y="122" id="forside_start">start</text>
     </g> 
    </a></g>
    
