@@ -301,11 +301,9 @@ function lumbrikus_audiosync_markup_begin() {
 				<span lang="no">Tigrinja</span>
 			</div>
 		</label>
-		<button class="maxmin" id="btn-maximize">
-			<svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-maximize"></use></svg>
-		</button>
-		<button class="maxmin" id="btn-minimize">
-			<svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-minimize"></use></svg>
+		<button class="maxmin" id="btn-maxmin">
+			<svg class="icon maximize"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-maximize"></use></svg>
+			<svg class="icon minimize"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-minimize"></use></svg>
 		</button>
 	</fieldset>
 	<fieldset class="langselect" id="secondary_language">

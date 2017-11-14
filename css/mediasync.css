@@ -273,15 +273,15 @@ body.primary_lang_ti .audio_and_text.ti {
     font-size: .5rem;
 }
 
-#btn-minimize {
+#btn-maxmin .minimize {
     display:none;
 }
 
-.fullscreen #btn-maximize {
-    display:none;
+.fullscreen #btn-maxmin .minimize {
+    display: inline-block;
 }
-.fullscreen #btn-minimize {
-    display:inline-block;
+.fullscreen #btn-maxmin .maximize {
+    display:none;
 }
 
 #secondary_lang_img +.fakebutton,

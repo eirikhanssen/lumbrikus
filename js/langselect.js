@@ -30,13 +30,14 @@ $( document ).ready(function() {
 			$('body').addClass(input_id);
 		});
 
-		$('.langMirrorBtn').on("click", function(){
-			$('#' + $(this).attr('data-input')).click();
-			//console.log($(this));
+		$('#btn-maxmin').on("click", function(){
+			$('body').toggleClass('fullscreen');
 		});
 
-		$('#btn-maximize, #btn-minimize').on("click", function(){
-			$('body').toggleClass('fullscreen');
+		$('.fakebutton').on('keydown', function(e){
+			if(e.keyCode === 13 || e.keyCode === 32) {
+				e.target.click();
+			}
 		});
 	}
 });
