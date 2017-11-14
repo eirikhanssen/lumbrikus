@@ -23,7 +23,7 @@ $( document ).ready(function() {
 				$('body').removeClass('secondary_lang_no');
 				$('body').removeClass('secondary_lang_so');
 				$('body').removeClass('secondary_lang_ti');
-				$('body').removeClass('secondary_lang_none');
+				$('body').removeClass('secondary_lang_img');
 				$('body').attr('data-secondary-lang', newLang);
 			}
 			

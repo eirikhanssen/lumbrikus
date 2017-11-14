@@ -13,6 +13,7 @@ function time2sec(timestring) {
 }
 
 function updateCueSync(player, lang) {
+    //console.log('updateCuesync()');
     'use strict';
     if (lang === 'no') {
         var mptime = player.getCurrentTime();
@@ -108,6 +109,7 @@ function getCurrentCueId(player, lang) {
 }
 
 $( document ).ready(function() {
+    $('body').attr('data-current-key', 1);
     $('article.audio_and_text').each(function(){
 
         var lang = ($(this).attr('data-lang'));
@@ -117,7 +119,7 @@ $( document ).ready(function() {
         var that = this;
 
         function updateTextSync(){
-            //console.log('updateTextSync');
+            //console.log('updateTextSync()');
             currentPlayerKeys = $('article[data-lang='+lang+ '] .key');
             currentPlayerKeys.each(function(){
                 var currentCueId = getCurrentCueId(player,lang) || 1;

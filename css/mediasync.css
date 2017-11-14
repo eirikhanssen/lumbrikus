@@ -68,7 +68,7 @@ article {
     display: block;
 }
 
-.secondary_lang_none .translation-container {display: none;}
+.secondary_lang_img .translation-container .key {display: none;}
 
 .translation-container {
     position: fixed;
@@ -162,6 +162,8 @@ article {
     border-top: none;
     border-left: none;
 }
+
+
 
 .audio_and_text {display: none;}
 body.primary_lang_no .audio_and_text.no,
