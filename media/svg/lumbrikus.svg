@@ -29,7 +29,9 @@
        id="style840">
             /*<![CDATA[*/
 
-         .satellite text {
+         .satellite text,
+         #forside_start,
+         #forside_start_bg {
                text-anchor: middle; 
                font-family: sans-serif; 
                font-size: 26px;
@@ -40,6 +42,16 @@
                paint-order: stroke; 
                font-weight: bold;
                
+            }
+            #forside_start, #forside_start_bg {
+              font-size: 64px;
+            }
+
+            #forside_start_bg {
+              font-size: 64px;
+              stroke: rgba(84,3,53,0.5);
+              stroke-width: 6px;
+              paint-order: stroke;
             }
             
             .textbg, .textbg2, .senter_bg {
@@ -236,6 +248,10 @@
          </textPath>
       </text>
    </g>
+    <g opacity="0.9" letter-spacing=".3em">
+      <text x="-3" y="122" id="forside_start_bg"><tspan>s</tspan><tspan dy="-3">t</tspan><tspan dy="-3">a</tspan><tspan dy="3">r</tspan><tspan dy="3">t</tspan></text>
+      <text x="-3" y="122" id="forside_start"><tspan>s</tspan><tspan dy="-3">t</tspan><tspan dy="-3">a</tspan><tspan dy="3">r</tspan><tspan dy="3">t</tspan></text>
+    </g> 
    </a></g>
    
    
