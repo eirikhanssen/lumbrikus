@@ -20,13 +20,28 @@ article.audio_and_text .cues {
 .playing::after {
     content:"";
     position: absolute;
-    top:0;
-    left:-.25rem;
-    right:-.25rem;
-    bottom:0;
+    top:-.4em;
+    left:-.4em;
+    right:-.4em;
+    bottom:-.4em;
     background-color: #ffffd1;
-    border: 1px dashed gray;
+    border: 1px dashed rgb(185, 185, 185);
     z-index: -1;
+}
+.active-cue {
+    position:relative;
+    z-index: 1;
+}
+.active-cue::after {
+    content:"";
+    position: absolute;
+    left: -.2em;
+    right: -.2em;
+    top:-.2em;
+    bottom:-.2em;
+    background: rgba(255, 145, 0, 0.5);
+    z-index: -1;
+    border-radius: .25em;
 }
 
 article {

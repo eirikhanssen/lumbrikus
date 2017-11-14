@@ -1,14 +1,13 @@
 function time2sec(timestring) {
     // convert timestring to seconds
     'use strict';
-    var timereg = new RegExp(/(\d\d):(\d\d):([0-9.]+)/);
+    var timereg = new RegExp(/(\d+):(\d*[.]\d+)/);
     if (!timestring.match(timereg)) {
         return 0;
     }
-    var sec_in_hours = Number(timestring.replace(timereg, '$1')) * 3600;
-    var sec_in_minutes = Number(timestring.replace(timereg, '$2')) * 60;
-    var sec_in_seconds = Number(timestring.replace(timereg, '$3'));
-    var sec_total = sec_in_hours + sec_in_minutes + sec_in_seconds;
+    var sec_in_minutes = Number(timestring.replace(timereg, '$1')) * 60;
+    var sec_in_seconds = Number(timestring.replace(timereg, '$2'));
+    var sec_total = sec_in_minutes + sec_in_seconds;
     return sec_total;
 }
 
