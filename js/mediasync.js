@@ -67,6 +67,18 @@ var getCurrentEntryIndexFromTracks = function(player) {
     return 0;
 }
 
+function getCaptionCueFromPlayer(player, cueID) {
+    var tracksObj = player.tracks;
+    var captionsTrack;
+    for(i=0; i<tracksObj.length; i++) {
+        var currentTrack = tracksObj[i];
+        if (currentTrack.kind == "captions") {
+            captionsTrack = currentTrack;
+        }
+    }
+    return captionsTrack.entries[cueID].text;
+}
+
 var getCurrentSubtitleFromTracks = function (player, kind, srclang, entryIndex) {
     // tracksObj has several tracks
     // find the track that is the right kind, has the right srclang
@@ -108,13 +120,35 @@ function getCurrentCueId(player, lang) {
      }
 }
 
+function getPlayerFromLang(lang) {
+    var playerId = $('#audio-' + lang).closest('.mejs__container').attr('id');
+    var player = mejs.players[playerId];
+    return player;
+}
+
+function setTranslation (text) {
+    if ($('#translation').html() != text) {
+        $('#translation').html(text);
+    } if ($('body').attr('secondary_language') == 'img') {
+        $('#translation').html('');
+    }
+}
+
+function updateSecondaryLanguage(player) {
+    var secondary_language = $('body').attr('data-secondary-lang');
+    //var translatedCueText = getTranslatedSubtitle(player, secondary_language);
+    var translatedCueText = "";
+    if(secondary_language !== "img") {
+        translatedCueText = getTranslatedSubtitle(player, secondary_language);
+    }
+    setTranslation(translatedCueText);
+}
+
 $( document ).ready(function() {
     $('body').attr('data-current-key', 1);
     $('article.audio_and_text').each(function(){
-
         var lang = ($(this).attr('data-lang'));
-        var playerId = $('#audio-' + lang).closest('.mejs__container').attr('id');
-        var player = mejs.players[playerId];
+        var player = getPlayerFromLang(lang);
         var mediaEl = $(this).find('audio')[0];
         var that = this;
 
@@ -133,21 +167,17 @@ $( document ).ready(function() {
                         scrollTo($(this));
                     }
                 }
+                $('body').attr('data-current-key', currentCueId);
             });
-            var secondary_language = $('body').attr('data-secondary-lang');
-            //var translatedCueText = getTranslatedSubtitle(player, secondary_language);
-            var translatedCueText = getTranslatedSubtitle(player, secondary_language);
-            if ($('#translation').html() != translatedCueText) {
-                $('#translation').html(translatedCueText);
-            } if ($('body').attr('secondary_language') == 'none') {
-                $('#translation').html('');
-            }
 
+            updateSecondaryLanguage(player);
         }
+
         $(mediaEl).on("playing", function(){
             //console.log("playing: " + lang);
             updateTextSync();
             updateCueSync(player, lang);
+
         });
         $(mediaEl).on("pause", function(){
             //console.log("paused: " + lang);
@@ -165,7 +195,7 @@ $( document ).ready(function() {
             //console.log("volume of " + lang + ": " + player.getVolume());
         });
         $(mediaEl).on("timeupdate", function(){
-            //console.log("timeupdate of " + lang + ": " + player.getCurrentTime());
+            console.log("timeupdate of " + lang + ": " + player.getCurrentTime());
             updateTextSync();
             updateCueSync(player, lang);
             // finn ut hvilken cue som er aktiv
@@ -173,4 +203,24 @@ $( document ).ready(function() {
             // f.eks .sync-no .sync-so .sync-ar .sync-ti
         });
     });
+
+    function updateTranslationFromBodyAttrs() {
+        // perform the actual update after 1 ms to allow the body attributes to be updated first
+        window.setTimeout(function(){
+            var primary_lang = $('body').attr('data-primary-lang');
+            var secondary_lang = $('body').attr('data-secondary-lang');
+            var current_key = $('body').attr('data-current-key');
+            if(secondary_lang !== "img") {
+                var player = getPlayerFromLang(secondary_lang);
+                var captions = getCaptionCueFromPlayer(player, current_key-1);
+                setTranslation(captions);
+            }
+        },1,false);
+    }
+
+    $('#secondary_language .fakebutton').on('click', function(){
+        updateTranslationFromBodyAttrs();
+    });
+
+    updateTranslationFromBodyAttrs();
 });
