@@ -29,18 +29,7 @@ article.audio_and_text .cues {
     z-index: -1;
 }
 .active-cue {
-    position:relative;
-    z-index: 1;
-}
-.active-cue::after {
-    content:"";
-    position: absolute;
-    left: -.2em;
-    right: -.2em;
-    top:-.2em;
-    bottom:-.2em;
     background: rgba(255, 145, 0, 0.5);
-    z-index: -1;
     border-radius: .25em;
 }
 
