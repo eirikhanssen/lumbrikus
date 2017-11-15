@@ -1,7 +1,6 @@
 <?php 
 /**
- * Template Name: Snutter (underside)
- * Template Post Type: page
+ * The template for displaying "Kapittel hovedside" for each chapter
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -11,9 +10,11 @@
  * @version 1.0
  */
 get_header(); ?>
-<?php echo lumbrikus_internal_chapter_menu(2); ?>
-<!-- BEGIN NAMED PAGE SNUTTER UNDERSIDE -->	
-<main class="site-main page-snutter-underside underside">
+<?php echo lumbrikus_internal_chapter_menu(0); ?>
+
+<!-- BEGIN NAMED PAGE KAPITTEL HOVEDSIDE -->
+
+<main class="site-main kapittel-hovedside">
 
 		<?php 
 			
@@ -21,7 +22,7 @@ get_header(); ?>
 				
 				while( have_posts() ): the_post();
 
-					get_template_part( 'template-parts/content', 'snutt' );
+					get_template_part( 'template-parts/content', 'kapittel-hovedside' );
 				
 				endwhile;
 				
@@ -30,5 +31,5 @@ get_header(); ?>
 		?>
 	
 </main>
-<!-- END NAMED PAGE SNUTTER UNDERSIDE -->	
+<!-- END NAMED PAGE KAPITTEL HOVEDSIDE -->	
 <?php get_footer(); ?>

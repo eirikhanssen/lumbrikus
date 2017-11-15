@@ -1,7 +1,6 @@
 <?php 
 /**
- * Template Name: Filmer (underside)
- * Template Post Type: page
+ * The template for displaying "Filmer" child pages
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -12,7 +11,7 @@
  */
 get_header(); ?>
 <?php echo lumbrikus_internal_chapter_menu(2); ?>
-<!-- BEGIN NAMED PAGE FILMER UNDERSIDE -->	
+<!-- BEGIN PAGE FILMER UNDERSIDE -->	
 <main class="site-main page-filmer-underside underside">
 
 		<?php 
@@ -30,5 +29,5 @@ get_header(); ?>
 		?>
 	
 </main>
-<!-- END NAMED PAGE FILMER UNDERSIDE -->	
+<!-- END PAGE FILMER UNDERSIDE -->	
 <?php get_footer(); ?>

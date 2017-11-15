@@ -1,7 +1,6 @@
 <?php 
 /**
- * Template Name: Gjøre og lage (underside)
- * Template Post Type: page
+ * The template for displaying "Snutter" child pages
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -12,8 +11,8 @@
  */
 get_header(); ?>
 <?php echo lumbrikus_internal_chapter_menu(2); ?>
-<!-- BEGIN NAMED PAGE GJØRE OG LAGE UNDERSIDE -->	
-<main class="site-main page-gjore-og-lage-underside underside">
+<!-- BEGIN PAGE SNUTTER UNDERSIDE -->	
+<main class="site-main page-snutter-underside underside">
 
 		<?php 
 			
@@ -21,7 +20,7 @@ get_header(); ?>
 				
 				while( have_posts() ): the_post();
 
-					get_template_part( 'template-parts/content', 'gjore-og-lage-underside' );
+					get_template_part( 'template-parts/content', 'snutt' );
 				
 				endwhile;
 				
@@ -30,5 +29,5 @@ get_header(); ?>
 		?>
 	
 </main>
-<!-- END NAMED PAGE GJØRE OG LAGE UNDERSIDE -->	
+<!-- END PAGE SNUTTER UNDERSIDE -->	
 <?php get_footer(); ?>

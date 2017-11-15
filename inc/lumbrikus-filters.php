@@ -14,10 +14,45 @@ function lumbrikus_add_parent_slug_body_class( $classes ) {
 	if ( isset( $post ) && $post->post_parent ) {
 		$parent_slug = get_parent_slug( get_the_ID() );
 
-		$classes[] = $parent_slug . '-child';
+		$classes[] = $parent_slug . '-child ' . 'child-of-' . $parent_slug;
 	}
 	return $classes;
 }
 
 add_filter( 'body_class', 'lumbrikus_add_slug_body_class' );
 add_filter( 'body_class', 'lumbrikus_add_parent_slug_body_class' );
+
+add_filter( 'page_template', function ( $template )
+{
+	global $post;
+	
+	$locate_template = null;
+
+	if($post->post_parent == 0) {
+		// make sure top level pages aren't affected
+		return $template;
+	}
+
+	switch(get_post($post->post_parent)->post_name) {
+		case 'filmer':
+			$locate_template = locate_template( 'child-of-filmer.php' );
+		break;
+		case 'gjore-og-lage':
+			$locate_template = locate_template( 'child-of-gjore-og-lage.php' );
+		break;
+		case 'snutter':
+			$locate_template = locate_template( 'child-of-snutter.php' );
+		break;
+		case 'kapitler':
+		$locate_template = locate_template( 'child-of-kapitler--kapittel-hovedside.php' );
+	break;
+		default:
+			return $template;
+	}
+
+    // Check if our template was found, if not, bail
+    if ( !$locate_template )
+        return $template;
+
+    return $locate_template;
+});
