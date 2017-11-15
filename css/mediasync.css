@@ -31,6 +31,8 @@ article.audio_and_text .cues {
 .active-cue {
     background: rgba(255, 145, 0, 0.5);
     border-radius: .25em;
+    box-shadow: -.2em 0 0 rgba(255, 145, 0, 0.5),
+    .2em 0 0 rgba(255, 145, 0, 0.5);
 }
 
 article {
