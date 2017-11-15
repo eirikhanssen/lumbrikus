@@ -52,18 +52,22 @@ article.audio_and_text .cues {
 }
 
 /* low level sync to sentence or sub-sentence level */
+span[data-begin][data-end] {
+    padding-left: .2em;
+    padding-right: .2em;
+    margin-left: -.2em;
+    margin-right: -.2em;
+}
+
 .current-segment {
     background: #ffe92c;
     border-radius: .2em;
-    box-shadow: -.25em 0 0 #ffe92c,
-                 .25em 0 0 #ffe92c;
 }
 
 article {
     overflow-x: hidden;
     padding-bottom: 2rem;
 }
-
 
 .key p {margin-top:0; margin-bottom:.75em;}
 
