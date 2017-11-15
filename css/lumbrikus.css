@@ -359,11 +359,7 @@ body[class*="kapittel-hovedside"]::after {
     background: url(/media/img/11-farvel-bg.jpg);
 }
 
-
-
-/* unfinished */
 .page-footer {
-    display: static;
     position: relative;
     clear: both;
     font-size: 0.5rem;
@@ -592,7 +588,7 @@ figure.ord figcaption {
 }
 
 .internal-chapter-links li:hover {
-    transform:scale(1.2);
+    /*transform:scale(1.2);*/
 }
 
 @media screen and (min-width: 45em) {
@@ -619,7 +615,7 @@ figure.ord figcaption {
         margin-left: 3vw;
     }
     .internal-chapter-links li:hover {
-        transform:scale(1.35);
+        /*transform:scale(1.35);*/
     }
 }
 
@@ -674,7 +670,6 @@ figure.ord figcaption {
 }
 
 .internal-chapter-links span.linktext {
-    display: inline-block;
     padding: .25em .5em;
     top: calc(100% + .25em);
     left: 50%;
@@ -686,16 +681,12 @@ figure.ord figcaption {
     text-align: center;
     color:white;
     background-color: rgba(0, 0, 0, 0.75);
-    position: fixed;
+    position: absolute;
     box-sizing: content-box;
     white-space: pre;
     border-radius: .25em;
     
 }
-
-/*.internal-chapter-links span.linktext::before {
-    content:"Til ";
-}*/
 
 a:hover span.linktext,
 a:focus span.linktext {
@@ -734,4 +725,51 @@ a:focus span.linktext {
 .child-page-links.textimage a:focus figure {
     border-color: #999;
     background: #ffe;
+}
+
+body.kort li.kort span.linktext,
+body.lang li.lang span.linktext,
+body.kapitler-child li.hovedside span.linktext,
+body.let-og-finn li.let-og-finn span.linktext,
+body.ord li.ord span.linktext,
+body.gjore-og-lage li.gjore-og-lage span.linktext,
+body.gjore-og-lage-child li.gjore-og-lage span.linktext,
+body.filmer li.filmer span.linktext,
+body.filmer-child li.filmer span.linktext,
+body.snutter li.snutter span.linktext,
+body.snutter-child li.snutter span.linktext,
+body.kviss li.kviss span.linktext {
+    display:block;
+    animation:none;
+}
+
+body.kort li.kort,
+body.lang li.lang,
+body.kapitler-child li.hovedside,
+body.let-og-finn li.let-og-finn,
+body.ord li.ord,
+body.gjore-og-lage li.gjore-og-lage,
+body.gjore-og-lage-child li.gjore-og-lage,
+body.filmer li.filmer,
+body.filmer-child li.filmer,
+body.snutter li.snutter,
+body.snutter-child li.snutter,
+body.kviss li.kviss {
+    transform:scale(1);
+
+}
+
+body.kort li.kort a,
+body.lang li.lang a,
+body.kapitler-child li.hovedside a,
+body.let-og-finn li.let-og-finn a,
+body.ord li.ord a,
+body.gjore-og-lage li.gjore-og-lage a,
+body.gjore-og-lage-child li.gjore-og-lage a,
+body.filmer li.filmer a,
+body.filmer-child li.filmer a,
+body.snutter li.snutter a,
+body.snutter-child li.snutter a,
+body.kviss li.kviss a {
+    border-color: #4CAF50;
 }

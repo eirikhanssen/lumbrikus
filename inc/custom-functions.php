@@ -185,38 +185,49 @@ function lumbrikus_generate_link_LI($chapter, $lvl, $link){
 	$linktext = $link[1];
 	$xlinkns = 'xmlns:xlink="http://www.w3.org/1999/xlink" ';
 	$icon_fragment = "#icon-";
+	$li_class = "";
 	$icon_markup = '<svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg';
 
 	switch ($link[0]) {
 		case '':
-			$icon_fragment .= $chapter; 
+			$icon_fragment .= $chapter;
+			$li_class = "hovedside";
 		break;
 		case 'kort':
 			$icon_fragment .= 'kort-fortelling'; 
+			$li_class = "kort";
 		break;
 		case 'lang':
 			$icon_fragment .= 'lang-fortelling'; 
+			$li_class = "lang";
 		break;
 		case 'let-og-finn':
 			$icon_fragment .= 'let-og-finn'; 
+			$li_class = "let-og-finn";
 		break;
 		case 'ord':
-			$icon_fragment .= 'ord'; 
+			$icon_fragment .= 'ord';
+			$li_class = "ord"; 
 		break;
 		case 'gjore-og-lage':
 			$icon_fragment .= 'gjore-lage'; 
+			$li_class = "gjore-og-lage";
 		break;
 		case 'filmer':
-			$icon_fragment .= 'filmer'; 
+			$icon_fragment .= 'filmer';
+			$li_class = "filmer"; 
 		break;
 		case 'snutter':
-			$icon_fragment .= 'snutter'; 
+			$icon_fragment .= 'snutter';
+			$li_class = "snutter"; 
 		break;
 		case 'kviss':
 			$icon_fragment .= 'kviss'; 
+			$li_class = "kviss";
 		break;
 		case '../':
-		$icon_fragment .= 'kapitler'; 
+			$icon_fragment .= 'kapitler';
+			$li_class = "kapitler";
 		break;
 		default:
 			$icon_fragment .= 'lumbrikus';
@@ -224,9 +235,13 @@ function lumbrikus_generate_link_LI($chapter, $lvl, $link){
 
 	}
 
+	if($li_class != "") {
+		$li_class = ' class="' . $li_class . '"';
+	}
+
 	$icon_markup .= $icon_fragment . '"></use></svg>';
 
-	$output_LI = "    <li><a href=\"" . $href . "\" title=\"Til " . $linktext . "\">" . $icon_markup . "<span class=\"linktext\">" . $linktext . "</span></a></li>\n";
+	$output_LI = "    <li" . $li_class . "><a href=\"" . $href . "\" title=\"Til " . $linktext . "\">" . $icon_markup . "<span class=\"linktext\">" . $linktext . "</span></a></li>\n";
 	return $output_LI;
 }
 
