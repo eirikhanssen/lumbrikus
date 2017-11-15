@@ -575,6 +575,17 @@ figure.ord figcaption {
 .internal-chapter-links a {
     text-decoration: none;
     color: black;
+    position:relative;
+}
+
+.internal-chapter-links a:before {
+    content:"";
+    position:absolute;
+    top:-2.3em;
+    left:-.2em;
+    bottom:0;
+    right:-.2em;
+    background:transparent;
 }
 
 .internal-chapter-links a:focus .linktext,
@@ -585,7 +596,7 @@ figure.ord figcaption {
 .internal-chapter-links span.linktext {
     display: inline-block;
     padding: .1rem .25rem;
-    top: calc(100% + 1.3rem);
+    top: 100%;
     left: 50%;
     transform:translate(-50%,0);
     line-height: 1rem;
@@ -598,7 +609,6 @@ figure.ord figcaption {
     white-space: pre;
     border-radius: .5rem;
     min-width: 3rem;
-    
 }
 
 @keyframes linktext {
