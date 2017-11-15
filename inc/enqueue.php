@@ -69,13 +69,13 @@ function lumbrikus_load_scripts() {
 	}
 
 	if( is_page( 'kort' ) || is_page( 'lang' ) ) {
-		// enqueue js and css for text and audio playback
-		wp_enqueue_style( 'mediasyncCSS', '/css/mediasync.css', array(), '0.1.6', 'all' );
+		// enqueue js and css for text and audio playback/sync
+		// the order of enquing the scripts is significant - mejs needs to be enqueued before the other scripts
+		wp_enqueue_style( 'mediasyncCSS', '/css/mediasync.css', array(), '0.1.7', 'all' );
 		wp_enqueue_style( 'mejsCSS', '/lib/mediaelement/build/mediaelementplayer.css', array(), '4.2.6', 'all' );
 		wp_enqueue_script( 'mejs', '/lib/mediaelement/build/mediaelement-and-player.js', false, '4.2.6', true);
-		wp_enqueue_script( 'mediasyncJS', '/js/mediasync.js', false, '0.9.3', true);
+		wp_enqueue_script( 'mediasyncJS', '/js/mediasync.js', false, '0.9.4', true);
 		wp_enqueue_script( 'langselectJS', '/js/langselect.js', false, '0.9.3', true);
 	}	
-
 }
 add_action( 'wp_enqueue_scripts', 'lumbrikus_load_scripts' );

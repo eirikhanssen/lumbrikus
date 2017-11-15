@@ -2,37 +2,61 @@ body {
     overflow-x: hidden;
 }
 
+.audio_and_text {
+    color: #434343;
+    margin-left: .5rem;
+    width: calc(50% - 1rem);
+    padding: .5rem;
+    box-sizing:  border-box;
+    position:relative;
+    z-index:1;
+}
+
+.audio_and_text {display: none;}
+body.primary_lang_no .audio_and_text.no,
+body.primary_lang_ar .audio_and_text.ar,
+body.primary_lang_so .audio_and_text.so,
+body.primary_lang_ti .audio_and_text.ti {
+    display: block;
+}
+
 article.audio_and_text .cues {
     position: relative;
     padding: 0;
     font-size: 1rem;
+    
 }
 
 .key {
     display: block;
     box-sizing: border-box;
     line-height: 1.5;
+    margin: 0 .5rem;
 }
 
-.playing {
+.current-key {
     position: relative;
+    color: black;
 }
-.playing::after {
+.current-key::after {
     content:"";
     position: absolute;
     top:-.4em;
     left:-.4em;
     right:-.4em;
     bottom:-.4em;
-    background-color: #ffffd1;
-    border: 1px dashed rgb(185, 185, 185);
+    background-color: #e9fdff;
+    border: 1px solid #a1c2dc;
+    border-radius: .1em;
     z-index: -1;
 }
-.active-cue {
-    background: rgba(255, 145, 0, 0.5);
-    border-radius: .25em;
-    box-shadow: -.2em 0 0 rgba(255, 145, 0, 0.5),
-    .2em 0 0 rgba(255, 145, 0, 0.5);
+
+/* low level sync to sentence or sub-sentence level */
+.current-segment {
+    background: #ffe92c;
+    border-radius: .2em;
+    box-shadow: -.25em 0 0 #ffe92c,
+                 .25em 0 0 #ffe92c;
 }
 
 article {
@@ -40,24 +64,6 @@ article {
     padding-bottom: 2rem;
 }
 
-/* low level sync to sentence or sub-sentence level */
-.active-text-segment {
-    position: relative;
-    z-index: 1;
-}
-
-.active-text-segment::after {
-    content:"";
-    position: absolute;
-    top:-.2rem;
-    left:-.2rem;
-    right:-.2rem;
-    bottom:-.2rem;
-    background-color: #9dff57;
-    border: 1px solid #999;
-    z-index: -1;
-    border-radius: .25rem;
-}
 
 .key p {margin-top:0; margin-bottom:.75em;}
 
@@ -118,7 +124,7 @@ article {
     color: rgba(255, 0, 0, 0.349);
     width: auto;
     font-size: .3em;
-    content: "hastighetskontrol | språkvalg?";
+    content: "hastighetskontrol | sprÃ¥kvalg?";
 }
 
 .translation-container button span {display: block;}
@@ -167,23 +173,6 @@ article {
     right: 0;
     border-top: none;
     border-left: none;
-}
-
-
-
-.audio_and_text {display: none;}
-body.primary_lang_no .audio_and_text.no,
-body.primary_lang_ar .audio_and_text.ar,
-body.primary_lang_so .audio_and_text.so,
-body.primary_lang_ti .audio_and_text.ti {
-    display: block;
-}
-
-.audio_and_text {
-    width: 50%;
-    margin: 0;
-    padding: 0.5rem;
-    box-sizing:  border-box;
 }
 
 /* BEGIN Audio Player */
@@ -341,7 +330,6 @@ body.primary_lang_ti .audio_and_text.ti {
     margin-top: .25rem;
     background: rgb(70, 70, 70);
     border-radius: .25rem;
-    
 }
 
 .fakebutton:hover::before,

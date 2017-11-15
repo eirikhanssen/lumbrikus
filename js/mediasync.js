@@ -20,13 +20,13 @@ function updateCueSync(player, lang) {
         cues.each(function () {
             var cue_begin = time2sec($(this).attr('data-begin'));
             var cue_end = time2sec($(this).attr('data-end'));
-            if ($(this).hasClass('active-cue')) {
+            if ($(this).hasClass('current-segment')) {
                 if (mptime < cue_begin || mptime > cue_end){
-                    $(this).removeClass('active-cue');
+                    $(this).removeClass('current-segment');
                 }
             } else {
                 if (mptime >= cue_begin && mptime <= cue_end) {
-                    $(this).addClass('active-cue');
+                    $(this).addClass('current-segment');
                 }
             }
         });
@@ -157,12 +157,12 @@ $( document ).ready(function() {
             currentPlayerKeys.each(function(){
                 var currentCueId = getCurrentCueId(player,lang) || 1;
                 if ($(this).attr('data-key') != currentCueId) {
-                    if ($(this).hasClass('playing')) {
-                        $(this).removeClass('playing');
+                    if ($(this).hasClass('current-key')) {
+                        $(this).removeClass('current-key');
                     }
                 } else {
-                    if (!$(this).hasClass('playing')) {
-                        $(this).addClass('playing');
+                    if (!$(this).hasClass('current-key')) {
+                        $(this).addClass('current-key');
                         scrollTo($(this));
                     }
                 }
@@ -194,12 +194,14 @@ $( document ).ready(function() {
             //console.log("volume of " + lang + ": " + player.getVolume());
         });
         $(mediaEl).on("timeupdate", function(){
-            console.log("timeupdate of " + lang + ": " + player.getCurrentTime());
+            //console.log("timeupdate of " + lang + ": " + player.getCurrentTime());
+
+            // visualize which key is currently being played
+            // syncronize secondary_language text to primary_language text using keys (cue id)
             updateTextSync();
+
+            // visualize which sentence/part sentence is being played if there is a secondary layer of timings in span data-begin and data-end attributes.
             updateCueSync(player, lang);
-            // finn ut hvilken cue som er aktiv
-            // oppdater hvilken cue i andre språk som skal være aktiv/playing
-            // f.eks .sync-no .sync-so .sync-ar .sync-ti
         });
     });
 
