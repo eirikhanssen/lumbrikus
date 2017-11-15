@@ -11,7 +11,7 @@
  */
 get_header(); ?>
 <!-- BEGIN PAGE -->	
-<main class="site-main page-kapitler" role="main">
+<main class="site-main page-kapitler">
 
 		<?php 
 			

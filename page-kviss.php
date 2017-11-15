@@ -14,7 +14,7 @@ $quiz_number = lumbrikus_get_chapter_num();
 ?>
 <?php echo lumbrikus_internal_chapter_menu(1); ?>
 <!-- BEGIN PAGE -->	
-<main id="kviss" class="site-main page-kviss kviss" role="main" data-quiz-number="<?php echo $quiz_number; ?>">
+<main id="kviss" class="site-main page-kviss kviss" data-quiz-number="<?php echo $quiz_number; ?>">
 
 		<?php 
 			

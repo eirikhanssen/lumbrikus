@@ -13,7 +13,7 @@
  */
 echo "<!-- BEGIN FOOTER -->\n";
 ?>
-<footer class="page-footer" role="contentinfo">
+<footer class="page-footer">
 	<nav class="footer-nav">
 		<ul>
 			<li><a href="/til-laereren/">Til læreren</a></li>

@@ -17,7 +17,7 @@
 get_header(); ?>
 
 <!-- BEGIN PAGE -->	
-<main class="site-main page-default" role="main">
+<main class="site-main page-default">
 
 		<?php 
 			

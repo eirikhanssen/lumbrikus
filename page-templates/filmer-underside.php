@@ -13,7 +13,7 @@
 get_header(); ?>
 <?php echo lumbrikus_internal_chapter_menu(2); ?>
 <!-- BEGIN NAMED PAGE FILMER UNDERSIDE -->	
-<main class="site-main page-filmer-underside underside" role="main">
+<main class="site-main page-filmer-underside underside">
 
 		<?php 
 			

@@ -12,7 +12,7 @@
 get_header(); ?>
 <?php echo lumbrikus_internal_chapter_menu(1); ?>
 <!-- BEGIN PAGE -->	
-<main class="site-main page-ord" role="main">
+<main class="site-main page-ord">
 
 		<?php 
 			

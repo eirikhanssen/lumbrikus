@@ -19,11 +19,9 @@
 	</header><!-- .entry-header -->
 	<div class="entry-content">
 
-<!-- BEGIN THE CONTENT -->		
+<!-- BEGIN THE CONTENT -->
 
-		<?php
-			the_content();
-		?>
+<?php the_content(); ?>
 
 <!-- END THE CONTENT -->		
 

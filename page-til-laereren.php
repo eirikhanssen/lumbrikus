@@ -12,7 +12,7 @@
 get_header(); ?>
 
 <!-- BEGIN PAGE -->	
-<main class="site-main page-til-laereren" role="main">
+<main class="site-main page-til-laereren">
 
 		<?php 
 			
