@@ -46,7 +46,7 @@ $( document ).ready(function() {
                 {
                     spm: "Hvem er dette?",
                     bilde: "/media/img/kviss_hen.jpg",
-                    bildetekst: "Hvem har rødt hår, lilladrakt, grønt ansikt og katte-ører. ",
+                    bildetekst: "Hvem har rødt hår, lilla drakt, grønt ansikt og katte-ører?",
                     svaralternativer: [
                         "Afrika",
                         "Hen",
@@ -641,7 +641,7 @@ $( document ).ready(function() {
                         "Ja, veldig mye sol"
                     ],
                     riktige_svar: ["Nei"],
-                    forklaring: "Den liker at det er fuktig."
+                    forklaring: "Den blir solbrent."
                 },
                 {
                     spm: "Hvor lenge har meitemarken laget jord på jordkloden?",
