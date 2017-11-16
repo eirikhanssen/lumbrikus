@@ -932,6 +932,7 @@ $( document ).ready(function() {
 
             domcontainer.append("<header class=\"entry-header\"><h2 class=\"entry-title\">Kviss - kapittel " + title + "</h2></header>");
             $.each(quiz_sample, function( index, obj) {
+                obj.svaralternativer = shuffle(obj.svaralternativer);
                 var spm_nr = index + 1;
                 var figure_markup = generate_figure_markup(obj);
                 var fieldset = $('<fieldset id="kviss-spm-' + spm_nr + '" class="quiz-part" data-spm="' + spm_nr + '">\
