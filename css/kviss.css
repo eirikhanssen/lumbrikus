@@ -79,7 +79,7 @@ main#kviss .entry-header {
     
     .quiz-part figcaption {
         /*! color: red; */
-        font-size: 1rem;
+        font-size: .8em;
     }
 }
 
@@ -96,7 +96,6 @@ main#kviss .entry-header {
     overflow: hidden;
     background: white;
     border: .25rem solid black;
-    /*rgb(46, 46, 46);*/
     display: block;
     margin:auto;
     margin-bottom: 0.25em;
@@ -109,17 +108,6 @@ main#kviss .entry-header {
         width: 20em;
         height: 15em;
     }
-}
-
-.img_container::after {
-    content:"";
-    position: absolute;
-    left:0;
-    top:0rem;
-    bottom:0rem;
-    right: 0rem;
-    border: .5rem solid whitesmoke;
-    z-index: 2;
 }
 
 .img_container img {
@@ -170,12 +158,9 @@ button.sjekk {
     margin:.5em 0;
     display: flex;
     justify-content: around;
-    min-height: 3rem;
     position: relative;
     box-sizing: border-box;
     white-space: normal;
-    line-height: 3rem;
-    
 }
 .kviss label > * {
     display: block;
@@ -191,7 +176,7 @@ button.sjekk {
     border-radius: 0.25em;
     text-align: center;
     box-sizing: border-box;
-    min-height: 3rem;
+    min-height: 2rem;
     line-height: 1.5em;
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
@@ -204,7 +189,8 @@ button.sjekk {
 
 @media screen and (min-width: 30em) {
     .kviss label span.alternativ {
-        font-size: 1.15rem;
+        font-size: 1rem;
+        line-height: 1.15rem;
     }
 }
 
@@ -227,8 +213,8 @@ button.sjekk {
 
 .quiz-part label input[type="checkbox"],
 .quiz-part label input[type="radio"] {
-    width:3rem;
-    height:3rem;
+    width:2rem;
+    height:2rem;
 }
 
 .quiz-part.answered label input {
@@ -251,8 +237,8 @@ button.sjekk {
     display:none;
     top:1;
     left:0;
-    height: 3rem;
-    width: 3rem;
+    height: 2rem;
+    width: 2rem;
 }
 
 .quiz-part.answered .feedback {
@@ -269,8 +255,8 @@ button.sjekk {
 .quiz-nav .neste {
     width: 40%;
     max-width: 9.5rem;
-    height: 3rem;
-    line-height: 3rem;
+    height: 2rem;
+    line-height: 2rem;
     margin: 0 .5rem .75rem;
     border-radius: .25rem;
     position: relative;
@@ -318,7 +304,7 @@ a[disabled] {opacity: 0.2; pointer-events: none; cursor: default;}
 .quiz-part button.sjekk {
     display: block;
     width: calc(100% - 2rem);
-    height: 3rem;
+    height: 2rem;
     margin: .5em auto;
     font-weight: bold;
     
@@ -336,6 +322,7 @@ a[disabled] {opacity: 0.2; pointer-events: none; cursor: default;}
     border-radius: 1em;
     line-height: 1.25em;
     box-sizing: border-box;
+    font-size: .75em;
 }
 
 .quiz-part.answered .forklaring {
@@ -424,8 +411,8 @@ a[disabled] {opacity: 0.2; pointer-events: none; cursor: default;}
 }
 
 label .icon {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     position: absolute;
 }
 
