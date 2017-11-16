@@ -1,7 +1,11 @@
 /* typography */
 
+body {overflow-x:hidden;}
 main#kviss {
-    margin: 0 1em;    
+    margin:0;
+}
+main#kviss .entry-header {
+    margin: 0 .5rem;
 }
 
 .kviss fieldset::after,
@@ -11,12 +15,17 @@ main#kviss {
 .kviss fieldset {
     position: relative;
     border-radius: 0.25em;
-    padding:0.25em;
-    padding-top: 3em;
-    margin-bottom: 20em;
-    top: 2em;
+    padding:0em;
+    padding-top: 1.75em;
+    top: 1em;
     border: none;
+    box-sizing: border-box;
+    display:block;
+    max-width: 40em;
+    margin: 0 auto;
+    margin-bottom: 10em;
 }
+
 .kviss fieldset::after {
     display:block;
     content:"";
@@ -26,6 +35,7 @@ main#kviss {
     bottom: 0;
     position: absolute;
     border-radius: .5em;
+    box-sizing: border-box;
     z-index: -1;
 }
 .kviss fieldset legend {
@@ -40,44 +50,78 @@ main#kviss {
     min-width: 10em;
     text-align: center;
     font-weight: bold;
-
 }
 
 .quiz-part figcaption {
     font-family: "Open Sans Condensed", sans-serif;
     text-align: center;
     margin-bottom: 0;
+    line-height: 1.25em;
+    font-size: 6vw;
+    color: #333;
 }
 
 .quiz-part .question {
-    font-size: 1.75rem;
-    margin-bottom: 0.5rem;
+    font-size: 7vw;
+    font-weight: bold;
+    margin: .5em auto;
     text-align: center;
+    max-width: 90vw;
+    position: relative;
+    line-height: 1.25em;
+    color: #9e3c68;
 }
 
-    @media screen and (max-width: 400px) {
-        .quiz-part .question {
-            font-size: 5vw;
-        }
+@media screen and (min-width: 30em) {
+    .quiz-part .question {
+        font-size: 1.5rem;
     }
+    
+    .quiz-part figcaption {
+        /*! color: red; */
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 40em) {
+   .quiz-part .question {
+        max-width: 38em;
+    }
+}
 
 .img_container {
     position: relative;
-    left: -.5rem;
-    top: -.5rem;
-    width: 400px;
-    height: 300px;
-    max-width: 70vw;
-    max-height: 60vw;
+    width: calc(90vw - 1.5em);
+    height: calc(70vw - 1.5em);
     overflow: hidden;
     background: white;
-    border: .5rem solid rgb(46, 46, 46);
-    margin-bottom: 0em;
+    border: .25rem solid black;
+    /*rgb(46, 46, 46);*/
+    display: block;
+    margin:auto;
+    margin-bottom: 0.25em;
     box-sizing: border-box;
-    padding: .5rem;
-    
- 
+    z-index:1;
 }
+
+@media screen and (min-width: 35em) {
+    .img_container {
+        width: 20em;
+        height: 15em;
+    }
+}
+
+.img_container::after {
+    content:"";
+    position: absolute;
+    left:0;
+    top:0rem;
+    bottom:0rem;
+    right: 0rem;
+    border: .5rem solid whitesmoke;
+    z-index: 2;
+}
+
 .img_container img {
     position: absolute;
     top: 50%;
@@ -88,17 +132,31 @@ main#kviss {
 .kviss label,
 .kviss .img_container,
 button.sjekk {
-    max-width: 20rem;
+    max-width: calc(100vw - 1rem);
     box-sizing: border-box;
 }
+.kviss label {
+    max-width: calc(100vw - 1.5rem);
+}
 
+@media screen and (min-width: 40em) {
+    .kviss figure, 
+    .kviss label,
+    .kviss .img_container {
+        max-width: 38em;
+    }
+    .kviss label, button.sjekk {
+        max-width: calc(100% - 1rem);
+    }
+    
+}
 .kviss figure {
     padding: 0.5em;
     margin: auto;
+    /*! background: lime; */
 }
 
 .kviss fieldset figure img {
-    
     width: 100%;
     height: auto;
     display: block;
@@ -109,59 +167,53 @@ button.sjekk {
 }
 
 .kviss label {
-    margin: 1em auto;
+    margin:.5em 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: around;
     min-height: 3rem;
     position: relative;
+    box-sizing: border-box;
+    white-space: normal;
+    line-height: 3rem;
+    
 }
 .kviss label > * {
     display: block;
     flex-shrink: 0;
+    margin-left: .75rem;
 }
 
 /* make it look like a button */
 .kviss label span.alternativ {
+    flex-grow: 1;
+    flex-shrink: 1;
     background: #ddd;
     border-radius: 0.25em;
-    
     text-align: center;
-    width: 80%;
     box-sizing: border-box;
-    min-width: 10em;
     min-height: 3rem;
-    line-height: 3rem;
-    display: inline-block;
+    line-height: 1.5em;
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
-
+    margin-left: .5rem;
+    font-size: 6vw;
+    display:flex;
+    justify-content: center;
+    align-items:center;
 }
+
+@media screen and (min-width: 30em) {
+    .kviss label span.alternativ {
+        font-size: 1.15rem;
+    }
+}
+
 
 .kviss label span.alternativ:hover {
     background-color: #eee;
 }
-.kviss label span:after {
-    display: block;
-    height:1px;
-    content:"";
-    clear:both;
-}
-
-.selfClear {
-    display: block;
-}
-.selfClear:after {
-    content: ".";
-    display: block;
-    height: 0px;
-    clear: both;
-    visibility: hidden;
-}
 
 .kviss input:checked ~ .alternativ {
-    /*background: rgb(153, 255, 51);
-    background: magenta;
-    background: orange;*/
     background: rgb(64, 195, 255);
     color:black;
 }
@@ -175,9 +227,8 @@ button.sjekk {
 
 .quiz-part label input[type="checkbox"],
 .quiz-part label input[type="radio"] {
-    width:2.4rem;
-    height:2.4rem;
-    margin:0.4rem;
+    width:3rem;
+    height:3rem;
 }
 
 .quiz-part.answered label input {
@@ -266,12 +317,11 @@ a[disabled] {opacity: 0.2; pointer-events: none; cursor: default;}
 
 .quiz-part button.sjekk {
     display: block;
-    width: 100%;
-    max-width: 20rem;
+    width: calc(100% - 2rem);
     height: 3rem;
-    margin: 0 auto;
+    margin: .5em auto;
     font-weight: bold;
-    margin-bottom: 2rem;
+    
     flex-shrink: 0;
 }
 
@@ -281,11 +331,11 @@ a[disabled] {opacity: 0.2; pointer-events: none; cursor: default;}
     border: 1px dashed black;
     background: rgb(255, 255, 156);
     padding: .5em;
-    max-width: 40em;
     display: block;
-    margin: auto;
+    margin: .5rem;
     border-radius: 1em;
-    margin-bottom: 1rem;
+    line-height: 1.25em;
+    box-sizing: border-box;
 }
 
 .quiz-part.answered .forklaring {
@@ -313,21 +363,19 @@ a[disabled] {opacity: 0.2; pointer-events: none; cursor: default;}
 
 .score-smileys {
     text-align: center;
-    max-width: 70%;
     display: block;
     margin: auto;
+    padding-top: 1em;
 }
-
-
 
 #kviss-totalt-riktige, 
 #kviss-totalt-mulige {
-    font-size: 6rem;
     font-weight: bold;
-    position: relative;
-    bottom: -1.5rem;
+    color: rgb(0, 163, 54);
 }
-
+#kviss-totalt-mulige {
+    color: rgb(119, 0, 255);
+}
 #kviss-scoreboard {
     text-align: center;
     border-radius: 1em;
@@ -336,23 +384,36 @@ a[disabled] {opacity: 0.2; pointer-events: none; cursor: default;}
 }
 
 #kviss-scoreboard h2 {
+    font-size: 15vw;
+    margin-bottom: .25em;
+    /*! line-height: 1.75em; */
+}
+
+@media screen and (min-width: 30em) {
+ #kviss-scoreboard h2 {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    }   
 }
 
 #kviss-poengsum-prosent {
     margin: 0;
     font-size: 9rem;
+    font-size: 25vw;
     font-weight: bold;
-    line-height: 9rem;
-    margin-bottom: 1rem;
+    line-height: 1.25em;
+    color: rgb(0, 163, 54);
 }
 @media screen and (orientation: portrait) {
     #kviss-poengsum-prosent {
-        font-size: 25vw;
+        
+       
     }
 }
-.kviss-ferdig {font-size: 3rem;line-height: 4rem;margin: 0;margin-bottom: 2rem;}
+.kviss-ferdig {
+    font-size: 10vw;
+    line-height: 10vw;
+    margin:0;
+}
 
 #kviss fieldset+article {
     margin-top: 8em;
@@ -370,9 +431,18 @@ label .icon {
 
 .score-smileys .icon {
     position: static;
+    width: calc(15vw);
+    height: calc(15vw);
+    margin: 1vw;
+}
+
+@media screen and (min-width: 30em) {
+    .score-smileys .icon {
+    position: static;
     width: 3em;
     height: 3em;
-    margin: 5px;
+    margin: .25em;
+}
 }
 /* bugfix for MSIE */
 /*@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {*/

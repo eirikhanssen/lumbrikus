@@ -35,6 +35,7 @@ a:hover {}
 a:active {}
 
 main {
+    margin: 0 .5rem;
     margin-bottom: 4rem;
 }
 
@@ -109,7 +110,7 @@ img {width: auto; height: auto;}
 }
 
 .entry-header {
-    margin: 1rem;
+    
 }
 
 .kapitler-child .entry-header {
@@ -207,10 +208,6 @@ img {width: auto; height: auto;}
 /* video links begin */
 
 main.page-filmer .entry-content > a {text-decoration: none; display:block; max-width: 30rem; margin:0 auto; padding: 0;}
-
-main.page-filmer .entry-content {
-    padding-top: 1rem;
-}
 
 figure.videolink {
     border: 1px solid black;

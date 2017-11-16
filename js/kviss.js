@@ -917,8 +917,8 @@ $( document ).ready(function() {
                 var figure_markup = generate_figure_markup(obj);
                 var fieldset = $('<fieldset id="kviss-spm-' + spm_nr + '" class="quiz-part" data-spm="' + spm_nr + '">\
                 <legend>' + spm_nr + ' av ' + quiz_len + '</legend>\
-                <h3 class="question">' + obj.spm + '</h3>\
                 ' + figure_markup + '\
+                <p class="question">' + obj.spm + '</p>\
                 </fieldset>');
 
                 var ant_riktige_svar = obj.riktige_svar.length;
@@ -930,13 +930,12 @@ $( document ).ready(function() {
                     fieldset.append(alternativ);
                 });
 
-                fieldset.append($('<p class="forklaring">' + obj.forklaring + '</p>'));
-
                 fieldset.append($('<button disabled class="sjekk">Sjekk svar</button>').click(function(e){
                     var target = e.target;
                     sjekk_svar(target);
                 }));
 
+                fieldset.append($('<p class="forklaring">' + obj.forklaring + '</p>'));
 
                 fieldset.append($(generate_quiz_nav_markup(spm_nr, quiz_len)));
 
