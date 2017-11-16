@@ -388,11 +388,7 @@ a#til_resultater:focus {
     /*! line-height: 1.75em; */
 }
 
-@media screen and (min-width: 30em) {
- #kviss-scoreboard h2 {
-    font-size: 3rem;
-    }   
-}
+
 
 #kviss-poengsum-prosent {
     margin: 0;
@@ -402,6 +398,16 @@ a#til_resultater:focus {
     line-height: 1.25em;
     color: rgb(0, 163, 54);
 }
+
+@media screen and (min-width: 30em) {
+ #kviss-scoreboard h2 {
+    font-size: 3rem;
+    }
+    #kviss-poengsum-prosent {
+        font-size: 15vw;
+    }
+}
+
 @media screen and (orientation: portrait) {
     #kviss-poengsum-prosent {
         
