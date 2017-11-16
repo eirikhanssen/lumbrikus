@@ -10,7 +10,7 @@ main#kviss .entry-header {
 
 .kviss fieldset::after,
 .kviss fieldset legend {
-    border: 2px solid rgb(106, 140, 180);
+    border: 2px solid rgba(3, 169, 244, 0.91);
 }
 .kviss fieldset {
     position: relative;
@@ -106,7 +106,7 @@ main#kviss .entry-header {
 @media screen and (min-width: 35em) {
     .img_container {
         width: 20em;
-        height: 15em;
+        height: 12em;
     }
 }
 
@@ -140,6 +140,7 @@ button.sjekk {
 }
 .kviss figure {
     padding: 0.5em;
+    padding-bottom: 0;
     margin: auto;
     /*! background: lime; */
 }
@@ -331,6 +332,17 @@ a[disabled] {opacity: 0.2; pointer-events: none; cursor: default;}
 
 #til_resultater {
     background: magenta;
+}
+
+.kviss_start:focus,
+.quiz-nav .forrige:focus,
+.quiz-nav .neste:focus,
+.sjekk:focus,
+a#til_resultater:focus {
+    background: #FF5722;
+    color: white;
+    border:none;
+    border-radius: .25em;
 }
 
 .smiley-correct, .smiley-incorrect {
