@@ -106,18 +106,15 @@ img {width: auto; height: auto;}
 .site-title,
 .site-description {
     display: none;
-    
 }
 
 .entry-header {
     margin: 1rem;
-    margin-top: 2rem;
 }
 
 .kapitler-child .entry-header {
     display:block;
     text-align: center;
-    margin-top: 3rem;
 }
 
 .entry-title {
@@ -137,15 +134,7 @@ img {width: auto; height: auto;}
     margin: auto;
     text-align:center;
     border-radius: 2em;
-    position:fixed;
-    top:50%;
-    left: 50%;
-    transform:translate(-50%,-50%);
 }
-
-
-
-
 
 @media screen and (min-width: 30em)
 {
@@ -530,6 +519,11 @@ figure.ord figcaption {
 .internal-chapter-links {
     position:relative;
     z-index:1;
+    margin-bottom: 2rem;
+}
+
+body.child-of-kapitler .internal-chapter-links {
+    margin-bottom: 6rem;
 }
 
 .internal-chapter-links::after {
@@ -555,7 +549,10 @@ figure.ord figcaption {
     margin: auto;
     border-radius: 0;
     box-sizing: border-box;
-    padding: 10%;
+    padding: 15%;
+    position: absolute;
+    top:0;
+    left:0;
 }
 
 @keyframes svgiconhover {
@@ -657,11 +654,12 @@ figure.ord figcaption {
 .internal-chapter-links a:before {
     content:"";
     position:absolute;
-    top:-2.3em;
-    left:-.2em;
+    top:0;
+    left:0;
     bottom:0;
-    right:-.2em;
+    right:0;
     background:transparent;
+    z-index: 10;
 }
 
 .internal-chapter-links a:focus .linktext,
@@ -675,22 +673,30 @@ figure.ord figcaption {
     left: 50%;
     transform:translate(-50%,0);
     line-height: 1em;
-    font-size: .6em;
+    font-size: .5em;
     font-weight:bold;
     display:none;
     text-align: center;
-    color:white;
-    background-color: rgba(0, 0, 0, 0.75);
+    color: #333;
+    background-color: white;
     position: absolute;
     box-sizing: content-box;
     white-space: pre;
     border-radius: .25em;
-    
+    z-index:1;
+}
+
+@media screen and (max-width: 25em) {
+    .internal-chapter-links li:first-child span.linktext {
+        margin-left: .3em;
+    }
 }
 
 a:hover span.linktext,
 a:focus span.linktext {
     display:block;
+    z-index: 10;
+    background-color: white;
 }
 
 
@@ -703,7 +709,7 @@ a:focus span.linktext {
 .internal-chapter-links a:focus .linktext {
     visibility: visible;
     animation-name: linktext;
-    animation-duration: .6s;
+    animation-duration: .1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
@@ -772,4 +778,16 @@ body.snutter li.snutter a,
 body.snutter-child li.snutter a,
 body.kviss li.kviss a {
     border-color: #4CAF50;
+}
+
+@media screen {
+    .aural-only {
+        display: none;
+    }
+}
+
+@media print {
+    .aural-only {
+        display: none;
+    }
 }

@@ -13,9 +13,9 @@
 
         <symbol id="symbol-icon-bg" viewBox="-16 -16 32 32">
             <rect id="icon-bg"
-            x="-15.5" y="-15.5" width="31" height="31" rx="3"
+            x="-15.5" y="-15.5" width="31" height="31" rx="10"
             fill="whitesmoke"
-            style="fill: var(--color-icon-bg, whitesmoke);"/>
+            style="fill: var(--color-icon-bg, whitesmoke); fill:transparent;"/>
         </symbol>
 
         <symbol id="icon-kapitler" viewBox="-16 -16 32 32">

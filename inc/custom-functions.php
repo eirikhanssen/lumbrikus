@@ -241,7 +241,7 @@ function lumbrikus_generate_link_LI($chapter, $lvl, $link){
 
 	$icon_markup .= $icon_fragment . '"></use></svg>';
 
-	$output_LI = "    <li" . $li_class . "><a href=\"" . $href . "\" title=\"Til " . $linktext . "\">" . $icon_markup . "<span class=\"linktext\">" . $linktext . "</span></a></li>\n";
+	$output_LI = "    <li" . $li_class . "><a href=\"" . $href . "\">" . $icon_markup . "<span class=\"linktext\">" . $linktext . "</span></a></li>\n";
 	return $output_LI;
 }
 
@@ -263,7 +263,7 @@ function lumbrikus_nav_internal_chapter_links($chapter, $lvl){
 		$LIs .= lumbrikus_generate_link_LI($chapter, $lvl, $link);
 	}	
 
-	$nav_internal_chapter_links = "\n<nav class=\"internal-chapter-links\">\n  <ul>\n" . $LIs . "  </ul>\n</nav><!-- .internal_chapter_links -->\n";
+	$nav_internal_chapter_links = "\n<nav class=\"internal-chapter-links\">\n<h2 class=\"aural-only\">Naviger dette kapitlet</h2>  <ul>\n" . $LIs . "  </ul>\n</nav><!-- .internal_chapter_links -->\n";
 
 	return $nav_internal_chapter_links;
 }

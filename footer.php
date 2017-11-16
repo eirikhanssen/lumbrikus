@@ -15,6 +15,7 @@ echo "<!-- BEGIN FOOTER -->\n";
 ?>
 <footer class="page-footer">
 	<nav class="footer-nav">
+		<h2 class="aural-only">Til informasjon om ressursen</h2>
 		<ul>
 			<li><a href="/til-laereren/">Til læreren</a></li>
 			<li><a href="/til-foreldrene/">Til foreldrene</a></li>
