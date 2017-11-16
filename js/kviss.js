@@ -657,30 +657,31 @@ $( document ).ready(function() {
                 }
             ]
         };
-        
+
+        /* Add the different quizzies in one array */
+        quizzies[1] = quiz01;
+        quizzies[2] = quiz02;
+        quizzies[6] = quiz06;
+
+        var ferdige_kvisser = Object.keys(quizzies).toString();
+
         var quiz_under_construction = {
             title: "uferdig",
             q_and_a: [
                 {
                     spm: "Hva er det som skjer her?",
                     bilde: "/media/img/kviss_construction.png",
-                    bildetekst: "En som har en liten pause i arbeidet.",
+                    bildetekst: "En person som har en liten pause i arbeidet.",
                     svaralternativer: [
-                        "Kvissen er ikke ferdig",
-                        "Jeg kan prøve kviss i et annet kapittel",
+                        "Kvissen er ikke laget ferdig",
+                        "Jeg kan prøve ferdig kviss i kapittel: " + ferdige_kvisser,
                         "Jeg kan prøve igjen senere"
                     ],
-                    riktige_svar: ["Kvissen er ikke ferdig","Jeg kan prøve kviss i et annet kapittel","Jeg kan prøve igjen senere"],
-                    forklaring: "Kvissen for dette kapitlet er ikke ferdig enda. Men vi jobber med saken. Kom igjen senere."
+                    riktige_svar: ["Kvissen er ikke laget ferdig","Jeg kan prøve ferdig kviss i kapittel: " + ferdige_kvisser,"Jeg kan prøve igjen senere"],
+                    forklaring: "Kvissen for dette kapitlet er ikke ferdig enda. Men vi jobber med saken."
                 }
             ]
         };
-
-        /* Add the different quizzies in one array */
-        quizzies[1] = quiz01;
-        quizzies[2] = quiz02;
-        quizzies[6] = quiz06;
-        quizzies["under_construction"] = quiz_under_construction;
 
         /* shared variables to the quiz script */
         var app,
@@ -691,7 +692,7 @@ $( document ).ready(function() {
         quiz_sample;
 
         /**
-        * Shuffles a copy of an, returns the copy. 
+        * Shuffles a copy of an array, returns the copy. 
         * @param {Array} src items An array containing the items.
         */
         function shuffle(src) {
@@ -1029,7 +1030,18 @@ $( document ).ready(function() {
             app = $(domcontainer_selector); // the quiz dom-container
             // needs to be more robust
             var quiz_num = parseInt(app.attr('data-quiz-number'));
-            var current_quiz_set = quizzies[quiz_num] || quizzies["under_construction"];
+            var current_quiz_set = quizzies[quiz_num] || quiz_under_construction;
+            
+            var current_quiz_len = Object.keys(current_quiz_set["q_and_a"]).length;
+
+            // if the current quiz set has less than the default number of questions, 
+            // generate a quiz using the total number of questions in the set
+            // otherwise quiz_len questions will be drawn from the set
+
+            if(current_quiz_len < quiz_len) {
+                quiz_len = current_quiz_len;
+            }
+            
             quiz_title = current_quiz_set.title;
             quiz_bank = current_quiz_set.q_and_a;
             
