@@ -152,7 +152,7 @@ $( document ).ready(function() {
                     forklaring: "I blomstene til selja finner humla det den liker. Noe som er søtt, og noe som er gult."
                 },
                 {
-                    spm: "Hva er nektar",
+                    spm: "Hva er nektar?",
                     bilde: "/media/svg/lumbrikus-icons.svg#undring",
                     bildetekst: "Et smileansikt som lurer på hva dette kan være.",
                     svaralternativer: [

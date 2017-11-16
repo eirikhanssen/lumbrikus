@@ -54,7 +54,7 @@ function lumbrikus_load_scripts() {
 	// wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.6', 'all' );
 	wp_enqueue_style( 'normalize', get_template_directory_uri() . '/css/normalize.css', array(), '7.0.0', 'all' );
 	wp_enqueue_style( 'googlefonts', 'https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Roboto', array(), '0.0.5', 'all' );
-	wp_enqueue_style( 'lumbrikusCSS', get_template_directory_uri() . '/css/lumbrikus.css', array(), '1.1.6', 'all' );
+	wp_enqueue_style( 'lumbrikusCSS', get_template_directory_uri() . '/css/lumbrikus.css', array(), '1.1.7', 'all' );
 	
 	/* register scripts */
 	lumbrikus_include_custom_jquery();
@@ -64,8 +64,8 @@ function lumbrikus_load_scripts() {
 	//wp_enqueue_script( 'lumbrikus', get_template_directory_uri() . '/js/lumbrikus.js', array('jquery'), '1.0.0', true );
 
 	if( is_page( 'kviss' ) ) {
-		wp_enqueue_style( 'kviss', '/css/kviss.css', array(), '0.0.6', 'all' );
-		wp_enqueue_script( 'kviss-js', '/js/kviss.js', array('jquery'), '0.1.4', true );
+		wp_enqueue_style( 'kviss', '/css/kviss.css', array(), '0.0.7', 'all' );
+		wp_enqueue_script( 'kviss-js', '/js/kviss.js', array('jquery'), '0.1.5', true );
 	}
 
 	if( is_page( 'kort' ) || is_page( 'lang' ) ) {
