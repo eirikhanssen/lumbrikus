@@ -1,8 +1,7 @@
 /* typography */
 
 main#kviss {
-    margin-top: 1rem;
-    padding: 1rem;
+    margin: 0 1em;    
 }
 
 .kviss fieldset::after,
@@ -222,21 +221,45 @@ button.sjekk {
     height: 3rem;
     line-height: 3rem;
     margin: 0 .5rem .75rem;
-    background: rgb(0, 115, 255);
-    color: white;
-    font-weight: bold;
-    text-align: center;
     border-radius: .25rem;
     position: relative;
     text-decoration: none;
     box-sizing: content-box;
     border: 1px solid transparent;
 }
+
+.kviss_start {
+    padding: .5rem 1rem;
+    font-size: 3rem;
+    font-size: 9vw;
+    border: none;
+    border-radius:.25em;
+    display: block;
+    margin: 1em auto;
+}
+
+.quiz-nav .forrige,
+.quiz-nav .neste,
+.kviss_start {
+    background: rgb(0, 115, 255);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
 .quiz-nav .forrige:hover,
-.quiz-nav .neste:hover {
+.quiz-nav .neste:hover,
+.kviss_start:hover,
+.kviss_start:focus {
     background: rgb(0, 89, 255);
     border-color: rgb(3, 63, 101);
     text-shadow: 0 0 5px rgb(3, 63, 101);
+}
+
+@media screen and (min-width: 50em) {
+    .kviss_start {
+        font-size: 3rem;
+    }
 }
 
 a[disabled] {opacity: 0.2; pointer-events: none; cursor: default;}
@@ -295,16 +318,7 @@ a[disabled] {opacity: 0.2; pointer-events: none; cursor: default;}
     margin: auto;
 }
 
-.kviss_start {
-    padding: .5rem 1rem;
-    font-size: 3rem;
-    color: white;
-    background: orangered;
-    border: none;
-    border-radius:.25em;
-    display: block;
-    margin: 1em auto;
-}
+
 
 #kviss-totalt-riktige, 
 #kviss-totalt-mulige {

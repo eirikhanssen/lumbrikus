@@ -64,8 +64,8 @@ function lumbrikus_load_scripts() {
 	//wp_enqueue_script( 'lumbrikus', get_template_directory_uri() . '/js/lumbrikus.js', array('jquery'), '1.0.0', true );
 
 	if( is_page( 'kviss' ) ) {
-		wp_enqueue_style( 'kviss', '/css/kviss.css', array(), '0.0.5', 'all' );
-		wp_enqueue_script( 'kviss-js', '/js/kviss.js', array('jquery'), '0.1.3', true );
+		wp_enqueue_style( 'kviss', '/css/kviss.css', array(), '0.0.6', 'all' );
+		wp_enqueue_script( 'kviss-js', '/js/kviss.js', array('jquery'), '0.1.4', true );
 	}
 
 	if( is_page( 'kort' ) || is_page( 'lang' ) ) {

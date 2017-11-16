@@ -5,7 +5,7 @@ $( document ).ready(function() {
         var quizzies = [];
         
         var quiz01 = {
-            title: "Kapittel 1 kviss",
+            title: "1",
             q_and_a: [
                 {
                     spm: "Hvem er dette?",
@@ -215,7 +215,7 @@ $( document ).ready(function() {
         };
 
         var quiz02 = {
-            title: "Kapittel 2 kviss",
+            title: "2",
             q_and_a: [
                 {
                     spm: "Hvor mange blomster ser du? ",
@@ -461,7 +461,7 @@ $( document ).ready(function() {
         };        
 
         var quiz06 = {
-            title: "Kapittel 6 kviss",
+            title: "6",
             q_and_a: [
                 {
                     spm: "Hva er meitemark?",
@@ -911,7 +911,7 @@ $( document ).ready(function() {
 
             quiz_sample = make_quiz_selection(quiz_source, quiz_len);
 
-            domcontainer.append("<h2>" + title + "</h2>");
+            domcontainer.append("<header class=\"entry-header\"><h2 class=\"entry-title\">Kviss - kapittel " + title + "</h2></header>");
             $.each(quiz_sample, function( index, obj) {
                 var spm_nr = index + 1;
                 var figure_markup = generate_figure_markup(obj);
