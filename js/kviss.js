@@ -658,11 +658,29 @@ $( document ).ready(function() {
             ]
         };
         
+        var quiz_under_construction = {
+            title: "uferdig",
+            q_and_a: [
+                {
+                    spm: "Hva er det som skjer her?",
+                    bilde: "/media/img/kviss_construction.png",
+                    bildetekst: "En som har en liten pause i arbeidet.",
+                    svaralternativer: [
+                        "Kvissen er ikke ferdig",
+                        "Jeg kan prøve kviss i et annet kapittel",
+                        "Jeg kan prøve igjen senere"
+                    ],
+                    riktige_svar: ["Kvissen er ikke ferdig","Jeg kan prøve kviss i et annet kapittel","Jeg kan prøve igjen senere"],
+                    forklaring: "Kvissen for dette kapitlet er ikke ferdig enda. Men vi jobber med saken. Kom igjen senere."
+                }
+            ]
+        };
 
         /* Add the different quizzies in one array */
         quizzies[1] = quiz01;
         quizzies[2] = quiz02;
         quizzies[6] = quiz06;
+        quizzies["under_construction"] = quiz_under_construction;
 
         /* shared variables to the quiz script */
         var app,
@@ -1011,8 +1029,9 @@ $( document ).ready(function() {
             app = $(domcontainer_selector); // the quiz dom-container
             // needs to be more robust
             var quiz_num = parseInt(app.attr('data-quiz-number'));
-            quiz_title = quizzies[quiz_num].title;
-            quiz_bank = quizzies[quiz_num].q_and_a;
+            var current_quiz_set = quizzies[quiz_num] || quizzies["under_construction"];
+            quiz_title = current_quiz_set.title;
+            quiz_bank = current_quiz_set.q_and_a;
             
             start_new_quiz(app, quiz_title, quiz_bank, quiz_len);
         }
