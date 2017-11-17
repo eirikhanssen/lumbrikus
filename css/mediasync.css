@@ -244,19 +244,23 @@ article {
     fieldset.langselect input[type="radio"] {display:none;}
 }
 
-.fakebutton {
+.radiofakebutton, .togglebutton {
     position: relative;
     line-height: 1rem;
 }
 
-.maxmin, .fakebutton, .imgbutton {
+.radiofakebutton [lang="so"] {
+    font-size: .4em;
+}
+
+.togglebutton, .radiofakebutton {
     color: black;
     width: 3rem;
     height: 2rem;
     margin: 5px;
     float: left;
-    border: 1px solid gray;
-    border-radius: .3rem;
+    border: 1px solid #888;
+    border-radius: .5rem;
     background: #ffffff; /* Old browsers */
     background: -moz-linear-gradient(top, #ffffff 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #ffffff 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Chrome10-25,Safari5.1-6 */
@@ -264,11 +268,11 @@ article {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
 }
 
-.maxmin {
+.togglebutton {
     border-radius: 0;
 }
 
-.fakebutton span {
+.radiofakebutton span {
     display: block;
     text-align: center;
     font-size: .5rem;
@@ -285,14 +289,14 @@ article {
     display:none;
 }
 
-#secondary_lang_img +.fakebutton,
-.maxmin {
+#secondary_lang_img +.radiofakebutton,
+.togglebutton {
     font-size: 1.5rem;
     position: relative;
 }
 
-.maxmin .icon,
-.fakebutton .icon {
+.togglebutton .icon,
+.radiofakebutton .icon {
     position: absolute;
     display: block;
     top:0;
@@ -314,16 +318,17 @@ article {
     }
 }
 
-.fakebutton [lang="ti"],
-.fakebutton [lang="ar"],
-.fakebutton [lang="so"],
-[id$="lang_no"] + .fakebutton [lang="no"] {
+.radiofakebutton [lang="ti"],
+.radiofakebutton [lang="ar"],
+.radiofakebutton [lang="so"],
+[id$="lang_no"] + .radiofakebutton [lang="no"] {
     font-weight: bold;
 }
 
-:checked + .fakebutton::after,
-.fakebutton:hover::before,
-.fakebutton:focus::before {
+:checked + .radiofakebutton::after,
+.radiofakebutton:hover::before,
+.radiofakebutton:focus::before,
+.togglebutton:before{
     display: block;
     content:"";
     position: absolute;
@@ -334,21 +339,67 @@ article {
     margin-top: .25rem;
     background: rgb(70, 70, 70);
     border-radius: .25rem;
+    box-sizing: border-box;
 }
 
-.fakebutton:hover::before,
-.fakebutton:focus::before {
+
+
+.togglebutton::before {
+    background: white;
+    border: 1px solid #aaa;
+}
+
+.togglebutton.on,
+.togglebutton.on::before {
+    border-color: black;
+    box-shadow: 0 0 .3em #87FF87;
+}
+
+.togglebutton.on::before {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+12,00ff37+30,005b0a+100 */
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 12%, rgba(0,255,55,1) 30%, rgba(0,91,10,1) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 12%,rgba(0,255,55,1) 30%,rgba(0,91,10,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 12%,rgba(0,255,55,1) 30%,rgba(0,91,10,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#005b0a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.radiofakebutton:hover,
+.radiofakebutton:focus,
+.togglebutton:hover,
+.togglebutton:focus {
+    border-color: #222;
+}
+
+.radiofakebutton:hover::before,
+.radiofakebutton:focus::before {
     background: rgba(70,70,70,0.4);
 }
 
-.fakebutton:hover,
-.fakebutton:focus,
-.maxmin:hover,
-.maxmin:focus,
-:checked + .fakebutton {
+.radiofakebutton:hover,
+.radiofakebutton:focus {
+    background:white;
+}
+
+:checked + .radiofakebutton {
     background: rgb(252,234,187); /* Old browsers */
     background: -moz-linear-gradient(top, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=0 ); /* IE6-9 */
+}
+
+.togglebutton:hover,
+.togglebutton:focus {
+   background:white;
+}
+
+.togglebutton.on {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c4ffa3+0,75ff95+100 */
+background: rgb(196,255,163); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(196,255,163,1) 0%, rgba(117,255,149,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(196,255,163,1) 0%,rgba(117,255,149,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(196,255,163,1) 0%,rgba(117,255,149,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4ffa3', endColorstr='#75ff95',GradientType=0 ); /* IE6-9 */
 }

@@ -34,6 +34,10 @@ $( document ).ready(function() {
 			$('body').toggleClass('fullscreen');
 		});
 
+		$('.togglebutton').on("click", function(e){
+			$(e.target).toggleClass("on");
+		});
+
 		$('.fakebutton').on('keydown', function(e){
 			if(e.keyCode === 13 || e.keyCode === 32) {
 				e.target.click();
