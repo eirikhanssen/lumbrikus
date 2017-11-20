@@ -1,37 +1,113 @@
+/* main layout */
 body {
+    /* wip */
     overflow-x: hidden;
 }
 
+
+.invisible {display: none;}
+
+/* show only one primary language/audio - change class on body to show another */
+.audio_and_text,
+.players .player {display: none;}
+body.primary_lang_no .audio_and_text.no,
+body.primary_lang_ar .audio_and_text.ar,
+body.primary_lang_so .audio_and_text.so,
+body.primary_lang_ti .audio_and_text.ti,
+.players-no .player-no,
+.players-so .player-so,
+.players-ar .player-ar,
+.players-ti .player-ti{
+    display: block;
+}
+
+
+/* begin mejs */
+
+.audio_and_text .mejs__time-buffering,
+.audio_and_text .mejs__time-current,
+.audio_and_text .mejs__time-handle,
+.audio_and_text .mejs__time-loaded,
+.audio_and_text .mejs__time-marker,
+.audio_and_text .mejs__time-total,
+.audio_and_text .mejs__time-hovered {
+    height: 2px;
+}
+
+.audio_and_text .mejs__time-total {
+    margin-top: 9px;
+}
+.audio_and_text .mejs__time-handle {
+    left: -5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ffffff;
+    top: -5px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    border: none;
+}
+.audio_and_text .mejs__time-handle-content {
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+}
+
+/* skjul teksten som er nært avspillingskontrollen */
+
+.cues::after {
+    content: "";
+    position: fixed;
+    right:0;
+    left: 0;
+    bottom: 1.6em;
+    height: .5em;
+    z-index: 1;
+    /* sjekk om dette får til å lagge, evt bruk hvit opak bakgrunn */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+70&0+0,1+70 */
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 90%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 90%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.mejs__audio {
+    position: fixed !important;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto !important;
+    /*right: 50%;*/
+    /*transform: translate(-.5rem,0);*/
+    z-index: 2;
+}
+
+/* end mejs */
+
+/* begin synced content */
+
+/* each container for audio and text in #primary_language */
 .audio_and_text {
     color: #434343;
-    margin-left: .5rem;
-    width: calc(50% - 1rem);
-    padding: .5rem;
     box-sizing:  border-box;
     position:relative;
     z-index:1;
 }
 
-.audio_and_text {display: none;}
-body.primary_lang_no .audio_and_text.no,
-body.primary_lang_ar .audio_and_text.ar,
-body.primary_lang_so .audio_and_text.so,
-body.primary_lang_ti .audio_and_text.ti {
-    display: block;
-}
-
 article.audio_and_text .cues {
     position: relative;
     padding: 0;
-    font-size: 1rem;
-    
+    font-size: 1em;
 }
 
 .key {
     display: block;
     box-sizing: border-box;
     line-height: 1.5;
-    margin: 0 .5rem;
 }
 
 .current-key {
@@ -71,38 +147,9 @@ article {
 
 .key p {margin-top:0; margin-bottom:.75em;}
 
-/*hide and show players*/
+/* end synced content */
 
-.players .player {
-    display: none;
-}
-
-.players-no .player-no,
-.players-so .player-so,
-.players-ar .player-ar,
-.players-ti .player-ti {
-    display: block;
-}
-
-.secondary_lang_img .translation-container .key {display: none;}
-
-.translation-container {
-    position: fixed;
-    top: 1em;
-    bottom: 0.5rem;
-    left: 50%;
-    right: 1rem;
-    transform: translate(.5rem, 0);
-    border-radius: .25em;
-    width: auto;
-    box-sizing: border-box;
-    box-shadow: 0 0 1rem #666;
-    z-index: 2;
-    background: white;
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-}
+/* begin translations */
 
 /* background images in translation containers */
 .kap-00-child .translation-container {background-image: url('/media/img/00-den-rode-planeten-bg.jpg'); background-color: #453b43;}
@@ -118,32 +165,7 @@ article {
 .kap-10-child .translation-container {background-image: url('/media/img/10-let-og-finn-bg.jpg'); background-color:#72d0ff;}
 .kap-11-child .translation-container {background-image: url('/media/img/11-farvel-bg.jpg'); background-color:#3f649b;}
 
-.translation-container::after {
-    position: absolute;
-    top: 100%;
-    left:50%;
-    transform: translate(-50%,0);
-    display: block;
-    margin-top: 0rem;
-    color: rgba(255, 0, 0, 0.349);
-    width: auto;
-    font-size: .3em;
-    content: "hastighetskontrol | sprÃ¥kvalg?";
-}
-
-.translation-container button span {display: block;}
-
-.translation-container,
-.secondary-controls2-title {
-        border-radius: 1rem;
-        border: 1px solid #4e4e4e;
-}
-
-.secondaryLangControls2 {text-align: center;padding-top: .8rem;/* margin-bottom: 1rem; */}
-.translation-container button {/* margin: 0; */box-sizing: border-box;padding: .25rem .4rem;min-width: 17%;display: inline-block;font-size: .5rem;}
-.translation-container button+button {margin-left: .5rem;}
-.translation-container button span {text-align: center;}
-
+/* begin visualize sync */
 #translation .key {
     position: absolute;
     top: 3.5rem;
@@ -179,227 +201,56 @@ article {
     border-left: none;
 }
 
-/* BEGIN Audio Player */
+/* end visualize sync */
 
-.audio_and_text .mejs__time-buffering,
-.audio_and_text .mejs__time-current,
-.audio_and_text .mejs__time-handle,
-.audio_and_text .mejs__time-loaded,
-.audio_and_text .mejs__time-marker,
-.audio_and_text .mejs__time-total,
-.audio_and_text .mejs__time-hovered {
-    height: 2px;
+/* end translations */
+
+/* begin language switch controls */
+
+/* mobile first */
+
+fieldset.langselect {
+    /*wip*/background:rgba(255,122,244,0.7);
+    padding:0;
+    border:none;
+    display:flex;
+    flex-flow: row nowrap;
 }
 
-.audio_and_text .mejs__time-total {
-    margin-top: 9px;
-}
-.audio_and_text .mejs__time-handle {
-    left: -5px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #ffffff;
-    top: -5px;
-    cursor: pointer;
-    display: block;
-    position: absolute;
-    z-index: 2;
-    border: none;
-}
-.audio_and_text .mejs__time-handle-content {
-    top: 0;
-    left: 0;
-    width: 12px;
-    height: 12px;
+.langselect legend {
+    width: 100%;
+    background:rgba(0,0,244,0.5);
+    text-align: center;
 }
 
-
-.cues::after {
-    content: "";
-    position: fixed;
-    right: 50%;
-    left: 0;
-    bottom: 0;
-    height: 2.7rem;
-    background: white;
-    z-index: 1;
-}
-
-.mejs__audio {
-    position: fixed !important;
-    right: 50%;
-    left: 1rem;
-    bottom: .5rem;
-    width: auto !important;
-    transform: translate(-.5rem,0);
-    z-index: 2;
-}
-
-/* END Audio Player */
-
-.invisible {display: none;}
+/* style the buttons and radio inputs that look like buttons */
+/* for mobiles, screen media, show only NO, AR, SO, TI with css pseudo class. Show the contents of the buttons when there is enough room */
 
 @media screen {
     fieldset.langselect input[type="radio"] {display:none;}
 }
 
-.radiofakebutton, .togglebutton {
-    position: relative;
-    line-height: 1rem;
-}
-
-.radiofakebutton [lang="so"] {
-    font-size: .4em;
-}
-
-.togglebutton, .radiofakebutton {
-    color: black;
-    width: 3rem;
-    height: 2rem;
-    margin: 5px;
-    float: left;
-    border: 1px solid #888;
-    border-radius: .5rem;
-    background: #ffffff; /* Old browsers */
-    background: -moz-linear-gradient(top, #ffffff 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #ffffff 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #ffffff 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
-}
-
-.togglebutton {
-    border-radius: 0;
-}
-
-.radiofakebutton span {
-    display: block;
-    text-align: center;
-    font-size: .5rem;
-}
-
-#btn-maxmin .minimize {
-    display:none;
-}
-
-.fullscreen #btn-maxmin .minimize {
-    display: inline-block;
-}
-.fullscreen #btn-maxmin .maximize {
-    display:none;
-}
-
-#secondary_lang_img +.radiofakebutton,
-.togglebutton {
-    font-size: 1.5rem;
-    position: relative;
-}
-
-.togglebutton .icon,
-.radiofakebutton .icon {
-    position: absolute;
-    display: block;
-    top:0;
-    bottom: 0;
-    left:0;
-    right:0;
-    margin:auto;
-}
-
-/* button states */
-
-@keyframes langbtnhoverfocus {
-    to {
-        background: rgb(252,234,187); /* Old browsers */
-        background: -moz-linear-gradient(top, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=0 ); /* IE6-9 */
+@media screen {
+    .radiofakebutton span {
+        display:none;
+    }
+    .radiofakebutton.no::after {
+        content:"No";
+    }
+    .radiofakebutton.ar::after {
+        content:"Ar";
+    }
+    .radiofakebutton.so::after {
+        content:"So";
+    }
+    .radiofakebutton.ti::after {
+        content:"Ti";
     }
 }
 
-.radiofakebutton [lang="ti"],
-.radiofakebutton [lang="ar"],
-.radiofakebutton [lang="so"],
-[id$="lang_no"] + .radiofakebutton [lang="no"] {
-    font-weight: bold;
+@media screen and (min-width: 30em) {
+    /* sjekk breakpoint her */
+    /* skjul .radiofakebutton ::after-content */
 }
 
-:checked + .radiofakebutton::after,
-.radiofakebutton:hover::before,
-.radiofakebutton:focus::before,
-.togglebutton:before{
-    display: block;
-    content:"";
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    height: .25rem;
-    margin-top: .25rem;
-    background: rgb(70, 70, 70);
-    border-radius: .25rem;
-    box-sizing: border-box;
-}
-
-
-
-.togglebutton::before {
-    background: white;
-    border: 1px solid #aaa;
-}
-
-.togglebutton.on,
-.togglebutton.on::before {
-    border-color: black;
-    box-shadow: 0 0 .3em #87FF87;
-}
-
-.togglebutton.on::before {
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+12,00ff37+30,005b0a+100 */
-background: rgb(255,255,255); /* Old browsers */
-background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 12%, rgba(0,255,55,1) 30%, rgba(0,91,10,1) 100%); /* FF3.6-15 */
-background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 12%,rgba(0,255,55,1) 30%,rgba(0,91,10,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 12%,rgba(0,255,55,1) 30%,rgba(0,91,10,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#005b0a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-}
-
-.radiofakebutton:hover,
-.radiofakebutton:focus,
-.togglebutton:hover,
-.togglebutton:focus {
-    border-color: #222;
-}
-
-.radiofakebutton:hover::before,
-.radiofakebutton:focus::before {
-    background: rgba(70,70,70,0.4);
-}
-
-.radiofakebutton:hover,
-.radiofakebutton:focus {
-    background:white;
-}
-
-:checked + .radiofakebutton {
-    background: rgb(252,234,187); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=0 ); /* IE6-9 */
-}
-
-.togglebutton:hover,
-.togglebutton:focus {
-   background:white;
-}
-
-.togglebutton.on {
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c4ffa3+0,75ff95+100 */
-background: rgb(196,255,163); /* Old browsers */
-background: -moz-linear-gradient(top, rgba(196,255,163,1) 0%, rgba(117,255,149,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(196,255,163,1) 0%,rgba(117,255,149,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(196,255,163,1) 0%,rgba(117,255,149,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4ffa3', endColorstr='#75ff95',GradientType=0 ); /* IE6-9 */
-}
+/* end language switch controls */
