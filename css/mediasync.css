@@ -220,14 +220,22 @@ article {
 }
 
 fieldset.langselect {
-    /*wip*/background:rgba(255,122,244,0.7);
+    display: block;
     padding:0;
+    margin:0;
     border:none;
+}
+
+.langselect .fieldset-flexcontainer {
+    /*wip*/background:rgba(255,122,244,0.7);
+    
+    
     display:flex;
     flex-flow: row nowrap;
 }
 
 .langselect legend {
+    display: block;
     width: 100%;
     background:rgba(0,0,244,0.5);
     text-align: center;
