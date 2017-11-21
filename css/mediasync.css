@@ -228,17 +228,19 @@ fieldset.langselect {
 
 .langselect .fieldset-flexcontainer {
     /*wip*/background:rgba(255,122,244,0.7);
-    
-    
     display:flex;
     flex-flow: row nowrap;
+    justify-content: space-between;
 }
 
 .langselect legend {
-    display: block;
     width: 100%;
-    background:rgba(0,0,244,0.5);
+    
     text-align: center;
+    font-size: .75em;
+    line-height: 1.5em;
+    font-weight: bold;
+    color: #444;
 }
 
 /* style the buttons and radio inputs that look like buttons */
@@ -252,16 +254,16 @@ fieldset.langselect {
     .radiofakebutton span {
         display:none;
     }
-    .radiofakebutton.no::after {
+    .radiofakebutton.no::before {
         content:"No";
     }
-    .radiofakebutton.ar::after {
+    .radiofakebutton.ar::before {
         content:"Ar";
     }
-    .radiofakebutton.so::after {
+    .radiofakebutton.so::before {
         content:"So";
     }
-    .radiofakebutton.ti::after {
+    .radiofakebutton.ti::before {
         content:"Ti";
     }
 }
@@ -269,6 +271,63 @@ fieldset.langselect {
 @media screen and (min-width: 40em) {
     /* sjekk breakpoint her */
     /* skjul .radiofakebutton ::after-content */
+}
+
+#btn-maxmin .minimize,
+body.fullscreen #btn-maxmin .maximize {
+    display: none;
+}
+
+body.fullscreen #btn-maxmin .minimize {
+    display: block;
+}
+
+.togglebutton, .labelradiobtn {
+    position: relative;
+    line-height: 1.5em;
+    color: black;
+    border: 1px solid #888;
+    flex-basis: 1.5em;
+    flex-grow: 1;
+    margin: .15em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.togglebutton:first-child,
+.labelradiobtn:first-child {
+    margin-left: 0;
+}
+
+.togglebutton:last-child,
+.labelradiobtn:last-child {
+    margin-right:0;
+}
+
+.labelradiobtn {
+    border-radius: .5em;
+}
+
+.togglebutton .icon,
+.radiofakebutton .icon {
+    position: absolute;
+    display: block;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin:auto;
+}
+
+.togglebutton.on {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c4ffa3+0,75ff95+100 */
+background: rgb(196,255,163); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(196,255,163,1) 0%, rgba(117,255,149,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(196,255,163,1) 0%,rgba(117,255,149,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(196,255,163,1) 0%,rgba(117,255,149,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4ffa3', endColorstr='#75ff95',GradientType=0 ); /* IE6-9 */
 }
 
 /* end language switch controls */

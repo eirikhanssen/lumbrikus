@@ -289,28 +289,28 @@ function lumbrikus_audiosync_markup_begin() {
 	<fieldset class="langselect" id="primary_language">
 		<legend>språk</legend>
 		<div class="fieldset-flexcontainer">
-			<label class="single" for="primary_lang_no">
+			<label for="primary_lang_no" class="labelradiobtn">
 				<input id="primary_lang_no" type="radio" name="primary_language" checked="checked"/>
 				<span class="radiofakebutton no" tabindex="0">
 					<span lang="no">Norsk</span>
 					<span lang="en">Norwegian</span>
 				</span>
 			</label>
-			<label for="primary_lang_ar">
+			<label for="primary_lang_ar" class="labelradiobtn">
 				<input id="primary_lang_ar" type="radio" name="primary_language"/>
 				<span class="radiofakebutton ar" tabindex="0">
 					<span lang="ar" class="rtl">العربية</span>
 					<span lang="no">Arabisk</span>
 				</span>
 			</label>
-			<label for="primary_lang_so">
+			<label for="primary_lang_so" class="labelradiobtn">
 				<input id="primary_lang_so" type="radio" name="primary_language"/>	
 				<span class="radiofakebutton so" tabindex="0">
 					<span lang="so">SOOMAALI</span>
 					<span lang="no">Somali</span>
 				</span>
 			</label>
-			<label for="primary_lang_ti">
+			<label for="primary_lang_ti" class="labelradiobtn">
 				<input id="primary_lang_ti" type="radio" name="primary_language"/>
 				<span class="radiofakebutton ti" tabindex="0">
 					<span lang="ti">ትግርኛ</span>
@@ -329,35 +329,35 @@ function lumbrikus_audiosync_markup_begin() {
 	<fieldset class="langselect" id="secondary_language">
 		<legend>støttespråk</legend>
 		<div class="fieldset-flexcontainer">
-			<label class="single" for="secondary_lang_no">
+			<label for="secondary_lang_no" class="labelradiobtn">
 				<input id="secondary_lang_no" type="radio" name="secondary_language" checked="checked"/>
 				<span class="radiofakebutton no" tabindex="0">
 					<span lang="no">Norsk</span>
 					<span lang="en">Norwegian</span>
 				</span>
 			</label>
-			<label for="secondary_lang_ar">
+			<label for="secondary_lang_ar" class="labelradiobtn">
 				<input id="secondary_lang_ar" type="radio" name="secondary_language"/>
 				<span class="radiofakebutton ar" tabindex="0">
 					<span lang="ar" class="rtl">العربية</span>
 					<span lang="no">Arabisk</span>
 				</span>
 			</label>
-			<label for="secondary_lang_so">
+			<label for="secondary_lang_so" class="labelradiobtn">
 				<input id="secondary_lang_so" type="radio" name="secondary_language"/>
 				<span class="radiofakebutton so" tabindex="0">
 					<span lang="so">SOOMAALI</span>
 					<span lang="no">Somali</span>
 				</span>
 			</label>
-			<label for="secondary_lang_ti">
+			<label for="secondary_lang_ti" class="labelradiobtn">
 				<input id="secondary_lang_ti" type="radio" name="secondary_language"/>
 				<span class="radiofakebutton ti" tabindex="0">
 					<span lang="ti">ትግርኛ</span>
 					<span lang="no">Tigrinja</span>
 				</span>
 			</label>
-			<label for="secondary_lang_img">
+			<label for="secondary_lang_img" class="labelradiobtn">
 				<input id="secondary_lang_img" type="radio" name="secondary_language"/>
 				<span class="radiofakebutton img" tabindex="0">
 					<svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-image"></use></svg>
