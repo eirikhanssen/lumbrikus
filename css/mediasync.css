@@ -227,7 +227,6 @@ fieldset.langselect {
 }
 
 .langselect .fieldset-flexcontainer {
-    /*wip*/background:rgba(255,122,244,0.7);
     display:flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -286,7 +285,6 @@ body.fullscreen #btn-maxmin .minimize {
     position: relative;
     line-height: 1.5em;
     color: black;
-    border: 1px solid #888;
     flex-basis: 1.5em;
     flex-grow: 1;
     margin: .15em;
@@ -295,6 +293,30 @@ body.fullscreen #btn-maxmin .minimize {
     flex-direction: column;
     align-content: center;
 }
+
+.radiofakebutton, .togglebutton {
+    border: 1px solid #888;
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,c1c1c1+100 */
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(193,193,193,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(193,193,193,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(193,193,193,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c1c1c1',GradientType=0 ); /* IE6-9 */
+}
+
+@media screen and (min-width: 40em) {
+    .radiofakebutton {
+        background: #ffffff; /* Old browsers */
+        background: -moz-linear-gradient(top, #ffffff 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #ffffff 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #ffffff 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+    }
+}
+
+
+
 
 .togglebutton:first-child,
 .labelradiobtn:first-child {
@@ -306,8 +328,22 @@ body.fullscreen #btn-maxmin .minimize {
     margin-right:0;
 }
 
-.labelradiobtn {
+.radiofakebutton {
     border-radius: .5em;
+    height: 100%;
+}
+.labelradiobtn::after {
+    /* fix for making sure svg icon doesn't capture the click event (browser bug workaround) */
+    content: "";
+    background:transparent;
+    display: block;
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
 }
 
 .togglebutton .icon,
@@ -320,6 +356,62 @@ body.fullscreen #btn-maxmin .minimize {
     right:0;
     margin:auto;
 }
+
+
+
+:checked + .radiofakebutton::after,
+.labelradiobtn:hover .radiofakebutton::after,
+.labelradiobtn .radiofakebutton:focus::after {
+    display: block;
+    content:"";
+    position: absolute;
+    top: 100%;
+    left: .25em;
+    right: .25em;
+    height: .25em;
+    margin-top: .25em;
+    border-radius: .25em;
+    box-sizing: border-box;
+}
+
+.labelradiobtn:hover .radiofakebutton::after {
+    
+    background: #999;
+}
+    
+
+
+.labelradiobtn :checked + .radiofakebutton::after {
+    background: #444;
+}
+
+.labelradiobtn .radiofakebutton:focus::after {
+    background:orangered;
+}
+
+:checked + .radiofakebutton {
+    background: rgb(255, 206, 84); /* Old browsers */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fffca5+0,ffbd3a+100 */
+background: rgb(255,252,165); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(255,252,165,1) 0%, rgba(255,189,58,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,252,165,1) 0%,rgba(255,189,58,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,252,165,1) 0%,rgba(255,189,58,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffca5', endColorstr='#ffbd3a',GradientType=0 ); /* IE6-9 */
+
+    border-color: #333;
+}
+
+
+@media screen and (min-width: 40em) {
+    :checked + .radiofakebutton {
+        background: rgb(255, 206, 84); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=0 ); /* IE6-9 */
+    }
+}
+
 
 .togglebutton.on {
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c4ffa3+0,75ff95+100 */
