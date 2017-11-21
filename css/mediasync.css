@@ -105,7 +105,6 @@ article.audio_and_text .cues {
 }
 
 .key {
-    display: block;
     box-sizing: border-box;
     line-height: 1.5;
 }
@@ -180,7 +179,7 @@ article {
 
 
 #translation .key:after,
- #translation .key:before{
+#translation .key:before{
     content:"";
     position:absolute;
     width: 1rem;
@@ -208,6 +207,17 @@ article {
 /* begin language switch controls */
 
 /* mobile first */
+
+/* hide translation, show if there is enough screen space */
+#translation {
+    display:none;
+}
+
+@media screen and (min-width: 40em) {
+    #translation {
+        display:block;
+    }
+}
 
 fieldset.langselect {
     /*wip*/background:rgba(255,122,244,0.7);
@@ -248,7 +258,7 @@ fieldset.langselect {
     }
 }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 40em) {
     /* sjekk breakpoint her */
     /* skjul .radiofakebutton ::after-content */
 }
