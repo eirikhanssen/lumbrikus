@@ -671,7 +671,7 @@ a[title="lumbrikus startside"]:focus svg {
 
 .internal-chapter-links span.linktext {
     padding: .25em .5em;
-    top: calc(100% + .25em);
+    top: calc(100% + .5em);
     left: 50%;
     transform:translate(-50%,0);
     line-height: 1em;

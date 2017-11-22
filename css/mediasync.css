@@ -319,9 +319,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
         background: linear-gradient(to bottom, #ffffff 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
     }
+
+    .togglebutton, .labelradiobtn {
+        line-height: .8em;
+    }
+    .labelradiobtn .radiofakebutton {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .radiofakebutton span {
+        font-size: .75em;
+    }
+    .radiofakebutton [lang="so"] {
+        font-size: .6em;
+    }
+    .radiofakebutton span:first-of-type {
+        font-weight: bold;
+    }
+    .radiofakebutton span:last-of-type {
+        color:"#333";
+        font-weight: normal;
+    }
+    .radiofakebutton {
+        padding: .1em;
+    }
 }
-
-
 
 
 .togglebutton:first-child,

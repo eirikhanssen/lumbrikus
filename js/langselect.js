@@ -55,7 +55,7 @@ $( document ).ready(function() {
 			$(e.target).attr("aria-pressed", new_state);
 		});
 
-		$('.fakebutton').on('keydown', function(e){
+		$('.labelradiobtn').on('keydown', function(e){
 			if(e.keyCode === 13 || e.keyCode === 32) {
 				e.target.click();
 			}
