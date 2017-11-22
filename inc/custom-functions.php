@@ -317,10 +317,10 @@ function lumbrikus_audiosync_markup_begin() {
 					<span lang="no">Tigrinja</span>
 				</span>
 			</label>
-			<button class="togglebutton image-toggle" id="btn-image-toggle">
+			<button type="button" aria-pressed="false" aria-label="image toggle" class="togglebutton image-toggle" id="btn-image-toggle">
 				<svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-image"></use></svg>
 			</button>
-			<button class="togglebutton maxmin" id="btn-maxmin">
+			<button type="button" aria-pressed="false" aria-label="fullscreen toggle" class="togglebutton maxmin" id="btn-maxmin">
 				<svg class="icon maximize"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-maximize"></use></svg>
 				<svg class="icon minimize"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-minimize"></use></svg>
 			</button>

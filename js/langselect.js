@@ -36,6 +36,23 @@ $( document ).ready(function() {
 
 		$('.togglebutton').on("click", function(e){
 			$(e.target).toggleClass("on");
+			// toggle button state aria-pressed: true|false
+			var pressed_state = $(e.target).attr("aria-pressed");
+			var new_state = null;
+
+			switch(pressed_state) {
+				case "false":
+					new_state = "true";
+				break;
+				case "true":
+					new_state = "false";
+				break;
+				default:
+					console.log("unknown state on: ", e.target);
+				break;
+			}
+
+			$(e.target).attr("aria-pressed", new_state);
 		});
 
 		$('.fakebutton').on('keydown', function(e){
