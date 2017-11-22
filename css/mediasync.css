@@ -270,6 +270,12 @@ fieldset.langselect {
 @media screen and (min-width: 40em) {
     /* sjekk breakpoint her */
     /* skjul .radiofakebutton ::after-content */
+    .labelradiobtn .radiofakebutton::before {
+        content:"";
+    }
+    .radiofakebutton span {
+        display: inline;
+    }
 }
 
 #btn-maxmin .minimize,
@@ -373,6 +379,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     margin-top: .25em;
     border-radius: .25em;
     box-sizing: border-box;
+}
+
+.labelradiobtn:focus,
+.togglebutton:focus {
+    outline: none;
+}
+
+.labelradiobtn:focus .radiofakebutton, 
+.togglebutton:focus {
+    box-shadow: 0 0 0 5px orange;
 }
 
 .labelradiobtn:hover .radiofakebutton::after {

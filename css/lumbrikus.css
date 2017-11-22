@@ -633,6 +633,11 @@ body.child-of-kapitler .internal-chapter-links {
     animation-fill-mode: forwards;    
 }
 
+.internal-chapter-links a:focus,
+a[title="lumbrikus startside"]:focus svg {
+    box-shadow: 0 0 0 5px orange;
+    outline: none;
+}
 
 .internal-chapter-links ul {
     list-style-type: none;
