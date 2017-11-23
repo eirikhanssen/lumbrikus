@@ -94,6 +94,8 @@ body.primary_lang_ti .audio_and_text.ti,
     color: #434343;
     box-sizing:  border-box;
     position:relative;
+    left: -.5em;
+    padding-left: .5em;
     z-index:1;
 }
 
@@ -101,6 +103,9 @@ article.audio_and_text .cues {
     position: relative;
     padding: 0;
     font-size: 1em;
+    padding-top: 1em;
+    padding-left: .5em;
+    padding-right: .5em;
 }
 
 .key {
@@ -150,18 +155,18 @@ article {
 /* begin translations */
 
 /* background images in translation containers */
-.kap-00-child #translation, .kap-00-child div.showimage {background-image: url('/media/img/00-den-rode-planeten-bg.jpg'); background-color: #453b43;}
-.kap-01-child #translation, .kap-01-child div.showimage {background-image: url('/media/img/01-let-og-finn-bg.jpg'); background-color: #61bdfe;}
-.kap-02-child #translation, .kap-02-child div.showimage {background-image: url('/media/img/02-let-og-finn-bg.jpg'); background-color:#b7f3fe;}
-.kap-03-child #translation, .kap-03-child div.showimage {background-image: url('/media/img/03-let-og-finn-bg.jpg'); background-color: #e7d2b3;}
-.kap-04-child #translation, .kap-04-child div.showimage {background-image: url('/media/img/04-let-og-finn-bg.jpg'); background-color: #6be7b5;}
-.kap-05-child #translation, .kap-05-child div.showimage {background-image: url('/media/img/05-let-og-finn-bg.jpg'); background-color: #767b45;}
-.kap-06-child #translation, .kap-06-child div.showimage {background-image: url('/media/img/06-let-og-finn-bg.jpg'); background-color: #ffffff;}
-.kap-07-child #translation, .kap-07-child div.showimage {background-image: url('/media/img/07-let-og-finn-bg.jpg'); background-color:#38393d;}
-.kap-08-child #translation, .kap-08-child div.showimage {background-image: url('/media/img/08-let-og-finn-bg.jpg'); background-color: #abcdbf;}
-.kap-09-child #translation, .kap-09-child div.showimage {background-image: url('/media/img/09-let-og-finn-bg.jpg'); background-color: #f2f9ff;}
-.kap-10-child #translation, .kap-10-child div.showimage {background-image: url('/media/img/10-let-og-finn-bg.jpg'); background-color:#72d0ff;}
-.kap-11-child #translation, .kap-11-child div.showimage {background-image: url('/media/img/11-farvel-bg.jpg'); background-color:#3f649b;}
+.kap-00-child #translation-bg, .kap-00-child div.showimage {background-image: url('/media/img/00-den-rode-planeten-bg.jpg'); background-color: #453b43;}
+.kap-01-child #translation-bg, .kap-01-child div.showimage {background-image: url('/media/img/01-let-og-finn-bg.jpg'); background-color: #61bdfe;}
+.kap-02-child #translation-bg, .kap-02-child div.showimage {background-image: url('/media/img/02-let-og-finn-bg.jpg'); background-color:#b7f3fe;}
+.kap-03-child #translation-bg, .kap-03-child div.showimage {background-image: url('/media/img/03-let-og-finn-bg.jpg'); background-color: #e7d2b3;}
+.kap-04-child #translation-bg, .kap-04-child div.showimage {background-image: url('/media/img/04-let-og-finn-bg.jpg'); background-color: #6be7b5;}
+.kap-05-child #translation-bg, .kap-05-child div.showimage {background-image: url('/media/img/05-let-og-finn-bg.jpg'); background-color: #767b45;}
+.kap-06-child #translation-bg, .kap-06-child div.showimage {background-image: url('/media/img/06-let-og-finn-bg.jpg'); background-color: #ffffff;}
+.kap-07-child #translation-bg, .kap-07-child div.showimage {background-image: url('/media/img/07-let-og-finn-bg.jpg'); background-color:#38393d;}
+.kap-08-child #translation-bg, .kap-08-child div.showimage {background-image: url('/media/img/08-let-og-finn-bg.jpg'); background-color: #abcdbf;}
+.kap-09-child #translation-bg, .kap-09-child div.showimage {background-image: url('/media/img/09-let-og-finn-bg.jpg'); background-color: #f2f9ff;}
+.kap-10-child #translation-bg, .kap-10-child div.showimage {background-image: url('/media/img/10-let-og-finn-bg.jpg'); background-color:#72d0ff;}
+.kap-11-child #translation-bg, .kap-11-child div.showimage {background-image: url('/media/img/11-farvel-bg.jpg'); background-color:#3f649b;}
 
 body.showimage .audio_and_text {
     margin-bottom: calc(50vh - 10rem);
@@ -180,10 +185,12 @@ body.showimage div.showimage {
     padding-top: calc(40vh - 5rem);
     z-index: 20;
     border: 5px solid white;
+    overflow:hidden;
 }
 
 body.showimage.fullscreen div.showimage {
     padding-top: calc(40vh - 3rem);
+    
 }
 
 body.showimage-max div.showimage {
@@ -222,6 +229,7 @@ div.showimage button {
     background: rgba(255,255,255,0.9);
     border: 2px solid black;
     margin:0;
+    margin-top: 10px;
     padding:0;
 }
 
@@ -248,9 +256,10 @@ body.showimage-max .showimage-maxmin .icon.maximize {
 
 /* begin visualize sync */
 #translation .key {
-    margin: .5em;
+    margin: .75em;
     position: relative;
-    top: .5em;
+    top: 1em;
+    display: block;
     background: rgb(255, 244, 212);
     box-sizing: border-box;
     padding: .5rem;
@@ -302,9 +311,9 @@ body.showimage-max .showimage-maxmin .icon.maximize {
     display: none;
 }
 
-#translation {
+#translation-bg {
  background-size: contain;
- background-position: bottom;
+ background-position: bottom 2rem center;
  background-repeat: no-repeat;
  position: fixed;
  display: block;
@@ -321,7 +330,7 @@ body:not(.fullscreen)::after {
     position: absolute;
     background: whitesmoke;
     top:0;
-    height: 10rem;
+    height: 10.5rem;
     left: 0;
     right: 0;
     z-index: -1
@@ -440,6 +449,10 @@ body.fullscreen nav.internal-chapter-links span.linktext {
 }
 
 
+#original-language-container {
+    width: 100%;
+}
+
 .fullscreen #original-language-container {
     margin-top: 1rem;
 }
@@ -483,7 +496,7 @@ body.fullscreen nav.internal-chapter-links span.linktext {
     }
     .mejs__audio,
     .cues::after {
-        right: calc(50% + 5px);
+        right: 50%;
     }
 
     .radiofakebutton span {
@@ -502,8 +515,16 @@ body.fullscreen nav.internal-chapter-links span.linktext {
         content:"Ti";
     }
 
-    #translation .key {
-        top: 10rem;
+    #translation {
+        position:fixed;
+        margin-top: 10rem;
+        left:50%;
+        right:0em;
+    }
+
+    body.fullscreen #translation {
+        margin-top:0;
+        top: 3.5rem;
     }
 
     body.showimage div.showimage {

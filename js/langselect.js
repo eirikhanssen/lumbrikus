@@ -1,4 +1,15 @@
 $( document ).ready(function() {
+
+	function isScrolledIntoView(elem) {
+		var docViewTop = $(window).scrollTop();
+		var docViewBottom = docViewTop + $(window).height();
+	
+		var elemTop = $(elem).offset().top;
+		var elemBottom = elemTop + $(elem).height();
+	
+		return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+	}
+
 	if($('#lang_select_form')) {
 
 		var primary_language = $('input[name=primary_language]:checked').attr('id');
@@ -71,5 +82,21 @@ $( document ).ready(function() {
 				e.target.click();
 			}
 		});
+
+		document.addEventListener('scroll', function (event) {
+			var body = document.querySelector('body');
+			var translation = document.querySelector('#translation');
+			if (!$('body').hasClass('fullscreen')) {
+				if (isScrolledIntoView($('#secondary_language'))) { // or any other filtering condition        
+					console.log('scrollTop: ' + body.scrollTop , event.target);
+					translation.setAttribute("style", "transform: translate(0,-" + body.scrollTop + "px);");
+				} else {
+					translation.setAttribute("style", "top: 0px; margin-top: 0;");
+				}
+			}
+			 
+			
+			
+		}, true /*Capture event*/);
 	}
 });

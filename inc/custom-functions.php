@@ -383,7 +383,9 @@ function lumbrikus_audiosync_markup_end() {
 			</label>
 		</div>
 	</fieldset>
-	<div id="translation"></div>
+	<div id="translation-bg">
+		<div id="translation"></div>
+	</div>
 
 HTML;
 	return $output;
