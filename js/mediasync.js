@@ -219,9 +219,9 @@ $( document ).ready(function() {
         },1,false);
     }
 
-    $('#secondary_language .fakebutton').on('click', function(){
+    $('#secondary_language .labelradiobtn').on('click', function(){
         updateTranslationFromBodyAttrs();
     });
 
-    updateTranslationFromBodyAttrs();
+    window.setTimeout(updateTranslationFromBodyAttrs, 100);
 });

@@ -34,8 +34,11 @@ $( document ).ready(function() {
 			$('body').toggleClass('fullscreen');
 		});
 
+		$('#btn-image-toggle').on("click", function(){
+			$('body').toggleClass('showimage');
+		});
+
 		$('.togglebutton').on("click", function(e){
-			$(e.target).toggleClass("on");
 			// toggle button state aria-pressed: true|false
 			var pressed_state = $(e.target).attr("aria-pressed");
 			var new_state = null;

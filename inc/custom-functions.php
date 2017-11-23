@@ -285,9 +285,9 @@ function lumbrikus_internal_chapter_menu($lvl) {
 
 function lumbrikus_audiosync_markup_begin() {
 	$output =<<<HTML
-<section id="lang_select">
+
 	<fieldset class="langselect" id="primary_language">
-		<legend>språk</legend>
+		<legend>tekst og lyd</legend>
 		<div class="fieldset-flexcontainer">
 			<label for="primary_lang_no" class="labelradiobtn" tabindex="0">
 				<input id="primary_lang_no" type="radio" name="primary_language" checked="checked"/>
@@ -317,17 +317,25 @@ function lumbrikus_audiosync_markup_begin() {
 					<span lang="no">Tigrinja</span>
 				</span>
 			</label>
-			<button type="button" aria-pressed="false" aria-label="image toggle" class="togglebutton image-toggle" id="btn-image-toggle">
+			<button type="button" aria-pressed="false" aria-label="image toggle" class="togglebutton image-toggle" id="btn-image-toggle" data-bodyclass="fullscreen">
 				<svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-image"></use></svg>
 			</button>
-			<button type="button" aria-pressed="false" aria-label="fullscreen toggle" class="togglebutton maxmin" id="btn-maxmin">
+			<button type="button" aria-pressed="false" aria-label="fullscreen toggle" class="togglebutton maxmin" id="btn-maxmin" data-bodyclass="fullscreen">
 				<svg class="icon maximize"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-maximize"></use></svg>
 				<svg class="icon minimize"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-minimize"></use></svg>
 			</button>
 		</div>
 	</fieldset>
-	<fieldset class="langselect" id="secondary_language">
-		<legend>støttespråk</legend>
+	<div class="showimage"></div>
+HTML;
+	return $output;
+}
+
+function lumbrikus_audiosync_markup_end() {
+	$output=<<<HTML
+
+<fieldset class="langselect" id="secondary_language">
+		<legend>tekst</legend>
 		<div class="fieldset-flexcontainer">
 			<label for="secondary_lang_no" class="labelradiobtn" tabindex="0">
 				<input id="secondary_lang_no" type="radio" name="secondary_language" checked="checked"/>
@@ -365,17 +373,8 @@ function lumbrikus_audiosync_markup_begin() {
 			</label>
 		</div>
 	</fieldset>
-	
-</section>
-HTML;
-	return $output;
-}
-
-function lumbrikus_audiosync_markup_end() {
-	$output=<<<HTML
-<div class="translation-container">
 	<div id="translation"></div>
-</div><!-- .translation-container -->
+
 HTML;
 	return $output;
 }

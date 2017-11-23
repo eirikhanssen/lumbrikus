@@ -13,17 +13,34 @@
  */
 
 ?>
+<!-- BEGIN CONTENT-PAGE AUDIOSYNC-->
+
 <?php echo lumbrikus_make_text_links_to_children(get_the_ID()); ?>
-<!-- BEGIN CONTENT-PAGE -->
+
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-<?php echo lumbrikus_audiosync_markup_begin(); ?>
-<!-- BEGIN THE CONTENT -->		
+	<div id="audiosync-flexcontainer">
+	
+		<div id="original-language-container">
 
-		<?php the_content(); ?>
+			<?php echo lumbrikus_audiosync_markup_begin(); ?>
+			
+			<!-- BEGIN THE CONTENT -->
 
-<!-- END THE CONTENT -->		
-<?php echo lumbrikus_audiosync_markup_end(); ?>
-<!-- END CONTENT-PAGE -->
+			<?php the_content(); ?>
+			
+			<!-- END THE CONTENT -->
+
+		</div><!-- .original_language_container -->
+
+		<div id="translation-language-container">
+					
+			<?php echo lumbrikus_audiosync_markup_end(); ?>
+
+		</div><!-- .translation_language_container -->
+
+	</div><!-- .audiosync_flexcontainer -->
+
+<!-- END CONTENT-PAGE AUDIOSYNC -->
