@@ -758,6 +758,11 @@
             style="stroke: var(--color-dark, #444)" class="galt" d="M-13 -13 L 13 13 M-13 13 L 13 -13"/>
         </symbol>
 
+        <symbol id="icon-lukk" viewBox="-16 -16 32 32">
+            <title>lukk</title>
+            <path stroke-width="6px" stroke-linecap="butt" stroke="black" class="lukk" d="M-13 -13 L 13 13 M-13 13 L 13 -13"/>
+        </symbol>
+
         <symbol id="icon-hint" viewBox="-16 -16 32 32">
             <title>hint</title>
             <g stroke="rgb(0, 163, 27)">
