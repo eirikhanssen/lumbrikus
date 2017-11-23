@@ -38,7 +38,15 @@ $( document ).ready(function() {
 			$('body').toggleClass('showimage');
 		});
 
-		$('.togglebutton').on("click", function(e){
+		$('#btn-primary-language-showimage-maxmin').on("click", function(){
+			$('body').toggleClass('showimage-max');
+		});
+
+		$('#btn-primary-language-showimage-close').on("click", function(){
+			$('#btn-image-toggle').click();
+		});
+
+		$('.togglebutton, .showimage-maxmin').on("click", function(e){
 			// toggle button state aria-pressed: true|false
 			var pressed_state = $(e.target).attr("aria-pressed");
 			var new_state = null;

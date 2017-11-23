@@ -326,7 +326,17 @@ function lumbrikus_audiosync_markup_begin() {
 			</button>
 		</div>
 	</fieldset>
-	<div class="showimage"></div>
+	<div class="showimage">
+		<div class="buttons">
+			<button type="button" aria-pressed="false" aria-label="maksimer bildet" class="showimage-maxmin" id="btn-primary-language-showimage-maxmin">
+				<svg class="icon maximize"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-maximize"></use></svg>
+				<svg class="icon minimize"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-minimize"></use></svg>
+			</button>
+			<button type="button" aria-label="lukk bildet" class="showimage-close" id="btn-primary-language-showimage-close">
+				<svg class="icon close"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-lukk"></use></svg>
+			</button>
+		</div>
+	</div>
 HTML;
 	return $output;
 }

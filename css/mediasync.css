@@ -150,29 +150,29 @@ article {
 /* begin translations */
 
 /* background images in translation containers */
-.kap-00-child #translation, .kap-00-child .audio_and_text::before {background-image: url('/media/img/00-den-rode-planeten-bg.jpg'); background-color: #453b43;}
-.kap-01-child #translation, .kap-01-child .audio_and_text::before {background-image: url('/media/img/01-let-og-finn-bg.jpg'); background-color: #61bdfe;}
-.kap-02-child #translation, .kap-02-child .audio_and_text::before {background-image: url('/media/img/02-let-og-finn-bg.jpg'); background-color:#b7f3fe;}
-.kap-03-child #translation, .kap-03-child .audio_and_text::before {background-image: url('/media/img/03-let-og-finn-bg.jpg'); background-color: #e7d2b3;}
-.kap-04-child #translation, .kap-04-child .audio_and_text::before {background-image: url('/media/img/04-let-og-finn-bg.jpg'); background-color: #6be7b5;}
-.kap-05-child #translation, .kap-05-child .audio_and_text::before {background-image: url('/media/img/05-let-og-finn-bg.jpg'); background-color: #767b45;}
-.kap-06-child #translation, .kap-06-child .audio_and_text::before {background-image: url('/media/img/06-let-og-finn-bg.jpg'); background-color: #ffffff;}
-.kap-07-child #translation, .kap-07-child .audio_and_text::before {background-image: url('/media/img/07-let-og-finn-bg.jpg'); background-color:#38393d;}
-.kap-08-child #translation, .kap-08-child .audio_and_text::before {background-image: url('/media/img/08-let-og-finn-bg.jpg'); background-color: #abcdbf;}
-.kap-09-child #translation, .kap-09-child .audio_and_text::before {background-image: url('/media/img/09-let-og-finn-bg.jpg'); background-color: #f2f9ff;}
-.kap-10-child #translation, .kap-10-child .audio_and_text::before {background-image: url('/media/img/10-let-og-finn-bg.jpg'); background-color:#72d0ff;}
-.kap-11-child #translation, .kap-11-child .audio_and_text::before {background-image: url('/media/img/11-farvel-bg.jpg'); background-color:#3f649b;}
+.kap-00-child #translation, .kap-00-child div.showimage {background-image: url('/media/img/00-den-rode-planeten-bg.jpg'); background-color: #453b43;}
+.kap-01-child #translation, .kap-01-child div.showimage {background-image: url('/media/img/01-let-og-finn-bg.jpg'); background-color: #61bdfe;}
+.kap-02-child #translation, .kap-02-child div.showimage {background-image: url('/media/img/02-let-og-finn-bg.jpg'); background-color:#b7f3fe;}
+.kap-03-child #translation, .kap-03-child div.showimage {background-image: url('/media/img/03-let-og-finn-bg.jpg'); background-color: #e7d2b3;}
+.kap-04-child #translation, .kap-04-child div.showimage {background-image: url('/media/img/04-let-og-finn-bg.jpg'); background-color: #6be7b5;}
+.kap-05-child #translation, .kap-05-child div.showimage {background-image: url('/media/img/05-let-og-finn-bg.jpg'); background-color: #767b45;}
+.kap-06-child #translation, .kap-06-child div.showimage {background-image: url('/media/img/06-let-og-finn-bg.jpg'); background-color: #ffffff;}
+.kap-07-child #translation, .kap-07-child div.showimage {background-image: url('/media/img/07-let-og-finn-bg.jpg'); background-color:#38393d;}
+.kap-08-child #translation, .kap-08-child div.showimage {background-image: url('/media/img/08-let-og-finn-bg.jpg'); background-color: #abcdbf;}
+.kap-09-child #translation, .kap-09-child div.showimage {background-image: url('/media/img/09-let-og-finn-bg.jpg'); background-color: #f2f9ff;}
+.kap-10-child #translation, .kap-10-child div.showimage {background-image: url('/media/img/10-let-og-finn-bg.jpg'); background-color:#72d0ff;}
+.kap-11-child #translation, .kap-11-child div.showimage {background-image: url('/media/img/11-farvel-bg.jpg'); background-color:#3f649b;}
 
 body.showimage .audio_and_text {
-    padding-bottom: calc(50vh - 10rem);
+    margin-bottom: calc(50vh - 10rem);
 }
 
-body.showimage .audio_and_text::before {
-    content:"";
+body.showimage div.showimage {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center bottom;
-    position: fixed; bottom: 2rem;
+    position: fixed; 
+    bottom: 2rem;
     overflow-x: scroll;
     left:0;
     right:0;
@@ -182,9 +182,68 @@ body.showimage .audio_and_text::before {
     border: 5px solid white;
 }
 
-body.showimage.fullscreen .audio_and_text::before {
+body.showimage.fullscreen div.showimage {
     padding-top: calc(40vh - 3rem);
-    
+}
+
+body.showimage-max div.showimage {
+    top: 0;
+    background-position: center center;
+}
+
+body.fullscreen.showimage-max div.showimage {
+    top: calc(8.5vw + 2rem);
+    background-position: center center;
+}
+
+@media screen and (min-width: 45em) {
+    body.fullscreen.showimage-max div.showimage {
+        top: 4.1rem;
+        background-position: center center;
+    }
+}
+
+
+
+div.showimage .buttons {
+    position: absolute;
+    top:-5px;
+    right:5px;
+    bottom: auto;
+    left:auto;
+    margin:auto;
+    padding:0;
+}
+
+div.showimage button {
+    position: relative;
+    width: 1.5em;
+    height: 1.5em;
+    background: rgba(255,255,255,0.9);
+    border: 2px solid black;
+    margin:0;
+    padding:0;
+}
+
+div.showimage button .icon {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    margin: auto;
+}
+
+.showimage-maxmin .icon.minimize {
+    display: none;
+}
+
+body.showimage-max .showimage-maxmin .icon.minimize {
+    display: block;
+}
+
+body.showimage-max .showimage-maxmin .icon.maximize {
+    display: none;
 }
 
 /* begin visualize sync */
