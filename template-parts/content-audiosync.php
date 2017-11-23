@@ -17,16 +17,16 @@
 
 <?php echo lumbrikus_make_text_links_to_children(get_the_ID()); ?>
 
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+	
 
 	<div id="audiosync-flexcontainer">
 	
 		<div id="original-language-container">
 
 			<?php echo lumbrikus_audiosync_markup_begin(); ?>
-			
+		
+			<header class="entry-header"><?php the_title( '<h1 class="entry-title">', '</h1>' ); ?></header><!-- .entry-header -->	
+		
 			<!-- BEGIN THE CONTENT -->
 
 			<?php the_content(); ?>

@@ -122,7 +122,7 @@ article.audio_and_text .cues {
     background-color: #e9fdff;
     border: 1px solid #a1c2dc;
     border-radius: .1em;
-    z-index: -1;
+    z-index: -2;
 }
 
 /* low level sync to sentence or sub-sentence level */
@@ -273,12 +273,17 @@ body.showimage-max .showimage-maxmin .icon.maximize {
 #audiosync-flexcontainer {
     display: flex;
     overflow: auto;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
 }
+
+
+
 
 .fullscreen #audiosync-flexcontainer {
     margin-top: calc(8.5vw + 1.5rem);
 }
+
+
 
 /*
 .translation-container {
@@ -298,11 +303,28 @@ body.showimage-max .showimage-maxmin .icon.maximize {
 }
 
 #translation {
- background: red;
- position: relative;
+ background-size: contain;
+ background-position: bottom;
+ background-repeat: no-repeat;
+ position: fixed;
  display: block;
- width: 100%;
- height: 100%;
+ left: 50%;
+ right:0;
+ bottom:0;
+ top:0;
+ z-index: -2;
+}
+
+/*#translation::after,*/
+body:not(.fullscreen)::after {
+    content:"";
+    position: absolute;
+    background: whitesmoke;
+    top:0;
+    height: 10rem;
+    left: 0;
+    right: 0;
+    z-index: -1
 }
 
 body[data-secondary-lang="img"] #translation .key {
@@ -321,6 +343,7 @@ fieldset.langselect {
     display:flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    position: relative;
 }
 
 .langselect legend {
@@ -381,9 +404,11 @@ fieldset.langselect {
 
 .fullscreen .siteheader,
 /*.fullscreen .internal-chapter-links,*/
-.fullscreen .entry-header {
+
+.fullscreen .siteheader {
     display: none;
 }
+
 .fullscreen .internal-chapter-links {
     position: fixed;
     top:0;
@@ -419,7 +444,6 @@ body.fullscreen nav.internal-chapter-links span.linktext {
     margin-top: 1rem;
 }
 
-
 @media screen and (min-width: 45em) {
     .fullscreen fieldset {
         padding-top: 1.5rem;
@@ -434,6 +458,68 @@ body.fullscreen nav.internal-chapter-links span.linktext {
     }
     .fullscreen #audiosync-flexcontainer {
         margin-top: 3.75rem;
+    }
+}
+
+@media screen and (min-width: 55em) {
+    #translation-language-container {
+        display: block;
+    }
+    #audiosync-flexcontainer > div {
+        width: 50%;
+    }
+
+    .fullscreen fieldset#primary_language {
+        left:0;
+        right: calc(50%);
+        padding-right: 10px;
+    }
+
+    .fullscreen fieldset#secondary_language {
+        right:0;
+        left: calc(50%);
+        padding-left: 10px;
+
+    }
+    .mejs__audio,
+    .cues::after {
+        right: calc(50% + 5px);
+    }
+
+    .radiofakebutton span {
+        display:none;
+    }
+    .radiofakebutton.no::before {
+        content:"No";
+    }
+    .radiofakebutton.ar::before {
+        content:"Ar";
+    }
+    .radiofakebutton.so::before {
+        content:"So";
+    }
+    .radiofakebutton.ti::before {
+        content:"Ti";
+    }
+
+    #translation .key {
+        top: 10rem;
+    }
+
+    body.showimage div.showimage {
+        right: 50%;
+    }
+
+}
+
+@media screen and (min-width: 65em) {
+    /* sjekk breakpoint her */
+    /* skjul .radiofakebutton ::after-content */
+    .labelradiobtn .radiofakebutton::before {
+        content:"";
+    }
+    .radiofakebutton span {
+        display: inline;
     }
 }
 
