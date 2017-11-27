@@ -126,15 +126,35 @@ img {width: auto; height: auto;}
 }
 
 .kapitler-child .entry-title {
-    font-size: 4vw;
+    font-size: 2em;
     display: inline;
-    padding: 1em;
     line-height: 1em;
-    background: rgba(255,255,255,0.7);
-    color: rgba(0,0,0,0.9);
+    color: rgba(0,0,0,0.9); 
     margin: auto;
     text-align:center;
-    border-radius: 2em;
+    
+}
+
+.kapitler-child .entry-title a {
+    color: black;
+    text-decoration: none;
+    border-radius: 1em;
+    background: rgba(255,255,255,0.7);
+    padding: 0.25em .5em;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.kapitler-child .entry-title a:hover {
+     background: rgba(255,255,128,0.7);
+}
+
+.kapitler-child .entry-title a:focus {
+     border: 5px solid orange;
+    outline: none;
 }
 
 @media screen and (min-width: 30em)
