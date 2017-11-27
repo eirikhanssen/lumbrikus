@@ -74,7 +74,7 @@ function lumbrikus_load_scripts() {
 		wp_enqueue_style( 'mediasyncCSS', '/css/mediasync.css', array(), '0.2.0', 'all' );
 		wp_enqueue_style( 'mejsCSS', '/lib/mediaelement/build/mediaelementplayer.css', array(), '4.2.6', 'all' );
 		wp_enqueue_script( 'mejs', '/lib/mediaelement/build/mediaelement-and-player.js', false, '4.2.6', true);
-		wp_enqueue_script( 'mediasyncJS', '/js/mediasync.js', false, '0.9.4', true);
+		wp_enqueue_script( 'mediasyncJS', '/js/mediasync.js', false, '0.9.5', true);
 		wp_enqueue_script( 'langselectJS', '/js/langselect.js', false, '0.9.6', true);
 	}	
 }
