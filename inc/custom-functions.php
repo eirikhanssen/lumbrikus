@@ -186,7 +186,7 @@ function lumbrikus_generate_link_LI($chapter, $lvl, $link){
 	$xlinkns = 'xmlns:xlink="http://www.w3.org/1999/xlink" ';
 	$icon_fragment = "#icon-";
 	$li_class = "";
-	$icon_markup = '<svg class="icon"><use xlink:href="/media/svg/lumbrikus-symbol-icons.svg';
+	$icon_markup = '<svg class="icon"><use tabindex="-1" xlink:href="/media/svg/lumbrikus-symbol-icons.svg';
 
 	switch ($link[0]) {
 		case '':
@@ -241,7 +241,7 @@ function lumbrikus_generate_link_LI($chapter, $lvl, $link){
 
 	$icon_markup .= $icon_fragment . '"></use></svg>';
 
-	$output_LI = "    <li" . $li_class . "><a href=\"" . $href . "\">" . $icon_markup . "<span class=\"linktext\">" . $linktext . "</span></a></li>\n";
+	$output_LI = "    <li" . $li_class . "><a class=\"menulink\" href=\"" . $href . "\">" . $icon_markup . "<span class=\"linktext\">" . $linktext . "</span></a></li>\n";
 	return $output_LI;
 }
 
