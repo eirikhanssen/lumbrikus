@@ -536,6 +536,16 @@ main.underside {
     justify-content: center;
 }
 
+.page-snutter-underside article {
+    display: block;
+    margin: auto;
+    max-width: 40em;
+    padding: 1em;
+    padding-top: 2em;
+    box-shadow: 0 0 .5em #aaa;
+    border: 1px solid #999;
+}
+
 figure.ord {
     border: 5px solid #ddd;
     padding: .5rem;
