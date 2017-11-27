@@ -241,6 +241,9 @@ function lumbrikus_generate_link_LI($chapter, $lvl, $link){
 
 	$icon_markup .= $icon_fragment . '"></use></svg>';
 
+	// troubleshooting, trying png-background instead of svg icons in the menu
+	$icon_markup = "";
+
 	$output_LI = "    <li" . $li_class . "><a class=\"menulink\" href=\"" . $href . "\">" . $icon_markup . "<span class=\"linktext\">" . $linktext . "</span></a></li>\n";
 	return $output_LI;
 }
@@ -270,10 +273,12 @@ function lumbrikus_nav_internal_chapter_links($chapter, $lvl){
 
 function lumbrikus_get_chapter_num() {
 	$current_url=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-	$string = $current_url;
 	$pattern = '/^.+?\/kap-([0-9][0-9]).+$/i';
+	if(strpos($current_url, '/kapitler/kap-') == false) {
+		return "";
+	}
 	$replacement = '$1';
-	$chapter_num = intval(preg_replace($pattern, $replacement, $string));
+	$chapter_num = intval(preg_replace($pattern, $replacement, $current_url));
 	return $chapter_num;
 }
 

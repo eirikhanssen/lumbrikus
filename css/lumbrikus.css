@@ -539,19 +539,6 @@ body.child-of-kapitler .internal-chapter-links {
     z-index: -1;
 }
 
-.internal-chapter-links svg.icon {
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    margin: auto;
-    border-radius: 0;
-    box-sizing: border-box;
-    padding: 15%;
-    position: absolute;
-    top:0;
-    left:0;
-}
-
 @keyframes svgiconhover {
     to {
         border-color: #3689ff;
@@ -579,10 +566,108 @@ body.child-of-kapitler .internal-chapter-links {
     box-sizing: border-box;
     overflow: hidden;
     background:whitesmoke;
+    background-size: 500%;
 }
 
-.internal-chapter-links li:hover {
-    /*transform:scale(1.2);*/
+.internal-chapter-links li a::after {
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    width: 75%;
+    height: 75%;
+    margin:auto;
+    background-image: url(/media/svg/spritesheet.png);
+    background-size: 500%;
+    background-repeat: no-repeat;
+    padding: 0px;
+}
+
+li.kapitler a::after {
+    background-position: 25% 0;
+}
+
+body.kap-00 li.hovedside a::after,
+body.kap-00-child li.hovedside a::after {
+    background-position: 50% 0;
+}
+
+body.kap-01 li.hovedside a::after {
+    background-position: 75% 0;
+}
+
+body.kap-02 li.hovedside a::after {
+    background-position: 100% 0;
+}
+
+body.kap-03 li.hovedside a::after {
+    background-position: 0 25%;
+}
+
+body.kap-04 li.hovedside a::after {
+    background-position: 25% 25%;
+}
+
+body.kap-05 li.hovedside a::after {
+    background-position: 50% 25%;
+}
+
+body.kap-06 li.hovedside a::after {
+    background-position: 75% 25%;
+}
+
+body.kap-07 li.hovedside a::after {
+    background-position: 100% 25%;
+}
+
+body.kap-08 li.hovedside a::after {
+    background-position: 0 50%;
+}
+
+body.kap-09 li.hovedside a::after {
+    background-position: 25% 50%;
+}
+
+body.kap-10 li.hovedside a::after {
+    background-position: 50% 50%;
+}
+
+body.kap-11 li.hovedside a::after {
+    background-position: 75% 50%;
+}
+
+li.kort a::after {
+    background-position: 100% 50%;
+}
+
+li.lang a::after {
+    background-position: 0 75%;
+}
+
+li.let-og-finn a::after {
+    background-position: 0 100%;
+}
+
+li.ord a::after {
+    background-position: 25% 100%;
+}
+
+li.gjore-og-lage a::after {
+    background-position: 25% 75%;
+}
+
+li.filmer a::after {
+    background-position: 50% 75%;
+}
+
+li.snutter a::after {
+    background-position: 75% 75%;
+}
+
+li.kviss a::after {
+    background-position: 100% 75%;
 }
 
 @media screen and (min-width: 45em) {
@@ -653,38 +738,29 @@ a[title="lumbrikus startside"]:focus svg {
     color: black;
 }
 
-.internal-chapter-links a:before {
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    bottom:0;
-    right:0;
-    background:transparent;
-    z-index: 10;
-}
-
 .internal-chapter-links a:focus .linktext,
 .internal-chapter-links a:hover .linktext{
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .internal-chapter-links span.linktext {
-    padding: .25em .5em;
-    top: calc(100% + .5em);
+    position: absolute;
+    display: block;
+    top: calc(100% + 1em);
     left: 50%;
     transform:translate(-50%,0);
+    white-space: pre;
     line-height: 1em;
+    width: auto;
     font-size: .5em;
     font-weight:bold;
     display:none;
     text-align: center;
     color: #333;
-    background-color: white;
     position: absolute;
     box-sizing: content-box;
-    white-space: pre;
-    border-radius: .25em;
+    padding: .25em;
+    border-radius: .1em;
     z-index:1;
 }
 
@@ -698,7 +774,10 @@ a:hover span.linktext,
 a:focus span.linktext {
     display:block;
     z-index: 10;
-    background-color: white;
+}
+
+.child-of-kapitler .linktext {
+    background-color: whitesmoke;4
 }
 
 
@@ -749,6 +828,10 @@ body.snutter-child li.snutter span.linktext,
 body.kviss li.kviss span.linktext {
     display:block;
     animation:none;
+    font-weight: bold;
+    font-size: .5em;
+    transform:translate(-50%,-.8em);
+
 }
 
 body.kort li.kort,

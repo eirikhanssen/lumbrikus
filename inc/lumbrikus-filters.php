@@ -19,9 +19,23 @@ function lumbrikus_add_parent_slug_body_class( $classes ) {
 	return $classes;
 }
 
+function lumbrikus_add_chapter_to_body_class ( $classes ) {
+	global $post;
+	$chapter = lumbrikus_get_chapter_num();
+	if($chapter != "") {
+		if($chapter < 10) {
+			$chapter = '0' . $chapter;
+		}
+		$classes[] = 'kap-' . $chapter;
+	} else {
+		$classes[] = "";
+	}
+	return $classes;
+}
+
 add_filter( 'body_class', 'lumbrikus_add_slug_body_class' );
 add_filter( 'body_class', 'lumbrikus_add_parent_slug_body_class' );
-
+add_filter( 'body_class', 'lumbrikus_add_chapter_to_body_class' );
 add_filter( 'page_template', function ( $template )
 {
 	global $post;
