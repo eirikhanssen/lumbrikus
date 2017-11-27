@@ -102,7 +102,25 @@ img {width: auto; height: auto;}
 .site-description,
 .entry-title {
     font-family: "Open Sans Condensed", sans-serif;
+}
+.page-kapitler .entry-title,
+.page-let-og-finn .entry-title,
+.page-ord .entry-title,
+.page-snutter .entry-title,
+.page-kviss .entry-title,
+.page-filmer .entry-title,
+.page-gjore-og-lage .entry-title {
+    text-align: center;
+    padding-top: .5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    border-bottom: 1px solid #ccc;
+}
 
+.page-lang .entry-header,
+.page-kort .entry-header {
+    padding-top: .5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    border-bottom: 1px solid #ccc;
 }
 .site-title,
 .site-description {
@@ -443,6 +461,9 @@ body[class*="kviss"] .page-footer {
     list-style-type: none;
     padding: 0;
     margin:0;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .child-page-links.textimage a {
@@ -453,7 +474,7 @@ body[class*="kviss"] .page-footer {
 
 .child-page-links.textimage li {
     padding: 0;
-    margin:.5rem;
+    margin:.75rem;
     display: inline-block;
     float: left;
 }
