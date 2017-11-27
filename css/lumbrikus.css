@@ -187,8 +187,6 @@ img {width: auto; height: auto;}
     }   
     .entry-title {
         color: black;
-        left: 6rem;
-
     }
 }
 
@@ -532,25 +530,43 @@ main.underside {
     border: 1px solid black;
 }
 
+.page-ord .entry-content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
 figure.ord {
-    border: 1px solid gray;
-    padding: 1rem;
-    max-width: 30em;
-    margin: auto;
-    margin-bottom: 2rem;
+    border: 5px solid #ddd;
+    padding: .5rem;
+    width: 14em;
+    height: 12em;
+    margin: .5em;
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: .25em;
+    background: whitesmoke;
+    
 }
 
 figure.ord img {
     background: white;
     padding: .5em;
-    border: 1px solid black;
+    border: 5px solid black;
     display: block;
     margin: auto;
+    flex-grow: .5;
+    max-width: 90%;
+    max-height: auto;
 
 }
 
 figure.ord figcaption {
-    text-align: center;
+    text-align: left;
+    font-size: .7em;
+    line-height: 1.25em;
+    padding: 0; padding-top: 1em;
+    font-weight: bold;
 }
 
 
