@@ -94,6 +94,30 @@ function lumbrikus_make_text_links_to_children($post_id) {
 	return $output;
 }
 
+function lumbrikus_get_direct_children_of_post($post_id) {
+	$all_children = get_pages( array( 'child_of' => $post_id ) );
+	$direct_children = [];
+
+	foreach($all_children as $possible_child) {
+		if($possible_child->post_parent == $post_id) {
+			array_push($direct_children, $possible_child);
+		}
+	}
+	return $direct_children;
+}
+
+function lumbrikus_has_childpage($post_id, $slug) {
+	$post = get_post($post_id);
+	$children = lumbrikus_get_direct_children_of_post($post->ID);
+	foreach($children as $child) {
+		if($child->post_name == $slug) {
+			return true;
+		}
+	}
+	// none of the children has the slug == the page doesn't exist
+	return false;
+}
+
 
 /**
  * find all pages that has page with $post_id as parent, and return a nav with links to them. If they have a fetured image, use that in the link.
@@ -248,8 +272,27 @@ function lumbrikus_generate_link_LI($chapter, $lvl, $link){
 	return $output_LI;
 }
 
-function lumbrikus_nav_internal_chapter_links($chapter, $lvl){
+function get_chapter_root($post_id) {
+	// the parent of the root page in each chapter's slug is 'kapitler'
+	$post = get_post($post_id);
+	
+	while(true) {
+		$parent_slug = get_post($post->post_parent)->post_name;
+
+		if ($parent_slug == 'kapitler' || !get_post($post->post_parent) ) {
+			// return the post id of the post that either has no parent, or that the parent's slug is 'kapitler'
+			return $post->ID;
+		}
+		$post = get_post($post->post_parent);
+	}
+}
+
+function lumbrikus_nav_internal_chapter_links($chapter, $lvl) {
+	global $post;
+	$chapter_root_id = get_chapter_root($post->ID);
+	$children = lumbrikus_get_direct_children_of_post($chapter_root_id);
 	$LIs = "";
+	$tpl = basename( get_page_template() );
 	$links_raw = [
 	['../','kapitler'],
 	['','bilde'],
@@ -263,7 +306,23 @@ function lumbrikus_nav_internal_chapter_links($chapter, $lvl){
 	['kviss', 'kviss']];
 
 	foreach($links_raw as $link) {
-		$LIs .= lumbrikus_generate_link_LI($chapter, $lvl, $link);
+		switch($link[0]) {
+			case '../':
+				$LIs .= lumbrikus_generate_link_LI($chapter, $lvl, $link);
+			break;
+			case '':
+				$LIs .= lumbrikus_generate_link_LI($chapter, $lvl, $link);
+			break;
+			default:
+				/*if($tpl != 'child-of-kapitler--kapittel-hovedside.php') {
+					$LIs .= lumbrikus_generate_link_LI($chapter, $lvl, $link);
+				} else*/
+				
+				if(lumbrikus_has_childpage($chapter_root_id, $link[0])) {
+					$LIs .= lumbrikus_generate_link_LI($chapter, $lvl, $link);
+				}
+			break;
+		}
 	}	
 
 	$nav_internal_chapter_links = "\n<nav class=\"internal-chapter-links\">\n<h2 class=\"aural-only\">Naviger dette kapitlet</h2>  <ul>\n" . $LIs . "  </ul>\n</nav><!-- .internal_chapter_links -->\n";
@@ -288,9 +347,14 @@ function lumbrikus_internal_chapter_menu($lvl) {
 	return lumbrikus_nav_internal_chapter_links($chapter_num, $lvl);
 }
 
+function has_child_with_slug($slug) {
+	global $post;
+	$post_id =$post->ID;
+	return false;
+}
+
 function lumbrikus_audiosync_markup_begin() {
 	$output =<<<HTML
-
 	<fieldset class="langselect" id="primary_language">
 		<legend>tekst og lyd</legend>
 		<div class="fieldset-flexcontainer">
