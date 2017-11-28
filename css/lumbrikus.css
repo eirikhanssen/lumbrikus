@@ -319,18 +319,9 @@ a:focus .videolink {
 
 /* video links end */
 
-body[class*="kapittel-hovedside"]::after {
+body[class*="kapitler-child"]::after {
     position: fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
     background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: cover;
-}
-
-body[class*="kapittel-hovedside"]::after {
     content: "";
     top:2rem;
     left:0;
@@ -339,7 +330,6 @@ body[class*="kapittel-hovedside"]::after {
     position: fixed;
     z-index: -1;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: contain;
     background-color: #333;
 }
