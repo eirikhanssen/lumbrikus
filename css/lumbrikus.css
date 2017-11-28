@@ -526,7 +526,8 @@ main.underside {
     justify-content: center;
 }
 
-.page-snutter-underside article {
+.page-snutter-underside article,
+.page-gjore-og-lage-underside article {
     display: block;
     margin: auto;
     max-width: 40em;
