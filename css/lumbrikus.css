@@ -921,8 +921,8 @@ body.kviss li.kviss {
 
 }
 
-body.gjore-og-lage-child .entry-header {
-    margin-bottom: 2em;
+.entry-header {
+    margin-bottom: 2rem;
 }
 
 body.kort li.kort a,
