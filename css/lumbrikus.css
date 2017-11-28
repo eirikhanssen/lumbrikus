@@ -556,8 +556,9 @@ figure.ord img {
     display: block;
     margin: auto;
     flex-grow: .5;
+    flex-shrink: 1;
     max-width: 90%;
-    max-height: auto;
+    max-height: 60%;
 
 }
 
