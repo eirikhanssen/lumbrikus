@@ -63,7 +63,7 @@ img {width: auto; height: auto;}
   fill: currentColor;
 }
 
-.siteheader {
+/*.siteheader {
     height: 2rem;
     font-size: 0.5em;
     line-height: 2rem;
@@ -72,7 +72,16 @@ img {width: auto; height: auto;}
     border-bottom: 1px solid rgb(112, 35, 73);
     position:relative;
     z-index:10;
-    
+}*/
+.siteheader {
+    height: 2rem;
+    font-size: 0.5em;
+    line-height: 2rem;
+    margin-bottom: .5rem;
+    background:#333;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    position:relative;
+    z-index:10;
 }
 .siteheader a {
     display: block;
@@ -109,7 +118,9 @@ img {width: auto; height: auto;}
 .page-snutter .entry-title,
 .page-kviss .entry-title,
 .page-filmer .entry-title,
-.page-gjore-og-lage .entry-title {
+.child-of-filmer .entry-title,
+.page-gjore-og-lage .entry-title,
+.child-of-gjore-og-lage .entry-title {
     text-align: center;
     padding-top: .5em;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
@@ -526,8 +537,8 @@ main.underside {
     justify-content: center;
 }
 
-.page-snutter-underside article,
-.page-gjore-og-lage-underside article {
+.page-snutter-underside article .entry-content,
+.page-gjore-og-lage-underside article .entry-content {
     display: block;
     margin: auto;
     max-width: 40em;
@@ -934,4 +945,55 @@ body.kviss li.kviss a {
     .aural-only {
         display: none;
     }
+}
+
+.breadcrumb ol {
+    list-style-type: none;
+    display:inline;
+    font-size: 1rem;
+    display:flex;
+    flex-flow: row wrap;
+    margin:0;
+    padding:0;
+    margin-left: 3em;
+    color: #a5cdea;
+    font-weight:bold;
+}
+.breadcrumb li {
+    display:inline;
+    float:left;
+    position:relative;
+
+}
+
+.breadcrumb a {
+    padding: 0 .5em;
+    line-height: 1em;
+    color: inherit;
+}
+.breadcrumb a:hover {
+    text-decoration:underline;
+}
+.breadcrumb li {
+    
+}
+.breadcrumb li + li {
+    margin-left: 1em;
+}
+
+.breadcrumb li+li::before {
+    content: "▸";
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top:50%;
+    transform:translate(-50%,-50%);
+    right: 100%;
+    margin-top: -.1em;
+}
+.breadcrumb::after {
+    clear:both;
+    display:block;
+    content:"";
+    height:1px;
+    float:left;
 }

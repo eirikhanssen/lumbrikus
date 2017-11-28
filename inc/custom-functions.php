@@ -470,3 +470,55 @@ function get_parent_slug($post_id) {
 	$parent_id = wp_get_post_parent_id( $post_id );
 	return get_slug($parent_id);
 }
+
+function uplinks($num) {
+	if($num < 1) {
+		return "./";
+	} else {
+		$out = "";
+		for($i = 0; $i < $num; $i++) {
+			$out .= "../";
+		}
+		return $out;
+	}
+}
+
+function lumbrikus_breadcrumbs() {
+	$out = "<nav aria-label=\"Breadcrumb\" class=\"breadcrumb\">\n   <ol>\n";
+	$bc = [];
+	global $post;
+	$p = $post;
+	if($p->post_parent) {
+		do {
+			array_push($bc, $p->post_title);
+			$p = get_post($p->post_parent);
+			
+			if(!$p->post_parent) {
+				// reached the outermost parent
+				array_push($bc, $p->post_title);
+			}
+		} while ($p->post_parent);
+	} else {
+		array_push($bc, $p->post_title);
+	}
+
+	// the splash page
+	array_push($bc, "Lumbrikus");
+	
+	$bc = array_reverse($bc);
+
+	$len = count($bc);
+
+	$attr="";
+
+	for( $i = 0; $i < $len; $i++) {
+		if( $i == ($len - 1)) {
+			$attr = " aria-current=\"page\"";
+		}
+		$up = $len - $i -1;
+
+		$out .= "<li>\n  <a href=\"" . uplinks($up) . "\"" . $attr . ">" . $bc[$i] . "</a>\n</li>";
+	}
+	  $out = $out . "</ol>\n	  </nav>\n";
+	  return $out;
+}
