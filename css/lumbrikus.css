@@ -116,13 +116,14 @@ img {width: auto; height: auto;}
 .page-let-og-finn .entry-title,
 .page-ord .entry-title,
 .page-snutter .entry-title,
+.child-of-snutter .entry-title,
 .page-kviss .entry-title,
 .page-filmer .entry-title,
 .child-of-filmer .entry-title,
 .page-gjore-og-lage .entry-title,
 .child-of-gjore-og-lage .entry-title {
     text-align: center;
-    padding-top: .5em;
+   
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     border-bottom: 1px solid #ccc;
 }
@@ -543,7 +544,6 @@ main.underside {
     margin: auto;
     max-width: 40em;
     padding: 1em;
-    padding-top: 2em;
     box-shadow: 0 0 .5em #aaa;
     border: 1px solid #999;
 }
@@ -919,6 +919,10 @@ body.snutter-child li.snutter,
 body.kviss li.kviss {
     transform:scale(1);
 
+}
+
+body.gjore-og-lage-child .entry-header {
+    margin-bottom: 2em;
 }
 
 body.kort li.kort a,
