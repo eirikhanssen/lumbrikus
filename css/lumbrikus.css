@@ -416,7 +416,7 @@ body[class*="kapitler-child"]::after {
     margin: auto;
 }
 
-body[class*="kapittel-hovedside"] .page-footer {
+body[class*="kapitler-child"] .page-footer {
     position:fixed; 
     bottom:0;
     left:0;
