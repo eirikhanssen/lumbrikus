@@ -21,7 +21,7 @@
 
     
 
-    <image id="let_og_finn_bg" xlink:href="/media/img/06-let-og-finn-bg.jpg" x="-900" y="-600" width="1800" height="1200"></image>
+    <image id="let_og_finn_bg" xlink:href="/media/img/kap6-bg-gress-1200x1330.jpg" x="-900" y="-730" width="1800" height="1300"></image>
     
     <g id="g_active_zones" class="active_zones">
         <path id="z_jord" d="M 710,-84 C 567,-119 439,-29 333,54 230,134 96,203 -35,176 -160,150 -320,203 -411,109 -473,46 -321,7 -278,-37 c 61,-62 100,-146 208,-136 182,16 360,79 547,35 96,-22 284,-88 325,15 17,44 -57,46 -92,37 z"></path>
