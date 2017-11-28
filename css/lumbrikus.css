@@ -792,6 +792,7 @@ li.kviss a::after {
 a[title="lumbrikus startside"]:focus svg {
     box-shadow: 0 0 0 5px orange;
     outline: none;
+    border-radius: 100%;
 }
 
 .internal-chapter-links ul {
@@ -961,18 +962,25 @@ body.kviss li.kviss a {
 }
 .breadcrumb li {
     display:inline;
-    float:left;
     position:relative;
-
 }
 
 .breadcrumb a {
-    padding: 0 .5em;
-    line-height: 1em;
+    transform: translate(0,-10%);
+    padding: 0.1em .5em;
+    padding-bottom: .2em;
+    line-height: 1rem;
     color: inherit;
+    border: 3px solid transparent;
+    border-radius: 1em;
 }
 .breadcrumb a:hover {
     text-decoration:underline;
+}
+
+.breadcrumb a:focus {
+    border-color: orange;
+    outline: none;
 }
 .breadcrumb li {
     
@@ -988,7 +996,7 @@ body.kviss li.kviss a {
     top:50%;
     transform:translate(-50%,-50%);
     right: 100%;
-    margin-top: -.1em;
+    margin-top: -.2em;
 }
 .breadcrumb::after {
     clear:both;
