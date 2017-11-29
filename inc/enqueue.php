@@ -29,7 +29,6 @@ function lumbrikus_load_admin_scripts( $hook ){
 		wp_enqueue_script( 'lumbrikus-admin-script' );
 	
 	} else if ( 'lumbrikus_page_nafo_lumbrikus_css' == $hook ){
-		
 		wp_enqueue_style( 'ace_css', get_template_directory_uri() . '/css/lumbrikus.ace.css', array(), '1.0.0', 'all' );
 		wp_enqueue_script( 'ace', get_template_directory_uri() . '/js/ace/ace.js', array('jquery'), '1.12.4', true );
 		wp_enqueue_script( 'lumbrikus-custom-css-script', get_template_directory_uri() . '/js/lumbrikus.custom_css.js', array('jquery'), '1.0.0', true );
@@ -54,7 +53,7 @@ function lumbrikus_load_scripts() {
 	// wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.6', 'all' );
 	wp_enqueue_style( 'normalize', get_template_directory_uri() . '/css/normalize.css', array(), '7.0.0', 'all' );
 	wp_enqueue_style( 'googlefonts', 'https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Roboto', array(), '0.0.5', 'all' );
-	wp_enqueue_style( 'lumbrikusCSS', get_template_directory_uri() . '/css/lumbrikus.css', array(), '1.3.0', 'all' );
+	wp_enqueue_style( 'lumbrikusCSS', get_template_directory_uri() . '/css/lumbrikus.css', array(), '1.3.1', 'all' );
 	
 	/* register scripts */
 	lumbrikus_include_custom_jquery();

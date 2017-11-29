@@ -63,45 +63,94 @@ img {width: auto; height: auto;}
   fill: currentColor;
 }
 
-/*.siteheader {
-    height: 2rem;
-    font-size: 0.5em;
-    line-height: 2rem;
-    margin-bottom: .5rem;
-    background: rgb(185, 163, 178);
-    border-bottom: 1px solid rgb(112, 35, 73);
-    position:relative;
-    z-index:10;
-}*/
+
 .siteheader {
-    height: 2rem;
-    font-size: 0.5em;
-    line-height: 2rem;
-    margin-bottom: .5rem;
+    padding-top: .25em;
+    min-height: 1.5rem;
+    font-size: 5vw;
+    line-height: 1em;
+    margin-bottom:0.35rem;
     background:#333;
     border-bottom: 1px solid rgb(0, 0, 0);
     position:relative;
     z-index:10;
 }
+
+@media screen and (min-width: 20em) {
+    .siteheader {
+        font-size: .7em;
+    }
+}
+
 .siteheader a {
-    display: block;
+    display: inline-block;
     text-decoration: none; color: rgb(112, 35, 73);
     padding: .2rem 0;
-    font-size: 1em;
     box-sizing: border-box;
 }
 
 .siteheader .icon {
     position: relative;
     float:left;
-    height: 1.6rem;
-    width: 1.6rem;
+    height: 2em;
+    width: 2em;
+    margin: -.5em 0.25em;
+    margin-left: 0;
     box-sizing: border-box;
-    margin: 0 1em;
     overflow: visible;
+    top: .1em;
 }
 
+.breadcrumb ol {
+    list-style-type: none;
+    display:inline;
+    font-size: 1em;
+    display:flex;
+    flex-flow: row wrap;
+    margin:0;
+    padding:0;
+    margin-left: 0;
+    color: #a5cdea;
+    font-weight:bold;
+    justify-content:left;
+}
+.breadcrumb li {
+    display:inline;
+    position:relative;
+    margin:.1em;
+}
 
+.breadcrumb a {
+    transform: translate(0,-10%);
+    padding: 0.25em;
+    color: inherit;
+    border: 3px solid transparent;
+    border-radius: 1em;
+}
+.breadcrumb a:hover {
+    border-color: inherit;
+}
+
+.breadcrumb a:focus {
+    border-color: orange;
+    outline: none;
+}
+.breadcrumb li {
+    position: relative;
+}
+
+.breadcrumb li+li::before {
+    content: "▸";
+    color: rgb(255, 255, 255);
+    position: relative;
+    margin:.1em;
+    line-height: 0.1;
+    top: -.3em;
+    right: -.05em;
+    
+    
+    
+}
 .site-title {
         color: black;
         font-weight: normal;
@@ -764,7 +813,7 @@ li.kviss a::after {
         margin-left: 3vw;
     }
     .internal-chapter-links li:hover {
-        /*transform:scale(1.35);*/
+        transform:scale(1.2);
     }
 }
 
@@ -788,8 +837,7 @@ li.kviss a::after {
     animation-fill-mode: forwards;    
 }
 
-.internal-chapter-links a:focus,
-a[title="lumbrikus startside"]:focus svg {
+.internal-chapter-links a:focus {
     box-shadow: 0 0 0 5px orange;
     outline: none;
     border-radius: 100%;
@@ -950,62 +998,4 @@ body.kviss li.kviss a {
     .aural-only {
         display: none;
     }
-}
-
-.breadcrumb ol {
-    list-style-type: none;
-    display:inline;
-    font-size: 1rem;
-    display:flex;
-    flex-flow: row wrap;
-    margin:0;
-    padding:0;
-    margin-left: 3em;
-    color: #a5cdea;
-    font-weight:bold;
-}
-.breadcrumb li {
-    display:inline;
-    position:relative;
-}
-
-.breadcrumb a {
-    transform: translate(0,-10%);
-    padding: 0.1em .5em;
-    padding-bottom: .2em;
-    line-height: 1rem;
-    color: inherit;
-    border: 3px solid transparent;
-    border-radius: 1em;
-}
-.breadcrumb a:hover {
-    text-decoration:underline;
-}
-
-.breadcrumb a:focus {
-    border-color: orange;
-    outline: none;
-}
-.breadcrumb li {
-    
-}
-.breadcrumb li + li {
-    margin-left: 1em;
-}
-
-.breadcrumb li+li::before {
-    content: "▸";
-    color: rgb(255, 255, 255);
-    position: absolute;
-    top:50%;
-    transform:translate(-50%,-50%);
-    right: 100%;
-    margin-top: -.2em;
-}
-.breadcrumb::after {
-    clear:both;
-    display:block;
-    content:"";
-    height:1px;
-    float:left;
 }

@@ -512,12 +512,17 @@ function lumbrikus_breadcrumbs() {
 	$attr="";
 
 	for( $i = 0; $i < $len; $i++) {
+		$attr="";
+		$svgicon="";
 		if( $i == ($len - 1)) {
 			$attr = " aria-current=\"page\"";
+		} else if ($i == 0) {
+			$attr = " title=\"lumbrikus startside\"";
+			$svgicon = '<svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/media/svg/lumbrikus-symbol-icons.svg#icon-lumbrikus-light"></use></svg> ';
 		}
 		$up = $len - $i -1;
 
-		$out .= "<li>\n  <a href=\"" . uplinks($up) . "\"" . $attr . ">" . $bc[$i] . "</a>\n</li>";
+		$out .= "<li>\n  <a href=\"" . uplinks($up) . "\"" . $attr . ">" . $svgicon . $bc[$i] . "</a>\n</li>";
 	}
 	  $out = $out . "</ol>\n	  </nav>\n";
 	  return $out;

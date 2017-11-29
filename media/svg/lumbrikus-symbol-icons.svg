@@ -61,6 +61,25 @@
             </g>
         </symbol>
 
+        <symbol id="icon-lumbrikus-light" viewBox="-16 -16 32 32">
+            <title>lumbrikus</title>
+            <g fill="#c12d72">
+            <circle cx="0" cy="-6" r="10"/>
+            <circle cx="0" cy="11" r="5"/>
+            <circle cx="-11" cy="8" r="5"/>
+            <circle cx="11" cy="8" r="5"/>
+            </g>
+            <g font-family="sans-serif"
+             fill="black" 
+             stroke="black"
+             stroke-linejoin="round"
+             text-anchor="middle"
+             font-size="12px">
+                <text stroke="#9cff6e" stroke-width="4px" x="0.5" y="-2.5">L</text>
+                <text x="0.5" y="-2.5">L</text>
+            </g>
+        </symbol>
+
         <symbol id="icon-lumbrikus-mc" viewBox="-16 -16 32 32">
             <title>lumbrikus</title>
             <g fill="#555" style="fill: var(--color-medium, #555);">
