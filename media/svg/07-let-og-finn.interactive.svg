@@ -39,7 +39,7 @@
     <g id="g_ord">
         <text class="ord" id="t_piggsvin" x="607" y="91" dy="20">piggsvin</text>
         <text class="ord" id="t_aapning_til_meitemarkens_ganger" x="-778" y="215" dy="20"><tspan x="-778" y="215" dy="0">åpning til </tspan><tspan x="-778" y="215" dy="50">meitemarkens </tspan><tspan x="-778" y="215" dy="100">ganger</tspan></text>
-        <text class="ord" id="t_kuler_hvor_rhisobium_bor" x="177" y="-210" dy="20">kuler hvor rhisobium bor</text>
+        <text class="ord" id="t_kuler_hvor_rhisobium_bor" x="278" y="518" dy="20">kuler hvor rhisobium bor</text>
         <text class="ord" id="t_erteplante" x="-358" y="42" dy="20">erteplante</text>
         <text class="ord" id="t_klatretraader" x="-51" y="-371" dy="20">klatretråder</text>
         <use xlink:href="#t_klatretraader" x="-550" y="0"></use>
