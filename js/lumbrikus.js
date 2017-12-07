@@ -5,7 +5,7 @@ $( document ).ready(function() {
         'wrapAround': true,
         'albumLabel': 'Bilde %1 av %2',
         'fadeDuration': 400,
-        'fadeImageDuration': 50,
+        'fadeImageDuration': 10,
         'resizeDuration': 100
       })
 });
