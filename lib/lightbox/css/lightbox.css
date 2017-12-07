@@ -12,8 +12,8 @@ html.lb-disable-scrolling {
   left: 0;
   z-index: 9999;
   background-color: black;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-  opacity: 0.8;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+  opacity: 0.85;
   display: none;
 }
 
@@ -32,10 +32,10 @@ html.lb-disable-scrolling {
   height: auto;
   max-width: inherit;
   max-height: none;
-  border-radius: 3px;
-
-  /* Image border */
-  border: 4px solid white;
+  padding: 5px;
+  background: white;
+  box-sizing: border-box;
+  border: 1px solid black;
 }
 
 .lightbox a img {
@@ -52,7 +52,7 @@ html.lb-disable-scrolling {
 
   /* Background color behind image.
      This is visible during transitions. */
-  background-color: white;
+  background-color: rgba(128, 128, 128, 0.5);
 }
 
 .lb-outerContainer:after {
