@@ -593,9 +593,6 @@ body[class*="kviss"] .page-footer {
     display: block;
     margin: auto;
     max-width: 35em;
-    /*! padding: 1em; */
-    box-shadow: 0 0 .5em #aaa;
-    border: 1px solid #999;
     overflow-x: hidden;
 }
 
@@ -640,7 +637,7 @@ figure.ord figcaption {
     margin:0;
     background:white;
     position:relative;
-    max-width: 90vw;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -653,7 +650,7 @@ figure.ord figcaption {
     font-size: .7em;
     line-height:1;
     letter-spacing: 0.05em;
-    max-width: 95vw;
+    max-width: 100%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
