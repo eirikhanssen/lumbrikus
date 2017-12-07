@@ -48,11 +48,10 @@ html.lb-disable-scrolling {
   width: 250px;
   height: 250px;
   margin: 0 auto;
-  border-radius: 4px;
-
+  padding: 5px;
   /* Background color behind image.
      This is visible during transitions. */
-  background-color: #333;
+  background-color: #eee;
 }
 
 .lb-outerContainer:after {
