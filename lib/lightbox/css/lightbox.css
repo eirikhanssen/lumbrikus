@@ -48,7 +48,6 @@ html.lb-disable-scrolling {
   width: 250px;
   height: 250px;
   margin: 0 auto;
-  padding: 5px;
   /* Background color behind image.
      This is visible during transitions. */
   background-color: #eee;
