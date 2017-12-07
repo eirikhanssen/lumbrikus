@@ -181,7 +181,6 @@ img {width: auto; height: auto;}
 
 .page-lang .entry-header,
 .page-kort .entry-header {
-    padding-top: .5em;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     border-bottom: 1px solid #ccc;
 }
@@ -191,7 +190,8 @@ img {width: auto; height: auto;}
 }
 
 .entry-header {
-    
+    padding: 1rem .4rem;
+    padding-bottom: 0.25rem;
 }
 
 .kapitler-child .entry-header {
