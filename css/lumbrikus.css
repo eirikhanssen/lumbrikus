@@ -54,7 +54,7 @@ nav {
 
 img {width: auto; height: auto;}
 
-[data-lightbox] > img {border-radius: .25em;}
+[data-lightbox] > img {border-radius: .25em; border: 1px solid rgba(0,0,0,0.5);}
 
 /* site header BEGIN */
 
