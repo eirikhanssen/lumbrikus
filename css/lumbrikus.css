@@ -54,6 +54,8 @@ nav {
 
 img {width: auto; height: auto;}
 
+[data-lightbox] > img {border-radius: .25em;}
+
 /* site header BEGIN */
 
 .icon {
