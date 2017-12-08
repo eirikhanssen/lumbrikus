@@ -1055,3 +1055,17 @@ body.kviss li.kviss a {
         display: none;
     }
 }
+
+/* logos after video links */
+
+a[href*="youtube.com/watch"]::after {
+    content: "";
+    color: black;
+    padding-left: 3em;
+    text-decoration: none;
+    background-image: url(logos/YouTube_Logo_2017.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin-left: .5em;
+}
