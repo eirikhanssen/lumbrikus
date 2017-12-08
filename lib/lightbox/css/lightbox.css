@@ -165,7 +165,7 @@ html.lb-disable-scrolling {
 }
 
 .lb-data .lb-caption {
-  font-size: 13px;
+  font-size: .75em;
   font-weight: bold;
   line-height: 1em;
   background: rgba(0,0,0,0.5);
