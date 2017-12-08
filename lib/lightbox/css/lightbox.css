@@ -169,7 +169,6 @@ html.lb-disable-scrolling {
   font-weight: bold;
   line-height: 1em;
   background: rgba(0,0,0,0.5);
-  padding: .1em .3em;
   border-radius: .3em;
 }
 
@@ -177,6 +176,10 @@ html.lb-disable-scrolling {
   color: #4ae;
 }
 
+.lb-caption ol {
+  margin: 0;
+  margin-top: .25em;
+}
 .lb-data .lb-number {
   display: block;
   clear: left;
