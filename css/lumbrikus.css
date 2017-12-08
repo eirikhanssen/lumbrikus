@@ -1058,9 +1058,9 @@ body.kviss li.kviss a {
 
 /* logos after video links */
 
-a[href*="youtube.com/watch"]::after {
+a[href*="youtube.com/watch"]::after,
+a[href*="tv.nrk.no"]::after {
     content: "";
-    color: black;
     padding-left: 3em;
     text-decoration: none;
     background-image: url(logos/YouTube_Logo_2017.svg);
@@ -1068,4 +1068,8 @@ a[href*="youtube.com/watch"]::after {
     background-size: contain;
     background-position: center center;
     margin-left: .5em;
+}
+
+a[href*="tv.nrk.no"]::after {
+    background-image: url(logos/NRK_logo_2017.svg);
 }
