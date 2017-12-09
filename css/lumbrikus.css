@@ -416,6 +416,9 @@ main.page-filmer-underside .entry-content > a::after{
     font-family: "Open Sans Condensed", sans-serif;
     padding: 0 1rem;
     flex-grow: .5;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
 }
 
 a:hover .videoposter,
