@@ -305,44 +305,94 @@ img {width: auto; height: auto;}
 }
 
 /* video links begin */
+main.page-filmer .entry-content {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+main.page-filmer .entry-content > a {
+    width: 20%;
+    min-width: 15em;
+    text-decoration: none;
+    margin:.75em .5em;
+    padding: 0;
+    background:whitesmoke;
+    flex-grow: 1;
+    position:relative;
+    z-index:1;
+    border: 1px solid #666;
+    padding-bottom: 1.5em;
+    max-width: 30em;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    min-height: 16rem;
+}
 
-main.page-filmer .entry-content > a {text-decoration: none; display:block; max-width: 30rem; margin:0 auto; padding: 0;}
+main.page-filmer .entry-content > a:hover,
+main.page-filmer .entry-content > a:focus {
+    box-shadow: 0 0 .35em #999;
+    border-color: black;                        
+    outline:none;
+}
 
-figure.videolink {
-    border: 1px solid black;
-    line-height: 1.5rem
+main.page-filmer .entry-content > a::after {
+    position: absolute;
+    top: 100%;
+    left:50%;
+    z-index: 10;
+    height: 1em;
+    width: 3em;
+    transform: translate(-50%,-140%);
+}
+
+.videolink figure {
+    border-radius: .5rem;
+    line-height: 1.15rem;
+    margin:0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    flex-grow: 1;
+    font-size: .95em;
+    margin-bottom: .25em;
 }
 
 .videolink {
     border-radius:.5rem;
     padding:.5rem 1rem;
-    
     margin: 2rem auto;
 }
 
 .videolink h2 {
     font-size: 1rem;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%,-1.4rem);
-    border: 1px solid black;
-    border-radius: 1rem;
-    padding: .05rem .5rem;
-    background: white;
-    margin: auto;
+    border-radius: .5rem;
+    padding: .05rem 0rem;
+    background: #eee;
+    margin: 0 auto;
+    width: 100%;
     text-align: center;
-    display:inline-block;
+    border-bottom: 1px solid #ccc;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius:0;
+    text-shadow: 2px 2px 2px #aaa;
+    line-height: 1.85em;
+}
+.videolink img {
+    flex-grow:1;
 }
 
 .videolink .tooltip {
-    color: black;
-    font-size: .75rem;
+    color: #333;
+    font-size: .5rem;
     line-height: 1em;
-    margin: 0;
+    margin: .5em;
+    
     display: block;
     text-align: center;
     position: relative;
-    top: -1rem;
+    /*! top: -1em; */
 }
 
 .videolink .videoposter {
@@ -360,6 +410,7 @@ figure.videolink {
 .videolink figcaption {
     font-family: "Open Sans Condensed", sans-serif;
     padding: 0 1rem;
+    flex-grow: .5;
 }
 
 a:hover .videoposter,
