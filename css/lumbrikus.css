@@ -385,7 +385,7 @@ main.page-filmer-underside .entry-content > a::after{
     border-bottom-right-radius:0;
     text-shadow: 2px 2px 2px #aaa;
     line-height: 1.1em;
-    min-height: 2.25em;
+    min-height: 2.75em;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
