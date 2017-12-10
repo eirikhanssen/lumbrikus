@@ -408,16 +408,15 @@ main.page-filmer-underside .entry-content > a::after{
     border: 1px solid #999;
     display: block;
     margin: .25em auto;
-    max-width: 90%;
     height: auto;
-    max-width: calc(100% - 1rem);
-    flex-grow: 1;
+    width: calc(100% - 1rem);
+    
 }
 
 .videolink figcaption {
     font-family: "Open Sans Condensed", sans-serif;
     margin:.25em 0;
-    flex-grow: .5;
+    flex-grow: 1;
     display:flex;
     flex-flow: column nowrap;
     justify-content: center;
