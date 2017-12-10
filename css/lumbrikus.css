@@ -410,6 +410,7 @@ main.page-filmer-underside .entry-content > a::after{
     margin: .25em auto;
     height: auto;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .videolink figcaption {
