@@ -419,7 +419,7 @@ main.page-filmer-underside .entry-content > a::after{
     flex-grow: 1;
     display:flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     color: #333;
 }
 
