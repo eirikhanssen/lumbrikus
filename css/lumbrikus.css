@@ -374,7 +374,7 @@ main.page-filmer-underside .entry-content > a::after{
 .videolink h2 {
     font-size: 1rem;
     border-radius: .5rem;
-    padding: .05rem .7em;
+    padding: 0 .7em;
     background: #eee;
     margin: 0 -.7em;
     box-sizing: content-box;
@@ -384,7 +384,11 @@ main.page-filmer-underside .entry-content > a::after{
     border-bottom-left-radius: 0;
     border-bottom-right-radius:0;
     text-shadow: 2px 2px 2px #aaa;
-    line-height: 1.85em;
+    line-height: 1.1em;
+    min-height: 2.25em;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
 }
 
 .videolink .tooltip {
@@ -417,6 +421,12 @@ main.page-filmer-underside .entry-content > a::after{
     display:flex;
     flex-flow: column nowrap;
     justify-content: center;
+    color: #333;
+}
+
+.videolink:hover figcaption,
+.videolink:focus figcaption {
+    text-decoration: underline;
 }
 
 a:hover .videoposter,
