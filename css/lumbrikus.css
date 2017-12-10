@@ -1126,7 +1126,7 @@ body.kviss li.kviss a {
 /* logos after video links */
 
 a[href*="youtube.com/watch"]::after,
-a[href*="tv.nrk.no"]::after {
+a[href*="nrk.no"]::after {
     content: "";
     padding-left: 3em;
     text-decoration: none;
