@@ -1137,6 +1137,6 @@ a[href*="nrk.no"]::after {
     margin-left: .5em;
 }
 
-a[href*="tv.nrk.no"]::after {
+a[href*="nrk.no"]::after {
     background-image: url(logos/NRK_logo_2017.svg);
 }
