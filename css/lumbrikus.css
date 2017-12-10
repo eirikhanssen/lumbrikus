@@ -1125,7 +1125,8 @@ body.kviss li.kviss a {
 /* logos after video links */
 
 a[href*="youtube.com/watch"]::after,
-a[href*="nrk.no"]::after {
+a[href*="nrk.no"]::after,
+a[href*="nrksuper.no"]::after {
     content: "";
     padding-left: 3em;
     text-decoration: none;
@@ -1138,4 +1139,8 @@ a[href*="nrk.no"]::after {
 
 a[href*="nrk.no"]::after {
     background-image: url(logos/NRK_logo_2017.svg);
+}
+
+a[href*="nrksuper.no"]::after {
+    background-image: url(logos/nrksuperlogo.svg);
 }
