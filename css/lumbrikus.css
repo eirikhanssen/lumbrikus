@@ -1153,3 +1153,14 @@ a[href*="nrk.no"]::after {
 a[href*="nrksuper.no"]::after {
     background-image: url(logos/nrksuperlogo.svg);
 }
+
+.flex-rows {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.flex-rows .wp-caption {
+    margin-left: 1em;
+    margin-right: 1em;
+}
