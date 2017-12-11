@@ -723,8 +723,19 @@ figure.ord figcaption {
     justify-items: center;
     align-content: left;
     background: whitesmoke;
-    box-shadow: 0 -1em 0 1em whitesmoke;
-    padding-top: .5em;
+    position: relative;
+    z-index:1;
+}
+.wp-caption::after {
+    content:"";
+    position: absolute;
+    z-index: -1;
+    left:-.75em;
+    right: -.75em;
+    top:-.75em;
+    bottom:0;
+    background: #fcf4e8;
+    border: 1px solid #f6dfbb;
 }
 
 .wp-caption .wp-caption-text {
