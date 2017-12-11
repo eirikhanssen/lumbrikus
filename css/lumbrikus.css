@@ -304,6 +304,10 @@ img {width: auto; height: auto;}
     font-family: "Open Sans Condensed", sans-serif;
 }
 
+.entry-content {
+    padding-top: .5em;
+}
+
 /* video links begin */
 main.page-filmer .entry-content,
 main.page-filmer-underside .entry-content{
@@ -1098,7 +1102,7 @@ body.kviss li.kviss {
 }
 
 .entry-header {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 body.kort li.kort a,
