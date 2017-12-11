@@ -643,11 +643,9 @@ body[class*="kviss"] .page-footer {
 
 .underside img {
     background: white;
-    /*! padding: .5rem; */
     border: 1px solid black;
     box-sizing: border-box;
     max-width: 90vw;
-    /*! margin: ; */
 }
 
 .page-ord .entry-content{
@@ -710,12 +708,13 @@ figure.ord figcaption {
     background:white;
     position:relative;
     max-width: 100%;
-    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .wp-caption {
     box-sizing: border-box;
     margin:.5em auto;
+    margin: 1.5em auto;
     font-family: "Open Sans Condensed";
     font-size: .7em;
     line-height:1;
