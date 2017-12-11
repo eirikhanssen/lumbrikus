@@ -711,7 +711,6 @@ figure.ord figcaption {
 
 .wp-caption {
     box-sizing: border-box;
-    padding:.5em .25em;
     margin:.5em auto;
     font-family: "Open Sans Condensed";
     font-size: .7em;
@@ -724,8 +723,8 @@ figure.ord figcaption {
     justify-items: center;
     align-content: left;
     background: whitesmoke;
-    box-shadow: 0 0 0 1em whitesmoke;
-    padding-bottom: 2.0em;
+    box-shadow: 0 -1em 0 1em whitesmoke;
+    padding-top: .5em;
 }
 
 .wp-caption .wp-caption-text {
@@ -734,9 +733,9 @@ figure.ord figcaption {
     line-height: 1.15em;
     width:100%;
     font-weight: bold;
-    height: 1.75rem;
     color: #333;
-    padding-top: .25em;
+    padding: .25em .5em;
+    padding-bottom: .75em;
 }
 
 .wp-caption .wp-caption-text .opphav {
