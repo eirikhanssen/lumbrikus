@@ -710,9 +710,8 @@ figure.ord figcaption {
 }
 
 .wp-caption {
-    position:relative;
     box-sizing: border-box;
-    padding:0;
+    padding:.5em .25em;
     margin:.5em auto;
     font-family: "Open Sans Condensed";
     font-size: .7em;
@@ -720,32 +719,29 @@ figure.ord figcaption {
     letter-spacing: 0.05em;
     max-width: 100%;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: center;
     justify-items: center;
     align-content: left;
-    padding-bottom: 2em;
+    background: whitesmoke;
+    box-shadow: 0 0 0 1em whitesmoke;
+    padding-bottom: 2.0em;
 }
 
 .wp-caption .wp-caption-text {
-    position:absolute;
-    bottom:0.15em;
-    left: .5rem;
-    padding:0 .2em;
+    position:relative;
     margin:0;
     line-height: 1.15em;
     width:100%;
     font-weight: bold;
-    display:flex;
-    flex-flow: column wrap;
-    justify-content: center;
     height: 1.75rem;
     color: #333;
+    padding-top: .25em;
 }
 
 .wp-caption .wp-caption-text .opphav {
-    top: -1rem;
-    right: .9rem;
+    top: -1.3rem;
+    right: 1.1rem;
     position:absolute;
     display:block;
     background: rgba(0,0,0,0.5);
