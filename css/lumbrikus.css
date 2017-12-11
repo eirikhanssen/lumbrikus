@@ -1161,6 +1161,5 @@ a[href*="nrksuper.no"]::after {
 }
 
 .flex-rows .wp-caption {
-    margin-left: 1.5em;
-    margin-right: 1.5em;
+    margin: .75em 1.25em;
 }
