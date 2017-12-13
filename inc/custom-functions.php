@@ -527,3 +527,20 @@ function lumbrikus_breadcrumbs() {
 	  $out = $out . "</ol>\n	  </nav>\n";
 	  return $out;
 }
+
+function lumbrikus_page_TOC($page_markup) {
+	global $post;
+	// lag liste over alle overskriftene
+	// bruk javascript etterpå til å konvertere til lenker som lenker til riktig overskrift?
+	// eller kjør gjennom et filter som legger til id til alle overskrifter først, slik at alle overskrifter i $page_markup har id.
+	$toc = <<<TOC
+<nav class="page_toc">
+	<h2>På denne siden</h2>
+	<ul>
+		<li>Dummy heading</li>
+		<li>Dummy heading</li>
+	</ul>
+</nav>
+TOC;
+	return $toc;
+}

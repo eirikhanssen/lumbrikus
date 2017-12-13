@@ -20,6 +20,16 @@ get_header(); ?>
 				
 				while( have_posts() ): the_post();
 
+					$post_id = get_the_ID();
+
+					$current_post = get_post($post_id);
+
+					$current_post_content = $current_post->post_content;
+
+					// create a TOC based on $current_post_content ( have to add missing id and fix links with javascript afterwords )
+
+					lumbrikus_page_TOC($current_post_content);
+
 					get_template_part( 'template-parts/content', 'page' );
 				
 				endwhile;
