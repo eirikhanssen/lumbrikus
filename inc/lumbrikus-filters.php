@@ -59,7 +59,10 @@ add_filter( 'page_template', function ( $template )
 		break;
 		case 'kapitler':
 		$locate_template = locate_template( 'child-of-kapitler--kapittel-hovedside.php' );
-	break;
+		break;
+		case 'til-laereren':
+		$locate_template = locate_template( 'child-of-til-laereren.php' );
+		break;
 		default:
 			return $template;
 	}

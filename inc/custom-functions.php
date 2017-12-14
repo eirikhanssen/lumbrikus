@@ -528,19 +528,59 @@ function lumbrikus_breadcrumbs() {
 	  return $out;
 }
 
-function lumbrikus_page_TOC($page_markup) {
-	global $post;
+function lumbrikus_page_TOC() {
 	// lag liste over alle overskriftene
 	// bruk javascript etterpå til å konvertere til lenker som lenker til riktig overskrift?
 	// eller kjør gjennom et filter som legger til id til alle overskrifter først, slik at alle overskrifter i $page_markup har id.
-	$toc = <<<TOC
-<nav class="page_toc">
-	<h2>På denne siden</h2>
-	<ul>
-		<li>Dummy heading</li>
-		<li>Dummy heading</li>
-	</ul>
-</nav>
-TOC;
+	$post_id = get_the_ID();
+	$current_post = get_post($post_id);
+	$current_post_content = $current_post->post_content;
+
+	function headingItem($count, $level, $text) {
+		$heading = [
+			'lvl' => $level,
+			'id' => 'toc-' . $count,
+			'text' => $text
+		];
+		return $heading;
+	}
+
+	$headings = [];
+
+	array_push($headings, headingItem(1, 1, get_the_title($post_id)));
+
+	$hcount=1;
+
+	$pattern = '/.*?<h(\d)[^>]*?>([^<]+)<\/h.+/i';
+	$replacement_heading_lvl = '$1';
+	$replacement_heading_text = '$2';
+
+	foreach(preg_split("/((\r?\n)|(\r\n?))/", $current_post_content) as $line){
+		// do stuff with $line
+		if (preg_match("/<h\d/i", $line)) {
+			$hcount ++;
+
+			$heading_lvl = preg_replace($pattern, $replacement_heading_lvl, $line);
+			$heading_text = preg_replace($pattern, $replacement_heading_text, $line);
+
+			array_push($headings, headingItem($hcount, $heading_lvl, $heading_text));
+		}
+	}
+
+	$toc =	"<!--lumbrikus_page_TOC-BEGIN-->\n";
+	$toc .= "<nav class=\"page-toc\">\n";
+	$toc .=	"<ul>\n";
+
+	function headingLinkItem($heading) {
+		return "<li level=\"" . $heading["lvl"] . "\"><a href=\"#" . $heading["id"] . "\">" . $heading["text"] . "</a></li>";
+	}
+
+	foreach($headings as $heading) {
+		$toc .= headingLinkItem($heading);
+	}
+
+	$toc .= "</ul>\n</nav>\n";
+	$toc .= "<!--lumbrikus_page_TOC-END-->";
+
 	return $toc;
 }
