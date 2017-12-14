@@ -1206,36 +1206,36 @@ a[href*="nrksuper.no"]::after {
     border-top: 1px solid #e8e8e8;
 }
 
-.page-toc li[level="1"] {
+.page-toc li[lvl="1"] {
     font-weight: bold;
     font-size: 1.5em;
 }
 
-.page-toc li[level="2"] {
+.page-toc li[lvl="2"] {
     font-weight: bold;
 }
 
-.page-toc li[level="1"] a  {
+.page-toc li[lvl="1"] a  {
     padding-left: .25rem;
 }
 
-.page-toc li[level="2"] a  {
+.page-toc li[lvl="2"] a  {
     padding-left: .75rem;
 }
 
-.page-toc li[level="3"] a  {
+.page-toc li[lvl="3"] a  {
     padding-left: 1.25rem;
 }
 
-.page-toc li[level="4"] a  {
+.page-toc li[lvl="4"] a  {
     padding-left:1.75rem;
 }
 
-.page-toc li[level="5"] a  {
+.page-toc li[lvl="5"] a  {
     padding-left: 2.25rem;
 }
 
-.page-toc li[level="6"] a  {
+.page-toc li[lvl="6"] a  {
     padding-left: 2.75rem;
 }
 
@@ -1245,6 +1245,8 @@ a[href*="nrksuper.no"]::after {
     flex-flow: column wrap;
     justify-content:center;
     text-decoration: none;
+    padding-top: .25em;
+    padding-bottom: .25em;
 }
 
 .page-toc a:hover,
@@ -1268,12 +1270,12 @@ h1,h2,h3,h4,h5,h6 {
     position: relative;
 }
 
-h1::before,
-h2::before,
-h3::before,
-h4::before,
-h5::before,
-h6::before {
+.child-of-til-laereren h1::before,
+.child-of-til-laereren h2::before,
+.child-of-til-laereren h3::before,
+.child-of-til-laereren h4::before,
+.child-of-til-laereren h5::before,
+.child-of-til-laereren h6::before {
   display: block; 
   content: " "; 
   margin-top: -2rem; 
