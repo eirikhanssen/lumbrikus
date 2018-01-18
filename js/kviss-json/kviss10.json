@@ -2,244 +2,301 @@ var kviss10 = {
     title: "Kapittel 10 kviss",
     q_and_a: [
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
+            spm: "Hvorfor blir det høst i Norge?",
+            bilde: "https://www.google.no/search?q=tilted+earth&dcr=1&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjF__6JrJ7XAhXlO5oKHT1TAasQ_AUICigB&biw=1525&bih=658#imgrc=1Y6xv4opl-J4-M",
             bildetekst: "___",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Fordi jordkloden går rundt sola på skrå",
+                "Fordi sola går lenger unna",
+                "Fordi jordkloden går lenger unna sola"
             ],
-            riktige_svar: ["___"],
+            riktige_svar: ["Fordi jordkloden går rundt sola på skrå"],
             forklaring: "___"
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
+            spm: "Hva er det verste for insekter om vinteren?",
+            bilde: "https://lumbrikus.no/media/img/(Eirik maur NAT_9018_v2)",
+            bildetekst: "__",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Å fryse til is og dø",
+                "Å være sultne",
+                "Å bli spist av harer"
             ],
-            riktige_svar: ["___"],
+            riktige_svar: ["Å fryse til is og dø"],
             forklaring: "___"
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
+            spm: "Hvilke humler lever fra høst til vår?",
+            bilde: "NAT_7465_v2",
             bildetekst: "___",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Hannene",
+                "Hunnene",
+                "Bare befrukta hunner"
             ],
-            riktige_svar: ["___"],
+            riktige_svar: ["Bare befrukta hunner"],
             forklaring: "___"
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
+            spm: "Hvilken sommerfugl kan leve med snø på om vinteren? ",
+            bilde: "https://no.wikipedia.org/wiki/Sn%C3%B8#/media/File:Snow-covered_fir_trees.jpg",
+            bildetekst: "Foto: Muu-karhu",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Ingen kan det",
+                "Alle kan det",
+                "Sitron-sommerfuglen"
             ],
-            riktige_svar: ["___"],
+            riktige_svar: ["Sitron-sommerfuglen"],
             forklaring: "___"
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
+            spm: "Hva er å gå i dvale?",
+            bilde: "https://commons.wikimedia.org/wiki/Erinaceus_europaeus#/media/File:Orizo5.jpg",
+            bildetekst: "Foto: Alma",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Å sove om vinteren uten å spise",
+                "Å dale ned fra skyene",
+                "Å leke med halen"
             ],
-            riktige_svar: ["___"],
+            riktige_svar: ["Å sove om vinteren uten å spise"],
             forklaring: "___"
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
+            spm: "Kan noen fugler samle mat om høsten?",
+            bilde: "https://lumbrikus.no/media/img/NAT_0744_v3",
             bildetekst: "___",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Nei",
+                "Nei, det kan bare ekorn",
+                "Ja"
             ],
-            riktige_svar: ["___"],
+            riktige_svar: ["Ja"],
             forklaring: "___"
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
+            spm: "Hva betyr å hamstre?",
+            bilde: "https://pxhere.com/no/photo/1121565",
             bildetekst: "___",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Å samle mat for å spise seinere",
+                "Å komme fra byen Hamar",
+                "Å leke med en brun hamster"
             ],
-            riktige_svar: ["___"],
+            riktige_svar: ["Å samle mat for å spise seinere"],
             forklaring: "___"
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
+            spm: "Hvorfor flyr grågåsa i plog?",
+            bilde: "Svetlana NAT_0765",
             bildetekst: "___",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "De får bedre utsikt",
+                "De er dumme",
+                "Det er lettere å fly i plog"
             ],
-            riktige_svar: ["___"],
+            riktige_svar: ["Det er lettere å fly i plog"],
             forklaring: "___"
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
+            spm: "Hva gjør fugler når de hekker i Norge?",
+            bilde: "https://lumbrikus.no/media/img/NAT_0754_v3",
             bildetekst: "___",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "De sitter på sekker",
+                "De parer seg og får unger",
+                "De bader i bekkene"
             ],
-            riktige_svar: ["___"],
+            riktige_svar: ["De parer seg og får unger"],
             forklaring: "___"
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
+            spm: "Hvor bor Rødnebb-terna når det er vinter i Norge?",
+            bilde: "https://commons.wikimedia.org/wiki/Sterna_paradisaea#/media/File:Eidersperrw_sterna_paradisaea_with_fish_oben.jpg",
+            bildetekst: "Foto: Dirk Ingo Franke",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "I Irak",
+                "I England",
+                "På Sørpolen"
             ],
-            riktige_svar: ["___"],
+            riktige_svar: ["På Sørpolen"],
             forklaring: "___"
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
+            spm: "Hvorfor blir trærne gule og røde om høsten?",
+            bilde: "https://pxhere.com/no/photo/723630",
             bildetekst: "___",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Treet henter de grønne klorofyll-kornene sine, og da ser vi de andre fargene.",
+                "Trærne dør",
+                "Treet er sykt"
             ],
-            riktige_svar: ["___"],
+            riktige_svar: ["Treet henter de grønne klorofyll-kornene sine, og da ser vi de andre fargene."],
             forklaring: "___"
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
+            spm: "Hvilken farge har haren om sommeren?",
+            bilde: "https://commons.wikimedia.org/wiki/Vaccinium_myrtillus#/media/File:VACCINIUM_MYRTILLUS_-_GENTO_-_IB-269_(Nabiu).JPG",
+            bildetekst: "Sommer. Foto: Estanys de Cabdella",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Brun",
+                "Hvit",
+                "Oransje"
             ],
-            riktige_svar: ["___"],
+            riktige_svar: ["Brun"],
             forklaring: "___"
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
+            spm: "Hvilken farge har haren om vinteren?",
+            bilde: "https://no.wikipedia.org/wiki/Sn%C3%B8#/media/File:Snow-covered_fir_trees.jpg",
+            bildetekst: "Vinter. Foto: Muu-karhu",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Svart",
+                "Brun",
+                "Hvit"
             ],
-            riktige_svar: ["___"],
+            riktige_svar: ["Hvit"],
             forklaring: "___"
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
+            spm: "Hva spiser haren?",
+            bilde: "https://commons.wikimedia.org/wiki/Category:Lepus_arcticus#/media/File:Arctic_Hare_1.jpg",
+            bildetekst: "Foto: Steve Sayles",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Kvister og knopper",
+                "Mus",
+                "Ekorn"
             ],
-            riktige_svar: ["___"],
+            riktige_svar: ["Kvister og knopper"],
             forklaring: "___"
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
+            spm: "Hvem har gått her?",
+            bilde: "https://no.wikipedia.org/wiki/Hare#/media/File:Lepus_timidus_tracks.jpg",
+            bildetekst: "Foto: Muriel Bendel",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Elg",
+                "Hare",
+                "Katt"
             ],
-            riktige_svar: ["___"],
+            riktige_svar: ["Hare"],
             forklaring: "___"
         },
         {
-            spm: "___",
+            spm: "Hvem har gnagd på konglene?",
             bilde: "https://lumbrikus.no/media/img/___",
             bildetekst: "___",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Ekorn",
+                "Mus",
+                "Grågåsa"
             ],
-            riktige_svar: ["___"],
+            riktige_svar: [""],
             forklaring: "___"
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
+            spm: "Hvem er det største dyret i skogen?",
+            bilde: "https://no.wikipedia.org/wiki/Skog#/media/File:Mixed_Picea_(Spruce)_forest_from_Vestfold_county_in_Norway.jpg",
+            bildetekst: "Foto: K.A. Gallis",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Bjørnen",
+                "Reven",
+                "Elgen"
             ],
-            riktige_svar: ["___"],
+            riktige_svar: ["Elgen"],
             forklaring: "___"
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
-            bildetekst: "___",
+            spm: "Hva er et elg-tråkk?",
+            bilde: "https://commons.wikimedia.org/wiki/Alces_alces#/media/File:Alces_alces_alces_Myre_Norway.jpg",
+            bildetekst: "Foto: Billy Idle",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "En sti hvor elgene pleier å gå",
+                "En voksen som tråkker på elgen",
+                "Elg-bein"
             ],
-            riktige_svar: ["___"],
+            riktige_svar: ["En sti hvor elgene pleier å gå"],
             forklaring: "___"
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
+            spm: "Hva gjør dyr for å leve om vinteren?",
+            bilde: "NAT_0732_v2",
             bildetekst: "___",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
+                "Få tjukkere og lysere pels",
+                "Samle mat om høsten",
+                "Gå i dvale (sove)"
+                "Fly vekk fra Norge"
+                "Alle"
             ],
-            riktige_svar: ["___"],
+            riktige_svar: ["Alle"],
             forklaring: "___"
         },
         {
-            spm: "___",
-            bilde: "https://lumbrikus.no/media/img/___",
+            spm: "Hva er et elg-tråkk?",
+            bilde: "https://commons.wikimedia.org/wiki/Alces_alces#/media/File:Alces_alces_alces_Myre_Norway.jpg ",
+            bildetekst: "Foto: Billy Idle",
+            svaralternativer: [
+                "En elg",
+                "En giraff",
+                "En bjørn"
+            ],
+            riktige_svar: ["En elg"],
+            forklaring: "___"
+            
+            spm: "Hva er dette?",
+            bilde: "https://commons.wikimedia.org/wiki/Category:Lepus_arcticus#/media/File:Arctic_Hare_1.jpg",
+            bildetekst: "Foto: Steve Sayles",
+            svaralternativer: [
+                "En katt",
+                "En hare",
+                "En liten hund"
+            
+            riktige_svar: ["En hare"],
+            forklaring: "___"
+            
+            spm: "Hva gjør piggsvinet om vinteren?",
+            bilde: "NAT_7459",
             bildetekst: "___",
             svaralternativer: [
-                "___",
-                "___",
-                "___"
-            ],
-            riktige_svar: ["___"],
+                "Ligger i dvale (sover)",
+                "Bor i et reir i et tre",
+                "Går i snøen og finner kongler"
+            
+            riktige_svar: ["En hare"],
+            forklaring: "___"
+            
+            spm: "Hva er dette?",
+            bilde: "https://no.wikipedia.org/wiki/Monarksommerfugl#/media/File:ComputerHotline_-_Danaus_plexippus_(by)_(3).jpg",
+            bildetekst: "Bilde av sommerfugl Monark. Foto: Thomas Bresson",
+            svaralternativer: [
+                "En fugl",
+                "Ei vifte",
+                "En sommerfugl"
+           
+            riktige_svar: ["En sommerfugl"],
             forklaring: "___"
         }
+        spm: "Hva er dette?",
+            bilde: "https://en.wikipedia.org/wiki/Pupa#/media/File:Monarch_Butterfly_Chrysalis.JPG",
+            bildetekst: "___",
+            svaralternativer: [
+                "En puppe som blir sommerfugl",
+                "En frukt",
+                "En liten lykt"
+            ],
+            riktige_svar: ["En puppe som blir sommerfugl"],
+            forklaring: "___"
+    spm: "Hvordan forbereder ekornet seg til vinteren?",
+            bilde: "NAT_0734_v6",
+            bildetekst: "___",
+            svaralternativer: [
+                "Det samler mat om høsten",
+                "Det får tjukkere pels ",
+                "Det får gråere pels"
+                "Alle"
+
+            ],
+            riktige_svar: ["Alle"],
+            forklaring: "___"
     ]
 };
