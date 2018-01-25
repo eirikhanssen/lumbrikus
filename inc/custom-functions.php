@@ -332,7 +332,7 @@ function lumbrikus_nav_internal_chapter_links($chapter, $lvl) {
 
 function lumbrikus_get_chapter_num() {
 	$current_url=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-	$pattern = '/^.+?\/kap-([0-9][0-9]).+$/i';
+	$pattern = '/^.+?\/kap-([0-9]+).+$/i';
 	if(strpos($current_url, '/kapitler/kap-') == false) {
 		return "";
 	}
