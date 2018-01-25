@@ -485,34 +485,34 @@ body[class*="kapitler-child"]::after {
     background-color: #333;
 }
 
-.kap-00::after {
+.kap-0::after {
     background: url(/media/img/00-den-rode-planeten-bg.jpg);
 }
-.kap-01::after {
+.kap-1::after {
     background: url(/media/img/01-let-og-finn-bg.jpg);
 }
-.kap-02::after {
+.kap-2::after {
     background: url(/media/img/02-let-og-finn-bg.jpg);
 }
-.kap-03::after {
+.kap-3::after {
     background: url(/media/img/03-let-og-finn-bg.jpg);
 }
-.kap-04::after {
+.kap-4::after {
     background: url(/media/img/04-let-og-finn-bg.jpg);
 }
-.kap-05::after {
+.kap-5::after {
     background: url(/media/img/05-let-og-finn-bg.jpg);
 }
-.kap-06::after {
+.kap-6::after {
     background: url(/media/img/kap6-bg-gress-1200x1330.jpg);
 }
-.kap-07::after {
+.kap-7::after {
     background: url(/media/img/07-let-og-finn-bg.jpg);
 }
-.kap-08::after {
+.kap-8::after {
     background: url(/media/img/08-let-og-finn-bg.jpg);
 }
-.kap-09::after {
+.kap-9::after {
     background: url(/media/img/09-let-og-finn-bg.jpg);
 }
 .kap-10::after {
