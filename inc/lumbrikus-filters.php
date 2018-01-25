@@ -60,8 +60,8 @@ add_filter( 'page_template', function ( $template )
 		case 'kapitler':
 		$locate_template = locate_template( 'child-of-kapitler--kapittel-hovedside.php' );
 		break;
-		case 'til-laereren':
-		$locate_template = locate_template( 'child-of-til-laereren.php' );
+		case 'laererveil':
+		$locate_template = locate_template( 'child-of-laererveil.php' );
 		break;
 		default:
 			return $template;

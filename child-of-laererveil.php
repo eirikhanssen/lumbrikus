@@ -1,6 +1,6 @@
 <?php 
 /**
- * The template for displaying "Til laereren" child pages
+ * The template for displaying "lærerveil" child pages
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -10,9 +10,9 @@
  * @version 1.0
  */
 get_header(); ?>
-<!-- BEGIN PAGE TIL LÆREREN UNDERSIDE -->	
+<!-- BEGIN PAGE LÆRERVEIL UNDERSIDE -->	
 <?php echo lumbrikus_page_TOC(); ?>
-<main class="site-main page-til-laereren-underside underside">
+<main class="site-main page-laererveil-underside underside">
 
 
 		<?php 
@@ -30,5 +30,5 @@ get_header(); ?>
 		?>
 	
 </main>
-<!-- END PAGE TIL LÆREREN UNDERSIDE -->	
+<!-- END PAGE LÆRERVEIL UNDERSIDE -->	
 <?php get_footer(); ?>
