@@ -535,3 +535,70 @@ function lumbrikus_page_TOC() {
 	$toc .= "<!--lumbrikus_page_TOC-END-->\n";
 	return $toc;
 }
+
+/**
+ * Links to previous/next chapters will check the request uri of the page, and generate links to 
+ * previous and next chapters with same sub-pages if relevant
+ * 
+ * sample links:
+ * kap-0 (...) kap-11
+ * https://lumbrikus.no/kapitler/kap-1/kort/...
+ * https://lumbrikus.no/kapitler/kap-1/lang/...
+ * https://lumbrikus.no/kapitler/kap-1/let-og-finn/...
+ * https://lumbrikus.no/kapitler/kap-1/ord/...
+ * https://lumbrikus.no/kapitler/kap-1/gjore-og-lage/...
+ * https://lumbrikus.no/kapitler/kap-1/gjore-og-lage/ta-bilder/...
+ * https://lumbrikus.no/kapitler/kap-1/filmer/...
+ * https://lumbrikus.no/kapitler/kap-1/snutter/...
+ * https://lumbrikus.no/kapitler/kap-1/kviss/...
+ * 
+ * https://lumbrikus.no/til-foreldrene/kap-0
+ * https://lumbrikus.no/til-foreldrene/kap-1
+ * (...)
+ * https://lumbrikus.no/til-foreldrene/kap-11
+ * 
+ * https://lumbrikus.no/til-laereren/kap-0
+ * https://lumbrikus.no/til-laereren/kap-1
+ * (...)
+ * https://lumbrikus.no/til-laereren/kap-11
+ * 
+ * (.+?\/kapitler\/kap-)(\d+)\/([^/]+)
+ * 
+ * prevLinkFromUrl($page_self_url);
+ * nextLinkFromUrl($page_self_url);
+ * 
+ * $1 .   . $3 
+ *  
+ */
+
+/**
+ * Check if a previous (chapter) link would make sense
+ * Returns: True or False
+*/
+function lumbrikus_has_prev_link($url) {
+
+}
+
+/**
+ * Check if a next (chapter) link would make sense
+ * Returns: True or False
+*/
+function lumbrikus_has_next_link($url) {
+
+}
+
+/**
+ * Generate a link to the same type of page/content, but the previous chapter
+ * Returns: a html string representation of the link
+*/
+function lumbrikus_prev_link($url) {
+
+}
+
+/**
+ * Generate a link to the same type of page/content, but in the next chapter
+ * Returns: a html string representation of the link
+*/
+function lumbrikus_next_link($url) {
+
+}
