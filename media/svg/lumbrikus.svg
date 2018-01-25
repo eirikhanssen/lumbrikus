@@ -288,7 +288,7 @@
       <a xlink:href="/laererveil/" target="_top" xlink:title="Lærerveiledningen inneholder mange tips om hvordan man kan bruke ressursen i undervisningen.">
          <circle class="textbg2" r="105" cx="-235" cy="187" />
          <circle class="textbg" r="90" cx="-235" cy="187" />
-         <text id="t_foreldrene" x="-235" y="-187">
+         <text id="t_laererveil" x="-235" y="-187">
             <tspan x="-235" y="187" dy="-20">lærer-</tspan>
               <tspan x="-235" y="187" dy="30">veiledning</tspan>
          </text>
@@ -307,12 +307,12 @@
      </g>
    
    <g class="satellite" transform="translate(50,0)">
-      <a xlink:href="/til-foreldrene/" target="_top" xlink:title="En beskrivelse av innholdet rettet mot foreldre. Her presenteres hoved-temaene.">
+      <a xlink:href="/til-foreldre/" target="_top" xlink:title="En beskrivelse av innholdet rettet mot foreldre. Her presenteres hoved-temaene.">
          <circle class="textbg2" r="105" cx="235" cy="187" />
          <circle class="textbg" r="90" cx="235" cy="187" />
-         <text id="t_larerne" x="235" y="187">
+         <text id="t_foreldre" x="235" y="187">
             <tspan x="235" y="187" dy="-20">til</tspan>
-            <tspan x="235" y="187" dy="30">foreldrene</tspan>
+            <tspan x="235" y="187" dy="30">foreldre</tspan>
          </text>
       </a>
    </g>

@@ -1,6 +1,6 @@
 <?php 
 /**
- * The template for displaying "Til foreldrene"
+ * The template for displaying "Til foreldre"
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -12,7 +12,7 @@
 get_header(); ?>
 
 <!-- BEGIN PAGE -->	
-<main class="site-main page-til-foreldrene">
+<main class="site-main page-til-foreldre">
 
 		<?php 
 			
@@ -20,7 +20,7 @@ get_header(); ?>
 				
 				while( have_posts() ): the_post();
 
-					get_template_part( 'template-parts/content', 'page' );
+					get_template_part( 'template-parts/content', 'til-foreldre' );
 				
 				endwhile;
 				
