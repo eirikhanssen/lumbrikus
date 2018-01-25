@@ -12,7 +12,7 @@
 get_header(); ?>
 
 <!-- BEGIN PAGE -->	
-<main class="site-main page-til-laereren">
+<main class="site-main page-laererveil">
 
 		<?php 
 			
@@ -20,7 +20,7 @@ get_header(); ?>
 				
 				while( have_posts() ): the_post();
 
-					get_template_part( 'template-parts/content', 'til-laereren' );
+					get_template_part( 'template-parts/content', 'laererveil' );
 				
 				endwhile;
 				

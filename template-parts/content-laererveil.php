@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying page content in page-til-laereren.php
+ * Template part for displaying page content in page-laererveil.php
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -11,7 +11,7 @@
  */
 
 ?>
-<!-- BEGIN CONTENT-PAGE-TIL-LAEREREN -->
+<!-- BEGIN CONTENT-PAGE-LAERERVEIL -->
 <article id="page-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
@@ -28,4 +28,4 @@
 </article><!-- #page-## -->
 <?php echo lumbrikus_make_textimage_links_to_children(get_the_ID()); ?>
 
-<!-- END CONTENT-PAGE-TIL-LAEREREN -->
+<!-- END CONTENT-PAGE-LAERERVEIL -->

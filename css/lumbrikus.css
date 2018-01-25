@@ -50,8 +50,8 @@ main {
     margin-bottom: 4rem;
 }
 
-.til-laereren-child main,
-.til-laereren main,
+.laererveil-child main,
+.laererveil main,
 .om-lumbrikus main, 
 .til-foreldrene main,
 .til-foreldrene-child main {
@@ -1257,7 +1257,7 @@ a[href*="nrksuper.no"]::after {
     color: #a5cdea;
 }
 
-body.til-laereren-child .page-toc {
+body.laererveil-child .page-toc {
     font-size: .7em;
     top: 1.7rem;
     left:0;
@@ -1272,12 +1272,12 @@ h1,h2,h3,h4,h5,h6 {
     position: relative;
 }
 
-.child-of-til-laereren h1::before,
-.child-of-til-laereren h2::before,
-.child-of-til-laereren h3::before,
-.child-of-til-laereren h4::before,
-.child-of-til-laereren h5::before,
-.child-of-til-laereren h6::before {
+.child-of-laererveil h1::before,
+.child-of-laererveil h2::before,
+.child-of-laererveil h3::before,
+.child-of-laererveil h4::before,
+.child-of-laererveil h5::before,
+.child-of-laererveil h6::before {
   display: block; 
   content: " "; 
   margin-top: -2rem; 
@@ -1287,24 +1287,24 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 @media screen and (min-width: 55em) {
-    body.til-laereren-child .page-toc ul {
+    body.laererveil-child .page-toc ul {
         padding-bottom: 2rem;
     }
-    body.til-laereren-child .page-toc {
+    body.laererveil-child .page-toc {
         width: 14rem;
         overflow-y:scroll;
     }
-    body.til-laereren-child .page-toc + main {
+    body.laererveil-child .page-toc + main {
         margin-left: 14.5rem;
         margin-top:2rem;
 }
 
-    body.til-laereren-child .siteheader,
-    body.til-laereren-child .page-toc {
+    body.laererveil-child .siteheader,
+    body.laererveil-child .page-toc {
         position: fixed;
     }
 
-    body.til-laereren-child .siteheader {
+    body.laererveil-child .siteheader {
         width: 100%;
         top:0;
     }
