@@ -15,12 +15,12 @@
     <meta name="description" content="Naturfag på norsk, arabisk, somali og tigrinja. En læringsressurs med faglige og skjønnlitterære tekster og lydmateriale for småskoletrinn og nyankomne."/>
 </head>
 <body>
-    <object class="forside" type="image/svg+xml" data="/media/svg/lumbrikus.svg">
+    <object class="forside" type="image/svg+xml" data="/media/svg/lumbrikus.svg?ver=2018-01-25">
         <h1>Lumbrikus.no</h1>
         <nav>
             <ul>
                 <li><a href="/kapitler/" title="Til kapitteloversikten som er inngangen til hovedinnholdet">Start lumbrikus.</a></li>
-                <li><a href="/til_laereren/" title="Lærerveiledningen inneholder bakgrunnsteori og forslag til hvordan man kan bruke lumbrikus.no i undervisningen.">Til lærerne</a></li>
+                <li><a href="/laererveil/" title="Lærerveiledningen inneholder bakgrunnsteori og forslag til hvordan man kan bruke lumbrikus.no i undervisningen.">Til lærerne</a></li>
                 <li><a href="/om-lumbrikus/" title="Bakgrunnsinformasjon om nettstedet, om lumbrikus-prosjektet og samarbeidspartnere.">Om Lumbrikus</a></li>
                 <li><a href="/til-foreldrene/" title="Veiledning og informasjon tilrettelagt foreldre av barn som bruker lumbrikus.no">Til foreldrene</a></li>
             </ul>
