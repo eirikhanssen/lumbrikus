@@ -101,6 +101,12 @@ a[data-lightbox]::before {
     line-height:2em;
 }
 
+/* do not show the numbers if ther is only one lightbox item */
+
+a[data-lightbox]:only-of-type::before {
+    display:none;
+}
+
 #lightbox {font-size: 1.5em;}
 #lightbox .lb-number { font-size: 0.8em;}
 #lightbox .lb-caption {line-height: 1.25em;}
