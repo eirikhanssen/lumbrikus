@@ -17,8 +17,9 @@ echo "<!-- BEGIN FOOTER -->\n";
 	<nav class="footer-nav">
 		<h2 class="aural-only">Til informasjon om ressursen</h2>
 		<ul>
-			<li><a href="/til-laereren/">Til læreren</a></li>
-			<li><a href="/til-foreldrene/">Til foreldrene</a></li>
+			<li><?php echo til_eleven_link(); ?></li>
+			<li><?php echo laererveil_link(); ?></li>
+			<li><?php echo til_foreldre_link(); ?></li>
 			<li><a href="/om-lumbrikus/">Om Lumbrikus</a></li>
 			<li><a href="/kontakt-oss/">Kontakt</a></li>
 		</ul>

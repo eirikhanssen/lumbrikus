@@ -602,3 +602,94 @@ function lumbrikus_prev_link($url) {
 function lumbrikus_next_link($url) {
 
 }
+
+/**
+ * Return a link, to to the teacher's manual, to the current chapter (if any)
+ * being viewed in children's, teacher's or parent's context.
+ *
+ * @return string
+ */
+function laererveil_link() {
+	$link_url_fragment = "/laererveil/";
+	$link_text = "Lærerveiledning";
+	$current_page_url=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+
+	$r_domain = "/^([^/]+?)\/.+$/";
+	$r_domain_replacement = "$1";
+
+	$link_url = preg_replace($r_domain, $r_domain_replacement, $current_page_url) . $link_url_fragment;
+
+	$r_chapter_num = "/^.+?\/kap-([0-9]+)\/.*$/";
+	$r_chapter_num_replacement = '$1';
+	$chapter_num = "@@@";
+	if (preg_match($r_chapter_num, $current_page_url)) {
+		$chapter_num = preg_replace($r_chapter_num, $r_chapter_num_replacement, $current_page_url);
+		$link_text .= " – kapittel " . $chapter_num;
+		$link_url .= "kap-" . $chapter_num . "/";
+	} else {
+		$link_text .= " – oversikt ";
+	}
+	$html = '<a href="' . $link_url . '">' . $link_text . '</a>';
+	return  $html;
+}
+
+/**
+ * Return a link, to to the parent's info pages, to the current chapter (if any)
+ * being viewed in children's, teacher's or parent's context.
+ *
+ * @return string
+ */
+function til_foreldre_link() {
+	$link_url_fragment = "/til-foreldre/";
+	$link_text = "Til foreldre";
+	$current_page_url=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+
+	$r_domain = "/^([^/]+?)\/.+$/";
+	$r_domain_replacement = "$1";
+
+	$link_url = preg_replace($r_domain, $r_domain_replacement, $current_page_url) . $link_url_fragment;
+
+	$r_chapter_num = "/^.+?\/kap-([0-9]+)\/.*$/";
+	$r_chapter_num_replacement = '$1';
+	$chapter_num = "@@@";
+	if (preg_match($r_chapter_num, $current_page_url)) {
+		$chapter_num = preg_replace($r_chapter_num, $r_chapter_num_replacement, $current_page_url);
+		$link_text .= " – kapittel " . $chapter_num;
+		$link_url .= "kap-" . $chapter_num . "/";
+	} else {
+		$link_text .= " – oversikt ";
+	}
+	$html = '<a href="' . $link_url . '">' . $link_text . '</a>';
+	return  $html;
+}
+
+/**
+ * Return a link, to the children's content, to the current chapter (if any)
+ * being viewed in children's, teacher's or parent's context.
+  *
+ * @return string
+ */
+function til_eleven_link() {
+	$link_url_fragment = "/kapittel/";
+	$link_text = "Kapittel";
+	$current_page_url=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+
+	$r_domain = "/^([^/]+?)\/.+$/";
+	$r_domain_replacement = "$1";
+
+	$link_url = preg_replace($r_domain, $r_domain_replacement, $current_page_url) . $link_url_fragment;
+
+	$r_chapter_num = "/^.+?\/kap-([0-9]+)\/.*$/";
+	$r_chapter_num_replacement = '$1';
+	$chapter_num = "@@@";
+	if (preg_match($r_chapter_num, $current_page_url)) {
+		$chapter_num = preg_replace($r_chapter_num, $r_chapter_num_replacement, $current_page_url);
+		$link_text .= " " . $chapter_num;
+		$link_url .= "kap-" . $chapter_num . "/";
+	} else {
+		$link_text = "Kapitteloversikt";
+		$link_url = preg_replace($r_domain, $r_domain_replacement, $current_page_url) . '/kapitler/';
+	}
+	$html = '<a href="' . $link_url . '">' . $link_text . '</a>';
+	return  $html;
+}
