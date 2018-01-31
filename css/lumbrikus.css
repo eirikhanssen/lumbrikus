@@ -540,27 +540,47 @@ body[class*="kapitler-child"]::after {
     font-weight: bold;
 }
 
-.page-footer a:focus,
-.page-footer a:hover
- {
-    color: yellow;
-    text-decoration: underline;
-}
-
 .footer-nav > ul {
     padding:0;
     margin:0;
     height: 100%;
-    
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+    font-size: 1.25em;
+
 }
 .footer-nav > ul > li {
     margin:0;
-    padding-left: 1em;
-    display: inline;
-    float: left;
-    width: 25%;
+    padding: 2px;
     text-align: center;
     box-sizing: border-box;
+    flex-grow:1;
+    display:flex;
+    flex-flow:column nowrap;
+}
+
+.footer-nav > ul a {
+    background: #3e3e3e;
+    display:block;
+    border-radius:.25em;
+    padding: .25em;  
+}
+
+.footer-nav > ul a:hover {
+    background: white;
+    display:block;
+    color: black;
+    border-radius:.25em;
+    text-decoration:none;
+}
+
+.footer-nav > ul a:focus {
+    background: orange;
+    display:block;
+    color: black;
+    border-radius:.25em;
+    text-decoration:none;
 }
 
 .footer-nav li ul {
