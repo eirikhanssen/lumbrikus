@@ -65,7 +65,47 @@ nav {
 
 img {width: auto; height: auto;}
 
+/* Bildegalleri BEGIN*/
+
 [data-lightbox] > img {border-radius: .25em; border: 1px solid rgba(0,0,0,0.5);}
+
+body {
+    counter-reset: bildeserie;
+}
+
+a[data-lightbox] {
+    position:relative;
+    position:relative;
+    display:inline-block;
+    z-index:1;
+    height: 100px;
+}
+
+a[data-lightbox]::before {
+    counter-increment: bildeserie;
+    content: counter(bildeserie);
+    background:rgba(255,255,255,0.7);
+    display:inline-block;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index:10;
+    text-align:center;
+    border-radius: 100%;
+    min-width: 2em;
+    min-height: 2em;
+    width: 25px;
+    font-weight:bold;
+    color:black;
+    line-height:2em;
+}
+
+#lightbox {font-size: 1.5em;}
+#lightbox .lb-number { font-size: 0.8em;}
+#lightbox .lb-caption {line-height: 1.25em;}
+
+/* Bildegalleri END */
 
 /* site header BEGIN */
 
