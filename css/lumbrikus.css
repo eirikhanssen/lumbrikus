@@ -424,9 +424,9 @@ main.page-filmer-underside .entry-content > a::after{
     font-style: normal;
     position: absolute;
     top: 100%;
+    left: 1.25em;
     font-size: 0.65em;
     transform: translate(0,-2em);
-
 }
 
 .videolink figure {
