@@ -412,12 +412,21 @@ main.page-filmer-underside .entry-content > a:focus{
 main.page-filmer .entry-content > a::after,
 main.page-filmer-underside .entry-content > a::after{
     position: absolute;
-    top: 100%;
-    left:50%;
     z-index: 10;
     height: 1em;
     width: 3em;
-    transform: translate(-50%,-140%);
+    top: calc(100% - 1.3em);
+    left: calc(100% - 4.6em);
+}
+
+.videolink figcaption em {
+    font-weight: bold;
+    font-style: normal;
+    position: absolute;
+    top: 100%;
+    font-size: 0.65em;
+    transform: translate(0,-2em);
+
 }
 
 .videolink figure {
@@ -1222,13 +1231,14 @@ a[href*="youtube.com/watch"]::after,
 a[href*="nrk.no"]::after,
 a[href*="nrksuper.no"]::after {
     content: "";
-    padding-left: 3em;
+    padding-left: 1em;
     text-decoration: none;
     background-image: url(logos/YouTube_Logo_2017.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center center;
-    margin-left: .5em;
+    background-position: right center;
+    margin: 0em;
+
 }
 
 a[href*="nrk.no"]::after {
