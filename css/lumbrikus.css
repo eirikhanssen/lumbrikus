@@ -767,14 +767,14 @@ body[class*="kviss"] .page-footer {
 
 .page-snutter-underside .entry-content .wp-caption {
     position:absolute;
-    right: 55%;
+    right: 52%;
     float:left;
     clear: left;
     margin-top: 2.5em;
 }
 
 .page-snutter-underside .entry-content > p {
-    margin-left: 55%;
+    margin-left: 52%;
 }
 
 figure.ord {
