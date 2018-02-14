@@ -159,16 +159,16 @@ article {
 /* begin translations */
 
 /* background images in translation containers */
-.kap-00-child #translation-bg, .kap-00-child div.showimage {background-image: url('/media/img/00-den-rode-planeten-bg.jpg'); background-color: #453b43;}
-.kap-01-child #translation-bg, .kap-01-child div.showimage {background-image: url('/media/img/01-let-og-finn-bg.jpg'); background-color: #61bdfe;}
-.kap-02-child #translation-bg, .kap-02-child div.showimage {background-image: url('/media/img/02-let-og-finn-bg.jpg'); background-color:#b7f3fe;}
-.kap-03-child #translation-bg, .kap-03-child div.showimage {background-image: url('/media/img/03-let-og-finn-bg.jpg'); background-color: #e7d2b3;}
-.kap-04-child #translation-bg, .kap-04-child div.showimage {background-image: url('/media/img/04-let-og-finn-bg.jpg'); background-color: #6be7b5;}
-.kap-05-child #translation-bg, .kap-05-child div.showimage {background-image: url('/media/img/05-let-og-finn-bg.jpg'); background-color: #767b45;}
-.kap-06-child #translation-bg, .kap-06-child div.showimage {background-image: url('/media/img/kap6-bg-gress-1200x1330.jpg'); background-color: #7ed3db;}
-.kap-07-child #translation-bg, .kap-07-child div.showimage {background-image: url('/media/img/07-let-og-finn-bg.jpg'); background-color:#38393d;}
-.kap-08-child #translation-bg, .kap-08-child div.showimage {background-image: url('/media/img/08-let-og-finn-bg.jpg'); background-color: #abcdbf;}
-.kap-09-child #translation-bg, .kap-09-child div.showimage {background-image: url('/media/img/09-let-og-finn-bg.jpg'); background-color: #f2f9ff;}
+.kap-0-child #translation-bg, .kap-0-child div.showimage {background-image: url('/media/img/00-den-rode-planeten-bg.jpg'); background-color: #453b43;}
+.kap-1-child #translation-bg, .kap-1-child div.showimage {background-image: url('/media/img/01-let-og-finn-bg.jpg'); background-color: #61bdfe;}
+.kap-2-child #translation-bg, .kap-2-child div.showimage {background-image: url('/media/img/02-let-og-finn-bg.jpg'); background-color:#b7f3fe;}
+.kap-3-child #translation-bg, .kap-3-child div.showimage {background-image: url('/media/img/03-let-og-finn-bg.jpg'); background-color: #e7d2b3;}
+.kap-4-child #translation-bg, .kap-4-child div.showimage {background-image: url('/media/img/04-let-og-finn-bg.jpg'); background-color: #6be7b5;}
+.kap-5-child #translation-bg, .kap-5-child div.showimage {background-image: url('/media/img/05-let-og-finn-bg.jpg'); background-color: #767b45;}
+.kap-6-child #translation-bg, .kap-6-child div.showimage {background-image: url('/media/img/kap6-bg-gress-1200x1330.jpg'); background-color: #7ed3db;}
+.kap-7-child #translation-bg, .kap-7-child div.showimage {background-image: url('/media/img/07-let-og-finn-bg.jpg'); background-color:#38393d;}
+.kap-8-child #translation-bg, .kap-8-child div.showimage {background-image: url('/media/img/08-let-og-finn-bg.jpg'); background-color: #abcdbf;}
+.kap-9-child #translation-bg, .kap-9-child div.showimage {background-image: url('/media/img/09-let-og-finn-bg.jpg'); background-color: #f2f9ff;}
 .kap-10-child #translation-bg, .kap-10-child div.showimage {background-image: url('/media/img/10-let-og-finn-bg.jpg'); background-color:#72d0ff;}
 .kap-11-child #translation-bg, .kap-11-child div.showimage {background-image: url('/media/img/11-farvel-bg.jpg'); background-color:#3f649b;}
 
