@@ -23,9 +23,9 @@ function lumbrikus_add_chapter_to_body_class ( $classes ) {
 	global $post;
 	$chapter = lumbrikus_get_chapter_num();
 	if($chapter != "") {
-		if($chapter < 10) {
+		/*if($chapter < 10) {
 			$chapter = '0' . $chapter;
-		}
+		}*/
 		$classes[] = 'kap-' . $chapter;
 	} else {
 		$classes[] = "";
