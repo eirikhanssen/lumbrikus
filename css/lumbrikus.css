@@ -766,15 +766,16 @@ body[class*="kviss"] .page-footer {
     padding-left: 1em; padding-right: 1em;
 }
 @media screen and (min-width: 50em) {
-.page-snutter-underside .entry-content .wp-caption {
+.page-snutter-underside .entry-content > .wp-caption {
     position:absolute;
     right: 52%;
     float:left;
     clear: left;
     margin-top: 2.5em;
+    margin-left: 0;
 }
 
-.page-snutter-underside .entry-content > p {
+.page-snutter-underside .entry-content > * {
     margin-left: 52%;
 }
 
