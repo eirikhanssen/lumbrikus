@@ -12,19 +12,5 @@
 
 ?>
 <!-- BEGIN CONTENT-PAGE-KAPITTEL-HOVEDSIDE -->
-<article id="page-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<h1 class="entry-title"><a href="kort" title="kort fortelling"><?php esc_html( the_title() ); ?></a></h1>
-	</header><!-- .entry-header -->
-	<div class="entry-content">
-
-<!-- BEGIN THE CONTENT -->
-
-<?php the_content(); ?>
-
-<!-- END THE CONTENT -->		
-
-	</div><!-- .entry-content -->
-</article><!-- #page-## -->
-
+	<?php echo create_chapter_mainpage_image_fullscreen_link(); ?>
 <!-- END CONTENT-PAGE-KAPITTEL-HOVEDSIDE -->

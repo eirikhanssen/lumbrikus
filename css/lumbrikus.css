@@ -254,6 +254,7 @@ a[data-lightbox]:only-of-type::before {
 .kapitler-child .entry-header {
     display:block;
     text-align: center;
+    margin-top:-4.5em;
 }
 
 .entry-title {
@@ -264,10 +265,7 @@ a[data-lightbox]:only-of-type::before {
     display: block;
     color: #402659;
     color: black;
-    
-   
     text-shadow: 3px 3px 3px rgba(0,0,0,0.3);
-    
 }
 
 .kapitler-child .entry-title {
@@ -524,58 +522,6 @@ a:focus .videolink {
 }
 
 /* video links end */
-
-body[class*="kapitler-child"]::after {
-    position: fixed;
-    background-repeat: no-repeat;
-    content: "";
-    top:2rem;
-    left:0;
-    right:0;
-    bottom: 1rem;
-    position: fixed;
-    z-index: -1;
-    background-position: center;
-    background-size: contain;
-    background-color: #333;
-}
-
-.kap-0::after {
-    background: url(/media/img/00-den-rode-planeten-bg.jpg);
-}
-.kap-1::after {
-    background: url(/media/img/01-let-og-finn-bg.jpg);
-}
-.kap-2::after {
-    background: url(/media/img/02-let-og-finn-bg.jpg);
-}
-.kap-3::after {
-    background: url(/media/img/03-let-og-finn-bg.jpg);
-}
-.kap-4::after {
-    background: url(/media/img/04-let-og-finn-bg.jpg);
-}
-.kap-5::after {
-    background: url(/media/img/05-let-og-finn-bg.jpg);
-}
-.kap-6::after {
-    background: url(/media/img/kap6-bg-gress-1200x1330.jpg);
-}
-.kap-7::after {
-    background: url(/media/img/07-let-og-finn-bg.jpg);
-}
-.kap-8::after {
-    background: url(/media/img/08-let-og-finn-bg.jpg);
-}
-.kap-9::after {
-    background: url(/media/img/09-let-og-finn-bg.jpg);
-}
-.kap-10::after {
-    background: url(/media/img/10-let-og-finn-bg.jpg);
-}
-.kap-11::after {
-    background: url(/media/img/11-farvel-bg.jpg);
-}
 
 .page-footer {
     position: relative;
@@ -1399,4 +1345,25 @@ h1,h2,h3,h4,h5,h6 {
         width: 100%;
         top:0;
     }
+}
+
+#chapter_mainpage_image_link:hover img,
+#chapter_mainpage_image_link:focus img {
+    border-color: orange;
+    box-shadow: 0 0 .75em rgba(0,0,0,1);
+}
+
+#chapter_mainpage_image_link img {
+    position: fixed;
+    top:8em;
+    left:0;
+    right:0;
+    bottom:1em;
+    margin:auto;
+    z-index: 0;
+    max-height: calc( 100% - 15em);
+    width: auto%;
+    box-shadow: 0 0 .5em rgba(0,0,0,0.4);
+    border: 5px solid black;
+    padding: .75em;
 }

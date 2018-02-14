@@ -341,6 +341,8 @@ function lumbrikus_get_chapter_num() {
 	return $chapter_num;
 }
 
+
+
 function lumbrikus_internal_chapter_menu($lvl) {
 	$chapter_num = lumbrikus_get_chapter_num();
 
@@ -692,4 +694,32 @@ function til_eleven_link() {
 	}
 	$html = '<a href="' . $link_url . '">' . $link_text . '</a>';
 	return  $html;
+}
+
+function create_chapter_mainpage_image_fullscreen_link() {
+	$ch = lumbrikus_get_chapter_num();
+	$chapterimages = array(	"/media/img/00-den-rode-planeten-bg.jpg",
+						"/media/img/01-let-og-finn-bg.jpg",
+						"/media/img/02-let-og-finn-bg.jpg",
+						"/media/img/03-let-og-finn-bg.jpg",
+						"/media/img/04-let-og-finn-bg.jpg",
+						"/media/img/05-let-og-finn-bg.jpg",
+						"/media/img/06-let-og-finn-bg.jpg",
+						"/media/img/07-let-og-finn-bg.jpg",
+						"/media/img/08-let-og-finn-bg.jpg",
+						"/media/img/09-let-og-finn-bg.jpg",
+						"/media/img/10-let-og-finn-bg.jpg",
+						"/media/img/11-farvel-bg.jpg");
+
+
+	$chapterimage_url = $chapterimages[$ch];
+	$pagetitle = get_the_title();
+
+	$html = '<header class="entry-header"><h1 class="entry-title">' . $pagetitle . '</h1></header>';
+
+	$html .= '<a id="chapter_mainpage_image_link" title="Se stort bilde" href="' . $chapterimage_url . '"' . ' data-lightbox="kapittelbilde" data-title="' . $pagetitle . '">';
+	$html .= '<img src=" ' . $chapterimage_url . ' " alt="' . $pagetitle . '" />';
+	$html .= '</a>';
+
+	return $html;
 }
