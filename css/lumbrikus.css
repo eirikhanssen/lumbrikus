@@ -206,10 +206,10 @@ a[data-lightbox]:only-of-type::before {
     line-height: 0.1;
     top: -.3em;
     right: -.05em;
-    
-    
-    
 }
+
+.breadcrumb li:last-child a {color: white ;}
+
 .site-title {
         color: black;
         font-weight: normal;
