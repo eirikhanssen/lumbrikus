@@ -757,8 +757,6 @@ body[class*="kviss"] .page-footer {
     display: block;
     margin: auto;
     max-width: 65em;
-    overflow-x: hidden;
-    
 }
 
 .page-snutter-underside .entry-content {
