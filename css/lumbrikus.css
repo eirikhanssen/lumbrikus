@@ -747,9 +747,7 @@ body[class*="kviss"] .page-footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-}
-
-.entry-content p {
+    min-height: 20em;
 }
 
 .page-snutter-underside .entry-content,
