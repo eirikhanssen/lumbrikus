@@ -750,15 +750,31 @@ body[class*="kviss"] .page-footer {
 }
 
 .entry-content p {
-    /*! padding: 0 .5em; */
 }
 
-.page-snutter-underside article .entry-content,
+.page-snutter-underside .entry-content,
 .page-gjore-og-lage-underside article .entry-content {
     display: block;
     margin: auto;
-    max-width: 35em;
+    max-width: 65em;
     overflow-x: hidden;
+    
+}
+
+.page-snutter-underside .entry-content {
+    position:relative;
+}
+
+.page-snutter-underside .entry-content .wp-caption {
+    position:absolute;
+    right: 55%;
+    float:left;
+    clear: left;
+    margin-top: 2.5em;
+}
+
+.page-snutter-underside .entry-content > p {
+    margin-left: 55%;
 }
 
 figure.ord {
