@@ -747,7 +747,6 @@ body[class*="kviss"] .page-footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    min-height: 20em;
 }
 
 .page-snutter-underside .entry-content,
@@ -755,6 +754,7 @@ body[class*="kviss"] .page-footer {
     display: block;
     margin: auto;
     max-width: 65em;
+    min-height: 20em;
 }
 
 .page-snutter-underside .entry-content {
