@@ -111,6 +111,20 @@ a[data-lightbox]:only-of-type::before {
 #lightbox .lb-number { font-size: 0.8em;}
 #lightbox .lb-caption {line-height: 1.25em;}
 
+.image-set {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 20em;
+}
+
+.image-set a{display:inline;  padding:0; flex-grow:1; text-align:center; margin:.5em;}
+
+.image-set img{width: calc(100% - 2em); padding: .5em; border: 2px solid black; box-shadow: 0 0 1em black;}
+
+.image-set a[data-lightbox]::before {display:none;}
+
 /* Bildegalleri END */
 
 /* site header BEGIN */
@@ -1367,3 +1381,4 @@ h1,h2,h3,h4,h5,h6 {
     border: 5px solid black;
     padding: .75em;
 }
+
