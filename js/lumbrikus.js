@@ -4,12 +4,13 @@ $( document ).ready(function() {
     lightbox.option({
         'wrapAround': true,
         'albumLabel': 'Bilde %1 av %2',
-        'fadeDuration': 400,
-        'imageFadeDuration' : 0,
-        'resizeDuration': 100,
+        'fadeDuration': 200,
+        'imageFadeDuration' : 200,
+        'resizeDuration': 200,
         'disableScrolling' : true,
         'fitImagesInViewport' : true,
-        'alwaysShowNavOnTouchDevices' : true
+        'alwaysShowNavOnTouchDevices' : true,
+        'positionFromTop': 10
       });
 
       // create page toc if #page-toc element exists
