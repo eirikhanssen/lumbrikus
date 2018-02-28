@@ -124,6 +124,10 @@ a[data-lightbox]:only-of-type::before {
 
 .image-set a[data-lightbox]::before {display:none;}
 
+.lb-outerContainer {
+    background-color: rgba(100,100,100,0.5);
+}
+
 /* Bildegalleri END */
 
 /* site header BEGIN */
