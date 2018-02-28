@@ -106,7 +106,7 @@ a[data-lightbox]:only-of-type::before {
     display:none;
 }
 
-#lightbox {font-size: 1.5em;}
+#lightbox {font-size: 1.5em; top:0 !important;}
 #lightbox .lb-number { font-size: 0.8em;}
 #lightbox .lb-caption {line-height: 1.25em;}
 
