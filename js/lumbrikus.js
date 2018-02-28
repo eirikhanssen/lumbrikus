@@ -7,7 +7,7 @@ $( document ).ready(function() {
         'fadeDuration': 200,
         'imageFadeDuration' : 200,
         'resizeDuration': 200,
-        'disableScrolling' : true,
+        'disableScrolling' : false,
         'fitImagesInViewport' : true,
         'alwaysShowNavOnTouchDevices' : true,
         'positionFromTop': 10
