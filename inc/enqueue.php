@@ -60,8 +60,9 @@ function lumbrikus_load_scripts() {
 
 	//wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap-3.3.7.min.js', array('jquery'), '1.12.4', true );
 	wp_enqueue_script( 'svgxuse', '/js/lib/svgxuse.min.js', array('jquery'), '1.2.6', true );
-	wp_enqueue_script( 'lightbox', '/lib/lightbox/js/lightbox.min.js', false, '2.10.0', true);
 	wp_enqueue_script( 'lumbrikus', get_template_directory_uri() . '/js/lumbrikus.js', array('jquery'), '0.0.8', true );
+	wp_enqueue_script( 'lightbox', '/lib/lightbox/js/lightbox.min.js', false, '2.10.0', true);
+	
 
 	if( is_page( 'kviss' ) ) {
 		wp_enqueue_style( 'kviss', '/css/kviss.css', array(), '0.0.9', 'all' );

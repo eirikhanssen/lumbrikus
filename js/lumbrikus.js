@@ -5,8 +5,11 @@ $( document ).ready(function() {
         'wrapAround': true,
         'albumLabel': 'Bilde %1 av %2',
         'fadeDuration': 400,
-        'fadeImageDuration': 10,
-        'resizeDuration': 100
+        'imageFadeDuration' : 0,
+        'resizeDuration': 100,
+        'disableScrolling' : true,
+        'fitImagesInViewport' : true,
+        'alwaysShowNavOnTouchDevices' : true
       });
 
       // create page toc if #page-toc element exists
