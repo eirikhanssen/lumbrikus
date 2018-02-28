@@ -606,6 +606,7 @@ body[class*="kapitler-child"] .page-footer {
     bottom:0;
     left:0;
     right:0;
+    z-index:1;
 }
 
 body[class*="kort"] .page-footer,
