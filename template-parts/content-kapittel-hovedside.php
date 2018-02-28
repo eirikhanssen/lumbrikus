@@ -12,5 +12,6 @@
 
 ?>
 <!-- BEGIN CONTENT-PAGE-KAPITTEL-HOVEDSIDE -->
-	<?php echo create_chapter_mainpage_image_fullscreen_link(); ?>
+<?php the_content(); ?>
+<?php// echo create_chapter_mainpage_image_fullscreen_link(); ?>
 <!-- END CONTENT-PAGE-KAPITTEL-HOVEDSIDE -->
