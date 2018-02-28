@@ -78,7 +78,6 @@ a[data-lightbox] {
     position:relative;
     display:inline-block;
     z-index:1;
-    height: 100px;
 }
 
 a[data-lightbox]::before {
