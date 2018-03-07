@@ -664,19 +664,22 @@ body[class*="kviss"] .page-footer {
     height: 9rem;
     border: 1px solid #ccc;
     background: #eee;
+    position:relative;
 }
 
 .child-page-links.textimage .imagewrapper {
     background-color: white;
-    padding: .5rem;
-    border: 1px solid black;
+    
+    padding: 10px;
+    border:none;
     margin: 0 auto;
-    display: block;
-    width: 8rem;
+    width: calc(100% - 20px );
     height: 6rem;
     position: relative;
     overflow: hidden;
-    margin-bottom: .1rem;
+    margin-bottom: 0;
+    border-bottom:none;
+
 }
 .child-page-links.textimage .imagewrapper img {
     display: block;
@@ -691,14 +694,32 @@ body[class*="kviss"] .page-footer {
 }
 
 .child-page-links.textimage figcaption {
+    position:absolute;
     margin:0;
-    text-align: center;
-    height: 3rem;
-    font-size: 0.7rem;
-    line-height: .8rem;
+    
+    font-size: 0.9rem;
+    
     color: black;
-    padding-top: .25em;
+    
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    background: #eee;
+
+    text-align: left;
+    bottom:1px;
+    min-height: 2.7rem;
+    margin-right: .5em;
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: stretch;
+    min-width: calc( 100% - 20px );
 }
+.child-page-links.textimage a:hover .link-display figcaption,
+.child-page-links.textimage a:focus .link-display figcaption {
+    background: #ffe;
+}
+
 
 .underside img {
     background: white;
