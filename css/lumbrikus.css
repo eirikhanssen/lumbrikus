@@ -759,7 +759,7 @@ body[class*="kviss"] .page-footer {
 }
 
 .page-snutter-underside .entry-content > * {
-    margin-left: 52%;
+    /* margin-left: 52%; */
 }
 
 }
@@ -1456,3 +1456,12 @@ h1,h2,h3,h4,h5,h6 {
     border: 5px solid black;
     padding: .75em;
 }
+
+
+.columns {
+    display:flex;
+    width:100%;
+    justify-content:center;
+}
+
+.columns .column { margin: 1em;}
