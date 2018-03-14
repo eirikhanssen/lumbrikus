@@ -387,6 +387,8 @@ a[data-lightbox]:only-of-type::before {
     padding-top: .5em;
 }
 
+.entry-content > p {margin-left: 1em; margin-right: 1em;}
+
 /* video links begin */
 main.page-filmer .entry-content,
 main.page-filmer-underside .entry-content{
@@ -882,6 +884,16 @@ figure.ord .opphav {
     color: white;
     font-size: .75em;
     padding: 0 .3em;
+}
+
+.bildeserie {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.bildeserie .wp-caption {
+    margin: 1em 1.5em;
 }
 
 .internal-chapter-links {
