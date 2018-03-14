@@ -809,20 +809,6 @@ figcaption h2+p {
     margin-top: .5em;
 }
 
-figure.ord .opphav {
-    font-size: .75em;
-    line-height:1.3em;
-    padding: 0 .25em;
-    background: rgba(255,255,255,0.7);
-    color: black;
-    position:absolute;
-    max-width:100%;
-    display:block;
-    right: 11px;
-    top: -30px;
-    border-radius: 3px;
-
-}
 /* styling of image attachments */
 
 .wp-caption img {
@@ -872,18 +858,24 @@ figure.ord .opphav {
     font-weight: bold;
     color: #333;
     padding: .25em .5em;
-    padding-bottom: .75em;
+    padding-bottom: 1rem;
+    font-family: "Open Sans", sans-serif;
 }
 
-.wp-caption .wp-caption-text .opphav {
-    top: -1.3rem;
-    right: 1.1rem;
+.wp-caption .wp-caption-text .opphav,
+figure.ord .opphav {
     position:absolute;
     display:block;
-    background: rgba(0,0,0,0.5);
-    color: white;
-    font-size: .75em;
-    padding: 0 .3em;
+    border-radius: 3px;
+    background: rgba(255,255,255,0.75);
+    color: black;
+    max-width:100%;
+    right: 11px;
+    top: -30px;
+    font-size: .5rem;
+    line-height:1.3em;
+    padding: .15em .3em;
+    font-weight:bold;
 }
 
 .bildeserie {
