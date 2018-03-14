@@ -878,6 +878,10 @@ figure.ord .opphav {
     font-weight:bold;
 }
 
+.wp-caption .wp-caption-text .opphav {
+    transform:translate(-1.5em, -.25em);
+}
+
 .bildeserie {
     display:flex;
     flex-flow: row wrap;
