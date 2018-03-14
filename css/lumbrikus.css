@@ -789,16 +789,24 @@ figure.ord img {
     height: auto;
 }
 
+figure.ord figcaption,
+.wp-caption .wp-caption-text {
+    line-height: 1.5em;
+    font-size: .85rem;
+    font-weight: normal;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+}
+
 figure.ord figcaption {
     text-align: left;
-    font-size: .85em;
-    line-height: 1.35em;
     padding: 0;
     padding-top: 10px;
     flex-grow: 1;
     padding: 5px;
     position:relative;
 }
+
 
 figcaption h2 {
     font-size: 1.25em;
@@ -846,8 +854,7 @@ figcaption h2+p {
     right: -.75em;
     top:-.75em;
     bottom:0;
-    background: #fcf4e8;
-    border: 1px solid #f6dfbb;
+    background: whitesmoke;
 }
 
 .wp-caption .wp-caption-text {
@@ -861,6 +868,14 @@ figcaption h2+p {
     padding: .25em .5em;
     padding-bottom: 1rem;
     font-family: "Open Sans", sans-serif;
+}
+
+.wp-caption .wp-caption-text {
+    position:relative;
+    margin:0;
+    width:100%;
+    padding: .25em .5em;
+    padding-bottom: 1rem;
 }
 
 .wp-caption .wp-caption-text .opphav,
