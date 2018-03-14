@@ -855,7 +855,8 @@ figcaption h2+p {
     margin:0;
     line-height: 1.15em;
     width:100%;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: .75rem;
     color: #333;
     padding: .25em .5em;
     padding-bottom: 1rem;
