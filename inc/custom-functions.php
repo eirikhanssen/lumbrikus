@@ -723,3 +723,12 @@ function create_chapter_mainpage_image_fullscreen_link() {
 
 	return $html;
 }
+
+function get_current_template( $echo = false ) {
+    if( !isset( $GLOBALS['current_theme_template'] ) )
+        return false;
+    if( $echo )
+        echo $GLOBALS['current_theme_template'];
+    else
+        return $GLOBALS['current_theme_template'];
+}

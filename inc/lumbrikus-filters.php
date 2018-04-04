@@ -33,9 +33,34 @@ function lumbrikus_add_chapter_to_body_class ( $classes ) {
 	return $classes;
 }
 
+function lumbrikus_add_page_toc_to_body_class ( $classes ) {
+	global $post;
+	$classes[] = "";
+
+	switch (get_current_template()) {
+		case "page-teknisk.php":
+			$classes[] = "has-toc";
+		break;
+		case "child-of-laererveil.php":
+			$classes[] = "has-toc";
+		break;
+		default:
+ 			$classes[] = "";
+	}
+
+	return $classes;
+}
+
+function var_template_include( $t ){
+    $GLOBALS['current_theme_template'] = basename($t);
+    return $t;
+}
+
+add_filter( 'template_include', 'var_template_include', 1000 );
 add_filter( 'body_class', 'lumbrikus_add_slug_body_class' );
 add_filter( 'body_class', 'lumbrikus_add_parent_slug_body_class' );
 add_filter( 'body_class', 'lumbrikus_add_chapter_to_body_class' );
+add_filter( 'body_class', 'lumbrikus_add_page_toc_to_body_class' );
 add_filter( 'page_template', function ( $template )
 {
 	global $post;
