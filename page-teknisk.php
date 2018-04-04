@@ -14,7 +14,6 @@ get_header(); ?>
 <?php echo lumbrikus_page_TOC(); ?>
 <main class="site-main page-teknisk">
 
-
 		<?php 
 			
 			if( have_posts() ):

@@ -51,6 +51,7 @@ main {
 }
 
 .laererveil-child main,
+.has-toc main,
 .laererveil main,
 .om-lumbrikus main, 
 .til-foreldre main,
@@ -340,7 +341,9 @@ a[data-lightbox]:only-of-type::before {
 .attachment-page-image {
     padding: 1em;
 }
-
+figure {
+    background-color: whitesmoke;
+}
 .attachment-page-image figure {
     margin:0;
     padding: 1em;
@@ -1311,7 +1314,7 @@ a.videolink[href*="nrksuper.no"]::after {
 }
 
 /* styles for page toc */
-.page-toc {
+#page-toc {
     margin:0;
     padding:0;
     font-family: "Roboto Condensed";
@@ -1319,51 +1322,51 @@ a.videolink[href*="nrksuper.no"]::after {
     font-size: 1em;
 }
 
-.page-toc ul {
+#page-toc ul {
     list-style-type: none;
     margin:0;
     padding: 1rem 0;
     padding-bottom: 1rem;
 }
 
-.page-toc li {
+#page-toc li {
     margin:0;
     padding:0;
 }
-.page-toc li+li {
+#page-toc li+li {
     border-top: 1px solid #e8e8e8;
 }
 
-.page-toc li[lvl="1"] {
+#page-toc li[lvl="1"] {
     font-weight: bold;
     font-size: 1.5em;
 }
 
-.page-toc li[lvl="2"] {
+#page-toc li[lvl="2"] {
     font-weight: bold;
 }
 
-.page-toc li[lvl="1"] a  {
+#page-toc li[lvl="1"] a  {
     padding-left: .25rem;
 }
 
-.page-toc li[lvl="2"] a  {
+#page-toc li[lvl="2"] a  {
     padding-left: .75rem;
 }
 
-.page-toc li[lvl="3"] a  {
+#page-toc li[lvl="3"] a  {
     padding-left: 1.25rem;
 }
 
-.page-toc li[lvl="4"] a  {
+#page-toc li[lvl="4"] a  {
     padding-left:1.75rem;
 }
 
-.page-toc li[lvl="5"] a  {
+#page-toc li[lvl="5"] a  {
     padding-left: 2.25rem;
 }
 
-.page-toc li[lvl="6"] a  {
+#page-toc li[lvl="6"] a  {
     padding-left: 2.75rem;
 }
 
@@ -1383,12 +1386,11 @@ a.videolink[href*="nrksuper.no"]::after {
     color: #a5cdea;
 }
 
-body.laererveil-child .page-toc {
+body.has-toc .page-toc {
     font-size: .7em;
     top: 1.7rem;
     left:0;
     bottom:0;
-    
     margin-top: -.3rem;
     border-bottom: 1px solid #ccc;
 }
@@ -1398,12 +1400,12 @@ h1,h2,h3,h4,h5,h6 {
     position: relative;
 }
 
-.child-of-laererveil h1::before,
-.child-of-laererveil h2::before,
-.child-of-laererveil h3::before,
-.child-of-laererveil h4::before,
-.child-of-laererveil h5::before,
-.child-of-laererveil h6::before {
+.has-toc h1::before,
+.has-toc h2::before,
+.has-toc h3::before,
+.has-toc h4::before,
+.has-toc h5::before,
+.has-toc h6::before {
   display: block; 
   content: " "; 
   margin-top: -2rem; 
@@ -1413,24 +1415,24 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 @media screen and (min-width: 55em) {
-    body.laererveil-child .page-toc ul {
+    #page-toc ul {
         padding-bottom: 2rem;
     }
-    body.laererveil-child .page-toc {
+    #page-toc {
         width: 14rem;
         overflow-y:scroll;
     }
-    body.laererveil-child .page-toc + main {
+    #page-toc + main {
         margin-left: 14.5rem;
         margin-top:2rem;
 }
 
-    body.laererveil-child .siteheader,
-    body.laererveil-child .page-toc {
+    body.has-toc .siteheader,
+    #page-toc {
         position: fixed;
     }
 
-    body.laererveil-child .siteheader {
+    body.has-toc .siteheader {
         width: 100%;
         top:0;
     }
