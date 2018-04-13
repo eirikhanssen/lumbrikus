@@ -1467,3 +1467,20 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .columns .column { margin: 1em;}
+
+code,
+.codeblock {
+	background-color: whitesmoke;
+	border: 1px dashed #999;
+	padding: .25em;
+	border-radius: .25em;
+	font-family: Courier, monospace !important;
+	font-weight: bold;
+	color: darkred;
+	font-size: 1rem;
+	line-height: 1.25em;
+}
+
+code {
+	padding: .1em;
+}
