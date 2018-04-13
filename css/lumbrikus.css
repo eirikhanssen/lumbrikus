@@ -1489,3 +1489,19 @@ code {
     padding:0;
     border:none;
 }
+
+dt {
+	color: #333;
+	font-weight: bold;
+	font-size: 1em;
+	position: relative;
+}
+
+dt::before {
+	content:"➡";
+	position: absolute;
+	right: 100%;
+	top: 0;
+	margin-right: .25em;
+	color: green;
+}
