@@ -1494,10 +1494,13 @@ dt {
 	color: #333;
 	font-weight: bold;
 	font-size: 1em;
-	position: relative;
 }
 
-dt::before {
+dd {
+    position: relative;
+}
+
+dd::before {
 	content:"➡";
 	position: absolute;
 	right: 100%;
