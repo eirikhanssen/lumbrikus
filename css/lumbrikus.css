@@ -1484,3 +1484,8 @@ code,
 code {
 	padding: .1em;
 }
+
+.codeblock code {
+    padding:0;
+    border:none;
+}
