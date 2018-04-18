@@ -1303,7 +1303,8 @@ a.videolink[href*="nrksuper.no"]::after {
     background-image: url(logos/nrksuperlogo.svg);
 }
 
-.flex-rows {
+.flex-rows,
+.flexr {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
