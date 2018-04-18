@@ -1474,7 +1474,7 @@ code {
 	padding: .25em;
 	border-radius: .25em;
 	font-family: Courier, monospace !important;
-	font-weight: bold;
+	font-weight: normal;
 	color: darkred;
 	font-size: 1rem;
 	line-height: 1.25em;
