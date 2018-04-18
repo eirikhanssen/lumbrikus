@@ -881,6 +881,15 @@ figcaption h2+p {
     padding-bottom: 1rem;
 }
 
+html figure {
+	padding: 1em;
+	margin: 1em;
+}
+
+figure .wp-caption {
+	margin-bottom: 0;
+}
+
 .wp-caption .wp-caption-text .opphav,
 figure.ord .opphav {
     position:absolute;
