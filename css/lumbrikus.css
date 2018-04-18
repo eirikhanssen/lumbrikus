@@ -1487,6 +1487,13 @@ code {
 code.block {
     display:block;
     padding: 1em;
+    white-space: pre;
+}
+.bg-yellow {
+    background-color: rgb(255, 255, 149);
+}
+.bg-green {
+    background-color: rgb(123, 214, 123);
 }
 
 dt {
