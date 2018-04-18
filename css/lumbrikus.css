@@ -1468,10 +1468,9 @@ h1,h2,h3,h4,h5,h6 {
 
 .columns .column { margin: 1em;}
 
-code,
-.codeblock {
+code {
 	background-color: whitesmoke;
-	border: 1px dashed #999;
+	border: 1px dashed #ccc;
 	padding: .25em;
 	border-radius: .25em;
 	font-family: Courier, monospace !important;
@@ -1485,9 +1484,9 @@ code {
 	padding: .1em;
 }
 
-.codeblock code {
-    padding:0;
-    border:none;
+code.block {
+    display:block;
+    padding: 1em;
 }
 
 dt {
