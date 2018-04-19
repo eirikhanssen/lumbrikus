@@ -747,7 +747,7 @@ function lumbrikus_new_chapter_link($context_url, $chapter_num) {
 function lumbrikus_generate_chapter_context_links() {
 	$url = lumbrikus_page_url();
 	$current_chapter_num = lumbrikus_get_current_chapter($url);
-	$html = "";
+	$html = "<!-- lumbrikus_generate_chapter_context_links() -->\n";
 	$prev_chapter_num;
 	$next_chapter_num;
    if($current_chapter_num != NULL) {

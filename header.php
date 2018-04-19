@@ -34,4 +34,5 @@
 <body <?php body_class(); ?>>
 <header class="siteheader">
 	<?php echo lumbrikus_breadcrumbs(); ?>
+	<?php echo lumbrikus_generate_chapter_context_links(); ?>
 </header>
