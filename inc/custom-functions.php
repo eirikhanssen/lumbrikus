@@ -562,7 +562,8 @@ function lumbrikus_page_TOC() {
  * https://lumbrikus.no/til-laereren/kap-0
  * https://lumbrikus.no/til-laereren/kap-1
  * (...)
- * https://lumbrikus.no/til-laereren/kap-11
+ *      1           2              3         4          5
+ * (https://)(lumbrikus.no/)(til-laereren/)(kap-11/)(snutter/)en_snutt
  * 
  * (.+?\/kapitler\/kap-)(\d+)\/([^/]+)
  * 
@@ -573,38 +574,7 @@ function lumbrikus_page_TOC() {
  *  
  */
 
-/**
- * Check if a previous (chapter) link would make sense
- * Returns: True or False
-*/
-function lumbrikus_has_prev_link($url) {
-
-}
-
-/**
- * Check if a next (chapter) link would make sense
- * Returns: True or False
-*/
-function lumbrikus_has_next_link($url) {
-
-}
-
-/**
- * Generate a link to the same type of page/content, but the previous chapter
- * Returns: a html string representation of the link
-*/
-function lumbrikus_prev_link($url) {
-
-}
-
-/**
- * Generate a link to the same type of page/content, but in the next chapter
- * Returns: a html string representation of the link
-*/
-function lumbrikus_next_link($url) {
-
-}
-
+ 
 /**
  * Return a link, to to the teacher's manual, to the current chapter (if any)
  * being viewed in children's, teacher's or parent's context.
@@ -731,4 +701,70 @@ function get_current_template( $echo = false ) {
         echo $GLOBALS['current_theme_template'];
     else
         return $GLOBALS['current_theme_template'];
+}
+
+/* functions for  generating links to next and prev chapters with same context */
+
+function lumbrikus_page_url(){
+	$url=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+	return $url;
+}
+
+function lumbrikus_get_current_context_url($url) {
+	$pattern = '/^(https?:\/\/)?([^\/]+\/?)?([^\/]+\/?)?([^\/]+\/?)?([^\/]+\/?)?.+$/';
+	$replacement = '/\3\4\5';
+	$context_url = preg_replace($pattern, $replacement, $url);
+	return $context_url;
+}
+
+function lumbrikus_get_current_chapter($url) {
+   $search_pattern = '/kap-([0-9]+)/';
+   $matches = [];
+   if(preg_match($search_pattern, $url, $matches) == 1) {
+	   return $matches[1];
+   } else {
+	   return NULL;
+   }
+}
+
+function lumbrikus_has_chapter_num($url) {
+   if(lumbrikus_get_current_chapter($url) != NULL) {
+	   return true;
+   }
+   return false;
+}
+
+function lumbrikus_new_chapter_link($context_url, $chapter_num) {
+   $pattern = '/^(.+?(kap-))[0-9]+(.+?)\/?$/';
+   $replacement_url = '\1%d\3';
+   $replacement_text_and_alt = '\2%d\3';
+   $new_href = sprintf(preg_replace($pattern, $replacement_url, $context_url), $chapter_num);
+   $link_text = sprintf(preg_replace($pattern, $replacement_text_and_alt, $context_url), $chapter_num);
+   $link = "<a href=\"$new_href/\" title=\"$link_text\">$link_text</a>";
+   return $link;
+}
+
+function lumbrikus_generate_chapter_context_links() {
+	$url = lumbrikus_page_url();
+	$current_chapter_num = lumbrikus_get_current_chapter($url);
+	$html = "";
+	$prev_chapter_num;
+	$next_chapter_num;
+   if($current_chapter_num != NULL) {
+	   $html .= '<nav id="same_context_nav">';
+	   $current_chapter_num = (int) $current_chapter_num;
+	   $prev_chapter_num = $current_chapter_num -1;
+	   $next_chapter_num = $current_chapter_num +1;
+
+	   if($prev_chapter_num > -1) {
+		   $html .= '<span class="prev-chapter-link">' . lumbrikus_new_chapter_link(lumbrikus_get_current_context_url($url), $prev_chapter_num) . '</span>';
+	   }
+		   $html .= '<span class="current-chapter-link">' . lumbrikus_new_chapter_link(lumbrikus_get_current_context_url($url), $current_chapter_num) . '</span>';
+	   if($next_chapter_num <= 11) {
+		   $html .= '<span class="next-chapter-link">' . lumbrikus_new_chapter_link(lumbrikus_get_current_context_url($url), $next_chapter_num). '</span>';
+	   }
+	   $html .= '</nav>';
+   }
+   // only generate links if it makes sense (there is a chapter number)
+   return $html;
 }
