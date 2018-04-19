@@ -344,6 +344,9 @@ a[data-lightbox]:only-of-type::before {
 figure {
     background-color: whitesmoke;
 }
+.flexr figure {
+    max-width: 20em;
+}
 .attachment-page-image figure {
     margin:0;
     padding: 1em;
@@ -743,7 +746,7 @@ body[class*="kviss"] .page-footer {
 .page-gjore-og-lage-underside article .entry-content {
     display: block;
     margin: auto;
-    max-width: 65em;
+    max-width: 70em;
     min-height: 20em;
 }
 
