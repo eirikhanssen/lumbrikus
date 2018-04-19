@@ -886,7 +886,7 @@ figcaption h2+p {
 
 html figure {
 	padding: 1em;
-	margin: 1em;
+	margin: .5em;
 }
 
 figure .wp-caption {
