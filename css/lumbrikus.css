@@ -1527,3 +1527,29 @@ dd::before {
 	margin-right: .25em;
 	color: green;
 }
+
+/* Stiler til fullskjermvisning av bilder */
+
+.opphav {
+	z-index: 10;
+}
+
+.lb-details {
+    position:relative;
+}
+.lb-details .opphav {
+    position:absolute;
+    top:100%;
+    left:0;
+    margin-top: .5em;
+    font-weight:normal;
+}
+
+.lb-details .caption-text {
+    color: white;
+}
+
+.lb-details .additional-info {
+    font-weight: normal;
+    margin-top: 1em;
+}

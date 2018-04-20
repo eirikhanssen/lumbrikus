@@ -54,4 +54,18 @@ $( document ).ready(function() {
           //console.log("no #page-toc");
       }
 
+      /* turn links to attachment pages into lightbox-links to display images in fullscreen */
+
+      var turn_attachment_page_links_to_lightbox_showimage_links = (function(){
+        var attachments = $('.wp-caption a');
+        attachments.each(function(){
+            var url_attachmentpage=$(this).attr("href");
+            var url_smallimage=$(this).find('img').attr('src');
+            var url_largeimage=url_smallimage.replace(/^(.+?)-\d+x\d+([.](jpg|jpeg|png|svg))$/,'$1$2');
+            var lbox_caption = '<p class="caption-text">' + $(this).parent().find('.wp-caption-text').html() + '</p>' + '<p class="additional-info">Se <a href="' + url_attachmentpage + '">vedleggssiden</a> for mer info om bildet.</p>';
+            $(this).attr('href', url_largeimage);
+            $(this).attr('data-lightbox', 'showimages');
+            $(this).attr('data-title', lbox_caption);
+        });
+      })();
 });
