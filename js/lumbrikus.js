@@ -75,16 +75,19 @@ $( document ).ready(function() {
             var url_smallimage=$(this).find('img').attr('src');
             var url_largeimage=url_smallimage.replace(/^(.+?)-\d+x\d+([.](jpg|jpeg|png|svg))$/,'$1$2');
             var lbox_caption = "<p class='caption-text'>" + $(this).find('.wp-caption-text').html() + '</p>' + attachment_page_link_html;
+            var wp_caption_text = $(this).find('.wp-caption-text');
+            var caption_images = $(this).find('img');
             var caption_html_contents = $(this).html();
-            var lightbox_link_element_html = '<a href="'+ url_largeimage +'" data-lightbox="showimages" data-title="' + lbox_caption + '"></a>';
+            var lightbox_link_element = $('<a href="'+ url_largeimage +'" data-lightbox="showimages" data-title="' + lbox_caption + '"></a>');
             
             if (has_attachment_page_url) {
                 $(this).find('a').attr('href', url_largeimage);
                 $(this).find('a').attr('data-lightbox', 'showimages');
                 $(this).find('a').attr('data-title', lbox_caption);
             } else {
-                $(this).html(lightbox_link_element_html);
-                $(this).find('a').html(caption_html_contents);
+                $(this).append(lightbox_link_element);
+                lightbox_link_element.append(caption_images);
+                $(this).append(wp_caption_text);
             }
         });
       })();
