@@ -1562,3 +1562,76 @@ dd::before {
     font-weight: normal;
     margin-top: 1em;
 }
+
+/* styles for navigating same context over chapters */
+
+#same_context_nav a {color:white;}
+
+@media screen {
+	#same_context_nav {
+		position: absolute;
+		top:.25rem;
+		right:0;
+		display:flex;
+		flex-flow: row nowrap;
+		font-weight: bold;
+		
+		
+	}
+	#same_context_nav > * {
+		margin: 0em .5rem;
+	}
+	#same_context_nav .prev-chapter-link a,
+	#same_context_nav .next-chapter-link a{
+		font-size:0;
+		width: 1rem;
+		height: 1rem;
+		position:relative;
+		
+	}
+	
+	#same_context_nav .prev-chapter-link a::after,
+	#same_context_nav .next-chapter-link a::after {
+		font-size: 1rem;
+		margin:0;
+		transform: translate(0,-85%);
+		content:">";
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		background:#c12d72;
+		height: 1rem;
+		border-radius: 100%;
+		justify-content: center;
+		width: 1rem;
+		
+		text-align:center;
+	}
+	
+	#same_context_nav .prev-chapter-link a::before,
+	#same_context_nav .next-chapter-link a::before {
+	    content:"";
+	    background:transparent;
+	    width: 2.5rem;
+	    height:2rem;
+	    position:absolute;
+	    top:50%;
+	    left:50%;
+	    transform: translate(-50%,-50%);
+	}
+
+	#same_context_nav .prev-chapter-link a::after {
+		content:"<";
+	}
+
+	#same_context_nav a:hover::after,
+	#same_context_nav a:focus::after {
+	    background:#ffd0e6;
+	    color: black;
+	}
+
+	#same_context_nav .current-chapter-link a:hover, 
+	#same_context_nav .current-chapter-link a:focus {
+	    text-decoration: underline;
+	}
+}
