@@ -723,7 +723,6 @@ function lumbrikus_get_current_context_url($url) {
 }
 
 function lumbrikus_get_current_chapter($url) {
-   echo "\n\nlumbrikus_get_current_chapter($url)\n\n";
    $search_pattern = '/kap-([0-9]+)/';
    $matches = [];
    if(preg_match($search_pattern, $url, $matches) == 1) {
