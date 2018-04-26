@@ -713,11 +713,17 @@ function lumbrikus_page_url(){
 function lumbrikus_get_current_context_url($url) {
 	$pattern = '/^(https?:\/\/)?([^\/]+\/?)?([^\/]+\/?)?([^\/]+\/?)?([^\/]+\/?)?.+$/';
 	$replacement = '/\3\4\5';
-	$context_url = preg_replace($pattern, $replacement, $url);
-	return $context_url;
+    $context_url = preg_replace($pattern, $replacement, $url);
+    $pattern_slash_end = '/\/$/';
+    if(preg_match($pattern_slash_end, $context_url) == 0) {
+        return $context_url . "/";
+    }
+    return $context_url;
+    
 }
 
 function lumbrikus_get_current_chapter($url) {
+   echo "\n\nlumbrikus_get_current_chapter($url)\n\n";
    $search_pattern = '/kap-([0-9]+)/';
    $matches = [];
    if(preg_match($search_pattern, $url, $matches) == 1) {
@@ -734,22 +740,30 @@ function lumbrikus_has_chapter_num($url) {
    return false;
 }
 
+function lumbrikus_strip_trailing_slash($str) {
+    $pattern = '/^(.+?)\/?$/';
+    $replacement = '\1';
+    $str_no_trailing_slash = preg_replace($pattern,$replacement,$str);
+    return $str_no_trailing_slash;
+}
+
 function lumbrikus_new_chapter_link($context_url, $chapter_num) {
    $pattern = '/^(.+?(kap-))[0-9]+(.+?)\/?$/';
    $replacement_url = '\1%d\3';
    $replacement_text_and_alt = '\2%d\3';
    $new_href = sprintf(preg_replace($pattern, $replacement_url, $context_url), $chapter_num);
    $link_text = sprintf(preg_replace($pattern, $replacement_text_and_alt, $context_url), $chapter_num);
-   $link = "<a href=\"$new_href/\" title=\"$link_text\">$link_text</a>";
+   $link = "<a href=\"$new_href\" title=\"$link_text\">" . lumbrikus_strip_trailing_slash($link_text) . "</a>";
    return $link;
 }
 
 function lumbrikus_generate_chapter_context_links() {
-	$url = lumbrikus_page_url();
+    $url = lumbrikus_page_url();
 	$current_chapter_num = lumbrikus_get_current_chapter($url);
 	$html = "<!-- lumbrikus_generate_chapter_context_links() -->\n";
 	$prev_chapter_num;
-	$next_chapter_num;
+    $next_chapter_num;
+    $nl = "\n";
    if($current_chapter_num != NULL) {
 	   $html .= '<nav id="same_context_nav">';
 	   $current_chapter_num = (int) $current_chapter_num;
@@ -757,13 +771,13 @@ function lumbrikus_generate_chapter_context_links() {
 	   $next_chapter_num = $current_chapter_num +1;
 
 	   if($prev_chapter_num > -1) {
-		   $html .= '<span class="prev-chapter-link">' . lumbrikus_new_chapter_link(lumbrikus_get_current_context_url($url), $prev_chapter_num) . '</span>';
+		   $html .= $nl . '<span class="prev-chapter-link">' . lumbrikus_new_chapter_link(lumbrikus_get_current_context_url($url), $prev_chapter_num) . '</span>';
 	   }
-		   $html .= '<span class="current-chapter-link">' . lumbrikus_new_chapter_link(lumbrikus_get_current_context_url($url), $current_chapter_num) . '</span>';
+		   $html .= $nl .'<span class="current-chapter-link">' . lumbrikus_new_chapter_link(lumbrikus_get_current_context_url($url), $current_chapter_num) . '</span>';
 	   if($next_chapter_num <= 11) {
-		   $html .= '<span class="next-chapter-link">' . lumbrikus_new_chapter_link(lumbrikus_get_current_context_url($url), $next_chapter_num). '</span>';
+		   $html .= $nl .'<span class="next-chapter-link">' . lumbrikus_new_chapter_link(lumbrikus_get_current_context_url($url), $next_chapter_num). '</span>';
 	   }
-	   $html .= '</nav>';
+	   $html .= $nl . '</nav>';
    }
    // only generate links if it makes sense (there is a chapter number)
    return $html;
