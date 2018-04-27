@@ -59,36 +59,52 @@ $( document ).ready(function() {
       var turn_attachment_page_links_to_lightbox_showimage_links = (function(){
         var attachments = $('.wp-caption');
         attachments.each(function(){
-            var url_attachmentpage="";
-            var attachment_page_link_html = "";
-            var has_attachment_page_url = false;
-            if($(this).find('a').length) {
-                console.log('yes');
-                url_attachmentpage=$(this).find('a').attr("href");
-                attachment_page_link_html = "<p class='additional-info'>Se <a href='" + url_attachmentpage + "'>vedleggssiden</a> for mer info om bildet.</p>";
-                has_attachment_page_url = true;
+            var el_anchor_around_image;
+            var el_anchor_to_attachment_page;
+            var url_to_attachmentpage="";
+            var image_small_el = this.querySelector('img');
+            var image_small_src = image_small_el.getAttribute('src');
+            var image_large_src = image_small_src.replace(/^(.+?)-\d+x\d+([.](jpg|jpeg|png|svg))$/,'$1$2');
+            var p_wp_caption_text_el = this.querySelector('.wp-caption-text');
+            var attachment_page_link_text = document.createTextNode("Se mer informasjon om bildet");
+            var span_opphav_el = this.querySelector('.opphav');
+            var p_metadata_el = document.createElement('p');
+            p_metadata_el.setAttribute('class','metadata');
+            var lightbox_caption_el = document.createElement('div');
+            lightbox_caption_el.setAttribute('class','lightbox-caption');
+            $(p_wp_caption_text_el).clone().appendTo(lightbox_caption_el);
+            $(lightbox_caption_el.querySelector('.opphav')).appendTo(p_metadata_el);
+
+            if (this.querySelector('a')) {
+                //console.log('has anchor');
+                el_anchor_around_image = this.querySelector('a');
+                url_to_attachmentpage = el_anchor_around_image.getAttribute('href');
+                el_anchor_to_attachment_page = document.createElement('a');
+                el_anchor_to_attachment_page.setAttribute('href',url_to_attachmentpage);
+                el_anchor_to_attachment_page.appendChild(attachment_page_link_text);
+                el_anchor_to_attachment_page.setAttribute('title','På vedleggssiden til bildet kan du finne mer informasjon om bildet/opphavet');
+                var space = document.createTextNode(" ");
+                p_metadata_el.appendChild(space);
+                p_metadata_el.appendChild(el_anchor_to_attachment_page);
+
             } else {
-                console.log('no');
-                $(this).addClass('no_attachment_link');
+                //console.log('does not have anchor');
+                $(this).addClass('no-link-to-attachment-page');
+                el_anchor_around_image = document.createElement('a');
+                el_anchor_around_image.appendChild(image_small_el);
             }
-            
-            var url_smallimage=$(this).find('img').attr('src');
-            var url_largeimage=url_smallimage.replace(/^(.+?)-\d+x\d+([.](jpg|jpeg|png|svg))$/,'$1$2');
-            var lbox_caption = "<p class='caption-text'>" + $(this).find('.wp-caption-text').html() + '</p>' + attachment_page_link_html;
-            var wp_caption_text = $(this).find('.wp-caption-text');
-            var caption_images = $(this).find('img');
-            var caption_html_contents = $(this).html();
-            var lightbox_link_element = $('<a href="'+ url_largeimage +'" data-lightbox="showimages" data-title="' + lbox_caption + '"></a>');
-            
-            if (has_attachment_page_url) {
-                $(this).find('a').attr('href', url_largeimage);
-                $(this).find('a').attr('data-lightbox', 'showimages');
-                $(this).find('a').attr('data-title', lbox_caption);
-            } else {
-                $(this).append(lightbox_link_element);
-                lightbox_link_element.append(caption_images);
-                $(this).append(wp_caption_text);
-            }
+            lightbox_caption_el.appendChild(p_metadata_el);
+            var lightbox_caption_htmlstring = lightbox_caption_el.outerHTML.replace(/"/g,"'");
+
+            el_anchor_around_image.setAttribute('href',image_large_src);
+            el_anchor_around_image.setAttribute('data-lightbox','showimages');
+            el_anchor_around_image.setAttribute('data-title',lightbox_caption_htmlstring);
+
+            this.appendChild(el_anchor_around_image);
+            this.appendChild(p_wp_caption_text_el);
+
+            //console.log(this);
+            //console.log(lightbox_caption_htmlstring);
         });
       })();
 });
