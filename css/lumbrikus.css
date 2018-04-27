@@ -1648,6 +1648,7 @@ dd::before {
     top:50%;
     right:100%;
     transform: translate(-.25rem, -70%) rotate(-45deg);
-    color:#ffce48;
+    color:#ffce48 !important;
     font-size: 3em;
+    font-family: sans-serif !important;
 }
