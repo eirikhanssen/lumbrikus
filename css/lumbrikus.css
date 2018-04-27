@@ -217,12 +217,12 @@ a[data-lightbox]:only-of-type::before {
 }
 
 .breadcrumb li+li::before {
-    content: "▸";
+    content: ">";
     color: rgb(255, 255, 255);
     position: relative;
     margin:.1em;
     line-height: 0.1;
-    top: -.3em;
+    top: -.1em;
     right: -.05em;
 }
 
@@ -1475,7 +1475,7 @@ h1,h2,h3,h4,h5,h6 {
     margin:auto;
     z-index: 0;
     max-height: calc( 100% - 15em);
-    width: auto%;
+    width: auto;
     box-shadow: 0 0 .5em rgba(0,0,0,0.4);
     border: 5px solid black;
     padding: .75em;
@@ -1634,4 +1634,20 @@ dd::before {
 	#same_context_nav .current-chapter-link a:focus {
 	    text-decoration: underline;
 	}
+}
+
+/* if the image doesn't have a link to the attachment page, show a visual cue */
+.no-link-to-attachment-page {
+    position:relative;
+}
+
+.no-link-to-attachment-page::before
+ {
+    position:absolute;
+    content:"🔗";
+    top:50%;
+    right:100%;
+    transform: translate(-.25rem, -70%) rotate(-45deg);
+    color:#ffce48;
+    font-size: 3em;
 }
