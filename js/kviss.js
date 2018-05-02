@@ -4,10 +4,10 @@ $( document ).ready(function() {
         console.log("quiz()");
         var quizzies = [];
         
+        
         var quiz01 = {
             title: "1",
-            q_and_a: [
-                {
+            q_and_a: [{
                     spm: "Hvem er dette?",
                     bilde: "/media/img/kviss_jenny_hode.jpg",
                     bildetekst: "Ei jente med blondt hår. Hun har en hodelykt på seg.",
@@ -17,7 +17,6 @@ $( document ).ready(function() {
                         "Sobia"
                     ],
                     riktige_svar: ["Jenny"],
-                    forklaring: "Jenny er jenta med blondt hår."
                 },
                 {
                     spm: "Hvem er dette <em>ikke</em>?",
@@ -29,7 +28,6 @@ $( document ).ready(function() {
                         "Sobia"
                     ],
                     riktige_svar: ["Herr Høne", "Sobia"],
-                    forklaring: "Jenny er jenta med blondt hår. Har du sett de andre i fortellingen?"
                 },
                 {
                     spm: "Hvem er dette?",
@@ -41,7 +39,6 @@ $( document ).ready(function() {
                         "Samir"
                     ],
                     riktige_svar: ["Samir"],
-                    forklaring: "Samir er gutten med de brune krøllene."
                 },
                 {
                     spm: "Hvem er dette?",
@@ -53,7 +50,6 @@ $( document ).ready(function() {
                         "Kim"
                     ],
                     riktige_svar: ["Hen"],
-                    forklaring: "Hen er hun som kan gjøre alle små."
                 },
                 {
                     spm: "Hvem er dette?",
@@ -65,7 +61,6 @@ $( document ).ready(function() {
                         "Katt"
                     ],
                     riktige_svar: ["Katt"],
-                    forklaring: "Katten heter ganske riktig Katt!"
                 },
                 {
                     spm: "Hvor kommer romskipet fra?",
@@ -77,7 +72,6 @@ $( document ).ready(function() {
                         "Kairo"
                     ],
                     riktige_svar: ["En planet ved Proxima Centauri"],
-                    forklaring: "En planet ved Proxima Centauri"
                 },
                 {
                     spm: "Hvorfor kom romskipet til jorda?",
@@ -89,7 +83,6 @@ $( document ).ready(function() {
                         "Vi veit ikke"
                     ],
                     riktige_svar: ["Vi veit ikke"],
-                    forklaring: "Kanskje du får vite senere?"
                 },
                 {
                     spm: "Hvor mange språk kan Hen og Katt forstå?",
@@ -101,7 +94,6 @@ $( document ).ready(function() {
                         "Alle språk i hele verden"
                     ],
                     riktige_svar: ["Alle språk i hele verden"],
-                    forklaring: "De har avansert teknologi med seg fra der de kommer fra."
                 },
                 {
                     spm: "Hva er det gule støvet?",
@@ -113,7 +105,6 @@ $( document ).ready(function() {
                         "Blomsterstøv (pollen)"
                     ],
                     riktige_svar: ["Blomsterstøv (pollen)"],
-                    forklaring: "Støvet kommer fra blomsten og setter seg på humla."
                 },
                 {
                     spm: "Hva er dette?",
@@ -125,7 +116,6 @@ $( document ).ready(function() {
                         "Ei humle"
                     ],
                     riktige_svar: ["Ei humle"],
-                    forklaring: "Det er ei humle. Humla likner litt på ei bie, men den er rundere og har lang pels."
                 },
                 {
                     spm: "Hva er en gul hestehov?",
@@ -137,7 +127,6 @@ $( document ).ready(function() {
                         "En gul blomst"
                     ],
                     riktige_svar: ["En gul blomst"],
-                    forklaring: "Hestehov kan bety hoven til en hest, men her er det navnet på en blomst."
                 },
                 {
                     spm: "Selja har noe som humla liker. Hva er det?",
@@ -149,7 +138,6 @@ $( document ).ready(function() {
                         "Den sier ja ja"
                     ],
                     riktige_svar: ["Nektar og pollen"],
-                    forklaring: "I blomstene til selja finner humla det den liker. Noe som er søtt, og noe som er gult."
                 },
                 {
                     spm: "Hva er nektar?",
@@ -161,7 +149,6 @@ $( document ).ready(function() {
                         "En avatar"
                     ],
                     riktige_svar: ["Søt saft som humla spiser"],
-                    forklaring: "En person som nekter å gjøre noe kan kalles 'en nekter', på noen dialekter kan det blir 'ein nektar'. Men her mener vi ikke det. Nektar er navnet på noe søtt."
                 },
                 {
                     spm: "Hva er dette?",
@@ -173,7 +160,6 @@ $( document ).ready(function() {
                         "En hannblomst fra selja"
                     ],
                     riktige_svar: ["En hannblomst fra selja"],
-                    forklaring: "En hannblomst fra selja. En hunn-selje har blomster som ser annerledes ut."
                 },
                 {
                     spm: "Hva er dette?",
@@ -185,7 +171,6 @@ $( document ).ready(function() {
                         "Kjærlighet på pinne"
                     ],
                     riktige_svar: ["Pollen-bærere"],
-                    forklaring: "Det er noe som vokser på blomsten til hann-selja, som vi ser bedre hvis vi ser på den med forstørrelsesglass."
                 },
                 {
                     spm: "Hva er dette?",
@@ -197,7 +182,6 @@ $( document ).ready(function() {
                         "En tannbørste"
                     ],
                     riktige_svar: ["Hunnblomstene til selja"],
-                    forklaring: "Dette er hunnblomstene, de er annerledes enn hannblomstene til selja."
                 },
                 {
                     spm: "Hvilken årstid er det hos Jenny og Samir",
@@ -209,17 +193,15 @@ $( document ).ready(function() {
                         "Sommer"
                     ],
                     riktige_svar: ["Vår"],
-                    forklaring: "Årstiden når det skifter fra kaldt til litt varmere og begynner å spire og gro begynner på 'v' og heter..."
                 }
             ]
         };
-
+        
         var quiz02 = {
             title: "2",
-            q_and_a: [
-                {
+            q_and_a: [{
                     spm: "Hvor mange blomster ser du? ",
-                    bilde: "https://lumbrikus.no/wp-content/uploads/05.2010_löwenzahn_3.jpg",
+                    bilde: "/wp-content/uploads/05.2010_löwenzahn_3.jpg",
                     bildetekst: "En gul blomst som er badet i solen. Foto:  Uwe H. Friese",
                     svaralternativer: [
                         "Ti ",
@@ -227,11 +209,11 @@ $( document ).ready(function() {
                         "Veldig mange"
                     ],
                     riktige_svar: ["Veldig mange"],
-                    forklaring: "Den botaniske definisjonen på en blomst er forskjellig fra vanlig oppfatning."
+        
                 },
                 {
                     spm: "Hvorfor har løvetann fått navnet sitt? ",
-                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_7474.jpg",
+                    bilde: "/wp-content/uploads/NAT_7474.jpg",
                     bildetekst: "Grønne blader og gule blomster",
                     svaralternativer: [
                         "Fordi løvene spiser den",
@@ -239,11 +221,11 @@ $( document ).ready(function() {
                         "Fordi blomstene er farlige"
                     ],
                     riktige_svar: ["Fordi bladene ser ut som tennene til løvene"],
-                    forklaring: "Den har fått navnet sitt på grunn av hvordan den ser ut."
+        
                 },
                 {
                     spm: "Hvor mange blomster er det her? ",
-                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_7473.jpg",
+                    bilde: "/wp-content/uploads/NAT_7473.jpg",
                     bildetekst: "Grønn stilk og sett med tre grønne blader, med rosarøde blomster",
                     svaralternativer: [
                         "En",
@@ -251,11 +233,11 @@ $( document ).ready(function() {
                         "Åtte"
                     ],
                     riktige_svar: ["Veldig mange"],
-                    forklaring: "Den botaniske definisjonen på en blomst er forskjellig fra vanlig oppfatning."
+        
                 },
                 {
                     spm: "Hva er pollen? ",
-                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_9014.jpg",
+                    bilde: "/wp-content/uploads/NAT_9014.jpg",
                     bildetekst: "Nærbilde av en hvit blomst med grønne tapper i midten og gule knopper som vokser fra tynne stilker",
                     svaralternativer: [
                         "En by i Polen",
@@ -263,11 +245,11 @@ $( document ).ready(function() {
                         "En bolle med rosiner"
                     ],
                     riktige_svar: ["En bolle med rosiner"],
-                    forklaring: "Pollen er noe som vi kan finne i blomster, som gjør at planter kan få barn (frø). Noen personer er allergisk mot forskjellig pollen, og får rennende nese av det."
+        
                 },
                 {
                     spm: "Hva er å pollinere?",
-                    bilde: "https://lumbrikus.no/wp-content/uploads/krokus_verdal_kap1.jpg",
+                    bilde: "/wp-content/uploads/krokus_verdal_kap1.jpg",
                     bildetekst: "En humle dekket med gult støv som sitter på et lilla begerblad inne i en blomst",
                     svaralternativer: [
                         "Å ta pollen fra hann-blomsten over på hunnblomsten",
@@ -275,11 +257,11 @@ $( document ).ready(function() {
                         "Å danse polka"
                     ],
                     riktige_svar: ["Å ta pollen fra hann-blomsten over på hunnblomsten"],
-                    forklaring: "Plantene trenger hjelp fra insekter for å bli pollinert (befruktet). Det gjør at plantene kan lage frukt og frø."
+        
                 },
                 {
                     spm: "Hvem pollinerer rødkløver? ",
-                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_7473.jpg",
+                    bilde: "/wp-content/uploads/NAT_7473.jpg",
                     bildetekst: "Grønn stilk og sett med tre grønne blader, med rosarøde blomster",
                     svaralternativer: [
                         "Revene",
@@ -287,11 +269,11 @@ $( document ).ready(function() {
                         "Fuglene"
                     ],
                     riktige_svar: ["Humlene"],
-                    forklaring: "For å pollinere må de inn i blomsten og de må besøke mange blomster. Da må de være små, og helst ganske hårete."
+        
                 },
                 {
                     spm: "Hva er dette? ",
-                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_7473_v2.jpg",
+                    bilde: "/wp-content/uploads/NAT_7473_v2.jpg",
                     bildetekst: "En grønn belg som har grønne kuler inni",
                     svaralternativer: [
                         "En grønn banan",
@@ -299,11 +281,11 @@ $( document ).ready(function() {
                         "En belg med erter"
                     ],
                     riktige_svar: ["En belg med erter"],
-                    forklaring: "Kan vi spise det?"
+        
                 },
                 {
                     spm: "Hva er hummus laget av?",
-                    bilde: "https://lumbrikus.no/wp-content/uploads/Hummus.jpg",
+                    bilde: "/wp-content/uploads/Hummus.jpg",
                     bildetekst: "En hvit tallerken med lefser, og en liten skål med kremaktig lysebeige innhold. Oppå er det drysset kanel, og den er pyntet med litt persille. Foto: Popo le Chien",
                     svaralternativer: [
                         "Mus med humør",
@@ -311,11 +293,11 @@ $( document ).ready(function() {
                         "Kikerter"
                     ],
                     riktige_svar: ["Kikerter"],
-                    forklaring: "Humus er en matrett"
+        
                 },
                 {
                     spm: "Hva er nektar?",
-                    bilde: "https://lumbrikus.no/wp-content/uploads/nakke.png",
+                    bilde: "/wp-content/uploads/nakke.png",
                     bildetekst: "Hode og nakken til en voksen mann, sett bakfra",
                     svaralternativer: [
                         "Et barn som nekter mye",
@@ -323,11 +305,11 @@ $( document ).ready(function() {
                         "En nakke"
                     ],
                     riktige_svar: ["Søt saft i blomsten"],
-                    forklaring: "På bildet er det en nakke vi ser, men det er ikke svaret på spørsmålet."
+        
                 },
                 {
                     spm: "Hva er gulrot?",
-                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_0748_v3.jpg",
+                    bilde: "/wp-content/uploads/NAT_0748_v3.jpg",
                     bildetekst: "En gulorange rot med grønne blader",
                     svaralternativer: [
                         "En gul blyant",
@@ -335,11 +317,11 @@ $( document ).ready(function() {
                         "Ei rot vi kan spise"
                     ],
                     riktige_svar: ["Ei rot vi kan spise"],
-                    forklaring: "En gulrot er en rot som er gul (eller litt orange)"
+        
                 },
                 {
                     spm: "Hva kan vi lage av soyabønner?",
-                    bilde: "https://lumbrikus.no/wp-content/uploads/soyabønner_belg.jpg",
+                    bilde: "/wp-content/uploads/soyabønner_belg.jpg",
                     bildetekst: "Gulgrønne kuler inne i hårete belger",
                     svaralternativer: [
                         "Middag",
@@ -347,11 +329,11 @@ $( document ).ready(function() {
                         "Kokosboller"
                     ],
                     riktige_svar: ["Middag"],
-                    forklaring: "Soyabønner kan brukes til forskjellig mat."
+        
                 },
                 {
                     spm: "Soya har mye av noe. Hva er det?",
-                    bilde:"https://lumbrikus.no/wp-content/uploads/Marit_bjørgen.jpg",
+                    bilde: "/wp-content/uploads/Marit_bjørgen.jpg",
                     bildetekst: "Ei som går på ski i full fart. Foto: Marit Bjørgen. Sterk.",
                     svaralternativer: [
                         "Pepper",
@@ -359,11 +341,11 @@ $( document ).ready(function() {
                         "Proteiner som lager muskler"
                     ],
                     riktige_svar: ["Proteiner som lager muskler"],
-                    forklaring: "Idrettsutøvere trenger masse proteinter for å bygge muskler."
+        
                 },
                 {
                     spm: "Hvor vokser epler?",
-                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_0747_v4.jpg",
+                    bilde: "/wp-content/uploads/NAT_0747_v4.jpg",
                     bildetekst: "En grønn, nesten rund frukt, med en brungrønn stilk",
                     svaralternativer: [
                         "Nede i jorda.",
@@ -371,11 +353,11 @@ $( document ).ready(function() {
                         "På trær"
                     ],
                     riktige_svar: ["På trær"],
-                    forklaring: "Epler vokser på epletrær."
+        
                 },
                 {
                     spm: "Hvor mye kan et bjørketre drikke på en varm sommerdag?",
-                    bilde: "https://lumbrikus.no/wp-content/uploads/bjørkeskog.jpg",
+                    bilde: "/wp-content/uploads/bjørkeskog.jpg",
                     bildetekst: "En skog med mange trær som har hvite og sorte stammer, og mange små grønne blader",
                     svaralternativer: [
                         "1 liter som en melkekartong",
@@ -383,11 +365,11 @@ $( document ).ready(function() {
                         "400 liter"
                     ],
                     riktige_svar: ["400 liter"],
-                    forklaring: "Trærne drikker ganske mye vann."
+        
                 },
                 {
                     spm: "Når er våren?",
-                    bilde: "https://lumbrikus.no/wp-content/uploads/eh_NAT_8619.jpg",
+                    bilde: "/wp-content/uploads/eh_NAT_8619.jpg",
                     bildetekst: "En gul blomst som er dekket av iskrystaller",
                     svaralternativer: [
                         "Mellom sommer og høst",
@@ -395,11 +377,11 @@ $( document ).ready(function() {
                         "Mellom vinter og sommer"
                     ],
                     riktige_svar: ["Mellom vinter og sommer"],
-                    forklaring: "I Norge har vi vår ca i april - juni. Den kommer til forskjellig tid forskjellige steder i landet."
+        
                 },
                 {
                     spm: "Hva er tegn på vår?",
-                    bilde: "https://lumbrikus.no/wp-content/uploads/istapper.jpg",
+                    bilde: "/wp-content/uploads/istapper.jpg",
                     bildetekst: "Store istapper som henger ned. Foto: max pixel",
                     svaralternativer: [
                         "Hestehov",
@@ -407,11 +389,11 @@ $( document ).ready(function() {
                         "Det blir varmere ute"
                     ],
                     riktige_svar: ["Hestehov", "Snøen smelter", "Det blir varmere ute"],
-                    forklaring: "Alle er riktig!"
+        
                 },
                 {
                     spm: "Hva er dette?",
-                    bilde: "https://lumbrikus.no/wp-content/uploads/Vaccinium_myrtillus2_ies.jpg",
+                    bilde: "/wp-content/uploads/Vaccinium_myrtillus2_ies.jpg",
                     bildetekst: "En Rosa, grønn og orange kule med en åpning og noe inni. Foto:  Frank Vincentz",
                     svaralternativer: [
                         "En ballong på tivoli",
@@ -419,11 +401,11 @@ $( document ).ready(function() {
                         "Ei fin lue til baby"
                     ],
                     riktige_svar: ["Blomsten til blåbær"],
-                    forklaring: "Bildet er et nærbilde av blåbærblomsten."
+        
                 },
                 {
                     spm: "Hva er dette?",
-                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_0733_v2.jpg",
+                    bilde: "/wp-content/uploads/NAT_0733_v2.jpg",
                     bildetekst: "En liten fugl med tynn stjert som er hvit, sort og grå og har sort nebb og sorte ben.",
                     svaralternativer: [
                         "Ørn",
@@ -431,11 +413,11 @@ $( document ).ready(function() {
                         "Høne"
                     ],
                     riktige_svar: ["Linerle"],
-                    forklaring: "Linerla kan vi ofte se hoppende rundt og den flyr som en bølge."
+        
                 },
                 {
                     spm: "Hva er det inni kjølen?",
-                    bilde: "https://lumbrikus.no/wp-content/uploads/2017/10/Oregon_sugar_pod_II_bloom-2012.jpg",
+                    bilde: "/wp-content/uploads/2017/10/Oregon_sugar_pod_II_bloom-2012.jpg",
                     bildetekst: "Grønne blader og en hvit blomst. Foto: Rob Duval   CC BY-SA 3.0",
                     svaralternativer: [
                         "En liten båt",
@@ -443,11 +425,11 @@ $( document ).ready(function() {
                         "En liten hvit fugl"
                     ],
                     riktige_svar: ["Nektar og støvbærere"],
-                    forklaring: "Kjølen er det som er inni blomsten"
+        
                 },
                 {
                     spm: "Hva er dette?",
-                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_7472.jpg",
+                    bilde: "/wp-content/uploads/NAT_7472.jpg",
                     bildetekst: "En hvit blomst med tynne, sprikende blader",
                     svaralternativer: [
                         "Blåveis",
@@ -455,15 +437,552 @@ $( document ).ready(function() {
                         "Hestehov"
                     ],
                     riktige_svar: ["Hvitveis"],
-                    forklaring: "Hvitveisen ser vi ofte om våren på bakken under trærne."
+        
                 }
             ]
-        };        
-
+        };
+        
+        var quiz03 = {
+            title: "Kapittel 3 Kviss",
+            q_and_a: [{
+                    spm: "Hvem er dette?",
+                    bilde: "/wp-content/uploads/kviss_jenny_hode.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Anna",
+                        "Jonatan",
+                        "Jenny"
+                    ],
+                    riktige_svar: ["Jenny"]
+                },
+                {
+                    spm: "Hvem er dette?",
+                    bilde: "/wp-content/uploads/kviss_samir_hode.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Sobia",
+                        "Samir",
+                        "Sander"
+                    ],
+                    riktige_svar: ["Samir"]
+                },
+                {
+                    spm: "Hvor mange bein har snegler?",
+                    bilde: "/wp-content/uploads/NAT_0732_v2.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "4",
+                        "8",
+                        "0"
+                    ],
+                    riktige_svar: ["0"]
+                },
+                {
+                    spm: "Hvilken farge har gulrøtter?",
+                    bilde: "/wp-content/uploads/NAT_0748_v3.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Gule",
+                        "Oransje",
+                        "De kan ha mange farger"
+                    ],
+                    riktige_svar: ["Gule", "Oransje", "De kan ha mange farger"]
+                },
+                {
+                    spm: "Hva er en magefoting?",
+                    bilde: "",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "En mann",
+                        "Fine sko",
+                        "En snegl"
+                    ],
+                    riktige_svar: ["En snegl"]
+                },
+                {
+                    spm: "Hva er dette?",
+                    bilde: "/wp-content/uploads/Tomato_leaf_stomate.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Munnen til et grønt monster",
+                        "Et bløtt dyr på havets bunn",
+                        "Baksida av et blad på ei plante"
+                    ],
+                    riktige_svar: ["Baksida av et blad på ei plante"]
+                },
+                {
+                    spm: "Hva gjør røtter?",
+                    bilde: "/wp-content/uploads/NAT_0724.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Holder planta fast i jorda",
+                        "Henter næring fra jorda",
+                        "Henter vann til planta"
+                    ],
+                    riktige_svar: ["Holder planta fast i jorda", "Henter næring fra jorda", "Henter vann til planta"]
+                },
+                {
+                    spm: "Hvor mye veier verdens største frø?",
+                    bilde: "/wp-content/uploads/dobbelt_kokosnøtt.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "20 kilo",
+                        "200 kilo",
+                        "6 kilo"
+                    ],
+                    riktige_svar: ["20 kilo"]
+                },
+                {
+                    spm: "Hvor kommer verdens største frø fra?",
+                    bilde: "/wp-content/uploads/dobbelt_kokosnøtt.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Seychellene på østkysten av Afrika",
+                        "Nord-Norge",
+                        "Kina"
+                    ],
+                    riktige_svar: ["Seychellene på østkysten av Afrika"]
+                },
+                {
+                    spm: "Stikker øyenstikkeren?",
+                    bilde: "/wp-content/uploads/Anotogaster_sieboldii_in_hand.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Ja, midt i øyet på skoleelever",
+                        "Ja, den stikker hunder i ørene",
+                        "Nei, den kan ikke stikke"
+                    ],
+                    riktige_svar: ["Nei, den kan ikke stikke."]
+                },
+                {
+                    spm: "Hva er en kime?",
+                    bilde: "/wp-content/uploads/enthalvtfrø_kap3.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "En plante-baby",
+                        "En mark",
+                        "En kino"
+                    ],
+                    riktige_svar: ["En plante-baby"]
+                },
+                {
+                    spm: "Hva kommer først ut av frøet?",
+                    bilde: "/wp-content/uploads/ertsomspirer_kap3.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Rota",
+                        "Stengelen",
+                        "Blomsten"
+                    ],
+                    riktige_svar: ["Rota"]
+                },
+                {
+                    spm: "Hva trenger et frø for å spire?",
+                    bilde: "/wp-content/uploads/NAT_0733_v3.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Vann",
+                        "Luft",
+                        "Å ha det passe varmt"
+                    ],
+                    riktige_svar: ["Vann", "Luft", "Å ha det passe varmt"]
+                },
+                {
+                    spm: "Hva er dette?",
+                    bilde: "/wp-content/uploads/baby-flaggermus.png",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Ei humle",
+                        "Ei flaggermus",
+                        "Et ekorn"
+                    ],
+                    riktige_svar: ["Ei flaggermus"]
+                },
+                {
+                    spm: "Hva er en frøbank?",
+                    bilde: "/wp-content/uploads/Svalbard_Global_Seed_Vault_16064027324.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "En lyd fra læreren som banker frø",
+                        "Et sted hvor folk kan gjemme frø",
+                        "En butikk som selger frø"
+                    ],
+                    riktige_svar: ["Et sted hvor folk kan gjemme frø"]
+                },
+                {
+                    spm: "Hvor er verdens største frøbank?",
+                    bilde: "/wp-content/uploads/Svalbard_Global_Seed_Vault_16064027324.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "På Sørpolen",
+                        "I Sahara",
+                        "På Svalbard"
+                    ],
+                    riktige_svar: ["På Svalbard"]
+                },
+                {
+                    spm: "Kan et frø bli et stort tre med bananer?",
+                    bilde: "/wp-content/uploads/NAT_0733_v3.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Ja",
+                        "Nei, frø kan bare bli små planter",
+                        "Nei, de bare dør"
+                    ],
+                    riktige_svar: ["Ja"]
+                },
+                {
+                    spm: "Hvem har hus på ryggen?",
+                    bilde: "",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Kamelene",
+                        "Meitemark",
+                        "Snegler"
+                    ],
+                    riktige_svar: ["Snegler"]
+                },
+                {
+                    spm: "Hva er dette?",
+                    bilde: "/wp-content/uploads/tegning_erteplante.png",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "En tegning av ei rose",
+                        "En fantasi-tegning",
+                        "En tegning av ei erte-plante"
+                    ],
+                    riktige_svar: ["En tegning av ei erte-plante"]
+                }
+            ]
+        };
+        
+        var quiz04 = {
+            title: "Kapittel 4 Kviss",
+            q_and_a: [{
+                    spm: "Hva er nektar?",
+                    bilde: "/wp-content/uploads/eh_NAT9093_selje_hann_nektarposer.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Søt saft i blomstene",
+                        "Gutt som nekter",
+                        "Nakke"
+                    ],
+                    riktige_svar: ["Søt saft i blomstene"]
+                },
+                {
+                    spm: "Hva er dette?",
+                    bilde: "/wp-content/uploads/blomsterflue-på-blomst.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "En veps",
+                        "Ei blomsterflue",
+                        "Ei humle"
+                    ],
+                    riktige_svar: ["Ei blomsterflue"]
+                },
+                {
+                    spm: "Hva er dette?",
+                    bilde: "/wp-content/uploads/NAT_0771.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "En stor bjørn",
+                        "En flodhest",
+                        "Ei bille"
+                    ],
+                    riktige_svar: ["Ei bille"]
+                },
+                {
+                    spm: "Hva slags blomster liker hårgullbassen?",
+                    bilde: "/wp-content/uploads/NAT_0771.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Flate blomster",
+                        "Dype blomster",
+                        "Den liker bare softis"
+                    ],
+                    riktige_svar: ["Flate blomster"]
+                },
+                {
+                    spm: "Hva er dette?",
+                    bilde: "/wp-content/uploads/NAT_7462_v2.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Helikopter",
+                        "Humle",
+                        "Liten hund"
+                    ],
+                    riktige_svar: ["Humle"]
+                },
+                {
+                    spm: "Hva er det?",
+                    bilde: "/wp-content/uploads/en-kurv-med-blomserst%C3%B8v-300x300.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Et lite egg",
+                        "En kurv med blomsterstøv",
+                        "Et gult plaster"
+                    ],
+                    riktige_svar: ["En kurv med blomsterstøv"]
+                },
+                {
+                    spm: "Hva er det?",
+                    bilde: "/media/svg/lumbrikus-icons.svg#mangler",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Kronblad",
+                        "Rot",
+                        "Flagg"
+                    ],
+                    riktige_svar: ["Kronblad"]
+                },
+                {
+                    spm: "Hva er det?",
+                    bilde: "/media/svg/lumbrikus-icons.svg#mangler",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Et sted hvor blomsten har eggene sine",
+                        "En vase",
+                        "En ball"
+                    ],
+                    riktige_svar: ["Et sted hvor blomsten har eggene sine"]
+                },
+                {
+                    spm: "Hvor mange bein har insekter?",
+                    bilde: "/wp-content/uploads/NAT_0734_v2.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Tolv",
+                        "Fire",
+                        "Seks"
+                    ],
+                    riktige_svar: ["Seks"]
+                },
+                {
+                    spm: "Hva er befruktning?",
+                    bilde: "/media/svg/lumbrikus-icons.svg#mangler",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Å spise mye frukt",
+                        "Å plukke epler fra et tre",
+                        "Sædcelle og eggcelle smelter sammen"
+                    ],
+                    riktige_svar: ["Sædcelle og eggcelle smelter sammen"]
+                },
+                {
+                    spm: "Hva er pollinering (bestøvning)?",
+                    bilde: "/wp-content/uploads/13.png",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "At det er mye støv fra veien",
+                        "At pollen fester seg på arret",
+                        "Å spise boller"
+                    ],
+                    riktige_svar: ["At pollen fester seg på arret"]
+                },
+                {
+                    spm: "Hva er pollen?",
+                    bilde: "/wp-content/uploads/pollen.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Nordpolen",
+                        "Små korn med sædceller i",
+                        "Sørpolen"
+                    ],
+                    riktige_svar: ["Små korn med sædceller i"]
+                },
+                {
+                    spm: "Hva er sædceller?",
+                    bilde: "/media/svg/lumbrikus-icons.svg#mangler",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Små rom i fengsel",
+                        "Små frø fra hann-delen av blomsten",
+                        "Fiskemat"
+                    ],
+                    riktige_svar: ["Små frø fra hann-delen av blomsten"]
+                },
+                {
+                    spm: "Hva liker den å spise?",
+                    bilde: "/wp-content/uploads/sommerfugl.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Peanøtter",
+                        "Kebab",
+                        "Blomstersaft (nektar)"
+                    ],
+                    riktige_svar: ["Blomstersaft (nektar)"]
+                },
+                {
+                    spm: "Hva er oppgaven til blomstene?",
+                    bilde: "/wp-content/uploads/NAT_7474.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Lage frø og flere blomster",
+                        "Pynte for oss",
+                        "De har ingen oppgave"
+                    ],
+                    riktige_svar: ["Lage frø og flere blomster"]
+                },
+                {
+                    spm: "Hvorfor er det striper på kronbladene?",
+                    bilde: "/wp-content/uploads/Lilium_Dizzy.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Det er bare pynt",
+                        "Så insektene finner veien til nektaren",
+                        "De skal skremme insekter"
+                    ],
+                    riktige_svar: ["Så insektene finner veien til nektaren"]
+                },
+                {
+                    spm: "Hvem pollinerer revebjelle?",
+                    bilde: "/wp-content/uploads/Digitalis_purpurea_003.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Humler med lang snabel",
+                        "Humle med kort snabel",
+                        "Vinden"
+                    ],
+                    riktige_svar: ["Humler med lang snabel"]
+                },
+                {
+                    spm: "Kan vinden pollinere (bestøve)?",
+                    bilde: "/wp-content/uploads/pine_polleniStock_000013197354Medium.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Nei, pollen sitter hardt fast",
+                        "Nei, det er ikke mer igjen",
+                        "Ja, den blåser pollen bort til andre blomster"
+                    ],
+                    riktige_svar: ["Ja, den blåser pollen bort til andre blomster"]
+                },
+                {
+                    spm: "Hva skjer her?",
+                    bilde: "/media/svg/lumbrikus-icons.svg#mangler",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Blomsten spiser kolibrien",
+                        "Kolibrien leter etter vennene sine",
+                        "Kolibrien spiser nektar"
+                    ],
+                    riktige_svar: ["Kolibrien spiser nektar"]
+                },
+                {
+                    spm: "Er pollen og blomsterstøv det samme?",
+                    bilde: "/wp-content/uploads/pollen.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Nei",
+                        "Ja",
+                        "Nei, ikke helt"
+                    ],
+                    riktige_svar: ["Ja"]
+                },
+                {
+                    spm: "Hva heter guttedelene i blomsten?",
+                    bilde: "/wp-content/uploads/NAT_7485.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Fruktknute",
+                        "Kronblad",
+                        "Pollen, pollenslange og sædceller"
+                    ],
+                    riktige_svar: ["Pollen, pollenslange og sædceller"]
+                },
+                {
+                    spm: "Hva heter jentedelene i blomsten?",
+                    bilde: "/wp-content/uploads/11.png",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Røde blomster",
+                        "Arr, griffel, fruktknute og eggceller",
+                        "Pollen"
+                    ],
+                    riktige_svar: ["Arr, griffel, fruktknute og eggceller"]
+                },
+                {
+                    spm: "Hvem kan bestøve erteblomsten?",
+                    bilde: "/media/svg/lumbrikus-icons.svg#mangler",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Myggen",
+                        "Flua",
+                        "Humla"
+                    ],
+                    riktige_svar: ["Humla"]
+                },
+                {
+                    spm: "Hva slags tunge har sommerfuglen?",
+                    bilde: "/wp-content/uploads/sommerfugl.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "KortLang",
+                        "Lang",
+                        "Den har ikke tunge"
+                    ],
+                    riktige_svar: ["Lang"]
+                },
+                {
+                    spm: "Hvor mange blomster kan ei humle besøke på EN flyvetur?",
+                    bilde: "/wp-content/uploads/NAT_7463_v3.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "5",
+                        "50",
+                        "500"
+                    ],
+                    riktige_svar: ["500"]
+                },
+                {
+                    spm: "Hvem bestøver bjørka?",
+                    bilde: "/wp-content/uploads/NAT_7480.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Fuglene",
+                        "Hårgullbassene",
+                        "Vinden"
+                    ],
+                    riktige_svar: ["Vinden"]
+                },
+                {
+                    spm: "Når er de fleste sommerfuglene våkne?",
+                    bilde: "/wp-content/uploads/b0de8fd9-9d0b-4be2-b0a2-a67bfcb949ed.jpeg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Klokka halv åtte",
+                        "Om dagen",
+                        "Om natta"
+                    ],
+                    riktige_svar: ["Om natta"]
+                },
+                {
+                    spm: "Hvor lenge har blomster og insekter levd sammen?",
+                    bilde: "/wp-content/uploads/Bee_2632994523.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "I mange hundre millioner år",
+                        "I hundre år",
+                        "I tusen år"
+                    ],
+                    riktige_svar: ["I mange hundre millioner år"]
+                },
+                {
+                    spm: "Hva er evolusjon?",
+                    bilde: "/wp-content/uploads/05a2052d-7a37-4f19-8b6d-e627a05a591f.jpeg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Et slags lim",
+                        "At planter og dyr forandrer seg sammen",
+                        "En fiskesuppe"
+                    ],
+                    riktige_svar: ["At planter og dyr forandrer seg sammen"]
+                }
+            ]
+        };
+        
         var quiz06 = {
             title: "6",
-            q_and_a: [
-                {
+            q_and_a: [{
                     spm: "Hva er meitemark?",
                     bilde: "/media/img/kviss_meitemark_ruller_seg.jpg",
                     bildetekst: "Tegning av en rosa meitemark som krøller seg sammen",
@@ -473,7 +992,7 @@ $( document ).ready(function() {
                         "En fisk"
                     ],
                     riktige_svar: ["Et dyr"],
-                    forklaring: "Meitemarken er et ledd-dyr. Leddene gjør at den kan strekke seg ut og krype sammen. På den måten kan den bevege seg i jorda."
+        
                 },
                 {
                     spm: "Hvordan puster meitemark?",
@@ -485,7 +1004,7 @@ $( document ).ready(function() {
                         "Med munnen"
                     ],
                     riktige_svar: ["Med huden"],
-                    forklaring: "Meitemarken puster med huden, og tar oksygen fra vann. Meitemarken kan derfor ikke leve uten vann."
+        
                 },
                 {
                     spm: "Hva spiser grå-meitemarken?",
@@ -497,7 +1016,7 @@ $( document ).ready(function() {
                         "Fluer"
                     ],
                     riktige_svar: ["Mest jord"],
-                    forklaring: "Grå-meitemarken spiser jord. De lager mange ganger i jorda."
+        
                 },
                 {
                     spm: "Hvem vil spise meitemark?",
@@ -509,7 +1028,7 @@ $( document ).ready(function() {
                         "Fugler"
                     ],
                     riktige_svar: ["Piggsvin og frosk", "Skolopenderne", "Fugler"],
-                    forklaring: "Meitemark er god mat for piggsvin, frosk, skolopendere og fugler. Padder, store biller og rever liker også å spise meitemark "
+        
                 },
                 {
                     spm: "Hvor lang er skolopenderen?",
@@ -521,7 +1040,7 @@ $( document ).ready(function() {
                         "Som en lillefinger"
                     ],
                     riktige_svar: ["Som en lillefinger"],
-                    forklaring: "En skolopender er lang og tynn, og vanligvis omtrent like stor som en lillefinger. Selv om den bare er like stor som en lillefinger, har den 15 ledd og 30 bein."
+        
                 },
                 {
                     spm: "Hvem er Lumbricus terrestris?",
@@ -533,7 +1052,7 @@ $( document ).ready(function() {
                         "Stor-meitemarken"
                     ],
                     riktige_svar: ["Stor-meitemarken"],
-                    forklaring: "Lumbricus terrestris er det latinske navnet til stor-meitemarken. Det er den største marken i Norge."
+        
                 },
                 {
                     spm: "Hvor lang kan stor-meitemarken bli?",
@@ -545,7 +1064,7 @@ $( document ).ready(function() {
                         "Som hele meg"
                     ],
                     riktige_svar: ["Som halve armen min"],
-                    forklaring: "Stor-meitemarken kan bli 30 cm lang. Det er like langt som halve armen din. Stor-meitemarken kan lage ganger som går to til tre meter nedover."
+        
                 },
                 {
                     spm: "Hva spiser stor-meitemarken?",
@@ -557,7 +1076,7 @@ $( document ).ready(function() {
                         "Epler i trærne"
                     ],
                     riktige_svar: ["Gammelt løv"],
-                    forklaring: "Det er bilde av et ekorn. Men det spiser ikke meitemarken! Stor-meitemarken kan spise jord, men den liker best å finne mat på bakken. Der ligger det bløtt løv som er begynt å råtne litt."
+        
                 },
                 {
                     spm: "Bæsjen til meitemarken er:",
@@ -569,7 +1088,7 @@ $( document ).ready(function() {
                         "God i suppa"
                     ],
                     riktige_svar: ["Fin for planter som vokser"],
-                    forklaring: "Meitemark kan spise 25 tusen kilo med jord på ett år. Så bæsjer den ut jorda igjen. Da er jorda enda finere. Meitemark kan forandre jorda fordi de er så mange.  "
+        
                 },
                 {
                     spm: "Et annet ord for meitemarkens bæsj, er:",
@@ -581,7 +1100,7 @@ $( document ).ready(function() {
                         "Brun-bjørn"
                     ],
                     riktige_svar: ["Kast"],
-                    forklaring: "Kast er det riktige svaret."
+        
                 },
                 {
                     spm: "Hva gjør store meitemarker om vinteren?",
@@ -593,7 +1112,7 @@ $( document ).ready(function() {
                         "De kryper til varme land om høsten"
                     ],
                     riktige_svar: ["De ligger i dvale nede i jorda"],
-                    forklaring: "Når det blir kaldt, tetter meitemarken åpningen sin med løv, småstein og barnåler. Så krøller den seg sammen i hvilerommet sitt og sover til våren kommer."
+        
                 },
                 {
                     spm: "Hvor lang tid tar det å lage 10 centimeter med jord?",
@@ -605,7 +1124,7 @@ $( document ).ready(function() {
                         "1000 år"
                     ],
                     riktige_svar: ["1000 år"],
-                    forklaring: "Det tar ca 10 år å lage en millimeter med jord, eller 100 år å lage 1cm med jord."
+        
                 },
                 {
                     spm: "Er meitemarken jente eller gutt?",
@@ -617,7 +1136,7 @@ $( document ).ready(function() {
                         "Den er begge deler"
                     ],
                     riktige_svar: ["Den er begge deler"],
-                    forklaring: "En meitemark er både jente og gutt. Både hunn og hann. Alle har egg-celler. Alle har sæd-celler."
+        
                 },
                 {
                     spm: "Hva kan meitemarken lage med det rosa beltet?",
@@ -629,7 +1148,7 @@ $( document ).ready(function() {
                         "Lue til gjøken som synger ko-ko"
                     ],
                     riktige_svar: ["En pose for babyer som heter kokong"],
-                    forklaring: "Inni posen smelter sædceller sammen med eggveller. Det betyr befruktning. Da kan det bli små mark i eggene. Marken lever i kokongen til de kommer ut."
+        
                 },
                 {
                     spm: "Tåler meitemark lys fra sola?",
@@ -641,7 +1160,7 @@ $( document ).ready(function() {
                         "Ja, veldig mye sol"
                     ],
                     riktige_svar: ["Nei"],
-                    forklaring: "Den blir solbrent."
+        
                 },
                 {
                     spm: "Hvor lenge har meitemarken laget jord på jordkloden?",
@@ -653,15 +1172,907 @@ $( document ).ready(function() {
                         "150 millioner år"
                     ],
                     riktige_svar: ["150 millioner år"],
-                    forklaring: "Meitemarken har laget jord på jordkloden i 150 millioner år. Den har spist jorda på jordkloden flere ganger. Helt siden dinosaurene gikk omkring."
+        
                 }
             ]
         };
+        
+        var quiz07 = {
+            title: "Kapittel 7 Kviss",
+            q_and_a: [{
+                    spm: "Kan meitemarken se?",
+                    bilde: "/wp-content/uploads/NAT_7492.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Ja, den kan se mye",
+                        "Ja, men bare rødt",
+                        "Nei, den kan ikke se"
+                    ],
+                    riktige_svar: ["Nei, den kan ikke se"]
+                },
+                {
+                    spm: "Hva bruker meitemarken børstene på kroppen til?",
+                    bilde: "/wp-content/uploads/setae.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Til å børste seg med",
+                        "Til å holde seg fast med",
+                        "Til å stikke andre med"
+                    ],
+                    riktige_svar: ["Til å holde seg fast med"]
+                },
+                {
+                    spm: "Har meitemarken lunger?",
+                    bilde: "/wp-content/uploads/NAT_7491.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Ja, to lunger",
+                        "Ja, tre lunger",
+                        "Nei, ingen"
+                    ],
+                    riktige_svar: ["Nei, ingen"]
+                },
+                {
+                    spm: "Hvor får meitemarken oksygen fra?",
+                    bilde: "/wp-content/uploads/blad_med_dråpe.png",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Fra vann",
+                        "Fra lufta",
+                        "Fra løvet"
+                    ],
+                    riktige_svar: ["Fra vann"]
+                },
+                {
+                    spm: "Hvor mange hjerter har en meitemark?",
+                    bilde: "/wp-content/uploads/NAT_7491.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Ingen",
+                        "Fem",
+                        "Ett"
+                    ],
+                    riktige_svar: ["Fem"]
+                },
+                {
+                    spm: "Har meitemark tenner?",
+                    bilde: "/wp-content/uploads/munn_meitemark.png",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Ja, 12",
+                        "Ja, 17",
+                        "Nei"
+                    ],
+                    riktige_svar: ["Nei"]
+                },
+                {
+                    spm: "Hva heter tygge-magen?",
+                    bilde: "/wp-content/uploads/NAT_7491.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Krås",
+                        "Tyggis",
+                        "Kråke"
+                    ],
+                    riktige_svar: ["Krås"]
+                },
+                {
+                    spm: "Hvis en meitemark blir delt i to: kan begge leve?",
+                    bilde: "/wp-content/uploads/NAT_7488.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Nei, bare den første delen",
+                        "Ja, begge kan leve",
+                        "Nei, bare den bakerste"
+                    ],
+                    riktige_svar: ["Nei, bare den første delen"]
+                },
+                {
+                    spm: "Hvor mange pigger har et piggsvin?",
+                    bilde: "/wp-content/uploads/NAT_7459.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "200",
+                        "2000",
+                        "6000"
+                    ],
+                    riktige_svar: ["6000"]
+                },
+                {
+                    spm: "Hva liker piggsvin å spise?",
+                    bilde: "/wp-content/uploads/NAT_0732_v2.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Meitemark",
+                        "Snegler og frosker",
+                        "Sopp og bær"
+                    ],
+                    riktige_svar: ["Meitemark", "Snegler og frosker", "Sopp og bær"]
+                },
+                {
+                    spm: "Skal vi gi piggsvin melk?",
+                    bilde: "/wp-content/uploads/NAT_7487.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Nei, vann er best",
+                        "Ja, melk",
+                        "Nei, iskrem"
+                    ],
+                    riktige_svar: ["Nei, vann er best"]
+                },
+                {
+                    spm: "Er det sant at dinosaurer og piggsvin levde samtidig?",
+                    bilde: "/wp-content/uploads/Allosaurus_BW.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Ja",
+                        "Nei",
+                        "Nei, det går ikke"
+                    ],
+                    riktige_svar: ["Ja"]
+                },
+                {
+                    spm: "Hva er en krås?",
+                    bilde: "/wp-content/uploads/NAT_7491.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Ei gås",
+                        "En tyggemage",
+                        "En lås"
+                    ],
+                    riktige_svar: ["En tyggemage"]
+                },
+                {
+                    spm: "Meitemark har kro og krås. Hvilke andre dyr har det?",
+                    bilde: "/wp-content/uploads/NAT_9018_v2.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Høner",
+                        "Alle fugler",
+                        "Maur og humler"
+                    ],
+                    riktige_svar: ["Høner", "Alle fugler", "Maur og humler"]
+                },
+                {
+                    spm: "Hvor mange meitemark kan det være under en fotballbane?",
+                    bilde: "/wp-content/uploads/Vangbana.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Hundre tusen",
+                        "Fem hundre tusen",
+                        "En million"
+                    ],
+                    riktige_svar: ["En million"]
+                },
+                {
+                    spm: "Hva er dette?",
+                    bilde: "/wp-content/uploads/NAT_7497.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Fem kokonger",
+                        "Fem sukkertøy",
+                        "Fem sitroner"
+                    ],
+                    riktige_svar: ["Fem kokonger"]
+                },
+                {
+                    spm: "Hva er det i kokonger?",
+                    bilde: "/wp-content/uploads/NAT_7497.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Egg-celler og sæd-celler",
+                        "Befrukta egg",
+                        "Små meitemark"
+                    ],
+                    riktige_svar: ["Egg-celler og sæd-celler", "Befrukta egg", "Små meitemark"]
+                },
+                {
+                    spm: "Hva er anus?",
+                    bilde: "/wp-content/uploads/NAT_7496.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Lakris",
+                        "Ananas",
+                        "Hullet der bæsjen kommer ut"
+                    ],
+                    riktige_svar: ["Hullet der bæsjen kommer ut"]
+                },
+                {
+                    spm: "Hva er stripene på meitemarken?",
+                    bilde: "/wp-content/uploads/Redwiggler1.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "En pynt",
+                        "Ledd som gjør at den kan bøye seg",
+                        "Ingen kan vite det"
+                    ],
+                    riktige_svar: ["Ledd som gjør at den kan bøye seg"]
+                },
+                {
+                    spm: "Hvordan er meitemarken tilpassa et liv i jorda?",
+                    bilde: "/wp-content/uploads/eh_NAT_8866.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Den har ikke øyne",
+                        "Den er lang og tynn",
+                        "Den spiser jord"
+                    ],
+                    riktige_svar: ["Den har ikke øyne", "Den er lang og tynn", "Den spiser jord"]
+                },
+                {
+                    spm: "Hva lager meitemarken?",
+                    bilde: "/wp-content/uploads/c0095832-earth_layers_artwork.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Bare rot",
+                        "Stygge hull i bakken",
+                        "Jorda på jordkloden"
+                    ],
+                    riktige_svar: ["Jorda på jordkloden"]
+                }
+            ]
+        };
+        
+        var quiz08 = {
+            title: "Kapittel 8 Kviss",
+            q_and_a: [{
+                    spm: "Hvor bor plante-babyen?",
+                    bilde: "/wp-content/uploads/Rakleskjell_pa_blått-bord.png",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Inni et frø",
+                        "I vann",
+                        "I rota til blomsten"
+                    ],
+                    riktige_svar: ["Inni et frø"]
+                },
+                {
+                    spm: "Blomster visner om høsten. Hvordan kan de leve om våren?",
+                    bilde: "/wp-content/uploads/Dandelion_clock_Taraxacum.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Frøene lever under snøen",
+                        "Frøene spirer om våren",
+                        "Frøene ligger i dvale"
+                    ],
+                    riktige_svar: ["Frøene lever under snøen", "Frøene spirer om våren", "Frøene ligger i dvale"]
+                },
+                {
+                    spm: "Hvordan sprer borre frøene sine?",
+                    bilde: "/wp-content/uploads/borre_plante.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "De eksploderer",
+                        "Dyr får dem i pelsen",
+                        "Vinden blåser på dem"
+                    ],
+                    riktige_svar: ["Dyr får dem i pelsen"]
+                },
+                {
+                    spm: "Hvordan sprer rogn frøene sine?",
+                    bilde: "/wp-content/uploads/NAT_0750.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Vinden blåser på dem",
+                        "Fugler spiser bæsj og bæsjer frø",
+                        "De flyter i havet"
+                    ],
+                    riktige_svar: ["Fugler spiser bær og bæsjer frø"]
+                },
+                {
+                    spm: "Hvordan sprer kokosnøtt frøene sine?",
+                    bilde: "/wp-content/uploads/kokospalme.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Kokosnøtta flyter vekk i havet",
+                        "Vinden blåser på dem",
+                        "De setter seg fast på elefanter"
+                    ],
+                    riktige_svar: ["Kokosnøtta flyter vekk i havet"]
+                },
+                {
+                    spm: "Hvordan sprer disse agurkene frøene sine?",
+                    bilde: "/wp-content/uploads/agurk_som_eksploderer.png",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "De blir spist av harer",
+                        "De eksploderer og alt spruter ut",
+                        "Det er vinden som gjør det"
+                    ],
+                    riktige_svar: ["De eksploderer og alt spruter ut"]
+                },
+                {
+                    spm: "Hvordan spres frøene inni her?",
+                    bilde: "/wp-content/uploads/Harpagophytum_procumbens_MHNT.BOT_.2005.0.1243.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "De sitter fast i føttene til dyr",
+                        "De flyr gjennom lufta med vinden",
+                        "De seiler nedover elva"
+                    ],
+                    riktige_svar: ["De sitter fast i føttene til dyr"]
+                },
+                {
+                    spm: "Hvordan sprer vikke frøene sine?",
+                    bilde: "/wp-content/uploads/NAT_0751.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Vann",
+                        "Eksplosjon",
+                        "Mennesker"
+                    ],
+                    riktige_svar: ["Eksplosjon"]
+                },
+                {
+                    spm: "Hvordan spres dette frøet?",
+                    bilde: "/wp-content/uploads/NAT_0744_v3.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Med bjørnen",
+                        "Med vinden",
+                        "Med vannet i havet"
+                    ],
+                    riktige_svar: ["Med vinden"]
+                },
+                {
+                    spm: "Hva er dette?",
+                    bilde: "/wp-content/uploads/NAT_7473_v2.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Grønne bananer",
+                        "Sukkertøy",
+                        "Belger med erter"
+                    ],
+                    riktige_svar: ["Belger med erter"]
+                },
+                {
+                    spm: "Hva er dette",
+                    bilde: "/wp-content/uploads/geitramsfrø-blog1.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Fjær fra høner",
+                        "Såpe-skum",
+                        "Frø med ull"
+                    ],
+                    riktige_svar: ["Frø med ull"]
+                },
+                {
+                    spm: "Hva er dette?",
+                    bilde: "/wp-content/uploads/Acer_platanoides_seeds.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Frø fra lønnetreet",
+                        "Propeller til et fly",
+                        "En leke til å kaste med"
+                    ],
+                    riktige_svar: ["Frø fra lønnetreet"]
+                },
+                {
+                    spm: "Hvordan spres disse frøene?",
+                    bilde: "/wp-content/uploads/Acer_platanoides_seeds.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "De faller rett ned",
+                        "I vinden som propeller",
+                        "Jenter og gutter spiser dem"
+                    ],
+                    riktige_svar: ["I vinden som propeller"]
+                },
+                {
+                    spm: "Hva er å ligge i dvale?",
+                    bilde: "/wp-content/uploads/Big_feet_sleeping521365548.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Å svømme som en hval",
+                        "Å sove hele vinteren",
+                        "Å ligge med beina på puta"
+                    ],
+                    riktige_svar: ["Å sove hele vinteren"]
+                },
+                {
+                    spm: "Hvordan forbereder ekornet seg til vinteren?",
+                    bilde: "/wp-content/uploads/NAT_0767.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Løper og hopper til Spania",
+                        "Samler nøtter og frø",
+                        "Sover i et hull til våren kommer"
+                    ],
+                    riktige_svar: ["Samler nøtter og frø"]
+                },
+                {
+                    spm: "Hvorfor flyr fugler fra Norge om høsten?",
+                    bilde: "/wp-content/uploads/NAT_0765.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "De synes det er kjedelig her",
+                        "Det er ikke insekter og bær her om vinteren",
+                        "De lengter hjem til bestemor og bestefar"
+                    ],
+                    riktige_svar: ["Det er ikke insekter og bær her om vinteren"]
+                }
+            ]
+        };
+        
+        var quiz09 = {
+            title: "Kapittel 9 kviss",
+            q_and_a: [{
+                    spm: "Hva er en høst?",
+                    bilde: "/wp-content/uploads/1010101-300x200.jpeg",
+                    bildetekst: "Foto: Finn Jensen",
+                    svaralternativer: [
+                        "Det er en som hører dårlig",
+                        "Det er å gå på tur og bli tørst",
+                        "En høst er ei årstid der naturen forbereder seg til vinteren"
+                    ],
+                    riktige_svar: ["En høst er ei årstid der naturen forbereder seg til vinteren"]
+                },
+                {
+                    spm: "Hvorfor blir det årstider i Norge?",
+                    bilde: "/wp-content/uploads/00000009.jpeg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Fordi jorda står på skrå",
+                        "Fordi sola går fortere",
+                        "Fordi jorda går saktere noen ganger"
+                    ],
+                    riktige_svar: ["Fordi jorda står på skrå"]
+                },
+                {
+                    spm: "Når er høsten?",
+                    bilde: "/wp-content/uploads/44444.jpeg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Mellom vinter og sommer",
+                        "Når vi hoster",
+                        "Mellom sommer og vinter"
+                    ],
+                    riktige_svar: ["Mellom sommer og vinter"]
+                },
+                {
+                    spm: "Hvem var Archimboldo?",
+                    bilde: "/wp-content/uploads/Giuseppe_Arcimboldo_-_Autumn_1573-1-248x300.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "En robot",
+                        "En maler",
+                        "Ei bolle med rosiner"
+                    ],
+                    riktige_svar: ["En maler"]
+                },
+                {
+                    spm: "Kan poteter være blå og svarte?",
+                    bilde: "/wp-content/uploads/11.jpeg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Nei, de er alltid gule",
+                        "Nei, de er alltid brune",
+                        "Ja"
+                    ],
+                    riktige_svar: ["Ja"]
+                },
+                {
+                    spm: "Hvor kommer poteten fra?",
+                    bilde: "/wp-content/uploads/12.jpeg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Sør-Amerika",
+                        "Norge",
+                        "Sørpolen"
+                    ],
+                    riktige_svar: ["Sør-Amerika"]
+                },
+                {
+                    spm: "Hva betyr det at noe vokser vilt?",
+                    bilde: "/wp-content/uploads/13.jpeg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Det er farlige planter",
+                        "At menneskene ikke har sådd eller planta det",
+                        "Det er planter som har sterk vilje"
+                    ],
+                    riktige_svar: ["At menneskene ikke har sådd eller planta det"]
+                },
+                {
+                    spm: "Hva kan vi lage av havre?",
+                    bilde: "/wp-content/uploads/14-215x300.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Havremel",
+                        "Havregryn",
+                        "Havregrøt",
+                        "Alle de tre alternativene over"
+                    ],
+                    riktige_svar: ["Alle de tre alternativene over"]
+                },
+                {
+                    spm: "Hva er korn?",
+                    bilde: "/wp-content/uploads/15-300x225.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Frø",
+                        "En som synger I kor",
+                        "To kroner"
+                    ],
+                    riktige_svar: ["Frø"]
+                },
+                {
+                    spm: "Hvor vokser peanøttene?",
+                    bilde: "/wp-content/uploads/NAT_0732_v3-300x200.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Øverst i høye palmer",
+                        "På små trær i en park",
+                        "Nede i jorda"
+                    ],
+                    riktige_svar: ["Nede i jorda"]
+                },
+                {
+                    spm: "Hvorfor vokser det ikke peanøtter i Norge?",
+                    bilde: "/wp-content/uploads/16.jpeg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Fordi det er for varmt her",
+                        "Fordi voksne spiser opp alt når barna har lagt seg",
+                        "Fordi det er for kaldt her"
+                    ],
+                    riktige_svar: ["Fordi det er for kaldt her"]
+                },
+                {
+                    spm: "Hva er dette?",
+                    bilde: "/wp-content/uploads/17.jpeg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "En kam med mye hår på",
+                        "Grifler med arr fra hunnblomsten",
+                        "Grønt sukkerspinn"
+                    ],
+                    riktige_svar: ["Grifler med arr fra hunnblomsten"]
+                },
+                {
+                    spm: "Hva er dette?",
+                    bilde: "/wp-content/uploads/18.jpeg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Et romskip som kommer",
+                        "Et bustete hode",
+                        "Hann-blomsten til mais"
+                    ],
+                    riktige_svar: ["Hann-blomsten til mais"]
+                },
+                {
+                    spm: "Hva holder Katt?",
+                    bilde: "/wp-content/uploads/NAT_0737-225x300.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "En stokk fordi Katt har vondt i beinet",
+                        "En spade til å grave med",
+                        "Ei stor skje til å røre i suppa med"
+                    ],
+                    riktige_svar: ["En spade til å grave med"]
+                },
+                {
+                    spm: "Hva er dette?",
+                    bilde: "/wp-content/uploads/123456789.jpeg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Hvit sjokolade",
+                        "En hvit gitar",
+                        "Mange skjeer"
+                    ],
+                    riktige_svar: ["Mange skjeer"]
+                },
+                {
+                    spm: "Hva er dette?",
+                    bilde: "/wp-content/uploads/NAT_0754_v3-300x225.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Ei måke",
+                        "Ei linerle",
+                        "En stork"
+                    ],
+                    riktige_svar: ["Ei måke"]
+                }
+            ]
+        };
+        
+        var quiz10 = {
+            title: "Kapittel 10 kviss",
+            q_and_a: [{
+                    spm: "Hvorfor blir det høst i Norge?",
+                    bilde: "/wp-content/uploads/00000009.jpeg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Fordi jordkloden går rundt sola på skrå",
+                        "Fordi sola går lenger unna",
+                        "Fordi jordkloden går lenger unna sola"
+                    ],
+                    riktige_svar: ["Fordi jordkloden går rundt sola på skrå"]
+                },
+                {
+                    spm: "Hva er det verste for insekter om vinteren?",
+                    bilde: "/wp-content/uploads/NAT_9018_v2.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Å fryse til is og dø",
+                        "Å være sultne",
+                        "Å bli spist av harer"
+                    ],
+                    riktige_svar: ["Å fryse til is og dø"]
+                },
+                {
+                    spm: "Hvilke humler lever fra høst til vår?",
+                    bilde: "/wp-content/uploads/NAT_7465_v2.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Hannene",
+                        "Hunnene",
+                        "Bare befrukta hunner"
+                    ],
+                    riktige_svar: ["Bare befrukta hunner"]
+                },
+                {
+                    spm: "Hvilken sommerfugl kan leve med snø på om vinteren? ",
+                    bilde: "/wp-content/uploads/1280px-Snow-covered_fir_trees.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Ingen kan det",
+                        "Alle kan det",
+                        "Sitron-sommerfuglen"
+                    ],
+                    riktige_svar: ["Sitron-sommerfuglen"]
+                },
+                {
+                    spm: "Hva er å gå i dvale?",
+                    bilde: "/wp-content/uploads/Orizo5.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Å sove om vinteren uten å spise",
+                        "Å dale ned fra skyene",
+                        "Å leke med halen"
+                    ],
+                    riktige_svar: ["Å sove om vinteren uten å spise"]
+                },
+                {
+                    spm: "Kan noen fugler samle mat om høsten?",
+                    bilde: "/wp-content/uploads/NAT_0744_v3.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Nei",
+                        "Nei, det kan bare ekorn",
+                        "Ja"
+                    ],
+                    riktige_svar: ["Ja"]
+                },
+                {
+                    spm: "Hva betyr å hamstre?",
+                    bilde: "/wp-content/uploads/cherry_sweet_cherry_red_fruit_healthy_leaves_branch_summer-1121565.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Å samle mat for å spise seinere",
+                        "Å komme fra byen Hamar",
+                        "Å leke med en brun hamster"
+                    ],
+                    riktige_svar: ["Å samle mat for å spise seinere"]
+                },
+                {
+                    spm: "Hvorfor flyr grågåsa i plog?",
+                    bilde: "/wp-content/uploads/NAT_0765.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "De får bedre utsikt",
+                        "De er dumme",
+                        "Det er lettere å fly i plog"
+                    ],
+                    riktige_svar: ["Det er lettere å fly i plog"]
+                },
+                {
+                    spm: "Hva gjør fugler når de hekker i Norge?",
+                    bilde: "/wp-content/uploads/NAT_0754_v3.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "De sitter på sekker",
+                        "De parer seg og får unger",
+                        "De bader i bekkene"
+                    ],
+                    riktige_svar: ["De parer seg og får unger"]
+                },
+                {
+                    spm: "Hvor bor Rødnebb-terna når det er vinter i Norge?",
+                    bilde: "/wp-content/uploads/512px-Eidersperrw_sterna_paradisaea_with_fish_oben.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "I Irak",
+                        "I England",
+                        "På Sørpolen"
+                    ],
+                    riktige_svar: ["På Sørpolen"]
+                },
+                {
+                    spm: "Hvorfor blir trærne gule og røde om høsten?",
+                    bilde: "/wp-content/uploads/blader_høst.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Treet henter de grønne klorofyll-kornene sine, og da ser vi de andre fargene.",
+                        "Trærne dør",
+                        "Treet er sykt"
+                    ],
+                    riktige_svar: ["Treet henter de grønne klorofyll-kornene sine, og da ser vi de andre fargene."]
+                },
+                {
+                    spm: "Hvilken farge har haren om sommeren?",
+                    bilde: "/wp-content/uploads/VACCINIUM_MYRTILLUS_-_GENTO_-_IB-269_Nabiu.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Brun",
+                        "Hvit",
+                        "Oransje"
+                    ],
+                    riktige_svar: ["Brun"]
+                },
+                {
+                    spm: "Hvilken farge har haren om vinteren?",
+                    bilde: "/wp-content/uploads/1280px-Snow-covered_fir_trees.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Svart",
+                        "Brun",
+                        "Hvit"
+                    ],
+                    riktige_svar: ["Hvit"]
+                },
+                {
+                    spm: "Hva spiser haren?",
+                    bilde: "/wp-content/uploads/512px-Arctic_Hare_1.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Kvister og knopper",
+                        "Mus",
+                        "Ekorn"
+                    ],
+                    riktige_svar: ["Kvister og knopper"]
+                },
+                {
+                    spm: "Hvem har gått her?",
+                    bilde: "/wp-content/uploads/Lepus_timidus_tracks.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Elg",
+                        "Hare",
+                        "Katt"
+                    ],
+                    riktige_svar: ["Hare"]
+                },
+                {
+                    spm: "Hvem har gnagd på konglene?",
+                    bilde: "/wp-content/uploads/kongler_ekorn.png",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Ekorn",
+                        "Mus",
+                        "Grågåsa"
+                    ],
+                    riktige_svar: ["Ekorn"]
+                },
+                {
+                    spm: "Hvem er det største dyret i skogen?",
+                    bilde: "/wp-content/uploads/1280px-Mixed_Picea_Spruce_forest_from_Vestfold_county_in_Norway.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Bjørnen",
+                        "Reven",
+                        "Elgen"
+                    ],
+                    riktige_svar: ["Elgen"]
+                },
+                {
+                    spm: "Hva er et elg-tråkk?",
+                    bilde: "/wp-content/uploads/512px-Alces_alces_alces_Myre_Norway.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "En sti hvor elgene pleier å gå",
+                        "En voksen som tråkker på elgen",
+                        "Elg-bein"
+                    ],
+                    riktige_svar: ["En sti hvor elgene pleier å gå"]
+                },
+                {
+                    spm: "Hva gjør dyr for å leve om vinteren?",
+                    bilde: "/wp-content/uploads/NAT_0732_v2.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Få tjukkere og lysere pels",
+                        "Samle mat om høsten",
+                        "Gå i dvale (sove)",
+                        "Fly vekk fra Norge",
+                        "Alle alternativene over"
+                    ],
+                    riktige_svar: ["Alle alternativene"]
+                },
+                {
+                    spm: "Hva er dette?",
+                    bilde: "/wp-content/uploads/512px-Alces_alces_alces_Myre_Norway.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "En elg",
+                        "En giraff",
+                        "En bjørn"
+                    ],
+                    riktige_svar: ["En elg"]
+                },
+                {
+                    spm: "Hva er dette?",
+                    bilde: "/wp-content/uploads/512px-Arctic_Hare_1.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "En katt",
+                        "En hare",
+                        "En liten hund"
+                    ],
+        
+                    riktige_svar: ["En hare"]
+                },
+                {
+                    spm: "Hva gjør piggsvinet om vinteren?",
+                    bilde: "/wp-content/uploads/NAT_7459.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Ligger i dvale (sover)",
+                        "Bor i et reir i et tre",
+                        "Går i snøen og finner kongler"
+                    ],
+                    riktige_svar: ["Ligger i dvale"]
+                },
+                {
+                    spm: "Hva er dette?",
+                    bilde: "/wp-content/uploads/ComputerHotline_-_Danaus_plexippus_by_3.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "En fugl",
+                        "Ei vifte",
+                        "En sommerfugl"
+                    ],
+                    riktige_svar: ["En sommerfugl"]
+                },
+                {
+                    spm: "Hva er dette?",
+                    bilde: "/wp-content/uploads/Monarch_Butterfly_Chrysalis.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "En puppe som blir sommerfugl",
+                        "En frukt",
+                        "En liten lykt"
+                    ],
+                    riktige_svar: ["En puppe som blir sommerfugl"]
+                },
+                {
+                    spm: "Hvordan forbereder ekornet seg til vinteren?",
+                    bilde: "/wp-content/uploads/NAT_0734_v6.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Det samler mat om høsten",
+                        "Det får tjukkere pels ",
+                        "Det får gråere pels",
+                        "Alle svaralternativene over"
+                    ],
+                    riktige_svar: ["Alle svaralternativene"]
+                }
+            ]
+        };
+        
+              
+
+        
 
         /* Add the different quizzies in one array */
         quizzies[1] = quiz01;
         quizzies[2] = quiz02;
+        quizzies[3] = quiz03;
+        quizzies[4] = quiz04;
         quizzies[6] = quiz06;
+        quizzies[8] = quiz08;
+        quizzies[9] = quiz09;
+        quizzies[10] = quiz10;
 
         var ferdige_kvisser = Object.keys(quizzies).toString();
 
@@ -678,7 +2089,7 @@ $( document ).ready(function() {
                         "Jeg kan prøve igjen senere"
                     ],
                     riktige_svar: ["Kvissen er ikke laget ferdig","Jeg kan prøve ferdig kviss i kapittel: " + ferdige_kvisser,"Jeg kan prøve igjen senere"],
-                    forklaring: "Kvissen for dette kapitlet er ikke ferdig enda. Men vi jobber med saken."
+
                 }
             ]
         };

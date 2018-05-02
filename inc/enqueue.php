@@ -66,7 +66,7 @@ function lumbrikus_load_scripts() {
 
 	if( is_page( 'kviss' ) ) {
 		wp_enqueue_style( 'kviss', '/css/kviss.css', array(), '0.0.9', 'all' );
-		wp_enqueue_script( 'kviss-js', '/js/kviss.js', array('jquery'), '0.2.0', true );
+		wp_enqueue_script( 'kviss-js', '/js/kviss.js', array('jquery'), '0.3.0', true );
 	}
 
 	if( is_page( 'kort' ) || is_page( 'lang' ) ) {
