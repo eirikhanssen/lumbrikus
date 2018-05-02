@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="lumbrikus-icons.css" ?>
 <svg
-    id="SVG_let_og_finn"
+    id="SVG_lumbrikus_icons"
     width="100%"
     height="100%"
     viewBox="-32 -32 1400 1400"
@@ -250,6 +250,7 @@
     <view id="neste" viewBox="1100 000 32 32"/>
     <view id="forrige" viewBox="1100 100 32 32"/>
     <view id="undring" viewBox="1200 000 32 32"/>
+    <view id="mangler" viewBox="1300 000 64 16"/>
 
     <a xlink:href="#lumbrikus">
     <g id="lumbrikus-icon" transform="translate(16,16)">
@@ -494,6 +495,12 @@
     </text>
     
         
+</g></a>
+
+<a xlink:href="#mangler"><g id="mangler-icon" transform="translate(1316,016)">
+    <text font-family="sans-serif" font-weight="bold" font-size="8px" fill="red" text-anchor="middle" stroke="white" stroke-width=".2" x="0" y="0" transform="translate(-4,-2) rotate(-11)">
+        <tspan dy="0" dx="20">[bilde mangler]</tspan>
+    </text>
 </g></a>
 
 </svg>
