@@ -296,8 +296,8 @@ function lumbrikus_nav_internal_chapter_links($chapter, $lvl) {
 	$links_raw = [
 	['../','kapitler'],
 	['','bilde'],
-	['kort', 'kort fortelling'],
 	['lang', 'lang fortelling'],
+	['kort', 'kort fortelling'],
 	['let-og-finn', 'let og finn'],
 	['ord', 'ord'],
 	['gjore-og-lage', 'gjøre og lage'],
