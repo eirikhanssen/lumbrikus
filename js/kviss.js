@@ -443,7 +443,7 @@ $( document ).ready(function() {
         };
         
         var quiz03 = {
-            title: "Kapittel 3 Kviss",
+            title: "3",
             q_and_a: [{
                     spm: "Hvem er dette?",
                     bilde: "/wp-content/uploads/kviss_jenny_hode.jpg",
@@ -657,7 +657,7 @@ $( document ).ready(function() {
         };
         
         var quiz04 = {
-            title: "Kapittel 4 Kviss",
+            title: "4",
             q_and_a: [{
                     spm: "Hva er nektar?",
                     bilde: "/wp-content/uploads/eh_NAT9093_selje_hann_nektarposer.jpg",
@@ -1178,7 +1178,7 @@ $( document ).ready(function() {
         };
         
         var quiz07 = {
-            title: "Kapittel 7 Kviss",
+            title: "7",
             q_and_a: [{
                     spm: "Kan meitemarken se?",
                     bilde: "/wp-content/uploads/NAT_7492.jpg",
@@ -1414,7 +1414,7 @@ $( document ).ready(function() {
         };
 
         var quiz07 = {
-            title: "Kapittel 7 Kviss",
+            title: "7",
             q_and_a: [
                 {
                     spm: "Kan meitemarken se?",
@@ -1630,7 +1630,7 @@ $( document ).ready(function() {
         };
         
         var quiz08 = {
-            title: "Kapittel 8 Kviss",
+            title: "8",
             q_and_a: [{
                     spm: "Hvor bor plante-babyen?",
                     bilde: "/wp-content/uploads/Rakleskjell_pa_blått-bord.png",
@@ -1811,7 +1811,7 @@ $( document ).ready(function() {
         };
         
         var quiz09 = {
-            title: "Kapittel 9 kviss",
+            title: "9",
             q_and_a: [{
                     spm: "Hva er en høst?",
                     bilde: "/wp-content/uploads/1010101-300x200.jpeg",
@@ -1993,7 +1993,7 @@ $( document ).ready(function() {
         };
         
         var quiz10 = {
-            title: "Kapittel 10 kviss",
+            title: "10",
             q_and_a: [{
                     spm: "Hvorfor blir det høst i Norge?",
                     bilde: "/wp-content/uploads/00000009.jpeg",
