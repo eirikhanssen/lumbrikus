@@ -746,9 +746,8 @@ $( document ).ready(function() {
                 if(obj.bilde !== undefined && obj.bilde !== "") {
                     return '<figure>\
                     <div class="img_container">\
-                        <img src="' + obj.bilde + '" alt=""/>\
+                        <img src="' + obj.bilde + '" alt="' + obj.bildetekst + '"/>\
                     </div>\
-                    <figcaption>' + obj.bildetekst + '</figcaption>\
                 </figure>';
                 } else {
                     return '<div class="mangler_bilde"></div><p class="mangler_bilde">Mangler bildereferanse.</p>';
@@ -954,8 +953,6 @@ $( document ).ready(function() {
                     var target = e.target;
                     sjekk_svar(target);
                 }));
-
-                fieldset.append($('<p class="forklaring">' + obj.forklaring + '</p>'));
 
                 fieldset.append($(generate_quiz_nav_markup(spm_nr, quiz_len)));
 
