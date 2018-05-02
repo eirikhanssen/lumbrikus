@@ -1412,6 +1412,222 @@ $( document ).ready(function() {
                 }
             ]
         };
+
+        var quiz07 = {
+            title: "Kapittel 7 Kviss",
+            q_and_a: [
+                {
+                    spm: "Kan meitemarken se?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_7492.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Ja, den kan se mye",
+                        "Ja, men bare rødt",
+                        "Nei, den kan ikke se"
+                    ],
+                    riktige_svar: ["Nei, den kan ikke se"]        },
+                {
+                    spm: "Hva bruker meitemarken børstene på kroppen til?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/setae.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Til å børste seg med",
+                        "Til å holde seg fast med",
+                        "Til å stikke andre med"
+                    ],
+                    riktige_svar: ["Til å holde seg fast med"]        },
+                {
+                    spm: "Har meitemarken lunger?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_7491.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Ja, to lunger",
+                        "Ja, tre lunger",
+                        "Nei, ingen"
+                    ],
+                    riktige_svar: ["Nei, ingen"]        },
+                {
+                    spm: "Hvor får meitemarken oksygen fra?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/blad_med_dråpe.png",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Fra vann",
+                        "Fra lufta",
+                        "Fra løvet"
+                    ],
+                    riktige_svar: ["Fra vann"]        },
+                {
+                    spm: "Hvor mange hjerter har en meitemark?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_7491.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Ingen",
+                        "Fem",
+                        "Ett"
+                    ],
+                    riktige_svar: ["Fem"]        },
+                {
+                    spm: "Har meitemark tenner?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/munn_meitemark.png",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Ja, 12",
+                        "Ja, 17",
+                        "Nei"
+                    ],
+                    riktige_svar: ["Nei"]        },
+                {
+                    spm: "Hva heter tygge-magen?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_7491.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Krås",
+                        "Tyggis",
+                        "Kråke"
+                    ],
+                    riktige_svar: ["Krås"]        },
+                {
+                    spm: "Hvis en meitemark blir delt i to: kan begge leve?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_7488.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Nei, bare den første delen",
+                        "Ja, begge kan leve",
+                        "Nei, bare den bakerste"
+                    ],
+                    riktige_svar: ["Nei, bare den første delen"]        },
+                {
+                    spm: "Hvor mange pigger har et piggsvin?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_7459.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "200",
+                        "2000",
+                        "6000"
+                    ],
+                    riktige_svar: ["6000"]        },
+                {
+                    spm: "Hva liker piggsvin å spise?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_0732_v2.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Meitemark",
+                        "Snegler og frosker",
+                        "Sopp og bær"
+                    ],
+                    riktige_svar: ["Meitemark", "Snegler og frosker","Sopp og bær" ]        },
+                {
+                    spm: "Skal vi gi piggsvin melk?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_7487.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Nei, vann er best",
+                        "Ja, melk",
+                        "Nei, iskrem"
+                    ],
+                    riktige_svar: ["Nei, vann er best"]        },
+                {
+                    spm: "Er det sant at dinosaurer og piggsvin levde samtidig?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/Allosaurus_BW.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Ja",
+                        "Nei",
+                        "Nei, det går ikke"
+                    ],
+                    riktige_svar: ["Ja"]        },
+                {
+                    spm: "Hva er en krås?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_7491.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Ei gås",
+                        "En tyggemage",
+                        "En lås"
+                    ],
+                    riktige_svar: ["En tyggemage"]        },
+                {
+                    spm: "Meitemark har kro og krås. Hvilke andre dyr har det?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_9018_v2.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Høner",
+                        "Alle fugler",
+                        "Maur og humler"
+                    ],
+                    riktige_svar: ["Høner", "Alle fugler", "Maur og humler"]        },
+                {
+                    spm: "Hvor mange meitemark kan det være under en fotballbane?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/Vangbana.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Hundre tusen",
+                        "Fem hundre tusen",
+                        "En million"
+                    ],
+                    riktige_svar: ["En million"]        },
+                {
+                    spm: "Hva er dette?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_7497.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Fem kokonger",
+                        "Fem sukkertøy",
+                        "Fem sitroner"
+                    ],
+                    riktige_svar: ["Fem kokonger"]        },
+                {
+                    spm: "Hva er det i kokonger?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_7497.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Egg-celler og sæd-celler",
+                        "Befrukta egg",
+                        "Små meitemark"
+                    ],
+                    riktige_svar: ["Egg-celler og sæd-celler", "Befrukta egg", "Små meitemark"]        },
+                {
+                    spm: "Hva er anus?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/NAT_7496.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Lakris",
+                        "Ananas",
+                        "Hullet der bæsjen kommer ut"
+                    ],
+                    riktige_svar: ["Hullet der bæsjen kommer ut"]        },
+                {
+                    spm: "Hva er stripene på meitemarken?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/Redwiggler1.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "En pynt",
+                        "Ledd som gjør at den kan bøye seg",
+                        "Ingen kan vite det"
+                    ],
+                    riktige_svar: ["Ledd som gjør at den kan bøye seg"]        },
+                {
+                    spm: "Hvordan er meitemarken tilpassa et liv i jorda?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/eh_NAT_8866.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Den har ikke øyne",
+                        "Den er lang og tynn",
+                        "Den spiser jord"
+                    ],
+                    riktige_svar: ["Den har ikke øyne", "Den er lang og tynn","Den spiser jord"]        },
+                {
+                    spm: "Hva lager meitemarken?",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/c0095832-earth_layers_artwork.jpg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Bare rot",
+                        "Stygge hull i bakken",
+                        "Jorda på jordkloden"
+                    ],
+                    riktige_svar: ["Jorda på jordkloden"]        }
+            ]
+        };
         
         var quiz08 = {
             title: "Kapittel 8 Kviss",
@@ -2070,6 +2286,7 @@ $( document ).ready(function() {
         quizzies[3] = quiz03;
         quizzies[4] = quiz04;
         quizzies[6] = quiz06;
+        quizzies[7] = quiz07;
         quizzies[8] = quiz08;
         quizzies[9] = quiz09;
         quizzies[10] = quiz10;
