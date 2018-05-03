@@ -65,7 +65,7 @@ function lumbrikus_load_scripts() {
 	
 
 	if( is_page( 'kviss' ) ) {
-		wp_enqueue_style( 'kviss', '/css/kviss.css', array(), '0.0.9', 'all' );
+		wp_enqueue_style( 'kviss', '/css/kviss.css', array(), '0.1.0', 'all' );
 		wp_enqueue_script( 'kviss-js', '/js/kviss.js', array('jquery'), '0.5.0', true );
 	}
 

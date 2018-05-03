@@ -106,7 +106,7 @@ main#kviss .entry-header {
 @media screen and (min-width: 35em) {
     .img_container {
         width: 20em;
-        height: 12em;
+        height: 14em;
     }
 }
 
@@ -140,9 +140,7 @@ button.sjekk {
 }
 .kviss figure {
     padding: 0.5em;
-    padding-bottom: 0;
     margin: auto;
-    /*! background: lime; */
 }
 
 .kviss fieldset figure img {
@@ -404,7 +402,7 @@ a#til_resultater:focus {
     font-size: 3rem;
     }
     #kviss-poengsum-prosent {
-        font-size: 15vw;
+        font-size: 10vw;
     }
 }
 
@@ -415,8 +413,8 @@ a#til_resultater:focus {
     }
 }
 .kviss-ferdig {
-    font-size: 10vw;
-    line-height: 10vw;
+    font-size: 3em;
+    line-height: 1.5em;
     margin:0;
 }
 
