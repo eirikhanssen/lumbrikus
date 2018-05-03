@@ -859,7 +859,7 @@ $( document ).ready(function() {
                 },
                 {
                     spm: "Hva skjer her?",
-                    bilde: "/media/svg/lumbrikus-icons.svg#mangler",
+                    bilde: "https://lumbrikus.no/wp-content/uploads/lopez_rodrigo_colibri_drinks_nectar-768x512.jpg",
                     bildetekst: "",
                     svaralternativer: [
                         "Blomsten spiser kolibrien",
@@ -903,7 +903,7 @@ $( document ).ready(function() {
                 },
                 {
                     spm: "Hvem kan bestøve erteblomsten?",
-                    bilde: "/media/svg/lumbrikus-icons.svg#mangler",
+                    bilde: "/wp-content/uploads/NAT_7485.jpg",
                     bildetekst: "",
                     svaralternativer: [
                         "Myggen",
@@ -969,7 +969,7 @@ $( document ).ready(function() {
                 },
                 {
                     spm: "Hva er evolusjon?",
-                    bilde: "/wp-content/uploads/05a2052d-7a37-4f19-8b6d-e627a05a591f.jpeg",
+                    bilde: "/media/svg/lumbrikus-icons.svg#undring",
                     bildetekst: "",
                     svaralternativer: [
                         "Et slags lim",
