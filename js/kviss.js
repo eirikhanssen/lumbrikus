@@ -726,7 +726,7 @@ $( document ).ready(function() {
                 },
                 {
                     spm: "Hva er det?",
-                    bilde: "/media/svg/lumbrikus-icons.svg#mangler",
+                    bilde: "/media/svg/blomst-enkel-modell-kronblad.svg",
                     bildetekst: "",
                     svaralternativer: [
                         "Kronblad",
@@ -759,7 +759,7 @@ $( document ).ready(function() {
                 },
                 {
                     spm: "Hva er befruktning?",
-                    bilde: "/media/svg/lumbrikus-icons.svg#mangler",
+                    bilde: "/media/svg/04-blomsterbefruktning-anim.svg",
                     bildetekst: "",
                     svaralternativer: [
                         "Å spise mye frukt",
@@ -770,7 +770,7 @@ $( document ).ready(function() {
                 },
                 {
                     spm: "Hva er pollinering (bestøvning)?",
-                    bilde: "/wp-content/uploads/13.png",
+                    bilde: "/media/svg/04-blomsterbefruktning-anim.svg",
                     bildetekst: "",
                     svaralternativer: [
                         "At det er mye støv fra veien",
@@ -789,17 +789,6 @@ $( document ).ready(function() {
                         "Sørpolen"
                     ],
                     riktige_svar: ["Små korn med sædceller i"]
-                },
-                {
-                    spm: "Hva er sædceller?",
-                    bilde: "/media/svg/lumbrikus-icons.svg#mangler",
-                    bildetekst: "",
-                    svaralternativer: [
-                        "Små rom i fengsel",
-                        "Små frø fra hann-delen av blomsten",
-                        "Fiskemat"
-                    ],
-                    riktige_svar: ["Små frø fra hann-delen av blomsten"]
                 },
                 {
                     spm: "Hva liker den å spise?",
@@ -844,6 +833,18 @@ $( document ).ready(function() {
                         "Vinden"
                     ],
                     riktige_svar: ["Humler med lang snabel"]
+                },
+                {
+                    spm: "Er bestøvning og befruktning det samme?",
+                    bilde: "/media/svg/04-blomsterbefruktning-anim.svg",
+                    bildetekst: "",
+                    svaralternativer: [
+                        "Nei. Bestøvning betyr pollen på arr.",
+                        "Ja, det er det samme",
+                        "Ja, den blåser pollen bort til andre blomster",
+                        "Ja, det er det samme, fordi alt er grønt"
+                    ],
+                    riktige_svar: ["Befruktning betyr sæd-celle til egg-celle"]
                 },
                 {
                     spm: "Kan vinden pollinere (bestøve)?",
@@ -1192,7 +1193,7 @@ $( document ).ready(function() {
                 },
                 {
                     spm: "Hva bruker meitemarken børstene på kroppen til?",
-                    bilde: "/wp-content/uploads/setae.jpg",
+                    bilde: "/wp-content/uploads/Lumbricidae-bristles-300x225.jpg",
                     bildetekst: "",
                     svaralternativer: [
                         "Til å børste seg med",
