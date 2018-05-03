@@ -737,7 +737,7 @@ $( document ).ready(function() {
                 },
                 {
                     spm: "Hva er det?",
-                    bilde: "/media/svg/lumbrikus-icons.svg#mangler",
+                    bilde: "/media/svg/blomst-enkel-modell-fruktknute.svg",
                     bildetekst: "",
                     svaralternativer: [
                         "Et sted hvor blomsten har eggene sine",
