@@ -1579,12 +1579,12 @@ dd::before {
 
 @media screen {
 	#same_context_nav {
-		position: absolute;
-		top:.25rem;
-		right:0;
 		display:flex;
 		flex-flow: row nowrap;
 		font-weight: bold;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
 	}
 	#same_context_nav > * {
 		margin: 0em .5rem;
@@ -1599,8 +1599,7 @@ dd::before {
 	#same_context_nav .prev-chapter-link a::after,
 	#same_context_nav .next-chapter-link a::after {
 		font-size: 1rem;
-		margin:0;
-		transform: translate(0,-85%);
+		transform: translate(0,-50%);
 		content:">";
 		display: flex;
 		flex-flow: column nowrap;
@@ -1610,7 +1609,6 @@ dd::before {
 		border-radius: 100%;
 		justify-content: center;
 		width: 1rem;
-		
 		text-align:center;
 	}
 	
@@ -1620,10 +1618,7 @@ dd::before {
 	    background:transparent;
 	    width: 2.5rem;
 	    height:2rem;
-	    position:absolute;
-	    top:50%;
-	    left:50%;
-	    transform: translate(-50%,-50%);
+	    position:static;
 	}
 
 	#same_context_nav .prev-chapter-link a::after {
