@@ -119,7 +119,7 @@ a[data-lightbox]:only-of-type::before {
     min-height: 20em;
 }
 
-.image-set a{display:inline;  padding:0; flex-grow:1; text-align:center; margin:.5em;}
+.image-set a{display:inline;  padding:0; text-align:center; margin:.5em;}
 
 .image-set img{width: calc(100% - 2em); padding: .5em; border: 2px solid black; box-shadow: 0 0 1em black;}
 
@@ -1585,8 +1585,6 @@ dd::before {
 		display:flex;
 		flex-flow: row nowrap;
 		font-weight: bold;
-		
-		
 	}
 	#same_context_nav > * {
 		margin: 0em .5rem;
