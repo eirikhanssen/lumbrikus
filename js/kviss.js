@@ -839,12 +839,11 @@ $( document ).ready(function() {
                     bilde: "/media/svg/04-blomsterbefruktning-anim.svg",
                     bildetekst: "",
                     svaralternativer: [
-                        "Nei. Bestøvning betyr pollen på arr.",
+                        "Nei. Bestøvning betyr pollen på arr. Befruktning betyr sæd-celle til egg-celle.",
                         "Ja, det er det samme",
-                        "Ja, den blåser pollen bort til andre blomster",
                         "Ja, det er det samme, fordi alt er grønt"
                     ],
-                    riktige_svar: ["Befruktning betyr sæd-celle til egg-celle"]
+                    riktige_svar: ["Nei. Bestøvning betyr pollen på arr. Befruktning betyr sæd-celle til egg-celle."]
                 },
                 {
                     spm: "Kan vinden pollinere (bestøve)?",
@@ -1248,7 +1247,7 @@ $( document ).ready(function() {
                 },
                 {
                     spm: "Hva heter tygge-magen?",
-                    bilde: "/wp-content/uploads/NAT_7491.jpg",
+                    bilde: "/media/svg/lumbrikus-icons.svg#undring",
                     bildetekst: "",
                     svaralternativer: [
                         "Krås",
@@ -1314,7 +1313,7 @@ $( document ).ready(function() {
                 },
                 {
                     spm: "Hva er en krås?",
-                    bilde: "/wp-content/uploads/NAT_7491.jpg",
+                    bilde: "/media/svg/lumbrikus-icons.svg#undring",
                     bildetekst: "",
                     svaralternativer: [
                         "Ei gås",
