@@ -916,7 +916,7 @@ $( document ).ready(function() {
                     bilde: "/wp-content/uploads/sommerfugl.jpg",
                     bildetekst: "",
                     svaralternativer: [
-                        "KortLang",
+                        "Kort",
                         "Lang",
                         "Den har ikke tunge"
                     ],
