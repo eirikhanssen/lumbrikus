@@ -1483,6 +1483,7 @@ h1,h2,h3,h4,h5,h6 {
     border: 2px solid black;
     background-color: white;
     padding: .25rem;
+    width: auto;
 }
 
 .chapter_bigpicture:hover img,
