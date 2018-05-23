@@ -1153,7 +1153,7 @@ $( document ).ready(function() {
                 },
                 {
                     spm: "Hva gjør humlemor om høsten?",
-                    bilde: "/uploads/wintry-2993370_1920-300x200.jpg",
+                    bilde: "/wp-content/uploads/wintry-2993370_1920-300x200.jpg",
                     bildetekst: "",
                     svaralternativer: [
                         "Gleder seg til å ake i snøen",
@@ -1177,7 +1177,7 @@ $( document ).ready(function() {
                 },
                 {
                     spm: "Hvem var Astrid Løken?",
-                    bilde: "/uploads/Astrid-Løken-214x300.jpg",
+                    bilde: "/wp-content/uploads/Astrid-Løken-214x300.jpg",
                     bildetekst: "",
                     svaralternativer: [
                         "Hun visste mest av alle om humler",
