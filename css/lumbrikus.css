@@ -15,6 +15,10 @@ html{
     font:1.5em/1.25 'Open Sans', sans-serif;
 }
 
+html body.laererveil-child {
+    font-size: 0.67em;
+}
+
 h1,h2,h3,h4,h5,h6 {
     margin: 0;
     margin-top: 1em;
@@ -52,7 +56,7 @@ main {
 
 .laererveil-child main,
 .has-toc main,
-.laererveil main,
+/*.laererveil main,*/
 .om-lumbrikus main, 
 .til-foreldre main,
 .til-foreldre-child main {
@@ -285,7 +289,7 @@ a[data-lightbox]:only-of-type::before {
 
 .entry-title {
     font-size: 2rem;
-    line-height: 0.8em;
+    line-height: 1em;
     padding-top: 1.25em;
     margin-bottom:0;
     display: block;
@@ -1455,17 +1459,21 @@ h1,h2,h3,h4,h5,h6 {
   pointer-events: none;
 }
 
-@media screen and (min-width: 55em) {
+@media screen and (min-width: 800px) {
     #page-toc ul {
         padding-bottom: 2rem;
     }
     #page-toc {
-        width: 14rem;
+        width: 33%;
         overflow-y:scroll;
     }
     #page-toc + main {
-        margin-left: 14.5rem;
+        margin-left: calc(33% + 1rem);
+        margin-right: 1rem;
         margin-top:2rem;
+        padding-left: 0;
+        padding-right:0;
+        overflow-x:hidden;
 }
 
     body.has-toc .siteheader,
