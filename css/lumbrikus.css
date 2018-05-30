@@ -941,6 +941,9 @@ body.child-of-kapitler .internal-chapter-links {
     margin-bottom: 1rem;
 }
 
+/* bilder i lærerveiledningen skal ha annen marg */
+.laererveil-child .wp-caption { margin: 2em; }
+
 .internal-chapter-links::after {
     opacity: .9;
     content:"";
