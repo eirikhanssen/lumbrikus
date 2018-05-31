@@ -30,6 +30,17 @@ h1,h2,h3,h4,h5,h6 {
     color: #333;
 }
 
+body.laererveil-child h1, 
+body.laererveil-child h2,
+body.laererveil-child h3,
+body.laererveil-child h4,
+body.laererveil-child h5,
+body.laererveil-child h6 {
+    padding-top: 2rem;
+    margin-top: -1rem;
+}
+
+
 h2, h4, h6 {
     font-weight: 600;
 }
@@ -1447,20 +1458,6 @@ body.has-toc .page-toc {
 h1,h2,h3,h4,h5,h6 {
     padding-top: 0rem;
     position: relative;
-}
-
-.has-toc h1::before,
-.has-toc h2::before,
-.has-toc h3::before,
-.has-toc h4::before,
-.has-toc h5::before,
-.has-toc h6::before {
-  display: block; 
-  content: " "; 
-  margin-top: -2rem; 
-  height: 2rem; 
-  visibility: hidden; 
-  pointer-events: none;
 }
 
 @media screen and (min-width: 800px) {
