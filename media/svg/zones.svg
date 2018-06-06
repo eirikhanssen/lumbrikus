@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--<?xml-stylesheet type="text/css" href="../../css/interactive-svg.css" ?>   -->
+<?xml-stylesheet type="text/css" href="../../css/let-og-finn-2.css" ?>
 <svg id="svg"
     width="100%"
     height="100%"
@@ -11,61 +11,7 @@
     <title>Interaction zones</title>
     <style type="text/css">
 
-            .grid {
-                fill:none;
-                stroke-width: 1px;
-                stroke: rgba(131, 198, 252, 0.8);
-            }
-
-            #controls circle {
-                fill: rgba(255,255,255,0.25);
-                fill:transparent;
-                stroke: rgba(131, 198, 252, 1);
-                stroke-width: .5em;
-                paint-order: stroke;
-            }
-
-            #controls .origin {
-                fill:red;
-                stroke:red;
-                stroke-width: 2px;
-            }
-
-            #controls text {
-                text-anchor: middle;
-                font-family: sans-serif;
-                font-size: 2em;
-                font-weight:bold;
-            }
-
-            #controls rect {
-                fill:white;
-                stroke: rgba(131, 198, 252, 1);
-                stroke-width: .5em;
-            }
-            #controls .show rect {
-                fill:rgba(255, 248, 142, 1);
-            }
-
-            .control-group .desc {
-                opacity: 0;
-            }
-
-            .control-group .origin {
-                opacity: .5;
-            }
-
-            .control-group:hover .desc,
-            .control-group.show .desc,
-            .control-group:hover .origin,
-            .control-group.show .origin {
-                opacity:1;
-            }
-
-            #controls .control-group:hover .control,
-            #controls .control-group.show .control {
-               fill: rgba(131, 198, 252, 1);
-            }
+            
         </style>
     <defs>
         

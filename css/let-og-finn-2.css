@@ -1,0 +1,78 @@
+.grid {
+    fill:none;
+    stroke-width: 1px;
+    stroke: rgba(131, 198, 252, 0.8);
+}
+
+#controls circle {
+    fill: rgba(255,255,255,0.25);
+    fill:transparent;
+    stroke: rgba(131, 198, 252, 1);
+    stroke:white;
+    stroke-width: .3em;
+    paint-order: stroke;
+    stroke-dasharray: 5,20;
+    stroke-linecap: round;
+}
+
+#controls .control_behind {
+    stroke: crimson;
+    stroke-dasharray: 1;
+    stroke-width: .5em;
+}
+
+#controls .origin {
+    fill:black;
+    stroke:none;
+}
+
+#controls .origin line {
+    stroke: black;
+    stroke-width: 2px;
+}
+
+#controls .origin_behind {
+    fill:white;
+    stroke:none;
+    
+}
+
+#controls text {
+    text-anchor: middle;
+    font-family: sans-serif;
+    font-size: 2em;
+    font-weight:bold;
+}
+
+#controls rect {
+    fill:white;
+    stroke: rgba(131, 198, 252, 1);
+    stroke:#444;
+    stroke-width: .25em;
+}
+#controls .show rect {
+    fill:rgba(255, 248, 142, 1);
+    fill: lightyellow;
+}
+
+.control-group .desc {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.control-group .origin {
+    opacity: 1;
+}
+
+.control-group:hover .desc,
+.control-group.show .desc,
+.control-group:hover .origin,
+.control-group.show .origin {
+    opacity:1;
+    pointer-events: all;
+}
+
+#controls .control-group:hover .control,
+#controls .control-group.show .control {
+    fill: rgba(131, 198, 252, 1);
+}
