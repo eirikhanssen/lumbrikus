@@ -1137,7 +1137,7 @@ li.kviss a::after {
     .internal-chapter-links li+li {
         margin-left: 3vw;
     }
-    .internal-chapter-links li:hover {
+    .internal-chapter-links li:hover a::after{
         transform:scale(1.2);
     }
 }
@@ -1185,6 +1185,7 @@ li.kviss a::after {
 .internal-chapter-links a:focus .linktext,
 .internal-chapter-links a:hover .linktext{
     font-weight: normal;
+    transform: translate(-50%, 1.3rem) scale(0.83);
 }
 
 .internal-chapter-links span.linktext {
@@ -1196,7 +1197,7 @@ li.kviss a::after {
     white-space: pre;
     line-height: 1em;
     width: auto;
-    font-size: .7rem;
+    font-size: 1rem;
     font-weight:bold;
     display:none;
     text-align: center;
