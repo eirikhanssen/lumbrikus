@@ -1274,6 +1274,7 @@ body.kviss li.kviss span.linktext {
     animation:none;
     font-weight: bold;
     background-color: yellowgreen;
+    font-size: .9rem;
 }
 
 body.kort li.kort,
