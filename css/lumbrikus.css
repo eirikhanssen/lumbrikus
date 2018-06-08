@@ -1001,11 +1001,10 @@ body.child-of-kapitler .internal-chapter-links {
     width: 100%;
     height: 100%;
     display:block;
-    border: .7vw solid #ccc;
-    border-radius: 100%;
+    
     box-sizing: border-box;
     overflow: hidden;
-    background:whitesmoke;
+    background:transparent;
     background-size: 500%;
 }
 
@@ -1016,14 +1015,21 @@ body.child-of-kapitler .internal-chapter-links {
     left:0;
     right:0;
     bottom: 0;
-    width: 75%;
-    height: 75%;
+    width: 72%;
+    height: 72%;
     margin:auto;
+    background-color: whitesmoke;
     background-image: url(/media/svg/spritesheet.png);
     background-size: 500%;
     background-repeat: no-repeat;
     padding: 0px;
+    border: .7vw solid #ccc;
+    border-radius: 100%;
 }
+.internal-chapter-links li:hover a::after {
+    border-color: rgb(0, 124, 255);;    
+}
+
 
 li.kapitler a::after {
     background-position: 25% 0;
@@ -1120,10 +1126,10 @@ li.kviss a::after {
 
 @media screen and (min-width: 45em) {
     .internal-chapter-links li {
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 3rem;
+        height: 3rem;
     }
-    .internal-chapter-links li a {
+    .internal-chapter-links li a::after {
         border-width: 5px;
     }
 
@@ -1144,13 +1150,13 @@ li.kviss a::after {
 
 @media screen and (min-width: 65em) {
     .internal-chapter-links li+li {
-        margin-left: 4vw;
+        /* margin-left: 4vw; */
     }
 }
 
 @media screen and (min-width: 75em) {
     .internal-chapter-links li+li {
-        margin-left: 5vw;
+        /* margin-left: 5vw; */
     }
 }
 
@@ -1185,15 +1191,15 @@ li.kviss a::after {
 .internal-chapter-links a:focus .linktext,
 .internal-chapter-links a:hover .linktext{
     font-weight: normal;
-    transform: translate(-50%, 1.3rem) scale(0.83);
+    
 }
 
 .internal-chapter-links span.linktext {
     position: absolute;
     display: block;
-    top: 50%;
+    top: 100%;
     left: 50%;
-    transform:translate(-50%,1.5rem);
+    transform:translate(-50%,.25rem);
     white-space: pre;
     line-height: 1em;
     width: auto;
@@ -1273,43 +1279,28 @@ body.kviss li.kviss span.linktext {
     display:block;
     animation:none;
     font-weight: bold;
-    background-color: yellowgreen;
+    background-color: #58ce5d;
     font-size: .9rem;
-}
-
-body.kort li.kort,
-body.lang li.lang,
-body.kapitler-child li.hovedside,
-body.let-og-finn li.let-og-finn,
-body.ord li.ord,
-body.gjore-og-lage li.gjore-og-lage,
-body.gjore-og-lage-child li.gjore-og-lage,
-body.filmer li.filmer,
-body.filmer-child li.filmer,
-body.snutter li.snutter,
-body.snutter-child li.snutter,
-body.kviss li.kviss {
-    transform:scale(1);
-
 }
 
 .entry-header {
     margin-bottom: 1rem;
 }
 
-body.kort li.kort a,
-body.lang li.lang a,
-body.kapitler-child li.hovedside a,
-body.let-og-finn li.let-og-finn a,
-body.ord li.ord a,
-body.gjore-og-lage li.gjore-og-lage a,
-body.gjore-og-lage-child li.gjore-og-lage a,
-body.filmer li.filmer a,
-body.filmer-child li.filmer a,
-body.snutter li.snutter a,
-body.snutter-child li.snutter a,
-body.kviss li.kviss a {
-    border-color: #4CAF50;
+body.kort li.kort a::after,
+body.lang li.lang a::after,
+body.kapitler-child li.hovedside a::after,
+body.let-og-finn li.let-og-finn a::after,
+body.ord li.ord a::after,
+body.gjore-og-lage li.gjore-og-lage a::after,
+body.gjore-og-lage-child li.gjore-og-lage a::after,
+body.filmer li.filmer a::after,
+body.filmer-child li.filmer a::after,
+body.snutter li.snutter a::after,
+body.snutter-child li.snutter a::after,
+body.kviss li.kviss a::after {
+    border-color: #58ce5d;
+    transform:scale(1.3);
 }
 
 body.snutter-child h2 {
