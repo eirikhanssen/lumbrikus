@@ -1131,10 +1131,6 @@ li.kviss a::after {
     margin-left: 1.5vw;
     }
     
-    html .internal-chapter-links span.linktext {
-        font-size: .6em;
-    }
-
 }
 
 @media screen and (min-width: 55em) {
@@ -1194,13 +1190,13 @@ li.kviss a::after {
 .internal-chapter-links span.linktext {
     position: absolute;
     display: block;
-    top: calc(100% + 1em);
+    top: 50%;
     left: 50%;
-    transform:translate(-50%,0);
+    transform:translate(-50%,1.5rem);
     white-space: pre;
     line-height: 1em;
     width: auto;
-    font-size: .5em;
+    font-size: .7rem;
     font-weight:bold;
     display:none;
     text-align: center;
@@ -1253,7 +1249,6 @@ a:focus span.linktext {
 
 .child-page-links.textimage a:hover {
     box-shadow: 0 0 0.25rem #aaa;
-
 }
 
 .child-page-links.textimage a:hover figure,
@@ -1277,9 +1272,7 @@ body.kviss li.kviss span.linktext {
     display:block;
     animation:none;
     font-weight: bold;
-    font-size: .5em;
-    transform:translate(-50%,-.8em);
-
+    background-color: yellowgreen;
 }
 
 body.kort li.kort,
@@ -1489,13 +1482,14 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .chapter_bigpicture img {
-    max-height: calc(100vh - 8rem);
+    max-height: calc(100vh - 10rem);
     max-width: calc(100vw - 1rem);
     box-shadow: 0 0 .5em rgba(0,0,0,0.4);
     border: 2px solid black;
     background-color: white;
     padding: .25rem;
     width: auto;
+    margin-top:1rem;
 }
 
 .chapter_bigpicture:hover img,
