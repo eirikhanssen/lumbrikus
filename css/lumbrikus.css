@@ -12,64 +12,6 @@ Open Sans Condensed*
 Roboto*
 */
 
-body[class*=kap-]::before {
-    position: absolute;
-    content:"";
-    display: block;
-    z-index: -10;
-    background: rgba(192, 140, 106, 0.3);
-    width:1em;
-    height: 1em;
-    line-height: 1em;
-    text-align: center;
-    color:white;
-    font-size: 2em;
-    font-family: sans-serif;
-    padding:.125em;
-    top:7.25rem;
-    left:0;
-    right:0;
-    margin:auto;
-    color:white;
-    border-radius: 1em;
-}
-body.kap-0::before {
-    content:"0";
-}
-body.kap-1::before {
-    content:"1";
-}
-body.kap-2::before {
-    content:"2";
-}
-body.kap-3::before {
-    content:"3";
-}
-body.kap-4::before {
-    content:"4";
-}
-body.kap-5::before {
-    content:"5";
-}
-body.kap-6::before {
-    content:"6";
-}
-body.kap-7::before {
-    content:"7";
-}
-body.kap-8::before {
-    content:"8";
-}
-body.kap-9::before {
-    content:"9";
-}
-body.kap-10::before {
-    content:"10";
-}
-body.kap-11::before {
-    content:"11";
-}
-
 html{
     font:1.5em/1.25 'Open Sans', sans-serif;
 }
