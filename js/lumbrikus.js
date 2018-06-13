@@ -3,7 +3,7 @@ $( document ).ready(function() {
 
     lightbox.option({
         'wrapAround': true,
-        'albumLabel': 'Bilde %1 av %2',
+        'albumLabel': '%1 / %2',
         'fadeDuration': 200,
         'imageFadeDuration' : 200,
         'resizeDuration': 200,
