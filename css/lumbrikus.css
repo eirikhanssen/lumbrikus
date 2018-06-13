@@ -182,10 +182,18 @@ a[data-lightbox]:only-of-type::before {
     color: white;
     margin-top: .25rem;
 }
-
+#lightbox .lb-details {
+    width: 100%;
+}
 .lb-details .metadata span,
 .lb-details .metadata a {
-    display: block;
+    display: inline-block;
+}
+
+.lb-details .metadata a {
+    float:right;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 #lightbox .lb-close {
@@ -193,7 +201,6 @@ a[data-lightbox]:only-of-type::before {
     top: .5rem;
     right: 2rem;
     background: transparent;
-    ;
     background-image: none;
     padding: 0;
     width: 1em;
@@ -244,7 +251,8 @@ a[data-lightbox]:only-of-type::before {
 }
 
 #lightbox .lb-caption {
-    line-height: 1.25em;
+    width: 100%;
+    line-height: 1em;
 }
 
 .image-set {
