@@ -1805,3 +1805,43 @@ dd::before {
     left: 0;
     right: 0;
 }
+
+@keyframes heilaerer {
+    from {
+        left: -4rem;
+    }
+    
+    to {
+        left:0;
+    }
+}
+
+.heilaerer {
+    position: absolute;
+    left: -4rem;
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    background-image: url('/media/svg/heilaerer.svg');
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation-name: heilaerer;
+    animation-delay: 1s;
+    animation-duration: .25s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+}
+
+.heilaerer:hover,
+.heilaerer:focus {
+    background-size: 100% auto;
+}
+
+@media screen {
+    .heilaerer span {
+        display: none;
+    }
+}
