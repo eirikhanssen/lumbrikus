@@ -1812,32 +1812,75 @@ dd::before {
     }
     
     to {
-        left:0;
+        left:1.5rem;
+    }
+}
+
+@keyframes hen_snakker {
+    from {
+        left: -4rem;
+    }
+    
+    to {
+        left:-.75rem;
     }
 }
 
 .heilaerer {
     position: absolute;
-    left: -4rem;
+    left: 0rem;
+    top:4.9rem;
     display: block;
     width: 4rem;
     height: 4rem;
+    z-index: 100;
+    
+}
+.heilaerer::before, .heilaerer::after {
+    content:"";
+    position: absolute;
+    width:3em;
+    height:3em;
+}
+
+.heilaerer::before {
+    background-image: url('/media/img/hen_snakker.png');
+    background-size: 100% auto;
+    top:.3rem;
+    left: -4rem;
+    z-index: -1;
+    animation-name: hen_snakker;
+    animation-delay: 1s;
+    animation-duration: .5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    border-radius: 100%;
+    transform:rotate(0);
+}
+
+.heilaerer::after {
+    height:4rem;
+    width: 4rem;
     background-image: url('/media/svg/heilaerer.svg');
     background-size: 80% auto;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center top;
     animation-name: heilaerer;
     animation-delay: 2s;
     animation-duration: .25s;
     animation-timing-function: ease-in;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    top: 5rem;
+    top: 0rem;
+    left:1.5rem;
     z-index:10;
 }
 
-.heilaerer:hover,
-.heilaerer:focus {
+
+
+.heilaerer:hover::after,
+.heilaerer:focus::after {
     background-size: 100% auto;
 }
 
