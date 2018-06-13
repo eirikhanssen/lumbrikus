@@ -107,4 +107,15 @@ $( document ).ready(function() {
             //console.log(lightbox_caption_htmlstring);
         });
       })();
+
+      function insert_hei_larer() {
+        var pathname = window.location.pathname;
+        var is_chapter_page = (pathname.match(/kapitler\/kap-/) !== null);
+        if(is_chapter_page) {
+            var new_url = pathname.replace(/^.+?(kap-[0-9]+).*?$/, '/laererveil/$1/');
+            var el = $($.parseHTML('<a class="heilaerer" href="' + new_url + '" alt="Se lærerveiledningen for dette kapitlet"><span>se lærerveiledningen for dette kapitlet</span></a>'));
+            $('main').prepend(el);
+        }
+    }
+    insert_hei_larer();
 });
