@@ -309,10 +309,13 @@ a[data-lightbox]:only-of-type::before {
     /* new rules */
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     justify-items: center;
     align-items: center;
     align-content: center;
+}
+.siteheader > * + * {
+    margin-left: 2rem;
 }
 
 @media screen and (min-width: 20em) {
