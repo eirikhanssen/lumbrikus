@@ -1868,12 +1868,12 @@ dd::before {
     background-position: center top;
     animation-name: heilaerer;
     animation-delay: 2s;
-    animation-duration: .25s;
+    animation-duration: .1s;
     animation-timing-function: ease-in;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     top: 0rem;
-    left:1.5rem;
+    left:-4rem;
     z-index:10;
 }
 
