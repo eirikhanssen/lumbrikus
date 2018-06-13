@@ -1827,12 +1827,13 @@ dd::before {
     background-repeat: no-repeat;
     background-position: center center;
     animation-name: heilaerer;
-    animation-delay: 1s;
+    animation-delay: 2s;
     animation-duration: .25s;
     animation-timing-function: ease-in;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    
+    top: 5rem;
+    z-index:10;
 }
 
 .heilaerer:hover,
