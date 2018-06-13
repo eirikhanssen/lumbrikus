@@ -315,7 +315,7 @@ a[data-lightbox]:only-of-type::before {
     align-content: center;
 }
 .siteheader > * + * {
-    margin-left: 2rem;
+    /*! margin-left: 0rem; */
 }
 
 @media screen and (min-width: 20em) {
@@ -342,6 +342,10 @@ a[data-lightbox]:only-of-type::before {
     box-sizing: border-box;
     overflow: visible;
     top: .1em;
+}
+
+.breadcrumb {
+    flex-grow:1;
 }
 
 .breadcrumb ol {
@@ -1708,9 +1712,10 @@ dd::before {
         justify-content: center;
         align-content: center;
         align-items: center;
+        margin-right: .5rem;
     }
     #same_context_nav>* {
-        margin: 0em .5rem;
+        margin: 0em .1rem;
     }
     #same_context_nav .prev-chapter-link a,
     #same_context_nav .next-chapter-link a {
