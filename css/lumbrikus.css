@@ -1815,6 +1815,8 @@ dd::before {
 }
 
 .heilaerer {
+    overflow:hidden;
+    
     position: relative;
     left: 0rem;
     top:0rem;
@@ -1847,8 +1849,8 @@ dd::before {
     background-size: 80% auto;
     background-repeat: no-repeat;
     background-position: center top;
-    top: -.2rem;
-    left:1.25rem;
+    top: 0;
+    left:1.2rem;
     z-index:10;
 }
 
