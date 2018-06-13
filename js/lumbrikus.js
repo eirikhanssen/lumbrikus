@@ -114,7 +114,7 @@ $( document ).ready(function() {
         if(is_chapter_page) {
             var new_url = pathname.replace(/^.+?(kap-[0-9]+).*?$/, '/laererveil/$1/');
             var el = $($.parseHTML('<a class="heilaerer" href="' + new_url + '" alt="Se lærerveiledningen for dette kapitlet"><span>se lærerveiledningen for dette kapitlet</span></a>'));
-            $('main').prepend(el);
+            $('header.siteheader').prepend(el);
         }
     }
     insert_hei_larer();

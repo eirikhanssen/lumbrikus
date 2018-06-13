@@ -1806,33 +1806,13 @@ dd::before {
     right: 0;
 }
 
-@keyframes heilaerer {
-    from {
-        left: -4rem;
-    }
-    
-    to {
-        left:1.5rem;
-    }
-}
-
-@keyframes hen_snakker {
-    from {
-        left: -4rem;
-    }
-    
-    to {
-        left:-.75rem;
-    }
-}
-
 .heilaerer {
-    position: absolute;
+    position: relative;
     left: 0rem;
-    top:4.9rem;
-    display: block;
+    top:0rem;
+    display: inline-block;
     width: 4rem;
-    height: 4rem;
+    height: 2rem;
     z-index: 100;
     
 }
@@ -1846,38 +1826,23 @@ dd::before {
 .heilaerer::before {
     background-image: url('/media/img/hen_snakker.png');
     background-size: 100% auto;
-    top:.3rem;
-    left: -4rem;
-    z-index: -1;
-    animation-name: hen_snakker;
-    animation-delay: 1s;
-    animation-duration: .5s;
-    animation-timing-function: ease-in;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    top:.1rem;
+    left: 0rem;
     border-radius: 100%;
     transform:rotate(0);
 }
 
 .heilaerer::after {
-    height:4rem;
-    width: 4rem;
+    height:3rem;
+    width: 3rem;
     background-image: url('/media/svg/heilaerer.svg');
     background-size: 80% auto;
     background-repeat: no-repeat;
     background-position: center top;
-    animation-name: heilaerer;
-    animation-delay: 2s;
-    animation-duration: .1s;
-    animation-timing-function: ease-in;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    top: 0rem;
-    left:-4rem;
+    top: -.2rem;
+    left:1.25rem;
     z-index:10;
 }
-
-
 
 .heilaerer:hover::after,
 .heilaerer:focus::after {
