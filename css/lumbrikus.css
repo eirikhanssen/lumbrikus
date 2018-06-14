@@ -1827,6 +1827,10 @@ dd::before {
 .hei.elev {
     width: 5rem;
 }
+.hei.laerer {
+    width:4.8rem;
+    
+}
 
 .hei::before  {
     content:"";
@@ -1849,14 +1853,19 @@ dd::before {
     background-repeat: no-repeat;
     background-position: center top;
     top: 0;
-    left:1.2rem;
+    left:2rem;
     z-index:10;
 }
 
 .hei.laerer::before {
+    width: 4rem;
+    left:-.5rem;
+    background-size: 100%;
+    background-position: left center;
     background-image: url('/media/img/hen-snakker.png');
 }
 .hei.laerer::after {
+    left:2rem;
     background-image: url('/media/svg/hei-laerer.svg');
 }
 .hei.elev::before {
