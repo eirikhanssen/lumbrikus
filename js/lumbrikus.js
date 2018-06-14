@@ -113,9 +113,19 @@ $( document ).ready(function() {
         var is_chapter_page = (pathname.match(/kapitler\/kap-/) !== null);
         if(is_chapter_page) {
             var new_url = pathname.replace(/^.+?(kap-[0-9]+).*?$/, '/laererveil/$1/');
-            var el = $($.parseHTML('<a class="heilaerer" href="' + new_url + '" alt="Se lærerveiledningen for dette kapitlet"><span>se lærerveiledningen for dette kapitlet</span></a>'));
+            var el = $($.parseHTML('<a class="hei laerer" href="' + new_url + '" title="Se lærerveiledningen for dette kapitlet"><span>se lærerveiledningen for dette kapitlet</span></a>'));
             $('header.siteheader').append(el);
         }
     }
     insert_hei_larer();
+    function insert_hei_elev() {
+        var pathname = window.location.pathname;
+        var is_chapter_page = (pathname.match(/laererveil\/kap-/) !== null);
+        if(is_chapter_page) {
+            var new_url = pathname.replace(/^.+?(kap-[0-9]+).*?$/, '/kapitler/$1/');
+            var el = $($.parseHTML('<a class="hei elev" href="' + new_url + '" title="Til innholdet i kapitlet"><span>Se innholdet i dette kapitlet</span></a>'));
+            $('header.siteheader').append(el);
+        }
+    }
+    insert_hei_elev();
 });

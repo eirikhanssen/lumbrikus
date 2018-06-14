@@ -1813,9 +1813,9 @@ dd::before {
     right: 0;
 }
 
-.heilaerer {
-    overflow:hidden;
-    
+/* hei lærer og hei elev*/
+.hei {
+    overflow: hidden;
     position: relative;
     left: 0rem;
     top:0rem;
@@ -1823,28 +1823,20 @@ dd::before {
     width: 4rem;
     height: 2rem;
     z-index: 100;
-    
-}
-.heilaerer::before, .heilaerer::after {
-    content:"";
-    position: absolute;
-    width:3em;
-    height:3em;
 }
 
-.heilaerer::before {
-    background-image: url('/media/img/hen_snakker.png');
+.hei::before  {
     background-size: 100% auto;
     top:.1rem;
     left: 0rem;
     border-radius: 100%;
-    transform:rotate(0);
 }
 
-.heilaerer::after {
+.hei::after {
+    content:"";
+    position: absolute;
     height:3rem;
     width: 3rem;
-    background-image: url('/media/svg/heilaerer.svg');
     background-size: 80% auto;
     background-repeat: no-repeat;
     background-position: center top;
@@ -1853,13 +1845,27 @@ dd::before {
     z-index:10;
 }
 
-.heilaerer:hover::after,
-.heilaerer:focus::after {
+.hei.laerer::before {
+    background-image: url('/media/img/hen-snakker.png');
+}
+.hei.laerer::after {
+    background-image: url('/media/svg/hei-laerer.svg');
+}
+.hei.elev:before {
+    background-image: url('/media/img/katt-snakker.png');
+}
+
+.hei.elev:after {
+    background-image: url('/media/svg/hei-elev.svg');
+}
+
+.hei:hover::after,
+.hei:focus::after {
     background-size: 100% auto;
 }
 
 @media screen {
-    .heilaerer span {
+    .hei span {
         display: none;
     }
 }
