@@ -1824,8 +1824,16 @@ dd::before {
     height: 2rem;
     z-index: 100;
 }
+.hei.elev {
+    width: 5rem;
+}
 
 .hei::before  {
+    content:"";
+    position: absolute;
+    display: block;
+    width:2rem;
+    height:2rem;
     background-size: 100% auto;
     top:.1rem;
     left: 0rem;
@@ -1851,11 +1859,15 @@ dd::before {
 .hei.laerer::after {
     background-image: url('/media/svg/hei-laerer.svg');
 }
-.hei.elev:before {
+.hei.elev::before {
+    background-size: 100%;
+    
+    width:3rem;
     background-image: url('/media/img/katt-snakker.png');
 }
 
-.hei.elev:after {
+.hei.elev::after {
+    left: 2rem;
     background-image: url('/media/svg/hei-elev.svg');
 }
 
