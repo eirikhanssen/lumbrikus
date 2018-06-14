@@ -1870,13 +1870,14 @@ dd::before {
 }
 .hei.elev::before {
     background-size: 100%;
-    
-    width:3rem;
+    background-position: top -.5rem center;
+    width:4rem;
+    top: 0;
     background-image: url('/media/img/katt-snakker.png');
 }
 
 .hei.elev::after {
-    left: 2rem;
+    left: 2.3rem;
     background-image: url('/media/svg/hei-elev.svg');
 }
 
