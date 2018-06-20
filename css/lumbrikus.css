@@ -1069,12 +1069,13 @@ figure.ord .opphav {
     background: rgba(255, 255, 255, 0.75);
     color: black;
     max-width: 100%;
-    right: 11px;
+    right: 9px;
     top: -30px;
     font-size: .5rem;
     line-height: 1.3em;
     padding: .15em .3em;
     font-weight: bold;
+    z-index: 10;
 }
 
 .wp-caption .wp-caption-text .opphav {
