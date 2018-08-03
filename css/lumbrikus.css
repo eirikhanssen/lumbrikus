@@ -961,6 +961,7 @@ figure.ord img {
     flex-shrink: 1;
     width: 100%;
     height: auto;
+    padding-bottom: 1.5rem;
 }
 
 figure.ord figcaption,
