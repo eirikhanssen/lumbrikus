@@ -328,7 +328,8 @@
 
   <g class="hovedbidragsytere">
     <text class="bidragsytere" x="0" y="320">
-    <tspan x="-382" dy="00">Forfatter: Jorun Gulbrandsen</tspan>
+    <tspan x="-382" dy="00">Utviklet av NAFO</tspan>
+    <tspan x="-382" dy="25">Forfatter: Jorun Gulbrandsen</tspan>
     <tspan x="-382" dy="25">Illustratør: Svetlana Voronkova</tspan>
     <tspan x="-382" dy="25">Interaksjonsdesign: Eirik Hanssen</tspan>
     </text>
