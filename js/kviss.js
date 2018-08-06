@@ -244,7 +244,7 @@ $( document ).ready(function() {
                         "Små korn i hann-blomsten",
                         "En bolle med rosiner"
                     ],
-                    riktige_svar: ["En bolle med rosiner"],
+                    riktige_svar: ["Små korn i hann-blomsten"],
         
                 },
                 {
@@ -1890,9 +1890,9 @@ $( document ).ready(function() {
                         "Havremel",
                         "Havregryn",
                         "Havregrøt",
-                        "Alle de tre alternativene over"
+                        "Alle svarene er riktige"
                     ],
-                    riktige_svar: ["Alle de tre alternativene over"]
+                    riktige_svar: ["Alle svarene er riktige"]
                 },
                 {
                     spm: "Hva er korn?",
@@ -2194,9 +2194,9 @@ $( document ).ready(function() {
                         "Samle mat om høsten",
                         "Gå i dvale (sove)",
                         "Fly vekk fra Norge",
-                        "Alle alternativene over"
+                        "Alle svarene er riktige"
                     ],
-                    riktige_svar: ["Alle alternativene"]
+                    riktige_svar: ["Alle svarene er riktige"]
                 },
                 {
                     spm: "Hva er dette?",
@@ -2262,9 +2262,9 @@ $( document ).ready(function() {
                         "Det samler mat om høsten",
                         "Det får tjukkere pels ",
                         "Det får gråere pels",
-                        "Alle svaralternativene over"
+                        "Alle svarene er riktige"
                     ],
-                    riktige_svar: ["Alle svaralternativene"]
+                    riktige_svar: ["Alle svarene er riktige"]
                 }
             ]
         };
