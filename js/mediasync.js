@@ -225,3 +225,23 @@ $( document ).ready(function() {
 
     window.setTimeout(updateTranslationFromBodyAttrs, 100);
 });
+
+function addExtraButtons(){
+    var btns = document.createElement('div');
+    var btn1 = document.createElement('button');
+    var btn2 = document.createElement('button');
+    var btn3 = document.createElement('button');
+    btn1.innerHTML="1x";
+    btn2.innerHTML="2x";
+    btn2.innerHTML="3x";
+    btn1.addEventListener('click',function() {$('audio').each(function(){this.playbackRate=1;});}, false);
+    btn2.addEventListener('click',function() {$('audio').each(function(){this.playbackRate=2;});}, false);
+    btn3.addEventListener('click',function() {$('audio').each(function(){this.playbackRate=3;});}, false);
+    btns.appendChild(btn1);
+    btns.appendChild(btn2);
+    btns.appendChild(btn3);
+    btns.setAttribute('style','position:fixed; bottom:0;right:0;display:flex;');
+    document.querySelector('body').appendChild(btns);
+    }
+
+window.addEventListener('load', function(){window.setTimeout(1000,addExtraButtons);},false);
