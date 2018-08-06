@@ -233,7 +233,7 @@ function addExtraButtons(){
     var btn3 = document.createElement('button');
     btn1.innerHTML="1x";
     btn2.innerHTML="2x";
-    btn2.innerHTML="3x";
+    btn3.innerHTML="3x";
     btn1.addEventListener('click',function() {$('audio').each(function(){this.playbackRate=1;});}, false);
     btn2.addEventListener('click',function() {$('audio').each(function(){this.playbackRate=2;});}, false);
     btn3.addEventListener('click',function() {$('audio').each(function(){this.playbackRate=3;});}, false);
