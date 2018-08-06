@@ -1894,3 +1894,11 @@ dd::before {
         display: none;
     }
 }
+
+/* hide something */
+
+body.kap-0.laererveil-child .footer-nav a[href*='til-foreldre'],
+body.kap-11.laererveil-child .footer-nav a[href*='til-foreldre'],
+ {
+    display:none;
+}
