@@ -2636,7 +2636,7 @@ $( document ).ready(function() {
                 $('#kviss-totalt-mulige').html(grand_possible.toString());
                 $('#kviss-poengsum-prosent').html(grand_percent.toString() + '%');
                 $('#kviss-poengsum-smil').append(smileys);
-                $('#quiz-result'.attr('style',''));
+                $('#quiz-result').attr('style','');
             }
 
             $('#til_resultater').click(function(){
