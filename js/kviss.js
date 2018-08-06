@@ -2587,6 +2587,7 @@ $( document ).ready(function() {
             
             function generate_scoreboard(){
                 var scoreboard = $('<article id="kviss-scoreboard">\n\
+                <div id="quiz-result" style="display:none">\n\
     <h2>Gratulerer!</h2>\n\
     <p class="kviss-ferdig">\n\
         <span class="kviss-score">\n\
@@ -2597,6 +2598,7 @@ $( document ).ready(function() {
     <div id="kviss-poengsum-smil"></div>\n\
     <p id="kviss-poengsum-prosent"></p>\n\
     <p class="kviss-ferdig">Prøv igjen!</p>\n\
+    </div><!-- #quiz-result -->\n\
 </article>');
                 scoreboard.append(kviss_start_knapp());
                 return scoreboard;
@@ -2634,6 +2636,7 @@ $( document ).ready(function() {
                 $('#kviss-totalt-mulige').html(grand_possible.toString());
                 $('#kviss-poengsum-prosent').html(grand_percent.toString() + '%');
                 $('#kviss-poengsum-smil').append(smileys);
+                $('#quiz-result'.attr('style',''));
             }
 
             $('#til_resultater').click(function(){
