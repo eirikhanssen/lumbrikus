@@ -244,4 +244,4 @@ function addExtraButtons(){
     document.querySelector('body').appendChild(btns);
     }
 
-window.addEventListener('load', function(){window.setTimeout(1000,addExtraButtons);},false);
+window.addEventListener('load', addExtraButtons,false);
