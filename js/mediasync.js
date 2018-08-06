@@ -226,20 +226,31 @@ $( document ).ready(function() {
     window.setTimeout(updateTranslationFromBodyAttrs, 100);
 });
 
+
+
 function addExtraButtons(){
+    function clearSpeedButtons() {
+        $('.speedcontrol').each().attr('style','');
+    }
+    function activate(el) {
+        el.setAttribute('style','font-weight:bold; box-shadow: 0 -5px 0 red;')
+    }
     var btns = document.createElement('div');
-    var btn1 = document.createElement('button');
+    var btn0 = document.createElement('button');
     var btn2 = document.createElement('button');
     var btn3 = document.createElement('button');
+    btn0.innerHTML="0.5x";
     btn1.innerHTML="1x";
     btn2.innerHTML="2x";
-    btn3.innerHTML="3x";
-    btn1.addEventListener('click',function() {$('audio').each(function(){this.playbackRate=1;});}, false);
-    btn2.addEventListener('click',function() {$('audio').each(function(){this.playbackRate=2;});}, false);
-    btn3.addEventListener('click',function() {$('audio').each(function(){this.playbackRate=3;});}, false);
+    btn0.setAttribute('class','speedcontrol');
+    btn1.setAttribute('class','speedcontrol');
+    btn2.setAttribute('class','speedcontrol');
+    btn0.addEventListener('click',function() {$('audio').each(function(){this.playbackRate=0.5;}); clearSpeedButtons(); activate(btn0)}, false);
+    btn1.addEventListener('click',function() {$('audio').each(function(){this.playbackRate=1;}); clearSpeedButtons(); activate(btn1)}, false);
+    btn2.addEventListener('click',function() {$('audio').each(function(){this.playbackRate=2;}); clearSpeedButtons(); activate(btn2)}, false);
+    btns.appendChild(btn0);
     btns.appendChild(btn1);
     btns.appendChild(btn2);
-    btns.appendChild(btn3);
     btns.setAttribute('style','position:fixed; bottom:0;right:0;display:flex;');
     document.querySelector('body').appendChild(btns);
     }
