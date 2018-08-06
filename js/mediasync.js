@@ -237,17 +237,17 @@ function addExtraButtons(){
     }
     var btns = document.createElement('div');
     var btn0 = document.createElement('button');
+    var btn1 = document.createElement('button');
     var btn2 = document.createElement('button');
-    var btn3 = document.createElement('button');
     btn0.innerHTML="0.5x";
     btn1.innerHTML="1x";
     btn2.innerHTML="2x";
     btn0.setAttribute('class','speedcontrol');
     btn1.setAttribute('class','speedcontrol');
     btn2.setAttribute('class','speedcontrol');
-    btn0.addEventListener('click',function() {$('audio').each(function(){this.playbackRate=0.5;}); clearSpeedButtons(); activate($('.speedcontrol')[0])}, false);
-    btn1.addEventListener('click',function() {$('audio').each(function(){this.playbackRate=1;}); clearSpeedButtons(); activate($('.speedcontrol')[1])}, false);
-    btn2.addEventListener('click',function() {$('audio').each(function(){this.playbackRate=2;}); clearSpeedButtons(); activate($('.speedcontrol')[2])}, false);
+    btn0.addEventListener('click',function() {$('audio').each(function(){this.playbackRate=0.5;}); clearSpeedButtons(); activate(btn0)}, false);
+    btn1.addEventListener('click',function() {$('audio').each(function(){this.playbackRate=1;}); clearSpeedButtons(); activate(btn1)}, false);
+    btn2.addEventListener('click',function() {$('audio').each(function(){this.playbackRate=2;}); clearSpeedButtons(); activate(btn2)}, false);
     btns.appendChild(btn0);
     btns.appendChild(btn1);
     btns.appendChild(btn2);
