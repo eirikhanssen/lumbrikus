@@ -229,12 +229,6 @@ $( document ).ready(function() {
 
 
 function addExtraButtons(){
-    function clearSpeedButtons() {
-        $('.speedcontrol').each().attr('style','');
-    }
-    function activate(el) {
-        el.setAttribute('style','font-weight:bold; box-shadow: 0 -5px 0 red;')
-    }
     var btns = document.createElement('div');
     var btn0 = document.createElement('button');
     var btn1 = document.createElement('button');
@@ -247,18 +241,12 @@ function addExtraButtons(){
     btn2.setAttribute('class','speedcontrol');
     btn0.addEventListener('click',function() {
         $('audio').each(function(){this.playbackRate=0.5;});
-        clearSpeedButtons();
-        $('.speedcontrol')[2].attr('style','font-weight:bold;');
     }, false);
     btn1.addEventListener('click',function() {
         $('audio').each(function(){this.playbackRate=1.0;});
-        clearSpeedButtons();
-        $('.speedcontrol')[2].attr('style','font-weight:bold;');
     }, false);
     btn2.addEventListener('click',function() {
         $('audio').each(function(){this.playbackRate=2.0;});
-        clearSpeedButtons();
-        $('.speedcontrol')[2].attr('style','font-weight:bold;');
     }, false);
     btns.appendChild(btn0);
     btns.appendChild(btn1);
