@@ -248,17 +248,17 @@ function addExtraButtons(){
     btn0.addEventListener('click',function() {
         $('audio').each(function(){this.playbackRate=0.5;});
         clearSpeedButtons();
-        activate(this);
+        $('.speedcontrol')[2].attr('style','font-weight:bold;');
     }, false);
     btn1.addEventListener('click',function() {
         $('audio').each(function(){this.playbackRate=1.0;});
         clearSpeedButtons();
-        activate(this);
+        $('.speedcontrol')[2].attr('style','font-weight:bold;');
     }, false);
     btn2.addEventListener('click',function() {
         $('audio').each(function(){this.playbackRate=2.0;});
         clearSpeedButtons();
-        activate(this);
+        $('.speedcontrol')[2].attr('style','font-weight:bold;');
     }, false);
     btns.appendChild(btn0);
     btns.appendChild(btn1);
