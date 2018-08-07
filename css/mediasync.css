@@ -733,3 +733,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4ffa3', end
 }
 
 /* end language switch controls */
+
+/* show outline on timed elements, indicating possible interaction */
+span[data-begin][data-end]:hover {
+	outline:2px solid orange;
+	cursor: pointer;
+}
