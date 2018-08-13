@@ -226,37 +226,6 @@ $( document ).ready(function() {
     window.setTimeout(updateTranslationFromBodyAttrs, 100);
 }); //$( document ).ready( function() {...} )
 
-
-
-function addExtraButtons(){
-    var btns = document.createElement('div');
-    var btn0 = document.createElement('button');
-    var btn1 = document.createElement('button');
-    var btn2 = document.createElement('button');
-    btn0.innerHTML="0.5x";
-    btn1.innerHTML="1x";
-    btn2.innerHTML="2x";
-    btn0.setAttribute('class','speedcontrol');
-    btn1.setAttribute('class','speedcontrol');
-    btn2.setAttribute('class','speedcontrol');
-    btn0.addEventListener('click',function() {
-        $('audio').each(function(){this.playbackRate=0.5;});
-    }, false);
-    btn1.addEventListener('click',function() {
-        $('audio').each(function(){this.playbackRate=1.0;});
-    }, false);
-    btn2.addEventListener('click',function() {
-        $('audio').each(function(){this.playbackRate=2.0;});
-    }, false);
-    btns.appendChild(btn0);
-    btns.appendChild(btn1);
-    btns.appendChild(btn2);
-    btns.setAttribute('style','position:fixed; bottom:0;right:0;display:flex;');
-    document.querySelector('body').appendChild(btns);
-} // addExtraButtons()
-
-window.addEventListener('load', addExtraButtons,false);
-
 function time2sec(str) {
     // convert timestring to seconds
     var hours, minutes, seconds;
