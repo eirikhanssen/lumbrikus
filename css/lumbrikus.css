@@ -17,7 +17,8 @@ html {
     font: 1.5em/1.25 'Open Sans', sans-serif;
 }
 
-html body.laererveil-child {
+html body.laererveil-child,
+html body.om-lumbrikus {
     font-size: 0.67em;
 }
 
