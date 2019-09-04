@@ -89,7 +89,7 @@ $( document ).ready(function() {
 
             } else {
                 //console.log('does not have anchor');
-                $(this).addClass('no-link-to-attachment-page');
+                //$(this).addClass('no-link-to-attachment-page');
                 el_anchor_around_image = document.createElement('a');
                 el_anchor_around_image.appendChild(image_small_el);
             }
