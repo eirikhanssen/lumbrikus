@@ -19,17 +19,6 @@ $( document ).ready(function() {
                     riktige_svar: ["Jenny"],
                 },
                 {
-                    spm: "Hvem er dette <em>ikke</em>?",
-                    bilde: "/media/img/kviss_jenny_hode.jpg",
-                    bildetekst: "Ei jente med blondt hår. Hun har en hodelykt på seg.",
-                    svaralternativer: [
-                        "Herr Høne",
-                        "Jenny",
-                        "Sobia"
-                    ],
-                    riktige_svar: ["Herr Høne", "Sobia"],
-                },
-                {
                     spm: "Hvem er dette?",
                     bilde: "/media/img/kviss_samir_hode.jpg",
                     bildetekst: "En gutt med brunt, krøllete hår. Han har en hodelykt på seg.",
