@@ -41,8 +41,10 @@ text tspan {
     paint-order: stroke;
 }
 
-#g_ord text {display:none;}
-#g_ord text.show {
+#g_ord text,
+#g_ord use {display:none;}
+#g_ord text.show,
+#g_ord use.show {
     display: block;
 }
 
