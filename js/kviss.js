@@ -19,17 +19,6 @@ $( document ).ready(function() {
                     riktige_svar: ["Jenny"],
                 },
                 {
-                    spm: "Hvem er dette <em>ikke</em>?",
-                    bilde: "/media/img/kviss_jenny_hode.jpg",
-                    bildetekst: "Ei jente med blondt hår. Hun har en hodelykt på seg.",
-                    svaralternativer: [
-                        "Herr Høne",
-                        "Jenny",
-                        "Sobia"
-                    ],
-                    riktige_svar: ["Herr Høne", "Sobia"],
-                },
-                {
                     spm: "Hvem er dette?",
                     bilde: "/media/img/kviss_samir_hode.jpg",
                     bildetekst: "En gutt med brunt, krøllete hår. Han har en hodelykt på seg.",
@@ -512,7 +501,7 @@ $( document ).ready(function() {
                 },
                 {
                     spm: "Hva gjør røtter?",
-                    bilde: "/wp-content/uploads/NAT_0724.jpg",
+                    bilde: "/wp-content/uploads/NAT_0724-kviss.png",
                     bildetekst: "",
                     svaralternativer: [
                         "Holder planta fast i jorda",
@@ -633,7 +622,7 @@ $( document ).ready(function() {
                 },
                 {
                     spm: "Hvem har hus på ryggen?",
-                    bilde: "",
+                    bilde: "/wp-content/uploads/snegl_kviss.png",
                     bildetekst: "",
                     svaralternativer: [
                         "Kamelene",
@@ -770,7 +759,7 @@ $( document ).ready(function() {
                 },
                 {
                     spm: "Hva er pollinering (bestøvning)?",
-                    bilde: "/media/svg/04-blomsterbefruktning-anim.svg",
+                    bilde: "/wp-content/uploads/pollen-korn-kviss.jpg",
                     bildetekst: "",
                     svaralternativer: [
                         "At det er mye støv fra veien",
@@ -836,7 +825,7 @@ $( document ).ready(function() {
                 },
                 {
                     spm: "Er bestøvning og befruktning det samme?",
-                    bilde: "/media/svg/04-blomsterbefruktning-anim.svg",
+                    bilde: "/wp-content/uploads/pollen-korn-kviss.jpg",
                     bildetekst: "",
                     svaralternativer: [
                         "Nei. Bestøvning betyr pollen på arr. Befruktning betyr sæd-celle til egg-celle.",
@@ -902,7 +891,7 @@ $( document ).ready(function() {
                 },
                 {
                     spm: "Hvem kan bestøve erteblomsten?",
-                    bilde: "/wp-content/uploads/NAT_7485.jpg",
+                    bilde: "/wp-content/uploads/Oregon_sugar_pod_II_bloom-2012.jpg",
                     bildetekst: "",
                     svaralternativer: [
                         "Myggen",
@@ -1663,7 +1652,7 @@ $( document ).ready(function() {
                     bildetekst: "",
                     svaralternativer: [
                         "Vinden blåser på dem",
-                        "Fugler spiser bæsj og bæsjer frø",
+                        "Fugler spiser bær og bæsjer frø",
                         "De flyter i havet"
                     ],
                     riktige_svar: ["Fugler spiser bær og bæsjer frø"]
