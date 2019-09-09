@@ -316,7 +316,15 @@
          </text>
       </a>
    </g>
-   
+   <g class="satellite" transform="translate(50,0)">
+			<a xlink:href="/takk/" target="_top" xlink:title="takk">
+			   <ellipse cx="290" cy="370" rx="50" ry="30" fill="#7a2f4f" opacity="0.5"/>
+			   <ellipse class="textbg" cx="290" cy="370" rx="40" ry="20" fill="rgba(0,0,0,0.07);"/>
+			   <text id="takk" x="290" y="400">
+					<tspan x="290" y="400" dy="-20">takk</tspan>
+			   </text>
+			</a>
+	</g>
    
    
   </g>
