@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179028506-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-179028506-1');
+</script>
+<meta name="google-site-verification" content="FQpewIXn3jZinJDatS-e6TlU5V5oPJm-a9VNYRM5WWQ" />
     <meta charset="utf-8">
 	<title>Lumbrikus</title>
     <style type="text/css">
