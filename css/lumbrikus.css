@@ -1,4 +1,4 @@
-/* Typography */
+* Typography */
 
 /* Some fonts from google fonts:
 Montserrat
@@ -314,10 +314,10 @@ a[data-lightbox]:only-of-type::before {
 
 .siteheader {
     padding-top: .25em;
-    min-height: 1.5rem;
+/*    min-height: 1.5rem;*/
     font-size: 5vw;
     line-height: 1em;
-    margin-bottom: 0.35rem;
+    margin-bottom: 0;
     background: #333;
     border-bottom: 1px solid rgb(0, 0, 0);
     position: relative;
@@ -1106,12 +1106,6 @@ figure.ord .opphav {
     margin: 1em 1.5em;
 }
 
-.internal-chapter-links {
-    position: relative;
-    z-index: 1;
-    margin-bottom: 2rem;
-}
-
 body.child-of-kapitler .internal-chapter-links {
     margin-bottom: 1rem;
 }
@@ -1121,7 +1115,7 @@ body.child-of-kapitler .internal-chapter-links {
 .laererveil-child .wp-caption {
     margin: 2em;
 }
-
+/*
 .internal-chapter-links::after {
     opacity: .9;
     content: "";
@@ -1136,6 +1130,13 @@ body.child-of-kapitler .internal-chapter-links {
     top: 20%;
     bottom: 20%;
     z-index: -1;
+}*/
+
+.internal-chapter-links {
+    background-color: rgba(236,236,236,.9);
+    padding: .5rem;
+    border-bottom: 3px solid #bbb;
+    border-top: 3px solid #bbb;
 }
 
 @keyframes svgiconhover {
@@ -1146,14 +1147,15 @@ body.child-of-kapitler .internal-chapter-links {
 
 .internal-chapter-links li {
     text-align: center;
-    width: 8.5vw;
-    height: 8.5vw;
+    width: 2.5rem;
+    height: 2.5rem;
     overflow: visible;
     position: relative;
+    margin: .75rem .25rem;
 }
 
 .internal-chapter-links li+li {
-    margin-left: .9vw;
+
 }
 
 .internal-chapter-links li a {
@@ -1348,6 +1350,7 @@ li.kviss a::after {
 .internal-chapter-links a:focus .linktext,
 .internal-chapter-links a:hover .linktext {
     font-weight: normal;
+    background:white;
 }
 
 .internal-chapter-links span.linktext {
@@ -1355,19 +1358,20 @@ li.kviss a::after {
     display: block;
     top: 100%;
     left: 50%;
-    transform: translate(-50%, .25rem);
+    transform: translate(-50%, -.1rem);
     white-space: pre;
     line-height: 1em;
     width: auto;
-    font-size: 1rem;
+    font-size: .75rem;
     font-weight: bold;
     display: none;
     text-align: center;
-    color: #333;
+    color: black;
     position: absolute;
     box-sizing: content-box;
-    padding: .25em;
-    border-radius: .1em;
+    border: 1px solid black;
+    border-radius: .2rem;
+    padding: .2rem;
     z-index: 1;
 }
 
@@ -1438,8 +1442,9 @@ body.kviss li.kviss span.linktext {
     display: block;
     animation: none;
     font-weight: bold;
-    background-color: #58ce5d;
-    font-size: .9rem;
+    background-color: #fcff9f;
+    border-width: 2px;
+			  
 }
 
 .entry-header {
@@ -1458,8 +1463,8 @@ body.filmer-child li.filmer a::after,
 body.snutter li.snutter a::after,
 body.snutter-child li.snutter a::after,
 body.kviss li.kviss a::after {
-    border-color: #58ce5d;
-    transform: scale(1.3);
+    border-color: black;
+    box-shadow: 0 0 20px #333;
 }
 
 body.snutter-child h2 {
@@ -1888,4 +1893,16 @@ body.kap-0 .footer-nav a[href*="til-foreldre"],
 body.kap-11 .footer-nav a[href*="til-foreldre"]
 {
 	display: none;
+}
+
+/* try and improve mobile layout issues  */
+
+header nav, header nav * {
+    background-color: inherit;
+}
+
+@media screen and (orientation:portrait) {
+    .siteheader {
+	min-height: 6rem;
+    }
 }
