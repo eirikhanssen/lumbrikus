@@ -655,8 +655,9 @@ function til_eleven_link() {
 		$link_url .= "kap-" . $chapter_num . "/";
 	} else {
 		$link_text = "Kapitteloversikt";
-		$link_url = preg_replace($r_domain, $r_domain_replacement, $request_uri) . '/kapitler/';
+		$link_url = '/kapitler/';
 	}
+
 	$html = '<a href="' . $link_url . '">' . $link_text . '</a>';
 	return  $html;
 }
