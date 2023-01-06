@@ -14,6 +14,17 @@ Roboto*
 */
 
 html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+main {flex-grow: 1}
+
+html {
     font: 1.5em/1.25 'Open Sans', sans-serif;
 }
 

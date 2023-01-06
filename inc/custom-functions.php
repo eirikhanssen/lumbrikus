@@ -151,7 +151,7 @@ function lumbrikus_make_textimage_links_to_children($post_id) {
 			return (int)$a->menu_order - (int)$b->menu_order;
 		}
 
-		usort($wanted_children, compare_childpages);
+		usort($wanted_children, "compare_childpages");
 
 		/* sort them depending on menu_order*/
 
@@ -332,7 +332,7 @@ function lumbrikus_nav_internal_chapter_links($chapter, $lvl) {
 
 function lumbrikus_get_chapter_num() {
 	$current_url=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-	$pattern = '/^.+?\/kap-([0-9]+).+$/i';
+	$pattern = '#^.+?/kap-([0-9]+).+$#i';
 	if(strpos($current_url, '/kapitler/kap-') == false) {
 		return "";
 	}
@@ -495,7 +495,7 @@ function lumbrikus_breadcrumbs() {
 			array_push($bc, $p->post_title);
 			$p = get_post($p->post_parent);
 			
-			if(!$p->post_parent) {
+			if(is_null($p->post_parent)) {
 				// reached the outermost parent
 				array_push($bc, $p->post_title);
 			}
@@ -582,27 +582,28 @@ function lumbrikus_page_TOC() {
  * @return string
  */
 function laererveil_link() {
-	$link_url_fragment = "/laererveil/";
-	$link_text = "Lærerveiledning";
-	$current_page_url=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+        $link_url_fragment = "/laererveil/";
+        $link_text = "Lærerveiledning";
+        $request_uri=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+        $r_domain = "#^(https?://[^/]+?)/.+$#";        
+        $r_domain = "#^([^/]+?)/.+$#";
+        $r_domain_replacement = "$1";
+        $url_info = parse_url($request_uri);
+        $link_url = $link_url_fragment;
+        $r_chapter_num = "#^.+?/kap-([0-9]+)/.*$#";
+        $r_chapter_num_replacement = '$1';
+        $chapter_num = "@@@";
+        if (preg_match($r_chapter_num, $request_uri)) {
+                $chapter_num = preg_replace($r_chapter_num, $r_chapter_num_replacement, $request_uri);
+                $link_text .= " – kapittel " . $chapter_num;
+                $link_url .= "kap-" . $chapter_num . "/";
+        } else {
+                $link_text .= " – oversikt ";
+        }
+        $html = '<a href="' . $link_url . '">' . $link_text . '</a>';
 
-	$r_domain = "/^([^/]+?)\/.+$/";
-	$r_domain_replacement = "$1";
-
-	$link_url = preg_replace($r_domain, $r_domain_replacement, $current_page_url) . $link_url_fragment;
-
-	$r_chapter_num = "/^.+?\/kap-([0-9]+)\/.*$/";
-	$r_chapter_num_replacement = '$1';
-	$chapter_num = "@@@";
-	if (preg_match($r_chapter_num, $current_page_url)) {
-		$chapter_num = preg_replace($r_chapter_num, $r_chapter_num_replacement, $current_page_url);
-		$link_text .= " – kapittel " . $chapter_num;
-		$link_url .= "kap-" . $chapter_num . "/";
-	} else {
-		$link_text .= " – oversikt ";
-	}
-	$html = '<a href="' . $link_url . '">' . $link_text . '</a>';
 	return  $html;
+
 }
 
 /**
@@ -614,18 +615,15 @@ function laererveil_link() {
 function til_foreldre_link() {
 	$link_url_fragment = "/til-foreldre/";
 	$link_text = "Til foreldre";
-	$current_page_url=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-
-	$r_domain = "/^([^/]+?)\/.+$/";
+    $request_uri=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; 
+	$r_domain = "#^([^/]+?)\/.+$#";
 	$r_domain_replacement = "$1";
-
-	$link_url = preg_replace($r_domain, $r_domain_replacement, $current_page_url) . $link_url_fragment;
-
-	$r_chapter_num = "/^.+?\/kap-([0-9]+)\/.*$/";
+	$link_url = $link_url_fragment;
+	$r_chapter_num = "#^.+?/kap-([0-9]+)/.*$#";
 	$r_chapter_num_replacement = '$1';
 	$chapter_num = "@@@";
-	if (preg_match($r_chapter_num, $current_page_url)) {
-		$chapter_num = preg_replace($r_chapter_num, $r_chapter_num_replacement, $current_page_url);
+	if (preg_match($r_chapter_num, $request_uri)) {
+		$chapter_num = preg_replace($r_chapter_num, $r_chapter_num_replacement, $request_uri);
 		$link_text .= " – kapittel " . $chapter_num;
 		$link_url .= "kap-" . $chapter_num . "/";
 	} else {
@@ -644,23 +642,20 @@ function til_foreldre_link() {
 function til_eleven_link() {
 	$link_url_fragment = "/kapittel/";
 	$link_text = "Kapittel";
-	$current_page_url=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-
-	$r_domain = "/^([^/]+?)\/.+$/";
+	$request_uri=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+	$r_domain = "#^([^/]+?)/.+$#";
 	$r_domain_replacement = "$1";
-
-	$link_url = preg_replace($r_domain, $r_domain_replacement, $current_page_url) . $link_url_fragment;
-
-	$r_chapter_num = "/^.+?\/kap-([0-9]+)\/.*$/";
+	$link_url = $link_url_fragment;
+	$r_chapter_num = "#^.+?/kap-([0-9]+)/.*$#";
 	$r_chapter_num_replacement = '$1';
 	$chapter_num = "@@@";
-	if (preg_match($r_chapter_num, $current_page_url)) {
-		$chapter_num = preg_replace($r_chapter_num, $r_chapter_num_replacement, $current_page_url);
+	if (preg_match($r_chapter_num, $request_uri)) {
+		$chapter_num = preg_replace($r_chapter_num, $r_chapter_num_replacement, $request_uri);
 		$link_text .= " " . $chapter_num;
 		$link_url .= "kap-" . $chapter_num . "/";
 	} else {
 		$link_text = "Kapitteloversikt";
-		$link_url = preg_replace($r_domain, $r_domain_replacement, $current_page_url) . '/kapitler/';
+		$link_url = preg_replace($r_domain, $r_domain_replacement, $request_uri) . '/kapitler/';
 	}
 	$html = '<a href="' . $link_url . '">' . $link_text . '</a>';
 	return  $html;
@@ -680,13 +675,10 @@ function create_chapter_mainpage_image_fullscreen_link() {
 						"/media/img/09-let-og-finn-bg.jpg",
 						"/media/img/10-let-og-finn-bg.jpg",
 						"/media/img/11-farvel-bg.jpg");
-
-
 	$chapterimage_url = $chapterimages[$ch];
 	$pagetitle = get_the_title();
 
 	$html = '<header class="entry-header"><h1 class="entry-title">' . $pagetitle . '</h1></header>';
-
 	$html .= '<a id="chapter_mainpage_image_link" title="Se stort bilde" href="' . $chapterimage_url . '"' . ' data-lightbox="kapittelbilde" data-title="' . $pagetitle . '">';
 	$html .= '<img src=" ' . $chapterimage_url . ' " alt="' . $pagetitle . '" />';
 	$html .= '</a>';
@@ -719,11 +711,10 @@ function lumbrikus_get_current_context_url($url) {
         return $context_url . "/";
     }
     return $context_url;
-    
 }
 
 function lumbrikus_get_current_chapter($url) {
-   $search_pattern = '/kap-([0-9]+)/';
+   $search_pattern = '#kap-([0-9]+)#';
    $matches = [];
    if(preg_match($search_pattern, $url, $matches) == 1) {
 	   return $matches[1];
@@ -740,14 +731,14 @@ function lumbrikus_has_chapter_num($url) {
 }
 
 function lumbrikus_strip_trailing_slash($str) {
-    $pattern = '/^(.+?)\/?$/';
+    $pattern = '#^(.+?)/?$#';
     $replacement = '\1';
     $str_no_trailing_slash = preg_replace($pattern,$replacement,$str);
     return $str_no_trailing_slash;
 }
 
 function lumbrikus_new_chapter_link($context_url, $chapter_num) {
-   $pattern = '/^(.+?(kap-))[0-9]+(.+?)\/?$/';
+   $pattern = '#^(.+?(kap-))[0-9]+(.+?)/?$#';
    $replacement_url = '\1%d\3';
    $replacement_text_and_alt = '\2%d\3';
    $new_href = sprintf(preg_replace($pattern, $replacement_url, $context_url), $chapter_num);

@@ -38,7 +38,7 @@ function lumbrikus_load_admin_scripts( $hook ){
 	}
 	
 }
-add_action( 'admin_enqueue_scripts', 'lumbrikus_load_admin_slumbrikus.csscripts' );
+add_action( 'admin_enqueue_scripts', 'lumbrikus_load_admin_scripts' );
 
 
 /*
