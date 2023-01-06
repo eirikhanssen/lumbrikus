@@ -291,10 +291,10 @@ body.showimage-max .showimage-maxmin .icon.maximize {
 
 
 
-
+/*
 .fullscreen #audiosync-flexcontainer {
     margin-top: calc(8.5vw + 1.5rem);
-}
+}*/
 
 
 
@@ -447,11 +447,12 @@ body.fullscreen nav.internal-chapter-links span.linktext {
     border-top: 1em solid whitesmoke;
     border-bottom: 1px solid #ccc;
 }
+/*
 .fullscreen fieldset legend {
     bottom: -8.5vw;
     font-size: .7em;
 }
-
+*/
 
 #original-language-container {
     width: 100%;

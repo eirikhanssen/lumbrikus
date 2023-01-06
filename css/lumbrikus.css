@@ -1906,3 +1906,39 @@ header nav, header nav * {
 	min-height: 6rem;
     }
 }
+
+.fullscreen main {
+  position: relative;
+  z-index: 10;
+}
+
+.fullscreen .langselect {
+  padding-top: 0rem;
+}
+
+.langselect legend {
+  top:.1rem;
+  font-family: sans-serif;
+}
+
+.fullscreen .internal-chapter-links {
+    display: none !important;
+    position:relative;
+    top: -9999px;
+    z-index: -1;
+}
+
+#audiosync-flexcontainer {
+  margin-top: .5rem;
+}
+
+main.page-kort.page-kort,
+main.page-lang.page-lang {
+  padding: 0;
+}
+
+.langselect.langselect {
+  background: whitesmoke;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid #777;
+}
